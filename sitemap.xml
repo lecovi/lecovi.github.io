@@ -7,26 +7,98 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://lecovi.github.io/</loc>
-  <lastmod>2015-10-12T14:41:00Z</lastmod>
+  <lastmod>2015-10-12T23:16:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/archive.html</loc>
-  <lastmod>2015-10-12T14:55:00Z</lastmod>
+  <lastmod>2015-10-12T23:13:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/</loc>
-  <lastmod>2015-10-12T14:38:00Z</lastmod>
+  <lastmod>2015-10-12T15:14:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/</loc>
-  <lastmod>2015-10-12T14:38:00Z</lastmod>
+  <lastmod>2015-10-12T15:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/apt/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/comandos1/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/comandos2/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/compilacion/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/conociendo-linux/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/eval-olin/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/introduccion-olin/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/mount/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/permisos/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/procesos/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/runlevels/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/scripting1/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/scripting2/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/tgz/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/usuarios/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/olin/vbox-olin/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/galleries/</loc>
-  <lastmod>2015-10-12T14:38:00Z</lastmod>
+  <lastmod>2015-10-12T15:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/arq/</loc>
+  <lastmod>2015-10-12T15:50:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/listings/</loc>
-  <lastmod>2015-10-12T14:38:00Z</lastmod>
+  <lastmod>2015-10-12T15:14:00Z</lastmod>
  </url>
 </urlset>

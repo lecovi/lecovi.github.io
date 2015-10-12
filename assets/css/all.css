@@ -648,3 +648,11 @@ article.post-micro {
         display: none;
     }
 }
+
+body { 
+    padding-top: 70px; 
+    color: #333;
+    font-family: "Open Sans";
+    font-size: 17px;
+    background-color: #eee;
+}
