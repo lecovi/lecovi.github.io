@@ -55,3 +55,8 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Nikola stuff
+mis/cache/
+mis/output/
+mis/.doit.db
