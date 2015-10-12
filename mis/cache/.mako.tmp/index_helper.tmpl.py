@@ -5,12 +5,12 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1444660549.1770594
+_modified_time = 1444661806.377268
 _enable_loop = True
 _template_filename = '/home/leo/.virtualenvs/mis/lib/python3.4/site-packages/nikola/data/themes/base/templates/index_helper.tmpl'
 _template_uri = 'index_helper.tmpl'
 _source_encoding = 'utf-8'
-_exports = ['mathjax_script', 'html_pager']
+_exports = ['html_pager', 'mathjax_script']
 
 
 def render_body(context,**pageargs):
@@ -25,24 +25,11 @@ def render_body(context,**pageargs):
         context.caller_stack._pop_frame()
 
 
-def render_mathjax_script(context,posts):
-    __M_caller = context.caller_stack._push_frame()
-    try:
-        any = context.get('any', UNDEFINED)
-        __M_writer = context.writer()
-        __M_writer('\n')
-        if any(post.is_mathjax for post in posts):
-            __M_writer('        <script type="text/x-mathjax-config">\n        MathJax.Hub.Config({tex2jax: {inlineMath: [[\'$latex \',\'$\'], [\'\\\\(\',\'\\\\)\']]}});</script>\n        <script src="/assets/js/mathjax.js"></script>\n')
-        return ''
-    finally:
-        context.caller_stack._pop_frame()
-
-
 def render_html_pager(context):
     __M_caller = context.caller_stack._push_frame()
     try:
-        prevlink = context.get('prevlink', UNDEFINED)
         messages = context.get('messages', UNDEFINED)
+        prevlink = context.get('prevlink', UNDEFINED)
         nextlink = context.get('nextlink', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
@@ -66,8 +53,21 @@ def render_html_pager(context):
         context.caller_stack._pop_frame()
 
 
+def render_mathjax_script(context,posts):
+    __M_caller = context.caller_stack._push_frame()
+    try:
+        any = context.get('any', UNDEFINED)
+        __M_writer = context.writer()
+        __M_writer('\n')
+        if any(post.is_mathjax for post in posts):
+            __M_writer('        <script type="text/x-mathjax-config">\n        MathJax.Hub.Config({tex2jax: {inlineMath: [[\'$latex \',\'$\'], [\'\\\\(\',\'\\\\)\']]}});</script>\n        <script src="/assets/js/mathjax.js"></script>\n')
+        return ''
+    finally:
+        context.caller_stack._pop_frame()
+
+
 """
 __M_BEGIN_METADATA
-{"source_encoding": "utf-8", "filename": "/home/leo/.virtualenvs/mis/lib/python3.4/site-packages/nikola/data/themes/base/templates/index_helper.tmpl", "line_map": {"69": 63, "16": 0, "21": 19, "22": 27, "28": 21, "33": 21, "34": 22, "35": 23, "41": 2, "48": 2, "49": 3, "50": 4, "51": 6, "52": 7, "53": 8, "54": 8, "55": 8, "56": 8, "57": 11, "58": 12, "59": 13, "60": 13, "61": 13, "62": 13, "63": 16}, "uri": "index_helper.tmpl"}
+{"uri": "index_helper.tmpl", "filename": "/home/leo/.virtualenvs/mis/lib/python3.4/site-packages/nikola/data/themes/base/templates/index_helper.tmpl", "line_map": {"69": 63, "16": 0, "21": 19, "22": 27, "28": 2, "35": 2, "36": 3, "37": 4, "38": 6, "39": 7, "40": 8, "41": 8, "42": 8, "43": 8, "44": 11, "45": 12, "46": 13, "47": 13, "48": 13, "49": 13, "50": 16, "56": 21, "61": 21, "62": 22, "63": 23}, "source_encoding": "utf-8"}
 __M_END_METADATA
 """
