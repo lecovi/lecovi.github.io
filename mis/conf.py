@@ -123,7 +123,16 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 #          else they won’t be highlighted when active.
 
 NAVIGATION_LINKS = {
-    DEFAULT_LANG: (
+    DEFAULT_LANG:  (
+        ((
+            ("/cfp/olin/", "Operador Básico GNU/Linux"),
+            ("/cfp/reli/", "Administración de Redes con GNU/Linux"),
+            ("/ifts/arq/", "Arquitectura de Computadoras"),
+            ("/ifts/dlo/", "Diagramación Lógica"),
+            ("/ifts/edd/", "Estructura de Datos"),
+            ("/ifts/par/", "Paradigmas de Programación"),
+            ("/bitson/programacionsl/", "Programación con Software Libre")
+            ), "Cursos"),
         ("/archive.html", "Archivo"),
         ("/categories/", "Etiquetas"),
         ("/rss.xml", "Canal RSS"),
@@ -906,9 +915,9 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # Extra things you want in the pages HEAD tag. This will be added right
 # before </head>
 # (translatable)
-EXTRA_HEAD_DATA = """
-<link rel="stylesheet" type="text/css" href="lecovi.css">
-"""
+#EXTRA_HEAD_DATA = """
+#<link rel="stylesheet" type="text/css" href="./lecovi.css">
+#"""
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
