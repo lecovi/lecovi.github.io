@@ -7,14 +7,14 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://lecovi.github.io/galleries/rss.xml</loc>
-  <lastmod>2015-10-12T23:13:00Z</lastmod>
+  <lastmod>2015-10-13T03:07:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/rss.xml</loc>
-  <lastmod>2015-10-13T02:50:00Z</lastmod>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/sitemap.xml</loc>
-  <lastmod>2015-10-13T02:50:00Z</lastmod>
+  <lastmod>2015-10-13T03:07:00Z</lastmod>
  </sitemap>
 </sitemapindex>

@@ -7,11 +7,67 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://lecovi.github.io/</loc>
-  <lastmod>2015-10-13T00:47:00Z</lastmod>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/archive.html</loc>
-  <lastmod>2015-10-12T23:13:00Z</lastmod>
+  <lastmod>2015-10-13T03:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/01/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/02/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/03/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/04/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/05/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/06/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/07/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/08/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/09/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/10/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/11/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/12/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/prog-sl/encuesta/</loc>
+  <lastmod>2015-10-13T03:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/</loc>
@@ -270,10 +326,6 @@
   <lastmod>2015-10-13T02:32:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lecovi.github.io/ifts/dlo/tupls-listas/</loc>
-  <lastmod>2015-10-13T02:31:00Z</lastmod>
- </url>
- <url>
   <loc>http://lecovi.github.io/ifts/edd/</loc>
   <lastmod>2015-10-13T02:48:00Z</lastmod>
  </url>
@@ -324,10 +376,6 @@
  <url>
   <loc>http://lecovi.github.io/ifts/edd/prog-estructurada/</loc>
   <lastmod>2015-10-13T02:48:00Z</lastmod>
- </url>
- <url>
-  <loc>http://lecovi.github.io/ifts/edd/programacion-estructurada/</loc>
-  <lastmod>2015-10-13T01:51:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/par/</loc>
