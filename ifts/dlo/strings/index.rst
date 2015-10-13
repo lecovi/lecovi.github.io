@@ -1,0 +1,10 @@
+.. title: Cadena de Caracteres
+.. slug: ifts/dlo/strings
+.. date: 2015-08-26 15:18:41 UTC-03:00
+.. tags:
+.. category:
+.. link:
+.. description:
+.. type: text
+
+Write your page here.

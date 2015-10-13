@@ -1,5 +1,5 @@
-.. title: Arquitectura de Computadoras
-.. slug: ifts/arq
+.. title: Estructura de Datos
+.. slug: ifts/edd
 .. date: 2015-08-25 13:27:56 UTC-03:00
 .. tags:
 .. category:
@@ -40,18 +40,18 @@ Clases
 
 A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 
-#. :doc:`Introducción al curso <ifts/arq/introduccion-arq>`
-#. :doc:`Modelo de von Neumman <ifts/arq/von-neumman>`
-#. :doc:`Codificación de Datos <ifts/arq/codificacion>`
-#. :doc:`El CPU <ifts/arq/cpu>`
-#. :doc:`La Memoria Principal <ifts/arq/memoria>`
-#. :doc:`1° Parcial <ifts/arq/parcial1>`
-#. :doc:`Ejecución de Instrucciones <ifts/arq/ejecucion-instrucciones>`
-#. :doc:`Máquinas RISC <ifts/arq/risc>`
-#. :doc:`Circuitos Combinatorios <ifts/arq/circ-combinatorios>`
-#. :doc:`Circuitos Secuenciales <ifts/arq/circ-secuenciales>`
-#. :doc:`2° Parcial <ifts/arq/parcial2>`
-#. :doc:`Encuesta <ifts/arq/encuesta>`
+#. :doc:`Programación Estructurada <ifts/edd/programacion-estructurada>`
+#. :doc:`Introducción al Paradigma Orientado a Objetos <ifts/edd/intro-oop>`
+#. :doc:`Clases más complejas <ifts/edd/clases-complejas>`
+#. :doc:`Polimorfismo <ifts/edd/polimorfismo>`
+#. :doc:`Herencia y Delegación <ifts/edd/herencia>`
+#. :doc:`Listas, Pilas y Colas <ifts/edd/listas>`
+#. :doc:`Introduccion a Flask <ifts/edd/intro-flask>`
+#. :doc:`Flask Forms <ifts/edd/flask-forms>`
+#. :doc:`Flask Database <ifts/edd/flask-db>`
+#. :doc:`Flask User Login <ifts/edd/flask-user-login>`
+#. :doc:`Parcial <ifts/edd/parcial>`
+#. :doc:`Encuesta <ifts/edd/encuesta>`
 
 
 Presentación
@@ -100,7 +100,7 @@ siguientes 6 puntos:
 
 Descargate la síntesis_.
 
-.. _síntesis: /arq/sintesis.pdf
+.. _síntesis: /edd/sintesis.pdf
 
 .. class:: col-md-6
 
@@ -112,4 +112,4 @@ profesionales que abordaremos durante la cursada.
 
 Descargate la planificación_.
 
-.. _planificación: /arq/planificacion.pdf
+.. _planificación: /edd/planificacion.pdf
