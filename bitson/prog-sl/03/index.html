@@ -4,17 +4,34 @@
 <meta charset="utf-8">
 <base href="http://lecovi.github.io/bitson/prog-sl/03/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Programación con Software Libre | Make it So!</title>
+<title>Clase 3: Definiciones | Make it So!</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/bitson/prog-sl/03/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Leandro E. Colombo Viña">
 <meta property="og:site_name" content="Make it So!">
-<meta property="og:title" content="Programación con Software Libre">
+<meta property="og:title" content="Clase 3: Definiciones">
 <meta property="og:url" content="http://lecovi.github.io/bitson/prog-sl/03/">
-<meta property="og:description" content="Write your page here.">
+<meta property="og:description" content="Contents
+
+Identificadores
+Palabras reservadas en Python:
+
+
+Expresiones
+Funciones
+¿Cómo se define una función?
+Documentando la función
+
+
+Metodología para resolver problemas
+
+
+
+Identificadores
+Los ident">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2015-08-25T13:27:56-03:00">
+<meta property="article:published_time" content="2015-10-13T00:50:56-03:00">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
@@ -93,12 +110,160 @@
         <div class="row">
             
             
-<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Programación con Software Libre</a></h1>
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Clase 3: Definiciones</a></h1>
 
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Write your page here.</p>
+    <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li>
+<a class="reference internal" href=".#identificadores" id="id1">Identificadores</a><ul>
+<li><a class="reference internal" href=".#palabras-reservadas-en-python" id="id2">Palabras reservadas en Python:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href=".#expresiones" id="id3">Expresiones</a></li>
+<li>
+<a class="reference internal" href=".#funciones" id="id4">Funciones</a><ul>
+<li><a class="reference internal" href=".#como-se-define-una-funcion" id="id5">¿Cómo se define una función?</a></li>
+<li><a class="reference internal" href=".#documentando-la-funcion" id="id6">Documentando la función</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href=".#metodologia-para-resolver-problemas" id="id7">Metodología para resolver problemas</a></li>
+</ul>
+</div>
+<div class="section" id="identificadores">
+<h2><a class="toc-backref" href=".#id1">Identificadores</a></h2>
+<p>Los identificadores son un conjunto de símbolos que se usan para denominar a
+los elementos de un programa en Python. Estos elementos a los que hacemos
+referencia son los nombres de variables, módulos, clases, métodos, funciones, etc...</p>
+<p>Para tener un identificador válido en Python este debe cumplir con las siguientes:</p>
+<blockquote>
+<ul class="simple">
+<li>debe comenzar con una letra.</li>
+<li>continúa con una secuencia de números, letras y/o guiones bajos.</li>
+<li>cualquier otro símbolo no está permitido.</li>
+</ul>
+</blockquote>
+<p><em>RECORDÁ: Python distingue entre mayúsculas y minúsculas.</em></p>
+<div class="section" id="palabras-reservadas-en-python">
+<h3><a class="toc-backref" href=".#id2">Palabras reservadas en Python:</a></h3>
+<p>Python tiene 31 palabras reservadas. Es decir, 31 conjuntos de símbolos que no
+se pueden usar como identificadores válidos. Estos son:</p>
+<pre class="code python"><a name="rest_code_30be1458eacd4ef7835eede546e6404f-1"></a><span class="ow">and</span>       <span class="k">as</span>      <span class="k">assert</span>   <span class="k">break</span>  <span class="k">class</span>
+<a name="rest_code_30be1458eacd4ef7835eede546e6404f-2"></a><span class="nc">continue</span>  <span class="k">def</span>     <span class="nf">del</span>      <span class="k">elif</span>   <span class="k">else</span>
+<a name="rest_code_30be1458eacd4ef7835eede546e6404f-3"></a><span class="k">except</span>    <span class="k">exec</span>    <span class="k">finally</span>  <span class="k">for</span>    <span class="kn">from</span>
+<a name="rest_code_30be1458eacd4ef7835eede546e6404f-4"></a><span class="nn">global</span>    <span class="nn">if</span>      <span class="kn">import</span>   <span class="ow">in</span>     <span class="ow">is</span>
+<a name="rest_code_30be1458eacd4ef7835eede546e6404f-5"></a><span class="k">lambda</span>    <span class="ow">not</span>     <span class="ow">or</span>       <span class="k">pass</span>   <span class="k">print</span>
+<a name="rest_code_30be1458eacd4ef7835eede546e6404f-6"></a><span class="k">raise</span>     <span class="k">return</span>  <span class="k">try</span>      <span class="k">while</span>  <span class="k">with</span>
+<a name="rest_code_30be1458eacd4ef7835eede546e6404f-7"></a><span class="k">yield</span>
+</pre>
+</div>
+</div>
+<div class="section" id="expresiones">
+<h2><a class="toc-backref" href=".#id3">Expresiones</a></h2>
+<p>Una <em>expresión</em> es un conjunto de símbolos que representa un valor.</p>
+<p>Por ejemplo:</p>
+<pre class="literal-block">
+5 + 3
+</pre>
+<p>Representa al valor <strong>8</strong>. Si ejecutamos esta expresión en el intérprete de
+python éste nos devolverá el valor de la expresión:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; 5 + 3
+8
+&gt;&gt;&gt;
+</pre>
+</div>
+<div class="section" id="funciones">
+<h2><a class="toc-backref" href=".#id4">Funciones</a></h2>
+<p>Conjunto de instrucciones que están asociados a un identificador.</p>
+<div class="section" id="como-se-define-una-funcion">
+<h3><a class="toc-backref" href=".#id5">¿Cómo se define una función?</a></h3>
+<pre class="code python"><a name="rest_code_3c26e9aec1044f46a7ee8ab4fd444f2d-1"></a><span class="k">def</span> <span class="nf">identificador</span><span class="p">(</span><span class="n">argumentos_separados_por_coma</span><span class="p">):</span>
+<a name="rest_code_3c26e9aec1044f46a7ee8ab4fd444f2d-2"></a>    <span class="o">&lt;</span><span class="n">instrucciones</span><span class="o">&gt;</span>
+</pre>
+<p>Por ejemplo:</p>
+<pre class="code python"><a name="rest_code_f931f2c202dc4d448e8febabb6f479b1-1"></a><span class="k">def</span> <span class="nf">saludo</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+<a name="rest_code_f931f2c202dc4d448e8febabb6f479b1-2"></a>    <span class="k">print</span><span class="p">(</span><span class="s">"Hola {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nombre</span><span class="p">))</span>
+</pre>
+<p>Esto define la función <tt class="docutils literal">saludo()</tt> que necesita un argumento que
+se llama <cite>nombre</cite> y lo que hace es ejecutar la instrucción <cite>print</cite>.</p>
+</div>
+<div class="section" id="documentando-la-funcion">
+<h3><a class="toc-backref" href=".#id6">Documentando la función</a></h3>
+<p>Para agregar un <strong>docstring</strong> agreamos una cadena de texto en la
+primer línea luego de la definición con <tt class="docutils literal">def</tt>:</p>
+<pre class="code python"><a name="rest_code_59cea55bb5344ab6b8fcf9314ce9a134-1"></a><span class="k">def</span> <span class="nf">saludo</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+<a name="rest_code_59cea55bb5344ab6b8fcf9314ce9a134-2"></a>    <span class="sd">"""Recibe un nombre y lo saluda."""</span>
+<a name="rest_code_59cea55bb5344ab6b8fcf9314ce9a134-3"></a>    <span class="k">print</span><span class="p">(</span><span class="s">"Hola {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nombre</span><span class="p">))</span>
+</pre>
+<p>En el intérprete se puede consultar con la función <tt class="docutils literal">help</tt>:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; help(saludo)
+</pre>
+<p>O usando <tt class="docutils literal">__doc__</tt>:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; saludo.__doc__
+</pre>
+</div>
+</div>
+<div class="section" id="metodologia-para-resolver-problemas">
+<h2><a class="toc-backref" href=".#id7">Metodología para resolver problemas</a></h2>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt><strong>Analizar el problema</strong></dt>
+<dd>
+<p class="first last">Entender profundamente <em>cuál</em> es el problema que se trata de resolver, incluyendo el contexto en el cual se usará.</p>
+</dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt><strong>Especificar la solución</strong></dt>
+<dd>
+<p class="first last">Éste es el punto en el cual se describe <em>qué</em> debe hacer el programa,
+sin importar el cómo. En el caso de los problemas sencillos que abordaremos,
+deberemos decidir cuáles son los datos de entrada que se nos proveen,
+cuáles son las salidas que debemos producir, y cuál es la relación entre
+todos ellos.</p>
+</dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt><strong>Diseñar la solución.</strong></dt>
+<dd>
+<p class="first last">Éste es el punto en el cuál atacamos el <em>cómo</em> vamos a resolver el problema,
+cuáles son los algoritmos y las estructuras de datos que usaremos.
+Analizamos posibles variantes, y las decisiones las tomamos usando como dato
+de la realidad el contexto en el que se aplicará la solución, y los costos
+asociados a cada diseño.</p>
+</dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt><strong>Implementar el diseño</strong></dt>
+<dd>
+<p class="first last">Traducir a un lenguaje de programación (en nuestro caso, y por    el
+momento, Python) el diseño que elegimos en el punto anterior.</p>
+</dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt><strong>Probar el programa</strong></dt>
+<dd>
+<p class="first last">Diseñar un conjunto de pruebas para probar cada una de sus partes por
+separado, y también la correcta integración entre ellas.
+Utilizar el <em>depurador</em> como instrumento para descubir dónde se producen
+ciertos errores.</p>
+</dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt><strong>Mantener el programa</strong></dt>
+<dd>
+<p class="first last">Realizar los cambios en respuesta a nuevas demandas.</p>
+</dd>
+</dl></li>
+</ol>
+</div>
+</div>
     </div>
     
 
