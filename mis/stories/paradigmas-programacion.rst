@@ -1,5 +1,5 @@
-.. title: Diagramación Lógica
-.. slug: ifts/dlo
+.. title: Paradigmas de Programación
+.. slug: ifts/par
 .. date: 2015-08-25 13:27:56 UTC-03:00
 .. tags:
 .. category:
@@ -20,7 +20,7 @@ Instituto de Formación Técnica Superior Nº 18
 
     Mansilla 3643, Ciudad Autónoma de Buenos Aires
 
-    **Jueves de 18:30 a 22:00hs**
+    **Viernes de 18:30 a 22:00hs**
 
 
 .. sidebar:: Calendario
@@ -40,19 +40,21 @@ Clases
 
 A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 
-#. :doc:`Introducción al curso <ifts/dlo/introduccion-dlo>`
-#. :doc:`Diagramas de flujo <ifts/dlo/diag-flujo>`
-#. :doc:`Introducción a Python <ifts/dlo/intro-python>`
-#. :doc:`Funciones <ifts/dlo/funciones>`
-#. :doc:`Condicionales <ifts/dlo/condicionales>`
-#. :doc:`1° Parcial <ifts/dlo/parcial1>`
-#. :doc:`Cadena de Caracteres <ifts/dlo/strings>`
-#. :doc:`Tuplas y Listas <ifts/dlo/tuplas-listas>`
-#. :doc:`Diccionarios <ifts/dlo/diccionarios>`
-#. :doc:`Módulos y Paquetes <ifts/dlo/modulos>`
-#. :doc:`Integración <ifts/dlo/integracion>`
-#. :doc:`2° Parcial <ifts/dlo/parcial2>`
-#. :doc:`Encuesta <ifts/dlo/encuesta>`
+#. :doc:`Programación estructurada <ifts/par/prog-estructurada>`
+#. :doc:`Manejo de archivos <ifts/par/archivos>`
+#. :doc:`Manejo de errores y excepciones <ifts/par/errores>`
+#. :doc:`Procesamiento de archivos <ifts/par/procesamiento-archivos>`
+#. :doc:`Ejecución de funciones y recursividad <ifts/par/ejecucion-funciones>`
+#. :doc:`Ordenamientos <ifts/par/ordenamientos1>`
+#. :doc:`Ordenamientos Recursivos <ifts/par/ordenamientos2>`
+#. :doc:`Introducción a Flask <ifts/par/intro-flask>`
+#. :doc:`Flask Templates <ifts/par/flask-templates>`
+#. :doc:`Flask Web Forms <ifts/par/flask-forms>`
+#. :doc:`Flask Database <ifts/par/flask-db>`
+#. :doc:`Flask User Login <ifts/par/flask-user-login>`
+#. :doc:`Parcial <ifts/par/parcial>`
+#. :doc:`Encuesta <ifts/par/encuesta>`
+
 
 
 Presentación
@@ -101,7 +103,7 @@ siguientes 6 puntos:
 
 Descargate la síntesis_.
 
-.. _síntesis: /dlo/sintesis.pdf
+.. _síntesis: /par/sintesis.pdf
 
 .. class:: col-md-6
 
@@ -113,4 +115,4 @@ profesionales que abordaremos durante la cursada.
 
 Descargate la planificación_.
 
-.. _planificación: /dlo/planificacion.pdf
+.. _planificación: /par/planificacion.pdf

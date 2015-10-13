@@ -1,5 +1,5 @@
-.. title: Programación Estructurada
-.. slug: ifts/edd/prog-estructurada
+.. title: Flask Web Forms
+.. slug: ifts/par/flask-forms
 .. date: 2015-08-26 15:18:41 UTC-03:00
 .. tags:
 .. category:
