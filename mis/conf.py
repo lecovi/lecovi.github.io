@@ -131,7 +131,7 @@ NAVIGATION_LINKS = {
             ("/ifts/dlo/", "Diagramación Lógica"),
             ("/ifts/edd/", "Estructura de Datos"),
             ("/ifts/par/", "Paradigmas de Programación"),
-            ("/bitson/programacionsl/", "Programación con Software Libre")
+            ("/bitson/prog-sl/", "Programación con Software Libre")
             ), "Cursos"),
         ("/archive.html", "Archivo"),
         ("/categories/", "Etiquetas"),
