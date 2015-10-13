@@ -40,7 +40,7 @@ Clases
 
 A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 
-#. :doc:`Programación Estructurada <ifts/edd/programacion-estructurada>`
+#. :doc:`Programación Estructurada <ifts/edd/prog-estructurada>`
 #. :doc:`Introducción al Paradigma Orientado a Objetos <ifts/edd/intro-oop>`
 #. :doc:`Clases más complejas <ifts/edd/clases-complejas>`
 #. :doc:`Polimorfismo <ifts/edd/polimorfismo>`
