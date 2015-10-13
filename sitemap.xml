@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://lecovi.github.io/</loc>
-  <lastmod>2015-10-12T23:16:00Z</lastmod>
+  <lastmod>2015-10-13T00:47:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/archive.html</loc>
@@ -88,6 +88,74 @@
  <url>
   <loc>http://lecovi.github.io/cfp/olin/vbox-olin/</loc>
   <lastmod>2015-10-12T15:50:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/apache/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/comandos-reli/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/dhcp/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/dns/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/ethical-hacking/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/eval-reli/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/ftp/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/herramientas-diagnostico/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/introduccion-reli/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/iptables1/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/iptables2/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/networking/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/samba/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/squid/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/ssh/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/reli/vlan/</loc>
+  <lastmod>2015-10-13T00:48:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/galleries/</loc>
