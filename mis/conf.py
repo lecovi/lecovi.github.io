@@ -124,6 +124,7 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG:  (
+        ("/blog/", "Blog"),
         ((
             ("/cfp/olin/", "Operador Básico GNU/Linux"),
             ("/cfp/reli/", "Administración de Redes con GNU/Linux"),
