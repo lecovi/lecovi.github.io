@@ -53,7 +53,9 @@ ramas
 
 **IMPORTANTE!!**
 
-**PARA EDITAR EL ARCHIVO ``/etc/apt/sources.list`` TENEMOS QUE SER EL SUPERUSUARIO.**
+**PARA EDITAR EL ARCHIVO**
+``/etc/apt/sources.list`` 
+**TENEMOS QUE SER EL SUPERUSUARIO.**
 
 ----
 
