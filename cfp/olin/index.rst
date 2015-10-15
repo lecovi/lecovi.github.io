@@ -8,11 +8,6 @@
 .. type: text
 
 
-.. raw:: html
-
-   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
 .. class:: align-center
 
 Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
@@ -161,6 +156,3 @@ Descargate la planificación_.
         });
         setTimeout(function(){$('#myModal').modal('hide');},10000);
     </script>
-
-
-
