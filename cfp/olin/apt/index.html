@@ -9,6 +9,7 @@
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/cfp/olin/apt/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <meta name="author" content="Leandro E. Colombo Viña">
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Manejo de paquetes">
@@ -138,8 +139,8 @@ RedHat ---&gt; YUM
 <div class="section" id="archivo-de-configuracion">
 <h2><a class="toc-backref" href=".#id1">Archivo de configuración:</a></h2>
 <p><tt class="docutils literal">/etc/apt/sources.list</tt></p>
-<pre class="code console"><a name="rest_code_894951d8b8db42b8b7e937ad991bab69-1"></a><span class="go">deb http://sito.ejemplo.com/debian distribucion rama1 rama2 rama3</span>
-<a name="rest_code_894951d8b8db42b8b7e937ad991bab69-2"></a><span class="go">deb-src http://sito.ejemplo.com/debian distribucion rama1 rama2 rama3</span>
+<pre class="code console"><a name="rest_code_23606ad2c2e24e888c0d28df872818d3-1"></a><span class="go">deb http://sito.ejemplo.com/debian distribucion rama1 rama2 rama3</span>
+<a name="rest_code_23606ad2c2e24e888c0d28df872818d3-2"></a><span class="go">deb-src http://sito.ejemplo.com/debian distribucion rama1 rama2 rama3</span>
 </pre>
 <dl class="docutils">
 <dt>deb/deb-src</dt>
@@ -156,35 +157,37 @@ Si dice deb-src busca los códigos fuente.</dd>
 </dl>
 <hr class="docutils">
 <p><strong>IMPORTANTE!!</strong></p>
-<p><strong>PARA EDITAR EL ARCHIVO ``/etc/apt/sources.list`` TENEMOS QUE SER EL SUPERUSUARIO.</strong></p>
+<p><strong>PARA EDITAR EL ARCHIVO</strong>
+<tt class="docutils literal">/etc/apt/sources.list</tt>
+<strong>TENEMOS QUE SER EL SUPERUSUARIO.</strong></p>
 <hr class="docutils">
 <p>Para actualizar las cabeceras de los paquetes</p>
-<pre class="code console"><a name="rest_code_2e0b57242aa64a36826cae8ac16be0b5-1"></a><span class="gp">$</span> sudo apt update
+<pre class="code console"><a name="rest_code_0889339244e04a06a7c4caf71ea67629-1"></a><span class="gp">$</span> sudo apt update
 </pre>
 <p>Para actualizar los paquetes (el sistema)</p>
-<pre class="code console"><a name="rest_code_c6e7328425a74e0dbd7c93223db47c32-1"></a><span class="gp">$</span> sudo apt upgrade
+<pre class="code console"><a name="rest_code_6976122f2afa489892dcca88044c6638-1"></a><span class="gp">$</span> sudo apt upgrade
 </pre>
 <p>Para instalar paquetes</p>
-<pre class="code console"><a name="rest_code_0fd9b078bc954f8daace9be6c735cf41-1"></a><span class="gp">$</span> sudo apt install *&lt;nombre_del_paquete&gt;*
+<pre class="code console"><a name="rest_code_cbbed4006ebe4188bee4171138390ab2-1"></a><span class="gp">$</span> sudo apt install *&lt;nombre_del_paquete&gt;*
 </pre>
 <p>Ejemplo: suponganse que queremos instalar el paquete mc (Midnight Commander).</p>
-<pre class="code console"><a name="rest_code_57057f9624e94acdb2ce086781f7337e-1"></a><span class="gp">$</span> sudo apt install mc
+<pre class="code console"><a name="rest_code_b627f78d992b40cb84affad9fd896b19-1"></a><span class="gp">$</span> sudo apt install mc
 </pre>
 <p>Otro ejemplo: ahora queremos instalar el programa htop y terminator.</p>
-<pre class="code console"><a name="rest_code_5e5909e22bfc4853abc8d3422d1852f5-1"></a><span class="gp">$</span> sudo apt install htop terminator
+<pre class="code console"><a name="rest_code_3c4c68d9d20e4af0822ab42e68958e10-1"></a><span class="gp">$</span> sudo apt install htop terminator
 </pre>
 <p>Para desinstalar paquetes</p>
-<pre class="code console"><a name="rest_code_dbe1dcbeee014f58a8795b8c734de0a1-1"></a><span class="gp">$</span> sudo apt remove &lt;nombre_del_paquete&gt;
+<pre class="code console"><a name="rest_code_5044ef29334c40edb2d69e97389c6cf7-1"></a><span class="gp">$</span> sudo apt remove &lt;nombre_del_paquete&gt;
 </pre>
 <p>Para desinstalar y borrar todos los archivos de configuración</p>
-<pre class="code console"><a name="rest_code_f599910b8f3849d3b3a6289660c42991-1"></a><span class="gp">$</span> sudo apt purge &lt;nombre_del_paquete&gt;
+<pre class="code console"><a name="rest_code_a94a7243acfc4b49bc7671274afca657-1"></a><span class="gp">$</span> sudo apt purge &lt;nombre_del_paquete&gt;
 </pre>
 <hr class="docutils">
 <p>Para buscar paquetes por nombres (o partes de nombres).</p>
-<pre class="code console"><a name="rest_code_719f0381ce1d48eaaa1a305ba9c1cdfe-1"></a><span class="gp">$</span> sudo apt-cache search &lt;nombre&gt;
+<pre class="code console"><a name="rest_code_83af923c990c46489b2c5d2b8de7767c-1"></a><span class="gp">$</span> sudo apt-cache search &lt;nombre&gt;
 </pre>
 <p>Para mostrar la información del paquete:</p>
-<pre class="code console"><a name="rest_code_3e743892796845778879cec9d73565c4-1"></a><span class="gp">$</span> sudo apt-cache show &lt;nombre&gt;
+<pre class="code console"><a name="rest_code_b653f1c954c24a5aa1ca629ffeaff3e3-1"></a><span class="gp">$</span> sudo apt-cache show &lt;nombre&gt;
 </pre>
 </div>
 </div>
@@ -195,8 +198,23 @@ Si dice deb-src busca los códigos fuente.</dd>
 </div>
         <!--End of body content-->
 
-        <footer id="footer">
-            Contents © 2015         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> - Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>         
+        <footer id="footer"><div class="text-center">
+Contents © 2015         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://www.linkedin.com/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
             
         </footer>
 </div>
