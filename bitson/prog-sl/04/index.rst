@@ -396,7 +396,7 @@ ejecuta el cuerpo del ``else``.
     .. code-block:: python
 
         def pcn2():
-            x = input("Ingrese un número: ")
+            x = int(input("Ingrese un número: "))
                 if x > 0:
                     print("Número positivo")
                 elif not x:

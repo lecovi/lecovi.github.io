@@ -170,14 +170,14 @@ pantalla el cartel “<tt class="docutils literal">Número positivo</tt>”.</p>
 <li>Si <tt class="docutils literal">x &gt; 0</tt>, imprimir "<tt class="docutils literal">Número positivo</tt>"</li>
 </ol>
 <p>Es claro que la primera línea se puede traducir como:</p>
-<pre class="code python"><a name="rest_code_4ec40582e16c4a3d83e082225f6590ba-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">))</span>
+<pre class="code python"><a name="rest_code_2fe9efb86296496ba1d5df3d50936a38-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">))</span>
 </pre>
 <p>Sin embargo, con las instrucciones que vimos hasta ahora no podemos tomar el
 tipo de decisiones que nos planteamos en la segunda línea de este diseño.
 Para resolver este problema introducimos una nueva instrucción que llamaremos
 <strong>condicional</strong> que tiene la siguiente forma:</p>
-<pre class="code python"><a name="rest_code_2723219b8e1045bfaa3abcf7204b0864-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_2723219b8e1045bfaa3abcf7204b0864-2"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
+<pre class="code python"><a name="rest_code_cc74fe0b89ce49bf937c9ea54117822c-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_cc74fe0b89ce49bf937c9ea54117822c-2"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
 </pre>
 <p>Donde <tt class="docutils literal">if</tt> es una de las 31 palabra reservadas que tiene el lenguaje Python.</p>
 <p>¿Qué es la condición que aparece luego de la palabra reservada <tt class="docutils literal">if</tt>?</p>
@@ -300,8 +300,8 @@ Sino el resultado es <tt class="docutils literal">True</tt>.</td>
 es positivo, debemos escribir en pantalla el mensaje "<tt class="docutils literal">Número positivo</tt>".</p>
 <p>Utilizando la instrucción <tt class="docutils literal">if</tt> que acabamos de introducir y que sirve para
 tomar decisiones simples. Dijimos que su formato más sencillo es:</p>
-<pre class="code python"><a name="rest_code_dbe3347964e4456886561d3b5778bcbf-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_dbe3347964e4456886561d3b5778bcbf-2"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
+<pre class="code python"><a name="rest_code_76cbbfb732744de6b90b66c3124a39ca-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_76cbbfb732744de6b90b66c3124a39ca-2"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
 </pre>
 <p>cuyo significado es el siguiente: se evalúa el valor de <tt class="docutils literal">&lt;condición&gt;</tt> y si el
 resultado es <tt class="docutils literal">True</tt> (verdadero) se ejecutan las acciones indicadas como
@@ -309,10 +309,10 @@ resultado es <tt class="docutils literal">True</tt> (verdadero) se ejecutan las 
 <p>Como ahora ya sabemos también cómo construir condiciones de comparación, estamos
 en condiciones de implementar nuestra solución. Escribimos la función
 <tt class="docutils literal">es_positivo()</tt> que hace lo pedido:</p>
-<pre class="code python"><a name="rest_code_2739cbbad520433b85b7f3a3c2495b18-1"></a><span class="k">def</span> <span class="nf">es_positivo</span><span class="p">():</span>
-<a name="rest_code_2739cbbad520433b85b7f3a3c2495b18-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">))</span>
-<a name="rest_code_2739cbbad520433b85b7f3a3c2495b18-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_2739cbbad520433b85b7f3a3c2495b18-4"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_f9f8dff19ec14a92a5a47a782390969f-1"></a><span class="k">def</span> <span class="nf">es_positivo</span><span class="p">():</span>
+<a name="rest_code_f9f8dff19ec14a92a5a47a782390969f-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">))</span>
+<a name="rest_code_f9f8dff19ec14a92a5a47a782390969f-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_f9f8dff19ec14a92a5a47a782390969f-4"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
 </pre>
 <p>y podemos probarla:</p>
 <blockquote>
@@ -345,12 +345,12 @@ condición.</p>
 </ol>
 <p>La negación de <tt class="docutils literal">x &gt; 0</tt> es <cite>¬(x &gt; 0)</cite> que se traduce en Python como
 <tt class="docutils literal">not (x &gt; 0)</tt>, por lo que implementamos nuestra solución en Python como:</p>
-<pre class="code python"><a name="rest_code_8fa1dfc68d0c4c33b467d56855854832-1"></a><span class="k">def</span> <span class="nf">positivo_o_no</span><span class="p">():</span>
-<a name="rest_code_8fa1dfc68d0c4c33b467d56855854832-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un número: "</span><span class="p">)</span>
-<a name="rest_code_8fa1dfc68d0c4c33b467d56855854832-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_8fa1dfc68d0c4c33b467d56855854832-4"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
-<a name="rest_code_8fa1dfc68d0c4c33b467d56855854832-5"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
-<a name="rest_code_8fa1dfc68d0c4c33b467d56855854832-6"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número no positivo"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_55106049607145eebe9c5040454edbb9-1"></a><span class="k">def</span> <span class="nf">positivo_o_no</span><span class="p">():</span>
+<a name="rest_code_55106049607145eebe9c5040454edbb9-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un número: "</span><span class="p">)</span>
+<a name="rest_code_55106049607145eebe9c5040454edbb9-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_55106049607145eebe9c5040454edbb9-4"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
+<a name="rest_code_55106049607145eebe9c5040454edbb9-5"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+<a name="rest_code_55106049607145eebe9c5040454edbb9-6"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número no positivo"</span><span class="p">)</span>
 </pre>
 <p>Probamos la nueva solución y obtenemos el resultado buscado:</p>
 <blockquote>
@@ -373,10 +373,10 @@ la cuarta?.</p>
 <p>Existe una construcción alternativa para la estructura de decisión:</p>
 <p><strong>Si se da la condición `C`, hacer `S`, de lo contrario, hacer `T`</strong>. Esta
 estructura tiene la forma:</p>
-<pre class="code python"><a name="rest_code_f1d27f25cffd48b2a2f313fc8b00cea3-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_f1d27f25cffd48b2a2f313fc8b00cea3-2"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
-<a name="rest_code_f1d27f25cffd48b2a2f313fc8b00cea3-3"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_f1d27f25cffd48b2a2f313fc8b00cea3-4"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">otra</span> <span class="n">cosa</span> <span class="n">si</span> <span class="n">no</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
+<pre class="code python"><a name="rest_code_8bab84a62c694fdb9f4e2b19416888be-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_8bab84a62c694fdb9f4e2b19416888be-2"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
+<a name="rest_code_8bab84a62c694fdb9f4e2b19416888be-3"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_8bab84a62c694fdb9f4e2b19416888be-4"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">otra</span> <span class="n">cosa</span> <span class="n">si</span> <span class="n">no</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
 </pre>
 <p>Donde <tt class="docutils literal">if</tt> y <tt class="docutils literal">else</tt> son palabras reservadas.</p>
 <p>Su significado es el siguiente: se evalúa <tt class="docutils literal">&lt;condición&gt;</tt>, si el resultado es
@@ -390,12 +390,12 @@ acciones indicadas como <tt class="docutils literal">&lt;hacer otra cosa si no s
 <li>De lo contrario, imprimir "<tt class="docutils literal">Número no positivo</tt>".</li>
 </ol>
 <p>Este diseño se implementa como:</p>
-<pre class="code python"><a name="rest_code_5698226e9c7d43ac8f7c0acbdcb1d097-1"></a><span class="k">def</span> <span class="nf">positivo_o_no_nue</span><span class="p">():</span>
-<a name="rest_code_5698226e9c7d43ac8f7c0acbdcb1d097-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">)</span>
-<a name="rest_code_5698226e9c7d43ac8f7c0acbdcb1d097-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_5698226e9c7d43ac8f7c0acbdcb1d097-4"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
-<a name="rest_code_5698226e9c7d43ac8f7c0acbdcb1d097-5"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_5698226e9c7d43ac8f7c0acbdcb1d097-6"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número no positivo"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_fb464dd0d1bd49678b2aa63279efa776-1"></a><span class="k">def</span> <span class="nf">positivo_o_no_nue</span><span class="p">():</span>
+<a name="rest_code_fb464dd0d1bd49678b2aa63279efa776-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">)</span>
+<a name="rest_code_fb464dd0d1bd49678b2aa63279efa776-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_fb464dd0d1bd49678b2aa63279efa776-4"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
+<a name="rest_code_fb464dd0d1bd49678b2aa63279efa776-5"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_fb464dd0d1bd49678b2aa63279efa776-6"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número no positivo"</span><span class="p">)</span>
 </pre>
 <p>y lo probamos:</p>
 <blockquote>
@@ -484,15 +484,15 @@ antes, sólo que el segundo caso es complejo (es nuevamente una alternativa):</p
 </ol>
 </blockquote>
 <p>Este diseño se implementa como:</p>
-<pre class="code python"><a name="rest_code_03fa754f51294a49bf67c2fa70b27b5f-1"></a><span class="k">def</span> <span class="nf">pcn1</span><span class="p">():</span>
-<a name="rest_code_03fa754f51294a49bf67c2fa70b27b5f-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un número: "</span><span class="p">))</span>
-<a name="rest_code_03fa754f51294a49bf67c2fa70b27b5f-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_03fa754f51294a49bf67c2fa70b27b5f-4"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
-<a name="rest_code_03fa754f51294a49bf67c2fa70b27b5f-5"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_03fa754f51294a49bf67c2fa70b27b5f-6"></a>        <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_03fa754f51294a49bf67c2fa70b27b5f-7"></a>            <span class="k">print</span><span class="p">(</span><span class="s">"Igual a 0"</span><span class="p">)</span>
-<a name="rest_code_03fa754f51294a49bf67c2fa70b27b5f-8"></a>        <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_03fa754f51294a49bf67c2fa70b27b5f-9"></a>            <span class="k">print</span><span class="p">(</span><span class="s">"Numero negativo"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_cd5e433896d94c25b5c85e2ca448fc2d-1"></a><span class="k">def</span> <span class="nf">pcn1</span><span class="p">():</span>
+<a name="rest_code_cd5e433896d94c25b5c85e2ca448fc2d-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un número: "</span><span class="p">))</span>
+<a name="rest_code_cd5e433896d94c25b5c85e2ca448fc2d-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_cd5e433896d94c25b5c85e2ca448fc2d-4"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
+<a name="rest_code_cd5e433896d94c25b5c85e2ca448fc2d-5"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_cd5e433896d94c25b5c85e2ca448fc2d-6"></a>        <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_cd5e433896d94c25b5c85e2ca448fc2d-7"></a>            <span class="k">print</span><span class="p">(</span><span class="s">"Igual a 0"</span><span class="p">)</span>
+<a name="rest_code_cd5e433896d94c25b5c85e2ca448fc2d-8"></a>        <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_cd5e433896d94c25b5c85e2ca448fc2d-9"></a>            <span class="k">print</span><span class="p">(</span><span class="s">"Numero negativo"</span><span class="p">)</span>
 </pre>
 <p>Esta estructura se conoce como de alternativas anidadas ya que dentro de una de
 las ramas de la alternativa (en este caso la rama del else) se anida otra
@@ -501,26 +501,26 @@ alternativa.</p>
 equivalente a la anterior pero que no exige sangrías cada vez mayores en el
 texto. Se trata de la estructura de alternativas encadenadas, que tiene la
 forma:</p>
-<pre class="code python"><a name="rest_code_fbb2bb486f02411888338590a3b5adba-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición_1</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_fbb2bb486f02411888338590a3b5adba-2"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo_1</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición_1</span><span class="o">&gt;</span>
-<a name="rest_code_fbb2bb486f02411888338590a3b5adba-3"></a><span class="k">elif</span> <span class="o">&lt;</span><span class="n">condición_2</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_fbb2bb486f02411888338590a3b5adba-4"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo_2</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición_2</span><span class="o">&gt;</span>
-<a name="rest_code_fbb2bb486f02411888338590a3b5adba-5"></a><span class="o">...</span>
-<a name="rest_code_fbb2bb486f02411888338590a3b5adba-6"></a><span class="k">elif</span> <span class="o">&lt;</span><span class="n">condición_n</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_fbb2bb486f02411888338590a3b5adba-7"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo_n</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición_n</span><span class="o">&gt;</span>
-<a name="rest_code_fbb2bb486f02411888338590a3b5adba-8"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_fbb2bb486f02411888338590a3b5adba-9"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">otra</span> <span class="n">cosa</span> <span class="n">si</span> <span class="n">no</span> <span class="n">se</span> <span class="n">da</span> <span class="n">ninguna</span> <span class="n">de</span> <span class="n">las</span> <span class="n">condiciones</span> <span class="n">anteriores</span><span class="o">&gt;</span>
+<pre class="code python"><a name="rest_code_ba76ecfa2b9040ee9953b83e917025af-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición_1</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_ba76ecfa2b9040ee9953b83e917025af-2"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo_1</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición_1</span><span class="o">&gt;</span>
+<a name="rest_code_ba76ecfa2b9040ee9953b83e917025af-3"></a><span class="k">elif</span> <span class="o">&lt;</span><span class="n">condición_2</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_ba76ecfa2b9040ee9953b83e917025af-4"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo_2</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición_2</span><span class="o">&gt;</span>
+<a name="rest_code_ba76ecfa2b9040ee9953b83e917025af-5"></a><span class="o">...</span>
+<a name="rest_code_ba76ecfa2b9040ee9953b83e917025af-6"></a><span class="k">elif</span> <span class="o">&lt;</span><span class="n">condición_n</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_ba76ecfa2b9040ee9953b83e917025af-7"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo_n</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición_n</span><span class="o">&gt;</span>
+<a name="rest_code_ba76ecfa2b9040ee9953b83e917025af-8"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_ba76ecfa2b9040ee9953b83e917025af-9"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">otra</span> <span class="n">cosa</span> <span class="n">si</span> <span class="n">no</span> <span class="n">se</span> <span class="n">da</span> <span class="n">ninguna</span> <span class="n">de</span> <span class="n">las</span> <span class="n">condiciones</span> <span class="n">anteriores</span><span class="o">&gt;</span>
 </pre>
 <p>Donde <tt class="docutils literal">if</tt>, <tt class="docutils literal">elif</tt> y <tt class="docutils literal">else</tt> son palabras reservadas.</p>
 <p>En nuestro ejemplo:</p>
-<pre class="code python"><a name="rest_code_adf1f5fa40f1493790accce28f9878e0-1"></a><span class="k">def</span> <span class="nf">pcn2</span><span class="p">():</span>
-<a name="rest_code_adf1f5fa40f1493790accce28f9878e0-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un número: "</span><span class="p">))</span>
-<a name="rest_code_adf1f5fa40f1493790accce28f9878e0-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_adf1f5fa40f1493790accce28f9878e0-4"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
-<a name="rest_code_adf1f5fa40f1493790accce28f9878e0-5"></a>    <span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_adf1f5fa40f1493790accce28f9878e0-6"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Igual a 0"</span><span class="p">)</span>
-<a name="rest_code_adf1f5fa40f1493790accce28f9878e0-7"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_adf1f5fa40f1493790accce28f9878e0-8"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número negativo"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_62111677f11349ab9c91741f84a1359d-1"></a><span class="k">def</span> <span class="nf">pcn2</span><span class="p">():</span>
+<a name="rest_code_62111677f11349ab9c91741f84a1359d-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un número: "</span><span class="p">))</span>
+<a name="rest_code_62111677f11349ab9c91741f84a1359d-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_62111677f11349ab9c91741f84a1359d-4"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
+<a name="rest_code_62111677f11349ab9c91741f84a1359d-5"></a>    <span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_62111677f11349ab9c91741f84a1359d-6"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Igual a 0"</span><span class="p">)</span>
+<a name="rest_code_62111677f11349ab9c91741f84a1359d-7"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_62111677f11349ab9c91741f84a1359d-8"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número negativo"</span><span class="p">)</span>
 </pre>
 <p>Se evalúa la primera alternativa, si es verdadera se ejecuta su cuerpo. De lo
 contrario se evalúa la segunda alternativa, si es verdadera se ejecuta su
@@ -532,14 +532,14 @@ valores numéricos distintos de 0, las cadenas de caracteres que no son
 vacías, y en general cualquier valor que no sea <tt class="docutils literal">0</tt> o vacío. Mientras
 que los valores 0 o vacíos se consideran falsos.</p>
 <p class="alert alert-info">Así, el ejemplo anterior también podría escribirse de la siguiente manera:</p>
-<div class="alert alert-info"><pre class="code python"><a name="rest_code_c06636ca98ba43549a959bd2220c24e2-1"></a><span class="k">def</span> <span class="nf">pcn2</span><span class="p">():</span>
-<a name="rest_code_c06636ca98ba43549a959bd2220c24e2-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un número: "</span><span class="p">)</span>
-<a name="rest_code_c06636ca98ba43549a959bd2220c24e2-3"></a>        <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_c06636ca98ba43549a959bd2220c24e2-4"></a>            <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
-<a name="rest_code_c06636ca98ba43549a959bd2220c24e2-5"></a>        <span class="k">elif</span> <span class="ow">not</span> <span class="n">x</span><span class="p">:</span>
-<a name="rest_code_c06636ca98ba43549a959bd2220c24e2-6"></a>            <span class="k">print</span><span class="p">(</span><span class="s">"Igual a 0"</span><span class="p">)</span>
-<a name="rest_code_c06636ca98ba43549a959bd2220c24e2-7"></a>        <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_c06636ca98ba43549a959bd2220c24e2-8"></a>            <span class="k">print</span><span class="p">(</span><span class="s">"Número negativo"</span><span class="p">)</span>
+<div class="alert alert-info"><pre class="code python"><a name="rest_code_371abfe739754143b45c2a261bca1851-1"></a><span class="k">def</span> <span class="nf">pcn2</span><span class="p">():</span>
+<a name="rest_code_371abfe739754143b45c2a261bca1851-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un número: "</span><span class="p">))</span>
+<a name="rest_code_371abfe739754143b45c2a261bca1851-3"></a>        <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_371abfe739754143b45c2a261bca1851-4"></a>            <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
+<a name="rest_code_371abfe739754143b45c2a261bca1851-5"></a>        <span class="k">elif</span> <span class="ow">not</span> <span class="n">x</span><span class="p">:</span>
+<a name="rest_code_371abfe739754143b45c2a261bca1851-6"></a>            <span class="k">print</span><span class="p">(</span><span class="s">"Igual a 0"</span><span class="p">)</span>
+<a name="rest_code_371abfe739754143b45c2a261bca1851-7"></a>        <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_371abfe739754143b45c2a261bca1851-8"></a>            <span class="k">print</span><span class="p">(</span><span class="s">"Número negativo"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
