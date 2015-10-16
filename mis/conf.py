@@ -669,13 +669,13 @@ CONTENT_FOOTER = """<div class="text-center">
 Contents &copy; {date}         <a href="mailto:{email}">{author}</a> -
 <a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
 <a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
-<a href="https://www.linkedin.com/leandrocolombo"><i class="fa fa-linkedin"></i></a>
-<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
-<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
-<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
-<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
-<a href="https://plus.google.com/+LeandroEColomboViña-bitson"><i class="fa fa-google-plus"></i></a>
 <a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboViña-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
 <a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
 Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    {license}
 </div>

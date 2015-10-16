@@ -22,6 +22,9 @@ Casa de Cultura y Política Sofía Yussen
 
     **Viernes de 9:00 a 13:00hs**
 
+    Suscribite a la lista haciendo click en este `link
+    <http://listas.bitson.com.ar/listinfo/programacion>`_
+
 
 .. sidebar:: Calendario
 
