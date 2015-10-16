@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <base href="http://lecovi.github.io/bitson/prog-sl/04/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Programación con Software Libre | Make it So!</title>
+<title>Condicionales | Make it So!</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/bitson/prog-sl/04/">
@@ -12,9 +12,22 @@
 <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <meta name="author" content="Leandro E. Colombo Viña">
 <meta property="og:site_name" content="Make it So!">
-<meta property="og:title" content="Programación con Software Libre">
+<meta property="og:title" content="Condicionales">
 <meta property="og:url" content="http://lecovi.github.io/bitson/prog-sl/04/">
-<meta property="og:description" content="Write your page here.">
+<meta property="og:description" content="Contents
+
+Expresiones booleanas
+Operadores relacionales
+Operadores lógicos
+
+
+Comparaciones simples
+
+
+Supongamos que tengamos el siguiente problema.
+
+Problema
+Debemos leer un número y, si el número es ">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-08-25T13:27:56-03:00">
 </head>
@@ -98,12 +111,197 @@
         <div class="row">
             
             
-<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Programación con Software Libre</a></h1>
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Condicionales</a></h1>
 
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Write your page here.</p>
+    <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li>
+<a class="reference internal" href=".#expresiones-booleanas" id="id1">Expresiones booleanas</a><ul>
+<li><a class="reference internal" href=".#operadores-relacionales" id="id2">Operadores relacionales</a></li>
+<li><a class="reference internal" href=".#operadores-logicos" id="id3">Operadores lógicos</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href=".#comparaciones-simples" id="id4">Comparaciones simples</a></li>
+</ul>
+</div>
+<p>Supongamos que tengamos el siguiente problema.</p>
+<div class="admonition-problema admonition">
+<p class="first admonition-title"><strong>Problema</strong></p>
+<p>Debemos leer un número y, si el número es positivo, debemos escribir en
+pantalla el cartel “<tt class="docutils literal">Número positivo</tt>”.</p>
+<p class="last"><em>Solución</em>: se deberá leer un número <tt class="docutils literal">x</tt>. Si <cite>x &gt; 0</cite> se escribe el mensaje
+"<tt class="docutils literal">Número positivo</tt>".</p>
+</div>
+<p>Diseñamos nuestra solución:</p>
+<ol class="arabic simple">
+<li>Solicitar al usuario un número, guardarlo en <tt class="docutils literal">x</tt>.</li>
+<li>Si <tt class="docutils literal">x &gt; 0</tt>, imprimir "<tt class="docutils literal">Número positivo</tt>"</li>
+</ol>
+<p>Es claro que la primera línea se puede traducir como:</p>
+<pre class="code python"><a name="rest_code_bd834c4b7f8248cb88cd94cf82fec5b6-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">))</span>
+</pre>
+<p>Sin embargo, con las instrucciones que vimos hasta ahora no podemos tomar el
+tipo de decisiones que nos planteamos en la segunda línea de este diseño.
+Para resolver este problema introducimos una nueva instrucción que llamaremos
+<strong>condicional</strong> que tiene la siguiente forma:</p>
+<pre class="code python"><a name="rest_code_6fc5b4e7abb540508d1032e64666f58d-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_6fc5b4e7abb540508d1032e64666f58d-2"></a><span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
+</pre>
+<p>Donde <tt class="docutils literal">if</tt> es una de las 31 palabra reservadas que tiene el lenguaje Python.</p>
+<p>¿Qué es la condición que aparece luego de la palabra reservada <tt class="docutils literal">if</tt>?</p>
+<p>Antes de seguir adelante con la construcción debemos introducir un nuevo tipo de
+expresión que nos indicará si se da una cierta situación o no. Hasta ahora las
+expresiones con las que trabajamos fueron de tipo numérica y de tipo texto. Pero
+ahora la respuesta que buscamos es de tipo sí o no.</p>
+<div class="section" id="expresiones-booleanas">
+<h2><a class="toc-backref" href=".#id1">Expresiones booleanas</a></h2>
+<p>Además de los números y los textos que vimos hasta ahora, Python introduce las
+constantes <tt class="docutils literal">True</tt> y <tt class="docutils literal">False</tt> para representar los valores de verdad verdadero
+y falso respectivamente.
+Vimos que una expresión es un trozo de código Python que produce o calcula un
+valor (resultado). Una expresión booleana o expresión lógica es una expresión
+que vale o bien <tt class="docutils literal">True</tt> o bien <tt class="docutils literal">False</tt>.</p>
+<div class="section" id="operadores-relacionales">
+<h3><a class="toc-backref" href=".#id2">Operadores relacionales</a></h3>
+<p>En el ejemplo que queremos resolver, la condición que queremos ver si se cumple
+o no es que <tt class="docutils literal">x</tt> sea mayor que cero. Python provee las llamadas expresiones de
+comparación que sirven para comparar valores entre sí, y que por lo tanto
+permiten codificar ese tipo de pregunta. En particular la pregunta de si <tt class="docutils literal">x</tt>
+es mayor que cero, se codifica en Python como <tt class="docutils literal">x &gt; 0</tt>.</p>
+<p>De esta forma, <tt class="docutils literal">5 &gt; 3</tt> es una expresión booleana cuyo valor es <tt class="docutils literal">True</tt>, y
+<tt class="docutils literal">5 &lt; 3</tt> también es una expresión booleana, pero su valor es <tt class="docutils literal">False</tt>.</p>
+<blockquote>
+<pre class="doctest-block">
+&gt;&gt;&gt; 5 &gt; 3
+True
+&gt;&gt;&gt; 3 &gt; 5
+False
+&gt;&gt;&gt;
+</pre>
+</blockquote>
+<p>Los operadores booleanos de comparación que provee Python son los siguientes:</p>
+<table border="1" class="align-center col-md-12 text-center docutils">
+<colgroup>
+<col width="74%">
+<col width="26%">
+</colgroup>
+<thead valign="bottom"><tr>
+<th class="head">Significado</th>
+<th class="head">Expresión</th>
+</tr></thead>
+<tbody valign="top">
+<tr>
+<td>
+<tt class="docutils literal">a</tt> <strong>es igual a</strong> <tt class="docutils literal">b</tt>
+</td>
+<td><tt class="docutils literal">a == b</tt></td>
+</tr>
+<tr>
+<td>
+<cite>a</cite> <strong>no es igual a</strong> <tt class="docutils literal">b</tt>
+</td>
+<td><tt class="docutils literal">a != b</tt></td>
+</tr>
+<tr>
+<td>
+<tt class="docutils literal">a</tt> <strong>es mayor a</strong> <tt class="docutils literal">b</tt>
+</td>
+<td><tt class="docutils literal">a &gt; b</tt></td>
+</tr>
+<tr>
+<td>
+<tt class="docutils literal">a</tt> <strong>es menor a</strong> <tt class="docutils literal">b</tt>
+</td>
+<td><tt class="docutils literal">a &lt; b</tt></td>
+</tr>
+<tr>
+<td>
+<tt class="docutils literal">a</tt> <strong>es mayor o igual a</strong> <tt class="docutils literal">b</tt>
+</td>
+<td><tt class="docutils literal">a &gt;= b</tt></td>
+</tr>
+<tr>
+<td>
+<tt class="docutils literal">a</tt> <strong>es menor o igual a</strong> <tt class="docutils literal">b</tt>
+</td>
+<td><tt class="docutils literal">a &lt;= b</tt></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="operadores-logicos">
+<h3><a class="toc-backref" href=".#id3">Operadores lógicos</a></h3>
+<p>De la misma manera que se puede operar entre números mediante las operaciones de
+suma, resta, etc., también existen tres operadores lógicos para combinar
+expresiones booleanas: <tt class="docutils literal">and</tt> (y), <tt class="docutils literal">or</tt> (o) y <tt class="docutils literal">not</tt> (no).</p>
+<p>El significado de estos operadores es igual al del castellano, pero vale la pena
+recordarlo:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name">
+<col class="field-body">
+<tbody valign="top">
+<tr class="field">
+<th class="field-name">
+<tt class="docutils literal">not a</tt>:</th>
+<td class="field-body">El resultado es <tt class="docutils literal">True</tt> si <tt class="docutils literal">a</tt> es <tt class="docutils literal">False</tt>.
+Y el resultado es <tt class="docutils literal">False</tt> si <tt class="docutils literal">a</tt> es <tt class="docutils literal">True</tt>.</td>
+</tr>
+<tr class="field">
+<th class="field-name">
+<tt class="docutils literal">a and b</tt>:</th>
+<td class="field-body">El resultado es <tt class="docutils literal">True</tt> solamente si <tt class="docutils literal">a</tt> y <tt class="docutils literal">b</tt> valen <tt class="docutils literal">True</tt>.
+Sino el resultado es <tt class="docutils literal">False</tt>.</td>
+</tr>
+<tr class="field">
+<th class="field-name">
+<tt class="docutils literal">a or b</tt>:</th>
+<td class="field-body">El resultado es <tt class="docutils literal">False</tt> solamente si <tt class="docutils literal">a</tt> y <tt class="docutils literal">b</tt> valen <tt class="docutils literal">False</tt>.
+Sino el resultado es <tt class="docutils literal">True</tt>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="comparaciones-simples">
+<h2><a class="toc-backref" href=".#id4">Comparaciones simples</a></h2>
+<p>Volvemos al problema que nos plantearon: Debemos leer un número y, si el número
+es positivo, debemos escribir en pantalla el mensaje "<tt class="docutils literal">Número positivo</tt>".</p>
+<p>Utilizando la instrucción <tt class="docutils literal">if</tt> que acabamos de introducir y que sirve para
+tomar decisiones simples. Dijimos que su formato más sencillo es:</p>
+<pre class="code python"><a name="rest_code_b72c5df846fb4aca9a993317f1d9adb1-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_b72c5df846fb4aca9a993317f1d9adb1-2"></a><span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
+</pre>
+<p>cuyo significado es el siguiente: se evalúa el valor de <tt class="docutils literal">&lt;condición&gt;</tt> y si el
+resultado es <tt class="docutils literal">True</tt> (verdadero) se ejecutan las acciones indicadas como
+<tt class="docutils literal">&lt;hacer algo si se da la condición&gt;</tt>.</p>
+<p>Como ahora ya sabemos también cómo construir condiciones de comparación, estamos
+en condiciones de implementar nuestra solución. Escribimos la función
+<tt class="docutils literal">es_positivo()</tt> que hace lo pedido:</p>
+<pre class="code python"><a name="rest_code_852e57d7742743f2bd267c5785401aa5-1"></a><span class="k">def</span> <span class="nf">es_positivo</span><span class="p">():</span>
+<a name="rest_code_852e57d7742743f2bd267c5785401aa5-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">))</span>
+<a name="rest_code_852e57d7742743f2bd267c5785401aa5-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_852e57d7742743f2bd267c5785401aa5-4"></a>    <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
+</pre>
+<p>y podemos probarla:</p>
+<blockquote>
+<pre class="doctest-block">
+&gt;&gt;&gt; es_positivo()
+Ingrese un numero: 4
+Numero positivo
+&gt;&gt;&gt; es_positivo()
+Ingrese un numero: -25
+&gt;&gt;&gt; es_positivo()
+Ingrese un numero: 0
+&gt;&gt;&gt;
+</pre>
+</blockquote>
+</div>
+</div>
     </div>
     
 
