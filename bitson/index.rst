@@ -20,4 +20,4 @@ Cooperativa de Trabajo BITSON Ltda.
 
 Algunos de nuestros trabajos:
 
-- :doc:`Programación con Software Libre <bitson/prog-sl>`
+- :doc:`Curso de Programación con Software Libre <bitson/prog-sl>`
