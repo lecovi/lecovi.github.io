@@ -164,6 +164,8 @@ y podemos probarla:
     Ingrese un numero: 0
     >>>
 
+.. class:: col-md-12
+
 Y si no...
 ==========
 
@@ -291,8 +293,9 @@ continuación. ¿Por qué se dan estos resultados?
     >>> pn1()
     Ingrese un numero: 25
     Numero positivo
-
     >>>
+
+.. class:: col-md-12
 
 Y si si, y si no...?
 ====================
@@ -317,12 +320,12 @@ Veamos qué se puede hacer cuando se presentan tres o más alternativas:
 Una posibilidad es considerar que se trata de una estructura con dos casos como
 antes, sólo que el segundo caso es complejo (es nuevamente una alternativa):
 
-#. Solicitar al usuario un número, guardarlo en ``x``.
-#. Si ``x > 0``, imprimir "``Número positivo``".
-#. De lo contrario:
+    1. Solicitar al usuario un número, guardarlo en ``x``.
+    2. Si ``x > 0``, imprimir "``Número positivo``".
+    3. De lo contrario:
 
-    #) Si ``x = 0``, imprimir "``Igual a 0``"
-    #) De lo contrario, imprimir "``Número no positivo``"
+        a. Si ``x = 0``, imprimir "``Igual a 0``"
+        b. De lo contrario, imprimir "``Número no positivo``"
 
 Este diseño se implementa como:
 
