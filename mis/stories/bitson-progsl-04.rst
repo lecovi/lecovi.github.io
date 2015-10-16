@@ -11,9 +11,12 @@
 
 .. contents::
 
+Qué pasa si...
+==============
+
 Supongamos que tengamos el siguiente problema.
 
-.. admonition:: **Problema**
+.. admonition:: **Problema 4.1**
 
     Debemos leer un número y, si el número es positivo, debemos escribir en
     pantalla el cartel “``Número positivo``”.
@@ -161,7 +164,12 @@ y podemos probarla:
     Ingrese un numero: 0
     >>>
 
-.. admonition:: Problema
+.. class:: col-md-12
+
+Y si no...
+==========
+
+.. admonition:: **Problema 4.2**
 
     En la etapa de mantenimiento nos dicen que, en realidad, también se
     necesitaría un mensaje "``Número no positivo``" cuando no se cumple la
@@ -179,11 +187,11 @@ La negación de ``x > 0`` es `¬(x > 0)` que se traduce en Python como
 .. code-block:: python
 
     def positivo_o_no():
-        x = input("Ingrese un numero: ")
+        x = input("Ingrese un número: ")
         if x > 0:
-            print "Numero positivo"
+            print("Número positivo")
         if not (x > 0):
-            print "Numero no positivo"
+            print("Número no positivo")
 
 Probamos la nueva solución y obtenemos el resultado buscado:
 
@@ -234,9 +242,9 @@ Este diseño se implementa como:
     def positivo_o_no_nue():
         x = input("Ingrese un numero: ")
         if x > 0:
-            print "Numero positivo"
+            print("Número positivo")
         else:
-            print "Numero no positivo"
+            print("Número no positivo")
 
 y lo probamos:
 
@@ -286,3 +294,112 @@ continuación. ¿Por qué se dan estos resultados?
     Ingrese un numero: 25
     Numero positivo
     >>>
+
+.. class:: col-md-12
+
+Y si si, y si no...?
+====================
+
+Múltiples condicionales anidados
+--------------------------------
+
+La decisión de incluir una alternativa en un programa, parte de una lectura
+cuidadosa de la especificación. En nuestro caso la especificación nos decía:
+
+    Si el número es positivo escribir un mensaje "``Número positivo``", de lo
+    contrario escribir un mensaje "``Número no positivo``".
+
+Veamos qué se puede hacer cuando se presentan tres o más alternativas:
+
+.. admonition:: **Problema 4.3**
+
+    Si el número es positivo escribir un mensaje "``Número positivo``", si el
+    número es igual a 0 un mensaje "``Igual a 0``", y si el número es negativo
+    escribir un mensaje "``Número negativo``".
+
+Una posibilidad es considerar que se trata de una estructura con dos casos como
+antes, sólo que el segundo caso es complejo (es nuevamente una alternativa):
+
+    1. Solicitar al usuario un número, guardarlo en ``x``.
+    2. Si ``x > 0``, imprimir "``Número positivo``".
+    3. De lo contrario:
+
+        a. Si ``x = 0``, imprimir "``Igual a 0``"
+        b. De lo contrario, imprimir "``Número no positivo``"
+
+Este diseño se implementa como:
+
+.. code-block:: python
+
+    def pcn1():
+        x = int(input("Ingrese un número: "))
+        if x > 0:
+            print("Número positivo")
+        else:
+            if x == 0:
+                print("Igual a 0")
+            else:
+                print("Numero negativo")
+
+Esta estructura se conoce como de alternativas anidadas ya que dentro de una de
+las ramas de la alternativa (en este caso la rama del else) se anida otra
+alternativa.
+
+Pero ésta no es la única forma de implementarlo. Existe otra construcción,
+equivalente a la anterior pero que no exige sangrías cada vez mayores en el
+texto. Se trata de la estructura de alternativas encadenadas, que tiene la
+forma:
+
+.. code-block:: python
+
+    if <condición_1>:
+        <hacer algo_1 si se da la condición_1>
+    elif <condición_2>:
+        <hacer algo_2 si se da la condición_2>
+    ...
+    elif <condición_n>:
+        <hacer algo_n si se da la condición_n>
+    else:
+        <hacer otra cosa si no se da ninguna de las condiciones anteriores>
+
+Donde ``if``, ``elif`` y ``else`` son palabras reservadas.
+
+En nuestro ejemplo:
+
+.. code-block:: python
+
+    def pcn2():
+        x = int(input("Ingrese un número: "))
+        if x > 0:
+            print("Número positivo")
+        elif x == 0:
+            print("Igual a 0")
+        else:
+            print("Número negativo")
+
+Se evalúa la primera alternativa, si es verdadera se ejecuta su cuerpo. De lo
+contrario se evalúa la segunda alternativa, si es verdadera se ejecuta su
+cuerpo, etc. Finalmente, si todas las alternativas anteriores fallaron, se
+ejecuta el cuerpo del ``else``.
+
+
+.. class:: alert alert-info
+
+    No sólo mediante los operadores vistos (como ``>`` o ``=``) es posible
+    obtener expresiones booleanas. En Python, se consideran verdaderos los
+    valores numéricos distintos de 0, las cadenas de caracteres que no son
+    vacías, y en general cualquier valor que no sea ``0`` o vacío. Mientras
+    que los valores 0 o vacíos se consideran falsos.
+
+    Así, el ejemplo anterior también podría escribirse de la siguiente manera:
+
+    .. code-block:: python
+
+        def pcn2():
+            x = input("Ingrese un número: ")
+                if x > 0:
+                    print("Número positivo")
+                elif not x:
+                    print("Igual a 0")
+                else:
+                    print("Número negativo")
