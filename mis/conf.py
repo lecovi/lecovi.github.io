@@ -124,22 +124,22 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG:  (
-        ("/blog/", " Blog"),
+        ("/blog/", "<i class=\"fa fa-pencil\"></i> Blog"),
         ((
-            ("/cfp", " <strong>Centro de Formación Profesional<strong>"),
-            ("/cfp/olin/", "&emsp;  Operador Básico GNU/Linux</span>"),
-            ("/cfp/reli/", "&emsp;  Administración de Redes con GNU/Linux"),
+            ("/cfp", "<i class=\"fa fa-linux\"></i> <strong>Centro de Formación Profesional<strong>"),
+            ("/cfp/olin/", "&emsp; <i class=\"fa fa-terminal\"></i> Operador Básico GNU/Linux</span>"),
+            ("/cfp/reli/", "&emsp; <i class=\"fa fa-qq\"></i> Administración de Redes con GNU/Linux"),
             ("/ifts", " <strong>Terciario<strong>"),
-            ("/ifts/arq/", "&emsp;  Arquitectura de Computadoras"),
-            ("/ifts/dlo/", "&emsp;  Diagramación Lógica"),
-            ("/ifts/edd/", "&emsp;  Estructura de Datos"),
-            ("/ifts/par/", "&emsp;  Paradigmas de Programación"),
-            ("/bitson", " <strong>BITSON<strong>"),
-            ("/bitson/prog-sl/", "&emsp;  Programación con Software Libre"),
+            ("/ifts/arq/", "&emsp; <i class=\"fa fa-laptop\"></i> Arquitectura de Computadoras"),
+            ("/ifts/dlo/", "&emsp; <i class=\"fa fa-sitemap\"></i> Diagramación Lógica"),
+            ("/ifts/edd/", "&emsp; <i class=\"fa fa-database\"></i> Estructura de Datos"),
+            ("/ifts/par/", "&emsp; <i class=\"fa fa-code\"></i> Paradigmas de Programación"),
+            ("/bitson", "<i class=\"fa fa-users\"></i> <strong>BITSON<strong>"),
+            ("/bitson/prog-sl/", "&emsp; <i class=\"fa fa-keyboard-o\"></i> Programación con Software Libre"),
             ), "Cursos"),
-        ("/archive.html", " Archivo"),
-        ("/categories/", " Etiquetas"),
-        ("/rss.xml", " RSS"),
+        ("/archive.html", "<i class=\"fa fa-archive\"></i> Archivo"),
+        ("/categories/", "<i class=\"fa fa-tags\"></i> Etiquetas"),
+        ("/rss.xml", "<i class=\"fa fa-rss\"></i> RSS"),
     ),
 }
 
