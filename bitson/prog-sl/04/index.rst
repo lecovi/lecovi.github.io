@@ -179,11 +179,11 @@ La negación de ``x > 0`` es `¬(x > 0)` que se traduce en Python como
 .. code-block:: python
 
     def positivo_o_no():
-        x = input("Ingrese un numero: ")
+        x = input("Ingrese un número: ")
         if x > 0:
-            print "Numero positivo"
+            print("Número positivo")
         if not (x > 0):
-            print "Numero no positivo"
+            print("Número no positivo")
 
 Probamos la nueva solución y obtenemos el resultado buscado:
 
@@ -234,9 +234,9 @@ Este diseño se implementa como:
     def positivo_o_no_nue():
         x = input("Ingrese un numero: ")
         if x > 0:
-            print "Numero positivo"
+            print("Número positivo")
         else:
-            print "Numero no positivo"
+            print("Número no positivo")
 
 y lo probamos:
 
