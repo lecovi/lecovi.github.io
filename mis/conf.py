@@ -124,19 +124,22 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG:  (
-        ("/blog/", "Blog"),
+        ("/blog/", " Blog"),
         ((
-            ("/cfp/olin/", "Operador Básico GNU/Linux"),
-            ("/cfp/reli/", "Administración de Redes con GNU/Linux"),
-            ("/ifts/arq/", "Arquitectura de Computadoras"),
-            ("/ifts/dlo/", "Diagramación Lógica"),
-            ("/ifts/edd/", "Estructura de Datos"),
-            ("/ifts/par/", "Paradigmas de Programación"),
-            ("/bitson/prog-sl/", "Programación con Software Libre")
+            ("/cfp", " <strong>Centro de Formación Profesional<strong>"),
+            ("/cfp/olin/", "&emsp;  Operador Básico GNU/Linux</span>"),
+            ("/cfp/reli/", "&emsp;  Administración de Redes con GNU/Linux"),
+            ("/ifts", " <strong>Terciario<strong>"),
+            ("/ifts/arq/", "&emsp;  Arquitectura de Computadoras"),
+            ("/ifts/dlo/", "&emsp;  Diagramación Lógica"),
+            ("/ifts/edd/", "&emsp;  Estructura de Datos"),
+            ("/ifts/par/", "&emsp;  Paradigmas de Programación"),
+            ("/bitson", " <strong>BITSON<strong>"),
+            ("/bitson/prog-sl/", "&emsp;  Programación con Software Libre"),
             ), "Cursos"),
-        ("/archive.html", "Archivo"),
-        ("/categories/", "Etiquetas"),
-        ("/rss.xml", "Canal RSS"),
+        ("/archive.html", " Archivo"),
+        ("/categories/", " Etiquetas"),
+        ("/rss.xml", " RSS"),
     ),
 }
 

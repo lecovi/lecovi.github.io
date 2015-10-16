@@ -19,6 +19,22 @@
 
 .. raw:: html
 
+    <a href="/bitson" class="feature-link text-center">
+                <div class="feature-icon feature-icon-static">
+                    <span class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-users fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+                <h2 class="index-feature">BITSON</h2>
+    </a>
+
+    <p>Descubrí qué estamos haciendo en la cooperativa.</p>
+
+.. class:: col-md-3
+
+.. raw:: html
+
     <a href="/ifts" class="feature-link text-center">
                 <div class="feature-icon feature-icon-static">
                     <span class="fa-stack fa-3x">
@@ -46,22 +62,6 @@
     </a>
 
     <p>Enterate qué estamos aprendiendo en estos cursos.</p>
-
-.. class:: col-md-3
-
-.. raw:: html
-
-    <a href="/bitson" class="feature-link text-center">
-                <div class="feature-icon feature-icon-static">
-                    <span class="fa-stack fa-3x">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-users fa-stack-1x fa-inverse"></i>
-                    </span>
-                </div>
-                <h2 class="index-feature">BITSON</h2>
-    </a>
-
-    <p>Descubrí qué estamos haciendo en la cooperativa.</p>
 
 .. class:: col-md-3
 
