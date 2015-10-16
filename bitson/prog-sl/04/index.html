@@ -143,14 +143,14 @@ pantalla el cartel “<tt class="docutils literal">Número positivo</tt>”.</p>
 <li>Si <tt class="docutils literal">x &gt; 0</tt>, imprimir "<tt class="docutils literal">Número positivo</tt>"</li>
 </ol>
 <p>Es claro que la primera línea se puede traducir como:</p>
-<pre class="code python"><a name="rest_code_bd834c4b7f8248cb88cd94cf82fec5b6-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">))</span>
+<pre class="code python"><a name="rest_code_fcbfa1e680164278bc352df8893f2b30-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">))</span>
 </pre>
 <p>Sin embargo, con las instrucciones que vimos hasta ahora no podemos tomar el
 tipo de decisiones que nos planteamos en la segunda línea de este diseño.
 Para resolver este problema introducimos una nueva instrucción que llamaremos
 <strong>condicional</strong> que tiene la siguiente forma:</p>
-<pre class="code python"><a name="rest_code_6fc5b4e7abb540508d1032e64666f58d-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_6fc5b4e7abb540508d1032e64666f58d-2"></a><span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
+<pre class="code python"><a name="rest_code_93a09e6566fa4b5cbf3362699ce6699b-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_93a09e6566fa4b5cbf3362699ce6699b-2"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
 </pre>
 <p>Donde <tt class="docutils literal">if</tt> es una de las 31 palabra reservadas que tiene el lenguaje Python.</p>
 <p>¿Qué es la condición que aparece luego de la palabra reservada <tt class="docutils literal">if</tt>?</p>
@@ -273,8 +273,8 @@ Sino el resultado es <tt class="docutils literal">True</tt>.</td>
 es positivo, debemos escribir en pantalla el mensaje "<tt class="docutils literal">Número positivo</tt>".</p>
 <p>Utilizando la instrucción <tt class="docutils literal">if</tt> que acabamos de introducir y que sirve para
 tomar decisiones simples. Dijimos que su formato más sencillo es:</p>
-<pre class="code python"><a name="rest_code_b72c5df846fb4aca9a993317f1d9adb1-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_b72c5df846fb4aca9a993317f1d9adb1-2"></a><span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
+<pre class="code python"><a name="rest_code_01478dfbc51c470d8e9a42ff627ef089-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_01478dfbc51c470d8e9a42ff627ef089-2"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
 </pre>
 <p>cuyo significado es el siguiente: se evalúa el valor de <tt class="docutils literal">&lt;condición&gt;</tt> y si el
 resultado es <tt class="docutils literal">True</tt> (verdadero) se ejecutan las acciones indicadas como
@@ -282,10 +282,10 @@ resultado es <tt class="docutils literal">True</tt> (verdadero) se ejecutan las 
 <p>Como ahora ya sabemos también cómo construir condiciones de comparación, estamos
 en condiciones de implementar nuestra solución. Escribimos la función
 <tt class="docutils literal">es_positivo()</tt> que hace lo pedido:</p>
-<pre class="code python"><a name="rest_code_852e57d7742743f2bd267c5785401aa5-1"></a><span class="k">def</span> <span class="nf">es_positivo</span><span class="p">():</span>
-<a name="rest_code_852e57d7742743f2bd267c5785401aa5-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">))</span>
-<a name="rest_code_852e57d7742743f2bd267c5785401aa5-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_852e57d7742743f2bd267c5785401aa5-4"></a>    <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_c113438aa0b44ab8a6523930c2af967c-1"></a><span class="k">def</span> <span class="nf">es_positivo</span><span class="p">():</span>
+<a name="rest_code_c113438aa0b44ab8a6523930c2af967c-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">))</span>
+<a name="rest_code_c113438aa0b44ab8a6523930c2af967c-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_c113438aa0b44ab8a6523930c2af967c-4"></a>        <span class="k">print</span><span class="p">(</span><span class="s">"Número positivo"</span><span class="p">)</span>
 </pre>
 <p>y podemos probarla:</p>
 <blockquote>
@@ -300,6 +300,120 @@ Ingrese un numero: 0
 &gt;&gt;&gt;
 </pre>
 </blockquote>
+<div class="admonition-problema admonition">
+<p class="first admonition-title">Problema</p>
+<p class="last">En la etapa de mantenimiento nos dicen que, en realidad, también se
+necesitaría un mensaje "<tt class="docutils literal">Número no positivo</tt>" cuando no se cumple la
+condición.</p>
+</div>
+<p>Modificamos la especificación consistentemente y modificamos el diseño:</p>
+<ol class="arabic simple">
+<li>Solicitar al usuario un número, guardarlo en <tt class="docutils literal">x</tt>.</li>
+<li>Si <tt class="docutils literal">x &gt; 0</tt>, imprimir "<tt class="docutils literal">Número positivo</tt>"</li>
+<li>Si no se cumple <tt class="docutils literal">x &gt; 0</tt>, imprimir "<tt class="docutils literal">Número no positivo</tt>"</li>
+</ol>
+<p>La negación de <tt class="docutils literal">x &gt; 0</tt> es <cite>¬(x &gt; 0)</cite> que se traduce en Python como
+<tt class="docutils literal">not (x &gt; 0)</tt>, por lo que implementamos nuestra solución en Python como:</p>
+<pre class="code python"><a name="rest_code_289016653dd44612bbb00dbf583da5d8-1"></a><span class="k">def</span> <span class="nf">positivo_o_no</span><span class="p">():</span>
+<a name="rest_code_289016653dd44612bbb00dbf583da5d8-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">)</span>
+<a name="rest_code_289016653dd44612bbb00dbf583da5d8-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_289016653dd44612bbb00dbf583da5d8-4"></a>        <span class="k">print</span> <span class="s">"Numero positivo"</span>
+<a name="rest_code_289016653dd44612bbb00dbf583da5d8-5"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+<a name="rest_code_289016653dd44612bbb00dbf583da5d8-6"></a>        <span class="k">print</span> <span class="s">"Numero no positivo"</span>
+</pre>
+<p>Probamos la nueva solución y obtenemos el resultado buscado:</p>
+<blockquote>
+<pre class="doctest-block">
+&gt;&gt;&gt; positivo_o_no()
+Ingrese un numero: 4
+Numero positivo
+&gt;&gt;&gt; positivo_o_no()
+Ingrese un numero: -25
+Numero no positivo
+&gt;&gt;&gt; positivo_o_no()
+Ingrese un numero: 0
+Numero no positivo
+&gt;&gt;&gt;50
+</pre>
+</blockquote>
+<p>Sin embargo hay algo que nos preocupa: si ya averiguamos una vez, en la segunda
+línea del cuerpo, <tt class="docutils literal">si x &gt; 0</tt>, ¿Es realmente necesario volver a preguntarlo en
+la cuarta?.</p>
+<p>Existe una construcción alternativa para la estructura de decisión:</p>
+<p><strong>Si se da la condición `C`, hacer `S`, de lo contrario, hacer `T`</strong>. Esta
+estructura tiene la forma:</p>
+<pre class="code python"><a name="rest_code_201dd3f22c8e44a88d01ad7680a5889d-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condición</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_201dd3f22c8e44a88d01ad7680a5889d-2"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">algo</span> <span class="n">si</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
+<a name="rest_code_201dd3f22c8e44a88d01ad7680a5889d-3"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_201dd3f22c8e44a88d01ad7680a5889d-4"></a>    <span class="o">&lt;</span><span class="n">hacer</span> <span class="n">otra</span> <span class="n">cosa</span> <span class="n">si</span> <span class="n">no</span> <span class="n">se</span> <span class="n">da</span> <span class="n">la</span> <span class="n">condición</span><span class="o">&gt;</span>
+</pre>
+<p>Donde <tt class="docutils literal">if</tt> y <tt class="docutils literal">else</tt> son palabras reservadas.</p>
+<p>Su significado es el siguiente: se evalúa <tt class="docutils literal">&lt;condición&gt;</tt>, si el resultado es
+<tt class="docutils literal">True</tt> (verdadero) se ejecutan las acciones indicadas como <tt class="docutils literal">&lt;hacer algo si
+se da la condición&gt;</tt>, y si el resultado es <tt class="docutils literal">False</tt> (falso) se ejecutan las
+acciones indicadas como <tt class="docutils literal">&lt;hacer otra cosa si no se da la condición&gt;</tt>.</p>
+<p>Volvemos a nuestro diseño:</p>
+<ol class="arabic simple">
+<li>Solicitar al usuario un número, guardarlo en <tt class="docutils literal">x</tt>.</li>
+<li>Si <tt class="docutils literal">x &gt; 0</tt>, imprimir "<tt class="docutils literal">Número positivo</tt>".</li>
+<li>De lo contrario, imprimir "<tt class="docutils literal">Número no positivo</tt>".</li>
+</ol>
+<p>Este diseño se implementa como:</p>
+<pre class="code python"><a name="rest_code_771b2b643df54d6f933aca34164e4642-1"></a><span class="k">def</span> <span class="nf">positivo_o_no_nue</span><span class="p">():</span>
+<a name="rest_code_771b2b643df54d6f933aca34164e4642-2"></a>    <span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Ingrese un numero: "</span><span class="p">)</span>
+<a name="rest_code_771b2b643df54d6f933aca34164e4642-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_771b2b643df54d6f933aca34164e4642-4"></a>        <span class="k">print</span> <span class="s">"Numero positivo"</span>
+<a name="rest_code_771b2b643df54d6f933aca34164e4642-5"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_771b2b643df54d6f933aca34164e4642-6"></a>        <span class="k">print</span> <span class="s">"Numero no positivo"</span>
+</pre>
+<p>y lo probamos:</p>
+<blockquote>
+<pre class="doctest-block">
+&gt;&gt;&gt; positivo_o_no_nue()
+Ingrese un numero: 4
+Numero positivo
+&gt;&gt;&gt; positivo_o_no_nue()
+Ingrese un numero: -25
+Numero no positivo
+&gt;&gt;&gt; positivo_o_no_nue()
+Ingrese un numero: 0
+Numero no positivo
+&gt;&gt;&gt;
+</pre>
+</blockquote>
+<p>Es importante destacar que, en general, negar la condición del <tt class="docutils literal">if</tt> y poner
+<tt class="docutils literal">else</tt> no son intercambiables, no necesariamente producen el mismo efecto en
+el programa. Notar qué sucede en los dos programas que se transcriben a
+continuación. ¿Por qué se dan estos resultados?</p>
+<pre class="col-md-6 doctest-block">
+&gt;&gt;&gt; def pn():
+...     x = int(input("Ingrese un número: "))
+...     if x &gt; 0:
+...         print("Número positivo")
+...     x = -x
+...     if x &lt; 0:
+...         print("Número no positivo")
+...
+&gt;&gt;&gt; pn()
+Ingrese un numero: 25
+Número positivo
+Número no positivo
+&gt;&gt;&gt;
+</pre>
+<pre class="col-md-6 doctest-block">
+&gt;&gt;&gt; def pn1():
+...     x = int(input("Ingrese un numero: "))
+...     if x &gt; 0:
+...     print("Número positivo")
+...     x = -x
+...     else:
+...     print("Número no positivo")
+...
+&gt;&gt;&gt; pn1()
+Ingrese un numero: 25
+Numero positivo
+&gt;&gt;&gt;
+</pre>
 </div>
 </div>
     </div>

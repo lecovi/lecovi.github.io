@@ -40,7 +40,7 @@ Para resolver este problema introducimos una nueva instrucción que llamaremos
 .. code-block:: python
 
     if <condición>:
-    <hacer algo si se da la condición>
+        <hacer algo si se da la condición>
 
 Donde ``if`` es una de las 31 palabra reservadas que tiene el lenguaje Python.
 
@@ -133,7 +133,7 @@ tomar decisiones simples. Dijimos que su formato más sencillo es:
 .. code-block:: python
 
     if <condición>:
-    <hacer algo si se da la condición>
+        <hacer algo si se da la condición>
 
 cuyo significado es el siguiente: se evalúa el valor de ``<condición>`` y si el
 resultado es ``True`` (verdadero) se ejecutan las acciones indicadas como
@@ -148,7 +148,7 @@ en condiciones de implementar nuestra solución. Escribimos la función
     def es_positivo():
         x = int(input("Ingrese un numero: "))
         if x > 0:
-        print("Número positivo")
+            print("Número positivo")
 
 y podemos probarla:
 
@@ -159,4 +159,130 @@ y podemos probarla:
     Ingrese un numero: -25
     >>> es_positivo()
     Ingrese un numero: 0
+    >>>
+
+.. admonition:: Problema
+
+    En la etapa de mantenimiento nos dicen que, en realidad, también se
+    necesitaría un mensaje "``Número no positivo``" cuando no se cumple la
+    condición.
+
+Modificamos la especificación consistentemente y modificamos el diseño:
+
+#. Solicitar al usuario un número, guardarlo en ``x``.
+#. Si ``x > 0``, imprimir "``Número positivo``"
+#. Si no se cumple ``x > 0``, imprimir "``Número no positivo``"
+
+La negación de ``x > 0`` es `¬(x > 0)` que se traduce en Python como
+``not (x > 0)``, por lo que implementamos nuestra solución en Python como:
+
+.. code-block:: python
+
+    def positivo_o_no():
+        x = input("Ingrese un numero: ")
+        if x > 0:
+            print "Numero positivo"
+        if not (x > 0):
+            print "Numero no positivo"
+
+Probamos la nueva solución y obtenemos el resultado buscado:
+
+    >>> positivo_o_no()
+    Ingrese un numero: 4
+    Numero positivo
+    >>> positivo_o_no()
+    Ingrese un numero: -25
+    Numero no positivo
+    >>> positivo_o_no()
+    Ingrese un numero: 0
+    Numero no positivo
+    >>>50
+
+Sin embargo hay algo que nos preocupa: si ya averiguamos una vez, en la segunda
+línea del cuerpo, ``si x > 0``, ¿Es realmente necesario volver a preguntarlo en
+la cuarta?.
+
+Existe una construcción alternativa para la estructura de decisión:
+
+**Si se da la condición `C`, hacer `S`, de lo contrario, hacer `T`**. Esta
+estructura tiene la forma:
+
+.. code-block:: python
+
+    if <condición>:
+        <hacer algo si se da la condición>
+    else:
+        <hacer otra cosa si no se da la condición>
+
+Donde ``if`` y ``else`` son palabras reservadas.
+
+Su significado es el siguiente: se evalúa ``<condición>``, si el resultado es
+``True`` (verdadero) se ejecutan las acciones indicadas como ``<hacer algo si
+se da la condición>``, y si el resultado es ``False`` (falso) se ejecutan las
+acciones indicadas como ``<hacer otra cosa si no se da la condición>``.
+
+Volvemos a nuestro diseño:
+
+#. Solicitar al usuario un número, guardarlo en ``x``.
+#. Si ``x > 0``, imprimir "``Número positivo``".
+#. De lo contrario, imprimir "``Número no positivo``".
+
+Este diseño se implementa como:
+
+.. code-block:: python
+
+    def positivo_o_no_nue():
+        x = input("Ingrese un numero: ")
+        if x > 0:
+            print "Numero positivo"
+        else:
+            print "Numero no positivo"
+
+y lo probamos:
+
+    >>> positivo_o_no_nue()
+    Ingrese un numero: 4
+    Numero positivo
+    >>> positivo_o_no_nue()
+    Ingrese un numero: -25
+    Numero no positivo
+    >>> positivo_o_no_nue()
+    Ingrese un numero: 0
+    Numero no positivo
+    >>>
+
+Es importante destacar que, en general, negar la condición del ``if`` y poner
+``else`` no son intercambiables, no necesariamente producen el mismo efecto en
+el programa. Notar qué sucede en los dos programas que se transcriben a
+continuación. ¿Por qué se dan estos resultados?
+
+.. class:: col-md-6
+
+    >>> def pn():
+    ...     x = int(input("Ingrese un número: "))
+    ...     if x > 0:
+    ...         print("Número positivo")
+    ...     x = -x
+    ...     if x < 0:
+    ...         print("Número no positivo")
+    ...
+    >>> pn()
+    Ingrese un numero: 25
+    Número positivo
+    Número no positivo
+    >>>
+
+.. class:: col-md-6
+
+    >>> def pn1():
+    ...     x = int(input("Ingrese un numero: "))
+    ...     if x > 0:
+    ...     print("Número positivo")
+    ...     x = -x
+    ...     else:
+    ...     print("Número no positivo")
+    ...
+    >>> pn1()
+    Ingrese un numero: 25
+    Numero positivo
     >>>
