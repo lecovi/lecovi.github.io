@@ -13,7 +13,7 @@
         Este es mi sitio personal, acá vas a poder encontrar material sobre
         los cursos que estoy dando y algunas de las cosas que me resultan
         interesantes...
-        Espero que algo de todo lo que está acá pueda serte útil.
+        Espero que te sea útil.
 
 .. class:: col-md-3
 
@@ -61,7 +61,7 @@
                 <h2 class="index-feature">BITSON</h2>
     </a>
 
-    <p>Date una vuelta y fijate qué estamos haciendo en la empresa.</p>
+    <p>Descubrí qué estamos haciendo en la cooperativa.</p>
 
 .. class:: col-md-3
 
@@ -77,7 +77,7 @@
                 <h2 class="index-feature">blog</h2>
     </a>
 
-   <p>Revisá las últimas noticias de tecnología.</p>
+   <p>Revisá los últimos artículos de tecnología.</p>
 
 .. class:: col-md-12
 
