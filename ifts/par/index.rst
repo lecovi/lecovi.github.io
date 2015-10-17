@@ -13,14 +13,17 @@
 
 .. class:: align-center
 
-Instituto de Formación Técnica Superior Nº 18
-=============================================
+`Instituto de Formación Técnica Superior Nº 18 <http://www.ifts18.edu.ar>`_
+===========================================================================
 
 .. class:: lead
 
-    Mansilla 3643, Ciudad Autónoma de Buenos Aires
+    Mansilla 3643, Ciudad Autónoma de Buenos Aires ` mapa <http://www.openstreetmap.org/#map=19/-34.59072/-58.41490&layers=N>`_
 
     **Viernes de 18:30 a 22:00hs**
+
+    Suscribite a la lista de correo en este `link
+    <http://listas.bitson.com.ar/listinfo/paradigmas>`_
 
 
 .. sidebar:: Calendario
@@ -57,19 +60,31 @@ A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 
 
 
-Presentación
-============
+Fundamentación
+==============
 
-zzzzzzzzzzadsfr
+Esta instancia curricular brinda herramientas para que los estudiantes puedan
+interpretar, en el contexto de un proyecto, especificaciones o requisitos de las
+asignaciones a programar. Comprende validar la coherencia e integridad de las
+mismas y convalidar su propia interpretación con quienes la hayan realizado o
+provisto. A su vez, plantea la realización de operaciones tales como la
+verificación del cumplimiento de las especificaciones recibidas; la
+planificación y documentación de casos de prueba; la preparación de datos y
+entornos de prueba ("testing") y la generación de código adicional para simular
+el entorno o activar las pruebas. Todos estos procedimientos posibilitarán que
+los estudiantes analicen las causas de comportamientos o resultados no
+previstos para proponer correcciones respecto del código realizando así un
+mejoramiento de la eficiencia ("tunning") de la solución propuesta.
 
 .. class:: col-md-6
 
 Objetivos
 ---------
 
-* Conocer
-* Emplear
-* Comprender
+Que los estudiantes:
+
+* Conozcan los fundamentos de diseño de programas basados en la descomposición modular y la programación estructurada.
+* Adquieran los conocimientos fundamentales de programación tomando como base un lenguaje de programación.
 
 
 .. admonition:: Organización
@@ -83,35 +98,59 @@ Objetivos
     **Evaluación:** Durante toda la cursada y al finalizar el curso.
 
     **Requisitos de aprobación** Cumplimentar al menos 75% de asistencia y la
-    aprobación del examen final.
+    aprobación de los exámenes parciales y del examen final.
 
 
 .. class:: col-md-6
 
-Síntesis del Curso
-------------------
+Ejes de contenido
+-----------------
 
-La sítesis del curso es un breve documento para los alumnos que contempla los
-siguientes 6 puntos:
+* Conceptos generales. El proceso de programación. Diseño de programas.
+* Codificación de programas. Compilación de un programa. Elementos para codificar programas.
+* Paradigmas de Programación: imperativo, orientado a objetos, funcional, lógico.
+* La codificación de las estructuras de control. Tipos de selección: simple (if-else) o múltiple (switch). Tipos de repetición: do-while y for.
+* Algoritmos fundamentales: recorrido, búsqueda, ordenamiento, actualización.
+* Codificación de un programa con arreglos. Manejo de los elementos de un arreglo. Manejo de los elementos de una matriz.
+* Diseño descendente. Proceso de modularización.
+* Utilización de funciones que no regresan valor (módulos).
+* Validación de la entrada de datos.
+* Creación de programas que utilizan registros y archivos. Proceso de un archivo secuencial. Proceso de un archivo directo.
 
-- *Cuando egreses estarás capacitado para...*
-- *Principales temas que veremos...*
-- *Principales actividades que realizaremos...*
-- *Necesitamos que traigas...*
-- *Te recomendamos...*
-- *Evaluaremos en tu cursada...*
 
-Descargate la síntesis_.
+.. class:: col-md-12
 
-.. _síntesis: /par/sintesis.pdf
+Programa de la Asignatura
+-------------------------
 
-.. class:: col-md-6
+La asignatura se divide en 3 (tres) unidades temáticas que nuclean los
+contenidos según la relación existente entre los mismos.
 
-Programa del Curso
-------------------
+* **UNIDAD 1: PROGRAMAS SENCILLOS**
 
-La planificación del curso es un documento que describe las competencias
-profesionales que abordaremos durante la cursada.
+    Construcción de programas. Un ejemplo sencillo. Piezas de un programa
+    Python. Nombres. Expresiones. Tipos de datos. Instrucciones. Ciclos
+    definidos. Guía para el diseño. Documentación de
+    funciones. Imprimir vs Devolver. Uso de funciones en un programa. Resultados
+    de las funciones. Un ejemplo completo. Devolución múltiples resultados.
+    Expresiones booleanas. Expresiones de comparación. Operadores lógicos.
+    Comparaciones simples. Múltiples decisiones consecutivas.
+
+
+* **UNIDAD 2: USANDO FUNCIONES**
+
+    El problema de la búsqueda. Búsqueda lineal. Búsqueda binaria. Apertura y
+    cierre de archivos. Procesamiento. Escritura y Lectura. Manipulación
+    binaria. Persistencia de datos (CSV y binarios). Directorios. Corte de
+    control. Apareo. Errores. Excepciones. Manejo. Procesamiento y propagación.
+    Acceso a la información de contexto. Validaciones.
+
+
+* **UNIDAD 3: APLICACIONES**
+
+    Concetos web: HTTP y HTML. Diseño de aplicaciones. Modelos de datos.
+    Patrón MVC: modelo – vista – controlador. Utilización de framework.
+
 
 Descargate la planificación_.
 

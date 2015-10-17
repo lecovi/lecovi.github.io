@@ -10,13 +10,14 @@
 
 .. class:: h2 align-center
 
-Cooperativa de Trabajo BITSON Ltda.
+`Cooperativa de Trabajo BITSON Ltda. <http://www.bitson.com.ar>`_
 
 
 .. class:: lead align-center
 
-    Adolfo Alsina 1760 10° Of. 42, Ciudad Autónoma de Buenos Aires
-    4381 2971
+    Adolfo Alsina 1760 10° Of. 42, Ciudad Autónoma de Buenos Aires ` mapa <http://www.openstreetmap.org/#map=19/-34.61160/-58.39149&layers=N>`_
+
+    4381 2971 · `info@bitson.com.ar <mailto:info@bitson.com.ar>`_
 
 Algunos de nuestros trabajos:
 

@@ -8,11 +8,6 @@
 .. type: text
 
 
-.. raw:: html
-
-   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
 .. class:: align-center
 
 Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
@@ -20,7 +15,7 @@ Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
 
 .. class:: lead
 
-    Sede Pío IX: Yapeyú 197, Ciudad Autónoma de Buenos Aires
+    Sede Pío IX: Yapeyú 197, Ciudad Autónoma de Buenos Aires ` mapa <http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N>`_
 
     **Martes de 17:00 a 20:30hs**
 
@@ -63,20 +58,23 @@ A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 Presentación
 ============
 
-Este curso surge de la necesidad de preparar profesionalmente a personas que
-puedan manejar un Sistema Operativo de Código Abierto (GNU/Linux), atendiendo a
-las necesidades del mercado laboral actual.
-
+El proyecto se fundamenta en la necesidad de capacitar al alumno en
+conocimientos avanzados de sistemas operativos de código abierto con orientación
+a redes informáticas. Con este curso se pretende capacitar al alumno para dar
+soporte de software y configuración de servidores, complementando de esta manera
+su experiencia la administración de redes.
 
 .. class:: col-md-6
 
 Objetivos
 ---------
 
-* Conocer los conceptos básicos del Sistema Operativo.
-* Emplear los comandos básicos.
-* Comprender las características de este Sistema Operativo.
+Que el alumno adquiera conocimientos avanzados:
 
+* en la operación de sistemas operativos de código abierto.
+* en la estructura y funcionamiento del sistema operativo.
+* para el uso de herramientas de monitoreo y mantenimiento del sistema.
+* para administrar y operar servidores de archivos, de páginas web, correo electrónico y seguridad sobre redes TCP/IP.
 
 .. admonition:: Organización
 

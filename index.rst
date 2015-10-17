@@ -15,7 +15,7 @@
         interesantes...
         Espero que te sea útil.
 
-.. class:: col-md-3
+.. class:: col-md-4
 
 .. raw:: html
 
@@ -29,9 +29,9 @@
                 <h2 class="index-feature">BITSON</h2>
     </a>
 
-    <p>Descubrí qué estamos haciendo en la cooperativa.</p>
+    <p>Descubrí qué hacemos en la cooperativa.</p>
 
-.. class:: col-md-3
+.. class:: col-md-4
 
 .. raw:: html
 
@@ -45,9 +45,9 @@
                 <h2 class="index-feature">I.F.T.S. N°18</h2>
     </a>
 
-   <p>Mirá qué estamos haciendo en estas materias.</p>
+   <p>Mirá qué aprendemos en estas materias.</p>
 
-.. class:: col-md-3
+.. class:: col-md-4
 
 .. raw:: html
 
@@ -61,11 +61,11 @@
                 <h2 class="index-feature">C.F.P. N°34</h2>
     </a>
 
-    <p>Enterate qué estamos aprendiendo en estos cursos.</p>
+    <p>Enterate qué vemos en estos cursos.</p>
 
-.. class:: col-md-3
+.. .. class:: col-md-3
 
-.. raw:: html
+.. .. raw:: html
 
     <a href="/blog" class="feature-link text-center">
                 <div class="feature-icon feature-icon-static">
@@ -77,7 +77,7 @@
                 <h2 class="index-feature">blog</h2>
     </a>
 
-   <p>Revisá los últimos artículos de tecnología.</p>
+..    <p>Revisá los últimos artículos de tecnología.</p>
 
 .. class:: col-md-12
 

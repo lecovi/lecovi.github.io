@@ -7,10 +7,6 @@
 .. description:
 .. type: text
 
-.. raw:: html
-
-   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
 .. class:: align-center
 
 Casa de Cultura y Política Sofía Yussen
@@ -18,11 +14,11 @@ Casa de Cultura y Política Sofía Yussen
 
 .. class:: lead
 
-    Fitz Roy 1327, Ciudad Autónoma de Buenos Aires
+    Fitz Roy 1327, Ciudad Autónoma de Buenos Aires ` mapa <http://www.openstreetmap.org/#map=19/-34.58737/-58.43959&layers=N>`_
 
     **Viernes de 9:00 a 13:00hs**
 
-    Suscribite a la lista haciendo click en este `link
+    Suscribite a la lista de correo en este `link
     <http://listas.bitson.com.ar/listinfo/programacion>`_
 
 
@@ -43,10 +39,10 @@ Clases
 
 A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 
-#. :doc:`Clase 1 <bitson/prog-sl/01>`
-#. :doc:`Clase 2 <bitson/prog-sl/02>`
-#. :doc:`Clase 3 <bitson/prog-sl/03>`
-#. :doc:`Clase 4 <bitson/prog-sl/04>`
+#. :doc:`Introducción a la Programación con Software Libre <bitson/prog-sl/01>`
+#. :doc:`Comandos básicos y entorno de programación <bitson/prog-sl/02>`
+#. :doc:`Funciones <bitson/prog-sl/03>`
+#. :doc:`Condicionales <bitson/prog-sl/04>`
 #. :doc:`Clase 5 <bitson/prog-sl/05>`
 #. :doc:`Clase 6 <bitson/prog-sl/06>`
 #. :doc:`Clase 7 <bitson/prog-sl/07>`
@@ -58,20 +54,51 @@ A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 #. :doc:`Encuesta <bitson/prog-sl/encuesta>`
 
 
-Presentación
-============
+Fundamentación
+==============
 
-zzzzzzzzzzadsfr
+La incorporación de las Tecnologías de Información y Comunicación ha tenido una
+fuerte inserción en la sociedad argentina y en particular como una demanda del
+mercado laboral.
+
+Diversas agencias y organismos estatales y cámaras sectoriales coinciden en
+afirmar que el sector del software y los servicios informáticos tiene para
+nuestro país un carácter fuertemente estratégico. Esto se pone de manifiesto al
+analizar los siguientes factores:
+
+* Es un sector industrial de alto valor agregado, que demanda empleo calificado y con altos niveles salariales.
+* Su desarrollo trae aparejadas "externalidades positivas" sobre el conjunto de la economía, en tanto genera mejoras en la eficiencia y reducción de costos en diversas actividades, mejorando los niveles de competitividad.
+* Es un sector con fuerte y creciente injerencia en el comercio exterior a nivel mundial, lo que lo convierte en una fuente generadora de divisas para el país.
+
+Tal es así, que el Estado Nacional ha asumido una política activa en relación al
+sector, sancionando en el año 2003 la "Ley de Promoción de la Industria del
+Software" (con ampliación y nueva sanción en 2011) y a su vez, el "Plan
+Industrial 20 20", desarrollado por el Ministerio de Industria de la Nación, ha
+incorporado a la cadena del software y los servicios informáticos como uno de
+los sectores fundamentales a estimular por parte del Estado. Entre 2003 y 2010
+el sector generó más de 40.000 puestos de trabajo, pasando de 19.300 a 60.100
+empleos.
+
+En este sentido, la propuesta que aquí se presenta es brindar un panorama
+general respecto a la programación en base software libre, que otorgue
+conocimientos básicos para una primera experiencia laboral, pero que al mismo
+tiempo sensibilice e induzca a los participantes a profundizar su formación en
+este campo.
+
+Por otro lado, el curso brindará conceptos y herramientas básicas de la
+organización cooperativa. El objetivo es promover que los egresados del curso
+busquen formas novedosas de inserción en el mercado laboral, evitando un ingreso
+prematuro a las grandes empresas transnacionales que tienen alto protagonismo en
+el sector y que obturan el proceso de formación profesional.
+
+
 
 .. class:: col-md-6
 
-Objetivos
----------
+Objetivo
+--------
 
-* Conocer
-* Emplear
-* Comprender
-
+Se espera que el egresado del taller pueda realizar algunas tareas de programación junior y de manejo de redes en plataformas abiertas.
 
 .. admonition:: Organización
 
@@ -79,32 +106,17 @@ Objetivos
 
     **Modalidad de cursada:** Presencial.
 
-    **Duración:** 1 cuatrimestre.
+    **Duración:** 3 Meses.
 
     **Evaluación:** Durante toda la cursada y al finalizar el curso.
 
-    **Requisitos de aprobación** Cumplimentar al menos 75% de asistencia y la
+    **Requisitos de ingreso:** manejo de conceptos básicos de computación y
+    familiarización con las herramientas de navegación de Internet. Ser mayor de
+    18 años, tener DNI y CUIL.
+
+    **Requisitos de aprobación:** Cumplimentar al menos 75% de asistencia y la
     aprobación del examen final.
 
-
-.. class:: col-md-6
-
-Síntesis del Curso
-------------------
-
-La sítesis del curso es un breve documento para los alumnos que contempla los
-siguientes 6 puntos:
-
-- *Cuando egreses estarás capacitado para...*
-- *Principales temas que veremos...*
-- *Principales actividades que realizaremos...*
-- *Necesitamos que traigas...*
-- *Te recomendamos...*
-- *Evaluaremos en tu cursada...*
-
-Descargate la síntesis_.
-
-.. _síntesis: /prog-sl/sintesis.pdf
 
 .. class:: col-md-6
 
