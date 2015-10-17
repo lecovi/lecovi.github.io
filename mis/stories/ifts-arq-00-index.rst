@@ -7,18 +7,14 @@
 .. description:
 .. type: text
 
-.. raw:: html
-
-   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
 .. class:: align-center
 
-Instituto de Formación Técnica Superior Nº 18
-=============================================
+`Instituto de Formación Técnica Superior Nº 18 <http://www.ifts18.edu.ar>`_
+===========================================================================
 
 .. class:: lead
 
-    Mansilla 3643, Ciudad Autónoma de Buenos Aires
+    Mansilla 3643, Ciudad Autónoma de Buenos Aires ` <http://www.openstreetmap.org/#map=19/-34.59072/-58.41490&layers=N>`_
 
     **Lunes de 18:30 a 22:00hs**
 
@@ -54,19 +50,24 @@ A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 #. :doc:`Encuesta <ifts/arq/encuesta>`
 
 
-Presentación
-============
+Fundamentación
+==============
 
-zzzzzzzzzzadsfr
+Esta instancia curricular proporciona a los estudiantes una introducción
+histórica del procesamiento de datos y la evolución de las computadoras hasta
+nuestros días, a la vez que les brinda un conocimiento general de la
+arquitectura y la organización de la computadora.
 
 .. class:: col-md-6
 
 Objetivos
 ---------
 
-* Conocer
-* Emplear
-* Comprender
+Que los estudiantes:
+
+* comprendan la importancia del las innovaciones tecnológicas y las automatizaciones aplicadas al análisis de sistemas.
+* conozcan la arquitectura y organización de la computadora.
+* adquieran precisión en el lenguaje de la especialidad.
 
 
 .. admonition:: Organización
@@ -80,35 +81,44 @@ Objetivos
     **Evaluación:** Durante toda la cursada y al finalizar el curso.
 
     **Requisitos de aprobación** Cumplimentar al menos 75% de asistencia y la
-    aprobación del examen final.
+    aprobación de los exámenes parciales y del examen final.
 
 
 .. class:: col-md-6
 
-Síntesis del Curso
-------------------
+Ejes de contenido
+-----------------
 
-La sítesis del curso es un breve documento para los alumnos que contempla los
-siguientes 6 puntos:
+* Historia de la computación. Terminología específica.
+* Esquema básico del elemento físico (hardware).
+* Esquema básico del elemento lógico (software).
+* Sistemas de numeración (decimal, binario y hexadecimal).
+* Arquitectura y organización de la computadora.
+* Concepto de programas rutinas y subrutinas de bajo nivel.
+* Representación de los datos a nivel máquina.
+* Diferencia entre memoria de trabajo y memoria de almacenamiento.
+* Jerarquía de memoria. Organización funcional.
+* Circuitos combinatorios y secuenciales.
 
-- *Cuando egreses estarás capacitado para...*
-- *Principales temas que veremos...*
-- *Principales actividades que realizaremos...*
-- *Necesitamos que traigas...*
-- *Te recomendamos...*
-- *Evaluaremos en tu cursada...*
 
-Descargate la síntesis_.
+.. class:: col-md-12
 
-.. _síntesis: /arq/sintesis.pdf
+Programa de la Asignatura
+-------------------------
 
-.. class:: col-md-6
+La asignatura se divide en 3 (tres) unidades temáticas que nuclean los
+contenidos según la relación existente entre los mismos.
 
-Programa del Curso
-------------------
-
-La planificación del curso es un documento que describe las competencias
-profesionales que abordaremos durante la cursada.
+* **UNIDAD 1: INTRODUCCIÓN Y FUNDAMENTOS.**
+    Historia y definición de informática y computadoras. Unidad básica de
+    información. Sistemas de numeración. Hardware y Software, definición y
+    clasificación.
+* **UNIDAD 2: ARQUITECTURA DE UNA COMPUTADORA DIGITAL**
+    Esquema funcional. El procesador: Unidad Aritmético Lógica, Unidad de
+    control. La memoria. Los dispositivos de E/S. Ejecución de instrucciones.
+* **UNIDAD 3: EL SOPORTE LÓGICO.**
+    Lenguajes, niveles y máquinas virtuales. Procesos. Algoritmos. Circuitos
+    combinatorios y secuenciales.
 
 Descargate la planificación_.
 
