@@ -15,7 +15,7 @@ Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
 
 .. class:: lead
 
-    Sede Pío IX: Yapeyú 197, Ciudad Autónoma de Buenos Aires
+    Sede Pío IX: Yapeyú 197, Ciudad Autónoma de Buenos Aires ` <http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N>`_
 
     **Miércoles de 17:00 a 20:30hs**
 
