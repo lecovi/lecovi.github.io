@@ -14,10 +14,12 @@
 
 .. class:: lead
 
-    Mansilla 3643, Ciudad Autónoma de Buenos Aires ` <http://www.openstreetmap.org/#map=19/-34.59072/-58.41490&layers=N>`_
+    Mansilla 3643, Ciudad Autónoma de Buenos Aires ` mapa <http://www.openstreetmap.org/#map=19/-34.59072/-58.41490&layers=N>`_
 
     **Lunes de 18:30 a 22:00hs**
 
+    Suscribite a la lista de correo en este `link
+    <http://listas.bitson.com.ar/listinfo/estructura>`_
 
 .. sidebar:: Calendario
 
