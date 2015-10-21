@@ -59,4 +59,4 @@ target/
 # Nikola stuff
 mis/cache/
 mis/output/
-mis/.doit.db.db
+mis/.doit.db*
