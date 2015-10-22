@@ -45,33 +45,36 @@ class Plugin(RestExtension):
         directives.register_directive('accordion', Accordion)
         return super(Plugin, self).set_site(site)
 
-CODE = """<div class="panel-group" id="{id}" role="tablist" aria-multiselectable="true">
-    {content}
-</div>
-"""
-
 
 class Accordion(Directive):
     """ reStructuredText extension for inserting collapsible groups or accordion."""
 
     required_arguments = 0
-    optional_arguments = 999
+    optional_arguments = 9999
     final_argument_whitespace = False
     option_spec = {
-            }
+        'class': directives.class_option,
+        'id': directives.unchanged,
+        'role': directives.unchanged,
+        'aria-multiselectable': directives.unchanged,
+        }
+
     has_content = True
 
     def run(self):
         self.assert_has_content()
-
         text = '\n'.join(self.content)
         options = {
-                'id': uuid.uuid4().hex,
-                'content': text,
+            'class': self.arguments[0] if self.arguments else 'panel-group',
+            'id': 'accordion',
+            'role': 'tablist',
+            'aria-multiselectable': 'true'
         }
         options.update(self.options)
-        accordion_node = nodes.raw('', CODE.format(**options), format='html')
 
-        self.state.nested_parse(self.content, self.content_offset, accordion_node)
-        return [accordion_node]
+        node = nodes.container(text)
+        node['classes'] = directives.class_option(options['class'])
+        self.add_name(node)
+        self.state.nested_parse(self.content, self.content_offset, node)
 
+        return [node]
