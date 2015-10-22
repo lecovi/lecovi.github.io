@@ -14,11 +14,19 @@
 Metiéndonos en el mundillo del Software Libre
 ----------------------------------------------
 
-.. .. raw:: html
+.. raw:: html
 
-..    <div class="panel-group" id="accordion">
+    <div class="panel-group" id="accordion">
 
-.. .. collapse:: ¿Qué es un Sistema Operativo?
+.. collapse:: ¿Qué es un Sistema Operativo?
+
+    saraza
+    y más saraza
+
+.. raw:: html
+
+    </div>
+
 
 ¿Qué es un Sistema Operativo?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

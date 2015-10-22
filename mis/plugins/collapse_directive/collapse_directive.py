@@ -31,19 +31,44 @@ from docutils.parsers.rst import Directive, directives
 
 from nikola.plugin_categories import RestExtension
 
+"""Accordion and Collapse group directive for reStructuredText"""
+
 
 class Plugin(RestExtension):
+    """Plugin for accordion and collapse reST directive"""
 
-    name = "collapse_directive"
+    name = "collapse"
 
     def set_site(self, site):
+        """Set Nikola site."""
         self.site = site
         Collapse.site = site
+        directives.register_directive('collapse', Collapse)
         return super(Plugin, self).set_site(site)
+
+CODE_GROUP="""<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    {{ items }}
+</div>"""
+
+CODE_ITEM="""   <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="{{ heading[i] }}">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#{{ collapse[i] }}" aria-expanded="true" aria-controls="{{ collapse[i] }}">
+                    {{ title[i] }}
+                </a>
+            </h4>
+        </div>
+        <div id="{{ collapse[i] }}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="{{ heading[i] }}">
+            <div class="panel-body">
+                {{ body[i] }}
+            </div>
+        </div>
+    </div>
+"""
 
 
 class Collapse(Directive):
-    """ Restructured text extension for inserting collapsible groups or accordion."""
+    """ reStructuredText extension for inserting collapsible groups or accordion."""
 
     # TODO: http://www.tutorialspoint.com/bootstrap/bootstrap_collapse_plugin.htm
     option_spec = {
@@ -62,7 +87,8 @@ class Collapse(Directive):
 
     def run(self):
         if len(self.content) == 0:
-            return
+            msg = 'collapse directive with no content'
+            return [nodes.raw('', '<div class="text-error">{0}</div>'.format(msg), format='html')]
 
         # from nikola.plugins.compile.rest import rst2html
         # content = rst2html('\n'.join(self.content))
@@ -84,4 +110,4 @@ class Collapse(Directive):
         return [nodes.raw('', output, format='html')]
 
 
-directives.register_directive('collapse', Collapse)
+#directives.register_directive('collapse', Collapse)
