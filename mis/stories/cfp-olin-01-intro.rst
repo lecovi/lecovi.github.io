@@ -14,18 +14,17 @@
 Metiéndonos en el mundillo del Software Libre
 ----------------------------------------------
 
-.. raw:: html
+.. container:: panel-group
 
-    <div class="panel-group" id="accordion">
+    .. collapse:: ¿Qué es un Sistema Operativo?
 
-.. collapse:: ¿Qué es un Sistema Operativo?
+        saraza
+        y más saraza
 
-    saraza
-    y más saraza
+    .. collapse:: ¿Qué es GNU/Linux?
 
-.. raw:: html
-
-    </div>
+        saracatunga y
+        mucha más saracatunga
 
 
 ¿Qué es un Sistema Operativo?

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Copyright © 2015 Manuel Kaufmann
+# Copyright © 2015 Manuel Kaufmann & Leandro E. Colombo Viña
 
 # Permission is hereby granted, free of charge, to any
 # person obtaining a copy of this software and associated
@@ -24,8 +24,6 @@
 # OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-from __future__ import unicode_literals
-
 from docutils import nodes
 from docutils.parsers.rst import Directive, directives
 
@@ -45,26 +43,6 @@ class Plugin(RestExtension):
         Collapse.site = site
         directives.register_directive('collapse', Collapse)
         return super(Plugin, self).set_site(site)
-
-CODE_GROUP="""<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-    {{ items }}
-</div>"""
-
-CODE_ITEM="""   <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="{{ heading[i] }}">
-            <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#{{ collapse[i] }}" aria-expanded="true" aria-controls="{{ collapse[i] }}">
-                    {{ title[i] }}
-                </a>
-            </h4>
-        </div>
-        <div id="{{ collapse[i] }}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="{{ heading[i] }}">
-            <div class="panel-body">
-                {{ body[i] }}
-            </div>
-        </div>
-    </div>
-"""
 
 
 class Collapse(Directive):
