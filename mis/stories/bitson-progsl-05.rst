@@ -6,5 +6,8 @@
 .. link:
 .. description:
 .. type: text
+.. template: course.tmpl
+.. prev: /bitson/prog-sl/04
+.. next: /bitson/prog-sl/06
 
 Write your page here.

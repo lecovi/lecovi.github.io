@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Copyright © 2015 Manuel Kaufmann
+# Copyright 2015 Manuel Kaufmann
 
 # Permission is hereby granted, free of charge, to any
 # person obtaining a copy of this software and associated
