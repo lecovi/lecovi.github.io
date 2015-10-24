@@ -1,2 +1,4 @@
 Sitemap: http://lecovi.github.io/sitemapindex.xml
 
+User-Agent: *
+Host: lecovi.github.io
