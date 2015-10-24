@@ -60,3 +60,6 @@ target/
 mis/cache/
 mis/output/
 mis/.doit.db*
+
+# Temporary Files
+*~
