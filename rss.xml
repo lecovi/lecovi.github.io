@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Make it So!</title><link>http://lecovi.github.io/</link><description>Leo's personal site</description><atom:link type="application/rss+xml" href="http://lecovi.github.io/rss.xml" rel="self"></atom:link><language>es</language><lastBuildDate>Sat, 24 Oct 2015 16:20:53 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Empezando con Nikola</title><link>http://lecovi.github.io/blog/empezando-con-nikola/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Make it So!</title><link>http://lecovi.github.io/</link><description>Leo's personal site</description><atom:link href="http://lecovi.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Sun, 25 Oct 2015 23:18:50 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Empezando con Nikola</title><link>http://lecovi.github.io/blog/empezando-con-nikola/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#primeros-pasos" id="id1"&gt;Primeros Pasos&lt;/a&gt;&lt;ul&gt;
@@ -14,266 +14,30 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#publicando-nuestro-sitio-en-github" id="id8"&gt;Publicando nuestro sitio en GitHub&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#creando-el-repositorio-para-el-sitio" id="id9"&gt;Creando el repositorio para el sitio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#poniendo-nikola-en-el-repo" id="id10"&gt;Poniendo Nikola en el repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#configurando-git" id="id9"&gt;Configurando Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#seteando-llaves-ssh-para-usar-con-github" id="id10"&gt;Seteando llaves SSH para usar con GitHub&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#usando-la-llave-para-entrar-a-github" id="id11"&gt;Usando la llave para entrar a GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#creando-el-repositorio-para-el-sitio" id="id12"&gt;Creando el repositorio para el sitio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#poniendo-nikola-en-el-repo" id="id13"&gt;Poniendo Nikola en el repo&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-&lt;p&gt;Hace tiempo que venía con intenciones de sentarme a recopilar los diferentes
-tutoriales y artículos que vengo pensando y escribiendo muchas veces en papel.&lt;/p&gt;
-&lt;p&gt;Y qué mejor manera de empezar que escribiendo sobre cómo voy a escribir...&lt;/p&gt;
-&lt;div class="section" id="primeros-pasos"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://lecovi.github.io/blog/empezando-con-nikola/#id1"&gt;Primeros Pasos&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Voy a suponer que no tenés nada instalado y que no tenés seteado tu ambiente de
-laburo. Estos pasos los probé y los fui haciendo en una máquina virtual con
-Linux Mint Debian Edition "Betsy", por lo que deberían ser 100% compatibles con
-cualquier distro basada en Debian.&lt;/p&gt;
-&lt;p&gt;Para poder trabajar con Nikola, primero tenemos que setear nuestro ambiente de
-Python. Nikola es un generador de sitios estáticos escrito en Python por el
-gran &lt;a class="reference external" href="https://twitter.com/ralsina"&gt;Roberto Alsina&lt;/a&gt; y el &lt;a class="reference external" href="https://getnikola.com/contact.html"&gt;equipo de
-colaboradores&lt;/a&gt; que se ha ido sumando.
-Podés ver la documentación en el &lt;a class="reference external" href="https://getnikola.com/"&gt;sitio oficial&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Desde mi humilde perspectiva es una excelente herramienta para desarrolladores,
-SysAdmins, DevOps y similares que están en la búsqueda de tener un blog/sitio
-fácil de usar, de administrar y de rápida publicación. Además como se genera un
-sitio estático, podés aprovechar el uso de las &lt;a class="reference external" href="https://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="section" id="instalacion-paquetes-de-sistema"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://lecovi.github.io/blog/empezando-con-nikola/#id2"&gt;Instalación paquetes de sistema&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Vamos a usar Nikola con Python 3. Necesitamos tener instalado los siguientes
-paquetes, son herramientas súper comunes, si desarrollás en Python, seguramente ya las tenés instaladas:&lt;/p&gt;
-&lt;div class="sidebar"&gt;
-&lt;p class="first sidebar-title"&gt;Paquetes de sistema&lt;/p&gt;
-&lt;ul class="alert alert-info small last simple"&gt;
-&lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;python3-dev&lt;/span&gt;&lt;/tt&gt;: es el paquete que contiene los archivos fuente para que se puedan compilar al momento de la instalación de nuevos paquetes.&lt;/li&gt;
-&lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;python-pip&lt;/span&gt;&lt;/tt&gt;: es el manejador de paquetes de Python, con esto vas a poder instalar la mayoría de los paquetes para tus programas.&lt;/li&gt;
-&lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;libxml2-dev&lt;/span&gt;&lt;/tt&gt;: librería de desarrollo de &lt;cite&gt;XML&lt;/cite&gt;, necesaria para desarrollar usando la librería de &lt;cite&gt;GNOME XML&lt;/cite&gt;&lt;/li&gt;
-&lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;libxslt1-dev&lt;/span&gt;&lt;/tt&gt;: librería de desarrollo para la conversión de archivos &lt;cite&gt;XML&lt;/cite&gt; a cualquier otro formato, por ejemplo: &lt;cite&gt;HTML&lt;/cite&gt;&lt;/li&gt;
-&lt;li&gt;&lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;zlib1g-dev&lt;/span&gt;&lt;/tt&gt;: librería de desarrollo que implementa el método de compresión «deflate» usando &lt;cite&gt;gzip&lt;/cite&gt; y &lt;cite&gt;PKZIP&lt;/cite&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_6332730e4a42471ab93b4c05dc89fe84-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo apt install python3-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev
-&lt;/pre&gt;&lt;p&gt;Luego de esto, vamos a instalar &lt;cite&gt;virtualenvwrapper&lt;/cite&gt;. Ésta es una herramienta
-que sirve para manejar nuestros entornos virtuales de Python. Muchas veces
-tenemos que estar trabajando en varios proyectos. Y al darse esa situación,
-aparecen conflictos entre diferentes librerías y versiones de paquetes que hay
-que usar. Por eso la mejor manera de prevenirlo es contar con una instalación
-"limpia" para cada proyecto.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="section" id="instalando-el-entorno-virtual"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://lecovi.github.io/blog/empezando-con-nikola/#id3"&gt;Instalando el entorno virtual&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Con &lt;cite&gt;virtualenvwrapper&lt;/cite&gt; podemos no sólo crear estos ambientes sino que además
-vamos a tener todos los ambientes centralizados en un mismo directorio.
-Además provee comandos para el manejo de los entornos virtuales. Consultá la
-&lt;a class="reference external" href="http://virtualenvwrapper.readthedocs.org/en/latest/"&gt;documentación oficial&lt;/a&gt; del proyecto.&lt;/p&gt;
-&lt;p&gt;Para instalarlo, ahora que tenemos &lt;cite&gt;pip&lt;/cite&gt;, simplemente ejecutamos:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_5e9294b90de54cd5b52ddb6195c6aa82-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo pip install virtualenvwrapper
-&lt;/pre&gt;&lt;div class="sidebar"&gt;
-&lt;p class="first sidebar-title"&gt;¿Por qué con instalamos &lt;cite&gt;virtualenvwrapper&lt;/cite&gt; con &lt;cite&gt;sudo&lt;/cite&gt;?&lt;/p&gt;
-&lt;p class="alert alert-info small last"&gt;Necesitamos instalar &lt;cite&gt;virtualenvwrapper&lt;/cite&gt; como &lt;cite&gt;sudoer&lt;/cite&gt; porque necesitamos
-tenerlo en nuestra instalación global de Python.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Ahora ya tenemos &lt;cite&gt;virtualenvwrapper&lt;/cite&gt; instalado. Para que los nuevos comandos de
-&lt;cite&gt;virtualenvwrapper&lt;/cite&gt; funcionen en nuestro sistema, tenés que agregar lo siguiente
-a tu &lt;cite&gt;.bashrc&lt;/cite&gt;, agregalo al final del archivo y va a funcionar de 10:&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_994536f9ee7d4e5684d9f632cb77f0f4-1"&gt;&lt;/a&gt;&lt;span class="go"&gt;export WORKON_HOME=~/.envs&lt;/span&gt;
-&lt;a name="rest_code_994536f9ee7d4e5684d9f632cb77f0f4-2"&gt;&lt;/a&gt;&lt;span class="go"&gt;source /usr/local/bin/virtualenvwrapper.sh&lt;/span&gt;
-&lt;/pre&gt;&lt;div class="sidebar"&gt;
-&lt;p class="first sidebar-title"&gt;Explicación sobre la edición del &lt;cite&gt;.bashrc&lt;/cite&gt;&lt;/p&gt;
-&lt;p class="alert alert-warning small"&gt;Con la directiva &lt;tt class="docutils literal"&gt;export&lt;/tt&gt; estamos generando una nueva variable de entorno
-en nuestro &lt;cite&gt;SHELL&lt;/cite&gt;, esta directiva apunta a un directorio oculto en nuestro
-&lt;cite&gt;HOME&lt;/cite&gt; que se llama &lt;tt class="docutils literal"&gt;.envs&lt;/tt&gt;.&lt;/p&gt;
-&lt;p class="alert alert-warning small last"&gt;Con la directiva &lt;tt class="docutils literal"&gt;source&lt;/tt&gt; estamos cargando en nuestro &lt;cite&gt;SHELL&lt;/cite&gt; los comandos
-que nos agrega &lt;cite&gt;virtualenvwrapper&lt;/cite&gt; para el manejo de entornos virtuales.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;Ahora tenemos que recargar el archivo &lt;cite&gt;.bashrc&lt;/cite&gt; y crear el directorio donde se
-van a alojar todos los entornos virtuales que creemos con &lt;cite&gt;virtualenvwrapper&lt;/cite&gt;.&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_bc4f95760cf9437b951a8fa8242a5fc6-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;. .bashrc
-&lt;a name="rest_code_bc4f95760cf9437b951a8fa8242a5fc6-2"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;mkdir -p &lt;span class="nv"&gt;$WORKON_HOME&lt;/span&gt;
-&lt;/pre&gt;&lt;p&gt;Ahora estamos en condiciones de crear nuestro entorno virtual, al que llamaremos
-&lt;cite&gt;nikola&lt;/cite&gt;. Lo creamos con la instrucción:&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_6d4f565854564d8987d0bff9d22c5021-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; mkvirtualenv -p /usr/bin/python3 nikola
-&lt;a name="rest_code_6d4f565854564d8987d0bff9d22c5021-2"&gt;&lt;/a&gt;&lt;span class="go"&gt;(nikola) $&lt;/span&gt;
-&lt;/pre&gt;&lt;p&gt;Como verán, entre paréntesis nos indica el nombre del entorno virtual en el que
-estamos trabajando. Si ejecutamos &lt;tt class="docutils literal"&gt;python&lt;/tt&gt;, vamos a ver que nos indica que
-la versión a la que llamamos es Python 3 y no Python 2.&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_5f01689db0d549d5b51fe8bdc1be7b0d-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;nikola&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;python
-&lt;a name="rest_code_5f01689db0d549d5b51fe8bdc1be7b0d-2"&gt;&lt;/a&gt;Python 3.4.2 &lt;span class="o"&gt;(&lt;/span&gt;default, Oct  &lt;span class="m"&gt;8&lt;/span&gt; 2014, 10:45:20&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;a name="rest_code_5f01689db0d549d5b51fe8bdc1be7b0d-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;[&lt;/span&gt;GCC 4.9.1&lt;span class="o"&gt;]&lt;/span&gt; on linux
-&lt;a name="rest_code_5f01689db0d549d5b51fe8bdc1be7b0d-4"&gt;&lt;/a&gt;Type &lt;span class="s2"&gt;"help"&lt;/span&gt;, &lt;span class="s2"&gt;"copyright"&lt;/span&gt;, &lt;span class="s2"&gt;"credits"&lt;/span&gt; or &lt;span class="s2"&gt;"license"&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; more information.
-&lt;a name="rest_code_5f01689db0d549d5b51fe8bdc1be7b0d-5"&gt;&lt;/a&gt;&amp;gt;&amp;gt;&amp;gt;
-&lt;/pre&gt;&lt;p&gt;Para salir del entorno virtual, ejecutamos el comando &lt;tt class="docutils literal"&gt;deactivate&lt;/tt&gt;, o
-simplemente cerramos la terminal en la que estamos trabajando.&lt;/p&gt;
-&lt;p&gt;Podemos ejecutar &lt;tt class="docutils literal"&gt;python&lt;/tt&gt; nuevamente, para ver cómo se desactivó el entorno.
-En este caso, se ejecuta Python 2. Perfecto! Todo funciona... ;-)&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_a4a887090c9c4d5a9dba11fcda4ae9ae-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;nikola&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;deactivate
-&lt;a name="rest_code_a4a887090c9c4d5a9dba11fcda4ae9ae-2"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;python
-&lt;a name="rest_code_a4a887090c9c4d5a9dba11fcda4ae9ae-3"&gt;&lt;/a&gt;Python 2.7.9 &lt;span class="o"&gt;(&lt;/span&gt;default, Mar  &lt;span class="m"&gt;1&lt;/span&gt; 2015, 12:57:24&lt;span class="o"&gt;)&lt;/span&gt;
-&lt;a name="rest_code_a4a887090c9c4d5a9dba11fcda4ae9ae-4"&gt;&lt;/a&gt;&lt;span class="o"&gt;[&lt;/span&gt;GCC 4.9.2&lt;span class="o"&gt;]&lt;/span&gt; on linux2
-&lt;a name="rest_code_a4a887090c9c4d5a9dba11fcda4ae9ae-5"&gt;&lt;/a&gt;Type &lt;span class="s2"&gt;"help"&lt;/span&gt;, &lt;span class="s2"&gt;"copyright"&lt;/span&gt;, &lt;span class="s2"&gt;"credits"&lt;/span&gt; or &lt;span class="s2"&gt;"license"&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; more information.
-&lt;a name="rest_code_a4a887090c9c4d5a9dba11fcda4ae9ae-6"&gt;&lt;/a&gt;&amp;gt;&amp;gt;&amp;gt;
-&lt;/pre&gt;&lt;p&gt;Para volver a trabajar en el entorno, usás el comando &lt;tt class="docutils literal"&gt;workon&lt;/tt&gt; seguido del
-nombre del entorno virtual. Para nosotros, sería:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_d7e58db737044b139d4acc1a3d4a78d1-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;workon nikola
-&lt;a name="rest_code_d7e58db737044b139d4acc1a3d4a78d1-2"&gt;&lt;/a&gt;...
-&lt;a name="rest_code_d7e58db737044b139d4acc1a3d4a78d1-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;nikola&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;deactivate
-&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="section" id="instalando-nikola"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://lecovi.github.io/blog/empezando-con-nikola/#id4"&gt;Instalando Nikola&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Ahora simplemente nos queda instalar nikola. En la página oficial está muy bien
-documentado el proceso de instalación, aunque está en inglés. &lt;a class="reference external" href="https://getnikola.com/getting-started.html"&gt;Acá&lt;/a&gt; tenes el link para leerlo.&lt;/p&gt;
-&lt;p&gt;Igualmente, la forma más fácil es a través de &lt;tt class="docutils literal"&gt;pip&lt;/tt&gt;:&lt;/p&gt;
-&lt;p class="alert alert-warning"&gt;¡Eso sí! No te olvides de hacer esto en el entorno virtual.&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_9509db306fa4483cb8b7cde573106a1e-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;workon nikola
-&lt;a name="rest_code_9509db306fa4483cb8b7cde573106a1e-2"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;nikola&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;pip install Nikola
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="creando-nuestro-sitio"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://lecovi.github.io/blog/empezando-con-nikola/#id5"&gt;Creando nuestro sitio&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Después de que termine de ejecutarse la instalación con &lt;tt class="docutils literal"&gt;pip&lt;/tt&gt;, seguimos las
-instrucciones de la &lt;a class="reference external" href="https://getnikola.com/getting-started.html"&gt;documentación&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Si queremos que nuestro sitio se llame, "&lt;em&gt;tecnotux&lt;/em&gt;", deberíamos ejecutar el
-siguiente comando:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_900f5b95981942a2bdffbc38519d7174-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;nikola&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;nikola init tecnotux
-&lt;/pre&gt;&lt;div class="sidebar"&gt;
-&lt;p class="first sidebar-title"&gt;Usando datos de demostración&lt;/p&gt;
-&lt;p class="alert alert-success small"&gt;Si queremos tener datos de muestra para aprender a usar Nikola, podemos
-ejecutar el comando de inicialización del sitio con la opción &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;--demo&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
-&lt;div class="last"&gt;&lt;pre class="code bash"&gt;&lt;a name="rest_code_e24a42ad14f3470d9f3e7dadcd2e614e-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;nikola&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;nikola init --demo tecnotux
-&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Cuando estamos iniciando nuestro sitio, nikola nos preguntará algunas cosas para
-poder configurarlo correctamente.&lt;/p&gt;
-&lt;!-- TODO: poner preguntas de nikola (print screen?) --&gt;
-&lt;div class="section" id="creando-post"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://lecovi.github.io/blog/empezando-con-nikola/#id6"&gt;Creando post&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Ahora que tenemos nuestro sitio configurado, debemos crear nuestro primer post.
-Para eso, debemos ejecutar:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_0e8ae228370741629d1cc1fd19d41b89-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;nikola&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;cd &lt;/span&gt;tecnotux
-&lt;a name="rest_code_0e8ae228370741629d1cc1fd19d41b89-2"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;nikola&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;nikola new_post
-&lt;/pre&gt;&lt;p&gt;Nikola nos preguntará el nombre del post, y creará el archivo dentro del
-directorio &lt;cite&gt;posts&lt;/cite&gt; con el nombre hayamos completado.&lt;/p&gt;
-&lt;p&gt;Luego, simplemente con tu editor de texto preferido (en mi caso &lt;a class="reference external" href="https://atom.io/"&gt;Atom&lt;/a&gt; o &lt;a class="reference external" href="http://www.vim.org/"&gt;Vim&lt;/a&gt;) editamos el contenido del
-archivo utilizando el formato de texto restructuredText.
-Es un formato muy sencillo que se lleva muy bien con Python. Podés consultar una
-breve guía en la &lt;a class="reference external" href="https://getnikola.com/quickref.html"&gt;página de Nikola&lt;/a&gt;.&lt;/p&gt;
-&lt;!-- TODO: ejemplo de rst para Nikola --&gt;
-&lt;/div&gt;
-&lt;div class="section" id="construyendo-el-sitio"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://lecovi.github.io/blog/empezando-con-nikola/#id7"&gt;Construyendo el sitio&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Una vez que terminado o si queremos ver cómo está quedando. Tenemos que
-construir el sitio. Y luego ejecutar el servidor web de prueba para que nos lo
-muestre en nuestro navegador.&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_9821e0687a9e44318e04b741db22300e-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;nikola&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;nikola build
-&lt;a name="rest_code_9821e0687a9e44318e04b741db22300e-2"&gt;&lt;/a&gt;....
-&lt;a name="rest_code_9821e0687a9e44318e04b741db22300e-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;(&lt;/span&gt;nikola&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nv"&gt;$ &lt;/span&gt;nikola serve -b
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="publicando-nuestro-sitio-en-github"&gt;
-&lt;h2&gt;&lt;a class="toc-backref" href="http://lecovi.github.io/blog/empezando-con-nikola/#id8"&gt;Publicando nuestro sitio en GitHub&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Para usar GitHub Pages, por supuesto que tenés que tener una cuenta de GitHub.
-Es gratuito y te va a servir para publicar, además de tu sitio, tus proyectos
-de software libre!&lt;/p&gt;
-&lt;div class="section" id="creando-el-repositorio-para-el-sitio"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://lecovi.github.io/blog/empezando-con-nikola/#id9"&gt;Creando el repositorio para el sitio&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;En el &lt;a class="reference external" href="https://pages.github.com/"&gt;sitio de las páginas de github&lt;/a&gt; están
-explicados los pasos a seguir para crear el repositorio necesario para publicar
-con GitHub Pages.&lt;/p&gt;
-&lt;p&gt;Los pasos son los siguientes:&lt;/p&gt;
-&lt;ol class="arabic"&gt;
-&lt;li&gt;&lt;p class="first"&gt;Crear un repositorio para tu usuario con el nombre: &lt;tt class="docutils literal"&gt;usuario.github.io&lt;/tt&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Si tu usuario es &lt;cite&gt;pepito1234&lt;/cite&gt; vas a tener que crear un repositorio
-llamado &lt;tt class="docutils literal"&gt;pepito1234.github.io&lt;/tt&gt;.
-Creá tu repositorio con el archivo &lt;tt class="docutils literal"&gt;README.md&lt;/tt&gt;, ponele una licencia que te
-parezca y agregale el archivo &lt;tt class="docutils literal"&gt;.gitignore&lt;/tt&gt; con archivos de Python.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Clonás el repositorio con el comando:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_1877b433837f40ed824db224eebb8621-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone https://github.com/pepito1234/pepito1234.github.io
-&lt;/pre&gt;&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Entrás a la carpeta &lt;tt class="docutils literal"&gt;pepito1234.github.io&lt;/tt&gt; y ahí dentro creás un archivo     &lt;tt class="docutils literal"&gt;index.html&lt;/tt&gt; que contenga el siguiente texto:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;pre class="code html"&gt;&lt;a name="rest_code_337caf744fe84bf9bf53a6f1edd745e9-1"&gt;&lt;/a&gt;&lt;span class="nt"&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Este es mi sitio&lt;span class="nt"&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
-&lt;a name="rest_code_337caf744fe84bf9bf53a6f1edd745e9-2"&gt;&lt;/a&gt;&lt;span class="nt"&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;pepito1234&lt;span class="nt"&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Agregás el archivo al repositorio&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_e223cd2259284ae1b7ae461f84f82d3f-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git add --all
-&lt;/pre&gt;&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;&lt;em&gt;Commiteás&lt;/em&gt; los cambios en el &lt;em&gt;repo&lt;/em&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_7303b87f37534cedb79a4ea83399d4d0-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git commit -m &lt;span class="s2"&gt;"Iniciando repositorio"&lt;/span&gt;
-&lt;/pre&gt;&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;&lt;em&gt;Pusheas&lt;/em&gt; el repositorio a GitHub:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_231ed0e67fe14c8c8e15fa79e22fa971-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git push -u origin
-&lt;/pre&gt;&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Ahora a probar! Abrí tu navegador y andá a la dirección: &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;http://usuario.github.io&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Siguiente el ejemplo deberías ir a &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;http://pepito1234.github.io&lt;/span&gt;&lt;/tt&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
+&lt;p&gt;Hace tiempo que vengo con intenciones de sentarme y recopilar los diferentes
+tutoriales y artículos que vengo pensando y escribiendo. Después de buscar
+diferentes herramientás finalmente me decidí por usar &lt;cite&gt;Nikola&lt;/cite&gt; y quiero
+contarles cómo la uso.&lt;/p&gt;
+&lt;p&gt;Asi que, qué mejor manera de empezar que escribiendo un tutorial sobre las
+herramientas que voy a usar para escribir...&lt;/p&gt;
+&lt;p&gt;En este tutorial voy a explicarte los pasos para instalar los paquetes
+necesarios para que &lt;cite&gt;Nikola&lt;/cite&gt; funcione con &lt;cite&gt;GitHub Pages&lt;/cite&gt; desde cero.
+Para eso vamos a:&lt;/p&gt;
+&lt;ol class="arabic simple"&gt;
+&lt;li&gt;Instalar y configurar nuestro entorno de &lt;cite&gt;Python&lt;/cite&gt; para nuestro sitio.&lt;/li&gt;
+&lt;li&gt;Instalar y configurar &lt;cite&gt;git&lt;/cite&gt; como sistema de control de versiones distribuido.&lt;/li&gt;
+&lt;li&gt;Crear nuestro sitio con &lt;cite&gt;Nikola&lt;/cite&gt;.&lt;/li&gt;
+&lt;li&gt;Configurar nuestra cuenta en &lt;cite&gt;GitHub&lt;/cite&gt; para el uso de &lt;cite&gt;GitHub Pages&lt;/cite&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class="section" id="poniendo-nikola-en-el-repo"&gt;
-&lt;h3&gt;&lt;a class="toc-backref" href="http://lecovi.github.io/blog/empezando-con-nikola/#id10"&gt;Poniendo Nikola en el repo&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;Para que github publique nuestro sitio éste tiene que estar en la rama &lt;cite&gt;master&lt;/cite&gt;.
-Por eso, primero debemos crear una nueva rama para alojar nuestro código ahí
-y después tener los archivos que se van a publicar en la rama &lt;cite&gt;master&lt;/cite&gt;.&lt;/p&gt;
-&lt;p&gt;No te preocupes, esto después lo vas a hacer simplemente con un comando de
-Nikola y la publicación va a ser muy fácil...&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p class="first"&gt;Para crear una nueva rama que llamaremos &lt;tt class="docutils literal"&gt;src&lt;/tt&gt; ejecutamos dentro del repositorio:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_fd0260b57f1e469dbf141fae4f45d782-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git checkout -b src
-&lt;/pre&gt;&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Esto crea la nueva rama y nos cambia automáticamente a ella. Ahora estamos
-listos para mover nuestro sitio al repositorio.&lt;/p&gt;
-&lt;p&gt;Si venís siguiendo el tutorial al "pie de la letra", asumo que tenés los
-archivos de tu sitio en el home de tu usuario (&lt;tt class="docutils literal"&gt;~/tecnotux&lt;/tt&gt;).
-También debés tener el repositorio en el home del usuario (&lt;tt class="docutils literal"&gt;pepito1234.github.io&lt;/tt&gt;). Tenemos que mover el contenido de &lt;cite&gt;tecnotux&lt;/cite&gt; dentro
-del directorio del repositorio.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_7d88925e4b094e309dd276d077519a02-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; mv ~/tecnotux ~/pepito1234.github.io
-&lt;/pre&gt;&lt;/blockquote&gt;
-&lt;p&gt;Ahora modificamos el contenido del archivo &lt;tt class="docutils literal"&gt;.gitignore&lt;/tt&gt; para que el git no
-esté pendiente de los nuevos archivos que Nikola necesita para crear los &lt;cite&gt;html&lt;/cite&gt;.
-Para eso, tenemos que agregar las siguientes líneas. Podés hacerlo en cualquier
-lugar del archivo, pero te recomiendo que lo hagas al final del mismo.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_6a51b2ec70b14d88870342cb32ebda70-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;#&lt;/span&gt; Nikola stuff
-&lt;a name="rest_code_6a51b2ec70b14d88870342cb32ebda70-2"&gt;&lt;/a&gt;&lt;span class="go"&gt;mis/cache/&lt;/span&gt;
-&lt;a name="rest_code_6a51b2ec70b14d88870342cb32ebda70-3"&gt;&lt;/a&gt;&lt;span class="go"&gt;mis/output/&lt;/span&gt;
-&lt;a name="rest_code_6a51b2ec70b14d88870342cb32ebda70-4"&gt;&lt;/a&gt;&lt;span class="go"&gt;mis/.doit.db*&lt;/span&gt;
-&lt;/pre&gt;&lt;/blockquote&gt;
-&lt;p&gt;Ahora tenemos que hacer un pequeño cambio en el &lt;tt class="docutils literal"&gt;conf.py&lt;/tt&gt;, tenemos que
-decirle a Nikola que vamos a estar publicando el sitio con GitHub Pages. Para
-eso alrededor de la línea 430 debés tener lo que sigue:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_d2023e4d91524ccabfdf8f76c67c5c6d-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;#&lt;/span&gt; For user.github.io OR organization.github.io pages, the DEPLOY branch
-&lt;a name="rest_code_d2023e4d91524ccabfdf8f76c67c5c6d-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;#&lt;/span&gt; MUST be &lt;span class="s1"&gt;'master'&lt;/span&gt;, and &lt;span class="s1"&gt;'gh-pages'&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; other repositories.
-&lt;a name="rest_code_d2023e4d91524ccabfdf8f76c67c5c6d-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;#&lt;/span&gt;&lt;span class="nv"&gt;GITHUB_SOURCE_BRANCH&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;'gh-pages'&lt;/span&gt;
-&lt;a name="rest_code_d2023e4d91524ccabfdf8f76c67c5c6d-4"&gt;&lt;/a&gt;&lt;span class="go"&gt;GITHUB_DEPLOY_BRANCH = 'master'&lt;/span&gt;
-&lt;a name="rest_code_d2023e4d91524ccabfdf8f76c67c5c6d-5"&gt;&lt;/a&gt;
-&lt;a name="rest_code_d2023e4d91524ccabfdf8f76c67c5c6d-6"&gt;&lt;/a&gt;&lt;span class="gp"&gt;#&lt;/span&gt; The name of the remote where you wish to push to, using
-&lt;a name="rest_code_d2023e4d91524ccabfdf8f76c67c5c6d-7"&gt;&lt;/a&gt;&lt;span class="go"&gt;github_deploy.&lt;/span&gt;
-&lt;a name="rest_code_d2023e4d91524ccabfdf8f76c67c5c6d-8"&gt;&lt;/a&gt;&lt;span class="go"&gt;GITHUB_REMOTE_NAME = 'origin'&lt;/span&gt;
-&lt;/pre&gt;&lt;/blockquote&gt;
-&lt;p&gt;Ya estamos listos, ahora podemos publicar nuestro sitio en GitHub Pages con el
-comando:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_7f73790612214c0689d09b99524b5a95-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; nikola github_deploy
-&lt;/pre&gt;&lt;/blockquote&gt;
-&lt;p&gt;Ahora sólo nos resta seguir escribiendo nuestros artículos y páginas y quedarán
-publicados en &lt;cite&gt;http://pepito1234.github.io&lt;/cite&gt;.&lt;/p&gt;
-&lt;p&gt;Espero que les sirva!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>blog</category><category>github</category><category>nikola</category><category>python</category><guid>http://lecovi.github.io/blog/empezando-con-nikola/</guid><pubDate>Wed, 14 Oct 2015 16:37:37 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/empezando-con-nikola/"&gt;Leer más…&lt;/a&gt; (quedan 11 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>blog</category><category>git</category><category>github</category><category>nikola</category><category>python</category><guid>http://lecovi.github.io/blog/empezando-con-nikola/</guid><pubDate>Wed, 14 Oct 2015 16:37:37 GMT</pubDate></item></channel></rss>

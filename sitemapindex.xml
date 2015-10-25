@@ -7,30 +7,34 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://lecovi.github.io/categories/blog.xml</loc>
-  <lastmod>2015-10-24T16:20:00Z</lastmod>
+  <lastmod>2015-10-25T14:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/cat_tutorial-nikola-github.xml</loc>
-  <lastmod>2015-10-24T16:20:00Z</lastmod>
+  <lastmod>2015-10-25T14:37:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://lecovi.github.io/categories/git.xml</loc>
+  <lastmod>2015-10-25T14:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/github.xml</loc>
-  <lastmod>2015-10-24T16:20:00Z</lastmod>
+  <lastmod>2015-10-25T14:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/nikola.xml</loc>
-  <lastmod>2015-10-24T16:20:00Z</lastmod>
+  <lastmod>2015-10-25T14:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/python.xml</loc>
-  <lastmod>2015-10-24T16:20:00Z</lastmod>
+  <lastmod>2015-10-25T14:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/rss.xml</loc>
-  <lastmod>2015-10-24T16:20:00Z</lastmod>
+  <lastmod>2015-10-25T14:37:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/sitemap.xml</loc>
-  <lastmod>2015-10-24T16:20:00Z</lastmod>
+  <lastmod>2015-10-25T14:37:00Z</lastmod>
  </sitemap>
 </sitemapindex>
