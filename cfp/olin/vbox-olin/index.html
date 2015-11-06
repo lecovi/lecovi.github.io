@@ -15,7 +15,15 @@
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Instalando la máquina virtual">
 <meta property="og:url" content="http://lecovi.github.io/cfp/olin/vbox-olin/">
-<meta property="og:description" content="Write your page here.">
+<meta property="og:description" content="Instalar la nueva máquina virtual del curso consiste en 3 pasos:
+
+Instalar VirtualBox.
+Instalar el Pack de Extensiones de VirtualBox.
+Importar la Máquina Virtual del Curso.
+
+
+Instalando VirtualBox
+Par">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-08-26T15:41:01-03:00">
 </head>
@@ -113,7 +121,75 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Write your page here.</p>
+    <div>
+<p>Instalar la nueva máquina virtual del curso consiste en 3 pasos:</p>
+<ol class="arabic simple">
+<li>Instalar VirtualBox.</li>
+<li>Instalar el Pack de Extensiones de VirtualBox.</li>
+<li>Importar la Máquina Virtual del Curso.</li>
+</ol>
+<div class="section" id="instalando-virtualbox">
+<h2>Instalando VirtualBox</h2>
+<p>Para poder virtualizar máquinas en nuestro sistema necesitamos algún software
+que sepa cómo hacerlo. En este caso utilizaremos VirtualBox, un producto de
+Oracle. Su sitio oficial es <a class="reference external" href="https://www.virtualbox.org/">https://www.virtualbox.org/</a>. Para más
+información se puede consultar el manual oficial en línea de VirtualBox:
+<a class="reference external" href="https://www.virtualbox.org/manual/">https://www.virtualbox.org/manual/</a>.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/01-VBoxHomepage.png"><img alt="/images/olin/02-vm/01-InstalandoVBox/01-VBoxHomepage.thumbnail.png" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/01-VBoxHomepage.thumbnail.png"></a>
+<p>Para descargar el instalador, debemos ir a la sección de Downloads. Ustedes
+seguramente estarán viendo este tutorial desde una computadora con Windows. Por
+lo tanto tendrán que descargar el instalador de VirtualBox para anfitriones
+Windows (VirtualBox 4.X.X for Windows hosts). No importa la arquitectura de su
+procesador ya que el instalador funciona para 32 y 64 bits.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/02-VBoxDownloads.png"><img alt="/images/olin/02-vm/01-InstalandoVBox/02-VBoxDownloads.thumbnail.png" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/02-VBoxDownloads.thumbnail.png"></a>
+<p>Cuando hagamos click sobre el link de descarga nos preguntará dónde queremos
+guardar el instalador. Por una cuestión de simpleza recomiendo dejarlo en la
+carpeta de Descargas.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/03-Guardar_como.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/03-Guardar_como.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/03-Guardar_como.thumbnail.jpg"></a>
+<p>Una vez concluida la descarga abrimos la carpeta donde descargamos el
+instalador y lo ejecutamos haciendo doble click sobre el mismo.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/04-ejecutar.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/04-ejecutar.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/04-ejecutar.thumbnail.jpg"></a>
+<p>Cuando quieran ejecutar el archivo, al menos en Windows 7, seguramente les
+saldrá una advertencia de seguridad para ver si realmente quieren ejecutar el
+archivo. Para poder continuar con la instalación debemos darle al botón de
+"Ejecutar".</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/05-advertencia_seguridad.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/05-advertencia_seguridad.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/05-advertencia_seguridad.thumbnail.jpg"></a>
+<p>Una vez completado esto, arranca el instalador. El instalador es un típico
+instalador de Windows... siguiente, siguiente, siguiente, instalar. Y "voilà"!
+El programa queda instalado.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/06-instalar1.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/06-instalar1.thumbnail.jpg" class="col-md-3" src="../../../images/olin/02-vm/01-InstalandoVBox/06-instalar1.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/07-instalar2.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/07-instalar2.thumbnail.jpg" class="col-md-2" src="../../../images/olin/02-vm/01-InstalandoVBox/07-instalar2.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/08-instalar3.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/08-instalar3.thumbnail.jpg" class="col-md-2" src="../../../images/olin/02-vm/01-InstalandoVBox/08-instalar3.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/09-instalar4.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/09-instalar4.thumbnail.jpg" class="col-md-2" src="../../../images/olin/02-vm/01-InstalandoVBox/09-instalar4.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/10-instalar5.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/10-instalar5.thumbnail.jpg" class="col-md-3" src="../../../images/olin/02-vm/01-InstalandoVBox/10-instalar5.thumbnail.jpg"></a>
+<p>Durante la instalación, saldrán algunos carteles. Según tu configuración del
+UAC (User Account Control, control de cuentas de usuario)</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/11-uac1.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/11-uac1.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/11-uac1.thumbnail.jpg"></a>
+<p>También para que nuestras máquinas virtuales tengan la posibilidad de
+conectarse a una red, VirtualBox necesita instalar un dispositivo virtual de
+controlador de red. Cuando el instalador quiera hacerlo les saldrá el aviso de
+si quieren instalar. Por supuesto que para continuar con la correcta
+instalación, deben aceptarlo.
+Si queremos, podemos tildar la opción de "Confiar en el software de Oracle
+Corporation" y no nos volverá a preguntar si deseamos instalarlo. Ya que, como
+hemos contestado que confiamos en ese software, procederá a instalar.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/12-instalar_red1.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/12-instalar_red1.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/01-InstalandoVBox/12-instalar_red1.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/13-instalar_red2.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/13-instalar_red2.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/01-InstalandoVBox/13-instalar_red2.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/14-instalar_red3.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/14-instalar_red3.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/01-InstalandoVBox/14-instalar_red3.thumbnail.jpg"></a>
+<p>Cuando termine de instalar los dispositivos, el instalador nos devolverá esta
+ventana para terminar la instalación y lanzar la aplicación si deseamos.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/15-finish.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/15-finish.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/15-finish.thumbnail.jpg"></a>
+<p>NOTA: Si por algún motivo cuando termina el instalador, lanzan la aplicación y
+le salta un cartel como el siguiente. Presionen sobre la opción "Este programa
+funciona correctamente". Es simplemente un tema de que Windows no reconoce la
+instalación inmediatamente después de instalado.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/16-advertencia_compatibilidad.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/16-advertencia_compatibilidad.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/16-advertencia_compatibilidad.thumbnail.jpg"></a>
+<p>Finalizado todo esto, podemos observar a continuación la pantalla de bienvenida
+del VirtualBox. Este programa es el administrador de máquinas virtuales que nos
+permitirá controlar las máquinas que deseemos virtualizar.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/17-administrador.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/17-administrador.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/17-administrador.thumbnail.jpg"></a>
+</div>
+</div>
     </div>
     
 

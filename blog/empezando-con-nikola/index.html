@@ -223,8 +223,8 @@ que ejecutar el comando:</p>
 <tt class="docutils literal">git</tt>: el programa que te proporciona soporte para el control distribuido de versiones.</li>
 </ul>
 </div>
-<pre class="code bash"><a name="rest_code_cbf9aa90fbd8444b9616d08e3c6d6c42-1"></a><span class="nv">$ </span>sudo apt install python3-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev git
-<a name="rest_code_cbf9aa90fbd8444b9616d08e3c6d6c42-2"></a><span class="o">[</span>sudo<span class="o">]</span> password <span class="k">for</span> leo:
+<pre class="code bash"><a name="rest_code_e5edf8368a994278901a419480a40632-1"></a><span class="nv">$ </span>sudo apt install python3-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev git
+<a name="rest_code_e5edf8368a994278901a419480a40632-2"></a><span class="o">[</span>sudo<span class="o">]</span> password <span class="k">for</span> leo:
 </pre>
 <p>Luego de esto, vamos a instalar <cite>virtualenvwrapper</cite>. Ésta es una herramienta
 que sirve para manejar nuestros entornos virtuales de <cite>Python</cite>. Muchas veces
@@ -241,8 +241,8 @@ Además provee comandos para el manejo de los entornos virtuales. Consultá la
 <a class="reference external" href="http://virtualenvwrapper.readthedocs.org/en/latest/">documentación oficial</a>
 del proyecto.</p>
 <p>Para instalarlo, ahora que tenemos <cite>pip</cite>, simplemente ejecutamos:</p>
-<pre class="code bash"><a name="rest_code_49905a8a4b6a48238240ce6aebbb7ea6-1"></a><span class="nv">$ </span>sudo pip install virtualenvwrapper
-<a name="rest_code_49905a8a4b6a48238240ce6aebbb7ea6-2"></a><span class="o">[</span>sudo<span class="o">]</span> password <span class="k">for</span> leo:
+<pre class="code bash"><a name="rest_code_7c6024ccee70470f94ee55e381c30424-1"></a><span class="nv">$ </span>sudo pip install virtualenvwrapper
+<a name="rest_code_7c6024ccee70470f94ee55e381c30424-2"></a><span class="o">[</span>sudo<span class="o">]</span> password <span class="k">for</span> leo:
 </pre>
 <div class="sidebar">
 <p class="first sidebar-title">¿Por qué con instalamos <cite>virtualenvwrapper</cite> con <cite>sudo</cite>?</p>
@@ -253,8 +253,8 @@ tenerlo en nuestra instalación global de Python.</p>
 funcionen en nuestro SHELL, tenés que agregar lo siguiente al final de tu
 <cite>.bashrc</cite> (siempre y cuando uses BASH, si tenés ZSH y estás usando <cite>Oh my zsh</cite>
 basta con agregar <cite>virtualenvwrapper</cite> a la lista de plugins):</p>
-<pre class="code console"><a name="rest_code_6fc0754f07454bd0a984a5474eb8b380-1"></a><span class="go">export WORKON_HOME=~/.envs</span>
-<a name="rest_code_6fc0754f07454bd0a984a5474eb8b380-2"></a><span class="go">source /usr/local/bin/virtualenvwrapper.sh</span>
+<pre class="code console"><a name="rest_code_0f106c3e5978467ba5f5b6be5095bed8-1"></a><span class="go">export WORKON_HOME=~/.envs</span>
+<a name="rest_code_0f106c3e5978467ba5f5b6be5095bed8-2"></a><span class="go">source /usr/local/bin/virtualenvwrapper.sh</span>
 </pre>
 <div class="sidebar">
 <p class="first sidebar-title">Explicación sobre la edición del <cite>.bashrc</cite></p>
@@ -267,39 +267,39 @@ que nos agrega <cite>virtualenvwrapper</cite> para el manejo de entornos virtual
 <p>Ahora tenemos que recargar el archivo <cite>.bashrc</cite> y crear el directorio donde se
 van a alojar todos los entornos virtuales que creemos con <cite>virtualenvwrapper</cite>.
 O simplemente podés cerrar y volver a abrir una terminal.</p>
-<pre class="code bash"><a name="rest_code_a0cc64422b6245cb9aa1fcbfd22d3ce5-1"></a><span class="nv">$ </span>. .bashrc
-<a name="rest_code_a0cc64422b6245cb9aa1fcbfd22d3ce5-2"></a><span class="nv">$ </span>mkdir -p <span class="nv">$WORKON_HOME</span>
+<pre class="code bash"><a name="rest_code_46d1e1fac0234399b2530fdd573ae28b-1"></a><span class="nv">$ </span>. .bashrc
+<a name="rest_code_46d1e1fac0234399b2530fdd573ae28b-2"></a><span class="nv">$ </span>mkdir -p <span class="nv">$WORKON_HOME</span>
 </pre>
 <p>Ahora estamos en condiciones de crear nuestro entorno virtual, al que llamaremos
 <cite>mis</cite> (una abreviación de <em>"Make it So"</em>). Lo creamos con la instrucción:</p>
-<pre class="code console"><a name="rest_code_ad38bcf2ad23486c9fba56937126ec98-1"></a><span class="gp">$</span> mkvirtualenv -p /usr/bin/python3 mis
-<a name="rest_code_ad38bcf2ad23486c9fba56937126ec98-2"></a><span class="go">(mis) $</span>
+<pre class="code console"><a name="rest_code_1377549034664e96b10edc94135e5d84-1"></a><span class="gp">$</span> mkvirtualenv -p /usr/bin/python3 mis
+<a name="rest_code_1377549034664e96b10edc94135e5d84-2"></a><span class="go">(mis) $</span>
 </pre>
 <p>Como verán, entre paréntesis nos indica el nombre del entorno virtual en el que
 estamos trabajando. Si ejecutamos <tt class="docutils literal">python</tt>, vamos a ver que nos indica que
 la versión a la que llamamos es <cite>Python 3</cite> y no <cite>Python 2</cite>.</p>
-<pre class="code bash"><a name="rest_code_2422e19c16b34134bd350595bbb3c995-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>python
-<a name="rest_code_2422e19c16b34134bd350595bbb3c995-2"></a>Python 3.4.2 <span class="o">(</span>default, Oct  <span class="m">8</span> 2014, 10:45:20<span class="o">)</span>
-<a name="rest_code_2422e19c16b34134bd350595bbb3c995-3"></a><span class="o">[</span>GCC 4.9.1<span class="o">]</span> on linux
-<a name="rest_code_2422e19c16b34134bd350595bbb3c995-4"></a>Type <span class="s2">"help"</span>, <span class="s2">"copyright"</span>, <span class="s2">"credits"</span> or <span class="s2">"license"</span> <span class="k">for</span> more information.
-<a name="rest_code_2422e19c16b34134bd350595bbb3c995-5"></a>&gt;&gt;&gt;
+<pre class="code bash"><a name="rest_code_22f0e8f92dca44eb831a90eb8a340b8a-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>python
+<a name="rest_code_22f0e8f92dca44eb831a90eb8a340b8a-2"></a>Python 3.4.2 <span class="o">(</span>default, Oct  <span class="m">8</span> 2014, 10:45:20<span class="o">)</span>
+<a name="rest_code_22f0e8f92dca44eb831a90eb8a340b8a-3"></a><span class="o">[</span>GCC 4.9.1<span class="o">]</span> on linux
+<a name="rest_code_22f0e8f92dca44eb831a90eb8a340b8a-4"></a>Type <span class="s2">"help"</span>, <span class="s2">"copyright"</span>, <span class="s2">"credits"</span> or <span class="s2">"license"</span> <span class="k">for</span> more information.
+<a name="rest_code_22f0e8f92dca44eb831a90eb8a340b8a-5"></a>&gt;&gt;&gt;
 </pre>
 <p>Para salir del entorno virtual, ejecutamos el comando <tt class="docutils literal">deactivate</tt>, o
 simplemente cerramos la terminal en la que estamos trabajando.</p>
 <p>Podemos ejecutar <tt class="docutils literal">python</tt> nuevamente, para ver cómo se desactivó el entorno.
 En este caso, se ejecuta <cite>Python 2</cite>.</p>
-<pre class="code bash"><a name="rest_code_8da2ab489ca74d3f9ac7ff89d5fe514d-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>deactivate
-<a name="rest_code_8da2ab489ca74d3f9ac7ff89d5fe514d-2"></a><span class="nv">$ </span>python
-<a name="rest_code_8da2ab489ca74d3f9ac7ff89d5fe514d-3"></a>Python 2.7.9 <span class="o">(</span>default, Mar  <span class="m">1</span> 2015, 12:57:24<span class="o">)</span>
-<a name="rest_code_8da2ab489ca74d3f9ac7ff89d5fe514d-4"></a><span class="o">[</span>GCC 4.9.2<span class="o">]</span> on linux2
-<a name="rest_code_8da2ab489ca74d3f9ac7ff89d5fe514d-5"></a>Type <span class="s2">"help"</span>, <span class="s2">"copyright"</span>, <span class="s2">"credits"</span> or <span class="s2">"license"</span> <span class="k">for</span> more information.
-<a name="rest_code_8da2ab489ca74d3f9ac7ff89d5fe514d-6"></a>&gt;&gt;&gt;
+<pre class="code bash"><a name="rest_code_b402e17435c74d41a06e3b519dc984ae-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>deactivate
+<a name="rest_code_b402e17435c74d41a06e3b519dc984ae-2"></a><span class="nv">$ </span>python
+<a name="rest_code_b402e17435c74d41a06e3b519dc984ae-3"></a>Python 2.7.9 <span class="o">(</span>default, Mar  <span class="m">1</span> 2015, 12:57:24<span class="o">)</span>
+<a name="rest_code_b402e17435c74d41a06e3b519dc984ae-4"></a><span class="o">[</span>GCC 4.9.2<span class="o">]</span> on linux2
+<a name="rest_code_b402e17435c74d41a06e3b519dc984ae-5"></a>Type <span class="s2">"help"</span>, <span class="s2">"copyright"</span>, <span class="s2">"credits"</span> or <span class="s2">"license"</span> <span class="k">for</span> more information.
+<a name="rest_code_b402e17435c74d41a06e3b519dc984ae-6"></a>&gt;&gt;&gt;
 </pre>
 <p>Para volver a trabajar en el entorno, usás el comando <tt class="docutils literal">workon</tt> seguido del
 nombre del entorno virtual. Para nosotros, sería:</p>
-<pre class="code bash"><a name="rest_code_7769e4f0578c494c96237ebebacf16ed-1"></a><span class="nv">$ </span>workon mis
-<a name="rest_code_7769e4f0578c494c96237ebebacf16ed-2"></a>...
-<a name="rest_code_7769e4f0578c494c96237ebebacf16ed-3"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>deactivate
+<pre class="code bash"><a name="rest_code_57df18d8518f4ac483e16804ba102c1c-1"></a><span class="nv">$ </span>workon mis
+<a name="rest_code_57df18d8518f4ac483e16804ba102c1c-2"></a>...
+<a name="rest_code_57df18d8518f4ac483e16804ba102c1c-3"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>deactivate
 </pre>
 </div>
 <div class="section" id="instalando-nikola">
@@ -309,8 +309,8 @@ bien documentado el proceso de instalación, aunque está en inglés.
 <a class="reference external" href="https://getnikola.com/getting-started.html">Acá</a> tenes el link para leerlo.</p>
 <p>Igualmente, la forma más fácil es a través de <tt class="docutils literal">pip</tt>:</p>
 <p class="alert alert-warning">¡Eso sí! No te olvides de hacer esto en el entorno virtual.</p>
-<pre class="code bash"><a name="rest_code_0c8ea828c70547cf9e890e141117b103-1"></a><span class="nv">$ </span>workon mis
-<a name="rest_code_0c8ea828c70547cf9e890e141117b103-2"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>pip install Nikola
+<pre class="code bash"><a name="rest_code_995c2e5141cd406ea664a4d50eb7e1e7-1"></a><span class="nv">$ </span>workon mis
+<a name="rest_code_995c2e5141cd406ea664a4d50eb7e1e7-2"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>pip install Nikola
 </pre>
 </div>
 </div>
@@ -320,13 +320,13 @@ bien documentado el proceso de instalación, aunque está en inglés.
 instrucciones de la <a class="reference external" href="https://getnikola.com/getting-started.html">documentación</a>.</p>
 <p>Si queremos que nuestro sitio se llame, por ejemplo: <strong>"mis"</strong>, deberíamos
 ejecutar el siguiente comando:</p>
-<pre class="code bash"><a name="rest_code_cc35098ad0c94c74ae5994dc466e5a2a-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>nikola init mis
+<pre class="code bash"><a name="rest_code_5f9d6c7a98b04b8d834b2a0fc9bd4f15-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>nikola init mis
 </pre>
 <div class="sidebar">
 <p class="first sidebar-title">Usando datos de demostración</p>
 <p class="alert alert-success small">Si queremos tener datos de muestra para aprender a usar Nikola, podemos
 ejecutar el comando de inicialización del sitio con la opción <tt class="docutils literal"><span class="pre">--demo</span></tt></p>
-<div class="last"><pre class="code bash"><a name="rest_code_dfa4d10aedd04aa9aab80e516fea8ea3-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>nikola init --demo mis
+<div class="last"><pre class="code bash"><a name="rest_code_8e3df6f0cfa8473ea9735ea4c6e38c27-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>nikola init --demo mis
 </pre></div>
 </div>
 <p>Cuando estamos iniciando nuestro sitio, <cite>Nikola</cite> nos preguntará algunas cosas
@@ -336,8 +336,8 @@ para poder configurarlo correctamente.</p>
 <h3><a class="toc-backref" href=".#id6">Creando post</a></h3>
 <p>Ahora que tenemos nuestro sitio configurado, debemos crear nuestro primer post.
 Para eso, debemos ejecutar:</p>
-<pre class="code bash"><a name="rest_code_85235d3bdd6347e5912dacf24c293200-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span><span class="nb">cd </span>mis
-<a name="rest_code_85235d3bdd6347e5912dacf24c293200-2"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>nikola new_post
+<pre class="code bash"><a name="rest_code_7143ffd862504de8974febb4ada7f269-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span><span class="nb">cd </span>mis
+<a name="rest_code_7143ffd862504de8974febb4ada7f269-2"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>nikola new_post
 </pre>
 <p><cite>Nikola</cite> nos preguntará el nombre del post, y creará el archivo dentro del
 directorio <cite>posts</cite> con el nombre hayamos completado.</p>
@@ -367,9 +367,9 @@ el sitio. Es decir, <cite>Nikola</cite> va a leer los archivos que nosotros escr
 para publicar en nuestro sitio.
 Luego de contruirlo vamos a ejecutar el servidor web de prueba para que nos lo
 muestre en nuestro navegador.</p>
-<pre class="code bash"><a name="rest_code_8c8d92db265c4143bd8dc7248d2e0ef4-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>nikola build
-<a name="rest_code_8c8d92db265c4143bd8dc7248d2e0ef4-2"></a>....
-<a name="rest_code_8c8d92db265c4143bd8dc7248d2e0ef4-3"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>nikola serve -b
+<pre class="code bash"><a name="rest_code_2521cd15540f4e5c94e5d04d073f1fa0-1"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>nikola build
+<a name="rest_code_2521cd15540f4e5c94e5d04d073f1fa0-2"></a>....
+<a name="rest_code_2521cd15540f4e5c94e5d04d073f1fa0-3"></a><span class="o">(</span>mis<span class="o">)</span> <span class="nv">$ </span>nikola serve -b
 </pre>
 </div>
 </div>
@@ -393,9 +393,9 @@ que estar copiando todos los archivos de una máquina a la otra.</p>
 <p>Para configurar nuestra identidad simplementen ejecutamos los comandos:</p>
 <p class="alert alert-warning">Obviamente que con tu nombre, tu dirección de correo electrónico y tu editor de
 texto preferido</p>
-<pre class="code console"><a name="rest_code_a5300fd2497245898e09de7949adb29c-1"></a><span class="gp">$</span> git config --global user.name <span class="s2">"Leandro E. Colombo Viña"</span>
-<a name="rest_code_a5300fd2497245898e09de7949adb29c-2"></a><span class="gp">$</span> git config --global user.email colomboleandro@bitson.com.ar
-<a name="rest_code_a5300fd2497245898e09de7949adb29c-3"></a><span class="gp">$</span> git config --global core.editor vim
+<pre class="code console"><a name="rest_code_ef73fe8319484dc58eb244762c642919-1"></a><span class="gp">$</span> git config --global user.name <span class="s2">"Leandro E. Colombo Viña"</span>
+<a name="rest_code_ef73fe8319484dc58eb244762c642919-2"></a><span class="gp">$</span> git config --global user.email colomboleandro@bitson.com.ar
+<a name="rest_code_ef73fe8319484dc58eb244762c642919-3"></a><span class="gp">$</span> git config --global core.editor vim
 </pre>
 </div>
 <div class="section" id="seteando-llaves-ssh-para-usar-con-github">
@@ -419,15 +419,15 @@ nuestras llaves SSH para nuestra cuenta de <cite>GitHub</cite>.
 Podés seguir los pasos de esta <a class="reference external" href="https://help.github.com/articles/generating-ssh-keys/">página de ayuda</a> que intentaré resumir
 a continuación.</p>
 <p>Creamos nuestro par de llaves:</p>
-<pre class="code console"><a name="rest_code_42dee7371f7a43e1b5106791f4a2b964-1"></a><span class="gp">$</span> ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">"colomboleandro@bitson.com.ar"</span>
-<a name="rest_code_42dee7371f7a43e1b5106791f4a2b964-2"></a><span class="go">Generating public/private rsa key pair.</span>
-<a name="rest_code_42dee7371f7a43e1b5106791f4a2b964-3"></a><span class="go">Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Apretá enter]</span>
-<a name="rest_code_42dee7371f7a43e1b5106791f4a2b964-4"></a><span class="go">Enter passphrase (empty for no passphrase): [Escribí una clave]</span>
-<a name="rest_code_42dee7371f7a43e1b5106791f4a2b964-5"></a><span class="go">Enter same passphrase again: [Volvé a escribir tu clave]</span>
-<a name="rest_code_42dee7371f7a43e1b5106791f4a2b964-6"></a><span class="go">Your identification has been saved in /Users/you/.ssh/id_rsa.</span>
-<a name="rest_code_42dee7371f7a43e1b5106791f4a2b964-7"></a><span class="go">Your public key has been saved in /Users/you/.ssh/id_rsa.pub.</span>
-<a name="rest_code_42dee7371f7a43e1b5106791f4a2b964-8"></a><span class="go">The key fingerprint is:</span>
-<a name="rest_code_42dee7371f7a43e1b5106791f4a2b964-9"></a><span class="go">22:5c:2d:6c:00:a4:03:63:62:a1:82:72:08:0a:d5:60 colomboleandro@bitson.com.ar</span>
+<pre class="code console"><a name="rest_code_7be88e5f581b420786d8d7decc6f2436-1"></a><span class="gp">$</span> ssh-keygen -t rsa -b <span class="m">4096</span> -C <span class="s2">"colomboleandro@bitson.com.ar"</span>
+<a name="rest_code_7be88e5f581b420786d8d7decc6f2436-2"></a><span class="go">Generating public/private rsa key pair.</span>
+<a name="rest_code_7be88e5f581b420786d8d7decc6f2436-3"></a><span class="go">Enter file in which to save the key (/Users/you/.ssh/id_rsa): [Apretá enter]</span>
+<a name="rest_code_7be88e5f581b420786d8d7decc6f2436-4"></a><span class="go">Enter passphrase (empty for no passphrase): [Escribí una clave]</span>
+<a name="rest_code_7be88e5f581b420786d8d7decc6f2436-5"></a><span class="go">Enter same passphrase again: [Volvé a escribir tu clave]</span>
+<a name="rest_code_7be88e5f581b420786d8d7decc6f2436-6"></a><span class="go">Your identification has been saved in /Users/you/.ssh/id_rsa.</span>
+<a name="rest_code_7be88e5f581b420786d8d7decc6f2436-7"></a><span class="go">Your public key has been saved in /Users/you/.ssh/id_rsa.pub.</span>
+<a name="rest_code_7be88e5f581b420786d8d7decc6f2436-8"></a><span class="go">The key fingerprint is:</span>
+<a name="rest_code_7be88e5f581b420786d8d7decc6f2436-9"></a><span class="go">22:5c:2d:6c:00:a4:03:63:62:a1:82:72:08:0a:d5:60 colomboleandro@bitson.com.ar</span>
 </pre>
 <p>Si no modificaste nada, entonces ahora tenés dos nuevos archivos
 <tt class="docutils literal"><span class="pre">~/.ssh/id_rsa</span></tt> y <tt class="docutils literal"><span class="pre">~/.ssh/id_rsa.pub</span></tt>, donde el primer es tu <strong>llave
@@ -436,16 +436,16 @@ privada</strong> (que no vas a compartir) y el segundo es tu <strong>llave públ
 <cite>ssh-agent</cite>, que se ocupa de <em>recordar</em> nuestra clave por un período de tiempo.
 Si queremos que esto se ejecute siempre al momento de loguearnos, tenemos que
 agregar a nuestro las siguiente líneas al archivo <tt class="docutils literal"><span class="pre">~/.bash_profile</span></tt>:</p>
-<pre class="code console"><a name="rest_code_cac072f039fa4e988405b37d9e083798-1"></a><span class="go">if [ -z "$SSH_AUTH_SOCK" ] ; then</span>
-<a name="rest_code_cac072f039fa4e988405b37d9e083798-2"></a><span class="go">    eval `ssh-agent -s`</span>
-<a name="rest_code_cac072f039fa4e988405b37d9e083798-3"></a><span class="go">    ssh-add</span>
-<a name="rest_code_cac072f039fa4e988405b37d9e083798-4"></a><span class="go">fi</span>
+<pre class="code console"><a name="rest_code_0525e313eb2c4c45afa572362404c3fe-1"></a><span class="go">if [ -z "$SSH_AUTH_SOCK" ] ; then</span>
+<a name="rest_code_0525e313eb2c4c45afa572362404c3fe-2"></a><span class="go">    eval `ssh-agent -s`</span>
+<a name="rest_code_0525e313eb2c4c45afa572362404c3fe-3"></a><span class="go">    ssh-add</span>
+<a name="rest_code_0525e313eb2c4c45afa572362404c3fe-4"></a><span class="go">fi</span>
 </pre>
 <p>Verificamos si el agente está ejecutándose:</p>
-<pre class="code console"><a name="rest_code_2ed03651f00d447aaf40df111cc785ea-1"></a><span class="gp">$</span> <span class="nb">eval</span> <span class="s2">"</span><span class="k">$(</span>ssh-agent -s<span class="k">)</span><span class="s2">"</span>
+<pre class="code console"><a name="rest_code_c77e8189770443319156f3e2d017ba7f-1"></a><span class="gp">$</span> <span class="nb">eval</span> <span class="s2">"</span><span class="k">$(</span>ssh-agent -s<span class="k">)</span><span class="s2">"</span>
 </pre>
 <p>Ahora agregamos nuestra <strong>llave privada</strong> al agente con el comando:</p>
-<pre class="code console"><a name="rest_code_7ce74706a7944de6972b6a49fd9be9b2-1"></a><span class="gp">$</span> ssh-add ~/.ssh/id_rsa
+<pre class="code console"><a name="rest_code_aeff27bca9224ad79005872903125554-1"></a><span class="gp">$</span> ssh-add ~/.ssh/id_rsa
 </pre>
 <div class="section" id="usando-la-llave-para-entrar-a-github">
 <h4><a class="toc-backref" href=".#id11">Usando la llave para entrar a GitHub</a></h4>
@@ -457,18 +457,18 @@ nombre descriptivo que tenga que ver con la máquina en la que estás trabajando
 Algo como "Escritorio", "Notebook", "Oficina" o lo que se te ocurra.
 Luego tenemos que volcar el contenido de la <strong>llave pública</strong> en <cite>GitHub</cite>.
 Ejecutamos en una terminal:</p>
-<pre class="code console"><a name="rest_code_ed072cffc0374f2191d84e28027f7212-1"></a><span class="gp">$</span> cat ~/.ssh/id_rsa.pub
-<a name="rest_code_ed072cffc0374f2191d84e28027f7212-2"></a><span class="go">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDGK1HYX1x6/wwxSH3hHExZnbBW66TPnIMAWk</span>
-<a name="rest_code_ed072cffc0374f2191d84e28027f7212-3"></a><span class="go">PZs/OYFR4fiqt87ZV7s1avGQDzUes3vAn00ubDzDd/MfZKMPu92Lmz24DdPLvMTDYutOGAAwu9</span>
-<a name="rest_code_ed072cffc0374f2191d84e28027f7212-4"></a><span class="go">vyCfMT8Htlv+lypg5/K3ZdMeQ/dSKy2ii7zumdAUdKEROgISUuuwaVsudOeyRSCsfO91sCnQ/5</span>
-<a name="rest_code_ed072cffc0374f2191d84e28027f7212-5"></a><span class="go">/0IYUvGG2Hwz0yvqyub55nz2kwj1lJn9rTzCJumlIvORlt3lnCG0vWNGZEDrdRmyrtoiOmvJVF</span>
-<a name="rest_code_ed072cffc0374f2191d84e28027f7212-6"></a><span class="go">Uwj4P9WPOQjzzUHUXmbKOLHB5rbO5uVTyJZTlUC9HWxaR9Ln5HCNpG2/vY+rKLY0MxtR5kYiwS</span>
-<a name="rest_code_ed072cffc0374f2191d84e28027f7212-7"></a><span class="go">CP2dqWsuNz1IHa6HA7CQOt6MXQO5ZIMax2bLKSZ7Ib1XJIR+X/6oglxQ/KXJF9U182JynzmNKD</span>
-<a name="rest_code_ed072cffc0374f2191d84e28027f7212-8"></a><span class="go">TGxIFA2Hp3ZG6WbZ6IBWLmFqC3A7XapYkrNCzp1XSEygPcu+4jP5trUjQS0NayCDECs1GU+/xd</span>
-<a name="rest_code_ed072cffc0374f2191d84e28027f7212-9"></a><span class="go">fjlg80KRMtjndKQbabP+TQnZF6O3Q2qnRiZk+YVzYXUM2PxO/E9JlWY77GxvU+G7HHYKHUy8W5</span>
-<a name="rest_code_ed072cffc0374f2191d84e28027f7212-10"></a><span class="go">gdNfKlNhEruGPxDUyXG2Qs/DZ/CIE9y7zjLtMxOPe9qWu06UZTNJSLNx04yosVkTliuPGKGLPt</span>
-<a name="rest_code_ed072cffc0374f2191d84e28027f7212-11"></a><span class="go">0SOxUaiDSDmmIzNR6nhPANmR3EwIGZcQ8rl/qIDXpznR/qecHQ+WuesQ== colomboleandro@</span>
-<a name="rest_code_ed072cffc0374f2191d84e28027f7212-12"></a><span class="go">bitson.com.ar</span>
+<pre class="code console"><a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-1"></a><span class="gp">$</span> cat ~/.ssh/id_rsa.pub
+<a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-2"></a><span class="go">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDGK1HYX1x6/wwxSH3hHExZnbBW66TPnIMAWk</span>
+<a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-3"></a><span class="go">PZs/OYFR4fiqt87ZV7s1avGQDzUes3vAn00ubDzDd/MfZKMPu92Lmz24DdPLvMTDYutOGAAwu9</span>
+<a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-4"></a><span class="go">vyCfMT8Htlv+lypg5/K3ZdMeQ/dSKy2ii7zumdAUdKEROgISUuuwaVsudOeyRSCsfO91sCnQ/5</span>
+<a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-5"></a><span class="go">/0IYUvGG2Hwz0yvqyub55nz2kwj1lJn9rTzCJumlIvORlt3lnCG0vWNGZEDrdRmyrtoiOmvJVF</span>
+<a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-6"></a><span class="go">Uwj4P9WPOQjzzUHUXmbKOLHB5rbO5uVTyJZTlUC9HWxaR9Ln5HCNpG2/vY+rKLY0MxtR5kYiwS</span>
+<a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-7"></a><span class="go">CP2dqWsuNz1IHa6HA7CQOt6MXQO5ZIMax2bLKSZ7Ib1XJIR+X/6oglxQ/KXJF9U182JynzmNKD</span>
+<a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-8"></a><span class="go">TGxIFA2Hp3ZG6WbZ6IBWLmFqC3A7XapYkrNCzp1XSEygPcu+4jP5trUjQS0NayCDECs1GU+/xd</span>
+<a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-9"></a><span class="go">fjlg80KRMtjndKQbabP+TQnZF6O3Q2qnRiZk+YVzYXUM2PxO/E9JlWY77GxvU+G7HHYKHUy8W5</span>
+<a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-10"></a><span class="go">gdNfKlNhEruGPxDUyXG2Qs/DZ/CIE9y7zjLtMxOPe9qWu06UZTNJSLNx04yosVkTliuPGKGLPt</span>
+<a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-11"></a><span class="go">0SOxUaiDSDmmIzNR6nhPANmR3EwIGZcQ8rl/qIDXpznR/qecHQ+WuesQ== colomboleandro@</span>
+<a name="rest_code_4f688faa176746e9a5ccbbbcb398619a-12"></a><span class="go">bitson.com.ar</span>
 </pre>
 <p>Copiamos ese contenido y lo pegamos en el campo de <strong>Key</strong> del formulario de
 <cite>GitHub</cite>.
@@ -476,13 +476,13 @@ Para finalizar, presionamos sobre el botón <strong>Add Key</strong> y confirmam
 nuestra clave de usuario.</p>
 <p>Para verificar que todo funciona ejecutamos y si nos pregunta si nos queremos
 seguir conectando, contestamos <tt class="docutils literal">yes</tt>:</p>
-<pre class="code console"><a name="rest_code_cc6ce1ce52bd42b8b4267587f0ff614a-1"></a><span class="gp">$</span> ssh -T git@github.com
-<a name="rest_code_cc6ce1ce52bd42b8b4267587f0ff614a-2"></a><span class="go">The authenticity of host 'github.com (207.97.227.239)' can't be</span>
-<a name="rest_code_cc6ce1ce52bd42b8b4267587f0ff614a-3"></a><span class="go">established.</span>
-<a name="rest_code_cc6ce1ce52bd42b8b4267587f0ff614a-4"></a><span class="go">RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span>
-<a name="rest_code_cc6ce1ce52bd42b8b4267587f0ff614a-5"></a><span class="go">Are you sure you want to continue connecting (yes/no)? yes</span>
-<a name="rest_code_cc6ce1ce52bd42b8b4267587f0ff614a-6"></a><span class="go">Hi lecovi! You've successfully authenticated, but GitHub does not</span>
-<a name="rest_code_cc6ce1ce52bd42b8b4267587f0ff614a-7"></a><span class="go">provide shell access.</span>
+<pre class="code console"><a name="rest_code_df0900d6c8e743eb85cc973e7f3a5ba0-1"></a><span class="gp">$</span> ssh -T git@github.com
+<a name="rest_code_df0900d6c8e743eb85cc973e7f3a5ba0-2"></a><span class="go">The authenticity of host 'github.com (207.97.227.239)' can't be</span>
+<a name="rest_code_df0900d6c8e743eb85cc973e7f3a5ba0-3"></a><span class="go">established.</span>
+<a name="rest_code_df0900d6c8e743eb85cc973e7f3a5ba0-4"></a><span class="go">RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span>
+<a name="rest_code_df0900d6c8e743eb85cc973e7f3a5ba0-5"></a><span class="go">Are you sure you want to continue connecting (yes/no)? yes</span>
+<a name="rest_code_df0900d6c8e743eb85cc973e7f3a5ba0-6"></a><span class="go">Hi lecovi! You've successfully authenticated, but GitHub does not</span>
+<a name="rest_code_df0900d6c8e743eb85cc973e7f3a5ba0-7"></a><span class="go">provide shell access.</span>
 </pre>
 <p>Con esto debería quedar funcionando nuestro SHELL con las llaves registradas. Y
 vamos a poder actualizar nuestro repositorio en <cite>GitHub</cite> sin tener que estar
@@ -509,36 +509,36 @@ parezca y agregale el archivo <tt class="docutils literal">.gitignore</tt> con a
 <li>
 <p class="first">Clonás el repositorio con el comando:</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_0f2c8f8c31404bf0861ecc30d67452e6-1"></a><span class="gp">$</span> git clone https://github.com/lecovi/lecovi.github.io
+<pre class="code console"><a name="rest_code_0e683aa10dbf4f5a83435f3621acf93b-1"></a><span class="gp">$</span> git clone https://github.com/lecovi/lecovi.github.io
 </pre>
 </blockquote>
 </li>
 <li>
 <p class="first">Entrás a la carpeta <tt class="docutils literal">lecovi.github.io</tt> y ahí dentro creás un archivo <tt class="docutils literal">index.html</tt> que contenga el siguiente texto:</p>
 <blockquote>
-<pre class="code html"><a name="rest_code_507f7d9edeff4a87ad7ef0f2609589be-1"></a><span class="nt">&lt;h1&gt;</span>Este es mi sitio<span class="nt">&lt;/h1&gt;</span>
-<a name="rest_code_507f7d9edeff4a87ad7ef0f2609589be-2"></a><span class="nt">&lt;h2&gt;</span>lecovi<span class="nt">&lt;/h2&gt;</span>
+<pre class="code html"><a name="rest_code_91541d327c1548e2bc48f5ff6769dd8f-1"></a><span class="nt">&lt;h1&gt;</span>Este es mi sitio<span class="nt">&lt;/h1&gt;</span>
+<a name="rest_code_91541d327c1548e2bc48f5ff6769dd8f-2"></a><span class="nt">&lt;h2&gt;</span>lecovi<span class="nt">&lt;/h2&gt;</span>
 </pre>
 </blockquote>
 </li>
 <li>
 <p class="first">Agregás el archivo al repositorio</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_8e373feb21ef4b8d8d70b465528b72b9-1"></a><span class="gp">$</span> git add --all
+<pre class="code console"><a name="rest_code_3a94aa15158943b0b09d8edb0e60e206-1"></a><span class="gp">$</span> git add --all
 </pre>
 </blockquote>
 </li>
 <li>
 <p class="first"><em>Commiteás</em> los cambios en el <em>repo</em>:</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_4819b39b8fb5418bad44664009575ef8-1"></a><span class="gp">$</span> git commit -m <span class="s2">"Iniciando repositorio"</span>
+<pre class="code console"><a name="rest_code_1c63f04d26954d2e8cac656e2993bc72-1"></a><span class="gp">$</span> git commit -m <span class="s2">"Iniciando repositorio"</span>
 </pre>
 </blockquote>
 </li>
 <li>
 <p class="first"><em>Pusheas</em> el repositorio a GitHub:</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_1ae0bb234b954e75b2b8b72a73b8106d-1"></a><span class="gp">$</span> git push -u origin
+<pre class="code console"><a name="rest_code_b79d5a12b1bd4f419270b69b19289aac-1"></a><span class="gp">$</span> git push -u origin
 </pre>
 </blockquote>
 </li>
@@ -561,7 +561,7 @@ Nikola y la publicación va a ser muy fácil...</p>
 <li>
 <p class="first">Para crear una nueva rama que llamaremos <tt class="docutils literal">src</tt> ejecutamos dentro del repositorio:</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_eeb8993378724356a5b94c0547da5bf0-1"></a><span class="gp">$</span> git checkout -b src
+<pre class="code console"><a name="rest_code_99a44a57289b454f80860538b46c9e25-1"></a><span class="gp">$</span> git checkout -b src
 </pre>
 </blockquote>
 </li>
@@ -573,7 +573,7 @@ archivos de tu sitio en el home de tu usuario (<tt class="docutils literal">~/mi
 También debés tener el repositorio en el home del usuario (<tt class="docutils literal">lecovi.github.io</tt>).
 Tenemos que mover el contenido de <cite>mis</cite> dentro del directorio del repositorio.</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_746481f251a043fb95300e8f2749cbb3-1"></a><span class="gp">$</span> mv ~/mis ~/lecovi.github.io
+<pre class="code console"><a name="rest_code_6a2061e5bdc74f639bb0179407ba7ecb-1"></a><span class="gp">$</span> mv ~/mis ~/lecovi.github.io
 </pre>
 </blockquote>
 <p>Ahora modificamos el contenido del archivo <tt class="docutils literal">.gitignore</tt> para que el git no
@@ -581,30 +581,30 @@ esté pendiente de los nuevos archivos que Nikola necesita para crear los <cite>
 Para eso, tenemos que agregar las siguientes líneas. Podés hacerlo en cualquier
 lugar del archivo, pero te recomiendo que lo hagas al final del mismo.</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_a8a1a1f2f75c4bb19e29c359d2c2671a-1"></a><span class="gp">#</span> Nikola stuff
-<a name="rest_code_a8a1a1f2f75c4bb19e29c359d2c2671a-2"></a><span class="go">mis/cache/</span>
-<a name="rest_code_a8a1a1f2f75c4bb19e29c359d2c2671a-3"></a><span class="go">mis/output/</span>
-<a name="rest_code_a8a1a1f2f75c4bb19e29c359d2c2671a-4"></a><span class="go">mis/.doit.db*</span>
+<pre class="code console"><a name="rest_code_4b11c5d969d34bb68e9acaeb62faee13-1"></a><span class="gp">#</span> Nikola stuff
+<a name="rest_code_4b11c5d969d34bb68e9acaeb62faee13-2"></a><span class="go">mis/cache/</span>
+<a name="rest_code_4b11c5d969d34bb68e9acaeb62faee13-3"></a><span class="go">mis/output/</span>
+<a name="rest_code_4b11c5d969d34bb68e9acaeb62faee13-4"></a><span class="go">mis/.doit.db*</span>
 </pre>
 </blockquote>
 <p>Ahora tenemos que hacer un pequeño cambio en el <tt class="docutils literal">conf.py</tt>, tenemos que
 decirle a Nikola que vamos a estar publicando el sitio con GitHub Pages. Para
 eso alrededor de la línea 430 debés tener lo que sigue:</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_0381b18e01054496a34cf8b716314721-1"></a><span class="gp">#</span> For user.github.io OR organization.github.io pages, the DEPLOY branch
-<a name="rest_code_0381b18e01054496a34cf8b716314721-2"></a><span class="gp">#</span> MUST be <span class="s1">'master'</span>, and <span class="s1">'gh-pages'</span> <span class="k">for</span> other repositories.
-<a name="rest_code_0381b18e01054496a34cf8b716314721-3"></a><span class="gp">#</span><span class="nv">GITHUB_SOURCE_BRANCH</span> <span class="o">=</span> <span class="s1">'gh-pages'</span>
-<a name="rest_code_0381b18e01054496a34cf8b716314721-4"></a><span class="go">GITHUB_DEPLOY_BRANCH = 'master'</span>
-<a name="rest_code_0381b18e01054496a34cf8b716314721-5"></a>
-<a name="rest_code_0381b18e01054496a34cf8b716314721-6"></a><span class="gp">#</span> The name of the remote where you wish to push to, using
-<a name="rest_code_0381b18e01054496a34cf8b716314721-7"></a><span class="go">github_deploy.</span>
-<a name="rest_code_0381b18e01054496a34cf8b716314721-8"></a><span class="go">GITHUB_REMOTE_NAME = 'origin'</span>
+<pre class="code console"><a name="rest_code_f8387a6f40d040b7aaba8694faa2662f-1"></a><span class="gp">#</span> For user.github.io OR organization.github.io pages, the DEPLOY branch
+<a name="rest_code_f8387a6f40d040b7aaba8694faa2662f-2"></a><span class="gp">#</span> MUST be <span class="s1">'master'</span>, and <span class="s1">'gh-pages'</span> <span class="k">for</span> other repositories.
+<a name="rest_code_f8387a6f40d040b7aaba8694faa2662f-3"></a><span class="gp">#</span><span class="nv">GITHUB_SOURCE_BRANCH</span> <span class="o">=</span> <span class="s1">'gh-pages'</span>
+<a name="rest_code_f8387a6f40d040b7aaba8694faa2662f-4"></a><span class="go">GITHUB_DEPLOY_BRANCH = 'master'</span>
+<a name="rest_code_f8387a6f40d040b7aaba8694faa2662f-5"></a>
+<a name="rest_code_f8387a6f40d040b7aaba8694faa2662f-6"></a><span class="gp">#</span> The name of the remote where you wish to push to, using
+<a name="rest_code_f8387a6f40d040b7aaba8694faa2662f-7"></a><span class="go">github_deploy.</span>
+<a name="rest_code_f8387a6f40d040b7aaba8694faa2662f-8"></a><span class="go">GITHUB_REMOTE_NAME = 'origin'</span>
 </pre>
 </blockquote>
 <p>Ya estamos listos, ahora podemos publicar nuestro sitio en GitHub Pages con el
 comando:</p>
 <blockquote>
-<pre class="code console"><a name="rest_code_d72c300bc9e544c09533c979717b9f78-1"></a><span class="gp">$</span> nikola github_deploy
+<pre class="code console"><a name="rest_code_126d6e5fff8a490f86546c13554e4349-1"></a><span class="gp">$</span> nikola github_deploy
 </pre>
 </blockquote>
 <p>Ahora sólo nos resta seguir escribiendo nuestros artículos y páginas y quedarán
