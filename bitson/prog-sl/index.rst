@@ -43,14 +43,14 @@ A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 #. :doc:`Comandos básicos y entorno de programación <bitson/prog-sl/02>`
 #. :doc:`Funciones <bitson/prog-sl/03>`
 #. :doc:`Condicionales <bitson/prog-sl/04>`
-#. :doc:`Clase 5 <bitson/prog-sl/05>`
-#. :doc:`Clase 6 <bitson/prog-sl/06>`
-#. :doc:`Clase 7 <bitson/prog-sl/07>`
-#. :doc:`Clase 8 <bitson/prog-sl/08>`
-#. :doc:`Clase 9 <bitson/prog-sl/09>`
-#. :doc:`Clase 10 <bitson/prog-sl/10>`
-#. :doc:`Clase 11 <bitson/prog-sl/11>`
-#. :doc:`Clase 12 <bitson/prog-sl/12>`
+#. :doc:`Ciclos<bitson/prog-sl/05>`
+#. :doc:`Cadena de caracteres <bitson/prog-sl/06>`
+#. :doc:`Listas y Tuplas <bitson/prog-sl/07>`
+#. :doc:`Diccionarios <bitson/prog-sl/08>`
+#. :doc:`Manejo de archivos <bitson/prog-sl/09>`
+#. :doc:`Contención de errores <bitson/prog-sl/10>`
+#. :doc:`Procesamiento de archivos <bitson/prog-sl/11>`
+#. :doc:`Introducción a la programación orientada a objetos <bitson/prog-sl/12>`
 #. :doc:`Encuesta <bitson/prog-sl/encuesta>`
 
 
