@@ -7,6 +7,11 @@
 .. description:
 .. type: text
 
+.. class:: jumbotron
+
+    **Objetivo**: instalar VirtualBox para poder manejar máquinas virtuales e
+    instalar la máquina virtual que vamos a usar a lo largo del curso.
+
 .. class:: alert alert-info pull-right
 
 .. contents::
