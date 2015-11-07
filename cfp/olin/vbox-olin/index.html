@@ -15,15 +15,13 @@
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Instalando la máquina virtual">
 <meta property="og:url" content="http://lecovi.github.io/cfp/olin/vbox-olin/">
-<meta property="og:description" content="Instalar la nueva máquina virtual del curso consiste en 3 pasos:
+<meta property="og:description" content="Objetivo: instalar VirtualBox para poder manejar máquinas virtuales e
+instalar la máquina virtual que vamos a usar a lo largo del curso.
 
-Instalar VirtualBox.
-Instalar el Pack de Extensiones de VirtualBox.
-Importar la Máquina Virtual del Curso.
+Contents
 
-
-Instalando VirtualBox
-Par">
+Entendiendo las máquinas virtuales
+Instalando una Má">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-08-26T15:41:01-03:00">
 </head>
@@ -122,72 +120,160 @@ Par">
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
+<p class="jumbotron"><strong>Objetivo</strong>: instalar VirtualBox para poder manejar máquinas virtuales e
+instalar la máquina virtual que vamos a usar a lo largo del curso.</p>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href=".#entendiendo-las-maquinas-virtuales" id="id2">Entendiendo las máquinas virtuales</a></li>
+<li>
+<a class="reference internal" href=".#instalando-una-maquina-virtual-con-virtualbox" id="id3">Instalando una Máquina Virtual con VirtualBox</a><ul>
+<li><a class="reference internal" href=".#instalando-virtualbox" id="id4">Instalando VirtualBox</a></li>
+<li><a class="reference internal" href=".#instalando-virtualbox-extension-pack" id="id5">Instalando VirtualBox Extension Pack</a></li>
+<li><a class="reference internal" href=".#importando-una-vm" id="id6">Importando una VM</a></li>
+<li><a class="reference internal" href=".#video" id="id7">Video</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="entendiendo-las-maquinas-virtuales">
+<h2><a class="toc-backref" href=".#id2">Entendiendo las máquinas virtuales</a></h2>
+<iframe width="425" height="344" src="//www.youtube.com/embed/SE0FmD0bcg4?rel=0&amp;hd=1&amp;wmode=transparent"></iframe>
+</div>
+<div class="section" id="instalando-una-maquina-virtual-con-virtualbox">
+<h2><a class="toc-backref" href=".#id3">Instalando una Máquina Virtual con VirtualBox</a></h2>
 <p>Instalar la nueva máquina virtual del curso consiste en 3 pasos:</p>
 <ol class="arabic simple">
-<li>Instalar VirtualBox.</li>
-<li>Instalar el Pack de Extensiones de VirtualBox.</li>
+<li>Instalar <cite>VirtualBox</cite>.</li>
+<li>Instalar el Pack de Extensiones de <cite>VirtualBox</cite>.</li>
 <li>Importar la Máquina Virtual del Curso.</li>
 </ol>
 <div class="section" id="instalando-virtualbox">
-<h2>Instalando VirtualBox</h2>
+<h3><a class="toc-backref" href=".#id4">Instalando VirtualBox</a></h3>
 <p>Para poder virtualizar máquinas en nuestro sistema necesitamos algún software
-que sepa cómo hacerlo. En este caso utilizaremos VirtualBox, un producto de
-Oracle. Su sitio oficial es <a class="reference external" href="https://www.virtualbox.org/">https://www.virtualbox.org/</a>. Para más
-información se puede consultar el manual oficial en línea de VirtualBox:
+que sepa cómo hacerlo. Hoy utilizaremos <cite>VirtualBox</cite>, un producto de <cite>Oracle</cite>.
+Su sitio oficial es <a class="reference external" href="https://www.virtualbox.org/">https://www.virtualbox.org/</a>.  Para más información se
+puede consultar el manual oficial en línea en:
 <a class="reference external" href="https://www.virtualbox.org/manual/">https://www.virtualbox.org/manual/</a>.</p>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/01-VBoxHomepage.png"><img alt="/images/olin/02-vm/01-InstalandoVBox/01-VBoxHomepage.thumbnail.png" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/01-VBoxHomepage.thumbnail.png"></a>
-<p>Para descargar el instalador, debemos ir a la sección de Downloads. Ustedes
-seguramente estarán viendo este tutorial desde una computadora con Windows. Por
-lo tanto tendrán que descargar el instalador de VirtualBox para anfitriones
-Windows (VirtualBox 4.X.X for Windows hosts). No importa la arquitectura de su
-procesador ya que el instalador funciona para 32 y 64 bits.</p>
+<p>Para descargar el instalador, debemos ir a la sección de <a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">Downloads</a>.  Asumo que seguramente estarán
+viendo este tutorial desde una computadora con <cite>Windows</cite>. Por lo tanto tendrán
+que descargar el instalador de <cite>VirtualBox</cite> para anfitriones <cite>Windows</cite>
+(<strong>VirtualBox 5.X.X for Windows hosts</strong>). No importa la arquitectura de su
+procesador ya que el instalador funciona para 32 y para 64 bits.</p>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/02-VBoxDownloads.png"><img alt="/images/olin/02-vm/01-InstalandoVBox/02-VBoxDownloads.thumbnail.png" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/02-VBoxDownloads.thumbnail.png"></a>
 <p>Cuando hagamos click sobre el link de descarga nos preguntará dónde queremos
 guardar el instalador. Por una cuestión de simpleza recomiendo dejarlo en la
-carpeta de Descargas.</p>
+carpeta de <em>Descargas</em>.</p>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/03-Guardar_como.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/03-Guardar_como.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/03-Guardar_como.thumbnail.jpg"></a>
 <p>Una vez concluida la descarga abrimos la carpeta donde descargamos el
 instalador y lo ejecutamos haciendo doble click sobre el mismo.</p>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/04-ejecutar.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/04-ejecutar.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/04-ejecutar.thumbnail.jpg"></a>
-<p>Cuando quieran ejecutar el archivo, al menos en Windows 7, seguramente les
+<p>Cuando quieran ejecutar el archivo, al menos en <cite>Windows 7</cite>, seguramente les
 saldrá una advertencia de seguridad para ver si realmente quieren ejecutar el
 archivo. Para poder continuar con la instalación debemos darle al botón de
-"Ejecutar".</p>
+<em>Ejecutar</em>.</p>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/05-advertencia_seguridad.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/05-advertencia_seguridad.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/05-advertencia_seguridad.thumbnail.jpg"></a>
 <p>Una vez completado esto, arranca el instalador. El instalador es un típico
-instalador de Windows... siguiente, siguiente, siguiente, instalar. Y "voilà"!
-El programa queda instalado.</p>
-<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/06-instalar1.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/06-instalar1.thumbnail.jpg" class="col-md-3" src="../../../images/olin/02-vm/01-InstalandoVBox/06-instalar1.thumbnail.jpg"></a>
-<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/07-instalar2.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/07-instalar2.thumbnail.jpg" class="col-md-2" src="../../../images/olin/02-vm/01-InstalandoVBox/07-instalar2.thumbnail.jpg"></a>
-<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/08-instalar3.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/08-instalar3.thumbnail.jpg" class="col-md-2" src="../../../images/olin/02-vm/01-InstalandoVBox/08-instalar3.thumbnail.jpg"></a>
-<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/09-instalar4.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/09-instalar4.thumbnail.jpg" class="col-md-2" src="../../../images/olin/02-vm/01-InstalandoVBox/09-instalar4.thumbnail.jpg"></a>
-<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/10-instalar5.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/10-instalar5.thumbnail.jpg" class="col-md-3" src="../../../images/olin/02-vm/01-InstalandoVBox/10-instalar5.thumbnail.jpg"></a>
-<p>Durante la instalación, saldrán algunos carteles. Según tu configuración del
-UAC (User Account Control, control de cuentas de usuario)</p>
+instalador de <cite>Windows</cite>... <tt class="docutils literal">siguiente, siguiente, siguiente, <span class="pre">...,</span> instalar</tt>.
+Y <em>voilà</em>!  El programa queda instalado.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/06-instalar1.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/06-instalar1.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/01-InstalandoVBox/06-instalar1.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/07-instalar2.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/07-instalar2.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/01-InstalandoVBox/07-instalar2.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/08-instalar3.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/08-instalar3.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/01-InstalandoVBox/08-instalar3.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/09-instalar4.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/09-instalar4.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/01-InstalandoVBox/09-instalar4.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/10-instalar5.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/10-instalar5.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/01-InstalandoVBox/10-instalar5.thumbnail.jpg"></a>
+<p class="alert alert-warning small col-md-12">Durante la instalación, saldrán algunos carteles. Según tu
+configuración del UAC (User Account Control, control de cuentas de
+usuario)</p>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/11-uac1.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/11-uac1.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/11-uac1.thumbnail.jpg"></a>
-<p>También para que nuestras máquinas virtuales tengan la posibilidad de
-conectarse a una red, VirtualBox necesita instalar un dispositivo virtual de
+<p class="col-md-12">También para que nuestras máquinas virtuales tengan la posibilidad de
+conectarse a una red, <cite>VirtualBox</cite> necesita instalar un dispositivo virtual de
 controlador de red. Cuando el instalador quiera hacerlo les saldrá el aviso de
 si quieren instalar. Por supuesto que para continuar con la correcta
-instalación, deben aceptarlo.
-Si queremos, podemos tildar la opción de "Confiar en el software de Oracle
-Corporation" y no nos volverá a preguntar si deseamos instalarlo. Ya que, como
-hemos contestado que confiamos en ese software, procederá a instalar.</p>
+instalación, deben aceptarlo.  Si queremos, podemos tildar la opción de
+"<em>Confiar en el software de Oracle Corporation</em>" y no nos volverá a preguntar
+si deseamos instalarlo. Ya que, como hemos contestado que confiamos en ese
+software, procederá a instalar.</p>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/12-instalar_red1.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/12-instalar_red1.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/01-InstalandoVBox/12-instalar_red1.thumbnail.jpg"></a>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/13-instalar_red2.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/13-instalar_red2.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/01-InstalandoVBox/13-instalar_red2.thumbnail.jpg"></a>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/14-instalar_red3.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/14-instalar_red3.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/01-InstalandoVBox/14-instalar_red3.thumbnail.jpg"></a>
-<p>Cuando termine de instalar los dispositivos, el instalador nos devolverá esta
-ventana para terminar la instalación y lanzar la aplicación si deseamos.</p>
+<p class="col-md-12">Cuando termine de instalar los dispositivos, el instalador nos devolverá esta
+ventana para terminar la instalación y lanzar la aplicación.</p>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/15-finish.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/15-finish.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/15-finish.thumbnail.jpg"></a>
-<p>NOTA: Si por algún motivo cuando termina el instalador, lanzan la aplicación y
-le salta un cartel como el siguiente. Presionen sobre la opción "Este programa
-funciona correctamente". Es simplemente un tema de que Windows no reconoce la
-instalación inmediatamente después de instalado.</p>
+<p class="alert alert-warning small col-md-12">Si por algún motivo cuando termina el instalador, lanzan la aplicación
+y le salta un cartel como el siguiente. Presionen sobre la opción
+"<em>Este programa funciona correctamente</em>". Es simplemente un tema de que
+<cite>Windows</cite> no reconoce la instalación inmediatamente después de
+instalado.</p>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/16-advertencia_compatibilidad.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/16-advertencia_compatibilidad.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/16-advertencia_compatibilidad.thumbnail.jpg"></a>
 <p>Finalizado todo esto, podemos observar a continuación la pantalla de bienvenida
-del VirtualBox. Este programa es el administrador de máquinas virtuales que nos
-permitirá controlar las máquinas que deseemos virtualizar.</p>
+del <cite>VirtualBox</cite>. Este programa es el administrador de máquinas virtuales que
+nos permitirá controlar las máquinas que deseemos virtualizar.</p>
 <a class="reference external image-reference" href="../../../images/olin/02-vm/01-InstalandoVBox/17-administrador.jpg"><img alt="/images/olin/02-vm/01-InstalandoVBox/17-administrador.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/01-InstalandoVBox/17-administrador.thumbnail.jpg"></a>
+</div>
+<div class="section" id="instalando-virtualbox-extension-pack">
+<h3><a class="toc-backref" href=".#id5">Instalando VirtualBox Extension Pack</a></h3>
+<p>Con el <strong>Extension Pack</strong> podremos tener soporte para dispositivos <cite>USB 2.0</cite>,
+el protocolo <cite>RDP (Remote Desktop Protocol)</cite> de <cite>VirtualBox</cite> y booteo por <cite>PXE</cite>
+para placas de red Intel. Para descargar el pack de extensiones debemos ir a la
+sección <a class="reference external" href="https://www.virtualbox.org/wiki/Downloads">Downloads</a> y ahí
+descargamos la segunda opción: <tt class="docutils literal">VirtualBox` 5.X.X Oracle VM `VirtualBox`
+Extension Pack</tt>.  Haciendo click sobre el link que dice <strong>All supported
+platforms</strong>, podremos descargar el archivo necesario para instalar las
+extensiones.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/02-ExtensionPack/01-ext_pack.jpg"><img alt="/images/olin/02-vm/02-ExtensionPack/01-ext_pack.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/02-ExtensionPack/01-ext_pack.thumbnail.jpg"></a>
+<p>Esto nos abrirá una nueva ventana de descarga donde nos invitará a descargar un
+archivo con extensión <tt class="docutils literal"><span class="pre">.vbox-extpack</span></tt>.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/02-ExtensionPack/02-ext_pack.jpg"><img alt="/images/olin/02-vm/02-ExtensionPack/02-ext_pack.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/02-ExtensionPack/02-ext_pack.thumbnail.jpg"></a>
+<p>Simplemente descargamos este archivo en alguna carpeta de nuestra computadora y
+una vez descargado hacemos doble click sobre el mismo.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/02-ExtensionPack/03-ext_pack.jpg"><img alt="/images/olin/02-vm/02-ExtensionPack/03-ext_pack.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/02-ExtensionPack/03-ext_pack.thumbnail.jpg"></a>
+<p>Se abrirá el administrador de máquinas virtuales y nos mostrará la Licencia de
+<cite>VirtualBox</cite>. La que debemos desplazar hasta el fondo para que se habilite el
+botón de <em>Aceptar</em> y obviamente aceptar para poder instalar.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/02-ExtensionPack/04-ext_pack.jpg"><img alt="/images/olin/02-vm/02-ExtensionPack/04-ext_pack.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/02-ExtensionPack/04-ext_pack.thumbnail.jpg"></a>
+<p>Aceptada la licencia, acorde a la configuración del UAC, nos preguntará si
+deseamos instalar.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/02-ExtensionPack/05-ext_pack.jpg"><img alt="/images/olin/02-vm/02-ExtensionPack/05-ext_pack.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/02-ExtensionPack/05-ext_pack.thumbnail.jpg"></a>
+<p>Finalizada la instalación, nos informará con un cartel como el siguiente.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/02-ExtensionPack/06-ext_pack.jpg"><img alt="/images/olin/02-vm/02-ExtensionPack/06-ext_pack.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/02-ExtensionPack/06-ext_pack.thumbnail.jpg"></a>
+<p>Ya podemos disfrutar de nuestras extensiones! Veamos cómo importar nuestra
+primera VM para usarla a lo largo del curso.</p>
+</div>
+<div class="section" id="importando-una-vm">
+<h3><a class="toc-backref" href=".#id6">Importando una VM</a></h3>
+<p>El proceso de importación de una VM es tan sencillo como abrir un documento de
+nuestro procesador de texto favorito. Lo único que debemos disponer es del
+administrador de máquinas virtuales y el archivo de la VM con formato <tt class="docutils literal">.ova</tt>
+preferentemente.</p>
+<p>En el administrador de máquinas virtuales, dentro del menú Archivo,
+encontraremos la opción "<strong>Importar servicio virtualizado...</strong>"</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/03-Importar/01-importandoVM.jpg"><img alt="/images/olin/02-vm/03-Importar/01-importandoVM.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/03-Importar/01-importandoVM.thumbnail.jpg"></a>
+<p>Al seleccionar esta opción nos abrirá una ventana para indicarle la ubicación
+de nuestro archivo <tt class="docutils literal">.ova</tt>. Si presionamos sobre el ícono de la carpeta nos
+permitirá explorar nuestra máquina real para indicarle en qué lugar está el
+archivo de la VM a importar. Una vez seleccionado el archivo, presionamos el
+botón <em>Next</em>.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/03-Importar/02-importandoVM.jpg"><img alt="/images/olin/02-vm/03-Importar/02-importandoVM.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/03-Importar/02-importandoVM.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/03-Importar/03-importandoVM.jpg"><img alt="/images/olin/02-vm/03-Importar/03-importandoVM.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/03-Importar/03-importandoVM.thumbnail.jpg"></a>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/03-Importar/04-importandoVM.jpg"><img alt="/images/olin/02-vm/03-Importar/04-importandoVM.thumbnail.jpg" class="col-md-4" src="../../../images/olin/02-vm/03-Importar/04-importandoVM.thumbnail.jpg"></a>
+<p>Ahora nos muestra las preferencias de importación, en general no hace falta cambiar
+ningún parámetro. Simplemente le damos al botón <em>Importar</em>.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/03-Importar/06-importandoVM.jpg"><img alt="/images/olin/02-vm/03-Importar/06-importandoVM.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/03-Importar/06-importandoVM.thumbnail.jpg"></a>
+<p>En este momento el administrador de VM nos muestra la licencia que el que
+realizó la exportación escribió para nosotros. Debemos aceptarla sino no se
+importará la VM.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/03-Importar/07-importandoVM.jpg"><img alt="/images/olin/02-vm/03-Importar/07-importandoVM.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/03-Importar/07-importandoVM.thumbnail.jpg"></a>
+<p>Comienza el proceso de importación...</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/03-Importar/08-importandoVM.jpg"><img alt="/images/olin/02-vm/03-Importar/08-importandoVM.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/03-Importar/08-importandoVM.thumbnail.jpg"></a>
+<p>Cuando se completa el proceso, tenemos la nueva máquina virtual recién importada
+en nuestra lista de VM.</p>
+<a class="reference external image-reference" href="../../../images/olin/02-vm/03-Importar/09-importandoVM.jpg"><img alt="/images/olin/02-vm/03-Importar/09-importandoVM.thumbnail.jpg" class="align-center" src="../../../images/olin/02-vm/03-Importar/09-importandoVM.thumbnail.jpg"></a>
+</div>
+<div class="section" id="video">
+<h3><a class="toc-backref" href=".#id7">Video</a></h3>
+<div class="align-center"><iframe width="425" height="344" src="//www.youtube.com/embed/Iqh88bX9bLY?rel=0&amp;hd=1&amp;wmode=transparent"></iframe></div>
+</div>
 </div>
 </div>
     </div>
