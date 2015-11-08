@@ -6,9 +6,9 @@
 .. description: Leo's personal & blog site!
 
 
-.. class:: jumbotron col-md-12
+.. class:: jumbotron
 
-.. admonition:: Personal & Blog Site
+    .. admonition:: Personal & Blog Site
 
         Este es mi sitio personal, acá vas a poder encontrar material sobre
         los cursos que estoy dando y algunas de las cosas que me resultan
