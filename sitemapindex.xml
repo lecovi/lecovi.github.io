@@ -14,6 +14,10 @@
   <lastmod>2015-11-06T14:54:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://lecovi.github.io/categories/cat_tutorial.xml</loc>
+  <lastmod>2015-11-08T21:11:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://lecovi.github.io/categories/git.xml</loc>
   <lastmod>2015-11-06T14:54:00Z</lastmod>
  </sitemap>
@@ -30,11 +34,15 @@
   <lastmod>2015-11-06T14:54:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>http://lecovi.github.io/categories/tty-recording.xml</loc>
+  <lastmod>2015-11-08T21:11:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://lecovi.github.io/rss.xml</loc>
-  <lastmod>2015-11-06T14:54:00Z</lastmod>
+  <lastmod>2015-11-08T21:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/sitemap.xml</loc>
-  <lastmod>2015-11-06T14:54:00Z</lastmod>
+  <lastmod>2015-11-08T21:11:00Z</lastmod>
  </sitemap>
 </sitemapindex>

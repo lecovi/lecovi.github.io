@@ -15,7 +15,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/archive.html</loc>
-  <lastmod>2015-11-06T14:54:00Z</lastmod>
+  <lastmod>2015-11-08T21:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/bitson/</loc>
@@ -79,15 +79,19 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/</loc>
-  <lastmod>2015-10-24T16:13:00Z</lastmod>
+  <lastmod>2015-11-08T21:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/empezando-con-nikola/</loc>
   <lastmod>2015-10-24T16:13:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/grabando-la-consola/</loc>
+  <lastmod>2015-11-08T21:11:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/categories/</loc>
-  <lastmod>2015-11-06T13:08:00Z</lastmod>
+  <lastmod>2015-11-08T21:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/blog/</loc>
@@ -96,6 +100,10 @@
  <url>
   <loc>http://lecovi.github.io/categories/cat_tutorial-nikola-github/</loc>
   <lastmod>2015-10-24T16:19:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_tutorial/</loc>
+  <lastmod>2015-11-08T21:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/git/</loc>
@@ -112,6 +120,10 @@
  <url>
   <loc>http://lecovi.github.io/categories/python/</loc>
   <lastmod>2015-10-24T16:19:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/tty-recording/</loc>
+  <lastmod>2015-11-08T21:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/cfp/</loc>
