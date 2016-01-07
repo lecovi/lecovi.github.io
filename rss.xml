@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Make it So!</title><link>http://lecovi.github.io/</link><description>Leo's personal site</description><atom:link href="http://lecovi.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Tue, 08 Dec 2015 23:25:28 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Grabando la consola</title><link>http://lecovi.github.io/blog/grabando-la-consola/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Quería compartirles estos dos programas que sirven para grabar nuestros pasos
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Make it So!</title><link>http://lecovi.github.io/</link><description>Leo's personal site</description><atom:link href="http://lecovi.github.io/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Thu, 07 Jan 2016 16:00:18 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ver mensajes en el booteo</title><link>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;En este breve post, la idea es mostrar los pasos a seguir para sacar la imagen
+de inicio del sistema. En lo personal me gusta ver qué es lo que está cargando
+el sistema al momento del inicio. Por eso le suelo sacar la imagen que oculta
+esos mensajes. Comencemos...&lt;/p&gt;
+&lt;div class="section" id="edicion-de-los-parametros-de-inicio"&gt;
+&lt;h2&gt;Edición de los parámetros de inicio&lt;/h2&gt;
+&lt;pre class="code console"&gt;&lt;a name="rest_code_e033d3a42f26474b9961e935fbd87f4f-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo vim /etc/default/grub
+&lt;/pre&gt;&lt;p&gt;Hay que editar el archivo &lt;tt class="docutils literal"&gt;/etc/default/grub&lt;/tt&gt; en este archivo vamos a
+encontrar una línea que dice:&lt;/p&gt;
+&lt;pre class="code console"&gt;&lt;a name="rest_code_b68a0506bbf24ecb9d7ea587ec19ac88-1"&gt;&lt;/a&gt;&lt;span class="go"&gt;GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"&lt;/span&gt;
+&lt;/pre&gt;&lt;p&gt;Tenemos que remover la opción de &lt;tt class="docutils literal"&gt;"quiet splas"&lt;/tt&gt; para que la línea en
+cuestión quede como:&lt;/p&gt;
+&lt;pre class="code console"&gt;&lt;a name="rest_code_9ddf20457acb4080beefcc80954086e6-1"&gt;&lt;/a&gt;&lt;span class="go"&gt;GRUB_CMDLINE_LINUX_DEFAULT=""&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class="section" id="actualizando-grub"&gt;
+&lt;h2&gt;Actualizando GRUB&lt;/h2&gt;
+&lt;p&gt;Finalmente actualizamos las opciones de GRUB con el comando:&lt;/p&gt;
+&lt;pre class="code console"&gt;&lt;a name="rest_code_505d04a95b544398bd3c0b6ee0bef688-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo update-grub
+&lt;/pre&gt;&lt;p&gt;Listo! En el próximo inicio veremos como se va cargando el sistema.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;</description><category>boot</category><category>mensajes</category><category>quiet</category><category>splash</category><guid>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</guid><pubDate>Thu, 07 Jan 2016 15:53:16 GMT</pubDate></item><item><title>Grabando la consola</title><link>http://lecovi.github.io/blog/grabando-la-consola/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Quería compartirles estos dos programas que sirven para grabar nuestros pasos
 en la consola.&lt;/p&gt;
 &lt;div class="section" id="ttygif"&gt;
 &lt;h2&gt;TTYGIF&lt;/h2&gt;
@@ -10,10 +29,10 @@ crear las imágenes que luego juntaremos con un script del autor.&lt;/p&gt;
 &lt;h3&gt;Instalación&lt;/h3&gt;
 &lt;p&gt;Hay que bajar los paquetes anteriormente mencionados, entrar en el directorio
 del repositorio y ejecutar &lt;tt class="docutils literal"&gt;make&lt;/tt&gt;.&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_a41c2f27034146da85f509e7838c30de-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt install imagemagick ttyrec gcc
-&lt;a name="rest_code_a41c2f27034146da85f509e7838c30de-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone https://github.com/icholy/ttygif.git
-&lt;a name="rest_code_a41c2f27034146da85f509e7838c30de-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd &lt;/span&gt;ttygif
-&lt;a name="rest_code_a41c2f27034146da85f509e7838c30de-4"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; make
+&lt;pre class="code console"&gt;&lt;a name="rest_code_cd3220524a994a4ca4d4901408c6891f-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt install imagemagick ttyrec gcc
+&lt;a name="rest_code_cd3220524a994a4ca4d4901408c6891f-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone https://github.com/icholy/ttygif.git
+&lt;a name="rest_code_cd3220524a994a4ca4d4901408c6891f-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd &lt;/span&gt;ttygif
+&lt;a name="rest_code_cd3220524a994a4ca4d4901408c6891f-4"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; make
 &lt;/pre&gt;&lt;p&gt;Luego de ejecutar &lt;tt class="docutils literal"&gt;make&lt;/tt&gt; nos aparecen 2 nuevos archivos ejecutables en nuestro
 directorio:&lt;/p&gt;
 &lt;ul class="simple"&gt;
@@ -30,23 +49,23 @@ dos opciones:&lt;/p&gt;
 &lt;h4&gt;Link Simbólico&lt;/h4&gt;
 &lt;p&gt;Verificamos cuáles son los directorios que tenemos incluidos en la variable de
 entorno &lt;tt class="docutils literal"&gt;PATH&lt;/tt&gt;.&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_33cf31c239014b3d94256f622701f7ea-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$PATH&lt;/span&gt;
-&lt;a name="rest_code_33cf31c239014b3d94256f622701f7ea-2"&gt;&lt;/a&gt;/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
-&lt;a name="rest_code_33cf31c239014b3d94256f622701f7ea-3"&gt;&lt;/a&gt;&lt;span class="err"&gt;$&lt;/span&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_43d2b3ac17fd46d9b207dbef6fd4a42f-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$PATH&lt;/span&gt;
+&lt;a name="rest_code_43d2b3ac17fd46d9b207dbef6fd4a42f-2"&gt;&lt;/a&gt;/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+&lt;a name="rest_code_43d2b3ac17fd46d9b207dbef6fd4a42f-3"&gt;&lt;/a&gt;&lt;span class="err"&gt;$&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;Por ejemplo, elegimos el primer directorio como destino para nuestro enlace
 simbólico: &lt;cite&gt;/usr/local/bin&lt;/cite&gt;.
 Con el siguiente comando podés agregar el link simbólico de ambos archivos a
 ese directorio:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_83f47aa367664d0aa1749b91e2c8a6c4-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo ln -s &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/ttygif /usr/local/bin/ttygif
-&lt;a name="rest_code_83f47aa367664d0aa1749b91e2c8a6c4-2"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo ln -s &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/ttygif /usr/local/bin/concat.sh
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_884e7f48e4db4fd4a7032af755956f63-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo ln -s &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/ttygif /usr/local/bin/ttygif
+&lt;a name="rest_code_884e7f48e4db4fd4a7032af755956f63-2"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo ln -s &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/ttygif /usr/local/bin/concat.sh
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="section" id="agregar-al-path"&gt;
 &lt;h4&gt;Agregar al PATH&lt;/h4&gt;
 &lt;p&gt;Para agregar el directorio del repositorio a la variable de entorno PATH:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_93e2bba8dbcd475496bb3ccb1123aa40-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;:&lt;span class="nv"&gt;$PATH&lt;/span&gt;
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_f77200a8ec634ceb8019eb9faebb4d89-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;:&lt;span class="nv"&gt;$PATH&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;Para que esto sea de manera permanente tenés que agregarlo a tu archivo
 &lt;cite&gt;~/.profile&lt;/cite&gt;, simplemente ejecutando desde el directorio del repo:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_d07782bda68841829f565e82577aa251-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;:&lt;span class="nv"&gt;$PATH&lt;/span&gt; &amp;gt;&amp;gt; ~/.profile
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_06d2c754ccb94b1c8077fdeaad5ea78e-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;:&lt;span class="nv"&gt;$PATH&lt;/span&gt; &amp;gt;&amp;gt; ~/.profile
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="section" id="modo-de-uso"&gt;
@@ -79,15 +98,15 @@ todo de un paso.&lt;/p&gt;
 &lt;p&gt;Con sólo tener instalado &lt;tt class="docutils literal"&gt;ImageMagick&lt;/tt&gt; (que lo tenemos instalado del
 programa anterior) alcanza. Clonamos el repositorio y luego ejecutamos &lt;tt class="docutils literal"&gt;make&lt;/tt&gt;.&lt;/p&gt;
 &lt;!-- Instalando imagemagick tendría que funcionar. --&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt install imagemagick gcc
-&lt;a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone https://github.com/z24/tty2gif.git
-&lt;a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd &lt;/span&gt;tty2gif
-&lt;a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-4"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; make
+&lt;pre class="code console"&gt;&lt;a name="rest_code_b5d355a0a87848f8b45b927f4fd8f85d-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt install imagemagick gcc
+&lt;a name="rest_code_b5d355a0a87848f8b45b927f4fd8f85d-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone https://github.com/z24/tty2gif.git
+&lt;a name="rest_code_b5d355a0a87848f8b45b927f4fd8f85d-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd &lt;/span&gt;tty2gif
+&lt;a name="rest_code_b5d355a0a87848f8b45b927f4fd8f85d-4"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; make
 &lt;/pre&gt;&lt;div class="section" id="id2"&gt;
 &lt;h4&gt;Link Simbólico&lt;/h4&gt;
 &lt;p&gt;Podemos aplicar lo mismo que hablamos en la sección anterior y agregar un
 enlace simbólico al binario del &lt;tt class="docutils literal"&gt;tty2gif&lt;/tt&gt;.&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_829a07bd86ed41b89ffe77d49aaf3d2c-1"&gt;&lt;/a&gt;➜  ~ sudo ln -s &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/ttygif /usr/local/bin/ttygif
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_cb2c3db72a7944cd997cb34b1713631f-1"&gt;&lt;/a&gt;➜  ~ sudo ln -s &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/ttygif /usr/local/bin/ttygif
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="section" id="agregando-al-path"&gt;
 &lt;h4&gt;Agregando al PATH&lt;/h4&gt;
@@ -99,7 +118,7 @@ enlace simbólico al binario del &lt;tt class="docutils literal"&gt;tty2gif&lt;/
 &lt;p&gt;La forma de uso es muy simple, después de instalar ejecutamos &lt;tt class="docutils literal"&gt;tty2gif&lt;/tt&gt; con 2
 argumentos, el primero: el archivo que va a grabar, el segundo: el gif animado
 que obtenemos como resultado.&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_905774c79db5400eb0cfddfdee79801f-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; tty2gif grabacion.raw salida.gif
+&lt;pre class="code console"&gt;&lt;a name="rest_code_5472f245a7434031a8776f9066935e42-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; tty2gif grabacion.raw salida.gif
 &lt;/pre&gt;&lt;img alt="Grabación completa" class="align-center" src="http://lecovi.github.io/images/blog/tty2gif/salida.gif"&gt;
 &lt;!-- No lo puedo ejecutar desde terminator, tuve que usar xterm. --&gt;
 &lt;p class="alert alert-info"&gt;&lt;strong&gt;Observación:&lt;/strong&gt; La única particularidad que tenemos que tener en cuenta,
