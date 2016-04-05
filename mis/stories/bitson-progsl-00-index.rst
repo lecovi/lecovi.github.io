@@ -14,13 +14,19 @@ Casa de Cultura y Política Sofía Yussen
 
 .. class:: lead
 
-    Fitz Roy 1327, Ciudad Autónoma de Buenos Aires ` mapa <http://www.openstreetmap.org/#map=19/-34.58737/-58.43959&layers=N>`_
+    Fitz Roy 1327, Ciudad Autónoma de Buenos Aires |mapa|
 
     **Viernes de 9:00 a 13:00hs**
 
-    Suscribite a la lista de correo en este `link
-    <http://listas.bitson.com.ar/listinfo/programacion>`_
+    Suscribite a la lista de correo en este |lista|
 
+.. |mapa| raw:: html
+
+    <a href="http://www.openstreetmap.org/#map=19/-34.58737/-58.43959&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
+
+.. |lista| raw:: html
+
+    <a href="http://listas.bitson.com.ar/listinfo/programacion" target="_blank">link</a>
 
 .. sidebar:: Calendario
 

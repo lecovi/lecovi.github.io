@@ -18,11 +18,18 @@ Técnico Superior en Análisis de Sistemas
 
 .. class:: lead align-center
 
-    Mansilla 3643, Ciudad Autónoma de Buenos Aires ` mapa <http://www.openstreetmap.org/#map=19/-34.59072/-58.41490&layers=N>`_
+    Mansilla 3643, Ciudad Autónoma de Buenos Aires |mapa|
 
+.. |mapa| raw:: html
 
-En el `I.F.T.S. N°18 <http://www.ifts18.edu.ar>`_ doy cuatro materias
+    <a href="http://www.openstreetmap.org/#map=19/-34.59072/-58.41490&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
+
+En el |ifts| doy cuatro materias
 cuatrimestrales que corresponden al primer año de la carrera.
+
+.. |ifts| raw:: html
+
+    <a href="http://www.ifts18.edu.ar" target="_blank">I.F.T.S. N°18</a>
 
 :En el primer cuatrimestre:
     - :doc:`Arquitectura de Computadoras <ifts/arq>`
