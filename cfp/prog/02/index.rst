@@ -36,3 +36,15 @@ También podés seguir la presentación en este |funcionamiento|.
 .. |funcionamiento| raw:: html
 
     <a href="https://docs.google.com/presentation/d/1UI-CbW8QJ1rqbV4DViee0cilEVx9I5CXfOrcFcVGdl8/present#slide=id.p4" target="_blank">link</a>
+
+Ejercicios:
+===========
+
+Realizar los siguientes programas, en modo interactivo y como un *script*:
+
+#. Calcular la superficie y el perímetro de:
+    #. Un triángulo, conociendo su base y su altura.
+    #. Un círculo, conociendo su radio.
+#. Calcular el volumen de:
+    #. Una pirámide de base cuadrada, conociendo su base y su altura.
+    #. Una esfera, conociendo su radio.
