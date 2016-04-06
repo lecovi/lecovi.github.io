@@ -1,10 +1,10 @@
-.. title: Administrador de Redes con GNU/Linux
-.. slug: cfp/reli
+.. title: Técnicas de programación
+.. slug: cfp/prog
 .. date: 2015-08-25 13:27:34 UTC-03:00
-.. tags: cursos linux administrador debian redes
+.. tags: cursos linux operador debian
 .. category: cursos cfp
-.. link: cfp/reli
-.. description: Página Oficial del curso Administrador de Redes con GNU/Linux del CFP34
+.. link: cfp/prog
+.. description: Página Oficial del curso Técnicas de programación del CFP34
 .. type: text
 
 
@@ -17,18 +17,24 @@ Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
 
     Sede Pío IX: Yapeyú 197, Ciudad Autónoma de Buenos Aires |mapa|
 
+    **Martes y Miércoles de 17:00 a 20:30hs**
+
+    Suscribite a la lista de correo en este |lista|
+
 .. |mapa| raw:: html
 
     <a href="http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
 
-    **Martes de 17:00 a 20:30hs**
+.. |lista| raw:: html
+
+    <a href="http://listas.bitson.com.ar/listinfo/python" target="_blank">link</a>
 
 
 .. sidebar:: Calendario
 
     .. raw:: html
 
-        <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=pioix.edu.ar_nou5rjl200scvolie6ujt7tai4%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FArgentina%2FBuenos_Aires"
+        <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=colomboleandro%40pioix.edu.ar&amp;color=%2342104A&amp;ctz=America%2FArgentina%2FBuenos_Aires"
         style=" border-width:0 " width="400" height="300" frameborder="0"
         scrolling="no"></iframe>
 
@@ -41,44 +47,41 @@ Clases
 
 A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 
-#. :doc:`Introducción al curso <cfp/reli/introduccion-reli>`
-#. :doc:`Comandos Básicos <cfp/reli/comandos-reli>`
-#. :doc:`Networking en GNU/Linux <cfp/reli/networking>`
-#. :doc:`SSH <cfp/reli/ssh>`
-#. :doc:`DHCP <cfp/reli/dhcp>`
-#. :doc:`FTP <cfp/reli/ftp>`
-#. :doc:`SAMBA <cfp/reli/samba>`
-#. :doc:`Web Server (Apache) <cfp/reli/apache>`
-#. :doc:`Proxy Server <cfp/reli/squid>`
-#. :doc:`DNS <cfp/reli/dns>`
-#. :doc:`Firewall <cfp/reli/iptables1>`
-#. :doc:`Firewall Avanzado <cfp/reli/iptables2>`
-#. :doc:`VLAN <cfp/reli/vlan>`
-#. :doc:`Introducción al Ethical Hacking <cfp/reli/ethical-hacking>`
-#. :doc:`Herramientas de Diagnóstico <cfp/reli/herramientas-diagnostico>`
-#. :doc:`Evaluación del curso <cfp/reli/eval-reli>`
+#. :doc:`Introducción al curso <cfp/olin/introduccion-olin>`
+#. :doc:`Instalando la máquina virtual <cfp/olin/vbox-olin>`
+#. :doc:`Conociendo nuestro GNU/Linux <cfp/olin/conociendo-linux>`
+#. :doc:`Comandos básicos (1º Parte) <cfp/olin/comandos1>`
+#. :doc:`Comandos básicos (2º Parte) <cfp/olin/comandos2>`
+#. :doc:`Dispositivos de almacenamiento <cfp/olin/mount>`
+#. :doc:`Empaquetado y compresión de paquetes <cfp/olin/tgz>`
+#. :doc:`Manejo de paquetes <cfp/olin/apt>`
+#. :doc:`Política de permisos <cfp/olin/permisos>`
+#. :doc:`Administración de usuarios <cfp/olin/usuarios>`
+#. :doc:`Procesos del sistema <cfp/olin/procesos>`
+#. :doc:`Niveles de corrida <cfp/olin/runlevels>`
+#. :doc:`Compilación de aplicaciones <cfp/olin/compilacion>`
+#. :doc:`Shell scripting (1º Parte) <cfp/olin/scripting1>`
+#. :doc:`Shell scripting (2º Parte) <cfp/olin/scripting2>`
+#. :doc:`Evaluación del curso <cfp/olin/eval-olin>`
 
 
 Presentación
 ============
 
-El proyecto se fundamenta en la necesidad de capacitar al alumno en
-conocimientos avanzados de sistemas operativos de código abierto con orientación
-a redes informáticas. Con este curso se pretende capacitar al alumno para dar
-soporte de software y configuración de servidores, complementando de esta manera
-su experiencia la administración de redes.
+Este curso surge de la necesidad de preparar profesionalmente a personas que
+puedan manejar un Sistema Operativo de Código Abierto (GNU/Linux), atendiendo a
+las necesidades del mercado laboral actual.
+
 
 .. class:: col-md-6
 
 Objetivos
 ---------
 
-Que el alumno adquiera conocimientos avanzados:
+* Conocer los conceptos básicos del Sistema Operativo.
+* Emplear los comandos básicos.
+* Comprender las características de este Sistema Operativo.
 
-* en la operación de sistemas operativos de código abierto.
-* en la estructura y funcionamiento del sistema operativo.
-* para el uso de herramientas de monitoreo y mantenimiento del sistema.
-* para administrar y operar servidores de archivos, de páginas web, correo electrónico y seguridad sobre redes TCP/IP.
 
 .. admonition:: Organización
 
@@ -114,7 +117,7 @@ siguientes 6 puntos:
 
 Descargate la síntesis_.
 
-.. _síntesis: /reli/sintesis.pdf
+.. _síntesis: /olin/sintesis.pdf
 
 .. class:: col-md-6
 
@@ -126,7 +129,7 @@ profesionales que abordaremos durante la cursada.
 
 Descargate la planificación_.
 
-.. _planificación: /reli/planificacion.pdf
+.. _planificación: /olin/planificacion.pdf
 
 .. .. raw:: html
 ..
@@ -142,12 +145,12 @@ Descargate la planificación_.
 ..                     <h4 class="modal-title">Inscribite...</h4>
 ..                 </div>
 ..                 <div class="modal-body align-center">
-..                     <img src="/images/reli/promo.jpg" height="50%">
+..                     <img src="/images/olin/promo.jpg" height="50%">
 ..                 </div>
 ..                 <div class="modal-footer">
 ..                     <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
 ..                     <div class="align-right">
-..                         <img src="/images/reli/mail.png">
+..                         <img src="/images/olin/mail.png">
 ..                     </div>
 ..                 </div>
 ..             </div>

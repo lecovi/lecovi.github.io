@@ -15,10 +15,13 @@ Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
 
 .. class:: lead
 
-    Sede Pío IX: Yapeyú 197, Ciudad Autónoma de Buenos Aires ` mapa <http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N>`_
+    Sede Pío IX: Yapeyú 197, Ciudad Autónoma de Buenos Aires |mapa|
 
     **Miércoles de 17:00 a 20:30hs**
 
+.. |mapa| raw:: html
+
+    <a href="http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
 
 .. sidebar:: Calendario
 
@@ -121,38 +124,38 @@ Descargate la planificación_.
 
 .. _planificación: /olin/planificacion.pdf
 
-.. raw:: html
-
-    <button type="button" class="pull-right btn btn-info" data-toggle="modal" data-target="#myModal">
-        Inscribite
-    </button>
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Inscribite...</h4>
-                </div>
-                <div class="modal-body align-center">
-                    <img src="/images/olin/promo.jpg" height="50%">
-                </div>
-                <div class="modal-footer">
-                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                    <div class="align-right">
-                        <img src="/images/olin/mail.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
-    </script>
-    <script type="text/javascript">
-        $(window).load(function(){
-            $('#myModal').modal('show');
-        });
-        setTimeout(function(){$('#myModal').modal('hide');},10000);
-    </script>
+.. .. raw:: html
+..
+..     <button type="button" class="pull-right btn btn-info" data-toggle="modal" data-target="#myModal">
+..         Inscribite
+..     </button>
+..     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+..         <div class="modal-dialog">
+..             <div class="modal-content">
+..                 <div class="modal-header">
+..                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+..                     <span aria-hidden="true">&times;</span></button>
+..                     <h4 class="modal-title">Inscribite...</h4>
+..                 </div>
+..                 <div class="modal-body align-center">
+..                     <img src="/images/olin/promo.jpg" height="50%">
+..                 </div>
+..                 <div class="modal-footer">
+..                     <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+..                     <div class="align-right">
+..                         <img src="/images/olin/mail.png">
+..                     </div>
+..                 </div>
+..             </div>
+..         </div>
+..     </div>
+..
+..     <script
+..     src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+..     </script>
+..     <script type="text/javascript">
+..         $(window).load(function(){
+..             $('#myModal').modal('show');
+..         });
+..         setTimeout(function(){$('#myModal').modal('hide');},10000);
+..     </script>
