@@ -47,30 +47,28 @@ Clases
 
 A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 
-#. :doc:`Introducción al curso <cfp/olin/introduccion-olin>`
-#. :doc:`Instalando la máquina virtual <cfp/olin/vbox-olin>`
-#. :doc:`Conociendo nuestro GNU/Linux <cfp/olin/conociendo-linux>`
-#. :doc:`Comandos básicos (1º Parte) <cfp/olin/comandos1>`
-#. :doc:`Comandos básicos (2º Parte) <cfp/olin/comandos2>`
-#. :doc:`Dispositivos de almacenamiento <cfp/olin/mount>`
-#. :doc:`Empaquetado y compresión de paquetes <cfp/olin/tgz>`
-#. :doc:`Manejo de paquetes <cfp/olin/apt>`
-#. :doc:`Política de permisos <cfp/olin/permisos>`
-#. :doc:`Administración de usuarios <cfp/olin/usuarios>`
-#. :doc:`Procesos del sistema <cfp/olin/procesos>`
-#. :doc:`Niveles de corrida <cfp/olin/runlevels>`
-#. :doc:`Compilación de aplicaciones <cfp/olin/compilacion>`
-#. :doc:`Shell scripting (1º Parte) <cfp/olin/scripting1>`
-#. :doc:`Shell scripting (2º Parte) <cfp/olin/scripting2>`
-#. :doc:`Evaluación del curso <cfp/olin/eval-olin>`
+#. :doc:`01 <cfp/prog/01>`
+#. :doc:`02 <cfp/prog/02>`
+#. :doc:`03 <cfp/prog/03>`
+#. :doc:`04 <cfp/prog/04>`
+#. :doc:`05 <cfp/prog/05>`
+#. :doc:`06 <cfp/prog/06>`
+#. :doc:`07 <cfp/prog/07>`
+#. :doc:`08 <cfp/prog/08>`
+#. :doc:`09 <cfp/prog/09>`
+#. :doc:`10 <cfp/prog/10>`
+#. :doc:`11 <cfp/prog/11>`
+#. :doc:`12 <cfp/prog/12>`
+#. :doc:`13 <cfp/prog/13>`
+#. :doc:`14 <cfp/prog/14>`
+#. :doc:`15 <cfp/prog/15>`
+#. :doc:`16 <cfp/prog/16>`
 
 
 Presentación
 ============
 
-Este curso surge de la necesidad de preparar profesionalmente a personas que
-puedan manejar un Sistema Operativo de Código Abierto (GNU/Linux), atendiendo a
-las necesidades del mercado laboral actual.
+Este curso surge de la necesidad de ....
 
 
 .. class:: col-md-6
@@ -78,14 +76,14 @@ las necesidades del mercado laboral actual.
 Objetivos
 ---------
 
-* Conocer los conceptos básicos del Sistema Operativo.
-* Emplear los comandos básicos.
-* Comprender las características de este Sistema Operativo.
+* Conocer ...
+* Emplear ...
+* Comprender ...
 
 
 .. admonition:: Organización
 
-    **Carga Horaria Total:** 60 hs reloj.
+    **Carga Horaria Total:** 90 hs reloj.
 
     **Modalidad de cursada:** Presencial.
 
@@ -117,7 +115,7 @@ siguientes 6 puntos:
 
 Descargate la síntesis_.
 
-.. _síntesis: /olin/sintesis.pdf
+.. _síntesis: /prog/sintesis.pdf
 
 .. class:: col-md-6
 
@@ -129,7 +127,7 @@ profesionales que abordaremos durante la cursada.
 
 Descargate la planificación_.
 
-.. _planificación: /olin/planificacion.pdf
+.. _planificación: /prog/planificacion.pdf
 
 .. .. raw:: html
 ..

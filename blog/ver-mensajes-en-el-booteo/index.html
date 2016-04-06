@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ver mensajes en el booteo | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -55,6 +56,9 @@ el sistema al momento del inicio. Por eso ">
             <ul class="dropdown-menu">
 <li>
 <a href="../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../cfp/prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
                     </li>
 <li>
 <a href="../../cfp/olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
@@ -117,7 +121,9 @@ el sistema al momento del inicio. Por eso ">
 <article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Ver mensajes en el booteo</a></h1>
 
         <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">Leandro E. Colombo Viña</span></p>
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Leandro E. Colombo Viña
+            </span></p>
             <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2016-01-07T12:53:16-03:00" itemprop="datePublished" title="2016-01-07 12:53">2016-01-07 12:53</time></a></p>
                 <p class="commentline">
         
@@ -139,21 +145,21 @@ el sistema al momento del inicio. Por eso le suelo sacar la imagen que oculta
 esos mensajes. Comencemos...</p>
 <div class="section" id="edicion-de-los-parametros-de-inicio">
 <h2>Edición de los parámetros de inicio</h2>
-<pre class="code console"><a name="rest_code_e033d3a42f26474b9961e935fbd87f4f-1"></a><span class="gp">$</span> sudo vim /etc/default/grub
+<pre class="code console"><a name="rest_code_c95d3179a044452c8c96ba404c17c9bc-1"></a><span class="gp">$</span> sudo vim /etc/default/grub
 </pre>
 <p>Hay que editar el archivo <tt class="docutils literal">/etc/default/grub</tt> en este archivo vamos a
 encontrar una línea que dice:</p>
-<pre class="code console"><a name="rest_code_b68a0506bbf24ecb9d7ea587ec19ac88-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</span>
+<pre class="code console"><a name="rest_code_c93d45756df14b85b96281c21f171512-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</span>
 </pre>
 <p>Tenemos que remover la opción de <tt class="docutils literal">"quiet splas"</tt> para que la línea en
 cuestión quede como:</p>
-<pre class="code console"><a name="rest_code_9ddf20457acb4080beefcc80954086e6-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT=""</span>
+<pre class="code console"><a name="rest_code_40673364e7ff4a76ac2dfe7182dd928f-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT=""</span>
 </pre>
 </div>
 <div class="section" id="actualizando-grub">
 <h2>Actualizando GRUB</h2>
 <p>Finalmente actualizamos las opciones de GRUB con el comando:</p>
-<pre class="code console"><a name="rest_code_505d04a95b544398bd3c0b6ee0bef688-1"></a><span class="gp">$</span> sudo update-grub
+<pre class="code console"><a name="rest_code_c0717c4c13764cafa27c49af0bec6815-1"></a><span class="gp">$</span> sudo update-grub
 </pre>
 <p>Listo! En el próximo inicio veremos como se va cargando el sistema.</p>
 </div>
