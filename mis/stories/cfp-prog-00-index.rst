@@ -83,7 +83,7 @@ Objetivos
 
 .. admonition:: Organización
 
-    **Carga Horaria Total:** 90 hs reloj.
+    **Carga Horaria Total:** 130 hs reloj.
 
     **Modalidad de cursada:** Presencial.
 

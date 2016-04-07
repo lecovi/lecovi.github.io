@@ -25,7 +25,7 @@ Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
 En el C.F.P. N°34 doy un curso cuatrimestral, presencial, gratuito y con
 certificado oficial del Ministerio de Educación del GCABA:
 
-- :doc:`Técnicas de programación (Pyhton) <cfp/prog>`
+- :doc:`Técnicas de programación (Python) <cfp/prog>`
 
 En cuatrimestres pasados:
 
