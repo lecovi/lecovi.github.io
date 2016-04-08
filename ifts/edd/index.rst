@@ -16,13 +16,13 @@
 
     Mansilla 3643, Ciudad Autónoma de Buenos Aires |mapa|
 
-.. |mapa| raw:: html
-
-    <a href="http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
-
     **Lunes de 18:30 a 22:00hs**
 
     Suscribite a la lista de correo en este |lista|
+
+.. |mapa| raw:: html
+
+    <a href="http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
 
 .. |lista| raw:: html
 
