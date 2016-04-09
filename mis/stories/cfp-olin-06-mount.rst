@@ -1,5 +1,5 @@
 .. title: Dispositivos de almacenamiento
-.. slug: cfp/olin/mount
+.. slug: bitson/olin/mount
 .. date: 2015-08-26 15:41:30 UTC-03:00
 .. tags:
 .. category:

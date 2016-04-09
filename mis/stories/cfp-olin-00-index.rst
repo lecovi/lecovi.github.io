@@ -1,5 +1,5 @@
 .. title: Operador Básico GNU/Linux
-.. slug: cfp/olin
+.. slug: bitson/olin
 .. date: 2015-08-25 13:27:34 UTC-03:00
 .. tags: cursos linux operador debian
 .. category: cursos cfp
@@ -40,22 +40,22 @@ Clases
 
 A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 
-#. :doc:`Introducción al curso <cfp/olin/introduccion-olin>`
-#. :doc:`Instalando la máquina virtual <cfp/olin/vbox-olin>`
-#. :doc:`Conociendo nuestro GNU/Linux <cfp/olin/conociendo-linux>`
-#. :doc:`Comandos básicos (1º Parte) <cfp/olin/comandos1>`
-#. :doc:`Comandos básicos (2º Parte) <cfp/olin/comandos2>`
-#. :doc:`Dispositivos de almacenamiento <cfp/olin/mount>`
-#. :doc:`Empaquetado y compresión de paquetes <cfp/olin/tgz>`
-#. :doc:`Manejo de paquetes <cfp/olin/apt>`
-#. :doc:`Política de permisos <cfp/olin/permisos>`
-#. :doc:`Administración de usuarios <cfp/olin/usuarios>`
-#. :doc:`Procesos del sistema <cfp/olin/procesos>`
-#. :doc:`Niveles de corrida <cfp/olin/runlevels>`
-#. :doc:`Compilación de aplicaciones <cfp/olin/compilacion>`
-#. :doc:`Shell scripting (1º Parte) <cfp/olin/scripting1>`
-#. :doc:`Shell scripting (2º Parte) <cfp/olin/scripting2>`
-#. :doc:`Evaluación del curso <cfp/olin/eval-olin>`
+#. :doc:`Introducción al curso <bitson/olin/introduccion-olin>`
+#. :doc:`Instalando la máquina virtual <bitson/olin/vbox-olin>`
+#. :doc:`Conociendo nuestro GNU/Linux <bitson/olin/conociendo-linux>`
+#. :doc:`Comandos básicos (1º Parte) <bitson/olin/comandos1>`
+#. :doc:`Comandos básicos (2º Parte) <bitson/olin/comandos2>`
+#. :doc:`Dispositivos de almacenamiento <bitson/olin/mount>`
+#. :doc:`Empaquetado y compresión de paquetes <bitson/olin/tgz>`
+#. :doc:`Manejo de paquetes <bitson/olin/apt>`
+#. :doc:`Política de permisos <bitson/olin/permisos>`
+#. :doc:`Administración de usuarios <bitson/olin/usuarios>`
+#. :doc:`Procesos del sistema <bitson/olin/procesos>`
+#. :doc:`Niveles de corrida <bitson/olin/runlevels>`
+#. :doc:`Compilación de aplicaciones <bitson/olin/compilacion>`
+#. :doc:`Shell scripting (1º Parte) <bitson/olin/scripting1>`
+#. :doc:`Shell scripting (2º Parte) <bitson/olin/scripting2>`
+#. :doc:`Evaluación del curso <bitson/olin/eval-olin>`
 
 
 Presentación

@@ -1,5 +1,5 @@
 .. title: Centro de Formación Profesional N° 34
-.. slug: cfp/index
+.. slug: cfp
 .. date: 2015-10-15 19:37:47 UTC-03:00
 .. tags:
 .. category:
@@ -29,5 +29,5 @@ certificado oficial del Ministerio de Educación del GCABA:
 
 En cuatrimestres pasados:
 
-- :doc:`Operador Básico GNU/Linux <cfp/olin>`
-- :doc:`Administración de Redes en GNU/Linux <cfp/reli>`
+- :doc:`Operador Básico GNU/Linux <bitson/olin>`
+- :doc:`Administración de Redes en GNU/Linux <bitson/reli>`

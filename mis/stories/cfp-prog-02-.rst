@@ -7,8 +7,8 @@
 .. description:
 .. type: text
 
-Introducción al curso
-=====================
+Market Share
+============
 
 .. class:: align-center
 
@@ -16,7 +16,9 @@ Introducción al curso
 
         <iframe src="https://docs.google.com/presentation/d/1UAsy8yUMq7OJW25SGMObrdsvYDmrdk2DjasAgCR9IIk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="329" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-También podés seguir la presentación en este |repaso|.
+.. class:: align-right
+
+Seguí la presentación en este |repaso|.
 
 .. |repaso| raw:: html
 
@@ -31,7 +33,9 @@ Cómo funciona una computadora
 
         <iframe src="https://docs.google.com/presentation/d/1UI-CbW8QJ1rqbV4DViee0cilEVx9I5CXfOrcFcVGdl8/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-También podés seguir la presentación en este |funcionamiento|.
+.. class:: align-right
+
+Seguí la presentación en este |funcionamiento|.
 
 .. |funcionamiento| raw:: html
 

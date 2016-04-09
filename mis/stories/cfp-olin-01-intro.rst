@@ -1,5 +1,5 @@
 .. title: Introducción a GNU/Linux
-.. slug: cfp/olin/introduccion-olin
+.. slug: bitson/olin/introduccion-olin
 .. date: 2015-08-26 15:18:41 UTC-03:00
 .. tags:
 .. category:

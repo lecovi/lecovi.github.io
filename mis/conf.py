@@ -128,8 +128,6 @@ NAVIGATION_LINKS = {
         ((
             ("/cfp", "<i class=\"fa fa-linux\"></i> <strong>Centro de Formación Profesional<strong>"),
             ("/cfp/prog/", "&emsp; <i class=\"fa fa-code-fork\"></i>  Técnicas de Programación</span>"),
-            ("/cfp/olin/", "&emsp; <i class=\"fa fa-terminal\"></i> Operador Básico GNU/Linux</span>"),
-            ("/cfp/reli/", "&emsp; <i class=\"fa fa-qq\"></i> Administración de Redes con GNU/Linux"),
             ("/ifts", "<i class=\" fa-graduation-cap\"></i> <strong>Terciario<strong>"),
             ("/ifts/arq/", "&emsp; <i class=\"fa fa-laptop\"></i> Arquitectura de Computadoras"),
             ("/ifts/dlo/", "&emsp; <i class=\"fa fa-sitemap\"></i> Diagramación Lógica"),
@@ -138,6 +136,8 @@ NAVIGATION_LINKS = {
             ("/ifts/ana/", "&emsp; <i class=\"fa fa-trello\"></i> Análisis de Sistemas"),
             ("/bitson", "<i class=\"fa fa-users\"></i> <strong>BITSON<strong>"),
             ("/bitson/prog-sl/", "&emsp; <i class=\"fa fa-keyboard-o\"></i> Programación con Software Libre"),
+            ("/bitson/olin/", "&emsp; <i class=\"fa fa-terminal\"></i> Operador Básico GNU/Linux</span>"),
+            ("/bitson/reli/", "&emsp; <i class=\"fa fa-qq\"></i> Administración de Redes con GNU/Linux"),
             ), "Cursos"),
         ("/archive.html", "<i class=\"fa fa-archive\"></i> Archivo"),
         ("/categories/", "<i class=\"fa fa-tags\"></i> Etiquetas"),

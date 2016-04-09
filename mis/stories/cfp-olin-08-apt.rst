@@ -1,10 +1,10 @@
 .. title: Manejo de paquetes
-.. slug: cfp/olin/apt
+.. slug: bitson/olin/apt
 .. date: 2015-08-26 15:41:53 UTC-03:00
-.. tags: 
-.. category: 
-.. link: 
-.. description: 
+.. tags:
+.. category:
+.. link:
+.. description:
 .. type: text
 
 .. class:: alert alert-info pull-right
@@ -54,7 +54,7 @@ ramas
 **IMPORTANTE!!**
 
 **PARA EDITAR EL ARCHIVO**
-``/etc/apt/sources.list`` 
+``/etc/apt/sources.list``
 **TENEMOS QUE SER EL SUPERUSUARIO.**
 
 ----
@@ -104,7 +104,7 @@ Para desinstalar y borrar todos los archivos de configuración
 ----
 
 Para buscar paquetes por nombres (o partes de nombres).
-	
+
 .. code-block:: console
 
 	$ sudo apt-cache search <nombre>
