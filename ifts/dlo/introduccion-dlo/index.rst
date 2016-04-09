@@ -91,6 +91,25 @@ Si lo ejemplificamos en forma de árbol sería algo así:
         - ``home``
             + ``alumno``
 
+List
+~~~~
+
+Si queremos ver cuál es el contenido del directorio, ejecutamos el comando ``ls``.
+
+.. code-block:: console
+
+    alumno@vm-lmde-mate-32b ~ $ ls
+    Descargas  Documentos  Escritorio  Imágenes  Música  Plantillas  Público
+    Vídeos
+    alumno@vm-lmde-mate-32b ~ $
+
+El comando ``ls`` acepta varios modificadores para obtener mayor información sobre los elementos que encontramos en el directorio.
+
+Change Directory
+~~~~~~~~~~~~~~~~
+
+Con el comando ``cd`` podemos cambiar el directorio de trabajo. Para ejecutarlo, debemos escribir ``cd`` seguido del nombre del directorio al cual nos queremos mover.
+
 Bibliografía
 ============
 

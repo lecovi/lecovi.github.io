@@ -149,7 +149,7 @@ un poco la diferencia.</p>
 <h4>Prompt</h4>
 <p>Cuando abrimos nuestra terminal, nos muestra el <em>prompt</em>. Éste es el indicador
 de que la terminal está esperando que le demos comandos para ejecutar.</p>
-<pre class="code console"><a name="rest_code_fd2cd64f12ab47a9b9f00d26e381e5f9-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
+<pre class="code console"><a name="rest_code_2caaec12db3943c89c072c708539bbd8-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
 </pre>
 <p>En nuestro caso, identificamos 5 secciones en el <em>prompt</em>.</p>
 <ol class="arabic simple">
@@ -169,9 +169,9 @@ de que la terminal está esperando que le demos comandos para ejecutar.</p>
 <div class="section" id="print-working-directory">
 <h4>Print Working Directory</h4>
 <p>Este comando nos imprime en pantalla en qué <em>carpeta</em> estamos parados. Simplemente ejecutando <tt class="docutils literal">pwd</tt>.</p>
-<pre class="code console"><a name="rest_code_2114de910f824a11aab5f07b9b1cf560-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ pwd</span>
-<a name="rest_code_2114de910f824a11aab5f07b9b1cf560-2"></a><span class="go">/home/alumno</span>
-<a name="rest_code_2114de910f824a11aab5f07b9b1cf560-3"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
+<pre class="code console"><a name="rest_code_f75e78b21ffd46808050b341287c6b5f-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ pwd</span>
+<a name="rest_code_f75e78b21ffd46808050b341287c6b5f-2"></a><span class="go">/home/alumno</span>
+<a name="rest_code_f75e78b21ffd46808050b341287c6b5f-3"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
 </pre>
 <p>Como estamos parados en el <em>home de alumno</em> nos dice <tt class="docutils literal">/home/alumno</tt>. En esta ruta (también llamado comunmente <em>path</em>) lo primero que identificamos es que el separador de carpetas (o directorios) es el símbolo de <tt class="docutils literal">/</tt>.</p>
 <p>Además, notamos que no nos indica ningún tipo de unidad como sucede en otros sistemas operativos. No existe el <cite>C:</cite>, <cite>D:</cite> o <cite>E:</cite>. Todo nuestro sistema de archivos (<em>filesystem</em>) está montado sobre una única raíz, llamada <strong>root</strong> que se simboliza con barra <strong>/</strong>. Entonces, en la ruta</p>
@@ -203,6 +203,20 @@ de que la terminal está esperando que le demos comandos para ejecutar.</p>
 </dl></li>
 </ul>
 </blockquote>
+</div>
+<div class="section" id="list">
+<h4>List</h4>
+<p>Si queremos ver cuál es el contenido del directorio, ejecutamos el comando <tt class="docutils literal">ls</tt>.</p>
+<pre class="code console"><a name="rest_code_867ca0f5875e4af78dd0f46a54cfaf07-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ ls</span>
+<a name="rest_code_867ca0f5875e4af78dd0f46a54cfaf07-2"></a><span class="go">Descargas  Documentos  Escritorio  Imágenes  Música  Plantillas  Público</span>
+<a name="rest_code_867ca0f5875e4af78dd0f46a54cfaf07-3"></a><span class="go">Vídeos</span>
+<a name="rest_code_867ca0f5875e4af78dd0f46a54cfaf07-4"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
+</pre>
+<p>El comando <tt class="docutils literal">ls</tt> acepta varios modificadores para obtener mayor información sobre los elementos que encontramos en el directorio.</p>
+</div>
+<div class="section" id="change-directory">
+<h4>Change Directory</h4>
+<p>Con el comando <tt class="docutils literal">cd</tt> podemos cambiar el directorio de trabajo. Para ejecutarlo, debemos escribir <tt class="docutils literal">cd</tt> seguido del nombre del directorio al cual nos queremos mover.</p>
 </div>
 </div>
 </div>
