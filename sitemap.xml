@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://lecovi.github.io/</loc>
-  <lastmod>2016-04-06T11:08:00Z</lastmod>
+  <lastmod>2016-04-09T14:30:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/2015/</loc>
@@ -19,7 +19,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/archive.html</loc>
-  <lastmod>2016-04-06T11:09:00Z</lastmod>
+  <lastmod>2016-04-09T14:30:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/bitson/</loc>
@@ -291,7 +291,59 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/</loc>
-  <lastmod>2016-04-09T13:48:00Z</lastmod>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/01/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/02/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/03/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/04/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/05/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/06/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/07/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/08/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/09/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/10/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/11/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/12/</loc>
+  <lastmod>2016-04-09T13:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/arq/</loc>
@@ -512,5 +564,9 @@
  <url>
   <loc>http://lecovi.github.io/ifts/par/prog-estructurada/</loc>
   <lastmod>2016-04-09T13:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/resources/</loc>
+  <lastmod>2016-04-09T14:30:00Z</lastmod>
  </url>
 </urlset>

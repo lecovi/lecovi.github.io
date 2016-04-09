@@ -24,17 +24,21 @@ Técnico Superior en Análisis de Sistemas
 
     <a href="http://www.openstreetmap.org/#map=19/-34.59072/-58.41490&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
 
-En el |ifts| doy cuatro materias
-cuatrimestrales que corresponden al primer año de la carrera.
+En el |ifts| doy cuatro materias que corresponden al primer año de la carrera y
+una que corresponde al segundo año.
 
 .. |ifts| raw:: html
 
     <a href="http://www.ifts18.edu.ar" target="_blank">I.F.T.S. N°18</a>
 
 :En el primer cuatrimestre:
-    - :doc:`Arquitectura de Computadoras <ifts/arq>`
-    - :doc:`Diagramación Lógica <ifts/dlo>`
+    * **Primer año**:
+        - :doc:`Arquitectura de Computadoras <ifts/arq>`
+        - :doc:`Diagramación Lógica <ifts/dlo>`
+    * **Segundo año**:
+        - :doc:`Análisis de Sistemas <ifts/ana>`
 
 :En el segundo cuatrimestre:
-    - :doc:`Estructura de Datos <ifts/edd>`
-    - :doc:`Paradigmas de Programación <ifts/par>`
+    * **Primer año**:
+        - :doc:`Estructura de Datos <ifts/edd>`
+        - :doc:`Paradigmas de Programación <ifts/par>`
