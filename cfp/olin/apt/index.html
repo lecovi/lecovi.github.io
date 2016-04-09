@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="http://lecovi.github.io/cfp/olin/apt/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manejo de paquetes | Make it So!</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/cfp/olin/apt/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<meta name="author" content="Leandro E. Colombo Viña">
+<meta property="og:site_name" content="Make it So!">
+<meta property="og:title" content="Manejo de paquetes">
+<meta property="og:url" content="http://lecovi.github.io/cfp/olin/apt/">
+<meta property="og:description" content="Contents
+
+Archivo de configuración:
+
+
+
+Debian ---&gt; APT (Advanced Package Tool)
+            extensión = .deb
+
+Arch -----&gt; PACMAN (Package Manager)
+
+RedHat ---&gt; YUM
+            extesión = .rpm
+
+
+
+Archiv">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-08-26T15:41:53-03:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../../blog/"><i class="fa fa-pencil"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../../ifts"> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../../ifts/arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../../../ifts/dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../../../ifts/edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li>
+<a href="../../../ifts/par/">  <i class="fa fa-code"></i> Paradigmas de Programación</a>
+                    </li>
+<li>
+<a href="../../../bitson"><i class="fa fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../../bitson/prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="index.rst" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Manejo de paquetes</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href=".#archivo-de-configuracion" id="id1">Archivo de configuración:</a></li>
+</ul>
+</div>
+<pre class="literal-block">
+Debian ---&gt; APT (Advanced Package Tool)
+            extensión = .deb
+
+Arch -----&gt; PACMAN (Package Manager)
+
+RedHat ---&gt; YUM
+            extesión = .rpm
+</pre>
+<hr class="docutils">
+<div class="section" id="archivo-de-configuracion">
+<h2><a class="toc-backref" href=".#id1">Archivo de configuración:</a></h2>
+<p><tt class="docutils literal">/etc/apt/sources.list</tt></p>
+<pre class="code console"><a name="rest_code_e16caf6e2d3541eba5df0e8f477ccddd-1"></a><span class="go">deb http://sito.ejemplo.com/debian distribucion rama1 rama2 rama3</span>
+<a name="rest_code_e16caf6e2d3541eba5df0e8f477ccddd-2"></a><span class="go">deb-src http://sito.ejemplo.com/debian distribucion rama1 rama2 rama3</span>
+</pre>
+<dl class="docutils">
+<dt>deb/deb-src</dt>
+<dd>si dice deb, entonces busca en el repositorio los archvios binarios.
+Si dice deb-src busca los códigos fuente.</dd>
+<dt>URL</dt>
+<dd>la ubicación del repositorio.</dd>
+<dt>distribución</dt>
+<dd>el nombre clave de la versión o la clase de la versión
+(Por ejemplo: wheezy= nombre clave, clase=stable).</dd>
+<dt>ramas</dt>
+<dd>son distintos canales del repositorio con paquetes de diferentes características.
+(libre | "semi"-libres | no-libres)</dd>
+</dl>
+<hr class="docutils">
+<p><strong>IMPORTANTE!!</strong></p>
+<p><strong>PARA EDITAR EL ARCHIVO</strong>
+<tt class="docutils literal">/etc/apt/sources.list</tt>
+<strong>TENEMOS QUE SER EL SUPERUSUARIO.</strong></p>
+<hr class="docutils">
+<p>Para actualizar las cabeceras de los paquetes</p>
+<pre class="code console"><a name="rest_code_4e7bf2902a194a7aaefd34d037941b66-1"></a><span class="gp">$</span> sudo apt update
+</pre>
+<p>Para actualizar los paquetes (el sistema)</p>
+<pre class="code console"><a name="rest_code_68b6658985594e50887b02bbbc4cd637-1"></a><span class="gp">$</span> sudo apt upgrade
+</pre>
+<p>Para instalar paquetes</p>
+<pre class="code console"><a name="rest_code_348977f057f94c96afed1394ed907e2a-1"></a><span class="gp">$</span> sudo apt install *&lt;nombre_del_paquete&gt;*
+</pre>
+<p>Ejemplo: suponganse que queremos instalar el paquete mc (Midnight Commander).</p>
+<pre class="code console"><a name="rest_code_02ad209edb5047fc81a294aa00e7c593-1"></a><span class="gp">$</span> sudo apt install mc
+</pre>
+<p>Otro ejemplo: ahora queremos instalar el programa htop y terminator.</p>
+<pre class="code console"><a name="rest_code_fcd2798ee8d14ddba00512f87ae15455-1"></a><span class="gp">$</span> sudo apt install htop terminator
+</pre>
+<p>Para desinstalar paquetes</p>
+<pre class="code console"><a name="rest_code_319616972a6345fbb42b11e9b4be4be3-1"></a><span class="gp">$</span> sudo apt remove &lt;nombre_del_paquete&gt;
+</pre>
+<p>Para desinstalar y borrar todos los archivos de configuración</p>
+<pre class="code console"><a name="rest_code_b45d03489e3b46caac2ddde13e6c51dc-1"></a><span class="gp">$</span> sudo apt purge &lt;nombre_del_paquete&gt;
+</pre>
+<hr class="docutils">
+<p>Para buscar paquetes por nombres (o partes de nombres).</p>
+<pre class="code console"><a name="rest_code_b26f0a6b849e4b7fb7c197652bbf7736-1"></a><span class="gp">$</span> sudo apt-cache search &lt;nombre&gt;
+</pre>
+<p>Para mostrar la información del paquete:</p>
+<pre class="code console"><a name="rest_code_4bce226cfb0a45c980c94e3dde59d4a6-1"></a><span class="gp">$</span> sudo apt-cache show &lt;nombre&gt;
+</pre>
+</div>
+</div>
+    </div>
+    
+
+</article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2016         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../../assets/js/all-nocdn.js"></script><script src="../../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

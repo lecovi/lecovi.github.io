@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="http://lecovi.github.io/ifts/par/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paradigmas de Programación | Make it So!</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/ifts/par/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<meta name="author" content="Leandro E. Colombo Viña">
+<meta property="og:site_name" content="Make it So!">
+<meta property="og:title" content="Paradigmas de Programación">
+<meta property="og:url" content="http://lecovi.github.io/ifts/par/">
+<meta property="og:description" content="Instituto de Formación Técnica Superior Nº 18
+Mansilla 3643, Ciudad Autónoma de Buenos Aires  mapa
+Viernes de 18:30 a 22:00hs
+Suscribite a la lista de correo en este link
+
+Calendario
+
+
+
+
+Clases
+A cont">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-08-25T13:27:56-03:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../blog/"><i class="fa fa-pencil"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../cfp/prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../../cfp/olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../cfp/reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../ifts"> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li class="active">
+<a href=".">  <i class="fa fa-code"></i> Paradigmas de Programación <span class="sr-only">(activo)</span></a>
+                    </li>
+<li>
+<a href="../../bitson"><i class="fa fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../bitson/prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="index.rst" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Paradigmas de Programación</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<div class="align-center section" id="id1">
+<h2><a class="reference external" href="http://www.ifts18.edu.ar">Instituto de Formación Técnica Superior Nº 18</a></h2>
+<p class="lead">Mansilla 3643, Ciudad Autónoma de Buenos Aires <a href="http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&amp;layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a></p>
+<p class="lead"><strong>Viernes de 18:30 a 22:00hs</strong></p>
+<p class="lead">Suscribite a la lista de correo en este <a class="reference external" href="http://listas.bitson.com.ar/listinfo/paradigmas">link</a></p>
+<div class="sidebar">
+<p class="first sidebar-title">Calendario</p>
+<div class="last"><iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ifts18.edu.ar_41iib4ghpdvlpsuo8k0g7962dc%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FArgentina%2FBuenos_Aires" style=" border-width:0 " width="400" height="300" frameborder="0" scrolling="no"></iframe></div>
+</div>
+</div>
+<hr class="docutils">
+<div class="section" id="clases">
+<h2>Clases</h2>
+<p>A continuación tenemos la lista de las clases que vamos a ver durante el curso.</p>
+<ol class="arabic simple">
+<li><a class="reference external" href="prog-estructurada/">Programación estructurada</a></li>
+<li><a class="reference external" href="archivos/">Manejo de archivos</a></li>
+<li><a class="reference external" href="errores/">Manejo de errores y excepciones</a></li>
+<li><a class="reference external" href="procesamiento-archivos/">Procesamiento de archivos</a></li>
+<li><a class="reference external" href="ejecucion-funciones/">Ejecución de funciones y recursividad</a></li>
+<li><a class="reference external" href="ordenamientos1/">Ordenamientos</a></li>
+<li><a class="reference external" href="ordenamientos2/">Ordenamientos Recursivos</a></li>
+<li><a class="reference external" href="intro-flask/">Introducción a Flask</a></li>
+<li><a class="reference external" href="flask-templates/">Flask Templates</a></li>
+<li><a class="reference external" href="flask-forms/">Flask Web Forms</a></li>
+<li><a class="reference external" href="flask-db/">Flask Database</a></li>
+<li><a class="reference external" href="flask-user-login/">Flask User Login</a></li>
+<li><a class="reference external" href="parcial/">Parcial</a></li>
+<li><a class="reference external" href="encuesta/">Encuesta</a></li>
+</ol>
+</div>
+<div class="section" id="fundamentacion">
+<h2>Fundamentación</h2>
+<p>Esta instancia curricular brinda herramientas para que los estudiantes puedan
+interpretar, en el contexto de un proyecto, especificaciones o requisitos de las
+asignaciones a programar. Comprende validar la coherencia e integridad de las
+mismas y convalidar su propia interpretación con quienes la hayan realizado o
+provisto. A su vez, plantea la realización de operaciones tales como la
+verificación del cumplimiento de las especificaciones recibidas; la
+planificación y documentación de casos de prueba; la preparación de datos y
+entornos de prueba ("testing") y la generación de código adicional para simular
+el entorno o activar las pruebas. Todos estos procedimientos posibilitarán que
+los estudiantes analicen las causas de comportamientos o resultados no
+previstos para proponer correcciones respecto del código realizando así un
+mejoramiento de la eficiencia ("tunning") de la solución propuesta.</p>
+<div class="col-md-6 section" id="objetivos">
+<h3>Objetivos</h3>
+<p>Que los estudiantes:</p>
+<ul class="simple">
+<li>Conozcan los fundamentos de diseño de programas basados en la descomposición modular y la programación estructurada.</li>
+<li>Adquieran los conocimientos fundamentales de programación tomando como base un lenguaje de programación.</li>
+</ul>
+<div class="admonition-organizacion admonition">
+<p class="first admonition-title">Organización</p>
+<p><strong>Carga Horaria:</strong> 5 h/c.</p>
+<p><strong>Modalidad de cursada:</strong> Presencial.</p>
+<p><strong>Duración:</strong> 1 cuatrimestre.</p>
+<p><strong>Evaluación:</strong> Durante toda la cursada y al finalizar el curso.</p>
+<p class="last"><strong>Requisitos de aprobación</strong> Cumplimentar al menos 75% de asistencia y la
+aprobación de los exámenes parciales y del examen final.</p>
+</div>
+</div>
+<div class="col-md-6 section" id="ejes-de-contenido">
+<h3>Ejes de contenido</h3>
+<ul class="simple">
+<li>Conceptos generales. El proceso de programación. Diseño de programas.</li>
+<li>Codificación de programas. Compilación de un programa. Elementos para codificar programas.</li>
+<li>Paradigmas de Programación: imperativo, orientado a objetos, funcional, lógico.</li>
+<li>La codificación de las estructuras de control. Tipos de selección: simple (if-else) o múltiple (switch). Tipos de repetición: do-while y for.</li>
+<li>Algoritmos fundamentales: recorrido, búsqueda, ordenamiento, actualización.</li>
+<li>Codificación de un programa con arreglos. Manejo de los elementos de un arreglo. Manejo de los elementos de una matriz.</li>
+<li>Diseño descendente. Proceso de modularización.</li>
+<li>Utilización de funciones que no regresan valor (módulos).</li>
+<li>Validación de la entrada de datos.</li>
+<li>Creación de programas que utilizan registros y archivos. Proceso de un archivo secuencial. Proceso de un archivo directo.</li>
+</ul>
+</div>
+<div class="col-md-12 section" id="programa-de-la-asignatura">
+<h3>Programa de la Asignatura</h3>
+<p>La asignatura se divide en 3 (tres) unidades temáticas que nuclean los
+contenidos según la relación existente entre los mismos.</p>
+<ul>
+<li>
+<p class="first"><strong>UNIDAD 1: PROGRAMAS SENCILLOS</strong></p>
+<blockquote>
+<p>Construcción de programas. Un ejemplo sencillo. Piezas de un programa
+Python. Nombres. Expresiones. Tipos de datos. Instrucciones. Ciclos
+definidos. Guía para el diseño. Documentación de
+funciones. Imprimir vs Devolver. Uso de funciones en un programa. Resultados
+de las funciones. Un ejemplo completo. Devolución múltiples resultados.
+Expresiones booleanas. Expresiones de comparación. Operadores lógicos.
+Comparaciones simples. Múltiples decisiones consecutivas.</p>
+</blockquote>
+</li>
+<li>
+<p class="first"><strong>UNIDAD 2: USANDO FUNCIONES</strong></p>
+<blockquote>
+<p>El problema de la búsqueda. Búsqueda lineal. Búsqueda binaria. Apertura y
+cierre de archivos. Procesamiento. Escritura y Lectura. Manipulación
+binaria. Persistencia de datos (CSV y binarios). Directorios. Corte de
+control. Apareo. Errores. Excepciones. Manejo. Procesamiento y propagación.
+Acceso a la información de contexto. Validaciones.</p>
+</blockquote>
+</li>
+<li>
+<p class="first"><strong>UNIDAD 3: APLICACIONES</strong></p>
+<blockquote>
+<p>Concetos web: HTTP y HTML. Diseño de aplicaciones. Modelos de datos.
+Patrón MVC: modelo – vista – controlador. Utilización de framework.</p>
+</blockquote>
+</li>
+</ul>
+<p>Descargate la <a class="reference external" href="../../par/planificacion.pdf">planificación</a>.</p>
+</div>
+</div>
+</div>
+    </div>
+    
+
+</article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2016         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
