@@ -7,7 +7,7 @@
 .. description:
 .. type: text
 
-Para comenzar, vamos a estudiar los principios de la computación.
+Para comenzar, vamos a conocer los comienzos de la computación.
 
 Historia de la computación
 ==========================

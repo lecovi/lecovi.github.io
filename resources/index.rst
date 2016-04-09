@@ -22,6 +22,9 @@ Acá podés descargar las |maquinas_virtuales|.
 Bibliografía
 ============
 
+Python
+------
+
 #. **Aprenda a pensar como un programador con Python**, *Allen Downey, Jeffrey Elkner & Chris Meyers* |libro|.
 #. **Algoritmos y programación 1 | Aprendiendo a programar usando Python como herramienta**, *Rosita Wachenchauzer & Colaboradores* |apunte_7540|.
 #. **Tutorial de Python Argentina**, *PyAr* |tuto_pyar|.

@@ -7,4 +7,128 @@
 .. description:
 .. type: text
 
-Escriba su página aquí.
+.. class:: align-center
+
+`Instituto de Formación Técnica Superior Nº 18 <http://www.ifts18.edu.ar>`_
+===========================================================================
+
+.. class:: lead
+
+    Mansilla 3643, Ciudad Autónoma de Buenos Aires |mapa|
+
+    **Viernes de 18:30 a 22:00hs**
+
+    Suscribite a la lista de correo en este |lista|
+
+.. |mapa| raw:: html
+
+    <a href="http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
+
+.. |lista| raw:: html
+
+    <a href="http://listas.bitson.com.ar/listinfo/analisis" target="_blank">link</a>
+
+.. sidebar:: Calendario
+
+    .. raw:: html
+
+        <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=colomboleandro%40ifts18.edu.ar&amp;color=%2342104A&amp;ctz=America%2FArgentina%2FBuenos_Aires"
+        style=" border-width:0 " width="400" height="300" frameborder="0"
+        scrolling="no"></iframe>
+
+
+----
+
+
+Clases
+======
+
+A continuación tenemos la lista de las clases que vamos a ver durante el curso.
+
+#. :doc:`Introducción al curso <ifts/ana/01>`
+#. :doc:`02 <ifts/ana/02>`
+#. :doc:`03 <ifts/ana/03>`
+#. :doc:`04 <ifts/ana/04>`
+#. :doc:`05 <ifts/ana/05>`
+#. :doc:`06 <ifts/ana/06>`
+#. :doc:`07 <ifts/ana/07>`
+#. :doc:`08 <ifts/ana/08>`
+#. :doc:`09 <ifts/ana/09>`
+#. :doc:`10 <ifts/ana/10>`
+#. :doc:`11 <ifts/ana/11>`
+#. :doc:`12 <ifts/ana/12>`
+
+
+Fundamentación
+==============
+
+.. Esta instancia curricular proporciona a los estudiantes una introducción
+.. histórica del procesamiento de datos y la evolución de las computadoras hasta
+.. nuestros días, a la vez que les brinda un conocimiento general de la
+.. arquitectura y la organización de la computadora.
+
+.. class:: col-md-6
+
+Objetivos
+---------
+
+Que los estudiantes:
+
+.. * comprendan la importancia del las innovaciones tecnológicas y las automatizaciones aplicadas al análisis de sistemas.
+.. * conozcan la arquitectura y organización de la computadora.
+.. * adquieran precisión en el lenguaje de la especialidad.
+
+
+.. admonition:: Organización
+
+    **Carga Horaria:** 5 h/c.
+
+    **Modalidad de cursada:** Presencial.
+
+    **Duración:** 1 cuatrimestre.
+
+    **Evaluación:** Durante toda la cursada y al finalizar el curso.
+
+    **Requisitos de aprobación** Cumplimentar al menos 75% de asistencia y la
+    aprobación de los exámenes parciales y del examen final.
+
+
+.. class:: col-md-6
+
+Ejes de contenido
+-----------------
+
+.. * Historia de la computación. Terminología específica.
+.. * Esquema básico del elemento físico (hardware).
+.. * Esquema básico del elemento lógico (software).
+.. * Sistemas de numeración (decimal, binario y hexadecimal).
+.. * Arquitectura y organización de la computadora.
+.. * Concepto de programas rutinas y subrutinas de bajo nivel.
+.. * Representación de los datos a nivel máquina.
+.. * Diferencia entre memoria de trabajo y memoria de almacenamiento.
+.. * Jerarquía de memoria. Organización funcional.
+.. * Circuitos combinatorios y secuenciales.
+
+
+.. class:: col-md-12
+
+Programa de la Asignatura
+-------------------------
+
+.. La asignatura se divide en 3 (tres) unidades temáticas que nuclean los
+.. contenidos según la relación existente entre los mismos.
+..
+.. * **UNIDAD 1: INTRODUCCIÓN Y FUNDAMENTOS.**
+..     Historia y definición de informática y computadoras. Unidad básica de
+..     información. Sistemas de numeración. Hardware y Software, definición y
+..     clasificación.
+.. * **UNIDAD 2: ARQUITECTURA DE UNA COMPUTADORA DIGITAL**
+..     Esquema funcional. El procesador: Unidad Aritmético Lógica, Unidad de
+..     control. La memoria. Los dispositivos de E/S. Ejecución de instrucciones.
+.. * **UNIDAD 3: EL SOPORTE LÓGICO.**
+..     Lenguajes, niveles y máquinas virtuales. Procesos. Algoritmos. Circuitos
+..     combinatorios y secuenciales.
+..
+.. Descargate la planificación_.
+..
+.. .. _planificación: /ana/planificacion.pdf

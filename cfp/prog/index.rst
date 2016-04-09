@@ -17,6 +17,10 @@ Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
 
     Sede Pío IX: Yapeyú 197, Ciudad Autónoma de Buenos Aires |mapa|
 
+    **Lunes y Miércoles de 17:00 a 20:30hs**
+
+    &
+
     **Martes y Miércoles de 17:00 a 20:30hs**
 
     Suscribite a la lista de correo en este |lista|
@@ -47,22 +51,22 @@ Clases
 
 A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 
-#. :doc:`01 <cfp/prog/01>`
-#. :doc:`02 <cfp/prog/02>`
-#. :doc:`03 <cfp/prog/03>`
-#. :doc:`04 <cfp/prog/04>`
-#. :doc:`05 <cfp/prog/05>`
-#. :doc:`06 <cfp/prog/06>`
-#. :doc:`07 <cfp/prog/07>`
-#. :doc:`08 <cfp/prog/08>`
-#. :doc:`09 <cfp/prog/09>`
-#. :doc:`10 <cfp/prog/10>`
-#. :doc:`11 <cfp/prog/11>`
-#. :doc:`12 <cfp/prog/12>`
-#. :doc:`13 <cfp/prog/13>`
-#. :doc:`14 <cfp/prog/14>`
-#. :doc:`15 <cfp/prog/15>`
-#. :doc:`16 <cfp/prog/16>`
+#. :doc:`Semana 1 <cfp/prog/01>`
+#. :doc:`Semana 2 <cfp/prog/02>`
+#. :doc:`Semana 3 <cfp/prog/03>`
+#. :doc:`Semana 4 <cfp/prog/04>`
+#. :doc:`Semana 5 <cfp/prog/05>`
+#. :doc:`Semana 6 <cfp/prog/06>`
+#. :doc:`Semana 7 <cfp/prog/07>`
+#. :doc:`Semana 8 <cfp/prog/08>`
+#. :doc:`Semana 9 <cfp/prog/09>`
+#. :doc:`Semana 10 <cfp/prog/10>`
+#. :doc:`Semana 11 <cfp/prog/11>`
+#. :doc:`Semana 12 <cfp/prog/12>`
+#. :doc:`Semana 13 <cfp/prog/13>`
+#. :doc:`Semana 14 <cfp/prog/14>`
+#. :doc:`Semana 15 <cfp/prog/15>`
+#. :doc:`Semana 16 <cfp/prog/16>`
 
 
 Presentación

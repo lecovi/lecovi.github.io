@@ -15,13 +15,23 @@
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Introducción al Curso">
 <meta property="og:url" content="http://lecovi.github.io/ifts/dlo/introduccion-dlo/">
-<meta property="og:description" content="A lo largo del curso vamos a trabajar con una máquina virtual con Linux Mint
-Debian Edition. Si querés podés conseguir la imagen .iso para instalar en
-este link.
-LMDE viene en 2 sabores:
+<meta property="og:description" content="Contents
 
-Cinnamon
-MAT">
+Recursos
+Máquinas Virtuales &amp; Bibliografía
+GNU/Linux
+
+
+Comandos GNU/Linux
+Prompt
+Print Working Directory
+List
+Change Directory
+
+
+
+
+A lo largo del curso vamos a trabajar con una máquina virtu">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-08-26T15:18:41-03:00">
 </head>
@@ -60,12 +70,6 @@ MAT">
 <a href="../../../cfp/prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
                     </li>
 <li>
-<a href="../../../cfp/olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
-                    </li>
-<li>
-<a href="../../../cfp/reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
-                    </li>
-<li>
 <a href="../../../ifts"><i class=" fa-graduation-cap"></i> <strong>Terciario<strong></strong></strong></a>
                     </li>
 <li>
@@ -88,6 +92,12 @@ MAT">
                     </li>
 <li>
 <a href="../../../bitson/prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+                    </li>
+<li>
+<a href="../../../bitson/olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../../bitson/reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
             </li>
 </ul>
 </li>
@@ -129,6 +139,25 @@ MAT">
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li>
+<a class="reference internal" href=".#recursos" id="id2">Recursos</a><ul>
+<li><a class="reference internal" href=".#maquinas-virtuales-bibliografia" id="id3">Máquinas Virtuales &amp; Bibliografía</a></li>
+<li><a class="reference internal" href=".#gnu-linux" id="id4">GNU/Linux</a></li>
+</ul>
+</li>
+<li>
+<a class="reference internal" href=".#comandos-gnu-linux" id="id5">Comandos GNU/Linux</a><ul>
+<li><a class="reference internal" href=".#prompt" id="id6">Prompt</a></li>
+<li><a class="reference internal" href=".#print-working-directory" id="id7">Print Working Directory</a></li>
+<li><a class="reference internal" href=".#list" id="id8">List</a></li>
+<li><a class="reference internal" href=".#change-directory" id="id9">Change Directory</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <p>A lo largo del curso vamos a trabajar con una máquina virtual con <em>Linux Mint
 Debian Edition</em>. Si querés podés conseguir la imagen <cite>.iso</cite> para instalar en
 este <a href="https://www.linuxmint.com/download_lmde.php" target="_blank">link</a>.</p>
@@ -141,21 +170,32 @@ este <a href="https://www.linuxmint.com/download_lmde.php" target="_blank">link<
 versión. Además consume un poco menos de recursos, ya que el entorno gráfico
 MATE es más ligero que Cinnamon y en el uso con las máquinas virtuales se nota
 un poco la diferencia.</p>
-<div class="section" id="maquinas-virtuales-gnu-linux">
-<h2>Máquinas Virtuales &amp; GNU/Linux</h2>
-<p>Fijate en este artículos:</p>
-<ol class="arabic simple">
-<li><a class="reference external" href="../../../cfp/olin/introduccion-olin/">Software Libre y GNU/Linux</a></li>
-<li><a class="reference external" href="../../../cfp/olin/vbox-olin/">Máquinas virtuales</a></li>
-</ol>
-<p>Acá podés descargar las <a href="https://mega.nz/#F!yYxDgDbJ!CmVGhOgD-F4XnxPrM7BXTg" target="_blank">máquinas virtuales</a>.</p>
+<div class="section" id="recursos">
+<h2><a class="toc-backref" href=".#id2">Recursos</a></h2>
+<div class="section" id="maquinas-virtuales-bibliografia">
+<h3><a class="toc-backref" href=".#id3">Máquinas Virtuales &amp; Bibliografía</a></h3>
+<p>En la sección de <a class="reference external" href="../../../resources">recursos</a> podés descargar las máquinas virtuales y la
+bibliografía del curso.</p>
+<p>Para ver un paso a paso de cómo instalar tu máquina virtual:</p>
+<ul class="simple">
+<li><a class="reference external" href="../../../bitson/olin/vbox-olin/">Máquinas virtuales</a></li>
+</ul>
+</div>
+<div class="section" id="gnu-linux">
+<h3><a class="toc-backref" href=".#id4">GNU/Linux</a></h3>
+<p>Para saber un poco más sobre GNU/Linux:</p>
+<ul class="simple">
+<li><a class="reference external" href="../../../bitson/olin/introduccion-olin/">Software Libre y GNU/Linux</a></li>
+</ul>
+</div>
+</div>
 <div class="section" id="comandos-gnu-linux">
-<h3>Comandos GNU/Linux</h3>
+<h2><a class="toc-backref" href=".#id5">Comandos GNU/Linux</a></h2>
 <div class="section" id="prompt">
-<h4>Prompt</h4>
+<h3><a class="toc-backref" href=".#id6">Prompt</a></h3>
 <p>Cuando abrimos nuestra terminal, nos muestra el <em>prompt</em>. Éste es el indicador
 de que la terminal está esperando que le demos comandos para ejecutar.</p>
-<pre class="code console"><a name="rest_code_c0f9dbc1b02c46a48c244b1e97fb3928-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
+<pre class="code console"><a name="rest_code_88b9418e825e418c9d65fcb676eccd3e-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
 </pre>
 <p>En nuestro caso, identificamos 5 secciones en el <em>prompt</em>.</p>
 <ol class="arabic simple">
@@ -173,11 +213,11 @@ de que la terminal está esperando que le demos comandos para ejecutar.</p>
 </ol>
 </div>
 <div class="section" id="print-working-directory">
-<h4>Print Working Directory</h4>
+<h3><a class="toc-backref" href=".#id7">Print Working Directory</a></h3>
 <p>Este comando nos imprime en pantalla en qué <em>carpeta</em> estamos parados. Simplemente ejecutando <tt class="docutils literal">pwd</tt>.</p>
-<pre class="code console"><a name="rest_code_4f3ca916f2ec4f9fa7ad5373885aa862-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ pwd</span>
-<a name="rest_code_4f3ca916f2ec4f9fa7ad5373885aa862-2"></a><span class="go">/home/alumno</span>
-<a name="rest_code_4f3ca916f2ec4f9fa7ad5373885aa862-3"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
+<pre class="code console"><a name="rest_code_97eee8f722e24eb397283714158a1fa0-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ pwd</span>
+<a name="rest_code_97eee8f722e24eb397283714158a1fa0-2"></a><span class="go">/home/alumno</span>
+<a name="rest_code_97eee8f722e24eb397283714158a1fa0-3"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
 </pre>
 <p>Como estamos parados en el <em>home de alumno</em> nos dice <tt class="docutils literal">/home/alumno</tt>. En esta
 ruta (también llamado comunmente <em>path</em>) lo primero que identificamos es que el
@@ -216,25 +256,25 @@ se simboliza con barra <strong>/</strong>. Entonces, en la ruta</p>
 </blockquote>
 </div>
 <div class="section" id="list">
-<h4>List</h4>
+<h3><a class="toc-backref" href=".#id8">List</a></h3>
 <p>Si queremos ver cuál es el contenido del directorio, ejecutamos el comando
 <tt class="docutils literal">ls</tt>.</p>
-<pre class="code console"><a name="rest_code_1e7bc114b57a40dd9c52bb74c95923b1-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ ls</span>
-<a name="rest_code_1e7bc114b57a40dd9c52bb74c95923b1-2"></a><span class="go">Descargas  Documentos  Escritorio  Imágenes  Música  Plantillas  Público</span>
-<a name="rest_code_1e7bc114b57a40dd9c52bb74c95923b1-3"></a><span class="go">Vídeos</span>
-<a name="rest_code_1e7bc114b57a40dd9c52bb74c95923b1-4"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
+<pre class="code console"><a name="rest_code_8ae8ea25c7e74544963bccc94dbede45-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ ls</span>
+<a name="rest_code_8ae8ea25c7e74544963bccc94dbede45-2"></a><span class="go">Descargas  Documentos  Escritorio  Imágenes  Música  Plantillas  Público</span>
+<a name="rest_code_8ae8ea25c7e74544963bccc94dbede45-3"></a><span class="go">Vídeos</span>
+<a name="rest_code_8ae8ea25c7e74544963bccc94dbede45-4"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
 </pre>
 <p>El comando <tt class="docutils literal">ls</tt> acepta varios modificadores para obtener mayor información
 sobre los elementos que encontramos en el directorio.</p>
 </div>
 <div class="section" id="change-directory">
-<h4>Change Directory</h4>
+<h3><a class="toc-backref" href=".#id9">Change Directory</a></h3>
 <p>Con el comando <tt class="docutils literal">cd</tt> podemos cambiar el directorio de trabajo. Para ejecutarlo,
 debemos escribir <tt class="docutils literal">cd</tt> seguido del nombre del directorio al cual nos queremos
 mover. Por ejemplo, dentro de nuestro <em>home</em> tenemos un directorio llamado
 <tt class="docutils literal">Documentos</tt>, si queremos movernos dentro ejecutamos:</p>
-<pre class="code console"><a name="rest_code_b6fd2227f4884f32902fdec47161b4d0-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ cd Documentos/</span>
-<a name="rest_code_b6fd2227f4884f32902fdec47161b4d0-2"></a><span class="go">alumno@vm-lmde-mate-32b ~/Documentos $</span>
+<pre class="code console"><a name="rest_code_ebfbcc75655f42c684db50916c595a90-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ cd Documentos/</span>
+<a name="rest_code_ebfbcc75655f42c684db50916c595a90-2"></a><span class="go">alumno@vm-lmde-mate-32b ~/Documentos $</span>
 </pre>
 <p>Notemos ahora cómo cambió el <em>prompt</em>, en la sección donde nos muestra el
 directorio de trabajo ahora dice <tt class="docutils literal">~/Documentos</tt>, indicándonos que estamos
@@ -252,22 +292,6 @@ en el entorno gráfico.</p>
 <cite>sin argumentos</cite>: si ejecutamos <tt class="docutils literal">cd</tt> sin argumentos, nos llevará a nuestro <cite>HOME</cite> sin importar dónde estemos parados.</li>
 </ul>
 </div>
-</div>
-</div>
-<div class="section" id="bibliografia">
-<h2>Bibliografía</h2>
-<ol class="arabic simple">
-<li>
-<strong>Aprenda a pensar como un programador con Python</strong>, <em>Allen Downey, Jeffrey Elkner &amp; Chris Meyers</em> <a href="https://github.com/lecovi/thinkcs-py_es/releases/download/v3.0.0-b1/top.pdf" target="_blank">Descarga</a>.</li>
-<li>
-<strong>Algoritmos y programación 1 | Aprendiendo a programar usando Python como herramienta</strong>, <em>Rosita Wachenchauzer &amp; Colaboradores</em> <a href="https://drive.google.com/file/d/0B5YeA72NbAFYTHhhWVc0TlVWUDg/view?usp=sharing" target="_blank">Descarga</a>.</li>
-<li>
-<strong>Tutorial de Python Argentina</strong>, <em>PyAr</em> <a href="http://docs.python.org.ar/tutorial/" target="_blank">Descarga</a>.</li>
-<li>
-<strong>Python para todos</strong>, <em>Raúl González Duque</em> <a href="http://mundogeek.net/tutorial-python/" target="_blank">Descarga</a>.</li>
-<li>
-<strong>Think Python 2e</strong>, <em>Allen B. Downey</em> [inglés] <a href="http://greenteapress.com/wp/think-python-2e/" target="_blank">Descarga</a>.</li>
-</ol>
 </div>
 </div>
     </div>

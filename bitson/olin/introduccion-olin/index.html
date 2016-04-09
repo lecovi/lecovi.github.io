@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="http://lecovi.github.io/bitson/olin/introduccion-olin/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introducción a GNU/Linux | Make it So!</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/bitson/olin/introduccion-olin/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<meta name="author" content="Leandro E. Colombo Viña">
+<meta property="og:site_name" content="Make it So!">
+<meta property="og:title" content="Introducción a GNU/Linux">
+<meta property="og:url" content="http://lecovi.github.io/bitson/olin/introduccion-olin/">
+<meta property="og:description" content="Contents
+
+Metiéndonos en el mundillo del Software Libre
+Dudas comunes de Windowseros
+Seguridad
+Virus
+Código Abierto
+Soporte y Actualizaciones
+
+
+Software
+¡GNU/Linux cuida el medio ambiente!
+Mitos sobre">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-08-26T15:18:41-03:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../../blog/"><i class="fa fa-pencil"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../../cfp/prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../../../ifts"><i class=" fa-graduation-cap"></i> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../../ifts/arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../../../ifts/dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../../../ifts/edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li>
+<a href="../../../ifts/par/">  <i class="fa fa-code"></i> Paradigmas de Programación</a>
+                    </li>
+<li>
+<a href="../../../ifts/ana/">  <i class="fa fa-trello"></i> Análisis de Sistemas</a>
+                    </li>
+<li>
+<a href="../../../bitson"><i class="fa fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+                    </li>
+<li>
+<a href="../">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../../resources/"><i class="fa fa-wrench"></i> Recursos</a>
+                </li>
+<li>
+<a href="../../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="index.rst" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Introducción a GNU/Linux</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href=".#metiendonos-en-el-mundillo-del-software-libre" id="id1">Metiéndonos en el mundillo del Software Libre</a></li>
+<li><a class="reference internal" href=".#dudas-comunes-de-windowseros" id="id2">Dudas comunes de Windowseros</a></li>
+<li>
+<a class="reference internal" href=".#seguridad" id="id3">Seguridad</a><ul>
+<li><a class="reference internal" href=".#virus" id="id4">Virus</a></li>
+<li><a class="reference internal" href=".#codigo-abierto" id="id5">Código Abierto</a></li>
+<li><a class="reference internal" href=".#soporte-y-actualizaciones" id="id6">Soporte y Actualizaciones</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href=".#software" id="id7">Software</a></li>
+<li><a class="reference internal" href=".#gnu-linux-cuida-el-medio-ambiente" id="id8">¡GNU/Linux cuida el medio ambiente!</a></li>
+<li><a class="reference internal" href=".#mitos-sobre-gnu-linux" id="id9">Mitos sobre GNU/Linux</a></li>
+</ul>
+</div>
+<div class="section" id="metiendonos-en-el-mundillo-del-software-libre">
+<h2><a class="toc-backref" href=".#id1">Metiéndonos en el mundillo del Software Libre</a></h2>
+<div class="panel-group container">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-f5d6e24b70ef43cbb1e7002e4c438c29"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué es un Sistema Operativo?</a>
+      </h5>
+    </div>
+    <div id="collapse-f5d6e24b70ef43cbb1e7002e4c438c29" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Un Sistema Operativo (SO) es un software para utilizar una computadora. Windows, Mac OS, GNU/Linux o Unix, son ejemplos de un Sistema Operativo.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: Agregar logos de los diferentes SO -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-cb89ee43bc034f1d89234e2e0687d74a"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué es GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-cb89ee43bc034f1d89234e2e0687d74a" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>GNU/Linux es un sistema operativo Unix que se distribuye bajo la Licencia
+Pública General de GNU (GNU GPL), es decir que es software libre. Su nombre
+proviene del núcleo Linux, desarrollado en el año 1991 por Linus Torvalds.
+El proyecto GNU, fue iniciado en el año 1983 por Richard Stallman.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: agregar links y videos que expliquen qué es linux. -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-eacbcda3f8b94d56906e6ca22686b499"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué significa GNU?</a>
+      </h5>
+    </div>
+    <div id="collapse-eacbcda3f8b94d56906e6ca22686b499" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>GNU significa: GNU's Not Unix (GNU no es Unix, es un acrónimo recursivo).</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: agregar logo y link al proyecto GNU. -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-7afc4f0180d745a18583698593c3f5cc"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Que es el núcleo (Kernel) de un sistema operativo?</a>
+      </h5>
+    </div>
+    <div id="collapse-7afc4f0180d745a18583698593c3f5cc" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>El núcleo (Kernel) es la parte fundamental de un sistema operativo. Es el
+software responsable de facilitar a los distintos programas acceso seguro al
+hardware de la computadora o en forma más básica, es el encargado de
+gestionar recursos, a través de servicios de llamada al sistema.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: agregar link a la explicación de qué es un kernel. -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-d1cdd6c732174db6af9fa73c6f2f5133"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué es UNIX?</a>
+      </h5>
+    </div>
+    <div id="collapse-d1cdd6c732174db6af9fa73c6f2f5133" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Es un sistema operativo portable, multitarea y multiusuario. Desarrollado a
+principios del año 1969 por un grupo de empleados de los laboratorios Bell de
+AT&amp;T.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: agregar video/link de explicación. -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-b81ed1b81e3244e0a64dda07c341987c"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Quién es Richard Stallman?</a>
+      </h5>
+    </div>
+    <div id="collapse-b81ed1b81e3244e0a64dda07c341987c" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Richard Matthew Stallman es un programador estadounidense y la
+figura más relevante del movimiento por el software libre en el mundo.
+Es también inventor del concepto de Copyleft (aunque no del término),
+un método para licenciar software de tal forma que su uso y
+modificación permanezcan siempre libres y reviertan en la comunidad.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: agregar FOTO -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-9ba6b0cb35d5400b975cbb45f7f8da1e"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Quién es Linus Torvalds?</a>
+      </h5>
+    </div>
+    <div id="collapse-9ba6b0cb35d5400b975cbb45f7f8da1e" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Linus Benedict Torvalds es un ingeniero de software finlandés; es más
+conocido por desarrollar la primera versión del núcleo (kernel) del
+sistema operativo GNU/Linux, basándose en la implementación de las
+herramientas, los compiladores y las utilidades desarrollados por el
+proyecto GNU.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: agregar FOTO -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-844cad510b1d4d0b89aa47c992820ceb"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué es la licencia GPL?</a>
+      </h5>
+    </div>
+    <div id="collapse-844cad510b1d4d0b89aa47c992820ceb" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Es una licencia creada por la Free Software Foundation a mediados de los 80, y
+está orientada principalmente a proteger la libre distribución, modificación y
+uso de software. Su propósito es declarar que el software cubierto por esta
+licencia es software libre y protegerlo de intentos de apropiación que
+restrinjan esas libertades a los usuarios.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: agregar links que expliquen las diferentes licencias. -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-4d43959e64514c2581e08a341cbc8e76"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué es el software libre?</a>
+      </h5>
+    </div>
+    <div id="collapse-4d43959e64514c2581e08a341cbc8e76" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>El software libre es la denominación del software que respeta la libertad de los
+usuarios sobre su producto adquirido. Una vez obtenido puede ser usado, copiado,
+estudiado, cambiado y redistribuido libremente. Según la Free Software
+Foundation, el software libre se refiere a la libertad de los usuarios para
+ejecutar, copiar, distribuir, estudiar, modificar el software y distribuirlo
+modificado.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: agregar definición y las 4 libertades. Agregar imagen de SL. -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-d87da05f4dbf4945961158372ad248c6"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Quién es Tux?</a>
+      </h5>
+    </div>
+    <div id="collapse-d87da05f4dbf4945961158372ad248c6" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Tux es el nombre de la mascota oficial de GNU/Linux. Creado por
+Larry Ewing en 1996, es un pequeño pingüino de aspecto risueño y
+cómico. La idea de que la mascota del kernel de Linux fuera un
+pingüino provino del mismo Linus Torvalds.
+Según se cuenta, cuando era niño le picó un pingüino y le resultó
+simpática la idea de asociar un pingüino a su proyecto.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: agregar imágenes de TUX. -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-126503cc6e99427bbf4c546f2ec0b4fa"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué son las distribuciones?</a>
+      </h5>
+    </div>
+    <div id="collapse-126503cc6e99427bbf4c546f2ec0b4fa" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Una distribución de GNU/Linux es una variante de ese sistema operativo que
+incorpora determinados paquetes de software para satisfacer las necesidades de
+un grupo especifico de usuarios, dando así origen a ediciones hogareñas,
+empresariales y para servidores. Pueden ser exclusivamente de software libre o
+también incorporar aplicaciones o controladores privativos.
+Algunos ejemplos de distribuciones de GNU/Linux:</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: agregar links (con logo) a las homepages de las distros más comunes. -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-5b2a16356f974f7f97926f7848fef3d6"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué son distribuciones modificadas?</a>
+      </h5>
+    </div>
+    <div id="collapse-5b2a16356f974f7f97926f7848fef3d6" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Existen distribuciones de GNU/Linux que están basadas en otras distribuciones.
+Esto se logra cuando un sistema operativo basado en GNU/Linux (Ej: "Debian") es
+de código abierto (open source) y un equipo de personas se unen para modificar
+varios aspectos de la misma para crear una nueva distribución modificada con
+fines de mejorarla.
+Algunas de las cosas que suelen agregar o eliminar son:</p>
+<blockquote>
+<ul class="simple">
+<li>Instaladores gráficos</li>
+<li>Temas gráficos rediseñados</li>
+<li>Software actualizado</li>
+<li>Entre otras...</li>
+</ul>
+</blockquote>
+<p>De este modo la distribución popular Ubuntu Linux fue derivada de Debian con
+fines de crear una nueva distribución modificada de uso fácil. Y así de Ubuntu
+derivaron más distribuciones modificadas por grupos terceros como Linux Mint.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: revisar texto! -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-e2263cf6759c46a6b6c6d3dc9268d35b"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué es el *Open Source*?</a>
+      </h5>
+    </div>
+    <div id="collapse-e2263cf6759c46a6b6c6d3dc9268d35b" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Código abierto es el término con el que se conoce al software distribuido y
+desarrollado libremente.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: extender explicación y diferencias con SL. -->
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-93c2f4635ac34a71ad695d224a5cc909"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Los sistemas operativos basados en GNU/Linux son gratis?</a>
+      </h5>
+    </div>
+    <div id="collapse-93c2f4635ac34a71ad695d224a5cc909" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>La mayoría de todos los sistemas operativos provenientes de GNU/Linux y sus
+derivados son gratis.</p>
+<p>Existe una minoría de sistemas operativos que no lo son. Estos otros sistemas
+operativos "No" gratuitos pueden ser de código libre también. Un proyecto que
+sea de código libre no significa que sea del todo gratis.</p>
+<p>Algunas distribuciones podrían costar dinero porque se le ha pagado a
+desarrolladores para trabajar en dicha distribución. Otra razón podría ser
+porque contiene software privativo, como es el caso de "Mandriva PowerPack".
+También hay distribuciones como openSUSE las cuales son de libre descarga pero
+si deseas, puedes comprar el DVD oficial en caja.</p>
+<p>Existen tiendas en la red que permiten comprar sistemas operativos de GNU/Linux
+ya quemados en un CD-R/DVD-R para las personas que no tienen tiempo o conexión
+para descargar y/o quemar un sistema operativo. Esta operación no es ilegal. Aún
+así, Canonical ha fundado un sistema de envío gratuito llamado "ShipIt" que le
+permite a las personas ordenar Ubuntu, Kubuntu y Edubuntu directamente a su
+buzón de correo físico. Consiste de un CD-R listo para probar y/o instalar en su
+computadora.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-b3156fa5978f45ccb73b113ab7f899e5"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Dónde puedo descargar una distribución GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-b3156fa5978f45ccb73b113ab7f899e5" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Puedes descargar una distribución Linux gratuitamente desde su respectiva página
+oficial.</p>
+<p>Antes de descargar la imagen .ISO debes de especificar la arquitectura de la
+computadora en la cual instalarás la distribución. Eso se refiero a el tipo de
+CPU (procesador). En la mayoría de los casos estas son las opciones presentadas:</p>
+<ul class="simple">
+<li>32 bits: AMD Sempron - Intel Pentium 4</li>
+<li>64 bits: AMD Athlon - Intel 64</li>
+</ul>
+<p>Otras de las opciones a escoger antes de descargar un sistema es el tipo de
+imagen desea descargar. Existen imágenes tanto para CD/DVD's como también
+imágenes para dispositivos de
+almacenamiento USB; esta le podría ayudar a iniciar el sistema desde su puerto
+USB.</p>
+<p>Por último existen diferentes fuentes para descargar la imagen .ISO del sistema:</p>
+<ul class="simple">
+<li>HTTP: descarga directa</li>
+<li>FTP: descarga directa</li>
+<li>Torrent: peer-to-peer (P2P)</li>
+</ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-273b69cf5f444476be9f66820cb99344"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Cuál es la mejor distribución de GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-273b69cf5f444476be9f66820cb99344" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>No existe una distribución mejor que la otra en términos generales. Todas pueden
+contar con minúsculos detalles que otra podría no tener. Cada una es diferente.
+La mejor distribución de GNU/Linux es la que mas te guste personalmente y la que
+mas se adapte a tu persona o el tipo de
+trabajos que deseas realizar. Eso si... existen distribuciones que resaltan más
+que las demás por su fácil integración con nuevos usuarios.</p>
+<ul class="simple">
+<li>openSUSE (basada en Slackware)</li>
+<li>Ubuntu (basada en Debian)</li>
+<li>Mandriva (basada en Red Hat)</li>
+<li>Fedora (basada en Red Hat)</li>
+<li>Linux Mint (basada en Ubuntu)</li>
+</ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-7d1903cdb9e843bdaa14771b803542f4"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Mi computadora está preparada para GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-7d1903cdb9e843bdaa14771b803542f4" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Lo más probable, Si.
+Existen sistemas tanto para computadoras nuevas, modestas y antiguas para que
+todos tengan la oportunidad de utilizar GNU/Linux sin importar las
+especificaciones del equipo.</p>
+<p>Cada día las distribuciones de GNU/Linux son cada vez mas compatibles con la
+mayoría del hardware del mercado. Aún así existe una batalla constante con los
+desarrolladores de controladores de grandes compañías. Cuando un dispositivo
+carece de un controlador para GNU/Linux, es costumbre que un grupo de terceros
+desarrolle un controlador para dicho sistema y sea liberado para la comunidad.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-7b8662905a074778bd6358c448d2288d"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Y qué tal mi notebook?</a>
+      </h5>
+    </div>
+    <div id="collapse-7b8662905a074778bd6358c448d2288d" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Tanto Laptops como Netbooks ya están preparados para sistemas GNU/Linux.
+Incluso existen distribuciones enfocadas en las Netbooks como Ubuntu Netbook
+Edition y Jolicloud.
+Últimamente varias compañías han apostado por la venta de portátiles con
+sistemas GNU/Linux pre-instalados. Dos de esas compañías son Dell y Asus.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-906bb2b0be0b4ec6bb0672ec6007d3cb"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué es un entorno de escritorio?</a>
+      </h5>
+    </div>
+    <div id="collapse-906bb2b0be0b4ec6bb0672ec6007d3cb" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Un entorno de escritorio le ofrece al usuario una interacción amigable y cómoda
+con el sistema operativo. Un entorno de escritorio es lo que podrás conocer ya
+como un navegador de carpetas, barra de tareas, menú gráfico, escritorio
+visible, carpetas, etc... Dentro de la familia de GNU/Linux existen varios tipos
+de entornos de escritorio. Una ventaja de GNU/Linux es que puedes escoger
+el tipo de entorno de escritorio que quieres para tu sistema operativo con fines
+personales o teniendo en cuenta el rendimiento del sistema.</p>
+<p>He aquí la variedad de entornos de escritorios para GNU/Linux:</p>
+<dl class="docutils">
+<dt><strong>XFCE</strong></dt>
+<dd>Si cuentas con una computadora de poco rendimiento, podrías escoger la
+opción que te ofrece el entorno gráfico completo y liviano “XFCE”. Es un
+entorno de escritorio liviano y rinde bastante el sistema. Sus componentes
+están diseñados para consumir poca RAM y pocos recursos del CPU.</dd>
+<dt><strong>LXDE</strong></dt>
+<dd>LXDE es un entorno de escritorio que se ha propuesto llevarle un entorno
+completo, rápido y fácil de utilizar al usuario final. No está diseñado para
+ser tan complejo como Gnome y/o KDE pero es más liviano y consume menos
+recursos que estos.</dd>
+<dt><strong>GNOME</strong></dt>
+<dd>Gnome es uno de los entornos de escritorio más utilizados en el momento. En
+la mayoría de los casos Gnome es el escritorio por defecto de muchas
+distribuciones de GNU/Linux. Gnome nos ofrece estabilidad, un rendimiento
+fluido y muchas aplicaciones diseñadas exclusivamente para Gnome.
+Gnome podría consumir mas recursos que XFCE pero tampoco se podría
+decir que consume tanto.</dd>
+<dt><strong>KDE</strong></dt>
+<dd>KDE es un entorno gráfico que se distingue por su belleza. Lindos efectos
+gráficos son ilustrados gracias al manejador de ventanas “Kwin”. Este
+entorno es fácil de personalizar ya que trae consigo una variedad de temas y
+applets para escoger.
+KDE consume más recursos comparado con los otros entornos de escritorio
+previamente mencionados en esta guía; Pero podría ser el entorno que más se
+ajuste a una persona que proviene de Windows por sus similitudes aunque esa
+no es la meta del equipo de KDE.</dd>
+<dt><strong>MATE</strong></dt>
+<dd>TODO</dd>
+<dt><strong>Unity</strong></dt>
+<dd>TODO</dd>
+<dt><strong>Cinnamon</strong></dt>
+<dd>TODO</dd>
+</dl>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-1bec158b50a640f89650d557180d9276"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué es un gestor de ventanas (*a.k.a Windows Manager*)?</a>
+      </h5>
+    </div>
+    <div id="collapse-1bec158b50a640f89650d557180d9276" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Un gestor de ventanas o en inglés window manager, es un programa que controla la
+ubicación y apariencia de las aplicaciones bajo el sistema X Window. Un gestor
+de ventanas es más simple, mucho más liviano y suelen consumir menos recursos
+comparado a los entornos de escritorio.</p>
+<p>Salvo a la gran variedad de gestores de ventanas existentes, les mostraré sólo
+los tres más populares:</p>
+<ul class="simple">
+<li>OpenBox</li>
+<li>Fluxbox</li>
+<li>Enlightenment</li>
+<li>i3</li>
+<li>Awesome</li>
+</ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+<!-- TODO: agregar links a las páginas. -->
+</div>
+</div>
+<div class="section" id="dudas-comunes-de-windowseros">
+<h2><a class="toc-backref" href=".#id2">Dudas comunes de Windowseros</a></h2>
+<div class="panel-group container">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-7380d622eb9a4812b51455a705484881"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿GNU/Linux es mejor que Microsoft Windows?</a>
+      </h5>
+    </div>
+    <div id="collapse-7380d622eb9a4812b51455a705484881" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>¡SI!</strong> Es mi respuesta de fánatico. Aunque es importante destacar que cada
+sistema operativo es diferente por la manera en que fue desarrollado y en la que
+se comporta.</p>
+<p>Las versiones de Windows de Microsoft siempre han carecido de seguridad. Su
+sistema siempre ha sido atacado por la razón de ser el sistema operativo más
+utilizado hoy en día seguido de MacOS.</p>
+<p>Respecto a la seguridad de GNU/Linux comparado con Windows, es superior.
+Millones de personas contribuyen día a día para mejorar la seguridad,
+estabilidad y la infraestructura del código de Linux.</p>
+<p>Todos los usuarios de Windows siempre se encuentran con los mismos obstáculos
+versión tras versión. Muchos de los programas que desean utilizar son de pago.
+Aveces los usuarios optan por una versión de 30 días y cuando éstos caducan, el
+usuario corriente suele descargar otro programa similar, una versión gratuita
+con restricciones de uso y/o se dirigen a terceras webs en busca de cracks,
+keygens o parches para pasar por alto el registro del programa e infringir con
+el contrato de compromiso del usuario. Cabe decir que esta acción es penalizada
+por la ley según el país del delincuente. Estas son las acciones drásticas que
+un usuario normalmente suele hacer para continuar contento con sus necesidades
+en dentro de un sistema operativo cerrado.</p>
+<p>Obviamente esto no es culpa de Windows pero cabe destacar que GNU/Linux tiene
+mejores opciones libres y gratuitas con las que un usuario se podría sentir
+satisfecho al cubrir todas sus necesidades.</p>
+<p>Muchas de las distribuciones de GNU/Linux vienen preparadas con todo el software
+que un usuario promedio necesite al momento y si da el caso de que no lo tenga,
+el usuario podrá descargarlo desde la red o desde el manejador de software de su
+respectiva distribución.</p>
+<p>Otro obstáculo con el que un usuario de Windows se podría encontrar más de una
+vez, es cuando se muda de su versión actual a una más adelantada y su hardware
+queda casi obsoleto ya que cada nueva versión de Windows conlleva incrementar el
+total de memoria RAM y hasta aveces el CPU para poder tener un sistema fluido
+sin congelamiento de ventanas o procesos sin respuesta.</p>
+<p>Esto es algo en el que GNU/Linux se destaca ya que cada versión es cada vez más
+ligera y rápida evitando que el usuario gaste dinero en piezas innecesarias. Los
+programas suelen consumir menos memoria RAM en GNU/Linux comparado con Windows.</p>
+<p>Incluso la conexión de internet suele ser más rápida en GNU/Linux ya que no
+ejecuta aplicaciones ocultas que consumen banda ancha como lo suele hacer
+Windows por defecto.</p>
+<p>Algo que podría aburrir a un usuario de Windows sería su entorno de escritorio y
+componentes del sistema. Se le requiere a Microsoft una nueva interfaz o amenos
+novedades para el escritorio en cada una de sus versiones para mantener atraído
+al cliente. GNU/Linux domina en este campo ya que no está sujeto a un entorno de
+escritorio en específico. El usuario puede escoger cual instalar e incluso tener
+varios entornos instalados en su sistema GNU/Linux manteniendo un look amigable.</p>
+<p>De igual manera GNU/Linux domina el campo de los componentes del sistema ya que
+el usuario puede instalar el visualizador de fotos que desee, el navegador de
+carpetas que desee, el navegador de internet por defecto que desee y así sigue
+la lista...</p>
+<p>Los usuarios de Windows aún no se han percatado de que están haciendo rica a una
+empresa monopolista a cambio de un sistema operativo que carece de seguridad,
+estabilidad y libertad. Sin embargo GNU/Linux es seguro, estable, flexible,
+ligero, fácil y lo más importante... LIBRE!</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-1b12328fb50c461d9bff52e3df12e204"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿GNU/Linux es estable?</a>
+      </h5>
+    </div>
+    <div id="collapse-1b12328fb50c461d9bff52e3df12e204" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Todas las distribuciones GNU/Linux pasan por un largo tiempo de prueba
+antes de ser liberada la versión final. A lo largo del camino son liberadas
+varias versiones enfocadas a los desarrolladores y colaboradores de dicha
+distribución para contribuir en su mejora.</p>
+<p>Las varias etapas por las que una distribución pasa antes de ser liberada para
+el público en general son las siguientes:</p>
+<ul>
+<li><dl class="first docutils">
+<dt><strong>Alpha/Alfa</strong></dt>
+<dd>
+<p class="first last">Es la primera versión del programa, la cual es enviada a los verificadores
+para probarla.</p>
+</dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt><strong>Beta</strong></dt>
+<dd>
+<p class="first last">Representa la primera versión completa del sistema pero aún inestable
+Release Candidate Comprende un producto final, preparado para (RC)
+publicarse como versión definitiva a menos que aparezcan errores que lo
+impidan.</p>
+</dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt><strong>Final</strong></dt>
+<dd>
+<p class="first last">Es la primera versión que se comprende como libre de errores y lo bastante
+segura para su uso diario.</p>
+</dd>
+</dl></li>
+</ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-80d94747f3944ac097b680ef32cf45f4"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿El software para Microsoft Windows también funciona en GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-80d94747f3944ac097b680ef32cf45f4" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>No</strong>. El software para Microsoft Windows no es compatible con GNU/Linux. Aún
+así existen muchos programas libres y gratuitos para GNU/Linux que le ofrecen al
+usuario varias alternativas a escoger.</p>
+<p>Sin embargo, las distribuciones de hoy en día vienen preparadas con todos los
+programas necesarios para su uso diario.
+He aquí una breve lista de software que puedes encontrar en una distribución
+GNU/Linux:</p>
+<ul class="simple">
+<li>Mensajería instantánea (MSN, AOL, Gmail, etc...).</li>
+<li>Suite de oficina.</li>
+<li>Lector de PDF.</li>
+<li>Reproductor de vídeos.</li>
+<li>Reproductor de audio.</li>
+<li>Editor de imágenes profesional.</li>
+<li>Navegador de internet.</li>
+<li>Quemador de CD/DVD’s.</li>
+<li>Ripeador de CD/DVD’s.</li>
+<li>Cliente de Torrent’s.</li>
+<li>Gestor de e-mails.</li>
+</ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-ebd7eafcef6b46edbdbb29843571e04c"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>Opciones para utilizar programas de Microsoft Windows conservando GNU/Linux</a>
+      </h5>
+    </div>
+    <div id="collapse-ebd7eafcef6b46edbdbb29843571e04c" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Una de las razones principales por las que un usuario de Microsoft Windows no
+termina de mudarse completamente a GNU/Linux es porque depende de algún programa
+en específico que aún no ofrece soporte a GNU/Linux o simplemente, no se
+acostumbran a nuevos programas. Para estas personas existen tres alternativas.</p>
+<p>Una de ellas es tener instalado Microsoft Windows en otra partición; de este
+modo podrás hacer uso de ambos sistemas operativos. Otra opción sería
+instalar una maquina virtual como VirtualBox o VMWare en GNU/Linux para instalar
+virtualmente Microsoft Windows y hacer uso de él cuando sea necesario.
+Por último, podrías instalar un programa que permita la instalación y uso del
+programa deseado en GNU/Linux. Programas como WINE y CrossOver permiten esta
+acción.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-56efb1bfd54847ca82513945c61b57f0"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Qué es WINE?</a>
+      </h5>
+    </div>
+    <div id="collapse-56efb1bfd54847ca82513945c61b57f0" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>Wine es una reimplementación de la API de Win16 y Win32 para sistemas operativos
+basados en Unix bajo plataformas Intel. Permite la ejecución de programas para
+MS-DOS, Windows 3.11, Windows 95, Windows 98, Windows ME, Windows NT, Windows
+2000, Windows XP, Windows Vista y Windows 7.
+Página oficial: <a class="reference external" href="http://www.winehq.org/">http://www.winehq.org/</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-faf7bec585e640199d52717406a724e9"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Que es CrossOver?</a>
+      </h5>
+    </div>
+    <div id="collapse-faf7bec585e640199d52717406a724e9" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>CrossOver es un programa de pago para usuarios de GNU/Linux y Mac OS diseñado
+por CodeWeavers. Permite ejecutar programas de Microsoft Windows en ambos
+sistemas operativos.
+Página oficial: <a class="reference external" href="http://www.codeweavers.com/products/cxlinux/">http://www.codeweavers.com/products/cxlinux/</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-753cbdf8b118479487eb47e59fc71718"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Que es VirtualBox?</a>
+      </h5>
+    </div>
+    <div id="collapse-753cbdf8b118479487eb47e59fc71718" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p>VirtualBox es un programa de virtualización que permite instalar y ejecutar
+diversos sistemas operativos virtualmente sin la necesidad de crear nuevas
+particiones en un disco duro.
+Página Oficial: <a class="reference external" href="http://www.virtualbox.org/">http://www.virtualbox.org/</a></p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-af24360e205945c6ba35cb08cf199445"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Podré hacer en GNU/Linux lo mismo que suelo hacer en Microsoft Windows?</a>
+      </h5>
+    </div>
+    <div id="collapse-af24360e205945c6ba35cb08cf199445" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Usted podrá navegar por la red, participar en redes sociales, escuchar
+música, almacenar fotos, manejar sus dispositivos de almacenamiento, hacer
+proyectos de oficina y mucho más.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-7c53db8e8d53400791f1c9e599ae9d18"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Puedo instalar GNU/Linux manteniendo Microsoft Windows?</a>
+      </h5>
+    </div>
+    <div id="collapse-7c53db8e8d53400791f1c9e599ae9d18" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Usted puede crear una partición aparte en su disco duro para su sistema
+GNU/Linux. Algunas distribuciones vienen preparadas con los programas necesarios
+para hacer esto. En la mayoría de los casos, los instaladores de sistemas
+GNU/Linux le muestran al usuario la posibilidad de crear una partición nueva.</p>
+<p>Antes de hacer esto, se recomienda hacer un BackUp de los archivos de Microsoft
+Windows. La próxima vez que inicie su computadora notará un menú peculiar
+llamado “Grub”. En este menú podrá ver la lista de sistemas operativos que han
+sido instalados previamente en la computadora y podrá escoger el que guste.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-7c6a6afcd68f4a9fade33f72b4d28dae"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Se podría utilizar GNU/Linux sin instalarlo en mi disco duro?</a>
+      </h5>
+    </div>
+    <div id="collapse-7c6a6afcd68f4a9fade33f72b4d28dae" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Muchas de las distribuciones de GNU/Linux se encuentran en versión
+“Live”. Estas versiones “Live's” pueden ser ejecutadas en una computadora sin
+tener que tocar para nada al disco duro.</p>
+<p>Las versiones Live's son utilizadas mayormente para probar GNU/Linux antes de
+instalarlo.
+Las versiones Live's deben de ser quemadas en un DVD/CD-R. Luego reiniciar la
+computadora e iniciar desde el CD/DVD-R en el menú de booteo. Luego una interfaz
+gráfica lo guiará hasta el sistema.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-62dcb63e69484595afbb6b3601f1360f"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Puedo accesar a la partición de Microsoft Windows por medio de GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-62dcb63e69484595afbb6b3601f1360f" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Es posible accesar a la partición de Windows desde GNU/Linux. Usted
+podrá editar carpetas, agregar ficheros, mover contenido de una partición a
+otra, etc...</p>
+<div class="text-error">collapse directive with no content</div>
+<p>La gran mayoría lo son. Es recomendable que visite la web oficial de su producto
+para verificar siel manufacturero le ofrece soporte a GNU/Linux. Sin embargo,
+hay varios grupos de programadores terceros que dedican su tiempo a crear nuevos
+controladores para dispositivos que aún no están soportados por sus
+manufactureros.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-5e3d819df65446c9a86bd6ab2e715fbb"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Los dispositivos BlueTooth, funcionan en GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-5e3d819df65446c9a86bd6ab2e715fbb" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Las distribuciones de GNU/Linux suelen contener software pre-instalado
+para la configuración del mismo.</p>
+<div class="text-error">collapse directive with no content</div>
+<p><strong>Si</strong>. Incluso existen distribuciones GNU/Linux enfocadas a este tipo de
+tareas. UbuntuStudio y Musix son ejemplo de ello.</p>
+<div class="text-error">collapse directive with no content</div>
+<p><strong>Si</strong>. Incluso existen distribuciones de GNU/Linux enfocadas en el tema de las
+redes Wi-Fi y su seguridad. WifiSlax y WifiWay son un ejemplo de ello.</p>
+<div class="text-error">collapse directive with no content</div>
+<p><strong>Si</strong>. Existen muchos programas para gestionar iPod's. GtkPod, Amarok y Banshee
+son un ejemplo de ello.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-baeb52f44aa44a688f2d992a93661a81"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Las Tarjetas gráficas como ATI y Nvidia son soportadas en GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-baeb52f44aa44a688f2d992a93661a81" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. La gran mayoría está siendo soportada e incluso se les está brindando a
+los usuarios controladores oficiales. Aún así, algunas tarjetas no están siendo
+soportadas. Es recomendable que visite la página oficial del manufacturero para
+verificar si le ofrece soporte a GNU/Linux. Sin embargo, hay varios grupos de
+programadores terceros que dedican su tiempo a crear nuevos controladores para
+tarjetas gráficas que aún no están siendo soportadas por sus manufactureros.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-655f41b4af93408aba1c0c9d5ea58d67"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Funciona GNU/Linux para servidores?</a>
+      </h5>
+    </div>
+    <div id="collapse-655f41b4af93408aba1c0c9d5ea58d67" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Incluso, existen distribuciones enfocadas en los servidores como Ubuntu
+Server Edition, CentOS, Red Hat y SUSE Enterprise. Cabe decir que muchas de las
+compañías y grandes bancos de hoy en día confían en la seguridad que GNU/Linux
+les ofrece por ser un sistema a base de UNIX.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-6ea940a32efa431faa924ce5252ac24d"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Puedo crear un servidor utilizando en el campo computadoras con GNU/Linux y Microsoft Windows?</a>
+      </h5>
+    </div>
+    <div id="collapse-6ea940a32efa431faa924ce5252ac24d" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Incluso, puedes hacer que éstas compartan entre sí gracias a Samba, una
+implementación libre del protocolo de archivos compartidos de Microsoft Windows
+para sistemas de tipo UNIX.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-f270531f36ce440493e391d83b0f7273"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Adobe Flash Player, es compatible en GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-f270531f36ce440493e391d83b0f7273" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Actualmente Adobe le brinda soporte a GNU/Linux y otros sistemas.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-042f04f949154f3d9bae24b08cd15f7f"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Puedo escuchar MP3's en GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-042f04f949154f3d9bae24b08cd15f7f" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Antes debes de instalar los codecs correspondientes para poder escuchar
+archivos de extensión <tt class="docutils literal">.mp3</tt> entre otros... Por ejemplo: w32codecs.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-e8b5de039908480daa656ab7edcda15b"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Puedo ver películas de DVD en GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-e8b5de039908480daa656ab7edcda15b" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Antes debes de instalar los codecs correspondientes para poder ver
+películas en DVD. Por ejemplo: libdvdcss2. También puedes instalar un
+reproductor multimedia que contenga sus propios codecs como lo es VLC.</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h5 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href=".#collapse-9b0224d057e94b759cf3f428ebe875e8"><span style="margin-right: 5px;" id="showRefsSign" class="glyphicon glyphicon-chevron-down" aira-hidden="true"></span>¿Los archivos comprimidos son soportados en GNU/Linux?</a>
+      </h5>
+    </div>
+    <div id="collapse-9b0224d057e94b759cf3f428ebe875e8" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="document">
+<p><strong>Si</strong>. Los formatos más populares de comprensión de archivos como <tt class="docutils literal">.zip</tt> y
+<tt class="docutils literal">.rar</tt>, están soportados en GNU/Linux. Otros formatos de comprensión de
+archivos soportados en GNU/Linux son:</p>
+<ul class="simple">
+<li><tt class="docutils literal">.7z</tt></li>
+<li><tt class="docutils literal">.ar</tt></li>
+<li><tt class="docutils literal">.b2</tt></li>
+<li><tt class="docutils literal">.gz</tt></li>
+<li><tt class="docutils literal">.jar</tt></li>
+<li><tt class="docutils literal">.lzma</tt></li>
+<li><tt class="docutils literal">.tar</tt></li>
+<li><tt class="docutils literal">.tar.7z</tt></li>
+<li><tt class="docutils literal">.tar.gz</tt></li>
+<li><tt class="docutils literal">.tar.bz2</tt></li>
+<li><tt class="docutils literal">.tar.lzma</tt></li>
+<li><tt class="docutils literal">.tar.xz</tt></li>
+<li><tt class="docutils literal">.xz</tt></li>
+</ul>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="section" id="seguridad">
+<h2><a class="toc-backref" href=".#id3">Seguridad</a></h2>
+<p>En el capítulo anterior hablamos un poco sobre la seguridad y estabilidad de
+GNU/Linux. En este siguiente capítulo indagaremos un poco más en el tema de la
+seguridad en GNU/Linux.
+Si eres un usuario de Microsoft Windows, supongo que ya estás familiarizado con
+los Anti Virus. El Anti Virus se encarga de eliminar los posibles virus que
+intentan atacar al sistema. Además incluyen otros servicios dependiendo del
+producto. Algunos podrían ofrecer detección de Worms, Spy-Ware, Mal-Ware, etc...</p>
+<p>Los atacantes de sistemas primero analizan los posibles bugs, agujeros y fallas
+del sistema para localizar vulnerabilidades posibles de explotar. La
+infraestructura del sistema operativo tiene mucho que ver en el asunto. Si la
+infraestructura de un sistema operativo está pobremente desarrollada, es posible
+detectar numerosas vulnerabilidades las cuales un atacante podría aprovechar
+para atacar un sistema. Los Anti virus son una opción de protección pero no
+contribuye nada a la infraestructura del sistema. Desde Microsoft deberían de
+brindar una actualización, un parche o Service Pack para arreglar este tipo de
+problemas. Esto le costaría a Microsoft dinero, tiempo y el esfuerzo de lanzar
+la actualización a tiempo antes de que sus millones de usuarios se vean
+afectados.</p>
+<p>A diferencia de Microsoft Windows, GNU/Linux se caracteriza por su alto nivel de
+seguridad gracias a la manera en la que es desarrollada y mantenida la
+infraestructura de Linux. El Kernel de Linux es mantenido a diario por miles y
+quizás millones de desarrolladores al rededor del mundo.
+Cuando una nueva versión del Kernel está siendo desarrollada, se le hace varias
+pruebas extensas para detectar posibles fallos, bugs, incompatibilidades de
+hardware, vulnerabilidades, entre otras. Algunos desarrolladores denominados
+“hackers”, intentan hackear el código para detectar irregularidades y evitar
+futuros ataques. Al culminar todas estas pruebas, los líderes liberan el Kernel
+al público para que éstos actualicen su Kernel. Algunas distribuciones de
+GNU/Linux ofrecen la actualización desde su gestor de actualizaciones para
+facilitar su descarga e instalación.</p>
+<div class="section" id="virus">
+<h3><a class="toc-backref" href=".#id4">Virus</a></h3>
+<p>Muchos usuarios de GNU/Linux creen en que no existen virus para GNU/Linux.
+Lamentablemente sí existen pero el riesgo de infección es casi nula y tampoco
+existe una cantidad significante de éstos circulando en la red. Para que un
+virus pueda ejecutarse en GNU/Linux, el usuario debería de hacer varios
+procedimientos obvios para efectuar su ejecución, algo que un usuario novato no
+sabría hacer a primera instancia.</p>
+<p>Existen Anti virus para GNU/Linux pero éstos son utilizados para analizar
+particiones FAT/NTFS en donde Microsoft Windows está instalado. Esto ayudaría en
+casos de que un virus atacase al sistema vecino impidiendo el acceso al usuario
+de Windows. También funciona para detectar virus en unidades de almacenamiento
+extraíbles infectadas. Así podrás desinfectar un dispositivo de una manera más
+segura.</p>
+</div>
+<div class="section" id="codigo-abierto">
+<h3><a class="toc-backref" href=".#id5">Código Abierto</a></h3>
+<p>Mantener el código fuente de Linux abierto al mundo ha sido una de las mejores
+decisiones tomadas antes. Miles y quizás millones de desarrolladores han
+contribuido al código de Linux para mejorarlo aún más. Mantener el código
+abierto permite que cualquier persona pueda ver lo que sucede tras el sistema y
+si posee los conocimientos requeridos, podría editar dicho código. Esto permite
+que el código de Linux sea mejorado y estudiado por millones de personas a
+comparación de Microsoft Windows y MacOS los cuales cuentan con un par de miles
+de desarrollares para su código ya que su código permanece cerrado evitando que
+los usuarios puedan saber que sucede tras el sistema operativo.</p>
+<p>Algunas personas creerán que porque un sistema operativo sea de código abierto y
+cualquiera con el conocimiento pueda hacer ajustes a éste, pueda violarle la
+seguridad del usuario final. Esto es un pensamiento erróneo ya que para que una
+persona pueda contribuir al código en general debe de presentar una propuesta
+sobre el cambio en el código y las razones del cambio. Luego los desarrolladores
+analizarán el cambio sometido por la persona utilizando un código propio y no
+el ajeno. Por último se determinará si el cambio es significativo y los líderes
+encargados del código general tomarán la decisión de incluirlo o no en la
+próxima versión del código.</p>
+<p>Así mismo como ocurre al Kernel, también ocurre en los programas de código
+abierto. Los desarrolladores de los programas de código abierto aceptan las
+propuestas de otras personas que han revisado el código y éste decide si incluir
+o no incluir el cambio en la próxima versión del programa.</p>
+<p>También ayuda a que otras personas comiencen un proyecto nuevo a partir del
+código del programa siempre y cuando respeten los términos impuesto por el autor
+del código.</p>
+</div>
+<div class="section" id="soporte-y-actualizaciones">
+<h3><a class="toc-backref" href=".#id6">Soporte y Actualizaciones</a></h3>
+<p>Los desarrolladores de cada distribución están constantemente aportando
+actualizaciones para sus usuarios. Muchas de estas actualizaciones brindan
+nuevas versiones de programas instalados en el sistema y actualizaciones de
+seguridad e infraestructura. Las actualizaciones son constantes
+ya que son muchas las personas que contribuyen en el código diariamente.</p>
+<p>Luego de que los desarrolladores hayan lanzado múltiples versiones de su
+distribución, los desarrolladores fijan un día en específico en el cual
+terminarán el soporte para dicha versión. Esta decisión es tomada para enfocarse
+en las versiones más recientes de la distribución y brindar un mejor soporte.</p>
+<p>Algunas personas nuevas en el mundo de GNU/Linux puede que les surjan nuevas
+dudas referente a su distribución y no saben a donde acudir para aclarar sus
+dudas. Les informo que la red es un lugar muy grande que nos conecta a todos y
+las posibilidades son infinitas. Existen comunidades, redes sociales, foros y
+chats/IRC en donde pueden aclarar sus dudas. También existen un sinfín de Blogs
+y tutoriales en línea disponibles en varios formatos.</p>
+</div>
+</div>
+<div class="section" id="software">
+<h2><a class="toc-backref" href=".#id7">Software</a></h2>
+<p>Como comentaba en el segundo capítulo de esta guía, los programas para Microsoft
+Windows no funcionan en GNU/Linux amenos de que exista una versión para
+GNU/Linux de ese programa en específico o que sean ejecutados mediante
+CrossOver, WINE o maquinas virtuales. Sin embargo, para GNU/Linux existe una
+gran variedad de programas libres y gratuitos que podrían igualar o
+mejorar la calidad de programas para Microsoft Windows o de pago. Cabe mencionar
+que la mayoría de las distribuciones de GNU/Linux contienen software
+pre-instalado para la comodidad del usuario final.</p>
+<p>He aquí un listado de programas que un usuario podría considerar:</p>
+<ul class="simple">
+<li>
+<strong>Navegadores web</strong>: Firefox, Chrome, Chromium, Opera</li>
+<li>
+<strong>Gestores de fotos</strong>: Picasa, F-Spot</li>
+<li>
+<strong>Editor de imágenes</strong>: profesional GIMP</li>
+<li>
+<strong>Creación y edición de vectoriales</strong>: Inkscape</li>
+<li>
+<strong>Conferencia de audio y vídeo</strong>: Skype, Ekiga</li>
+<li>
+<strong>Clientes torrents</strong>: Transmission, Deluge, Ktorrent, Azureus Vuze, BitTorrent.</li>
+<li>
+<strong>Mensajería instantánea multiprotocolo</strong>: Emesene, Pidgin, Empathy, aMSN, Kopete</li>
+<li>
+<strong>Programas para quemar CD’s/DVD’s</strong>: Brasero, K3B, X-CD-Roast</li>
+<li>
+<strong>Reproductores de audio</strong>: Banshee, Amarok, Audacious, Rhythmbox</li>
+<li>
+<strong>Reproductores de vídeos</strong>: Totem, VLC, RealPlayer</li>
+<li>
+<strong>Extractores (ripiador) de audio</strong>: Sound Juicer</li>
+<li>
+<strong>Grabadores de audio</strong>: Audacity, Ardour</li>
+<li>
+<strong>Clientes IRC</strong>: XChat, Pidgin</li>
+<li>
+<strong>Lectores PDF</strong>: Adobe Reader, Foxit Reader, Evince, Okular</li>
+<li>
+<strong>Gestores de e-mail</strong>: Evolution, Thunderbird</li>
+<li>
+<strong>Suites de Oficina</strong>: OpenOffice / LibreOffice</li>
+<li>
+<strong>Lectores RSS</strong>: Liferea, Bottom Feeder, aKregator, RSSOwl</li>
+<li>
+<strong>Clientes para twitter</strong>: Twhirl, Gwibber, TweetDeck</li>
+</ul>
+<p>Los programas antes mencionados solo son algunos de los muchos que hay para escoger.</p>
+<p>Comúnmente los usuarios de Microsoft Windows están acostumbrados a manejar
+ejecutables de extensión <tt class="docutils literal">.exe</tt>. En GNU/Linux no se maneja este tipo de
+ejecutable y es por eso que existen varios tipos de paquetes y scripts que
+ayudan al usuario a instalar un programa.</p>
+</div>
+<div class="section" id="gnu-linux-cuida-el-medio-ambiente">
+<h2><a class="toc-backref" href=".#id8">¡GNU/Linux cuida el medio ambiente!</a></h2>
+<p>Aunque muchos no lo saben pero es una realidad. Cuando utilizas GNU/Linux estás
+ayudando de alguna manera al medio ambiente. Esta información es gracias a “Why
+GNU/Linux is Better?”</p>
+<!-- TODO: buscar link "Why GNU/Linux is Better" -->
+<p>¿Cómo puede ser GNU/Linux diferente de Windows en lo que se refiere al medio
+ambiente, puedes preguntarte? Después de todo, ambos son solo softwares con un
+muy pequeño impacto en la contaminación y el cambio climático. Bueno, usar
+GNU/Linux puede tener una influencia en el ambiente:</p>
+<ul class="simple">
+<li>Windows y Mac OS son vendidos en cajas. Esto significa que cantidades masivas de papel, cartón y plástico necesitan ser manufacturados antes de que las cajas lleguen a las estanterías de las tiendas locales. GNU/Linux es gratuitamente descargable desde el Internet; lo cual ahorra el consumo de papel, cartón y plástico.</li>
+<li>Las aplicaciones privativas para Windows y/o Mac OS son también vendidas en las tiendas locales en cajas o estuches de plástico mientras que el software para GNU/Linux es libre de descarga desde el internet. Nuevamente ¡Una gran cantidad de papel y plástico ahorrado!.</li>
+<li>Conforme los requerimientos de hardware para Windows y/o Mac OS aumentan más y más, muchas computadoras se vuelven obsoletas y se necesita deshacerse de ellas...pero como GNU/Linux corre muy bien incluso en máquinas muy viejas, éstas pueden ser recicladas con varios propósitos (almacenamiento, acceso a Internet, caja multimedia, etc.) en cambio de ser tiradas a la basura!</li>
+<li>Millones de CD/DVD's son utilizados para contener una instalación de Windows o Mac OS y son vendidos a los clientes en cajas. GNU/Linux también necesita ser quemado en un CD antes de la instalación. Sin embargo, muchas personas eligen quemarlo en un CD regrabable (”CD-RW”), que puede ser reusado con otros propósitos una vez que lainstalación es terminada (a diferencia de los sistemas operativos privativos, no necesitas mantener el CD guardado después de que has instalado el software, siempre puedes bajarlo de nuevo luego). Incluso existen sistemas de GNU/Linux que pueden ser instalados desde un dispositivo de almacenamiento extraíble lo cual ahorra el uso de un CD o DVD.</li>
+<li>Cuando el disco duro está siendo desfragmentado en Windows, tarda bastante tiempo. En los sistemas GNU/Linux no es necesario desfragmentar el disco duro. Así el usuario ahorrará dinero en consumo de luz.</li>
+</ul>
+<!-- TODO: agregar link del proyecto e-basura -->
+</div>
+<div class="section" id="mitos-sobre-gnu-linux">
+<h2><a class="toc-backref" href=".#id9">Mitos sobre GNU/Linux</a></h2>
+<p>En esta sección haré reseña a algunos mitos que han circulado en la red sobre
+GNU/Linux.</p>
+<div class="col-md-4">
+<p class="alert alert-danger"><em>GNU/Linux solo es para Expertos</em> - FALSO</p>
+<blockquote>
+Muchos expertos y profesionales utilizan sistemas GNU/Linux en el trabajo y
+en grandes servidores. De igual manera los sistemas GNU/Linux pueden ser
+utilizados por usuarios novatos en sus computadoras personales.</blockquote>
+<p class="alert alert-danger"><em>GNU/Linux es gratis porque no vale para nada</em> – FALSO</p>
+<blockquote>
+GNU/Linux no es gratis, sino libre y aún así no significa que no valga para
+nada. De hecho es   mucho más seguro que otros sistemas gracias a su
+filosofía de libertad.</blockquote>
+<p class="alert alert-danger"><em>GNU/Linux es un S.O basado en Windows</em> – FALSO</p>
+<blockquote>
+GNU/Linux está basado en UNIX.</blockquote>
+<p class="alert alert-danger"><em>Linux fue creado por Richard Stallman</em> – FALSO</p>
+<blockquote>
+Linus Torvalds es el creador del Kernel de Linux.</blockquote>
+<p class="alert alert-danger"><em>GNU/Linux es muy difícil de instalar</em> – FALSO</p>
+<blockquote>
+Hoy día la mayoría de las distribuciones de GNU/Linux integran un instalador gráfico.</blockquote>
+</div>
+<div class="col-md-4">
+<p class="alert alert-danger"><em>GNU/Linux es mas difícil y complejo que Windows</em> – FALSO</p>
+<blockquote>
+La mayoría de las distribuciones de GNU/Linux integran un escritorio
+gráfico, elegante y amigable.</blockquote>
+<p class="alert alert-danger"><em>Al instalar GNU/Linux, Windows será imposible de instalar luego</em> – FALSO</p>
+<blockquote>
+Luego de instalar una distribución de GNU/Linux, el usuario es libre de
+instalar lo que desee luego.
+Incluso puede instalar otros sistemas operativos en otras particiones del
+disco duro.</blockquote>
+<p class="alert alert-success"><em>Las empresas utilizan GNU/Linux en sus Servidores por su seguridad</em> – CIERTO</p>
+<blockquote>
+Grandes empresas de hoy en día utilizan sistemas Unix/Linux por motivo de
+seguridad.</blockquote>
+<p class="alert alert-success"><em>GNU/Linux puede ser instalado en un iPod, PS3, Xbox/360 o PSP</em> – CIERTO</p>
+<blockquote>
+Existen hacks u opciones ocultas que permiten la instalación de GNU/Linux en
+dichos sistemas.</blockquote>
+<p class="alert alert-success"><em>No se necesita fragmentar en GNU/Linux</em> – CIERTO</p>
+<blockquote>
+Los sistemas de GNU/Linux no necesitan ser desfragmentados ya que el sistema
+de archivos deGNU/Linux funciona diferente al de Microsoft Windows.</blockquote>
+</div>
+<div class="col-md-4">
+<p class="alert alert-success"><em>GNU/Linux es Pro-Ambiente</em> – CIERTO</p>
+<blockquote>
+Las distribuciones de GNU/Linux son de libre de descarga, evitando el uso de
+cartón, papel y plástico. Incluso existen distribuciones de GNU/Linux
+enfocadas al bajo consumo de electricidad.</blockquote>
+<p class="alert alert-danger"><em>Al momento de utilizar un LiveCD tu disco duro podría estar en peligro</em> – FALSO</p>
+<blockquote>
+Las versiones Live utilizan la RAM para poder ejecutarse y no el disco duro.</blockquote>
+<p class="alert alert-danger"><em>GNU/Linux consume más recursos que Microsoft Windows</em> – FALSO</p>
+<blockquote>
+Microsoft Widnows utiliza casi el triple de recursos que un sistema de
+GNU/Linux.</blockquote>
+<p class="alert alert-danger"><em>GNU/Linux es incompatible con la mayoría del Hardware existente</em> - FALSO</p>
+<blockquote>
+Existe un bajo porcentaje de hardware que aún no está soportado en sistemas
+de GNU/Linux.</blockquote>
+<p class="alert alert-danger"><em>Los sistemas de GNU/Linux comprometen la seguridad del usuario al ser de código abierto</em> – FALSO</p>
+<blockquote>
+El código abierto brinda más seguridad al usuario ya que son más personas
+las que trabajan para él. Antes de que un código editado con malas
+intenciones sea liberado, debería de pasar por las manos de miles de
+programadores y desarrolladores los cuales negarían al momento la
+actualización del código fraudulento.</blockquote>
+<!-- TODO: buscar noticia de solución de heart-bleed en Linux y Mac -->
+</div>
+<!-- .. raw:: html -->
+<!-- </div> -->
+</div>
+</div>
+    </div>
+    
+
+</article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2016         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../../assets/js/all-nocdn.js"></script><script src="../../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

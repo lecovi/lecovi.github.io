@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://lecovi.github.io/</loc>
-  <lastmod>2016-04-09T14:30:00Z</lastmod>
+  <lastmod>2016-04-09T14:46:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/2015/</loc>
@@ -19,11 +19,79 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/archive.html</loc>
-  <lastmod>2016-04-09T14:30:00Z</lastmod>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/bitson/</loc>
-  <lastmod>2016-04-09T13:48:00Z</lastmod>
+  <lastmod>2016-04-09T14:52:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/apt/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/comandos1/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/comandos2/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/compilacion/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/conociendo-linux/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/eval-olin/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/introduccion-olin/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/mount/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/permisos/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/procesos/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/runlevels/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/scripting1/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/scripting2/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/tgz/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/usuarios/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/olin/vbox-olin/</loc>
+  <lastmod>2016-04-09T14:43:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/bitson/prog-sl/</loc>
@@ -80,6 +148,10 @@
  <url>
   <loc>http://lecovi.github.io/bitson/prog-sl/encuesta/</loc>
   <lastmod>2016-04-09T13:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/bitson/reli/</loc>
+  <lastmod>2016-04-09T14:52:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/</loc>
@@ -148,6 +220,10 @@
  <url>
   <loc>http://lecovi.github.io/categories/tty-recording/</loc>
   <lastmod>2015-11-08T21:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp/</loc>
+  <lastmod>2016-04-09T14:46:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/cfp/index/</loc>
@@ -288,6 +364,10 @@
  <url>
   <loc>http://lecovi.github.io/cfp/prog/16/</loc>
   <lastmod>2016-04-09T13:48:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/cfp%3C%3C/</loc>
+  <lastmod>2016-04-09T14:46:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/</loc>

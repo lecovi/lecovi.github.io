@@ -26,3 +26,5 @@
 Algunos de nuestros trabajos:
 
 - :doc:`Curso de Programación con Software Libre <bitson/prog-sl>`
+- :doc:`Operador Básico GNU/Linux <bitson/olin>`
+- :doc:`Administración de Redes en GNU/Linux <bitson/reli>`
