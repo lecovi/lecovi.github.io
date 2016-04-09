@@ -1,5 +1,5 @@
 .. title: Centro de Formación Profesional N° 34
-.. slug: index
+.. slug: cfp/index
 .. date: 2015-10-15 19:37:47 UTC-03:00
 .. tags:
 .. category:
