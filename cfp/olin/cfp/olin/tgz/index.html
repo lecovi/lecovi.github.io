@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="http://lecovi.github.io/cfp/olin/cfp/olin/tgz/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Empaquetado y compresión de paquetes | Make it So!</title>
+<link href="../../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/cfp/olin/cfp/olin/tgz/">
+<!--[if lt IE 9]><script src="../../../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="../../../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<meta name="author" content="Leandro E. Colombo Viña">
+<meta property="og:site_name" content="Make it So!">
+<meta property="og:title" content="Empaquetado y compresión de paquetes">
+<meta property="og:url" content="http://lecovi.github.io/cfp/olin/cfp/olin/tgz/">
+<meta property="og:description" content="Contents
+
+Empaquetado
+TAR
+Ejemplo
+
+
+
+
+Compresión
+GZIP
+BZIP2
+Comparación entre GZIP y BZIP2
+
+
+
+
+Empaquetado y compresión
+Algunos comandos mas
+
+
+
+Empaquetado
+Juntar archivos y directorios en un único ar">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-08-26T15:41:37-03:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../../../../blog/"><i class="fa fa-pencil"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../../../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../../../prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../../../">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../../../reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../../../../ifts"> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../../../../ifts/arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../../../../../ifts/dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../../../../../ifts/edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li>
+<a href="../../../../../ifts/par/">  <i class="fa fa-code"></i> Paradigmas de Programación</a>
+                    </li>
+<li>
+<a href="../../../../../bitson"><i class="fa fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../../../../bitson/prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../../../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../../../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../../../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="index.rst" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Empaquetado y compresión de paquetes</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li>
+<a class="reference internal" href=".#empaquetado" id="id1">Empaquetado</a><ul>
+<li>
+<a class="reference internal" href=".#tar" id="id2">TAR</a><ul>
+<li><a class="reference internal" href=".#ejemplo" id="id3">Ejemplo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a class="reference internal" href=".#compresion" id="id4">Compresión</a><ul>
+<li><a class="reference internal" href=".#gzip" id="id5">GZIP</a></li>
+<li>
+<a class="reference internal" href=".#bzip2" id="id6">BZIP2</a><ul>
+<li><a class="reference internal" href=".#comparacion-entre-gzip-y-bzip2" id="id7">Comparación entre GZIP y BZIP2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href=".#empaquetado-y-compresion" id="id8">Empaquetado y compresión</a></li>
+<li><a class="reference internal" href=".#algunos-comandos-mas" id="id9">Algunos comandos mas</a></li>
+</ul>
+</div>
+<div class="section" id="empaquetado">
+<h2><a class="toc-backref" href=".#id1">Empaquetado</a></h2>
+<p>Juntar archivos y directorios en un único archivo.
+Para el empaquetado se utiliza el comando <tt class="docutils literal">tar</tt>.
+Por lo general, los archivos resultantes del empaquetado
+los llamaremos con una extensión <tt class="docutils literal">.tar</tt>.</p>
+<div class="section" id="tar">
+<h3><a class="toc-backref" href=".#id2">TAR</a></h3>
+<pre class="code bash"><a name="rest_code_79dd8a7610754e6bac132cf1e47eb1fa-1"></a><span class="nv">$ </span>tar <span class="o">[</span>opciones<span class="o">]</span> &lt;nombre_del_paquete&gt;.tar &lt;fuentes&gt;
+</pre>
+<div class="section" id="ejemplo">
+<h4><a class="toc-backref" href=".#id3">Ejemplo</a></h4>
+<p>Creemos la carpeta empaquetados dentro del HOME de nuestro usuario</p>
+<pre class="code bash"><a name="rest_code_0837447400bc4120a5bd9a1f095b5c9c-1"></a>~ <span class="nv">$ </span>mkdir empaquetados
+</pre>
+<p>Entremos en este nuevo directorio:</p>
+<pre class="code bash"><a name="rest_code_d0a8b17d5217496a917ee12f22726a22-1"></a>~ <span class="nv">$ </span><span class="nb">cd </span>empaquetados
+</pre>
+<p>Copiemos el contenido de la carpeta /etc dentro de este nuevo directorio:</p>
+<pre class="code bash"><a name="rest_code_d766eb34ce9048629b52f10571f0e515-1"></a>~/empaquetados <span class="nv">$ </span>cp -r /etc .
+</pre>
+<p>Entremos en el nuevo directorio etc:</p>
+<pre class="code bash"><a name="rest_code_056208fb316e456e9b0482809e8a9654-1"></a>~/empaquetados <span class="nv">$ </span><span class="nb">cd </span>etc
+</pre>
+<p>Empaquetemos algunos de los archivos y direcotorios que tenemos dentro:</p>
+<pre class="code bash"><a name="rest_code_e95257bb3dc044739a303a6e6e8cb74d-1"></a>~/empaquetados/etc <span class="nv">$ </span>tar cf paquete.tar acpi/ alternatives/ hostname hosts PackageKit/ perl/ bluetooth/ python*
+</pre>
+<p>Ahora si listamos el contenido de este direcotorio, vamos a encontrar nuestro nuevo archivo <tt class="docutils literal">paquete.tar</tt>
+Movemos el paquete al directorio padre:</p>
+<pre class="code bash"><a name="rest_code_026b76f5f2164d60a1669fd601cbecb4-1"></a>~/empaquetados/etc <span class="nv">$ </span>mv paquete.tar ..
+</pre>
+<p>Y saltamos al directorio padre:</p>
+<pre class="code bash"><a name="rest_code_1a405dab35064a0ab795ede9c74550a4-1"></a>~/empaquetados/etc <span class="nv">$ </span><span class="nb">cd</span> ..
+</pre>
+<p>Para desempaquetar (extraer):</p>
+<pre class="code bash"><a name="rest_code_36c3217e77e14845a17e949233377bd8-1"></a>~/empaquetados <span class="nv">$ </span>tar xf paquete.tar
+</pre>
+</div>
+</div>
+</div>
+<hr class="docutils">
+<div class="section" id="compresion">
+<h2><a class="toc-backref" href=".#id4">Compresión</a></h2>
+<p>La compresión de un archivo es la reducción del espacio que ocupa.
+La idea es hacerlo ocupar menos espacio para almacenamiento o copia
+de seguridad. Se hace pasar la información a través de un algoritmo
+que reduce el espacio utilizado pero que después puede volver a tener
+su tamaño original. Es lo que se conoce como <em>Compresión sin pérdida de datos</em>.
+Para comprimir y descomprimir podemos usar los comandos <tt class="docutils literal">gzip</tt> y <tt class="docutils literal">bzip2</tt>.</p>
+<div class="section" id="gzip">
+<h3><a class="toc-backref" href=".#id5">GZIP</a></h3>
+<p>Para comprimir:</p>
+<pre class="code bash"><a name="rest_code_19c35f32a43c4b019b83682e8f5b7c1b-1"></a><span class="nv">$ </span>gzip &lt;archivo_a_comprimir&gt;
+</pre>
+<p>Después de comprimir el archivo se sobreescribe comprimido y con la extensión <tt class="docutils literal">.gz</tt> agregada.</p>
+<p>Para descomprimir:</p>
+<pre class="code bash"><a name="rest_code_a2552bc89fb64f6290491d691bf16a46-1"></a><span class="nv">$ </span>gunzip &lt;archivo_a_comprimir&gt;
+</pre>
+<p>Después de descomprimir el archivo se sobreescribe descomprimido y con la extensión <tt class="docutils literal">.gz</tt> quitada.</p>
+</div>
+<div class="section" id="bzip2">
+<h3><a class="toc-backref" href=".#id6">BZIP2</a></h3>
+<p>Para comprimir:</p>
+<pre class="code bash"><a name="rest_code_7c4de20ca00241aab0d6626393f27e15-1"></a><span class="nv">$ </span>bzip2 &lt;archivo_a_comprimir&gt;
+</pre>
+<p>Después de comprimir el archivo se sobreescribe comprimido y con la extensión <tt class="docutils literal">.bz2</tt> agregada.</p>
+<p>Para descomprimir:</p>
+<pre class="code bash"><a name="rest_code_cc18531c5f6d4d85991c1ecbd72b7ff5-1"></a><span class="nv">$ </span>bunzip2 &lt;archivo_a_comprimir&gt;
+</pre>
+<p>Después de descomprimir el archivo se sobreescribe descomprimido y con la extensión <tt class="docutils literal">.bz2</tt> quitada.</p>
+<div class="section" id="comparacion-entre-gzip-y-bzip2">
+<h4><a class="toc-backref" href=".#id7">Comparación entre GZIP y BZIP2</a></h4>
+<blockquote>
+<ul class="simple">
+<li>GZIP es más rápido pero comprime menos.</li>
+<li>BZIP2 comprime más pero es más lento.</li>
+</ul>
+</blockquote>
+<p>Por ejemplo en clase:</p>
+<blockquote>
+paquete.tar     = 230K
+paquete.tar.gz  = 21K
+paquete.tar.bz2 = 17K</blockquote>
+</div>
+</div>
+</div>
+<hr class="docutils">
+<div class="section" id="empaquetado-y-compresion">
+<h2><a class="toc-backref" href=".#id8">Empaquetado y compresión</a></h2>
+<p>Para empaquetar y comprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">gzip</tt>:</p>
+<pre class="code bash"><a name="rest_code_1bc908a44950404fb147741714c661f7-1"></a>~ <span class="nv">$ </span>tar cfz paquete.tgz &lt;fuentes&gt;
+</pre>
+<p>Para empaquetar y descomprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">gzip</tt>:</p>
+<pre class="code bash"><a name="rest_code_7795fce43af44170a83b8858ce6b2a80-1"></a>~ <span class="nv">$ </span>tar xfz paquete.tgz
+</pre>
+<p>Para empaquetar y comprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">bzip2</tt>:</p>
+<pre class="code bash"><a name="rest_code_156b97bd47f04a74bea4df2bcdbd032c-1"></a>~ <span class="nv">$ </span>tar cfj paquete.tbz2 &lt;fuentes&gt;
+</pre>
+<p>Para empaquetar y descomprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">bzip2</tt>:</p>
+<pre class="code bash"><a name="rest_code_e90be4885bbd4fb68822baabc979282a-1"></a>~ <span class="nv">$ </span>tar xfj paquete.tbz2
+</pre>
+</div>
+<hr class="docutils">
+<div class="section" id="algunos-comandos-mas">
+<h2><a class="toc-backref" href=".#id9">Algunos comandos mas</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal">shutdown</tt></dt>
+<dd>para apagar la máquina (tiene que hacerlo root ó a través de sudo).</dd>
+<dt><tt class="docutils literal">halt</tt></dt>
+<dd>también para apagar la máquina.</dd>
+<dt><tt class="docutils literal">poweroff</tt></dt>
+<dd>también para apagar la máquina.</dd>
+<dt><tt class="docutils literal">reboot</tt></dt>
+<dd>reinicia la máquina (tiene que hacerlo root ó a través de sudo).</dd>
+<dt><tt class="docutils literal">cat</tt></dt>
+<dd>este comando concatena archivos y los imprime en la salida.</dd>
+</dl>
+<pre class="code bash"><a name="rest_code_9ecb48f453f64823bae2f9a010d4d695-1"></a>~ <span class="nv">$ </span>cat &lt;archivo1&gt; &lt;archivo2&gt; ... &lt;archivoX&gt;
+<a name="rest_code_9ecb48f453f64823bae2f9a010d4d695-2"></a>
+<a name="rest_code_9ecb48f453f64823bae2f9a010d4d695-3"></a><span class="nv">ABORTAR</span> <span class="o">=</span> Ctrl+C <span class="o">(</span>^C<span class="o">)</span> ---&gt; Va a terminar el proceso que se esté ejecutando.
+</pre>
+<dl class="docutils">
+<dt><tt class="docutils literal">more</tt></dt>
+<dd>sirve para paginar el resultado impreso en pantalla.</dd>
+<dt><tt class="docutils literal">less</tt></dt>
+<dd>sirve para paginar el resultado impreso en pantalla. MEJOR! (q para salir).</dd>
+<dt><tt class="docutils literal">tail</tt></dt>
+<dd>muestra "la cola" del archivo, es decir, el final. Las 10 últimas líneas.</dd>
+<dt><tt class="docutils literal">head</tt></dt>
+<dd>muestra "la cabeza" del archivo, es decir, el principio. Las 10 primeras líneas.</dd>
+<dt><tt class="docutils literal">wc</tt></dt>
+<dd>(Word Count, conteo de palabras).</dd>
+</dl>
+<pre class="code bash"><a name="rest_code_adb25b71e6e644468366c86f43593885-1"></a>~ <span class="nv">$ </span>wc archivo1.txt
+<a name="rest_code_adb25b71e6e644468366c86f43593885-2"></a>      <span class="m">105</span>  <span class="m">636</span> <span class="m">4264</span> archivo1.txt
+<a name="rest_code_adb25b71e6e644468366c86f43593885-3"></a>      <span class="p">|</span>    <span class="p">|</span>    <span class="p">|</span>
+<a name="rest_code_adb25b71e6e644468366c86f43593885-4"></a>      <span class="p">|</span>    <span class="p">|</span>    +--&gt; Cantidad de Caracteres
+<a name="rest_code_adb25b71e6e644468366c86f43593885-5"></a>      <span class="p">|</span>    +-------&gt; Cantidad de Palabras
+<a name="rest_code_adb25b71e6e644468366c86f43593885-6"></a>      +------------&gt; Cantidad de Líneas
+</pre>
+<dl class="docutils">
+<dt><tt class="docutils literal">diff</tt></dt>
+<dd>muestra las diferencias entre 2 archivos.</dd>
+<dt><tt class="docutils literal">updatedb</tt></dt>
+<dd>actualiza la base de datos de nombres de archivos (y directorios) para que con el comando "locate" podamos encontrarlo (debe ejecutarse como root o con sudo).</dd>
+<dt><tt class="docutils literal">locate</tt></dt>
+<dd>busca nombres de archivos y directorios.</dd>
+<dt><tt class="docutils literal">find</tt></dt>
+<dd>busca con parámetros de búsqueda más extendidos que locate y no necesita de la base de datos.</dd>
+<dt><tt class="docutils literal">whereis</tt></dt>
+<dd>busca la ruta del binario (ejecutable), el fuente y/o la página de manual de un comando.</dd>
+<dt><tt class="docutils literal">which</tt></dt>
+<dd>
+<blockquote class="first">
+nos indica en qué directorio del PATH está el comando que le pasamos como argumento.</blockquote>
+<dl class="last docutils">
+<dt><tt class="docutils literal">grep</tt></dt>
+<dd>(Globally Regular Expressions Pattern). Buscador de expresiones regulares (RegEx) dentro de archivos..</dd>
+</dl>
+</dd>
+</dl>
+</div>
+</div>
+    </div>
+    
+
+</article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2016         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../../../../assets/js/all-nocdn.js"></script><script src="../../../../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

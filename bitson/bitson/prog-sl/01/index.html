@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="http://lecovi.github.io/bitson/bitson/prog-sl/01/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Algunos conceptos básicos | Make it So!</title>
+<link href="../../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/bitson/bitson/prog-sl/01/">
+<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="../../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<meta name="author" content="Leandro E. Colombo Viña">
+<meta property="og:site_name" content="Make it So!">
+<meta property="og:title" content="Algunos conceptos básicos">
+<meta property="og:url" content="http://lecovi.github.io/bitson/bitson/prog-sl/01/">
+<meta property="og:description" content="Mirá la presentación aparte.
+
+Contents
+
+Computadoras y programas
+El mito de la máquina todopoderosa
+Cómo darle instrucciones a la máquina usando Python
+
+
+En esta unidad hablaremos de lo que es un prog">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-08-25T13:27:56-03:00">
+<meta property="article:tag" content="mathjax">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../../../blog/"><i class="fa fa-pencil"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../../../cfp/prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../../../../cfp/olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../../../cfp/reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../../../ifts"> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../../../ifts/arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../../../../ifts/dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../../../../ifts/edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li>
+<a href="../../../../ifts/par/">  <i class="fa fa-code"></i> Paradigmas de Programación</a>
+                    </li>
+<li>
+<a href="../../../../bitson"><i class="fa fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../../prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="index.rst" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Algunos conceptos básicos</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="col-md-2"><p></p></div>
+<div class="col-md-8 embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="http://bitson.github.io/cursos/python1" scrolling="no"></iframe></div>
+<div class="col-md-2"><p></p></div>
+<p class="col-md-12 align-right row">Mirá la <a href="http://bitson.github.io/cursos/python1" target="_blank">presentación aparte</a>.</p>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href=".#computadoras-y-programas" id="id1">Computadoras y programas</a></li>
+<li><a class="reference internal" href=".#el-mito-de-la-maquina-todopoderosa" id="id2">El mito de la máquina todopoderosa</a></li>
+<li><a class="reference internal" href=".#como-darle-instrucciones-a-la-maquina-usando-python" id="id3">Cómo darle instrucciones a la máquina usando Python</a></li>
+</ul>
+</div>
+<p class="col-md-12">En esta unidad hablaremos de lo que es un programa de
+computadora e introduciremos unos cuantos conceptos referidos a la
+programación y a la ejecución de programas. Utilizaremos en todo
+momento el lenguaje de programación Python para ilustrar esos
+conceptos.</p>
+<div class="section" id="computadoras-y-programas">
+<h2><a class="toc-backref" href=".#id1">Computadoras y programas</a></h2>
+<p>En la actualidad, la mayoría de nosotros utilizamos computadoras
+permanentemente: para mandar correos electrónicos, navegar por Internet,
+chatear, jugar, escribir textos.</p>
+<p>Las computadoras se usan para actividades tan disímiles como predecir las
+condiciones meteorológicas de la próxima semana, guardar historias clínicas,
+diseñar aviones, llevar la contabilidad de las empresas o controlar una
+fábrica. Y lo interesante aquí (y lo que hace apasionante a esta carrera) es
+que el mismo aparato sirve para realizar todas estas actividades: uno no
+cambia de computadora cuando se cansa de chatear y quiere jugar al solitario.</p>
+<p>Muchos definen una computadora moderna como "una máquina que
+almacena y manipula información bajo el control de un programa que
+puede cambiar". Aparecen acá dos conceptos que son claves: por un
+lado se habla de una <em>máquina</em> que almacena información, y por
+el otro lado, esta máquina está controlada por <em>un programa
+que puede cambiar</em>.</p>
+<p>Una calculadora sencilla, de esas que sólo tienen 10 teclas para
+los dígitos, una tecla para cada una de las 4 operaciones, un
+signo igual, encendido y CLEAR, también es una máquina que
+almacena información y que está controlada por un programa. Pero
+lo que diferencia a esta calculadora de una computadora es que en
+la calculadora el programa no puede cambiar.</p>
+<p>Un <em>programa de computadora</em> es un conjunto de <em>instrucciones</em> paso a paso que le indican a una computadora cómo
+realizar una tarea dada, y en cada momento uno puede elegir
+ejecutar un programa de acuerdo a la tarea que quiere realizar.</p>
+<p>Las instrucciones se deben escribir en un lenguaje que nuestra
+computadora entienda. Los lenguajes de programación son
+lenguajes diseñados especialmente para dar
+órdenes a una computadora, de manera exacta y no ambigua. Sería
+muy agradable poder darle las órdenes a la computadora en
+castellano, pero el problema del castellano, y de las lenguas
+habladas en general, es su ambigüedad:</p>
+<p>Si alguien nos dice <em>"Comprá el collar sin monedas"</em>, no sabremos
+si nos pide que compremos el collar que no tiene monedas, o que compremos
+un collar y que no usemos monedas para la compra. Habrá que preguntarle
+a quien nos da la orden cuál es la interpretación correcta. Pero tales
+dudas no pueden aparecer cuando se le dan órdenes a una computadora.</p>
+<p>Este curso va a tratar precisamente de cómo se escriben programas
+para hacer que una computadora realice una determinada tarea.
+Vamos a usar un lenguaje específico (Python) porque es sencillo y
+elegante, pero éste no será un curso de Python sino un curso de
+programación.</p>
+<p class="alert alert-success pull-right">Existen una gran cantidad de programas desarrollados en Python, desde
+herramientas para servidores, como <strong>mailman</strong>, hasta programas amigables
+para usuarios finales, como <strong>emesene</strong>, pasando por aplicaciones
+empresariales, <strong>openerp</strong>, <strong>tryton</strong>; herramientas de desarrollo,
+<strong>meld</strong>, <strong>mercurial</strong>, <strong>bazaar</strong>, <strong>trac</strong>; plataformas web,
+<strong>django</strong>, <strong>turbogears</strong>, <strong>zope</strong>; clientes de bittorrent, <strong>bittorrent</strong>,
+<strong>bittornado</strong>, <strong>deluge</strong>; montones de juegos de todo
+tipo, y muchísimas aplicaciones más.
+Todas estas aplicaciones son software libre, por lo que se puede obtener y
+estudiar el código con el que están hechas</p>
+</div>
+<div class="section" id="el-mito-de-la-maquina-todopoderosa">
+<h2><a class="toc-backref" href=".#id2">El mito de la máquina todopoderosa</a></h2>
+<p>Muchas veces la gente se imagina que con la computadora se puede
+hacer cualquier cosa, que no hay tareas imposibles de realizar.
+Más aún, se imaginan que si bien hubo cosas que eran imposibles de
+realizar hace 50 años, ya no lo son más, o no lo serán dentro de
+algunos años, cuando las computadoras crezcan en poder (memoria,
+velocidad), y la computadora se vuelva una máquina todopoderosa.</p>
+<p>Sin embargo eso no es así: existen algunos problemas, llamados
+<em>no computables</em> que nunca podrán ser resueltos por una
+computadora digital, por más poderosa que ésta sea. La
+computabilidad es la rama de la computación que se ocupa de
+estudiar qué tareas son computables y qué tareas no lo son.</p>
+<p>De la mano del mito anterior, viene el mito del lenguaje
+todopoderoso: hay problemas que son no computables porque en
+realidad se utiliza algún lenguaje que no es el apropiado.</p>
+<p>En realidad todas las computadoras pueden resolver los mismos
+problemas, y eso es independiente del lenguaje de programación que
+se use. Las soluciones a los problemas computables se pueden
+escribir en cualquier lenguaje de programación. Eso no significa
+que no haya lenguajes más adecuados que otros para la resolución
+de determinados problemas, pero la adecuación está relacionada con
+temas tales como la elegancia, la velocidad, la facilidad para
+describir un problema de manera simple, etc., nunca con la
+capacidad de resolución.</p>
+<p>Los problemas no computables no son los únicos escollos que se le
+presentan a la computación. Hay otros problemas que si bien son
+computables demandan para su resolución un esfuerzo enorme en
+tiempo y en memoria. Estos problemas se llaman <em>intratables</em>.
+El análisis de algoritmos se ocupa de separar los problemas
+tratables de los intratables, encontrar la solución más barata
+para resolver un problema dado, y en el caso de los intratables,
+resolverlos de manera aproximada: no encontramos la verdadera
+solución porque no nos alcanzan los recursos para eso, pero
+encontramos una solución bastante buena y que nos insume muchos
+menos recursos (el orden de las respuestas de Google a una
+búsqueda es un buen ejemplo de una solución aproximada pero no
+necesariamente óptima).</p>
+<p>En este curso trabajaremos con problemas no sólo computables sino
+también tratables. Y aprenderemos a medir los recursos que nos
+demanda una solución, y empezaremos a buscar la solución menos
+demandante en cada caso particular.</p>
+<p>Algunos ejemplos de los problemas que encararemos y de sus
+soluciones:</p>
+<div class="admonition-problema admonition">
+<p class="first admonition-title"><strong>Problema</strong></p>
+<p class="last">Dado un número <span class="math">\(N\)</span> se quiere calcular <span class="math">\(N^{33}\)</span></p>
+</div>
+<p>Una solución posible, por supuesto, es hacer el producto <span class="math">\(N \times  N \times  . . . \times  N\)</span> , que involucra 32 multiplicaciones.</p>
+<p>Otra solución, mucho más eficiente es:</p>
+<ul class="simple">
+<li>Calcular <span class="math">\(N \times  N\)</span>.</li>
+<li>Al resultado anterior mutiplicarlo por sí mismo con lo cual ya disponemos de <span class="math">\(N^{4}\)</span>.</li>
+<li>Al resultado anterior mutiplicarlo por sí mismo con lo cual ya disponemos de <span class="math">\(N^{8}\)</span>.</li>
+<li>Al resultado anterior mutiplicarlo por sí mismo con lo cual ya disponemos de <span class="math">\(N^{16}\)</span>.</li>
+<li>Al resultado anterior mutiplicarlo por sí mismo con lo cual ya disponemos de <span class="math">\(N^{32}\)</span>.</li>
+<li>Al resultado anterior mutiplicarlo por <span class="math">\(N\)</span> con lo cual conseguimos el resultado deseado con sólo 6 multiplicaciones.</li>
+</ul>
+<p>Cada una de estas soluciones representa un <em>algoritmo</em>, es decir un método de
+cálculo, diferente. Para un mismo problema puede haber algoritmos diferentes que
+lo resuelven, cada uno con un costo distinto en términos de recursos
+computacionales involucrados.</p>
+<p class="alert alert-success pull-right">La palabra algoritmo no es una variación de <em>logaritmo</em>, sino que proviene
+de <em>algorismo</em>. En la antigüedad, los <em>algoristas</em> eran los que calculaban
+usando la numeración arábiga y mientras que los <em>abacistas</em> eran los que
+calculaban usando ábacos. Con el tiempo el <em>algorismo</em> se deformó en
+<em>algoritmo</em>, influenciado por el término <em>aritmética</em>.</p>
+<p class="alert alert-success pull-right">A su vez el uso de la palabra <em>algorismo</em> proviene del nombre de un
+matemático persa famoso, en su época y para los estudiosos de esa época,
+"Abu Abdallah Muhammad ibn Mûsâ al-Jwârizmî", que literalmente significa:
+"Padre de Ja’far Mohammed, hijo de Moises, nativo de Jiva". Al-Juarismi,
+como se lo llama usualmente, escribió en el año 825 el libro "Al-Kitâb
+al-mukhtasar fî hîsâb al-gabr wa’l-muqâbala" (Compendio del cálculo por el
+método de completado y balanceado), del cual surgió también la palabra
+<em>"álgebra"</em>.</p>
+<p class="alert alert-success pull-right">Hasta hace no mucho tiempo se utilizaba el término algoritmo para referirse
+únicamente a formas de realizar ciertos cálculos, pero con el surgimiento de
+la computación, el término algoritmo pasó a abarcar cualquier método para
+obtener un resultado.</p>
+<div class="admonition-problema admonition">
+<p class="first admonition-title"><strong>Problema</strong></p>
+<p class="last">Tenemos que permitir la actualización y consulta de una guía telefónica.</p>
+</div>
+<p>Para este problema no hay una solución única: hay muchas y cada
+una está relacionada con un contexto de uso. ¿De qué guía estamos
+hablando: la guía de una pequeña oficina, un pequeño pueblo, una
+gran ciudad, la guía de la Argentina? Y en cada caso ¿de qué tipo
+de consulta estamos hablando: hay que imprimir un listado una vez
+por mes con la guía completa, se trata de una consulta en línea,
+etc.? Para cada contexto hay una solución diferente, con los datos
+guardados en una <em>estructura de datos</em> apropiada, y con
+diferentes algoritmos para la actualización y la consulta.</p>
+</div>
+<div class="section" id="como-darle-instrucciones-a-la-maquina-usando-python">
+<h2><a class="toc-backref" href=".#id3">Cómo darle instrucciones a la máquina usando Python</a></h2>
+<p class="alert alert-success pull-right">Python fue creado a finales de los años 80, por un programador holandés
+llamado Guido van Rossum, quien sigue siendo aún hoy el líder del
+desarrollo del lenguaje.</p>
+<p class="alert alert-success pull-right">La versión 2.0, lanzada en 2000, fue un paso muy importante para el
+lenguaje ya que era mucho más madura, incluyendo un <em>recolector de
+basura</em>.  La versión 2.2, lanzada en diciembre de 2001, fue también un hito
+importante ya que mejoró la orientación a objetos.  La última versión de
+esta línea es la 2.7 que fue lanzada en noviembre de 2010 y aún está vigente.</p>
+<p class="alert alert-success pull-right">En diciembre de 2008, se lanzó la rama 3.0, cuya versión actual es la
+3.5, de septiembre de 2015. Sin embargo, debido a que estas versiones
+introducen importantes cambios y no son totalmente compatibles
+con las versiones anteriores, todavía no se la utiliza extensamente.</p>
+</div>
+</div>
+    </div>
+    
+            <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script><script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
+            </script></article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2016         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../../../assets/js/all-nocdn.js"></script><script src="../../../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
