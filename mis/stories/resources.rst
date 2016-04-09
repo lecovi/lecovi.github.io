@@ -19,8 +19,28 @@ Acá podés descargar las |maquinas_virtuales|.
     <a href="https://mega.nz/#F!yYxDgDbJ!CmVGhOgD-F4XnxPrM7BXTg" target="_blank"><i class="fa fa-cloud-download"></i> máquinas virtuales</a>
 
 
-Bibliografía
-============
+Bibliografía |library|
+======================
+
+.. |library| raw:: html
+
+    <a href="https://mega.co.nz/#F!0Y5UQTQY!CqHawnH2EsEra2mc6ACfDQ" target="_blank"><i class="fa fa-book"></i></a>
+
+Análisis
+--------
+
+#. **Análisis Estructurado Moderno**, *Edward Yourdon* |yourdon|.
+
+Arquitectura de Computadoras
+----------------------------
+
+#. **La PC por dentro**, *Mario C. Ginzburg*, `ISBN 978-987-05-0916-5` |ginzburg|.
+#. **Organización de Computadoras | Un enfoque estructurado**, *Andrew S. Tanenbaum*, `ISBN 970-17-0399-5` |tanenbaum|.
+#. **Arquitectura de Computadoras**, *Patricia Quiroga*, `ISBN 978-987-1609-06-2` |quiroga|.
+#. **Arquitectura de Computadores (Un enfoque cuantitativo)**, *J. L. Hennessy & D. A. Patterson*, `ISBN 84-7615-912-9` |hennessy|.
+#. **Computer Science - An Overview (11th Edition)**, *J. G. Brookshear*, `ISBN 978-0-13-256903-3` |brookshear|.
+#. **Organización y Arquitectura de Computadores**, *W. Stallings*, `ISBN 84-205-2993-1` |stallings|.
+#. **Structured Computer Organization (6th Edition)**, *A. S. Tanenbaum*, `ISBN 978-0-13-291652-3` |tanenbaum_ingles|.
 
 Python
 ------
@@ -31,22 +51,54 @@ Python
 #. **Python para todos**, *Raúl González Duque* |ppt|.
 #. **Think Python 2e**, *Allen B. Downey* [inglés] |think_python|.
 
-.. |libro| raw:: html
-
-    <a href="https://github.com/lecovi/thinkcs-py_es/releases/download/v3.0.0-b1/top.pdf" target="_blank"><i class="fa  fa-file-pdf-o"></i></a>
-
 .. |apunte_7540| raw:: html
 
-    <a href="https://drive.google.com/file/d/0B5YeA72NbAFYTHhhWVc0TlVWUDg/view?usp=sharing" target="_blank"><i class="fa  fa-file-pdf-o"></i></a>
+    <a href="https://drive.google.com/file/d/0B5YeA72NbAFYTHhhWVc0TlVWUDg/view?usp=sharing" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
+.. |brookshear| raw:: html
+
+    <a  href="https://mega.nz/#!4VRGmZzZ!-WsJnf1x98R1n3XOwPmD5qaxhK6r3fGzMtaNcecNJYY" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
+.. |ginzburg| raw:: html
+
+    <a  href="https://mega.nz/#!0RgVXLJb!sOZTlYBZjqgYirH6FYp1WbYEYsWHhUlfMadpa71EdTE" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
+.. |hennessy| raw:: html
+
+    <a href="https://mega.nz/#!NdI2yaJD!bpbh6GfZ-syWm4KuRQhEnT-goaFJ9fa7zD1bOtfEO78" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
+.. |libro| raw:: html
+
+    <a href="https://github.com/lecovi/thinkcs-py_es/releases/download/v3.0.0-b1/top.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
 
 .. |think_python| raw:: html
 
-    <a href="http://greenteapress.com/wp/think-python-2e/" target="_blank"><i class="fa  fa-link"></i></a>
+    <a href="http://greenteapress.com/wp/think-python-2e/" target="_blank"><i class="fa fa-link"></i></a>
 
 .. |tuto_pyar| raw:: html
 
-    <a href="http://docs.python.org.ar/tutorial/" target="_blank"><i class="fa  fa-link"></i></a>
+    <a href="http://docs.python.org.ar/tutorial/" target="_blank"><i class="fa fa-link"></i></a>
 
 .. |ppt| raw:: html
 
-    <a href="http://mundogeek.net/tutorial-python/" target="_blank"><i class="fa  fa-link"></i></a>
+    <a href="http://mundogeek.net/tutorial-python/" target="_blank"><i class="fa fa-link"></i></a>
+
+.. |quiroga| raw:: html
+
+    <a href="https://mega.nz/#!ZNxznR5a!iIDXCngutAtLMhj_Ph28mU9PNpFgLNpitXFh_E4kctY" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
+.. |stallings| raw:: html
+
+    <a href="https://mega.nz/#!pdwjiKCb!4AzH69xeFrSYklxlP2p2p6EZNNXB39OrIE5PB_qzOz4" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
+.. |tanenbaum| raw:: html
+
+    <a href="https://mega.nz/#!9IAXmaBT!i2A44jGUZrFSGH3x_CaZneGe3ttNguHlCURA6ZhmNYs" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
+.. |tanenbaum_ingles| raw:: html
+
+    <a href="https://mega.nz/#!4c5CwTRS!tkCqO61bY3Nc-R79hj6sQQvlwluW5uZXl09Bkk74NZI" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
+.. |yourdon| raw:: html
+
+    <a href="https://mega.nz/#!dMpExAaJ!nXZfGbyl95Q1_VK3zY9m7GmxkmfbMeFcgopL0ne74VU" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
