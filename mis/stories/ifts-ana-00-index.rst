@@ -62,10 +62,13 @@ A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 Fundamentación
 ==============
 
-.. Esta instancia curricular proporciona a los estudiantes una introducción
-.. histórica del procesamiento de datos y la evolución de las computadoras hasta
-.. nuestros días, a la vez que les brinda un conocimiento general de la
-.. arquitectura y la organización de la computadora.
+Esta instancia curricular pretende desarrollar en los estudiantes dos
+capacidades básicas del profesional de sistemas: 1) describir un sistema
+mediante los lenguajes conceptuales adquiridos con anterioridad (modelos de
+datos como el ERM o modelos dinámicos como el DFD) y 2) relevar información de
+los usuarios utilizando las técnicas de ingeniería de requerimientos, para
+conocer sus problemas y poder describirlos con los modelos
+anteriormente mencionados.
 
 .. class:: col-md-6
 
@@ -74,10 +77,10 @@ Objetivos
 
 Que los estudiantes:
 
-.. * comprendan la importancia del las innovaciones tecnológicas y las automatizaciones aplicadas al análisis de sistemas.
-.. * conozcan la arquitectura y organización de la computadora.
-.. * adquieran precisión en el lenguaje de la especialidad.
-
+* Conozcan los modelos de sistemas.
+* Adquieran capacidad expresiva en el uso de técnicas de modelado.
+* Adquieran perspectiva externa basada en los usuarios para abordar el análisis de aplicaciones.
+* Desarrollen las técnicas de elicitación, especificación y validación de procesos, identificando los distintos requerimientos describiéndolos mediante la utilización de modelos de datos.
 
 .. admonition:: Organización
 
@@ -98,37 +101,73 @@ Que los estudiantes:
 Ejes de contenido
 -----------------
 
-.. * Historia de la computación. Terminología específica.
-.. * Esquema básico del elemento físico (hardware).
-.. * Esquema básico del elemento lógico (software).
-.. * Sistemas de numeración (decimal, binario y hexadecimal).
-.. * Arquitectura y organización de la computadora.
-.. * Concepto de programas rutinas y subrutinas de bajo nivel.
-.. * Representación de los datos a nivel máquina.
-.. * Diferencia entre memoria de trabajo y memoria de almacenamiento.
-.. * Jerarquía de memoria. Organización funcional.
-.. * Circuitos combinatorios y secuenciales.
-
+* Teoría general de sistemas.
+* Modelos de sistemas. Definiciones de modelos: modelos de contexto, modelos de comportamiento, modelo de flujo de datos, modelos de máquinas de estado, modelos de datos, modelos de objetos, modelos de herencia, agregación de objetos, modelado del comportamiento de objetos, bancos de trabajo CASE.
+* Construcción de prototipos de software: definición de prototipos, construcción de prototipos en el proceso de software, técnica de construcción rápida de prototipos, desarrollo con lenguajes dinámicos de alto nivel.
+* Especificación formal: métodos formales, especificación formal en el proceso de software, especificación de la interfaz, especificación del comportamiento.
+* Procesos de la Ingeniería de Requerimientos. Esquema de descripción de procesos. Elicitación de Requerimientos. Especificación de Requerimientos. Validación de requeremientos.
 
 .. class:: col-md-12
 
 Programa de la Asignatura
 -------------------------
+La asignatura se divide en 3 (tres) unidades temáticas que nuclean los
+contenidos según la relación existente entre los mismos.
 
-.. La asignatura se divide en 3 (tres) unidades temáticas que nuclean los
-.. contenidos según la relación existente entre los mismos.
-..
-.. * **UNIDAD 1: INTRODUCCIÓN Y FUNDAMENTOS.**
-..     Historia y definición de informática y computadoras. Unidad básica de
-..     información. Sistemas de numeración. Hardware y Software, definición y
-..     clasificación.
-.. * **UNIDAD 2: ARQUITECTURA DE UNA COMPUTADORA DIGITAL**
-..     Esquema funcional. El procesador: Unidad Aritmético Lógica, Unidad de
-..     control. La memoria. Los dispositivos de E/S. Ejecución de instrucciones.
-.. * **UNIDAD 3: EL SOPORTE LÓGICO.**
-..     Lenguajes, niveles y máquinas virtuales. Procesos. Algoritmos. Circuitos
-..     combinatorios y secuenciales.
-..
-.. Descargate la planificación_.
-..
-.. .. _planificación: /ana/planificacion.pdf
+* **UNIDAD 1: MODELOS**
+    Modelos de entidad-relación. Diagramas de flujo de datos. Diagramas de transición de estados.
+    Diccionario de datos.
+* **UNIDAD 2: EL PROCESO DE ANÁLISIS**
+    Herramientas de modelado. Especificaciones de proceso. El modelo esencial y el modelo ambiental.
+    Modelo de comportamiento. El modelo de implantación de usuario.
+* **UNIDAD 3: UML**
+    Principios básicos del modelado. Orientación a objetos. Vista general de UML. Diagramas de clases y objetos. Modelado de comportamiento.
+
+Descargate la planificación_.
+
+.. _planificación: /ana/planificacion.pdf
+
+.. class:: col-md-12
+
+Metodología de Trabajo en Clase
+-------------------------------
+
+Actividades a desarrollar
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Cada uno de los temas se introducen mediante una clase expositiva que se
+complementa con la ejercitación correspondiente para la fijación de los
+conceptos explicados.
+
+Guías de trabajos prácticos confeccionadas por el docente sobre temas vistos en
+clase. Se reserva unos minutos de cada clase para consultas sobre los ejercicios
+pendientes.
+
+Comunicaciones Internas
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Para establecer una comunicación fluida entre alumnos y docentes, existe una
+lista de correo de uso exclusivo para la asignatura. Los alumnos deberán
+suscribirse en la misma y deberán permanecer suscriptos mientras dure la
+cursada. Los alumnos deberán obtener una cuenta de correo electrónico, e
+informarla al docente al comenzar el ciclo lectivo.
+
+Todas las consultas, o dudas, se llevan a cabo a través de la lista. Las fechas
+de parcial, entrega de notas, y cualquier otra inquietud, se hará a través de la
+lista. La lista generada en esta materia puede ser utilizada en otra asignatura
+siempre y cuando la utilización sea para fines académicos. Utilizando la lista
+los alumnos pueden hacer consultas entre sí, y a los docentes. Las cuales serán
+respondidas a la brevedad.
+
+Evaluación y Regularidad
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+La evaluación se realizará en forma continua con la observación del desempeño de
+cada alumno. Considerando:
+
+- Cumplimiento en tiempo y forma con la entrega de los trabajos prácticos y un mínimo del 80% de asistencia.
+- Primer Parcial: Examen escrito que evaluará conceptos con la realización de ejercicios prácticos y temas teóricos.
+- Segundo Parcial : Examen escrito que evaluará conceptos con la realización de ejercicios prácticos y temas teóricos.
+- Cada parcial tiene una única posibilidad de recuperación.
+- Regularidad en la Asignatura: Serán regulares, quienes hayan aprobado los parciales, entregado los trabajos prácticos y cumplido con el porcentaje de asistencia, podrán firmar la regularidad en la materia que los habilita a rendir el final.
+- Examen Final: Es oral y escrito. Se evaluará la integración de conocimientos mediante ejercicios y  preguntas conceptuales.
