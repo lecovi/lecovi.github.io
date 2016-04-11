@@ -294,16 +294,12 @@
   <lastmod>2016-04-09T13:48:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lecovi.github.io/ifts-arq-cal/</loc>
-  <lastmod>2016-04-11T01:46:00Z</lastmod>
- </url>
- <url>
   <loc>http://lecovi.github.io/ifts/</loc>
   <lastmod>2016-04-09T13:59:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/ana/</loc>
-  <lastmod>2016-04-09T13:59:00Z</lastmod>
+  <lastmod>2016-04-11T13:57:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/ana/01/</loc>
@@ -352,6 +348,10 @@
  <url>
   <loc>http://lecovi.github.io/ifts/ana/12/</loc>
   <lastmod>2016-04-09T13:59:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/ana/cal/</loc>
+  <lastmod>2016-04-11T13:57:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/arq/</loc>
@@ -411,7 +411,11 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/dlo/</loc>
-  <lastmod>2016-04-09T13:49:00Z</lastmod>
+  <lastmod>2016-04-11T13:54:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/dlo/cal/</loc>
+  <lastmod>2016-04-11T13:54:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/dlo/condicionales/</loc>
