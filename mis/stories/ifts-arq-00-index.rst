@@ -16,7 +16,7 @@
 
     Mansilla 3643, Ciudad Autónoma de Buenos Aires |mapa|
 
-    **Lunes de 18:30 a 22:00hs**
+    **Lunes de 18:30 a 22:00hs - 1° Cuatrimestre**
 
 .. |mapa| raw:: html
 

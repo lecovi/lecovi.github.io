@@ -16,29 +16,60 @@
 
     Mansilla 3643, Ciudad Autónoma de Buenos Aires |mapa|
 
-    **Viernes de 18:30 a 22:00hs**
-
-    Suscribite a la lista de correo en este |lista|
+    **Viernes de 18:30 a 22:00hs - 1° Cuatrimestre**
 
 .. |mapa| raw:: html
 
     <a href="http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
 
-.. |lista| raw:: html
+.. class:: row
 
-    <a href="http://listas.bitson.com.ar/listinfo/analisis" target="_blank">link</a>
+.. class:: col-md-4
 
-.. sidebar:: Calendario
+.. raw:: html
 
-    .. raw:: html
+    <a href="http://listas.bitson.com.ar/listinfo/diagramacion" target="_blank" class="feature-link text-center">
+        <div class="feature-icon feature-icon-static">
+            <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </span>
+            Lista de Correo
+        </div>
+    </a>
 
-        <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=colomboleandro%40ifts18.edu.ar&amp;color=%2342104A&amp;ctz=America%2FArgentina%2FBuenos_Aires"
-        style=" border-width:0 " width="400" height="300" frameborder="0"
-        scrolling="no"></iframe>
+.. class:: col-md-4
+
+.. raw:: html
 
 
-----
+    <a href="https://docs.google.com/spreadsheets/d/1UPN29JBf2eXz-SsG4iCtbwys6G0NHnO-qFZIoAhP8-4/pubhtml?gid=19&single=true" target="_blank" class="feature-link text-center">
+        <div class="feature-icon feature-icon-static">
+            <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-th-list fa-stack-1x fa-inverse"></i>
+            </span>
+            Lista de Alumnos
+        </div>
+    </a>
 
+.. class:: col-md-4
+
+.. raw:: html
+
+    <a href="/ifts/ana/cal" target="_blank" class="feature-link text-center">
+        <div class="feature-icon feature-icon-static">
+            <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+            </span>
+            Calendario
+        </div>
+    </a>
+
+.. class:: row
+
+.. class:: col-md-12
 
 Clases
 ======
