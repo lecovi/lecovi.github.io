@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://lecovi.github.io/</loc>
-  <lastmod>2016-04-10T23:45:00Z</lastmod>
+  <lastmod>2016-04-11T01:46:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/2015/</loc>
@@ -294,6 +294,10 @@
   <lastmod>2016-04-09T13:48:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/ifts-arq-cal/</loc>
+  <lastmod>2016-04-11T01:46:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/ifts/</loc>
   <lastmod>2016-04-09T13:59:00Z</lastmod>
  </url>
@@ -351,7 +355,11 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/arq/</loc>
-  <lastmod>2016-04-09T13:49:00Z</lastmod>
+  <lastmod>2016-04-11T01:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/arq/cal/</loc>
+  <lastmod>2016-04-11T01:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/arq/circ-combinatorios/</loc>
