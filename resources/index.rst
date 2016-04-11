@@ -45,31 +45,57 @@ Arquitectura de Computadoras
 Python
 ------
 
-#. **Aprenda a pensar como un programador con Python**, *Allen Downey, Jeffrey Elkner & Chris Meyers* |libro|.
+#. **Aprenda a pensar como un programador con Python**, *Allen Downey, Jeffrey Elkner & Chris Meyers*, `ISBN 0-9716775-0-6` |libro|.
 #. **Algoritmos y programación 1 | Aprendiendo a programar usando Python como herramienta**, *Rosita Wachenchauzer & Colaboradores* |apunte_7540|.
 #. **Tutorial de Python Argentina**, *PyAr* |tuto_pyar|.
 #. **Python para todos**, *Raúl González Duque* |ppt|.
 #. **Think Python 2e**, *Allen B. Downey* [inglés] |think_python|.
+#. **Head First Python**, *Paul Barry*, `ISBN 978-1-449-38267-4` |head_first|.
+#. **Flask Mega-Tutorial**, *Miguel Grinberg* [inglés] |mega_tutorial|.
+#. **Dive into Python**, *Mark Pilgrim*, [inglés] |dive_into|, [español] |inmersion_python|.
+#. **Thinking in Python - Design Patterns and Problem-Solving Techniques**, *Bruce Eckel* |thinking_python|.
+#. **Python for informatics**, *Charles Severance* |python_informatics|.
+#. **Curso Python para principiantes**, *Eugenia Bahit* |bahit|.
 
 .. |apunte_7540| raw:: html
 
     <a href="https://drive.google.com/file/d/0B5YeA72NbAFYTHhhWVc0TlVWUDg/view?usp=sharing" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
 
+.. |bahit| raw:: html
+
+    <a href="https://mega.co.nz/#%21ZExUmToD%21ASIO4-hrYm4kfEWUXiq3TqGmxQvRTkO37FkjgXrkq18" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
 .. |brookshear| raw:: html
 
     <a  href="https://mega.nz/#!4VRGmZzZ!-WsJnf1x98R1n3XOwPmD5qaxhK6r3fGzMtaNcecNJYY" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
+.. |dive_into| raw:: html
+
+    <a  href="https://mega.co.nz/#%21pM4BkRjY%21vz6CCfcX8NafJoVIhmoyOwYoOqfuHOPex1xIg3RthUg" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
 
 .. |ginzburg| raw:: html
 
     <a  href="https://mega.nz/#!0RgVXLJb!sOZTlYBZjqgYirH6FYp1WbYEYsWHhUlfMadpa71EdTE" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
 
+.. |head_first| raw:: html
+
+    <a href="https://mega.co.nz/#%21AN52nQgR%21KDp4lqL2lsmOd-2UoOPp7u4hZQr-xcFk9TKI9dP98Y8" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
 .. |hennessy| raw:: html
 
     <a href="https://mega.nz/#!NdI2yaJD!bpbh6GfZ-syWm4KuRQhEnT-goaFJ9fa7zD1bOtfEO78" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
 
+.. |inmersion_python| raw:: html
+
+    <a  href="https://mega.co.nz/#%21sQhi2TAb%21uS7aI9iVV09-_pFxKZrMrZXGjDr9j5Ec9H72cKlYURU" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
 .. |libro| raw:: html
 
     <a href="https://github.com/lecovi/thinkcs-py_es/releases/download/v3.0.0-b1/top.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
+.. |mega_tutorial| raw:: html
+
+    <a  href="http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world" target="_blank"><i class="fa fa-link"></i></a>
 
 .. |think_python| raw:: html
 
@@ -83,6 +109,10 @@ Python
 
     <a href="http://mundogeek.net/tutorial-python/" target="_blank"><i class="fa fa-link"></i></a>
 
+.. |python_informatics| raw:: html
+
+    <a href="https://mega.co.nz/#%21oAYgXZoA%21J42d3Q7pajM2T2I1tiBX9oZ5yOLuzPokC29FU8z-BSY" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
 .. |quiroga| raw:: html
 
     <a href="https://mega.nz/#!ZNxznR5a!iIDXCngutAtLMhj_Ph28mU9PNpFgLNpitXFh_E4kctY" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
@@ -90,6 +120,10 @@ Python
 .. |stallings| raw:: html
 
     <a href="https://mega.nz/#!pdwjiKCb!4AzH69xeFrSYklxlP2p2p6EZNNXB39OrIE5PB_qzOz4" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+
+.. |thinking_python| raw:: html
+
+    <a href="https://mega.co.nz/#%21VIxlXIIJ%211TdzlwFGB_BAbQQat6-jpHGp1E1GqBKQc3YCUJwDqlA" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
 
 .. |tanenbaum| raw:: html
 
