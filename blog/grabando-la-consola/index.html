@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Grabando la consola | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/blog/grabando-la-consola/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -128,9 +127,7 @@ crear las imágenes que luego ju">
 <article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Grabando la consola</a></h1>
 
         <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">
-                    Leandro E. Colombo Viña
-            </span></p>
+            <p class="byline author vcard"><span class="byline-name fn">Leandro E. Colombo Viña</span></p>
             <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2015-11-08T17:35:59-03:00" itemprop="datePublished" title="2015-11-08 17:35">2015-11-08 17:35</time></a></p>
                 <p class="commentline">
         
@@ -157,10 +154,10 @@ crear las imágenes que luego juntaremos con un script del autor.</p>
 <h3>Instalación</h3>
 <p>Hay que bajar los paquetes anteriormente mencionados, entrar en el directorio
 del repositorio y ejecutar <tt class="docutils literal">make</tt>.</p>
-<pre class="code console"><a name="rest_code_a41c2f27034146da85f509e7838c30de-1"></a><span class="gp">$</span> sudo apt install imagemagick ttyrec gcc
-<a name="rest_code_a41c2f27034146da85f509e7838c30de-2"></a><span class="gp">$</span> git clone https://github.com/icholy/ttygif.git
-<a name="rest_code_a41c2f27034146da85f509e7838c30de-3"></a><span class="gp">$</span> <span class="nb">cd </span>ttygif
-<a name="rest_code_a41c2f27034146da85f509e7838c30de-4"></a><span class="gp">$</span> make
+<pre class="code console"><a name="rest_code_cd3220524a994a4ca4d4901408c6891f-1"></a><span class="gp">$</span> sudo apt install imagemagick ttyrec gcc
+<a name="rest_code_cd3220524a994a4ca4d4901408c6891f-2"></a><span class="gp">$</span> git clone https://github.com/icholy/ttygif.git
+<a name="rest_code_cd3220524a994a4ca4d4901408c6891f-3"></a><span class="gp">$</span> <span class="nb">cd </span>ttygif
+<a name="rest_code_cd3220524a994a4ca4d4901408c6891f-4"></a><span class="gp">$</span> make
 </pre>
 <p>Luego de ejecutar <tt class="docutils literal">make</tt> nos aparecen 2 nuevos archivos ejecutables en nuestro
 directorio:</p>
@@ -179,26 +176,26 @@ dos opciones:</p>
 <h4>Link Simbólico</h4>
 <p>Verificamos cuáles son los directorios que tenemos incluidos en la variable de
 entorno <tt class="docutils literal">PATH</tt>.</p>
-<pre class="code bash"><a name="rest_code_33cf31c239014b3d94256f622701f7ea-1"></a><span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$PATH</span>
-<a name="rest_code_33cf31c239014b3d94256f622701f7ea-2"></a>/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
-<a name="rest_code_33cf31c239014b3d94256f622701f7ea-3"></a><span class="err">$</span>
+<pre class="code bash"><a name="rest_code_43d2b3ac17fd46d9b207dbef6fd4a42f-1"></a><span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$PATH</span>
+<a name="rest_code_43d2b3ac17fd46d9b207dbef6fd4a42f-2"></a>/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+<a name="rest_code_43d2b3ac17fd46d9b207dbef6fd4a42f-3"></a><span class="err">$</span>
 </pre>
 <p>Por ejemplo, elegimos el primer directorio como destino para nuestro enlace
 simbólico: <cite>/usr/local/bin</cite>.
 Con el siguiente comando podés agregar el link simbólico de ambos archivos a
 ese directorio:</p>
-<pre class="code bash"><a name="rest_code_83f47aa367664d0aa1749b91e2c8a6c4-1"></a><span class="nv">$ </span>sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/ttygif
-<a name="rest_code_83f47aa367664d0aa1749b91e2c8a6c4-2"></a><span class="nv">$ </span>sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/concat.sh
+<pre class="code bash"><a name="rest_code_884e7f48e4db4fd4a7032af755956f63-1"></a><span class="nv">$ </span>sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/ttygif
+<a name="rest_code_884e7f48e4db4fd4a7032af755956f63-2"></a><span class="nv">$ </span>sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/concat.sh
 </pre>
 </div>
 <div class="section" id="agregar-al-path">
 <h4>Agregar al PATH</h4>
 <p>Para agregar el directorio del repositorio a la variable de entorno PATH:</p>
-<pre class="code bash"><a name="rest_code_93e2bba8dbcd475496bb3ccb1123aa40-1"></a><span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:<span class="nv">$PATH</span>
+<pre class="code bash"><a name="rest_code_f77200a8ec634ceb8019eb9faebb4d89-1"></a><span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:<span class="nv">$PATH</span>
 </pre>
 <p>Para que esto sea de manera permanente tenés que agregarlo a tu archivo
 <cite>~/.profile</cite>, simplemente ejecutando desde el directorio del repo:</p>
-<pre class="code bash"><a name="rest_code_d07782bda68841829f565e82577aa251-1"></a><span class="nv">$ </span><span class="nb">echo export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:<span class="nv">$PATH</span> &gt;&gt; ~/.profile
+<pre class="code bash"><a name="rest_code_06d2c754ccb94b1c8077fdeaad5ea78e-1"></a><span class="nv">$ </span><span class="nb">echo export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:<span class="nv">$PATH</span> &gt;&gt; ~/.profile
 </pre>
 </div>
 </div>
@@ -236,16 +233,16 @@ todo de un paso.</p>
 <p>Con sólo tener instalado <tt class="docutils literal">ImageMagick</tt> (que lo tenemos instalado del
 programa anterior) alcanza. Clonamos el repositorio y luego ejecutamos <tt class="docutils literal">make</tt>.</p>
 <!-- Instalando imagemagick tendría que funcionar. -->
-<pre class="code console"><a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-1"></a><span class="gp">$</span> sudo apt install imagemagick gcc
-<a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-2"></a><span class="gp">$</span> git clone https://github.com/z24/tty2gif.git
-<a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-3"></a><span class="gp">$</span> <span class="nb">cd </span>tty2gif
-<a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-4"></a><span class="gp">$</span> make
+<pre class="code console"><a name="rest_code_b5d355a0a87848f8b45b927f4fd8f85d-1"></a><span class="gp">$</span> sudo apt install imagemagick gcc
+<a name="rest_code_b5d355a0a87848f8b45b927f4fd8f85d-2"></a><span class="gp">$</span> git clone https://github.com/z24/tty2gif.git
+<a name="rest_code_b5d355a0a87848f8b45b927f4fd8f85d-3"></a><span class="gp">$</span> <span class="nb">cd </span>tty2gif
+<a name="rest_code_b5d355a0a87848f8b45b927f4fd8f85d-4"></a><span class="gp">$</span> make
 </pre>
 <div class="section" id="id2">
 <h4>Link Simbólico</h4>
 <p>Podemos aplicar lo mismo que hablamos en la sección anterior y agregar un
 enlace simbólico al binario del <tt class="docutils literal">tty2gif</tt>.</p>
-<pre class="code bash"><a name="rest_code_829a07bd86ed41b89ffe77d49aaf3d2c-1"></a>➜  ~ sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/ttygif
+<pre class="code bash"><a name="rest_code_cb2c3db72a7944cd997cb34b1713631f-1"></a>➜  ~ sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/ttygif
 </pre>
 </div>
 <div class="section" id="agregando-al-path">
@@ -258,7 +255,7 @@ enlace simbólico al binario del <tt class="docutils literal">tty2gif</tt>.</p>
 <p>La forma de uso es muy simple, después de instalar ejecutamos <tt class="docutils literal">tty2gif</tt> con 2
 argumentos, el primero: el archivo que va a grabar, el segundo: el gif animado
 que obtenemos como resultado.</p>
-<pre class="code console"><a name="rest_code_905774c79db5400eb0cfddfdee79801f-1"></a><span class="gp">$</span> tty2gif grabacion.raw salida.gif
+<pre class="code console"><a name="rest_code_5472f245a7434031a8776f9066935e42-1"></a><span class="gp">$</span> tty2gif grabacion.raw salida.gif
 </pre>
 <img alt="Grabación completa" class="align-center" src="../../images/blog/tty2gif/salida.gif"><!-- No lo puedo ejecutar desde terminator, tuve que usar xterm. --><p class="alert alert-info"><strong>Observación:</strong> La única particularidad que tenemos que tener en cuenta,
 es que al momento de la ejecución, debemos hacerlo desde <tt class="docutils literal">xterm</tt>. Lo
