@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Make it So! (splash)</title><link>http://lecovi.github.io/</link><description></description><atom:link href="http://lecovi.github.io/categories/splash.xml" type="application/rss+xml" rel="self"></atom:link><language>es</language><lastBuildDate>Thu, 07 Jan 2016 16:00:18 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ver mensajes en el booteo</title><link>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;En este breve post, la idea es mostrar los pasos a seguir para sacar la imagen
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Make it So! (splash)</title><link>http://lecovi.github.io/</link><description></description><atom:link rel="self" href="http://lecovi.github.io/categories/splash.xml" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Tue, 12 Apr 2016 21:20:51 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ver mensajes en el booteo</title><link>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;En este breve post, la idea es mostrar los pasos a seguir para sacar la imagen
 de inicio del sistema. En lo personal me gusta ver qué es lo que está cargando
 el sistema al momento del inicio. Por eso le suelo sacar la imagen que oculta
 esos mensajes. Comencemos...&lt;/p&gt;
 &lt;div class="section" id="edicion-de-los-parametros-de-inicio"&gt;
 &lt;h2&gt;Edición de los parámetros de inicio&lt;/h2&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_e033d3a42f26474b9961e935fbd87f4f-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo vim /etc/default/grub
+&lt;pre class="code console"&gt;&lt;a name="rest_code_9ff720545b3a4ecb8cb6d15adc8b9c55-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo vim /etc/default/grub
 &lt;/pre&gt;&lt;p&gt;Hay que editar el archivo &lt;tt class="docutils literal"&gt;/etc/default/grub&lt;/tt&gt; en este archivo vamos a
 encontrar una línea que dice:&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_b68a0506bbf24ecb9d7ea587ec19ac88-1"&gt;&lt;/a&gt;&lt;span class="go"&gt;GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"&lt;/span&gt;
+&lt;pre class="code console"&gt;&lt;a name="rest_code_f7e45343da1541b4abc8f904b1a2bd6a-1"&gt;&lt;/a&gt;&lt;span class="go"&gt;GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;Tenemos que remover la opción de &lt;tt class="docutils literal"&gt;"quiet splas"&lt;/tt&gt; para que la línea en
 cuestión quede como:&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_9ddf20457acb4080beefcc80954086e6-1"&gt;&lt;/a&gt;&lt;span class="go"&gt;GRUB_CMDLINE_LINUX_DEFAULT=""&lt;/span&gt;
+&lt;pre class="code console"&gt;&lt;a name="rest_code_f972cba5e7da402e969ac41f822066b5-1"&gt;&lt;/a&gt;&lt;span class="go"&gt;GRUB_CMDLINE_LINUX_DEFAULT=""&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="section" id="actualizando-grub"&gt;
 &lt;h2&gt;Actualizando GRUB&lt;/h2&gt;
 &lt;p&gt;Finalmente actualizamos las opciones de GRUB con el comando:&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_505d04a95b544398bd3c0b6ee0bef688-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo update-grub
+&lt;pre class="code console"&gt;&lt;a name="rest_code_76a12f6c68d9408393b49884a1e7535b-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo update-grub
 &lt;/pre&gt;&lt;p&gt;Listo! En el próximo inicio veremos como se va cargando el sistema.&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;</description><category>boot</category><category>mensajes</category><category>quiet</category><category>splash</category><guid>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</guid><pubDate>Thu, 07 Jan 2016 15:53:16 GMT</pubDate></item></channel></rss>

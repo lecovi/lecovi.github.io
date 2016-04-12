@@ -157,8 +157,8 @@ RedHat ---&gt; YUM
 <div class="section" id="archivo-de-configuracion">
 <h2><a class="toc-backref" href=".#id1">Archivo de configuración:</a></h2>
 <p><tt class="docutils literal">/etc/apt/sources.list</tt></p>
-<pre class="code console"><a name="rest_code_0f75db8025444f5e8b268c3af48532c5-1"></a><span class="go">deb http://sito.ejemplo.com/debian distribucion rama1 rama2 rama3</span>
-<a name="rest_code_0f75db8025444f5e8b268c3af48532c5-2"></a><span class="go">deb-src http://sito.ejemplo.com/debian distribucion rama1 rama2 rama3</span>
+<pre class="code console"><a name="rest_code_1d66ed865f604af48ac7011483a7dfe2-1"></a><span class="go">deb http://sito.ejemplo.com/debian distribucion rama1 rama2 rama3</span>
+<a name="rest_code_1d66ed865f604af48ac7011483a7dfe2-2"></a><span class="go">deb-src http://sito.ejemplo.com/debian distribucion rama1 rama2 rama3</span>
 </pre>
 <dl class="docutils">
 <dt>deb/deb-src</dt>
@@ -180,32 +180,32 @@ Si dice deb-src busca los códigos fuente.</dd>
 <strong>TENEMOS QUE SER EL SUPERUSUARIO.</strong></p>
 <hr class="docutils">
 <p>Para actualizar las cabeceras de los paquetes</p>
-<pre class="code console"><a name="rest_code_d2a931b6093e4f9bb54f73e01a5f51c8-1"></a><span class="gp">$</span> sudo apt update
+<pre class="code console"><a name="rest_code_31dc796bf2df414da254fd5543eb59de-1"></a><span class="gp">$</span> sudo apt update
 </pre>
 <p>Para actualizar los paquetes (el sistema)</p>
-<pre class="code console"><a name="rest_code_09d9deec4b3444949ecdb46a4e55daed-1"></a><span class="gp">$</span> sudo apt upgrade
+<pre class="code console"><a name="rest_code_86ccd89a9d2346b690351f33bde83656-1"></a><span class="gp">$</span> sudo apt upgrade
 </pre>
 <p>Para instalar paquetes</p>
-<pre class="code console"><a name="rest_code_7f75099adee74667a9654d2dd8bb8dad-1"></a><span class="gp">$</span> sudo apt install *&lt;nombre_del_paquete&gt;*
+<pre class="code console"><a name="rest_code_4272cd8559784071b5f21d4263d61183-1"></a><span class="gp">$</span> sudo apt install *&lt;nombre_del_paquete&gt;*
 </pre>
 <p>Ejemplo: suponganse que queremos instalar el paquete mc (Midnight Commander).</p>
-<pre class="code console"><a name="rest_code_cc7334f360e145fd81f499a7a767aecd-1"></a><span class="gp">$</span> sudo apt install mc
+<pre class="code console"><a name="rest_code_6d4348dfbfc24ca48c3c7cb3d1e686cd-1"></a><span class="gp">$</span> sudo apt install mc
 </pre>
 <p>Otro ejemplo: ahora queremos instalar el programa htop y terminator.</p>
-<pre class="code console"><a name="rest_code_9762a0efaba149ab8d25bf1839500a1a-1"></a><span class="gp">$</span> sudo apt install htop terminator
+<pre class="code console"><a name="rest_code_e79cfcd0407b498f9ced5b1e43cea9fa-1"></a><span class="gp">$</span> sudo apt install htop terminator
 </pre>
 <p>Para desinstalar paquetes</p>
-<pre class="code console"><a name="rest_code_be88c2d3cbb14ef0aa377a3ae6612848-1"></a><span class="gp">$</span> sudo apt remove &lt;nombre_del_paquete&gt;
+<pre class="code console"><a name="rest_code_cf0b4d50bd234380bf992a9143695369-1"></a><span class="gp">$</span> sudo apt remove &lt;nombre_del_paquete&gt;
 </pre>
 <p>Para desinstalar y borrar todos los archivos de configuración</p>
-<pre class="code console"><a name="rest_code_9d90adb96ecf416baf90a0060068048f-1"></a><span class="gp">$</span> sudo apt purge &lt;nombre_del_paquete&gt;
+<pre class="code console"><a name="rest_code_942973f0d030486d9cc8598ca6247d9f-1"></a><span class="gp">$</span> sudo apt purge &lt;nombre_del_paquete&gt;
 </pre>
 <hr class="docutils">
 <p>Para buscar paquetes por nombres (o partes de nombres).</p>
-<pre class="code console"><a name="rest_code_a2fa60dcba5d44a5886be7e3b91c72bf-1"></a><span class="gp">$</span> sudo apt-cache search &lt;nombre&gt;
+<pre class="code console"><a name="rest_code_51777171498c4c83b054a0fafa36f5c2-1"></a><span class="gp">$</span> sudo apt-cache search &lt;nombre&gt;
 </pre>
 <p>Para mostrar la información del paquete:</p>
-<pre class="code console"><a name="rest_code_39784b130de44cba9f8be49c9cd4333a-1"></a><span class="gp">$</span> sudo apt-cache show &lt;nombre&gt;
+<pre class="code console"><a name="rest_code_a9bd532d2b5447f5baadf6fea338aded-1"></a><span class="gp">$</span> sudo apt-cache show &lt;nombre&gt;
 </pre>
 </div>
 </div>
