@@ -168,3 +168,21 @@ Ejercicios resueltos:
 .. _parimpar.py: /prog/parimpar.py
 .. _mayor.py: /prog/mayor.py
 .. _seno.py: /prog/seno.py
+
+Ejercicios con Turtle:
+======================
+
+#. Dibujar un rectángulo
+#. Dibujar una dona
+#. Dibujar una círculo dividido en 8 sectores iguales.
+#. Dibujar un cubo.
+#. Dibujar un cilindro.
+#. Pedir al usuario que ingrese cantidad de lados y radio y dibujar el polígono correspondiente.
+#. Al anterior agregar: que permita ingresar
+    * coordenadas de inicio
+    * color 
+#. Pensar el 1, 2, 3 como funciones que reciben todos los datos necesarios para el dibujo (coordenadas de inicio, tamaño, color, etc.)
+#. Ingresar 3 valores entre 0 y 100 y generar un gráfico de barras (usar 8.1)
+#. Ingresar 3 valores entre 0 y 100 y generar un gráfico de torta (usar 8.3)
+#. Generar un gráfico de barras o torta con hasta 10 valores diferentes entre 0% y 100% c/u. Validar entrada de datos. 
+
