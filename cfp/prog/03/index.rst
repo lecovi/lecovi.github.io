@@ -13,8 +13,8 @@
 
 Antes de ponernos a jugar con Python, veamos algunos conceptos necesarios...
 
-Valores Lógicos
-===============
+Valores Lógicos:
+================
 
 Son valores *verdaderos* o *falsos*. En python son:
 
@@ -24,8 +24,8 @@ Son valores *verdaderos* o *falsos*. En python son:
 *NOTA*: Por convención se toma que cualquier valor que no sea ``False`` o 
 ``None`` es considerado como *verdadero*.
 
-Operadores Relacionales
-=======================
+Operadores Relacionales:
+========================
 
 Los operadores relacionales devuelven valores lógicos según la relación de sus
 operandos:
@@ -37,8 +37,8 @@ operandos:
 * Menor: ``<``
 * Menor o igual: ``<=``
 
-Operadores Lógicos
-==================
+Operadores Lógicos:
+===================
 
 Los operadores lógicos devuelven valores lógicos según los operandos:
 
@@ -46,19 +46,19 @@ Los operadores lógicos devuelven valores lógicos según los operandos:
 * ``or``: devuelve ``False`` si y sólo si todos sus operandos son ``False``.
 * ``or``: devuelve ``True`` si y sólo si todos sus operandos son ``True``.
 
-Condicionales
-=============
+Condicionales:
+==============
 
-Simples
--------
+Simples:
+--------
 
 .. code-block:: python
 
     if <condicion>:
         <sentencias que se ejecutan si 'condicion' es verdadero>
 
-Con "sino"
-----------
+Con "sino":
+-----------
 
 .. code-block:: python
 
@@ -67,8 +67,8 @@ Con "sino"
     else:
         <sentencias que se ejecutan si 'condicion' es falso>
 
-Anidados
---------
+Anidados:
+---------
 
 .. code-block:: python
 
@@ -79,8 +79,8 @@ Anidados
     else:
         <sentencias que se ejecutan si 'condicion1' y 'condicion2' es falso>
 
-Ejemplos
-========
+Ejemplos:
+=========
 
 Informa si el interés es mayor al 30%, sino informa el importe total:
 
@@ -133,8 +133,8 @@ signo.py_
 
 .. _signo.py: /prog/signo.py
 
-Ejercicios
-==========
+Ejercicios:
+===========
 
 1) Decir si un numero es par o impar
 2) De dos números que se ingresan, informar el mayor.
@@ -158,8 +158,8 @@ Seguí la presentación en este |turtle|.
 
     <a href="https://docs.google.com/presentation/d/1Y9rEGUf3puS-9HKbmODBVWiSIpwqJ-MId-W-A9VwJTs/present#slide=id.p" target="_blank">link</a>
 
-Ejercicios resueltos
-====================
+Ejercicios resueltos:
+=====================
 
 #. Par o impar: parimpar.py_
 #. Mayor: mayor.py_
@@ -169,19 +169,19 @@ Ejercicios resueltos
 .. _mayor.py: /prog/mayor.py
 .. _seno.py: /prog/seno.py
 
-Ejercicios con Turtle
-=====================
+Ejercicios con Turtle:
+======================
 
-#. **Dibujar un rectángulo**
+#. Dibujar un rectángulo
 #. Dibujar una dona
 #. Dibujar una círculo dividido en 8 sectores iguales.
 #. Dibujar un cubo.
 #. Dibujar un cilindro.
-#. **Pedir al usuario que ingrese cantidad de lados y radio y dibujar el polígono correspondiente.**
+#. Pedir al usuario que ingrese cantidad de lados y radio y dibujar el polígono correspondiente.
 #. Al anterior agregar: que permita ingresar
-    #) coordenadas de inicio
-    #) color
-#. **Pensar el 1, 2, 3 como funciones que reciben todos los datos necesarios para el dibujo (coordenadas de inicio, tamaño, color, etc.)**
+    * coordenadas de inicio
+    * color 
+#. Pensar el 1, 2, 3 como funciones que reciben todos los datos necesarios para el dibujo (coordenadas de inicio, tamaño, color, etc.)
 #. Ingresar 3 valores entre 0 y 100 y generar un gráfico de barras (usar 8.1)
 #. Ingresar 3 valores entre 0 y 100 y generar un gráfico de torta (usar 8.3)
 #. Generar un gráfico de barras o torta con hasta 10 valores diferentes entre 0% y 100% c/u. Validar entrada de datos. 
