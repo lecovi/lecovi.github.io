@@ -76,7 +76,7 @@ Clases
 
 A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 
-#. :doc:`Introducción al curso <ifts/ana/01>`
+#. :doc:`Técnica de Entrevistas <ifts/ana/01>`
 #. :doc:`02 <ifts/ana/02>`
 #. :doc:`03 <ifts/ana/03>`
 #. :doc:`04 <ifts/ana/04>`
