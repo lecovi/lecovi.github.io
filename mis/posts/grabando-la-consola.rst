@@ -5,10 +5,12 @@
 .. category: tutorial
 .. link:
 .. description:
-.. typei text
+.. type: text
 
 Quería compartirles estos dos programas que sirven para grabar nuestros pasos
 en la consola.
+
+.. TEASER_END
 
 TTYGIF
 ======

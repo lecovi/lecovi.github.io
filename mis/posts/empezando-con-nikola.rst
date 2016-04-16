@@ -2,7 +2,7 @@
 .. slug: empezando-con-nikola
 .. date: 2015-10-14 13:37:37 UTC-03:00
 .. tags: blog,python,nikola,github,git
-.. category: tutorial nikola github
+.. category: tutorial
 .. link:
 .. description: Tutorial Nikola GitHub Pages
 .. type: text
