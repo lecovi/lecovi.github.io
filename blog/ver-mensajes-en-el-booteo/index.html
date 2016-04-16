@@ -13,6 +13,7 @@
 <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <meta name="author" content="Leandro E. Colombo Viña">
 <link rel="prev" href="../grabando-la-consola/" title="Grabando la consola" type="text/html">
+<link rel="next" href="../codigo-abierto-o-software-libre/" title="¿Código abierto o Software Libre?" type="text/html">
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Ver mensajes en el booteo">
 <meta property="og:url" content="http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/">
@@ -149,23 +150,24 @@ el sistema al momento del inicio. Por eso ">
 de inicio del sistema. En lo personal me gusta ver qué es lo que está cargando
 el sistema al momento del inicio. Por eso le suelo sacar la imagen que oculta
 esos mensajes. Comencemos...</p>
+<!-- TEASER_END -->
 <div class="section" id="edicion-de-los-parametros-de-inicio">
 <h2>Edición de los parámetros de inicio</h2>
-<pre class="code console"><a name="rest_code_c95d3179a044452c8c96ba404c17c9bc-1"></a><span class="gp">$</span> sudo vim /etc/default/grub
+<pre class="code console"><a name="rest_code_e9eee4e4690f476dbcd037617c27cfa6-1"></a><span class="gp">$</span> sudo vim /etc/default/grub
 </pre>
 <p>Hay que editar el archivo <tt class="docutils literal">/etc/default/grub</tt> en este archivo vamos a
 encontrar una línea que dice:</p>
-<pre class="code console"><a name="rest_code_c93d45756df14b85b96281c21f171512-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</span>
+<pre class="code console"><a name="rest_code_47affa36f89242c1ab836c7ece1b24a2-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</span>
 </pre>
 <p>Tenemos que remover la opción de <tt class="docutils literal">"quiet splas"</tt> para que la línea en
 cuestión quede como:</p>
-<pre class="code console"><a name="rest_code_40673364e7ff4a76ac2dfe7182dd928f-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT=""</span>
+<pre class="code console"><a name="rest_code_49ffa290614d463b9dc54dfc73b85d33-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT=""</span>
 </pre>
 </div>
 <div class="section" id="actualizando-grub">
 <h2>Actualizando GRUB</h2>
 <p>Finalmente actualizamos las opciones de GRUB con el comando:</p>
-<pre class="code console"><a name="rest_code_c0717c4c13764cafa27c49af0bec6815-1"></a><span class="gp">$</span> sudo update-grub
+<pre class="code console"><a name="rest_code_57c8eb03bb604d75858a8b02e3c5d61d-1"></a><span class="gp">$</span> sudo update-grub
 </pre>
 <p>Listo! En el próximo inicio veremos como se va cargando el sistema.</p>
 </div>
@@ -180,6 +182,9 @@ cuestión quede como:</p>
 <ul class="pager hidden-print">
 <li class="previous">
                 <a href="../grabando-la-consola/" rel="prev" title="Grabando la consola">Publicación anterior</a>
+            </li>
+            <li class="next">
+                <a href="../codigo-abierto-o-software-libre/" rel="next" title="¿Código abierto o Software Libre?">Siguiente publicación</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
         

@@ -7,7 +7,15 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://lecovi.github.io/</loc>
-  <lastmod>2016-04-15T23:18:00Z</lastmod>
+  <lastmod>2016-04-16T14:51:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/1970/</loc>
+  <lastmod>2016-04-16T14:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/2014/</loc>
+  <lastmod>2016-04-16T12:55:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/2015/</loc>
@@ -19,7 +27,11 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/archive.html</loc>
-  <lastmod>2016-04-09T14:43:00Z</lastmod>
+  <lastmod>2016-04-16T15:10:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/articles/</loc>
+  <lastmod>2016-04-16T14:51:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/bitson/</loc>
@@ -155,7 +167,27 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/</loc>
-  <lastmod>2016-04-06T11:08:00Z</lastmod>
+  <lastmod>2016-04-16T15:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/10-programas-escritos-en-python/</loc>
+  <lastmod>2016-04-16T13:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/articles/index/</loc>
+  <lastmod>2016-04-16T15:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/blog/index/</loc>
+  <lastmod>2016-04-16T14:02:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/codigo-abierto-o-software-libre/</loc>
+  <lastmod>2016-04-16T13:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/el-valor-del-trabajo-profesional/</loc>
+  <lastmod>2016-04-16T13:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/empezando-con-nikola/</loc>
@@ -166,12 +198,20 @@
   <lastmod>2015-11-08T21:11:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/que-hay-bajo-el-capo-de-tu-maquina/</loc>
+  <lastmod>2016-04-16T12:55:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</loc>
   <lastmod>2016-04-06T11:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/</loc>
-  <lastmod>2016-04-06T11:08:00Z</lastmod>
+  <lastmod>2016-04-16T14:40:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/arquitectura/</loc>
+  <lastmod>2016-04-16T12:57:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/blog/</loc>
@@ -182,12 +222,68 @@
   <lastmod>2016-04-06T11:08:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/categories/cat_blog-debate-opinion/</loc>
+  <lastmod>2016-04-16T14:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_blog-interes/</loc>
+  <lastmod>2016-04-16T14:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_blog-opinion/</loc>
+  <lastmod>2016-04-16T14:38:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_blog-tutorial-nikola-github/</loc>
+  <lastmod>2016-04-16T14:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_blog-tutorial/</loc>
+  <lastmod>2016-04-16T14:09:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_blog/</loc>
+  <lastmod>2016-04-16T14:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_blogtutorial/</loc>
+  <lastmod>2016-04-16T14:39:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_debate-opinion/</loc>
+  <lastmod>2016-04-16T13:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_interes/</loc>
+  <lastmod>2016-04-16T12:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_opinion/</loc>
+  <lastmod>2016-04-16T14:40:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/categories/cat_tutorial-nikola-github/</loc>
   <lastmod>2015-10-24T16:19:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/cat_tutorial/</loc>
   <lastmod>2015-11-08T21:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/codigo-abierto/</loc>
+  <lastmod>2016-04-16T13:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cpu/</loc>
+  <lastmod>2016-04-16T12:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/debate/</loc>
+  <lastmod>2016-04-16T13:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/free-software/</loc>
+  <lastmod>2016-04-16T13:17:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/git/</loc>
@@ -206,6 +302,10 @@
   <lastmod>2015-10-24T16:19:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/categories/open-source/</loc>
+  <lastmod>2016-04-16T13:17:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/categories/python/</loc>
   <lastmod>2015-10-24T16:19:00Z</lastmod>
  </url>
@@ -214,8 +314,16 @@
   <lastmod>2016-04-06T11:08:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/categories/software-libre/</loc>
+  <lastmod>2016-04-16T13:17:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/categories/splash/</loc>
   <lastmod>2016-04-06T11:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/trabajo-profesional/</loc>
+  <lastmod>2016-04-16T13:33:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/tty-recording/</loc>

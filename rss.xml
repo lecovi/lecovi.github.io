@@ -1,136 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Make it So!</title><link>http://lecovi.github.io/</link><description>Leo's personal site</description><atom:link type="application/rss+xml" href="http://lecovi.github.io/rss.xml" rel="self"></atom:link><language>es</language><lastBuildDate>Mon, 11 Apr 2016 13:57:42 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Ver mensajes en el booteo</title><link>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;En este breve post, la idea es mostrar los pasos a seguir para sacar la imagen
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>Make it So!</title><link>http://lecovi.github.io/</link><description>Leo's personal site</description><atom:link type="application/rss+xml" href="http://lecovi.github.io/rss.xml" rel="self"></atom:link><language>es</language><lastBuildDate>Sat, 16 Apr 2016 15:11:03 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>El valor del trabajo profesional</title><link>http://lecovi.github.io/blog/el-valor-del-trabajo-profesional/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;El tiempo de trabajo ha dominado tradicionalmente las decisiones de precios en
+las actividades profesionales; sin embargo, es conveniente preguntarse: ¿compran
+realmente los clientes tiempo de trabajo?&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/el-valor-del-trabajo-profesional/"&gt;Leer más…&lt;/a&gt; (quedan 2 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>trabajo profesional</category><guid>http://lecovi.github.io/blog/el-valor-del-trabajo-profesional/</guid><pubDate>Sat, 16 Apr 2016 13:27:55 GMT</pubDate></item><item><title>¿Código abierto o Software Libre?</title><link>http://lecovi.github.io/blog/codigo-abierto-o-software-libre/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Diferenciación entre &lt;em&gt;código abierto&lt;/em&gt; y &lt;em&gt;software libre&lt;/em&gt; por Richard Stallman,
+el fundador del movimiento de Software Libre.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/codigo-abierto-o-software-libre/"&gt;Leer más…&lt;/a&gt; (quedan 1 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>codigo abierto</category><category>debate</category><category>free software</category><category>open source</category><category>software libre</category><guid>http://lecovi.github.io/blog/codigo-abierto-o-software-libre/</guid><pubDate>Sat, 16 Apr 2016 13:12:00 GMT</pubDate></item><item><title>Ver mensajes en el booteo</title><link>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;En este breve post, la idea es mostrar los pasos a seguir para sacar la imagen
 de inicio del sistema. En lo personal me gusta ver qué es lo que está cargando
 el sistema al momento del inicio. Por eso le suelo sacar la imagen que oculta
 esos mensajes. Comencemos...&lt;/p&gt;
-&lt;div class="section" id="edicion-de-los-parametros-de-inicio"&gt;
-&lt;h2&gt;Edición de los parámetros de inicio&lt;/h2&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_c95d3179a044452c8c96ba404c17c9bc-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo vim /etc/default/grub
-&lt;/pre&gt;&lt;p&gt;Hay que editar el archivo &lt;tt class="docutils literal"&gt;/etc/default/grub&lt;/tt&gt; en este archivo vamos a
-encontrar una línea que dice:&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_c93d45756df14b85b96281c21f171512-1"&gt;&lt;/a&gt;&lt;span class="go"&gt;GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"&lt;/span&gt;
-&lt;/pre&gt;&lt;p&gt;Tenemos que remover la opción de &lt;tt class="docutils literal"&gt;"quiet splas"&lt;/tt&gt; para que la línea en
-cuestión quede como:&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_40673364e7ff4a76ac2dfe7182dd928f-1"&gt;&lt;/a&gt;&lt;span class="go"&gt;GRUB_CMDLINE_LINUX_DEFAULT=""&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="section" id="actualizando-grub"&gt;
-&lt;h2&gt;Actualizando GRUB&lt;/h2&gt;
-&lt;p&gt;Finalmente actualizamos las opciones de GRUB con el comando:&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_c0717c4c13764cafa27c49af0bec6815-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo update-grub
-&lt;/pre&gt;&lt;p&gt;Listo! En el próximo inicio veremos como se va cargando el sistema.&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>boot</category><category>mensajes</category><category>quiet</category><category>splash</category><guid>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</guid><pubDate>Thu, 07 Jan 2016 15:53:16 GMT</pubDate></item><item><title>Grabando la consola</title><link>http://lecovi.github.io/blog/grabando-la-consola/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Quería compartirles estos dos programas que sirven para grabar nuestros pasos
+&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/"&gt;Leer más…&lt;/a&gt; (quedan 1 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>boot</category><category>mensajes</category><category>quiet</category><category>splash</category><guid>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</guid><pubDate>Thu, 07 Jan 2016 15:53:16 GMT</pubDate></item><item><title>Grabando la consola</title><link>http://lecovi.github.io/blog/grabando-la-consola/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Quería compartirles estos dos programas que sirven para grabar nuestros pasos
 en la consola.&lt;/p&gt;
-&lt;div class="section" id="ttygif"&gt;
-&lt;h2&gt;TTYGIF&lt;/h2&gt;
-&lt;p&gt;Un programa escrito en C que utiliza &lt;tt class="docutils literal"&gt;ttyrec&lt;/tt&gt;, &lt;tt class="docutils literal"&gt;imagemagick&lt;/tt&gt; y &lt;tt class="docutils literal"&gt;gcc&lt;/tt&gt; para
-crear las imágenes que luego juntaremos con un script del autor.&lt;/p&gt;
-&lt;p&gt;Se puede consultar más información en el &lt;a class="reference external" href="https://github.com/icholy/ttygif"&gt;repo oficial&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="section" id="instalacion"&gt;
-&lt;h3&gt;Instalación&lt;/h3&gt;
-&lt;p&gt;Hay que bajar los paquetes anteriormente mencionados, entrar en el directorio
-del repositorio y ejecutar &lt;tt class="docutils literal"&gt;make&lt;/tt&gt;.&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_a41c2f27034146da85f509e7838c30de-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt install imagemagick ttyrec gcc
-&lt;a name="rest_code_a41c2f27034146da85f509e7838c30de-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone https://github.com/icholy/ttygif.git
-&lt;a name="rest_code_a41c2f27034146da85f509e7838c30de-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd &lt;/span&gt;ttygif
-&lt;a name="rest_code_a41c2f27034146da85f509e7838c30de-4"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; make
-&lt;/pre&gt;&lt;p&gt;Luego de ejecutar &lt;tt class="docutils literal"&gt;make&lt;/tt&gt; nos aparecen 2 nuevos archivos ejecutables en nuestro
-directorio:&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;tt class="docutils literal"&gt;ttygif&lt;/tt&gt;&lt;/li&gt;
-&lt;li&gt;&lt;tt class="docutils literal"&gt;concat.sh&lt;/tt&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Para no tener que ejecutar siempre desde el directorio del repositorio sugiero
-dos opciones:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Agregar un link simbólico en un directorio del &lt;tt class="docutils literal"&gt;PATH&lt;/tt&gt;, o&lt;/li&gt;
-&lt;li&gt;Agregar el directorio del repositorio al &lt;tt class="docutils literal"&gt;PATH&lt;/tt&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class="section" id="link-simbolico"&gt;
-&lt;h4&gt;Link Simbólico&lt;/h4&gt;
-&lt;p&gt;Verificamos cuáles son los directorios que tenemos incluidos en la variable de
-entorno &lt;tt class="docutils literal"&gt;PATH&lt;/tt&gt;.&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_33cf31c239014b3d94256f622701f7ea-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$PATH&lt;/span&gt;
-&lt;a name="rest_code_33cf31c239014b3d94256f622701f7ea-2"&gt;&lt;/a&gt;/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
-&lt;a name="rest_code_33cf31c239014b3d94256f622701f7ea-3"&gt;&lt;/a&gt;&lt;span class="err"&gt;$&lt;/span&gt;
-&lt;/pre&gt;&lt;p&gt;Por ejemplo, elegimos el primer directorio como destino para nuestro enlace
-simbólico: &lt;cite&gt;/usr/local/bin&lt;/cite&gt;.
-Con el siguiente comando podés agregar el link simbólico de ambos archivos a
-ese directorio:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_83f47aa367664d0aa1749b91e2c8a6c4-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo ln -s &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/ttygif /usr/local/bin/ttygif
-&lt;a name="rest_code_83f47aa367664d0aa1749b91e2c8a6c4-2"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;sudo ln -s &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/ttygif /usr/local/bin/concat.sh
-&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="section" id="agregar-al-path"&gt;
-&lt;h4&gt;Agregar al PATH&lt;/h4&gt;
-&lt;p&gt;Para agregar el directorio del repositorio a la variable de entorno PATH:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_93e2bba8dbcd475496bb3ccb1123aa40-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;:&lt;span class="nv"&gt;$PATH&lt;/span&gt;
-&lt;/pre&gt;&lt;p&gt;Para que esto sea de manera permanente tenés que agregarlo a tu archivo
-&lt;cite&gt;~/.profile&lt;/cite&gt;, simplemente ejecutando desde el directorio del repo:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_d07782bda68841829f565e82577aa251-1"&gt;&lt;/a&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;echo export &lt;/span&gt;&lt;span class="nv"&gt;PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;:&lt;span class="nv"&gt;$PATH&lt;/span&gt; &amp;gt;&amp;gt; ~/.profile
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="modo-de-uso"&gt;
-&lt;h3&gt;Modo de uso&lt;/h3&gt;
-&lt;p&gt;Tenemos que hacer 3 pasos para tener nuestro gif animado con la sesión de la
-consola grabada:&lt;/p&gt;
-&lt;ol class="arabic simple"&gt;
-&lt;li&gt;Grabar una sesión con &lt;tt class="docutils literal"&gt;ttyrec&lt;/tt&gt;&lt;/li&gt;
-&lt;li&gt;Crear los cuadros para el gif animado con &lt;tt class="docutils literal"&gt;ttygif&lt;/tt&gt;&lt;/li&gt;
-&lt;li&gt;Crear el gif animado con &lt;tt class="docutils literal"&gt;concat.sh&lt;/tt&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Y qué mejor modo de mostrarlo que con una sesión grabada...&lt;/p&gt;
-&lt;div class="section" id="pasos-para-realizar-una-grabacion-con-ttygif"&gt;
-&lt;h4&gt;Pasos para realizar una grabación con &lt;tt class="docutils literal"&gt;ttygif&lt;/tt&gt;&lt;/h4&gt;
-&lt;img alt="Grabación completa" class="align-center" src="http://lecovi.github.io/images/blog/ttygif/ttygif_tuto.gif"&gt;
-&lt;/div&gt;
-&lt;div class="section" id="resultado"&gt;
-&lt;h4&gt;Resultado&lt;/h4&gt;
-&lt;img alt="Grabación resultado" class="align-center" src="http://lecovi.github.io/images/blog/ttygif/resultado.gif"&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="tty2gif"&gt;
-&lt;h2&gt;TTY2GIF&lt;/h2&gt;
-&lt;p&gt;Esta otra alternativa está escrita en C/C++ y a diferencia de la anterior hace
-todo de un paso.&lt;/p&gt;
-&lt;p&gt;Se puede consultar más información en el &lt;a class="reference external" href="https://github.com/z24/tty2gif"&gt;repo oficial de tty2gif&lt;/a&gt;.&lt;/p&gt;
-&lt;div class="section" id="id1"&gt;
-&lt;h3&gt;Instalación&lt;/h3&gt;
-&lt;p&gt;Con sólo tener instalado &lt;tt class="docutils literal"&gt;ImageMagick&lt;/tt&gt; (que lo tenemos instalado del
-programa anterior) alcanza. Clonamos el repositorio y luego ejecutamos &lt;tt class="docutils literal"&gt;make&lt;/tt&gt;.&lt;/p&gt;
-&lt;!-- Instalando imagemagick tendría que funcionar. --&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt install imagemagick gcc
-&lt;a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-2"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; git clone https://github.com/z24/tty2gif.git
-&lt;a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-3"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd &lt;/span&gt;tty2gif
-&lt;a name="rest_code_2e734ef4aa6041c9b4d3091ac85ccdf5-4"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; make
-&lt;/pre&gt;&lt;div class="section" id="id2"&gt;
-&lt;h4&gt;Link Simbólico&lt;/h4&gt;
-&lt;p&gt;Podemos aplicar lo mismo que hablamos en la sección anterior y agregar un
-enlace simbólico al binario del &lt;tt class="docutils literal"&gt;tty2gif&lt;/tt&gt;.&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_829a07bd86ed41b89ffe77d49aaf3d2c-1"&gt;&lt;/a&gt;➜  ~ sudo ln -s &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;pwd&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;/ttygif /usr/local/bin/ttygif
-&lt;/pre&gt;&lt;/div&gt;
-&lt;div class="section" id="agregando-al-path"&gt;
-&lt;h4&gt;Agregando al PATH&lt;/h4&gt;
-&lt;p&gt;La otra opción es como mencionamos en &lt;a class="reference internal" href="http://lecovi.github.io/blog/grabando-la-consola/#agregar-al-path"&gt;Agregar al PATH&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="section" id="id3"&gt;
-&lt;h3&gt;Modo de Uso&lt;/h3&gt;
-&lt;p&gt;La forma de uso es muy simple, después de instalar ejecutamos &lt;tt class="docutils literal"&gt;tty2gif&lt;/tt&gt; con 2
-argumentos, el primero: el archivo que va a grabar, el segundo: el gif animado
-que obtenemos como resultado.&lt;/p&gt;
-&lt;pre class="code console"&gt;&lt;a name="rest_code_905774c79db5400eb0cfddfdee79801f-1"&gt;&lt;/a&gt;&lt;span class="gp"&gt;$&lt;/span&gt; tty2gif grabacion.raw salida.gif
-&lt;/pre&gt;&lt;img alt="Grabación completa" class="align-center" src="http://lecovi.github.io/images/blog/tty2gif/salida.gif"&gt;
-&lt;!-- No lo puedo ejecutar desde terminator, tuve que usar xterm. --&gt;
-&lt;p class="alert alert-info"&gt;&lt;strong&gt;Observación:&lt;/strong&gt; La única particularidad que tenemos que tener en cuenta,
-es que al momento de la ejecución, debemos hacerlo desde &lt;tt class="docutils literal"&gt;xterm&lt;/tt&gt;. Lo
-probé con &lt;tt class="docutils literal"&gt;terminator&lt;/tt&gt; y con &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;gnome-terminal&lt;/span&gt;&lt;/tt&gt; pero no puede construir
-el gif animado.
-Si produce el archivo &lt;tt class="docutils literal"&gt;.raw&lt;/tt&gt; que luego podemos volver a ejecutar
-&lt;tt class="docutils literal"&gt;tty2gif&lt;/tt&gt; con ese mismo archivo en &lt;tt class="docutils literal"&gt;xterm&lt;/tt&gt; y obtenemos el &lt;cite&gt;gif&lt;/cite&gt;
-animado.&lt;/p&gt;
-&lt;p&gt;Espero que les haya gustado, nos vemos en los comentarios!!&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/div&gt;</description><category>tty recording</category><guid>http://lecovi.github.io/blog/grabando-la-consola/</guid><pubDate>Sun, 08 Nov 2015 20:35:59 GMT</pubDate></item><item><title>Empezando con Nikola</title><link>http://lecovi.github.io/blog/empezando-con-nikola/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/grabando-la-consola/"&gt;Leer más…&lt;/a&gt; (quedan 3 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>tty recording</category><guid>http://lecovi.github.io/blog/grabando-la-consola/</guid><pubDate>Sun, 08 Nov 2015 20:35:59 GMT</pubDate></item><item><title>Empezando con Nikola</title><link>http://lecovi.github.io/blog/empezando-con-nikola/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
 &lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#primeros-pasos" id="id1"&gt;Primeros Pasos&lt;/a&gt;&lt;ul&gt;
@@ -171,4 +51,22 @@ Para eso vamos a:&lt;/p&gt;
 &lt;li&gt;Crear nuestro sitio con &lt;cite&gt;Nikola&lt;/cite&gt;.&lt;/li&gt;
 &lt;li&gt;Configurar nuestra cuenta en &lt;cite&gt;GitHub&lt;/cite&gt; para el uso de &lt;cite&gt;GitHub Pages&lt;/cite&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/empezando-con-nikola/"&gt;Leer más…&lt;/a&gt; (quedan 11 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>blog</category><category>git</category><category>github</category><category>nikola</category><category>python</category><guid>http://lecovi.github.io/blog/empezando-con-nikola/</guid><pubDate>Wed, 14 Oct 2015 16:37:37 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/empezando-con-nikola/"&gt;Leer más…&lt;/a&gt; (quedan 11 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>blog</category><category>git</category><category>github</category><category>nikola</category><category>python</category><guid>http://lecovi.github.io/blog/empezando-con-nikola/</guid><pubDate>Wed, 14 Oct 2015 16:37:37 GMT</pubDate></item><item><title>10 programas escritos en Python</title><link>http://lecovi.github.io/blog/10-programas-escritos-en-python/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
+&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#youtube" id="id1"&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#dropbox" id="id2"&gt;DropBox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#google" id="id3"&gt;Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#quora" id="id4"&gt;Quora&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#instagram" id="id5"&gt;Instagram&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#bittorrent" id="id6"&gt;BitTorrent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#spotify" id="id7"&gt;Spotify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#reddit" id="id8"&gt;Reddit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#yahoo-maps" id="id9"&gt;Yahoo Maps&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#hipmunk" id="id10"&gt;Hipmunk&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;Comparto algunas aplicaciones que usan Python como lenguaje.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/10-programas-escritos-en-python/"&gt;Leer más…&lt;/a&gt; (quedan 3 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>python</category><guid>http://lecovi.github.io/blog/10-programas-escritos-en-python/</guid><pubDate>Mon, 25 Aug 2014 13:35:22 GMT</pubDate></item><item><title>¿Qué hay bajó el capó de tu máquina?</title><link>http://lecovi.github.io/blog/que-hay-bajo-el-capo-de-tu-maquina/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Les comparto un artículo interesante sobre arquitectura de computadoras y cómo con simples comandos de consola podemos ver de qué está hecha nuestra compu.&lt;/p&gt;
+&lt;p class="text-right"&gt;Fuente Original: &lt;a class="reference external" href="http://www.linuxito.com/gnu-linux/nivel-alto/386-que-hay-bajo-el-capo-de-tu-maquina"&gt;http://www.linuxito.com/gnu-linux/nivel-alto/386-que-hay-bajo-el-capo-de-tu-maquina&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/que-hay-bajo-el-capo-de-tu-maquina/"&gt;Leer más…&lt;/a&gt; (quedan 14 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>arquitectura</category><category>cpu</category><guid>http://lecovi.github.io/blog/que-hay-bajo-el-capo-de-tu-maquina/</guid><pubDate>Mon, 25 Aug 2014 12:53:39 GMT</pubDate></item></channel></rss>
