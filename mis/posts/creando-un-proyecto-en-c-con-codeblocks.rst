@@ -14,7 +14,7 @@ Veamos cómo crear un proyecto de C en ``Code::Blocks``.
 Pasos a seguir
 --------------
 
-.. class:: text-center
+.. class:: text-center embed-responsive embed-responsive-16by9
 
     .. youtube:: V7S1QRXmOg8
 
@@ -42,6 +42,6 @@ Pasos a seguir
 #. Esto creará el Proyecto dentro de nuestro espacio de trabajo (Workspace). Desplegamos la carpeta `Source` y dentro encontraremos el archivo ``main.c``. En el mismo simplemente encontraremos una versión del clásico ``"Hola Mundo"``. Desde el menú `Build` ejecutamos la opción `Build and Run` para verificar que se compila y ejecuta nuestro código.
     - Eso nos abrirá una terminal que ejecuta el código.
 
-.. class:: text-center
+.. class:: text-center embed-responsive embed-responsive-16by9
 
     .. youtube:: 1IMlRHok5N0

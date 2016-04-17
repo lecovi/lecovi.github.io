@@ -11,6 +11,6 @@ Desde la *Linux Foundation* nos cuentan cómo desarrollan el kernel de Linux...
 
 .. TEASER_END
 
-.. class:: text-center
+.. class:: text-center embed-responsive embed-responsive-16by9
 
     .. youtube:: jqr1B0mjb8M

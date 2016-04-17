@@ -15,41 +15,41 @@ del kernel de Linux proponen una serie de 6 videos.
 ¿Cómo se llama esa canción?
 ---------------------------
 
-.. class:: text-center
+.. class:: text-center embed-responsive embed-responsive-16by9
 
     .. youtube:: IJCeSOKwJk0
 
 ¿Ya llegamos?
 -------------
 
-.. class:: text-center
+.. class:: text-center embed-responsive embed-responsive-16by9
 
     .. youtube:: HreD1l1eMsU
 
 ¿Te podemos seguir?
 -------------------
 
-.. class:: text-center
+.. class:: text-center embed-responsive embed-responsive-16by9
 
     .. youtube:: IXbG_Y8lPHU
 
 Avatar Reimagined
 -----------------
 
-.. class:: text-center
+.. class:: text-center embed-responsive embed-responsive-16by9
 
     .. youtube:: 2s81yktRW_k
 
 Exploración espacial
 --------------------
 
-.. class:: text-center
+.. class:: text-center embed-responsive embed-responsive-16by9
 
     .. youtube:: PJ-tU9jVVo0
 
 Hamburguesa gratis
 ------------------
 
-.. class:: text-center
+.. class:: text-center embed-responsive embed-responsive-16by9
 
     .. youtube:: F7QJQaiRcfw
