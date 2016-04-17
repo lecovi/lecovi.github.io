@@ -3,19 +3,9 @@
 .. date: 2014-08-25 09:27:07 UTC-03:00
 .. tags: programacion,python
 .. category: opinion
-.. link:
+.. link: http://blog.codeeval.com/codeevalblog/2014#.U3bJARktpAh=
 .. description:
 .. type: text
-
-.. class:: pull-right
-
-    Fuente: |codeeval|
-
-.. |codeeval| raw:: html
-
-    <a href="http://blog.codeeval.com/codeevalblog/2014#.U3bJARktpAh=" target="_blank">
-    CodeEval
-    </a>
 
 **CodeEval** es una exclusiva comunidad de más de 24.000 desarrolladores. Sus miembros pueden competir entre sí, retar a sus amigos y mostrar sus habilidades de programación en su perfil.
 
