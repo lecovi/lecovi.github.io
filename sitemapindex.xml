@@ -19,11 +19,11 @@
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/cat_interes.xml</loc>
-  <lastmod>2016-04-17T14:17:00Z</lastmod>
+  <lastmod>2016-04-17T15:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/cat_opinion.xml</loc>
-  <lastmod>2016-04-17T14:30:00Z</lastmod>
+  <lastmod>2016-04-17T15:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/cat_tutorial.xml</loc>
@@ -67,7 +67,7 @@
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/linux.xml</loc>
-  <lastmod>2016-04-17T14:17:00Z</lastmod>
+  <lastmod>2016-04-17T15:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/mensajes.xml</loc>
@@ -83,11 +83,11 @@
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/programacion.xml</loc>
-  <lastmod>2016-04-17T14:17:00Z</lastmod>
+  <lastmod>2016-04-17T15:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/python.xml</loc>
-  <lastmod>2016-04-17T14:17:00Z</lastmod>
+  <lastmod>2016-04-17T15:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/quiet.xml</loc>
@@ -111,10 +111,10 @@
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/rss.xml</loc>
-  <lastmod>2016-04-17T14:30:00Z</lastmod>
+  <lastmod>2016-04-17T15:49:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/sitemap.xml</loc>
-  <lastmod>2016-04-17T14:30:00Z</lastmod>
+  <lastmod>2016-04-17T15:49:00Z</lastmod>
  </sitemap>
 </sitemapindex>
