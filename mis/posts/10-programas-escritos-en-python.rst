@@ -15,19 +15,7 @@ Comparto algunas aplicaciones que usan Python como lenguaje.
 
 .. TEASER_END
 
-.. class:: align-right
-
-    Fuente original: |hartmannsoftware|
-
-.. |hartmannsoftware| raw:: html
-
-    <a href="http://www.hartmannsoftware.com/pub/Articles%20from%20Software%20Fans/Most-Famous-Software-Programs-Written-in-Python?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+hartmannsoftware+%28Information+Technology+Training+Articles,+Tutorials,+Classes+%26+Applications%29&utm_content=FeedBurner" target="_blank">
-    Hartmann Software
-    </a>
-
-
 ----
-
 
 Python is an incredibly powerful and useful computer programming language that many of the biggest websites in the world rely on for their foundation. Python provides reliable results that are functional and involve a variety of dynamic scripted and non-scripted contexts. And because it is free and open source, it has remained a popular choice for a variety of different developers who are looking to build new sites on one of the most reliable languages available. Here is a look at 10 of the most famous software programs that are written in Python and what they do.
 

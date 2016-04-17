@@ -1,11 +1,15 @@
 .. title: El valor del trabajo profesional
 .. slug: el-valor-del-trabajo-profesional
-.. date: 2016-04-16 10:27:55 UTC-03:00
+.. date: 2013-03-20 10:27:55 UTC-03:00
 .. tags: trabajo profesional
 .. category: opinion
 .. link:
 .. description:
 .. type: text
+
+.. class:: pull-right
+
+    Fuente: lanacion.com del jueves 05 de mayo de 2011.
 
 El tiempo de trabajo ha dominado tradicionalmente las decisiones de precios en
 las actividades profesionales; sin embargo, es conveniente preguntarse: ¿compran

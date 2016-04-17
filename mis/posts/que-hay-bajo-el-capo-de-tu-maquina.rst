@@ -9,10 +9,6 @@
 
 Les comparto un artículo interesante sobre arquitectura de computadoras y cómo con simples comandos de consola podemos ver de qué está hecha nuestra compu.
 
-.. class:: text-right
-
-    Fuente Original: http://www.linuxito.com/gnu-linux/nivel-alto/386-que-hay-bajo-el-capo-de-tu-maquina
-
 .. TEASER_END
 
 En este artículo voy a presentar diferentes técnicas y herramientas para obtener
