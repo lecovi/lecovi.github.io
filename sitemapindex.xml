@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://lecovi.github.io/categories/arquitectura.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/blog.xml</loc>
@@ -18,68 +18,44 @@
   <lastmod>2016-04-16T15:11:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://lecovi.github.io/categories/cat_blog-debate-opinion.xml</loc>
-  <lastmod>2016-04-16T14:38:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://lecovi.github.io/categories/cat_blog-interes.xml</loc>
-  <lastmod>2016-04-16T14:08:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://lecovi.github.io/categories/cat_blog-opinion.xml</loc>
-  <lastmod>2016-04-16T14:40:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://lecovi.github.io/categories/cat_blog-tutorial-nikola-github.xml</loc>
-  <lastmod>2016-04-16T14:09:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://lecovi.github.io/categories/cat_blog-tutorial.xml</loc>
-  <lastmod>2016-04-16T14:40:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://lecovi.github.io/categories/cat_blog.xml</loc>
-  <lastmod>2016-04-16T14:39:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://lecovi.github.io/categories/cat_blogtutorial.xml</loc>
-  <lastmod>2016-04-16T14:41:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://lecovi.github.io/categories/cat_debate-opinion.xml</loc>
-  <lastmod>2016-04-16T13:49:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://lecovi.github.io/categories/cat_interes.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/cat_opinion.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
- </sitemap>
- <sitemap>
-  <loc>http://lecovi.github.io/categories/cat_tutorial-nikola-github.xml</loc>
-  <lastmod>2016-04-16T12:55:00Z</lastmod>
+  <lastmod>2016-04-17T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/cat_tutorial.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://lecovi.github.io/categories/chrome.xml</loc>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://lecovi.github.io/categories/chromium.xml</loc>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/codigo-abierto.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/cpu.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/debate.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://lecovi.github.io/categories/distribucion.xml</loc>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/free-software.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/git.xml</loc>
@@ -88,6 +64,10 @@
  <sitemap>
   <loc>http://lecovi.github.io/categories/github.xml</loc>
   <lastmod>2016-04-16T15:11:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://lecovi.github.io/categories/linux.xml</loc>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/mensajes.xml</loc>
@@ -99,11 +79,15 @@
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/open-source.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://lecovi.github.io/categories/programacion.xml</loc>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/python.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/quiet.xml</loc>
@@ -111,7 +95,7 @@
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/software-libre.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:17:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/splash.xml</loc>
@@ -119,7 +103,7 @@
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/trabajo-profesional.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T13:08:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/categories/tty-recording.xml</loc>
@@ -127,10 +111,10 @@
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/rss.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://lecovi.github.io/sitemap.xml</loc>
-  <lastmod>2016-04-16T15:11:00Z</lastmod>
+  <lastmod>2016-04-17T14:30:00Z</lastmod>
  </sitemap>
 </sitemapindex>

@@ -12,12 +12,14 @@
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <meta name="author" content="Leandro E. Colombo Viña">
+<link rel="prev" href="../los-lenguajes-de-programacion-mas-populares-del-2014/" title="Los lenguajes de programación más populares del 2014" type="text/html">
 <link rel="next" href="../10-programas-escritos-en-python/" title="10 programas escritos en Python" type="text/html">
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="¿Qué hay bajó el capó de tu máquina?">
 <meta property="og:url" content="http://lecovi.github.io/blog/que-hay-bajo-el-capo-de-tu-maquina/">
 <meta property="og:description" content="Les comparto un artículo interesante sobre arquitectura de computadoras y cómo con simples comandos de consola podemos ver de qué está hecha nuestra compu.
-Fuente Original: http://www.linuxito.com/gnu">
+
+En este artículo voy a presentar diferentes">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2014-08-25T09:53:39-03:00">
 <meta property="article:tag" content="arquitectura">
@@ -137,14 +139,13 @@ Fuente Original: http://www.linuxito.com/gnu">
         </p>
 <p class="sourceline"><a href="index.rst" id="sourcelink">Código fuente</a></p>
 
-                    <p class="linkline"><a href="http://www.linuxito.com/gnu-linux/nivel-alto/386-que-hay-bajo-el-capo-de-tu-maquina">Sitio original</a></p>
+                    <p class="linkline"><a href="http://www.linuxito.com/gnu-linux/nivel-alto/386-que-hay-bajo-el-capo-de-tu-maquina" target="_blank">Sitio original</a></p>
         </div>
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
 <p>Les comparto un artículo interesante sobre arquitectura de computadoras y cómo con simples comandos de consola podemos ver de qué está hecha nuestra compu.</p>
-<p class="text-right">Fuente Original: <a class="reference external" href="http://www.linuxito.com/gnu-linux/nivel-alto/386-que-hay-bajo-el-capo-de-tu-maquina">http://www.linuxito.com/gnu-linux/nivel-alto/386-que-hay-bajo-el-capo-de-tu-maquina</a></p>
 <!-- TEASER_END -->
 <p>En este artículo voy a presentar diferentes técnicas y herramientas para obtener
 información detallada acerca del procesador o CPU de un sistema, como siempre
@@ -178,106 +179,106 @@ tiene nuestra máquina, qué hay <em>"under the hood"</em>.</p>
 <h2>Información general del procesador</h2>
 <p>Seguramente todos sepan cómo obtener información del procesador desde el
 filesystem <tt class="docutils literal">/proc</tt> (el pseudo-filesystem que funciona como interfaz a las estructuras de datos del kernel Linux), ya que es la forma más común y conocida:</p>
-<pre class="code console"><a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-1"></a><span class="go">[root@hal9000 ~]# cat /proc/cpuinfo</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-2"></a><span class="go">processor       : 0</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-3"></a><span class="go">vendor_id       : GenuineIntel</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-4"></a><span class="go">cpu family      : 6</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-5"></a><span class="go">model           : 42</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-6"></a><span class="go">model name      : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-7"></a><span class="go">stepping        : 7</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-8"></a><span class="go">cpu MHz         : 1600.000</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-9"></a><span class="go">cache size      : 3072 KB</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-10"></a><span class="go">physical id     : 0</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-11"></a><span class="go">siblings        : 4</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-12"></a><span class="go">core id         : 0</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-13"></a><span class="go">cpu cores       : 2</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-14"></a><span class="go">apicid          : 0</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-15"></a><span class="go">initial apicid  : 0</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-16"></a><span class="go">fpu             : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-17"></a><span class="go">fpu_exception   : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-18"></a><span class="go">cpuid level     : 13</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-19"></a><span class="go">wp              : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-20"></a><span class="go">flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave avx lahf_lm arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-21"></a><span class="go">bogomips        : 6186.44</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-22"></a><span class="go">clflush size    : 64</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-23"></a><span class="go">cache_alignment : 64</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-24"></a><span class="go">address sizes   : 36 bits physical, 48 bits virtual</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-25"></a><span class="go">power management:</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-26"></a>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-27"></a><span class="go">processor       : 1</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-28"></a><span class="go">vendor_id       : GenuineIntel</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-29"></a><span class="go">cpu family      : 6</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-30"></a><span class="go">model           : 42</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-31"></a><span class="go">model name      : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-32"></a><span class="go">stepping        : 7</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-33"></a><span class="go">cpu MHz         : 1600.000</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-34"></a><span class="go">cache size      : 3072 KB</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-35"></a><span class="go">physical id     : 0</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-36"></a><span class="go">siblings        : 4</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-37"></a><span class="go">core id         : 1</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-38"></a><span class="go">cpu cores       : 2</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-39"></a><span class="go">apicid          : 2</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-40"></a><span class="go">initial apicid  : 2</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-41"></a><span class="go">fpu             : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-42"></a><span class="go">fpu_exception   : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-43"></a><span class="go">cpuid level     : 13</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-44"></a><span class="go">wp              : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-45"></a><span class="go">flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave avx lahf_lm arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-46"></a><span class="go">bogomips        : 6186.44</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-47"></a><span class="go">clflush size    : 64</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-48"></a><span class="go">cache_alignment : 64</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-49"></a><span class="go">address sizes   : 36 bits physical, 48 bits virtual</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-50"></a><span class="go">power management:</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-51"></a>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-52"></a><span class="go">processor       : 2</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-53"></a><span class="go">vendor_id       : GenuineIntel</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-54"></a><span class="go">cpu family      : 6</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-55"></a><span class="go">model           : 42</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-56"></a><span class="go">model name      : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-57"></a><span class="go">stepping        : 7</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-58"></a><span class="go">cpu MHz         : 1600.000</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-59"></a><span class="go">cache size      : 3072 KB</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-60"></a><span class="go">physical id     : 0</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-61"></a><span class="go">siblings        : 4</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-62"></a><span class="go">core id         : 0</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-63"></a><span class="go">cpu cores       : 2</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-64"></a><span class="go">apicid          : 1</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-65"></a><span class="go">initial apicid  : 1</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-66"></a><span class="go">fpu             : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-67"></a><span class="go">fpu_exception   : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-68"></a><span class="go">cpuid level     : 13</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-69"></a><span class="go">wp              : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-70"></a><span class="go">flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave avx lahf_lm arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-71"></a><span class="go">bogomips        : 6186.44</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-72"></a><span class="go">clflush size    : 64</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-73"></a><span class="go">cache_alignment : 64</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-74"></a><span class="go">address sizes   : 36 bits physical, 48 bits virtual</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-75"></a><span class="go">power management:</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-76"></a>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-77"></a><span class="go">processor       : 3</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-78"></a><span class="go">vendor_id       : GenuineIntel</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-79"></a><span class="go">cpu family      : 6</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-80"></a><span class="go">model           : 42</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-81"></a><span class="go">model name      : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-82"></a><span class="go">stepping        : 7</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-83"></a><span class="go">cpu MHz         : 1600.000</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-84"></a><span class="go">cache size      : 3072 KB</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-85"></a><span class="go">physical id     : 0</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-86"></a><span class="go">siblings        : 4</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-87"></a><span class="go">core id         : 1</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-88"></a><span class="go">cpu cores       : 2</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-89"></a><span class="go">apicid          : 3</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-90"></a><span class="go">initial apicid  : 3</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-91"></a><span class="go">fpu             : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-92"></a><span class="go">fpu_exception   : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-93"></a><span class="go">cpuid level     : 13</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-94"></a><span class="go">wp              : yes</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-95"></a><span class="go">flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave avx lahf_lm arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-96"></a><span class="go">bogomips        : 6186.44</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-97"></a><span class="go">clflush size    : 64</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-98"></a><span class="go">cache_alignment : 64</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-99"></a><span class="go">address sizes   : 36 bits physical, 48 bits virtual</span>
-<a name="rest_code_4e4b0893f1f74ece8bc98e89e5db3a1c-100"></a><span class="go">power management:</span>
+<pre class="code console"><a name="rest_code_071472af6b864bd38d045bd1398c8b45-1"></a><span class="go">[root@hal9000 ~]# cat /proc/cpuinfo</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-2"></a><span class="go">processor       : 0</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-3"></a><span class="go">vendor_id       : GenuineIntel</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-4"></a><span class="go">cpu family      : 6</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-5"></a><span class="go">model           : 42</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-6"></a><span class="go">model name      : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-7"></a><span class="go">stepping        : 7</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-8"></a><span class="go">cpu MHz         : 1600.000</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-9"></a><span class="go">cache size      : 3072 KB</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-10"></a><span class="go">physical id     : 0</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-11"></a><span class="go">siblings        : 4</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-12"></a><span class="go">core id         : 0</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-13"></a><span class="go">cpu cores       : 2</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-14"></a><span class="go">apicid          : 0</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-15"></a><span class="go">initial apicid  : 0</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-16"></a><span class="go">fpu             : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-17"></a><span class="go">fpu_exception   : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-18"></a><span class="go">cpuid level     : 13</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-19"></a><span class="go">wp              : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-20"></a><span class="go">flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave avx lahf_lm arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-21"></a><span class="go">bogomips        : 6186.44</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-22"></a><span class="go">clflush size    : 64</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-23"></a><span class="go">cache_alignment : 64</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-24"></a><span class="go">address sizes   : 36 bits physical, 48 bits virtual</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-25"></a><span class="go">power management:</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-26"></a>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-27"></a><span class="go">processor       : 1</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-28"></a><span class="go">vendor_id       : GenuineIntel</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-29"></a><span class="go">cpu family      : 6</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-30"></a><span class="go">model           : 42</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-31"></a><span class="go">model name      : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-32"></a><span class="go">stepping        : 7</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-33"></a><span class="go">cpu MHz         : 1600.000</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-34"></a><span class="go">cache size      : 3072 KB</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-35"></a><span class="go">physical id     : 0</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-36"></a><span class="go">siblings        : 4</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-37"></a><span class="go">core id         : 1</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-38"></a><span class="go">cpu cores       : 2</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-39"></a><span class="go">apicid          : 2</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-40"></a><span class="go">initial apicid  : 2</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-41"></a><span class="go">fpu             : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-42"></a><span class="go">fpu_exception   : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-43"></a><span class="go">cpuid level     : 13</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-44"></a><span class="go">wp              : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-45"></a><span class="go">flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave avx lahf_lm arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-46"></a><span class="go">bogomips        : 6186.44</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-47"></a><span class="go">clflush size    : 64</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-48"></a><span class="go">cache_alignment : 64</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-49"></a><span class="go">address sizes   : 36 bits physical, 48 bits virtual</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-50"></a><span class="go">power management:</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-51"></a>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-52"></a><span class="go">processor       : 2</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-53"></a><span class="go">vendor_id       : GenuineIntel</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-54"></a><span class="go">cpu family      : 6</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-55"></a><span class="go">model           : 42</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-56"></a><span class="go">model name      : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-57"></a><span class="go">stepping        : 7</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-58"></a><span class="go">cpu MHz         : 1600.000</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-59"></a><span class="go">cache size      : 3072 KB</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-60"></a><span class="go">physical id     : 0</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-61"></a><span class="go">siblings        : 4</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-62"></a><span class="go">core id         : 0</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-63"></a><span class="go">cpu cores       : 2</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-64"></a><span class="go">apicid          : 1</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-65"></a><span class="go">initial apicid  : 1</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-66"></a><span class="go">fpu             : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-67"></a><span class="go">fpu_exception   : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-68"></a><span class="go">cpuid level     : 13</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-69"></a><span class="go">wp              : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-70"></a><span class="go">flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave avx lahf_lm arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-71"></a><span class="go">bogomips        : 6186.44</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-72"></a><span class="go">clflush size    : 64</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-73"></a><span class="go">cache_alignment : 64</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-74"></a><span class="go">address sizes   : 36 bits physical, 48 bits virtual</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-75"></a><span class="go">power management:</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-76"></a>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-77"></a><span class="go">processor       : 3</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-78"></a><span class="go">vendor_id       : GenuineIntel</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-79"></a><span class="go">cpu family      : 6</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-80"></a><span class="go">model           : 42</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-81"></a><span class="go">model name      : Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-82"></a><span class="go">stepping        : 7</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-83"></a><span class="go">cpu MHz         : 1600.000</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-84"></a><span class="go">cache size      : 3072 KB</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-85"></a><span class="go">physical id     : 0</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-86"></a><span class="go">siblings        : 4</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-87"></a><span class="go">core id         : 1</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-88"></a><span class="go">cpu cores       : 2</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-89"></a><span class="go">apicid          : 3</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-90"></a><span class="go">initial apicid  : 3</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-91"></a><span class="go">fpu             : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-92"></a><span class="go">fpu_exception   : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-93"></a><span class="go">cpuid level     : 13</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-94"></a><span class="go">wp              : yes</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-95"></a><span class="go">flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave avx lahf_lm arat epb xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-96"></a><span class="go">bogomips        : 6186.44</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-97"></a><span class="go">clflush size    : 64</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-98"></a><span class="go">cache_alignment : 64</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-99"></a><span class="go">address sizes   : 36 bits physical, 48 bits virtual</span>
+<a name="rest_code_071472af6b864bd38d045bd1398c8b45-100"></a><span class="go">power management:</span>
 </pre>
 <p>El archivo <tt class="docutils literal">/proc/cpuinfo</tt> contiene una cantidad importante de información de
 la CPU, tal como la detecta el kernel Linux. El único inconveniente es que esta
@@ -291,93 +292,93 @@ ejemplo es 1600 MHz), el tamaño de la memoria caché (sin discriminar niveles),
 los flags (los cuales determinan las características que soporta el procesador).</p>
 <p>Una alternativa al archivo <tt class="docutils literal">/proc/cpuinfo</tt> consiste en utilizar la herramienta
 <tt class="docutils literal">dmidecode</tt> para obtener información de la CPU desde la BIOS del sistema:</p>
-<pre class="code console"><a name="rest_code_9386eb6975e540bb8e392d39b94ac706-1"></a><span class="go">[root@hal9000 ~]# dmidecode -t processor</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-2"></a><span class="gp">#</span> dmidecode 2.12
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-3"></a><span class="go">SMBIOS 2.6 present.</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-4"></a>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-5"></a><span class="go">Handle 0x0004, DMI type 4, 42 bytes</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-6"></a><span class="go">Processor Information</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-7"></a><span class="go">        Socket Designation: LGA1155 CPU 1</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-8"></a><span class="go">        Type: Central Processor</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-9"></a><span class="go">        Family: Core i3</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-10"></a><span class="go">        Manufacturer: Intel Corporation</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-11"></a><span class="go">        ID: A7 06 02 00 FF FB EB BF</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-12"></a><span class="go">        Signature: Type 0, Family 6, Model 42, Stepping 7</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-13"></a><span class="go">        Flags:</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-14"></a><span class="go">                FPU (Floating-point unit on-chip)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-15"></a><span class="go">                VME (Virtual mode extension)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-16"></a><span class="go">                DE (Debugging extension)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-17"></a><span class="go">                PSE (Page size extension)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-18"></a><span class="go">                TSC (Time stamp counter)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-19"></a><span class="go">                MSR (Model specific registers)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-20"></a><span class="go">                PAE (Physical address extension)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-21"></a><span class="go">                MCE (Machine check exception)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-22"></a><span class="go">                CX8 (CMPXCHG8 instruction supported)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-23"></a><span class="go">                APIC (On-chip APIC hardware supported)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-24"></a><span class="go">                SEP (Fast system call)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-25"></a><span class="go">                MTRR (Memory type range registers)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-26"></a><span class="go">                PGE (Page global enable)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-27"></a><span class="go">                MCA (Machine check architecture)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-28"></a><span class="go">                CMOV (Conditional move instruction supported)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-29"></a><span class="go">                PAT (Page attribute table)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-30"></a><span class="go">                PSE-36 (36-bit page size extension)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-31"></a><span class="go">                CLFSH (CLFLUSH instruction supported)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-32"></a><span class="go">                DS (Debug store)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-33"></a><span class="go">                ACPI (ACPI supported)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-34"></a><span class="go">                MMX (MMX technology supported)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-35"></a><span class="go">                FXSR (FXSAVE and FXSTOR instructions supported)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-36"></a><span class="go">                SSE (Streaming SIMD extensions)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-37"></a><span class="go">                SSE2 (Streaming SIMD extensions 2)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-38"></a><span class="go">                SS (Self-snoop)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-39"></a><span class="go">                HTT (Multi-threading)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-40"></a><span class="go">                TM (Thermal monitor supported)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-41"></a><span class="go">                PBE (Pending break enabled)</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-42"></a><span class="go">        Version: Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-43"></a><span class="go">        Voltage: 1.7 V</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-44"></a><span class="go">        External Clock: 100 MHz</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-45"></a><span class="go">        Max Speed: 4000 MHz</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-46"></a><span class="go">        Current Speed: 3100 MHz</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-47"></a><span class="go">        Status: Populated, Enabled</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-48"></a><span class="go">        Upgrade: Socket LGA1156</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-49"></a><span class="go">        L1 Cache Handle: 0x0005</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-50"></a><span class="go">        L2 Cache Handle: 0x0006</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-51"></a><span class="go">        L3 Cache Handle: 0x0007</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-52"></a><span class="go">        Serial Number: To Be Filled By O.E.M.</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-53"></a><span class="go">        Asset Tag: To Be Filled By O.E.M.</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-54"></a><span class="go">        Part Number: To Be Filled By O.E.M.</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-55"></a><span class="go">        Core Count: 2</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-56"></a><span class="go">        Core Enabled: 1</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-57"></a><span class="go">        Thread Count: 2</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-58"></a><span class="go">        Characteristics:</span>
-<a name="rest_code_9386eb6975e540bb8e392d39b94ac706-59"></a><span class="go">                64-bit capable</span>
+<pre class="code console"><a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-1"></a><span class="go">[root@hal9000 ~]# dmidecode -t processor</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-2"></a><span class="gp">#</span> dmidecode 2.12
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-3"></a><span class="go">SMBIOS 2.6 present.</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-4"></a>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-5"></a><span class="go">Handle 0x0004, DMI type 4, 42 bytes</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-6"></a><span class="go">Processor Information</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-7"></a><span class="go">        Socket Designation: LGA1155 CPU 1</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-8"></a><span class="go">        Type: Central Processor</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-9"></a><span class="go">        Family: Core i3</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-10"></a><span class="go">        Manufacturer: Intel Corporation</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-11"></a><span class="go">        ID: A7 06 02 00 FF FB EB BF</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-12"></a><span class="go">        Signature: Type 0, Family 6, Model 42, Stepping 7</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-13"></a><span class="go">        Flags:</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-14"></a><span class="go">                FPU (Floating-point unit on-chip)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-15"></a><span class="go">                VME (Virtual mode extension)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-16"></a><span class="go">                DE (Debugging extension)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-17"></a><span class="go">                PSE (Page size extension)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-18"></a><span class="go">                TSC (Time stamp counter)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-19"></a><span class="go">                MSR (Model specific registers)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-20"></a><span class="go">                PAE (Physical address extension)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-21"></a><span class="go">                MCE (Machine check exception)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-22"></a><span class="go">                CX8 (CMPXCHG8 instruction supported)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-23"></a><span class="go">                APIC (On-chip APIC hardware supported)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-24"></a><span class="go">                SEP (Fast system call)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-25"></a><span class="go">                MTRR (Memory type range registers)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-26"></a><span class="go">                PGE (Page global enable)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-27"></a><span class="go">                MCA (Machine check architecture)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-28"></a><span class="go">                CMOV (Conditional move instruction supported)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-29"></a><span class="go">                PAT (Page attribute table)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-30"></a><span class="go">                PSE-36 (36-bit page size extension)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-31"></a><span class="go">                CLFSH (CLFLUSH instruction supported)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-32"></a><span class="go">                DS (Debug store)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-33"></a><span class="go">                ACPI (ACPI supported)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-34"></a><span class="go">                MMX (MMX technology supported)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-35"></a><span class="go">                FXSR (FXSAVE and FXSTOR instructions supported)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-36"></a><span class="go">                SSE (Streaming SIMD extensions)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-37"></a><span class="go">                SSE2 (Streaming SIMD extensions 2)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-38"></a><span class="go">                SS (Self-snoop)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-39"></a><span class="go">                HTT (Multi-threading)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-40"></a><span class="go">                TM (Thermal monitor supported)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-41"></a><span class="go">                PBE (Pending break enabled)</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-42"></a><span class="go">        Version: Intel(R) Core(TM) i3-2100 CPU @ 3.10GHz</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-43"></a><span class="go">        Voltage: 1.7 V</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-44"></a><span class="go">        External Clock: 100 MHz</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-45"></a><span class="go">        Max Speed: 4000 MHz</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-46"></a><span class="go">        Current Speed: 3100 MHz</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-47"></a><span class="go">        Status: Populated, Enabled</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-48"></a><span class="go">        Upgrade: Socket LGA1156</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-49"></a><span class="go">        L1 Cache Handle: 0x0005</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-50"></a><span class="go">        L2 Cache Handle: 0x0006</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-51"></a><span class="go">        L3 Cache Handle: 0x0007</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-52"></a><span class="go">        Serial Number: To Be Filled By O.E.M.</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-53"></a><span class="go">        Asset Tag: To Be Filled By O.E.M.</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-54"></a><span class="go">        Part Number: To Be Filled By O.E.M.</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-55"></a><span class="go">        Core Count: 2</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-56"></a><span class="go">        Core Enabled: 1</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-57"></a><span class="go">        Thread Count: 2</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-58"></a><span class="go">        Characteristics:</span>
+<a name="rest_code_73e895cdfad3493abedd94b7d7e5612a-59"></a><span class="go">                64-bit capable</span>
 </pre>
 <p><tt class="docutils literal">dmidecode</tt> presenta casi la misma información que se encuentra en
 <tt class="docutils literal">/proc/cpuinfo</tt>, pero mejor organizada. Lo más interesante es que agrega la descripción de cada flag de CPU, los niveles de caché, y el voltaje de trabajo.</p>
 <p>La herramienta <tt class="docutils literal">lscpu</tt> tal vez presenta la salida más amigable y sintética.
 Pienso que es la alternativa preferida para obtener rápidamente información
 básica del procesador:</p>
-<pre class="code console"><a name="rest_code_6b021690c8914369b4430b6dae1121aa-1"></a><span class="go">[root@hal9000 ~]# lscpu</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-2"></a><span class="go">Architecture:          x86_64</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-3"></a><span class="go">CPU op-mode(s):        32-bit, 64-bit</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-4"></a><span class="go">Byte Order:            Little Endian</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-5"></a><span class="go">CPU(s):                4</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-6"></a><span class="go">On-line CPU(s) list:   0-3</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-7"></a><span class="go">Thread(s) per core:    2</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-8"></a><span class="go">Core(s) per socket:    2</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-9"></a><span class="go">Socket(s):             1</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-10"></a><span class="go">NUMA node(s):          1</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-11"></a><span class="go">Vendor ID:             GenuineIntel</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-12"></a><span class="go">CPU family:            6</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-13"></a><span class="go">Model:                 42</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-14"></a><span class="go">Stepping:              7</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-15"></a><span class="go">CPU MHz:               1600.000</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-16"></a><span class="go">BogoMIPS:              6186.44</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-17"></a><span class="go">Virtualization:        VT-x</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-18"></a><span class="go">L1d cache:             32K</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-19"></a><span class="go">L1i cache:             32K</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-20"></a><span class="go">L2 cache:              256K</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-21"></a><span class="go">L3 cache:              3072K</span>
-<a name="rest_code_6b021690c8914369b4430b6dae1121aa-22"></a><span class="go">NUMA node0 CPU(s):     0-3</span>
+<pre class="code console"><a name="rest_code_b9108f2c09104726b06444156a775477-1"></a><span class="go">[root@hal9000 ~]# lscpu</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-2"></a><span class="go">Architecture:          x86_64</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-3"></a><span class="go">CPU op-mode(s):        32-bit, 64-bit</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-4"></a><span class="go">Byte Order:            Little Endian</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-5"></a><span class="go">CPU(s):                4</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-6"></a><span class="go">On-line CPU(s) list:   0-3</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-7"></a><span class="go">Thread(s) per core:    2</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-8"></a><span class="go">Core(s) per socket:    2</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-9"></a><span class="go">Socket(s):             1</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-10"></a><span class="go">NUMA node(s):          1</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-11"></a><span class="go">Vendor ID:             GenuineIntel</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-12"></a><span class="go">CPU family:            6</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-13"></a><span class="go">Model:                 42</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-14"></a><span class="go">Stepping:              7</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-15"></a><span class="go">CPU MHz:               1600.000</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-16"></a><span class="go">BogoMIPS:              6186.44</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-17"></a><span class="go">Virtualization:        VT-x</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-18"></a><span class="go">L1d cache:             32K</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-19"></a><span class="go">L1i cache:             32K</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-20"></a><span class="go">L2 cache:              256K</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-21"></a><span class="go">L3 cache:              3072K</span>
+<a name="rest_code_b9108f2c09104726b06444156a775477-22"></a><span class="go">NUMA node0 CPU(s):     0-3</span>
 </pre>
 <p>Lo que más me gusta de ésta herramienta es que, a diferencia de las anteriores,
 lscpu muestra el ordenamiento de bytes del procesador (en este caso Little
@@ -395,72 +396,72 @@ entre las CPUs y la memoria principal (RAM)?</p>
 distribución y topología de cada nivel, el nivel de asociatividad, y el modo de
 operación.</p>
 <p>Una vez más es posible recurrir a la herramienta <tt class="docutils literal">dmidecode</tt>:</p>
-<pre class="code console"><a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-1"></a><span class="go">[root@hal9000 ~]# dmidecode -t cache</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-2"></a><span class="gp">#</span> dmidecode 2.12
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-3"></a><span class="go">SMBIOS 2.6 present.</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-4"></a>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-5"></a><span class="go">Handle 0x0005, DMI type 7, 19 bytes</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-6"></a><span class="go">Cache Information</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-7"></a><span class="go">        Socket Designation: L1-Cache</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-8"></a><span class="go">        Configuration: Enabled, Not Socketed, Level 1</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-9"></a><span class="go">        Operational Mode: Write Back</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-10"></a><span class="go">        Location: Internal</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-11"></a><span class="go">        Installed Size: 32 kB</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-12"></a><span class="go">        Maximum Size: 32 kB</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-13"></a><span class="go">        Supported SRAM Types:</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-14"></a><span class="go">                Other</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-15"></a><span class="go">        Installed SRAM Type: Other</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-16"></a><span class="go">        Speed: Unknown</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-17"></a><span class="go">        Error Correction Type: None</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-18"></a><span class="go">        System Type: Unified</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-19"></a><span class="go">        Associativity: 8-way Set-associative</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-20"></a>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-21"></a><span class="go">Handle 0x0006, DMI type 7, 19 bytes</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-22"></a><span class="go">Cache Information</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-23"></a><span class="go">        Socket Designation: L2-Cache</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-24"></a><span class="go">        Configuration: Enabled, Not Socketed, Level 2</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-25"></a><span class="go">        Operational Mode: Varies With Memory Address</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-26"></a><span class="go">        Location: Internal</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-27"></a><span class="go">        Installed Size: 512 kB</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-28"></a><span class="go">        Maximum Size: 512 kB</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-29"></a><span class="go">        Supported SRAM Types:</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-30"></a><span class="go">                Other</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-31"></a><span class="go">        Installed SRAM Type: Other</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-32"></a><span class="go">        Speed: Unknown</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-33"></a><span class="go">        Error Correction Type: None</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-34"></a><span class="go">        System Type: Unified</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-35"></a><span class="go">        Associativity: 8-way Set-associative</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-36"></a>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-37"></a><span class="go">Handle 0x0007, DMI type 7, 19 bytes</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-38"></a><span class="go">Cache Information</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-39"></a><span class="go">        Socket Designation: L3-Cache</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-40"></a><span class="go">        Configuration: Enabled, Not Socketed, Level 3</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-41"></a><span class="go">        Operational Mode: Unknown</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-42"></a><span class="go">        Location: Internal</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-43"></a><span class="go">        Installed Size: 3072 kB</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-44"></a><span class="go">        Maximum Size: 3072 kB</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-45"></a><span class="go">        Supported SRAM Types:</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-46"></a><span class="go">                Other</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-47"></a><span class="go">        Installed SRAM Type: Other</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-48"></a><span class="go">        Speed: Unknown</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-49"></a><span class="go">        Error Correction Type: None</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-50"></a><span class="go">        System Type: Unified</span>
-<a name="rest_code_7b946bb1ff2d4abdb7e9c9ff70732ee4-51"></a><span class="go">        Associativity: Other</span>
+<pre class="code console"><a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-1"></a><span class="go">[root@hal9000 ~]# dmidecode -t cache</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-2"></a><span class="gp">#</span> dmidecode 2.12
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-3"></a><span class="go">SMBIOS 2.6 present.</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-4"></a>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-5"></a><span class="go">Handle 0x0005, DMI type 7, 19 bytes</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-6"></a><span class="go">Cache Information</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-7"></a><span class="go">        Socket Designation: L1-Cache</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-8"></a><span class="go">        Configuration: Enabled, Not Socketed, Level 1</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-9"></a><span class="go">        Operational Mode: Write Back</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-10"></a><span class="go">        Location: Internal</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-11"></a><span class="go">        Installed Size: 32 kB</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-12"></a><span class="go">        Maximum Size: 32 kB</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-13"></a><span class="go">        Supported SRAM Types:</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-14"></a><span class="go">                Other</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-15"></a><span class="go">        Installed SRAM Type: Other</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-16"></a><span class="go">        Speed: Unknown</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-17"></a><span class="go">        Error Correction Type: None</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-18"></a><span class="go">        System Type: Unified</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-19"></a><span class="go">        Associativity: 8-way Set-associative</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-20"></a>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-21"></a><span class="go">Handle 0x0006, DMI type 7, 19 bytes</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-22"></a><span class="go">Cache Information</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-23"></a><span class="go">        Socket Designation: L2-Cache</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-24"></a><span class="go">        Configuration: Enabled, Not Socketed, Level 2</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-25"></a><span class="go">        Operational Mode: Varies With Memory Address</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-26"></a><span class="go">        Location: Internal</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-27"></a><span class="go">        Installed Size: 512 kB</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-28"></a><span class="go">        Maximum Size: 512 kB</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-29"></a><span class="go">        Supported SRAM Types:</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-30"></a><span class="go">                Other</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-31"></a><span class="go">        Installed SRAM Type: Other</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-32"></a><span class="go">        Speed: Unknown</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-33"></a><span class="go">        Error Correction Type: None</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-34"></a><span class="go">        System Type: Unified</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-35"></a><span class="go">        Associativity: 8-way Set-associative</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-36"></a>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-37"></a><span class="go">Handle 0x0007, DMI type 7, 19 bytes</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-38"></a><span class="go">Cache Information</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-39"></a><span class="go">        Socket Designation: L3-Cache</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-40"></a><span class="go">        Configuration: Enabled, Not Socketed, Level 3</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-41"></a><span class="go">        Operational Mode: Unknown</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-42"></a><span class="go">        Location: Internal</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-43"></a><span class="go">        Installed Size: 3072 kB</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-44"></a><span class="go">        Maximum Size: 3072 kB</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-45"></a><span class="go">        Supported SRAM Types:</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-46"></a><span class="go">                Other</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-47"></a><span class="go">        Installed SRAM Type: Other</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-48"></a><span class="go">        Speed: Unknown</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-49"></a><span class="go">        Error Correction Type: None</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-50"></a><span class="go">        System Type: Unified</span>
+<a name="rest_code_4f62b72262ba460cae152ae8cd85cbfd-51"></a><span class="go">        Associativity: Other</span>
 </pre>
 <p>Analicemos nivel por nivel. Primero L1:</p>
-<pre class="code console"><a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-1"></a><span class="go">Socket Designation: L1-Cache</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-2"></a><span class="go">Configuration: Enabled, Not Socketed, Level 1</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-3"></a><span class="go">Operational Mode: Write Back</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-4"></a><span class="go">Location: Internal</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-5"></a><span class="go">Installed Size: 32 kB</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-6"></a><span class="go">Maximum Size: 32 kB</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-7"></a><span class="go">Supported SRAM Types:</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-8"></a><span class="go">        Other</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-9"></a><span class="go">Installed SRAM Type: Other</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-10"></a><span class="go">Speed: Unknown</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-11"></a><span class="go">Error Correction Type: None</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-12"></a><span class="go">System Type: Unified</span>
-<a name="rest_code_433b0575f6b945f59ace38d353e2ebf0-13"></a><span class="go">Associativity: 8-way Set-associative</span>
+<pre class="code console"><a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-1"></a><span class="go">Socket Designation: L1-Cache</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-2"></a><span class="go">Configuration: Enabled, Not Socketed, Level 1</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-3"></a><span class="go">Operational Mode: Write Back</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-4"></a><span class="go">Location: Internal</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-5"></a><span class="go">Installed Size: 32 kB</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-6"></a><span class="go">Maximum Size: 32 kB</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-7"></a><span class="go">Supported SRAM Types:</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-8"></a><span class="go">        Other</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-9"></a><span class="go">Installed SRAM Type: Other</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-10"></a><span class="go">Speed: Unknown</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-11"></a><span class="go">Error Correction Type: None</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-12"></a><span class="go">System Type: Unified</span>
+<a name="rest_code_2549ea73e1da4cf184a49eeaf7ad0841-13"></a><span class="go">Associativity: 8-way Set-associative</span>
 </pre>
 <p>Se observa que el tamaño de la caché nivel 1 es de 32 kbytes. El modo de
 operación es <em>"Write Back"</em>, esto significa que un bloque modificado en caché no
@@ -482,19 +483,19 @@ decir direccionable por contenido en lugar de índice o dirección). Por ello
 8-way set associative es un muy buen nivel de asociatividad (y me fui por las
 ramas...).</p>
 <p>Volviendo al cauce, analicemos L2:</p>
-<pre class="code console"><a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-1"></a><span class="go">Socket Designation: L2-Cache</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-2"></a><span class="go">Configuration: Enabled, Not Socketed, Level 2</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-3"></a><span class="go">Operational Mode: Varies With Memory Address</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-4"></a><span class="go">Location: Internal</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-5"></a><span class="go">Installed Size: 512 kB</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-6"></a><span class="go">Maximum Size: 512 kB</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-7"></a><span class="go">Supported SRAM Types:</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-8"></a><span class="go">        Other</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-9"></a><span class="go">Installed SRAM Type: Other</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-10"></a><span class="go">Speed: Unknown</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-11"></a><span class="go">Error Correction Type: None</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-12"></a><span class="go">System Type: Unified</span>
-<a name="rest_code_0c6fd3fc983c4636a2cc150b977335bd-13"></a><span class="go">Associativity: 8-way Set-associative</span>
+<pre class="code console"><a name="rest_code_b21f0d22faaa4437980035af8056fa54-1"></a><span class="go">Socket Designation: L2-Cache</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-2"></a><span class="go">Configuration: Enabled, Not Socketed, Level 2</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-3"></a><span class="go">Operational Mode: Varies With Memory Address</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-4"></a><span class="go">Location: Internal</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-5"></a><span class="go">Installed Size: 512 kB</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-6"></a><span class="go">Maximum Size: 512 kB</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-7"></a><span class="go">Supported SRAM Types:</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-8"></a><span class="go">        Other</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-9"></a><span class="go">Installed SRAM Type: Other</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-10"></a><span class="go">Speed: Unknown</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-11"></a><span class="go">Error Correction Type: None</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-12"></a><span class="go">System Type: Unified</span>
+<a name="rest_code_b21f0d22faaa4437980035af8056fa54-13"></a><span class="go">Associativity: 8-way Set-associative</span>
 </pre>
 <p>El tamaño de L2 es de 512 kbytes, 16 veces más grande que L1. El modo de
 operación varía de acuerdo a la dirección de memoria. No sé bien que significa
@@ -504,19 +505,19 @@ unificada a nivel core (es decir, hay una caché L2 para cada core, y los thread
 de cada core la comparten). Al igual que L1 es 8-way set-associative.</p>
 <p>Finalmente, L3, el último bastión antes de tener que bajar a la terriblemente
 lenta memoria RAM:</p>
-<pre class="code console"><a name="rest_code_b756a706ac354ba59da243c4163e0ae9-1"></a><span class="go">Socket Designation: L3-Cache</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-2"></a><span class="go">Configuration: Enabled, Not Socketed, Level 3</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-3"></a><span class="go">Operational Mode: Unknown</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-4"></a><span class="go">Location: Internal</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-5"></a><span class="go">Installed Size: 3072 kB</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-6"></a><span class="go">Maximum Size: 3072 kB</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-7"></a><span class="go">Supported SRAM Types:</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-8"></a><span class="go">        Other</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-9"></a><span class="go">Installed SRAM Type: Other</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-10"></a><span class="go">Speed: Unknown</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-11"></a><span class="go">Error Correction Type: None</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-12"></a><span class="go">System Type: Unified</span>
-<a name="rest_code_b756a706ac354ba59da243c4163e0ae9-13"></a><span class="go">Associativity: Other</span>
+<pre class="code console"><a name="rest_code_b6b3a624935648d28735819c1940b492-1"></a><span class="go">Socket Designation: L3-Cache</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-2"></a><span class="go">Configuration: Enabled, Not Socketed, Level 3</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-3"></a><span class="go">Operational Mode: Unknown</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-4"></a><span class="go">Location: Internal</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-5"></a><span class="go">Installed Size: 3072 kB</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-6"></a><span class="go">Maximum Size: 3072 kB</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-7"></a><span class="go">Supported SRAM Types:</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-8"></a><span class="go">        Other</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-9"></a><span class="go">Installed SRAM Type: Other</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-10"></a><span class="go">Speed: Unknown</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-11"></a><span class="go">Error Correction Type: None</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-12"></a><span class="go">System Type: Unified</span>
+<a name="rest_code_b6b3a624935648d28735819c1940b492-13"></a><span class="go">Associativity: Other</span>
 </pre>
 <p>Este i3 posee una tremenda caché L3 de 3 megas, así como lo ven, 3 mega bytes de
 caché. Esto significa que la mayoría de los transistores de la pastilla (algo
@@ -535,114 +536,114 @@ sistema de archivos virtual (a partir del kernel Linux v2.6) que exporta
 información sobre los dispositivos y controladores.</p>
 <p>Bajo la ruta <tt class="docutils literal">/sys/devices/system/cpu/</tt> se encuentran descriptos muchos
 atributos globales e individuales de cada CPU:</p>
-<pre class="code console"><a name="rest_code_385a2e97117a419d934bc3641592b099-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-2"></a><span class="go">[root@hal9000 cpu]# ls -l</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-3"></a><span class="go">total 0</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-4"></a><span class="go">drwxr-xr-x 8 root root    0 Jun  5 08:50 cpu0</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-5"></a><span class="go">drwxr-xr-x 8 root root    0 Jun  5 08:50 cpu1</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-6"></a><span class="go">drwxr-xr-x 8 root root    0 Jun  5 08:50 cpu2</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-7"></a><span class="go">drwxr-xr-x 8 root root    0 Jun  5 08:50 cpu3</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-8"></a><span class="go">drwxr-xr-x 3 root root    0 Jun  5 09:25 cpufreq</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-9"></a><span class="go">drwxr-xr-x 2 root root    0 Jun  5 09:25 cpuidle</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-10"></a><span class="go">-r--r--r-- 1 root root 4096 Jun  5 09:11 kernel_max</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-11"></a><span class="go">-r--r--r-- 1 root root 4096 Jun  5 09:25 offline</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-12"></a><span class="go">-r--r--r-- 1 root root 4096 Jun  5 08:20 online</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-13"></a><span class="go">-r--r--r-- 1 root root 4096 Jun  5 09:11 possible</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-14"></a><span class="go">-r--r--r-- 1 root root 4096 Jun  5 07:39 present</span>
-<a name="rest_code_385a2e97117a419d934bc3641592b099-15"></a><span class="go">-rw-r--r-- 1 root root 4096 Jun  5 07:38 sched_smt_power_savings</span>
+<pre class="code console"><a name="rest_code_7e41c95e50f04337b2af1bc595a66559-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-2"></a><span class="go">[root@hal9000 cpu]# ls -l</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-3"></a><span class="go">total 0</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-4"></a><span class="go">drwxr-xr-x 8 root root    0 Jun  5 08:50 cpu0</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-5"></a><span class="go">drwxr-xr-x 8 root root    0 Jun  5 08:50 cpu1</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-6"></a><span class="go">drwxr-xr-x 8 root root    0 Jun  5 08:50 cpu2</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-7"></a><span class="go">drwxr-xr-x 8 root root    0 Jun  5 08:50 cpu3</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-8"></a><span class="go">drwxr-xr-x 3 root root    0 Jun  5 09:25 cpufreq</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-9"></a><span class="go">drwxr-xr-x 2 root root    0 Jun  5 09:25 cpuidle</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-10"></a><span class="go">-r--r--r-- 1 root root 4096 Jun  5 09:11 kernel_max</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-11"></a><span class="go">-r--r--r-- 1 root root 4096 Jun  5 09:25 offline</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-12"></a><span class="go">-r--r--r-- 1 root root 4096 Jun  5 08:20 online</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-13"></a><span class="go">-r--r--r-- 1 root root 4096 Jun  5 09:11 possible</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-14"></a><span class="go">-r--r--r-- 1 root root 4096 Jun  5 07:39 present</span>
+<a name="rest_code_7e41c95e50f04337b2af1bc595a66559-15"></a><span class="go">-rw-r--r-- 1 root root 4096 Jun  5 07:38 sched_smt_power_savings</span>
 </pre>
 <p>Para cada CPU existe un directorio numerado, desde <cite>cpu0</cite> en adelante, que
 contiene información individual de cada una:</p>
-<pre class="code console"><a name="rest_code_149d7aa7223e4056aa5143c81545945f-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/cpu0/</span>
-<a name="rest_code_149d7aa7223e4056aa5143c81545945f-2"></a><span class="go">[root@hal9000 cpu0]# ls -l</span>
-<a name="rest_code_149d7aa7223e4056aa5143c81545945f-3"></a><span class="go">total 0</span>
-<a name="rest_code_149d7aa7223e4056aa5143c81545945f-4"></a><span class="go">drwxr-xr-x 6 root root    0 Jun  5 09:11 cache</span>
-<a name="rest_code_149d7aa7223e4056aa5143c81545945f-5"></a><span class="go">drwxr-xr-x 3 root root    0 Jun  5 09:25 cpufreq</span>
-<a name="rest_code_149d7aa7223e4056aa5143c81545945f-6"></a><span class="go">drwxr-xr-x 6 root root    0 Jun  5 09:25 cpuidle</span>
-<a name="rest_code_149d7aa7223e4056aa5143c81545945f-7"></a><span class="go">-r-------- 1 root root 4096 Jun  5 09:25 crash_notes</span>
-<a name="rest_code_149d7aa7223e4056aa5143c81545945f-8"></a><span class="go">drwxr-xr-x 2 root root    0 Jun  5 09:25 microcode</span>
-<a name="rest_code_149d7aa7223e4056aa5143c81545945f-9"></a><span class="go">lrwxrwxrwx 1 root root    0 Jun  5 09:25 node0 -&gt; ../../node/node0</span>
-<a name="rest_code_149d7aa7223e4056aa5143c81545945f-10"></a><span class="go">drwxr-xr-x 2 root root    0 Jun  5 09:25 thermal_throttle</span>
-<a name="rest_code_149d7aa7223e4056aa5143c81545945f-11"></a><span class="go">drwxr-xr-x 2 root root    0 Jun  5 09:11 topology</span>
+<pre class="code console"><a name="rest_code_b3f1905b4ae348a185b08b3b42edd56e-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/cpu0/</span>
+<a name="rest_code_b3f1905b4ae348a185b08b3b42edd56e-2"></a><span class="go">[root@hal9000 cpu0]# ls -l</span>
+<a name="rest_code_b3f1905b4ae348a185b08b3b42edd56e-3"></a><span class="go">total 0</span>
+<a name="rest_code_b3f1905b4ae348a185b08b3b42edd56e-4"></a><span class="go">drwxr-xr-x 6 root root    0 Jun  5 09:11 cache</span>
+<a name="rest_code_b3f1905b4ae348a185b08b3b42edd56e-5"></a><span class="go">drwxr-xr-x 3 root root    0 Jun  5 09:25 cpufreq</span>
+<a name="rest_code_b3f1905b4ae348a185b08b3b42edd56e-6"></a><span class="go">drwxr-xr-x 6 root root    0 Jun  5 09:25 cpuidle</span>
+<a name="rest_code_b3f1905b4ae348a185b08b3b42edd56e-7"></a><span class="go">-r-------- 1 root root 4096 Jun  5 09:25 crash_notes</span>
+<a name="rest_code_b3f1905b4ae348a185b08b3b42edd56e-8"></a><span class="go">drwxr-xr-x 2 root root    0 Jun  5 09:25 microcode</span>
+<a name="rest_code_b3f1905b4ae348a185b08b3b42edd56e-9"></a><span class="go">lrwxrwxrwx 1 root root    0 Jun  5 09:25 node0 -&gt; ../../node/node0</span>
+<a name="rest_code_b3f1905b4ae348a185b08b3b42edd56e-10"></a><span class="go">drwxr-xr-x 2 root root    0 Jun  5 09:25 thermal_throttle</span>
+<a name="rest_code_b3f1905b4ae348a185b08b3b42edd56e-11"></a><span class="go">drwxr-xr-x 2 root root    0 Jun  5 09:11 topology</span>
 </pre>
 <p>Se observan directorios que describen caché, frecuencia, utilización y topología
 de cada CPU. Para describir la topología existen los archivos core_siblings_list
 y thread_siblings_list. Por ejemplo para cpu0:</p>
-<pre class="code console"><a name="rest_code_7026b1bac58c4c5987d0c9b3e5e23bf1-1"></a><span class="go">[root@hal9000 cpu0]# cat topology/{core_siblings_list,thread_siblings_list}</span>
-<a name="rest_code_7026b1bac58c4c5987d0c9b3e5e23bf1-2"></a><span class="go">0-3</span>
-<a name="rest_code_7026b1bac58c4c5987d0c9b3e5e23bf1-3"></a><span class="go">0,2</span>
+<pre class="code console"><a name="rest_code_a3072fee7bac4560a98bdc8fdb5692ba-1"></a><span class="go">[root@hal9000 cpu0]# cat topology/{core_siblings_list,thread_siblings_list}</span>
+<a name="rest_code_a3072fee7bac4560a98bdc8fdb5692ba-2"></a><span class="go">0-3</span>
+<a name="rest_code_a3072fee7bac4560a98bdc8fdb5692ba-3"></a><span class="go">0,2</span>
 </pre>
 <p>Esto significa que cpu0 convive en el mismo socket (pastilla) que cpu1, cpu2 y
 cpu3, de acuerdo al contenido de core_siblings_list (0-3). Y está dentro del
 mismo core que cpu2 (0,2).</p>
 <p>De esta forma podemos ver la relación entre cada CPU a nivel core:</p>
-<pre class="code console"><a name="rest_code_d62320e928954b238ded63669da7e1fe-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/</span>
-<a name="rest_code_d62320e928954b238ded63669da7e1fe-2"></a><span class="go">[root@hal9000 cpu]# cat cpu{0..3}/topology/thread_siblings_list</span>
-<a name="rest_code_d62320e928954b238ded63669da7e1fe-3"></a><span class="go">0,2</span>
-<a name="rest_code_d62320e928954b238ded63669da7e1fe-4"></a><span class="go">1,3</span>
-<a name="rest_code_d62320e928954b238ded63669da7e1fe-5"></a><span class="go">0,2</span>
-<a name="rest_code_d62320e928954b238ded63669da7e1fe-6"></a><span class="go">1,3</span>
+<pre class="code console"><a name="rest_code_f84a557549da4b92bc70834e2e4ba57d-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/</span>
+<a name="rest_code_f84a557549da4b92bc70834e2e4ba57d-2"></a><span class="go">[root@hal9000 cpu]# cat cpu{0..3}/topology/thread_siblings_list</span>
+<a name="rest_code_f84a557549da4b92bc70834e2e4ba57d-3"></a><span class="go">0,2</span>
+<a name="rest_code_f84a557549da4b92bc70834e2e4ba57d-4"></a><span class="go">1,3</span>
+<a name="rest_code_f84a557549da4b92bc70834e2e4ba57d-5"></a><span class="go">0,2</span>
+<a name="rest_code_f84a557549da4b92bc70834e2e4ba57d-6"></a><span class="go">1,3</span>
 </pre>
 <p>Respecto a la memoria caché, en los directorios cache dentro de cada directorio <cite>cpui</cite> existe un índice para cada nivel. Por ejemplo para cpu0:</p>
-<pre class="code console"><a name="rest_code_9c8700e21a004371a329d1f7ec0209d3-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/cpu0/cache/</span>
-<a name="rest_code_9c8700e21a004371a329d1f7ec0209d3-2"></a><span class="go">[root@hal9000 cache]# ls -l</span>
-<a name="rest_code_9c8700e21a004371a329d1f7ec0209d3-3"></a><span class="go">total 0</span>
-<a name="rest_code_9c8700e21a004371a329d1f7ec0209d3-4"></a><span class="go">drwxr-xr-x 2 root root 0 Jun  5 09:11 index0</span>
-<a name="rest_code_9c8700e21a004371a329d1f7ec0209d3-5"></a><span class="go">drwxr-xr-x 2 root root 0 Jun  5 09:11 index1</span>
-<a name="rest_code_9c8700e21a004371a329d1f7ec0209d3-6"></a><span class="go">drwxr-xr-x 2 root root 0 Jun  5 09:11 index2</span>
-<a name="rest_code_9c8700e21a004371a329d1f7ec0209d3-7"></a><span class="go">drwxr-xr-x 2 root root 0 Jun  5 09:11 index3</span>
+<pre class="code console"><a name="rest_code_f978bffde8dd4997accb5b8746d58f76-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/cpu0/cache/</span>
+<a name="rest_code_f978bffde8dd4997accb5b8746d58f76-2"></a><span class="go">[root@hal9000 cache]# ls -l</span>
+<a name="rest_code_f978bffde8dd4997accb5b8746d58f76-3"></a><span class="go">total 0</span>
+<a name="rest_code_f978bffde8dd4997accb5b8746d58f76-4"></a><span class="go">drwxr-xr-x 2 root root 0 Jun  5 09:11 index0</span>
+<a name="rest_code_f978bffde8dd4997accb5b8746d58f76-5"></a><span class="go">drwxr-xr-x 2 root root 0 Jun  5 09:11 index1</span>
+<a name="rest_code_f978bffde8dd4997accb5b8746d58f76-6"></a><span class="go">drwxr-xr-x 2 root root 0 Jun  5 09:11 index2</span>
+<a name="rest_code_f978bffde8dd4997accb5b8746d58f76-7"></a><span class="go">drwxr-xr-x 2 root root 0 Jun  5 09:11 index3</span>
 </pre>
 <p>A pesar de que la caché está estructurada en 3 niveles (L1, L2, y L3), en este
 directorio aparecen 4 índices. Esto se debe a que discrimina correctamente L1
 según su tipo, ya que está separada en caché L1 para instrucciones y caché L1
 para datos:</p>
-<pre class="code console"><a name="rest_code_0c556511f95d4a7da55193e7dfb72c4b-1"></a><span class="go">[root@hal9000 cache]# cat index{0,1}/level</span>
-<a name="rest_code_0c556511f95d4a7da55193e7dfb72c4b-2"></a><span class="go">1</span>
-<a name="rest_code_0c556511f95d4a7da55193e7dfb72c4b-3"></a><span class="go">1</span>
+<pre class="code console"><a name="rest_code_322235a809f64a48bfd2f7136b2144e8-1"></a><span class="go">[root@hal9000 cache]# cat index{0,1}/level</span>
+<a name="rest_code_322235a809f64a48bfd2f7136b2144e8-2"></a><span class="go">1</span>
+<a name="rest_code_322235a809f64a48bfd2f7136b2144e8-3"></a><span class="go">1</span>
 </pre>
 <p>Además ambas caché L1 se comparten en cada core (por eso L1 figura como caché
 unificada en la salida de <cite>dmidecode</cite>):</p>
-<pre class="code console"><a name="rest_code_ed6eaa09c2334f7ea81823b359cb490b-1"></a><span class="go">[root@hal9000 cache]# cat index{0,1}/{type,shared_cpu_list}</span>
-<a name="rest_code_ed6eaa09c2334f7ea81823b359cb490b-2"></a><span class="go">Data</span>
-<a name="rest_code_ed6eaa09c2334f7ea81823b359cb490b-3"></a><span class="go">0,2</span>
-<a name="rest_code_ed6eaa09c2334f7ea81823b359cb490b-4"></a><span class="go">Instruction</span>
-<a name="rest_code_ed6eaa09c2334f7ea81823b359cb490b-5"></a><span class="go">0,2</span>
+<pre class="code console"><a name="rest_code_798552eb0e044ed4b93f25d4fc783160-1"></a><span class="go">[root@hal9000 cache]# cat index{0,1}/{type,shared_cpu_list}</span>
+<a name="rest_code_798552eb0e044ed4b93f25d4fc783160-2"></a><span class="go">Data</span>
+<a name="rest_code_798552eb0e044ed4b93f25d4fc783160-3"></a><span class="go">0,2</span>
+<a name="rest_code_798552eb0e044ed4b93f25d4fc783160-4"></a><span class="go">Instruction</span>
+<a name="rest_code_798552eb0e044ed4b93f25d4fc783160-5"></a><span class="go">0,2</span>
 </pre>
 <p>Claramente no son unificadas para todas las CPU:</p>
-<pre class="code console"><a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-2"></a><span class="go">[root@hal9000 cpu]# cat cpu{0..3}/cache/index{0,1}/{type,shared_cpu_list}</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-3"></a><span class="go">Data</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-4"></a><span class="go">0,2</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-5"></a><span class="go">Instruction</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-6"></a><span class="go">0,2</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-7"></a><span class="go">Data</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-8"></a><span class="go">1,3</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-9"></a><span class="go">Instruction</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-10"></a><span class="go">1,3</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-11"></a><span class="go">Data</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-12"></a><span class="go">0,2</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-13"></a><span class="go">Instruction</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-14"></a><span class="go">0,2</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-15"></a><span class="go">Data</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-16"></a><span class="go">1,3</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-17"></a><span class="go">Instruction</span>
-<a name="rest_code_ba4fdd9597f5405e91f112443bc6ec88-18"></a><span class="go">1,3</span>
+<pre class="code console"><a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-2"></a><span class="go">[root@hal9000 cpu]# cat cpu{0..3}/cache/index{0,1}/{type,shared_cpu_list}</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-3"></a><span class="go">Data</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-4"></a><span class="go">0,2</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-5"></a><span class="go">Instruction</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-6"></a><span class="go">0,2</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-7"></a><span class="go">Data</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-8"></a><span class="go">1,3</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-9"></a><span class="go">Instruction</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-10"></a><span class="go">1,3</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-11"></a><span class="go">Data</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-12"></a><span class="go">0,2</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-13"></a><span class="go">Instruction</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-14"></a><span class="go">0,2</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-15"></a><span class="go">Data</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-16"></a><span class="go">1,3</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-17"></a><span class="go">Instruction</span>
+<a name="rest_code_9416a3daa0074e4bbcf733ef8377faf0-18"></a><span class="go">1,3</span>
 </pre>
 <p>Al igual que L1, L2 es unificada a nivel siblings, y L3 es unificada a nivel core (para todas las CPU):</p>
-<pre class="code console"><a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/cpu0/cache/</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-2"></a><span class="go">[root@hal9000 cache]# cat index{0,1,2,3}/{level,type,shared_cpu_list}</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-3"></a><span class="go">1</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-4"></a><span class="go">Data</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-5"></a><span class="go">0,2</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-6"></a><span class="go">1</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-7"></a><span class="go">Instruction</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-8"></a><span class="go">0,2</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-9"></a><span class="go">2</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-10"></a><span class="go">Unified</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-11"></a><span class="go">0,2</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-12"></a><span class="go">3</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-13"></a><span class="go">Unified</span>
-<a name="rest_code_05cac5424b0041929fb4e7c215b01ac4-14"></a><span class="go">0-3</span>
+<pre class="code console"><a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/cpu0/cache/</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-2"></a><span class="go">[root@hal9000 cache]# cat index{0,1,2,3}/{level,type,shared_cpu_list}</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-3"></a><span class="go">1</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-4"></a><span class="go">Data</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-5"></a><span class="go">0,2</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-6"></a><span class="go">1</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-7"></a><span class="go">Instruction</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-8"></a><span class="go">0,2</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-9"></a><span class="go">2</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-10"></a><span class="go">Unified</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-11"></a><span class="go">0,2</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-12"></a><span class="go">3</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-13"></a><span class="go">Unified</span>
+<a name="rest_code_650eed56f99c44838fc4d69aaf7a548a-14"></a><span class="go">0-3</span>
 </pre>
 <p>Con todos estos datos es posible describir la topología de un Intel Core i3.
 Intel Core i3</p>
@@ -653,16 +654,16 @@ recurso con las instrucciones load/store.</p>
 <p>Finalmente había quedado pendiente ver la cantidad de bloques y nivel de
 asociatividad de cada nivel de caché (según dmidecode el nivel de asociatividad
 de L3 era "Other"):</p>
-<pre class="code console"><a name="rest_code_29a38f54adcc4329aa733f8251918eb6-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/cpu0/cache/</span>
-<a name="rest_code_29a38f54adcc4329aa733f8251918eb6-2"></a><span class="go">[root@hal9000 cache]# cat index{0,1,2,3}/{number_of_sets,ways_of_associativity}</span>
-<a name="rest_code_29a38f54adcc4329aa733f8251918eb6-3"></a><span class="go">64</span>
-<a name="rest_code_29a38f54adcc4329aa733f8251918eb6-4"></a><span class="go">8</span>
-<a name="rest_code_29a38f54adcc4329aa733f8251918eb6-5"></a><span class="go">64</span>
-<a name="rest_code_29a38f54adcc4329aa733f8251918eb6-6"></a><span class="go">8</span>
-<a name="rest_code_29a38f54adcc4329aa733f8251918eb6-7"></a><span class="go">512</span>
-<a name="rest_code_29a38f54adcc4329aa733f8251918eb6-8"></a><span class="go">8</span>
-<a name="rest_code_29a38f54adcc4329aa733f8251918eb6-9"></a><span class="go">4096</span>
-<a name="rest_code_29a38f54adcc4329aa733f8251918eb6-10"></a><span class="go">12</span>
+<pre class="code console"><a name="rest_code_c69cac29440f4fd08decdfcb8a5c5902-1"></a><span class="go">[root@hal9000 ~]# cd /sys/devices/system/cpu/cpu0/cache/</span>
+<a name="rest_code_c69cac29440f4fd08decdfcb8a5c5902-2"></a><span class="go">[root@hal9000 cache]# cat index{0,1,2,3}/{number_of_sets,ways_of_associativity}</span>
+<a name="rest_code_c69cac29440f4fd08decdfcb8a5c5902-3"></a><span class="go">64</span>
+<a name="rest_code_c69cac29440f4fd08decdfcb8a5c5902-4"></a><span class="go">8</span>
+<a name="rest_code_c69cac29440f4fd08decdfcb8a5c5902-5"></a><span class="go">64</span>
+<a name="rest_code_c69cac29440f4fd08decdfcb8a5c5902-6"></a><span class="go">8</span>
+<a name="rest_code_c69cac29440f4fd08decdfcb8a5c5902-7"></a><span class="go">512</span>
+<a name="rest_code_c69cac29440f4fd08decdfcb8a5c5902-8"></a><span class="go">8</span>
+<a name="rest_code_c69cac29440f4fd08decdfcb8a5c5902-9"></a><span class="go">4096</span>
+<a name="rest_code_c69cac29440f4fd08decdfcb8a5c5902-10"></a><span class="go">12</span>
 </pre>
 <p>Se observa que L1 puede albergar 64 bloques y es 8-way associative, tanto para
 instrucciones (L1i) como para datos (L1d). L2 puede albergar 512 bloques y
@@ -678,7 +679,10 @@ volcado estamos analizando una única CPU (cpu0).</p>
             <li><a class="tag p-category" href="../../categories/cpu/" rel="tag">cpu</a></li>
         </ul>
 <ul class="pager hidden-print">
-<li class="next">
+<li class="previous">
+                <a href="../los-lenguajes-de-programacion-mas-populares-del-2014/" rel="prev" title="Los lenguajes de programación más populares del 2014">Publicación anterior</a>
+            </li>
+            <li class="next">
                 <a href="../10-programas-escritos-en-python/" rel="next" title="10 programas escritos en Python">Siguiente publicación</a>
             </li>
         </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>

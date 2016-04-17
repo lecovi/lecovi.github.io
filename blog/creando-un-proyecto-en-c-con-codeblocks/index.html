@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="http://lecovi.github.io/blog/creando-un-proyecto-en-c-con-codeblocks/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creando un proyecto en C con Code::Blocks | Make it So!</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/blog/creando-un-proyecto-en-c-con-codeblocks/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<meta name="author" content="Leandro E. Colombo Viña">
+<link rel="prev" href="../flisol-10deg-aniversario/" title="FLISOL 10° Aniversario" type="text/html">
+<link rel="next" href="../los-lenguajes-de-programacion-mas-populares-del-2014/" title="Los lenguajes de programación más populares del 2014" type="text/html">
+<meta property="og:site_name" content="Make it So!">
+<meta property="og:title" content="Creando un proyecto en C con Code::Blocks">
+<meta property="og:url" content="http://lecovi.github.io/blog/creando-un-proyecto-en-c-con-codeblocks/">
+<meta property="og:description" content="Veamos cómo crear un proyecto de C en Code::Blocks.
+
+
+Pasos a seguir
+
+Abrimos Code::Blocks.
+
+
+Vamos al menú File --&gt; New --&gt; Project...
+
+Esto nos abrirá un cuadro de diálogo que nos asistirá en el pro">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2014-08-24T09:10:59-03:00">
+<meta property="article:tag" content="programacion">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../"><i class="fa fa-pencil"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../cfp/prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts"><i class=" fa-graduation-cap"></i> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../ifts/arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../../ifts/dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../../ifts/edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li>
+<a href="../../ifts/par/">  <i class="fa fa-code"></i> Paradigmas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts/ana/">  <i class="fa fa-trello"></i> Análisis de Sistemas</a>
+                    </li>
+<li>
+<a href="../../bitson"><i class="fa fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../bitson/prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+                    </li>
+<li>
+<a href="../../bitson/olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../bitson/reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../resources/"><i class="fa fa-wrench"></i> Recursos</a>
+                </li>
+<li>
+<a href="../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="index.rst" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Creando un proyecto en C con Code::Blocks</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Leandro E. Colombo Viña
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2014-08-24T09:10:59-03:00" itemprop="datePublished" title="2014-08-24 09:10">2014-08-24 09:10</time></a></p>
+                <p class="commentline">
+        
+    <a href=".#disqus_thread" data-disqus-identifier="cache/posts/creando-un-proyecto-en-c-con-codeblocks.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="index.rst" id="sourcelink">Código fuente</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Veamos cómo crear un proyecto de C en <tt class="docutils literal"><span class="pre">Code::Blocks</span></tt>.</p>
+<!-- TEASER_END -->
+<div class="section" id="pasos-a-seguir">
+<h2>Pasos a seguir</h2>
+<div class="text-center"><iframe width="425" height="344" src="//www.youtube.com/embed/V7S1QRXmOg8?rel=0&amp;hd=1&amp;wmode=transparent"></iframe></div>
+<ol class="arabic">
+<li>
+<p class="first">Abrimos <tt class="docutils literal"><span class="pre">Code::Blocks</span></tt>.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Vamos al menú <cite>File --&gt; New --&gt; Project...</cite>
+</dt>
+<dd><ul class="first last simple">
+<li>Esto nos abrirá un cuadro de diálogo que nos asistirá en el proceso de creación de nuestro proyecto.</li>
+</ul></dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt>En el cuadro de diálogo elegimos <cite>Console Application</cite> y luego apretamos el botón que dice <cite>Go</cite>.</dt>
+<dd><ul class="first last simple">
+<li>Esto nos permitirá elegir las opciones de la aplicación que estamos por desarrollar</li>
+</ul></dd>
+</dl></li>
+<li>
+<p class="first">En la primer pantalla apretamos el botón de Next, NO tildar la opción de <cite>Skip this page next</cite> time sino la próxima vez no podremos editar estas opciones al momento de crear el proyecto.</p>
+</li>
+<li>
+<p class="first">Ahora debemos seleccionar el lenguaje que utilizaremos para nuestro desarrollo. En nuestro caso, SIEMPRE será <strong>``C``</strong>. NUNCA utilizaremos <strong>``C++``</strong>. Por lo que debemos cambiar la opción por defecto. Elegimos la opción que dice <strong>``C``</strong> y presionamos el botón <cite>Next</cite>.</p>
+</li>
+<li><dl class="first docutils">
+<dt>En la siguiente pantalla podremos elegir el nombre del proyecto y el destino en el sistema de archivos. En este caso elegimos:</dt>
+<dd><ul class="first last">
+<li>
+<p class="first"><cite>Project Title</cite> (Título del Proyecto): Proyecto1.</p>
+</li>
+<li><dl class="first docutils">
+<dt>
+<cite>Folder to create project in</cite> (Carpeta donde crear el proyecto): <tt class="docutils literal">/home/alumno/Documentos/Proyectos_CB/</tt>
+</dt>
+<dd><ul class="first last simple">
+<li>Esto es equivalente a <cite>Carpeta Personal --&gt; Documentos --&gt; Proyectos_CB</cite>
+</li>
+</ul></dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt>
+<cite>Project filename</cite> (Nombre de archivo del proyecto): NO TOCAR.</dt>
+<dd><ul class="first last simple">
+<li>Con lo que resultará en: <cite>Carpeta Personal --&gt; Documentos --&gt; Proyectos_CB --&gt; Proyecto1</cite>
+</li>
+</ul></dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt>
+<cite>Resulting filename</cite> (Nombre de archivo final): NO TOCAR.</dt>
+<dd><ul class="first last simple">
+<li>Finalmente: <cite>Carpeta Personal --&gt; Documentos --&gt; Proyectos_CB --&gt; Proyecto1 --&gt; Proyecto1.cbp</cite>
+</li>
+</ul></dd>
+</dl></li>
+<li>
+<p class="first">Presionamos el botón de <cite>Next</cite>.</p>
+</li>
+</ul></dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt>Ahora en la última opción, nos deja cambiar las opciones del compilador. Dejamos las opciones por defecto, y presionamos <cite>Next</cite>:</dt>
+<dd><ul class="first last simple">
+<li><cite>GNU GCC Compiler</cite></li>
+<li><cite>Create "Debug" configuration</cite></li>
+<li><cite>Create "Release" configuration</cite></li>
+</ul></dd>
+</dl></li>
+<li><dl class="first docutils">
+<dt>Esto creará el Proyecto dentro de nuestro espacio de trabajo (Workspace). Desplegamos la carpeta <cite>Source</cite> y dentro encontraremos el archivo <tt class="docutils literal">main.c</tt>. En el mismo simplemente encontraremos una versión del clásico <tt class="docutils literal">"Hola Mundo"</tt>. Desde el menú <cite>Build</cite> ejecutamos la opción <cite>Build and Run</cite> para verificar que se compila y ejecuta nuestro código.</dt>
+<dd><ul class="first last simple">
+<li>Eso nos abrirá una terminal que ejecuta el código.</li>
+</ul></dd>
+</dl></li>
+</ol>
+<div class="text-center"><iframe width="425" height="344" src="//www.youtube.com/embed/1IMlRHok5N0?rel=0&amp;hd=1&amp;wmode=transparent"></iframe></div>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/programacion/" rel="tag">programacion</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../flisol-10deg-aniversario/" rel="prev" title="FLISOL 10° Aniversario">Publicación anterior</a>
+            </li>
+            <li class="next">
+                <a href="../los-lenguajes-de-programacion-mas-populares-del-2014/" rel="next" title="Los lenguajes de programación más populares del 2014">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="lecovi",
+            disqus_url="http://lecovi.github.io/blog/creando-un-proyecto-en-c-con-codeblocks/",
+        disqus_title="Creando un proyecto en C con Code::Blocks",
+        disqus_identifier="cache/posts/creando-un-proyecto-en-c-con-codeblocks.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="lecovi";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2016         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

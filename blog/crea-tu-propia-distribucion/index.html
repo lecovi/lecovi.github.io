@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="http://lecovi.github.io/blog/crea-tu-propia-distribucion/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creá tu propia distribución | Make it So!</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/blog/crea-tu-propia-distribucion/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<meta name="author" content="Leandro E. Colombo Viña">
+<link rel="prev" href="../linux-sucks-windows-is-awesome/" title="Linux Sucks &amp; Windows is awesome!" type="text/html">
+<link rel="next" href="../empezando-con-nikola/" title="Empezando con Nikola" type="text/html">
+<meta property="og:site_name" content="Make it So!">
+<meta property="og:title" content="Creá tu propia distribución">
+<meta property="og:url" content="http://lecovi.github.io/blog/crea-tu-propia-distribucion/">
+<meta property="og:description" content="Linux es tan versátil y puede moldearse tanto que está disponible en toda clase de dispositivos electrónicos y arquitecturas técnicas. Además, crear tu propia distribución de Linux es más fácil que ha">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2015-08-25T13:06:32-03:00">
+<meta property="article:tag" content="distribucion">
+<meta property="article:tag" content="linux">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../"><i class="fa fa-pencil"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../cfp/prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts"><i class=" fa-graduation-cap"></i> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../ifts/arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../../ifts/dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../../ifts/edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li>
+<a href="../../ifts/par/">  <i class="fa fa-code"></i> Paradigmas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts/ana/">  <i class="fa fa-trello"></i> Análisis de Sistemas</a>
+                    </li>
+<li>
+<a href="../../bitson"><i class="fa fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../bitson/prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+                    </li>
+<li>
+<a href="../../bitson/olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../bitson/reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../resources/"><i class="fa fa-wrench"></i> Recursos</a>
+                </li>
+<li>
+<a href="../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="index.rst" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Creá tu propia distribución</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">
+                    Leandro E. Colombo Viña
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2015-08-25T13:06:32-03:00" itemprop="datePublished" title="2015-08-25 13:06">2015-08-25 13:06</time></a></p>
+                <p class="commentline">
+        
+    <a href=".#disqus_thread" data-disqus-identifier="cache/posts/crea-tu-propia-distribucion.html">Comments</a>
+
+
+            
+        </p>
+<p class="sourceline"><a href="index.rst" id="sourcelink">Código fuente</a></p>
+
+                    <p class="linkline"><a href="http://bitelia.com/2013/12/crear-tu-propia-distribucion-linux" target="_blank">Sitio original</a></p>
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>Linux es tan versátil y puede moldearse tanto que está disponible en toda clase de dispositivos electrónicos y arquitecturas técnicas. Además, crear tu propia distribución de Linux es más fácil que hace unos años con asistentes donde puedes pedir qué necesitas.</p>
+<!-- TEASER_END -->
+<p>En la actualidad, hay cientos de <a href="http://bitelia.com/tag/distribuciones" target="_blank">
+distribuciones de Linux diferentes
+</a>. Pocas son las más populares, con más adeptos cada día, pero aún así, el número de nuevas versiones de Linux, derivadas de las anteriores, es cada vez mayor, con propuestas especializadas en determinadas arquitecturas o pensadas para usos muy concretos, como la investigación, la enseñanza o para el diseño gráfico, por citar sólo tres ejemplos. Esto no quiere decir que crear tu propia distro sea algo sencillo, pero hoy en día sí es más accesible que años atrás. Hoy vamos a repasar tres opciones para obtener tu propia distribución de Linux directamente desde el navegador, seleccionando las opciones que quieres y descargando a cambio un Linux personalizado y a tu gusto.</p>
+<p>Seguramente habrá más opciones, online y offline, para diseñar una distribución de Linux. He escogido estas tres opciones porque, en el primer caso, es de las más sencillas disponibles actualmente, y por el otro, se basan en dos grandes distribuciones como son Ubuntu y SUSE. En todos los casos, el nivel de personalización está limitado a las distribuciones más populares, algo que tiene de positivo el hecho de ser <strong>compatibles con estas distros</strong>, por lo que podrás aprovechar la documentación existente y los programas específicos.</p>
+<div class="section" id="instalinux">
+<h2>Instalinux</h2>
+<p>Tal como dice su página principal, <a href="http://www.instalinux.com/" target="_blank">
+Instalinux
+</a> es una manera simple y sencilla de instalar Linux. Para ello, este práctico asistente online te permite generar una imagen ISO que contenga tu propia distribución de Linux.</p>
+<p>Instalinux cuenta con dos versiones, una "simple" para la mayoría de usuarios, y una "advanced" para usuarios más experimentados. Ahora mismo, puedes elegir entre siete distribuciones de Linux como base para la tuya: CentOS, Debian, Fedora, Mint, OpenSUSE, Scientific y Ubuntu. De cada una, tienes disponibles la versión más reciente y algunas anteriores, opción muy útil para aprovechar equipos antiguos o delicados. En cuanto a la arquitectura, básicamente puedes optar por procesadores de 32-bit y de 64.</p>
+<p>Respecto a la instalación, Instalinux permite configurar una instalación vía internet o una más clásica con CD, así como aspectos más locales como la hora, el idioma de la distribución (así evitarás instalar otros idiomas y el CD de instalación ocupará menos espacio), además de definir una contraseña de administrador.</p>
+<p>El proceso es relativamente rápido, más configurable cuantos más conocimientos poseas. En cualquier, es una <strong>manera sencilla de configurar</strong> una distribución Linux a tu medida para que la instalación sea más rápida.</p>
+</div>
+<div class="section" id="suse-studio">
+<h2>SUSE Studio</h2>
+<p>Una solución mucho más moderna y accesible a la mayoría de usuarios es <a href="http://susestudio.com/" target="_blank">
+SUSE Studio
+</a>, creado por la propia SUSE para que diseñes tu propia versión personalizada de esta conocida distribución de Linux.</p>
+<p>Para usarla tendrás que crear una cuenta o usar tus credenciales de Google, Twitter, Facebook o Yahoo! Una vez iniciada la sesión, seguirás un práctico asistente que te guiará paso a paso. Para empezar, puedes <strong>elegir qué versión de SUSE utilizar</strong>, si la versión gratuita OpenSUSE (en su versión mínima, servidor o con escritorios GNOME o KDE) o las versiones profesionales de SUSE en sus distintas variantes. También puedes optar por versiones más personalizadas de la SUSE Gallery, donde hay propuestas interesantes pensadas para públicos muy concretos con necesidades muy específicas.</p>
+<p>El siguiente paso será <strong>seleccionar los paquetes a instalar</strong>, proceso que puede llevarte más tiempo pero con el que te aseguras de instalar sólo lo que necesitas. En cualquier caso, con el asistente de SUSE podrás instalar más paquetes en tu ordenador una vez hayas instalado Linux. Entre las ventajas de este proceso, cada paquete aparece explicado para que sepas qué hace o deja de hacer. Además, si eliges uno que requiere de ciertas dependencias, éstas se añaden automáticamente.</p>
+<p>Otras opciones a tener en cuenta son las relacionadas con la configuración del sistema operativo, pudiendo configurar prácticamente cualquier aspecto, de manera que tras instalarlo, no tendrás que tocar nada. Además, tienes la opción de incluir archivos personales, como manuales o documentos, en directorios concretos, y, finalmente, guardar el instalador en una imagen ISO normal o en otros formatos (VMDK o VHD) más propios de máquinas virtuales.</p>
+<p>En definitiva, si te gusta SUSE, este asistente gustará a recién llegados y a usuarios avanzados por su alta dosis de personalización.</p>
+</div>
+<div class="section" id="ubuntu-builder">
+<h2>Ubuntu Builder</h2>
+<p>Y en tercer lugar, una solución para crear tu propia distribución de Linux a partir de Ubuntu, una de las distros más populares y que, a pesar de tener algunos encontronazos con sus usuarios, ha hecho mucho por popularizar Linux entre el público.</p>
+<p><a href="https://code.google.com/p/ubuntu-builder/" target="_blank">
+Ubuntu Builder
+</a> no es oficial de Ubuntu, pero funciona muy bien. La única pega es que tendrás que usar una distribución como Debian o Ubuntu para hacer funcionar este programa, pero con un LiveCD te será muy fácil.</p>
+<p>Con Ubuntu Builder podrás confeccionar una versión de Ubuntu a tu gusto: versión de Ubuntu, tipo de escritorio (KDE, LXDE, GNOME, etc.), paquetes a instalar, etc. Tengo que reconocer que para usarlo necesitarás conocimientos previos de Linux. Sin embargo, te ayudará a crear una versión de Ubuntu más ligera y acorde a tus necesidades y a las características de tu ordenador.</p>
+</div>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/distribucion/" rel="tag">distribucion</a></li>
+            <li><a class="tag p-category" href="../../categories/linux/" rel="tag">linux</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../linux-sucks-windows-is-awesome/" rel="prev" title="Linux Sucks &amp; Windows is awesome!">Publicación anterior</a>
+            </li>
+            <li class="next">
+                <a href="../empezando-con-nikola/" rel="next" title="Empezando con Nikola">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside><section class="comments hidden-print"><h2>Comentarios</h2>
+        
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="lecovi",
+            disqus_url="http://lecovi.github.io/blog/crea-tu-propia-distribucion/",
+        disqus_title="Cre\u00e1 tu propia distribuci\u00f3n",
+        disqus_identifier="cache/posts/crea-tu-propia-distribucion.html",
+        disqus_config = function () {
+            this.language = "es_ES";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section></article><script>var disqus_shortname="lecovi";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2016         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
