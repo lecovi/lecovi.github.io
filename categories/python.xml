@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Make it So! (python)</title><link>http://lecovi.github.io/</link><description></description><atom:link rel="self" type="application/rss+xml" href="http://lecovi.github.io/categories/python.xml"></atom:link><language>es</language><lastBuildDate>Sun, 17 Apr 2016 15:11:44 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Empezando con Nikola</title><link>http://lecovi.github.io/blog/empezando-con-nikola/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#primeros-pasos" id="id1"&gt;Primeros Pasos&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#instalacion-paquetes-de-sistema" id="id2"&gt;Instalación paquetes de sistema&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#instalando-el-entorno-virtual" id="id3"&gt;Instalando el entorno virtual&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#instalando-nikola" id="id4"&gt;Instalando Nikola&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#creando-nuestro-sitio" id="id5"&gt;Creando nuestro sitio&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#creando-post" id="id6"&gt;Creando post&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#construyendo-el-sitio" id="id7"&gt;Construyendo el sitio&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#publicando-nuestro-sitio-en-github" id="id8"&gt;Publicando nuestro sitio en GitHub&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#configurando-git" id="id9"&gt;Configurando Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#seteando-llaves-ssh-para-usar-con-github" id="id10"&gt;Seteando llaves SSH para usar con GitHub&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#usando-la-llave-para-entrar-a-github" id="id11"&gt;Usando la llave para entrar a GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#creando-el-repositorio-para-el-sitio" id="id12"&gt;Creando el repositorio para el sitio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/empezando-con-nikola/#poniendo-nikola-en-el-repo" id="id13"&gt;Poniendo Nikola en el repo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;Hace tiempo que vengo con intenciones de sentarme y recopilar los diferentes
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Make it So! (python)</title><link>http://lecovi.github.io/</link><description></description><atom:link href="http://lecovi.github.io/categories/python.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Sun, 17 Apr 2016 23:15:16 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Empezando con Nikola</title><link>http://lecovi.github.io/blog/empezando-con-nikola/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Hace tiempo que vengo con intenciones de sentarme y recopilar los diferentes
 tutoriales y artículos que vengo pensando y escribiendo. Después de buscar
 diferentes herramientás finalmente me decidí por usar &lt;cite&gt;Nikola&lt;/cite&gt; y quiero
 contarles cómo la uso.&lt;/p&gt;
@@ -40,21 +14,6 @@ Para eso vamos a:&lt;/p&gt;
 &lt;li&gt;Crear nuestro sitio con &lt;cite&gt;Nikola&lt;/cite&gt;.&lt;/li&gt;
 &lt;li&gt;Configurar nuestra cuenta en &lt;cite&gt;GitHub&lt;/cite&gt; para el uso de &lt;cite&gt;GitHub Pages&lt;/cite&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/empezando-con-nikola/"&gt;Leer más…&lt;/a&gt; (quedan 11 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>blog</category><category>git</category><category>github</category><category>nikola</category><category>python</category><guid>http://lecovi.github.io/blog/empezando-con-nikola/</guid><pubDate>Wed, 14 Oct 2015 16:37:37 GMT</pubDate></item><item><title>10 programas escritos en Python</title><link>http://lecovi.github.io/blog/10-programas-escritos-en-python/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;div class="contents alert alert-info pull-right topic" id="contents"&gt;
-&lt;p class="topic-title first"&gt;Contents&lt;/p&gt;
-&lt;ul class="simple"&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#youtube" id="id1"&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#dropbox" id="id2"&gt;DropBox&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#google" id="id3"&gt;Google&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#quora" id="id4"&gt;Quora&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#instagram" id="id5"&gt;Instagram&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#bittorrent" id="id6"&gt;BitTorrent&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#spotify" id="id7"&gt;Spotify&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#reddit" id="id8"&gt;Reddit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#yahoo-maps" id="id9"&gt;Yahoo Maps&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference internal" href="http://lecovi.github.io/blog/10-programas-escritos-en-python/#hipmunk" id="id10"&gt;Hipmunk&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;p&gt;Comparto algunas aplicaciones que usan Python como lenguaje.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/empezando-con-nikola/"&gt;Leer más…&lt;/a&gt; (quedan 11 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>blog</category><category>git</category><category>github</category><category>nikola</category><category>python</category><guid>http://lecovi.github.io/blog/empezando-con-nikola/</guid><pubDate>Wed, 14 Oct 2015 16:37:37 GMT</pubDate></item><item><title>10 programas escritos en Python</title><link>http://lecovi.github.io/blog/10-programas-escritos-en-python/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Comparto algunas aplicaciones que usan Python como lenguaje.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://lecovi.github.io/blog/10-programas-escritos-en-python/"&gt;Leer más…&lt;/a&gt; (quedan 3 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>python</category><guid>http://lecovi.github.io/blog/10-programas-escritos-en-python/</guid><pubDate>Mon, 25 Aug 2014 13:35:22 GMT</pubDate></item><item><title>Los lenguajes de programación más populares del 2014</title><link>http://lecovi.github.io/blog/los-lenguajes-de-programacion-mas-populares-del-2014/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;strong&gt;CodeEval&lt;/strong&gt; es una exclusiva comunidad de más de 24.000 desarrolladores. Sus miembros pueden competir entre sí, retar a sus amigos y mostrar sus habilidades de programación en su perfil.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/los-lenguajes-de-programacion-mas-populares-del-2014/"&gt;Leer más…&lt;/a&gt; (quedan 1 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>programacion</category><category>python</category><guid>http://lecovi.github.io/blog/los-lenguajes-de-programacion-mas-populares-del-2014/</guid><pubDate>Mon, 25 Aug 2014 12:27:07 GMT</pubDate></item></channel></rss>
+&lt;p&gt;&lt;a href="http://lecovi.github.io/blog/los-lenguajes-de-programacion-mas-populares-del-2014/"&gt;Leer más…&lt;/a&gt; (quedan 1 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>programacion</category><category>python</category><guid>http://lecovi.github.io/blog/los-lenguajes-de-programacion-mas-populares-del-2014/</guid><pubDate>Mon, 25 Aug 2014 12:27:07 GMT</pubDate></item><item><title>PHP vs. Ruby vs. Python</title><link>http://lecovi.github.io/blog/php-vs-ruby-vs-python/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div class="text-center embed-responsive embed-responsive-16by9"&gt;&lt;iframe width="425" height="344" src="//www.youtube.com/embed/VBm5m1-Eonw?rel=0&amp;amp;hd=1&amp;amp;wmode=transparent"&gt;&lt;/iframe&gt;&lt;/div&gt;</description><category>programacion</category><category>python</category><category>video</category><guid>http://lecovi.github.io/blog/php-vs-ruby-vs-python/</guid><pubDate>Tue, 17 Sep 2013 22:16:05 GMT</pubDate></item></channel></rss>

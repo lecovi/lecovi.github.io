@@ -7,13 +7,13 @@
 .. description:
 .. type: text
 
-.. class:: alert alert-info pull-right
-
-.. contents::
-
 Comparto algunas aplicaciones que usan Python como lenguaje.
 
 .. TEASER_END
+
+.. class:: alert alert-info pull-right
+
+.. contents::
 
 ----
 

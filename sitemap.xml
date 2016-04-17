@@ -7,7 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://lecovi.github.io/</loc>
-  <lastmod>2016-04-17T13:08:00Z</lastmod>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/2011/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/2013/</loc>
@@ -27,7 +31,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/archive.html</loc>
-  <lastmod>2016-04-17T16:08:00Z</lastmod>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/bitson/</loc>
@@ -163,7 +167,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/</loc>
-  <lastmod>2016-04-17T16:08:00Z</lastmod>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/10-preguntas-a-los-mas-reconocidos-programadores-del-mundo/</loc>
@@ -174,6 +178,22 @@
   <lastmod>2016-04-16T13:38:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/30-anos-del-proyecto-gnu/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/arduino-the-documentary-2010-spanish-hd/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/biografia-bill-gates-microsoft/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/breve-historia-de-los-sistemas-gnulinux/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/blog/cinco-libros-recomendados-para-mejorar-como-programador/</loc>
   <lastmod>2016-04-17T14:17:00Z</lastmod>
  </url>
@@ -182,8 +202,16 @@
   <lastmod>2016-04-16T13:17:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/codigo-linux/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/blog/como-no-realizar-una-practica-de-programacion/</loc>
   <lastmod>2016-04-17T13:24:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/como-trabaja-el-procesador/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/crea-tu-propia-distribucion/</loc>
@@ -194,8 +222,16 @@
   <lastmod>2016-04-17T12:19:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/creating-an-htpc-using-openelec/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/blog/desarrollo-de-gnulinux/</loc>
   <lastmod>2016-04-17T15:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/el-futuro-del-futuro/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/el-valor-del-trabajo-profesional/</loc>
@@ -206,16 +242,60 @@
   <lastmod>2015-10-24T16:13:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/en-busca-de-hackers/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/blog/flisol-10deg-aniversario/</loc>
   <lastmod>2016-04-16T21:28:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/francia-migra-37000-ordenadores-de-la-policia-a-linux/</loc>
+  <lastmod>2016-04-17T16:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/freenas/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/grabando-la-consola/</loc>
   <lastmod>2015-11-08T21:11:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/guerreros-en-la-red/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/hackers-3-conspiracion-en-la-red/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/historia-secreta-de-los-hackers-informaticos-los-primeros-hackers-documental-discovery-channel/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/blog/index-1.html</loc>
-  <lastmod>2016-04-17T16:08:00Z</lastmod>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/index-2.html</loc>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/index-3.html</loc>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/index-4.html</loc>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/index-5.html</loc>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/inside-google/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/instala-google-chrome-en-lmde/</loc>
@@ -226,32 +306,104 @@
   <lastmod>2016-04-16T15:35:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/la-historia-de-la-internet-la-guerra-de-los-navegadores/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/la-historia-de-linux/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/la-revolucion-virtual/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/blog/linux-sucks-windows-is-awesome/</loc>
   <lastmod>2016-04-16T15:20:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/lo-que-la-industria-de-la-tecnologia-deberia-aprender-de-linus-torvalds-charla-ted/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/los-lenguajes-de-programacion-mas-populares-del-2014/</loc>
   <lastmod>2016-04-17T13:08:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/muchas-mentes-ii-cap-03-codigo-abierto/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/openttd-el-transport-tycoon-libre/</loc>
+  <lastmod>2016-04-17T16:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/peligros-en-la-red-hackers-documental/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/blog/pequeno-saltamontes/</loc>
   <lastmod>2016-04-16T15:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/php-vs-ruby-vs-python/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/que-hay-bajo-el-capo-de-tu-maquina/</loc>
   <lastmod>2016-04-16T12:55:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/reparar-disco-duro-danado-con-hirens-boot/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/revolution-os/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/richard-stallman-en-posadas-misiones-argentina/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/richard-stallman-y-el-software-libre-en-las-escuelas/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/rumbo-a-marte-ing-miguel-san-martin-at-tedxriodelaplata/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/steve-jobs-stanford-commencement-speech-2005/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/the-code-story-of-linux-documentary/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/todos-deberian-aprender-a-programar/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/blog/un-mundo-sin-linux/</loc>
   <lastmod>2016-04-17T16:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/usa-protector-solar/</loc>
+  <lastmod>2016-04-17T21:57:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</loc>
   <lastmod>2016-04-06T11:08:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/we-are-legion-the-story-of-the-hacktivists/</loc>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/categories/</loc>
-  <lastmod>2016-04-17T14:17:00Z</lastmod>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/arquitectura/</loc>
@@ -267,7 +419,19 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/cat_interes/</loc>
-  <lastmod>2016-04-16T12:57:00Z</lastmod>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_interes/index-1.html</loc>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_interes/index-2.html</loc>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_interes/index-3.html</loc>
+  <lastmod>2016-04-17T23:15:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/cat_opinion/</loc>
@@ -302,6 +466,14 @@
   <lastmod>2016-04-17T14:17:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/categories/documental/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/educacion/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/categories/free-software/</loc>
   <lastmod>2016-04-16T13:17:00Z</lastmod>
  </url>
@@ -312,6 +484,34 @@
  <url>
   <loc>http://lecovi.github.io/categories/github/</loc>
   <lastmod>2015-10-24T16:19:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/gnu/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/hacker/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/hackers/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/hardware-libre/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/historia/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/inspiracional/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/internet/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/linux/</loc>
@@ -342,6 +542,10 @@
   <lastmod>2016-04-06T11:08:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/categories/red/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/categories/software-libre/</loc>
   <lastmod>2016-04-16T13:17:00Z</lastmod>
  </url>
@@ -356,6 +560,14 @@
  <url>
   <loc>http://lecovi.github.io/categories/tty-recording/</loc>
   <lastmod>2015-11-08T21:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/tutorial/</loc>
+  <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/video/</loc>
+  <lastmod>2016-04-17T22:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/cfp/</loc>

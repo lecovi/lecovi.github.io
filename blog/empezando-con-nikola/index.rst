@@ -8,10 +8,6 @@
 .. type: text
 .. version: 0.2
 
-.. class:: alert alert-info pull-right
-
-.. contents::
-
 Hace tiempo que vengo con intenciones de sentarme y recopilar los diferentes
 tutoriales y artículos que vengo pensando y escribiendo. Después de buscar
 diferentes herramientás finalmente me decidí por usar `Nikola` y quiero
@@ -30,6 +26,10 @@ Para eso vamos a:
 #. Configurar nuestra cuenta en `GitHub` para el uso de `GitHub Pages`.
 
 .. TEASER_END
+
+.. class:: alert alert-info pull-right
+
+.. contents::
 
 Primeros Pasos
 ==============

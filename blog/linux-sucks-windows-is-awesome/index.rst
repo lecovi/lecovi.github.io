@@ -20,13 +20,13 @@ Les comparto 2 excelentes charlas de |bryan_lunduke|. A disfrutar...
 Linux Sucks
 -----------
 
-.. class:: text-center
+.. class:: text-center embed-responsive embed-responsive-16by9
 
 .. youtube:: ppM9tU7-b6A
 
 Windows is awesome
 ------------------
 
-.. class:: text-center
+.. class:: text-center embed-responsive embed-responsive-16by9
 
 .. youtube:: Zu0l-Ac7fTU
