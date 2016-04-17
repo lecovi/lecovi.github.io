@@ -27,7 +27,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/archive.html</loc>
-  <lastmod>2016-04-17T15:49:00Z</lastmod>
+  <lastmod>2016-04-17T16:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/bitson/</loc>
@@ -163,7 +163,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/</loc>
-  <lastmod>2016-04-17T15:49:00Z</lastmod>
+  <lastmod>2016-04-17T16:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/10-preguntas-a-los-mas-reconocidos-programadores-del-mundo/</loc>
@@ -215,7 +215,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/index-1.html</loc>
-  <lastmod>2016-04-17T15:49:00Z</lastmod>
+  <lastmod>2016-04-17T16:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/instala-google-chrome-en-lmde/</loc>
@@ -240,6 +240,10 @@
  <url>
   <loc>http://lecovi.github.io/blog/que-hay-bajo-el-capo-de-tu-maquina/</loc>
   <lastmod>2016-04-16T12:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/un-mundo-sin-linux/</loc>
+  <lastmod>2016-04-17T16:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/</loc>
