@@ -31,7 +31,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/archive.html</loc>
-  <lastmod>2016-04-17T23:15:00Z</lastmod>
+  <lastmod>2016-04-17T23:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/bitson/</loc>
@@ -167,7 +167,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/</loc>
-  <lastmod>2016-04-17T23:15:00Z</lastmod>
+  <lastmod>2016-04-17T23:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/10-preguntas-a-los-mas-reconocidos-programadores-del-mundo/</loc>
@@ -180,6 +180,10 @@
  <url>
   <loc>http://lecovi.github.io/blog/30-anos-del-proyecto-gnu/</loc>
   <lastmod>2016-04-17T23:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/apt-advanced-package-tool/</loc>
+  <lastmod>2016-04-17T23:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/arduino-the-documentary-2010-spanish-hd/</loc>
@@ -246,6 +250,10 @@
   <lastmod>2016-04-17T23:04:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/blog/entrando-al-mundo-de-gnulinux/</loc>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/blog/flisol-10deg-aniversario/</loc>
   <lastmod>2016-04-16T21:28:00Z</lastmod>
  </url>
@@ -275,23 +283,23 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/index-1.html</loc>
-  <lastmod>2016-04-17T23:15:00Z</lastmod>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/index-2.html</loc>
-  <lastmod>2016-04-17T23:15:00Z</lastmod>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/index-3.html</loc>
-  <lastmod>2016-04-17T23:15:00Z</lastmod>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/index-4.html</loc>
-  <lastmod>2016-04-17T23:15:00Z</lastmod>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/index-5.html</loc>
-  <lastmod>2016-04-17T23:15:00Z</lastmod>
+  <lastmod>2016-04-17T23:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/inside-google/</loc>
@@ -304,6 +312,10 @@
  <url>
   <loc>http://lecovi.github.io/blog/instalar-chromium-browser/</loc>
   <lastmod>2016-04-16T15:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/blog/la-biblia-de-debian/</loc>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/blog/la-historia-de-la-internet-la-guerra-de-los-navegadores/</loc>
@@ -403,7 +415,11 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/</loc>
-  <lastmod>2016-04-17T23:04:00Z</lastmod>
+  <lastmod>2016-04-17T23:34:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/apt/</loc>
+  <lastmod>2016-04-17T23:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/arquitectura/</loc>
@@ -423,15 +439,15 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/cat_interes/index-1.html</loc>
-  <lastmod>2016-04-17T23:15:00Z</lastmod>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/cat_interes/index-2.html</loc>
-  <lastmod>2016-04-17T23:15:00Z</lastmod>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/cat_interes/index-3.html</loc>
-  <lastmod>2016-04-17T23:15:00Z</lastmod>
+  <lastmod>2016-04-17T23:34:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/cat_opinion/</loc>
@@ -439,7 +455,11 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/cat_tutorial/</loc>
-  <lastmod>2015-11-08T21:11:00Z</lastmod>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/cat_tutorial/index-1.html</loc>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/chrome/</loc>
@@ -460,6 +480,10 @@
  <url>
   <loc>http://lecovi.github.io/categories/debate/</loc>
   <lastmod>2016-04-16T13:17:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/debian/</loc>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/categories/distribucion/</loc>
@@ -568,6 +592,10 @@
  <url>
   <loc>http://lecovi.github.io/categories/video/</loc>
   <lastmod>2016-04-17T22:25:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/categories/wiki/</loc>
+  <lastmod>2016-04-17T23:25:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/cfp/</loc>
