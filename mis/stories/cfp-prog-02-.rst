@@ -10,7 +10,7 @@
 Market Share
 ============
 
-.. class:: align-center
+.. class:: align-center embed-responsive embed-responsive-16by9
 
     .. raw:: html
 
@@ -27,7 +27,7 @@ Seguí la presentación en este |repaso|.
 Cómo funciona una computadora
 =============================
 
-.. class:: align-center
+.. class:: align-center embed-responsive embed-responsive-16by9
 
     .. raw:: html
 
