@@ -7,7 +7,7 @@
 .. description:
 .. type: text
 
-.. class:: align-center
+.. class:: align-center embed-responsive embed-responsive-16by9
 
     .. raw:: html
 

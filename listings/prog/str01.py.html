@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="http://lecovi.github.io/listings/prog/str01.py.html">
+<meta name="description" content="str01.py">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>str01.py | Make it So!</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/listings/prog/str01.py.html">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../blog/"><i class="fa fa-pencil"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../cfp/prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts"><i class=" fa-graduation-cap"></i> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../ifts/arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../../ifts/dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../../ifts/edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li>
+<a href="../../ifts/par/">  <i class="fa fa-code"></i> Paradigmas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts/ana/">  <i class="fa fa-trello"></i> Análisis de Sistemas</a>
+                    </li>
+<li>
+<a href="../../bitson"><i class="fa fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../bitson/prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+                    </li>
+<li>
+<a href="../../bitson/olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../bitson/reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../resources/"><i class="fa fa-wrench"></i> Recursos</a>
+                </li>
+<li>
+<a href="../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="str01.py" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+
+<nav class="breadcrumbs"><ul class="breadcrumb">
+<li><a href="../">listings</a></li>
+                <li><a href=".">prog</a></li>
+                <li>str01.py</li>
+</ul></nav><table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="#listingsprogstr01py-1"> 1</a>
+<a href="#listingsprogstr01py-2"> 2</a>
+<a href="#listingsprogstr01py-3"> 3</a>
+<a href="#listingsprogstr01py-4"> 4</a>
+<a href="#listingsprogstr01py-5"> 5</a>
+<a href="#listingsprogstr01py-6"> 6</a>
+<a href="#listingsprogstr01py-7"> 7</a>
+<a href="#listingsprogstr01py-8"> 8</a>
+<a href="#listingsprogstr01py-9"> 9</a>
+<a href="#listingsprogstr01py-10">10</a>
+<a href="#listingsprogstr01py-11">11</a>
+<a href="#listingsprogstr01py-12">12</a>
+<a href="#listingsprogstr01py-13">13</a>
+<a href="#listingsprogstr01py-14">14</a>
+<a href="#listingsprogstr01py-15">15</a>
+<a href="#listingsprogstr01py-16">16</a>
+<a href="#listingsprogstr01py-17">17</a>
+<a href="#listingsprogstr01py-18">18</a>
+<a href="#listingsprogstr01py-19">19</a>
+<a href="#listingsprogstr01py-20">20</a>
+<a href="#listingsprogstr01py-21">21</a>
+<a href="#listingsprogstr01py-22">22</a>
+<a href="#listingsprogstr01py-23">23</a>
+<a href="#listingsprogstr01py-24">24</a>
+<a href="#listingsprogstr01py-25">25</a>
+<a href="#listingsprogstr01py-26">26</a>
+<a href="#listingsprogstr01py-27">27</a>
+<a href="#listingsprogstr01py-28">28</a>
+<a href="#listingsprogstr01py-29">29</a>
+<a href="#listingsprogstr01py-30">30</a>
+<a href="#listingsprogstr01py-31">31</a>
+<a href="#listingsprogstr01py-32">32</a>
+<a href="#listingsprogstr01py-33">33</a>
+<a href="#listingsprogstr01py-34">34</a>
+<a href="#listingsprogstr01py-35">35</a>
+<a href="#listingsprogstr01py-36">36</a></pre></div></td>
+<td class="code"><pre class="code literal-block"><a name="listingsprogstr01py-1"></a><span class="n">Python</span> <span class="mf">3.4</span><span class="o">.</span><span class="mi">2</span> <span class="p">(</span><span class="n">default</span><span class="p">,</span> <span class="n">Oct</span>  <span class="mi">8</span> <span class="mi">2014</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span><span class="mi">14</span><span class="p">:</span><span class="mi">40</span><span class="p">)</span> 
+<a name="listingsprogstr01py-2"></a><span class="p">[</span><span class="n">GCC</span> <span class="mf">4.9</span><span class="o">.</span><span class="mi">1</span><span class="p">]</span> <span class="n">on</span> <span class="n">linux</span>
+<a name="listingsprogstr01py-3"></a><span class="n">Type</span> <span class="s">"copyright"</span><span class="p">,</span> <span class="s">"credits"</span> <span class="ow">or</span> <span class="s">"license()"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+<a name="listingsprogstr01py-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">=</span> <span class="s">"casa"</span>
+<a name="listingsprogstr01py-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">q</span> <span class="o">=</span> <span class="s">'perro'</span>
+<a name="listingsprogstr01py-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">+</span> <span class="n">q</span>
+<a name="listingsprogstr01py-7"></a><span class="s">'casaperro'</span>
+<a name="listingsprogstr01py-8"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">q</span>
+<a name="listingsprogstr01py-9"></a><span class="s">'casa perro'</span>
+<a name="listingsprogstr01py-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">*</span> <span class="mi">3</span>
+<a name="listingsprogstr01py-11"></a><span class="s">'casacasacasa'</span>
+<a name="listingsprogstr01py-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="n">q</span>
+<a name="listingsprogstr01py-13"></a><span class="s">'casacasacasaperro'</span>
+<a name="listingsprogstr01py-14"></a><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">p</span> <span class="o">+</span> <span class="s">"!"</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">q</span>
+<a name="listingsprogstr01py-15"></a><span class="s">'casa!casa!perro'</span>
+<a name="listingsprogstr01py-16"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">=</span> <span class="mf">485.58</span>
+<a name="listingsprogstr01py-17"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<a name="listingsprogstr01py-18"></a><span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">float</span><span class="s">'&gt;</span>
+<a name="listingsprogstr01py-19"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<a name="listingsprogstr01py-20"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<a name="listingsprogstr01py-21"></a><span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">str</span><span class="s">'&gt;</span>
+<a name="listingsprogstr01py-22"></a><span class="o">&gt;&gt;&gt;</span> 
+<a name="listingsprogstr01py-23"></a><span class="o">&gt;&gt;&gt;</span> 
+<a name="listingsprogstr01py-24"></a><span class="o">&gt;&gt;&gt;</span> 
+<a name="listingsprogstr01py-25"></a><span class="o">&gt;&gt;&gt;</span> 
+<a name="listingsprogstr01py-26"></a><span class="o">&gt;&gt;&gt;</span> 
+<a name="listingsprogstr01py-27"></a><span class="o">&gt;&gt;&gt;</span> 
+<a name="listingsprogstr01py-28"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span>
+<a name="listingsprogstr01py-29"></a><span class="s">'485.58'</span>
+<a name="listingsprogstr01py-30"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="mf">124.56</span><span class="p">)</span>
+<a name="listingsprogstr01py-31"></a><span class="s">'124.56'</span>
+<a name="listingsprogstr01py-32"></a><span class="o">&gt;&gt;&gt;</span> 
+<a name="listingsprogstr01py-33"></a><span class="o">&gt;&gt;&gt;</span> 
+<a name="listingsprogstr01py-34"></a><span class="o">&gt;&gt;&gt;</span> 
+<a name="listingsprogstr01py-35"></a><span class="o">&gt;&gt;&gt;</span> 
+<a name="listingsprogstr01py-36"></a><span class="o">&gt;&gt;&gt;</span> 
+</pre></td>
+</tr></table>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2016         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

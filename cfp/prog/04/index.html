@@ -4,18 +4,23 @@
 <meta charset="utf-8">
 <base href="http://lecovi.github.io/cfp/prog/04/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Introducción al Curso | Make it So!</title>
+<title>Strings - Cadenas de Texto | Make it So!</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/cfp/prog/04/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <meta name="author" content="Leandro E. Colombo Viña">
 <meta property="og:site_name" content="Make it So!">
-<meta property="og:title" content="Introducción al Curso">
+<meta property="og:title" content="Strings - Cadenas de Texto">
 <meta property="og:url" content="http://lecovi.github.io/cfp/prog/04/">
-<meta property="og:description" content="Write your page here.">
+<meta property="og:description" content="Veamos algunos ejemplos:
+prog/str01.py
+Python 3.4.2 (default, Oct  8 2014, 13:14:40)
+[GCC 4.9.1] on linux
+Type &quot;copyright&quot;, &quot;credits&quot; or &quot;license()&quot; for more information.
+&gt;&gt;&gt; p = &quot;casa&quot;
+&gt;&gt;&gt; q = 'perro">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2016-04-06T08:02:11-03:00">
 </head>
@@ -117,12 +122,142 @@
         <div class="row">
             
             
-<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Introducción al Curso</a></h1>
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Strings - Cadenas de Texto</a></h1>
 
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Write your page here.</p>
+    <div>
+<div class="align-center embed-responsive embed-responsive-16by9"><iframe src="https://docs.google.com/presentation/d/1wOWplU49y6KDNwmyHCtGMXaAQje-08HPgXLDzVW5Ek0/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="960" height="629" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+<p>Veamos algunos ejemplos:</p>
+<p><a class="reference external" href="../../../listings/prog/str01.py.html">prog/str01.py</a></p>
+<pre class="code python"><a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-1"></a><span class="n">Python</span> <span class="mf">3.4</span><span class="o">.</span><span class="mi">2</span> <span class="p">(</span><span class="n">default</span><span class="p">,</span> <span class="n">Oct</span>  <span class="mi">8</span> <span class="mi">2014</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span><span class="mi">14</span><span class="p">:</span><span class="mi">40</span><span class="p">)</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-2"></a><span class="p">[</span><span class="n">GCC</span> <span class="mf">4.9</span><span class="o">.</span><span class="mi">1</span><span class="p">]</span> <span class="n">on</span> <span class="n">linux</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-3"></a><span class="n">Type</span> <span class="s">"copyright"</span><span class="p">,</span> <span class="s">"credits"</span> <span class="ow">or</span> <span class="s">"license()"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">=</span> <span class="s">"casa"</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">q</span> <span class="o">=</span> <span class="s">'perro'</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">+</span> <span class="n">q</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-7"></a><span class="s">'casaperro'</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-8"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">q</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-9"></a><span class="s">'casa perro'</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">*</span> <span class="mi">3</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-11"></a><span class="s">'casacasacasa'</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="n">q</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-13"></a><span class="s">'casacasacasaperro'</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-14"></a><span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">p</span> <span class="o">+</span> <span class="s">"!"</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">q</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-15"></a><span class="s">'casa!casa!perro'</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-16"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">p</span> <span class="o">=</span> <span class="mf">485.58</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-17"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-18"></a><span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">float</span><span class="s">'&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-19"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-20"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-21"></a><span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">str</span><span class="s">'&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-22"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-23"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-24"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-25"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-26"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-27"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-28"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">r</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-29"></a><span class="s">'485.58'</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-30"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="mf">124.56</span><span class="p">)</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-31"></a><span class="s">'124.56'</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-32"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-33"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-34"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-35"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_1f87c9d2ec0347329d76060cd22895d5-36"></a><span class="o">&gt;&gt;&gt;</span>
+</pre>
+<p><a class="reference external" href="../../../listings/prog/str02.py.html">prog/str02.py</a></p>
+<pre class="code python"><a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-1"></a><span class="n">Python</span> <span class="mf">3.4</span><span class="o">.</span><span class="mi">2</span> <span class="p">(</span><span class="n">default</span><span class="p">,</span> <span class="n">Oct</span>  <span class="mi">8</span> <span class="mi">2014</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span><span class="mi">14</span><span class="p">:</span><span class="mi">40</span><span class="p">)</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-2"></a><span class="p">[</span><span class="n">GCC</span> <span class="mf">4.9</span><span class="o">.</span><span class="mi">1</span><span class="p">]</span> <span class="n">on</span> <span class="n">linux</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-3"></a><span class="n">Type</span> <span class="s">"copyright"</span><span class="p">,</span> <span class="s">"credits"</span> <span class="ow">or</span> <span class="s">"license()"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"una frase cualquiera"</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-6"></a><span class="s">'u'</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-8"></a><span class="s">'n'</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-10"></a><span class="s">'a'</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-11"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[]</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-12"></a><span class="ne">SyntaxError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">syntax</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-13"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-14"></a><span class="s">' '</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-15"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-16"></a><span class="s">'f'</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-17"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-18"></a><span class="s">'una'</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-19"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">9</span><span class="p">]</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-20"></a><span class="s">'frase'</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-21"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="mi">4</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-22"></a><span class="s">'frase '</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-23"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-24"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-25"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-26"></a><span class="o">&gt;&gt;&gt;</span> <span class="o">================================</span> <span class="n">RESTART</span> <span class="o">================================</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-27"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="s">"una frase cualquiera"</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-28"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-29"></a><span class="s">'una'</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-30"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-31"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-32"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-33"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-34"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="mi">10</span><span class="p">:]</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-35"></a><span class="s">'cualquiera'</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-36"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-37"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-38"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-39"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-40"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-41"></a><span class="mi">20</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-42"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-43"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-44"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-45"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_eb3b2b729a34425dbb601ccfb0bddf00-46"></a><span class="o">&gt;&gt;&gt;</span>
+</pre>
+<p><a class="reference external" href="../../../listings/prog/str03.py.html">prog/str03.py</a></p>
+<pre class="code python"><a name="rest_code_e9777b21243f43a2856621be2920c389-1"></a><span class="n">a</span> <span class="o">=</span> <span class="s">"el dia esta nublado"</span>
+<a name="rest_code_e9777b21243f43a2856621be2920c389-2"></a>
+<a name="rest_code_e9777b21243f43a2856621be2920c389-3"></a><span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>
+<a name="rest_code_e9777b21243f43a2856621be2920c389-4"></a>    <span class="k">print</span><span class="p">(</span><span class="n">letra</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>
+</pre>
+<p><a class="reference external" href="../../../listings/prog/str04.py.html">prog/str04.py</a></p>
+<pre class="code python"><a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-1"></a><span class="c">##desde = int(input("número desde"))</span>
+<a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-2"></a><span class="c">##hasta = int(input("número final"))</span>
+<a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-3"></a><span class="c">##</span>
+<a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-4"></a><span class="c">##for num in range(desde, hasta+1):</span>
+<a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-5"></a><span class="c">##    print(num)</span>
+<a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-6"></a><span class="c">##</span>
+<a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-7"></a><span class="c">##</span>
+<a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-8"></a>
+<a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-9"></a><span class="n">mul</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"tabla del número: "</span><span class="p">))</span>
+<a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-10"></a>
+<a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-11"></a><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">):</span>
+<a name="rest_code_e819b1ff7fc042dfbcaf64396344ad75-12"></a>    <span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="si">%2d</span><span class="s"> * </span><span class="si">%2d</span><span class="s"> = </span><span class="si">%3d</span><span class="s">"</span> <span class="o">%</span> <span class="p">(</span><span class="n">num</span><span class="p">,</span> <span class="n">mul</span><span class="p">,</span> <span class="n">num</span> <span class="o">*</span> <span class="n">mul</span><span class="p">))</span>
+</pre>
+<p><a class="reference external" href="../../../listings/prog/prueba.py.html">prog/prueba.py</a></p>
+<pre class="code python"><a name="rest_code_5d0032487f92425bb18edeca1d05224d-1"></a><span class="c">#!/usr/bin/env python3</span>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-2"></a>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-3"></a><span class="c"># función que calcula el promedio</span>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-4"></a><span class="c"># de dos números</span>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-5"></a><span class="k">def</span> <span class="nf">promedio</span><span class="p">(</span><span class="n">numero1</span><span class="p">,</span> <span class="n">numero2</span><span class="p">):</span>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-6"></a>    <span class="n">prom</span> <span class="o">=</span> <span class="p">(</span><span class="n">numero1</span> <span class="o">+</span> <span class="n">numero2</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-7"></a>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-8"></a>    <span class="k">return</span> <span class="n">prom</span>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-9"></a>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-10"></a><span class="k">print</span><span class="p">(</span><span class="n">promedio</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-11"></a>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-12"></a><span class="n">p</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"ingrese un num: "</span> <span class="p">))</span>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-13"></a><span class="n">q</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"ingrese otro num: "</span> <span class="p">))</span>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-14"></a>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-15"></a><span class="n">t</span> <span class="o">=</span> <span class="n">promedio</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-16"></a>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-17"></a><span class="k">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-18"></a>
+<a name="rest_code_5d0032487f92425bb18edeca1d05224d-19"></a><span class="k">print</span><span class="p">(</span><span class="n">promedio</span><span class="p">(</span><span class="n">promedio</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">promedio</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">)))</span>
+</pre>
+</div>
     </div>
     
 

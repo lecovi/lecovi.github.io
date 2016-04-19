@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Introducción al Curso | Make it So!</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/ifts/dlo/introduccion-dlo/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -195,7 +194,7 @@ bibliografía del curso.</p>
 <h3><a class="toc-backref" href=".#id6">Prompt</a></h3>
 <p>Cuando abrimos nuestra terminal, nos muestra el <em>prompt</em>. Éste es el indicador
 de que la terminal está esperando que le demos comandos para ejecutar.</p>
-<pre class="code console"><a name="rest_code_f5934047d7694d889c7e058cce020cf8-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
+<pre class="code console"><a name="rest_code_853353629bb54409baafc30de84e4e94-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
 </pre>
 <p>En nuestro caso, identificamos 5 secciones en el <em>prompt</em>.</p>
 <ol class="arabic simple">
@@ -215,9 +214,9 @@ de que la terminal está esperando que le demos comandos para ejecutar.</p>
 <div class="section" id="print-working-directory">
 <h3><a class="toc-backref" href=".#id7">Print Working Directory</a></h3>
 <p>Este comando nos imprime en pantalla en qué <em>carpeta</em> estamos parados. Simplemente ejecutando <tt class="docutils literal">pwd</tt>.</p>
-<pre class="code console"><a name="rest_code_622cdc031af545d2b8fd0bacd606a38f-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ pwd</span>
-<a name="rest_code_622cdc031af545d2b8fd0bacd606a38f-2"></a><span class="go">/home/alumno</span>
-<a name="rest_code_622cdc031af545d2b8fd0bacd606a38f-3"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
+<pre class="code console"><a name="rest_code_ce15322d58d54552a454fcb8f1f6111e-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ pwd</span>
+<a name="rest_code_ce15322d58d54552a454fcb8f1f6111e-2"></a><span class="go">/home/alumno</span>
+<a name="rest_code_ce15322d58d54552a454fcb8f1f6111e-3"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
 </pre>
 <p>Como estamos parados en el <em>home de alumno</em> nos dice <tt class="docutils literal">/home/alumno</tt>. En esta
 ruta (también llamado comunmente <em>path</em>) lo primero que identificamos es que el
@@ -259,10 +258,10 @@ se simboliza con barra <strong>/</strong>. Entonces, en la ruta</p>
 <h3><a class="toc-backref" href=".#id8">List</a></h3>
 <p>Si queremos ver cuál es el contenido del directorio, ejecutamos el comando
 <tt class="docutils literal">ls</tt>.</p>
-<pre class="code console"><a name="rest_code_f30667eaac2a4a3da5180c1818c4db02-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ ls</span>
-<a name="rest_code_f30667eaac2a4a3da5180c1818c4db02-2"></a><span class="go">Descargas  Documentos  Escritorio  Imágenes  Música  Plantillas  Público</span>
-<a name="rest_code_f30667eaac2a4a3da5180c1818c4db02-3"></a><span class="go">Vídeos</span>
-<a name="rest_code_f30667eaac2a4a3da5180c1818c4db02-4"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
+<pre class="code console"><a name="rest_code_5b36bdf207414ce286df626fc007688a-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ ls</span>
+<a name="rest_code_5b36bdf207414ce286df626fc007688a-2"></a><span class="go">Descargas  Documentos  Escritorio  Imágenes  Música  Plantillas  Público</span>
+<a name="rest_code_5b36bdf207414ce286df626fc007688a-3"></a><span class="go">Vídeos</span>
+<a name="rest_code_5b36bdf207414ce286df626fc007688a-4"></a><span class="go">alumno@vm-lmde-mate-32b ~ $</span>
 </pre>
 <p>El comando <tt class="docutils literal">ls</tt> acepta varios modificadores para obtener mayor información
 sobre los elementos que encontramos en el directorio.</p>
@@ -273,8 +272,8 @@ sobre los elementos que encontramos en el directorio.</p>
 debemos escribir <tt class="docutils literal">cd</tt> seguido del nombre del directorio al cual nos queremos
 mover. Por ejemplo, dentro de nuestro <em>home</em> tenemos un directorio llamado
 <tt class="docutils literal">Documentos</tt>, si queremos movernos dentro ejecutamos:</p>
-<pre class="code console"><a name="rest_code_bc0ef4947fd941c1893894a5d23d8e0f-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ cd Documentos/</span>
-<a name="rest_code_bc0ef4947fd941c1893894a5d23d8e0f-2"></a><span class="go">alumno@vm-lmde-mate-32b ~/Documentos $</span>
+<pre class="code console"><a name="rest_code_44481d85dc474221943fd2f5a4baa370-1"></a><span class="go">alumno@vm-lmde-mate-32b ~ $ cd Documentos/</span>
+<a name="rest_code_44481d85dc474221943fd2f5a4baa370-2"></a><span class="go">alumno@vm-lmde-mate-32b ~/Documentos $</span>
 </pre>
 <p>Notemos ahora cómo cambió el <em>prompt</em>, en la sección donde nos muestra el
 directorio de trabajo ahora dice <tt class="docutils literal">~/Documentos</tt>, indicándonos que estamos
