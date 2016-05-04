@@ -3,9 +3,9 @@
 # Crear una lista de veinte elementos aleatorios entre 1 y 10
 # Mostrar:
 #   La lista ordenada
-#   El número mayor
-#   El número menor
-#   Cuántas veces aparece en la lista el número mayor
+#   El numero mayor
+#   El numero menor
+#   Cuantas veces aparece en la lista el numero mayor
 
 import random
 
@@ -38,7 +38,7 @@ def ordenamos(lista):
 
 CANT = 20
 
-print("Genero una lista de {} números".format(CANT))
+print("Genero una lista de {} numeros".format(CANT))
 lista = lista_aleatoria(CANT)
 print(lista)
 print("La muestro ordenada...")
@@ -47,9 +47,8 @@ lista.sort()
 # La mostramos
 print(lista)
 maximo = busco_max(lista)
-print("El máximo de la lista es: {}".format(maximo))
+print("El maximo de la lista es: {}".format(maximo))
 repeticiones_maximo = lista.count(maximo)
-print("El máximo aparece en la lista {} veces".format(repeticiones_maximo))
+print("El maximo aparece en la lista {} veces".format(repeticiones_maximo))
 minimo = busco_min(lista)
-print("El mínimo de la lista es: {}".format(minimo))
-
+print("El minimo de la lista es: {}".format(minimo))
