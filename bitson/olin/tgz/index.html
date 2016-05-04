@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Empaquetado y compresión de paquetes | Make it So!</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/bitson/olin/tgz/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -179,34 +180,34 @@ Por lo general, los archivos resultantes del empaquetado
 los llamaremos con una extensión <tt class="docutils literal">.tar</tt>.</p>
 <div class="section" id="tar">
 <h3><a class="toc-backref" href=".#id2">TAR</a></h3>
-<pre class="code bash"><a name="rest_code_3b59a994f3564cb88e72a9a5e6d19ccd-1"></a><span class="nv">$ </span>tar <span class="o">[</span>opciones<span class="o">]</span> &lt;nombre_del_paquete&gt;.tar &lt;fuentes&gt;
+<pre class="code bash"><a name="rest_code_e2e2f748255d4929a6bda13f7b55439c-1"></a><span class="nv">$ </span>tar <span class="o">[</span>opciones<span class="o">]</span> &lt;nombre_del_paquete&gt;.tar &lt;fuentes&gt;
 </pre>
 <div class="section" id="ejemplo">
 <h4><a class="toc-backref" href=".#id3">Ejemplo</a></h4>
 <p>Creemos la carpeta empaquetados dentro del HOME de nuestro usuario</p>
-<pre class="code bash"><a name="rest_code_3b0c946c76a2495b99272f664029b4e8-1"></a>~ <span class="nv">$ </span>mkdir empaquetados
+<pre class="code bash"><a name="rest_code_888526d76b8a4c6797c80957ead18476-1"></a>~ <span class="nv">$ </span>mkdir empaquetados
 </pre>
 <p>Entremos en este nuevo directorio:</p>
-<pre class="code bash"><a name="rest_code_2f97dffc8325431bad5cb5583facb49c-1"></a>~ <span class="nv">$ </span><span class="nb">cd </span>empaquetados
+<pre class="code bash"><a name="rest_code_352f2c3e2ec74cf599e742a264aff53d-1"></a>~ <span class="nv">$ </span><span class="nb">cd </span>empaquetados
 </pre>
 <p>Copiemos el contenido de la carpeta /etc dentro de este nuevo directorio:</p>
-<pre class="code bash"><a name="rest_code_5e929b85f4e24aaab2b6c72a0dfd432b-1"></a>~/empaquetados <span class="nv">$ </span>cp -r /etc .
+<pre class="code bash"><a name="rest_code_133dab9148874d229e27e62940b5509f-1"></a>~/empaquetados <span class="nv">$ </span>cp -r /etc .
 </pre>
 <p>Entremos en el nuevo directorio etc:</p>
-<pre class="code bash"><a name="rest_code_f897ed5b6dbe40d8a5fa9f05d9b91fd4-1"></a>~/empaquetados <span class="nv">$ </span><span class="nb">cd </span>etc
+<pre class="code bash"><a name="rest_code_6457b9a1c48146d3a9e11e83c32e77ff-1"></a>~/empaquetados <span class="nv">$ </span><span class="nb">cd </span>etc
 </pre>
 <p>Empaquetemos algunos de los archivos y direcotorios que tenemos dentro:</p>
-<pre class="code bash"><a name="rest_code_550ae9a3b2b044178ad28f064d861daa-1"></a>~/empaquetados/etc <span class="nv">$ </span>tar cf paquete.tar acpi/ alternatives/ hostname hosts PackageKit/ perl/ bluetooth/ python*
+<pre class="code bash"><a name="rest_code_ea589e020b4246b09e1b130da1abe089-1"></a>~/empaquetados/etc <span class="nv">$ </span>tar cf paquete.tar acpi/ alternatives/ hostname hosts PackageKit/ perl/ bluetooth/ python*
 </pre>
 <p>Ahora si listamos el contenido de este direcotorio, vamos a encontrar nuestro nuevo archivo <tt class="docutils literal">paquete.tar</tt>
 Movemos el paquete al directorio padre:</p>
-<pre class="code bash"><a name="rest_code_6e86bf83ac38492fa7170b0d51e10431-1"></a>~/empaquetados/etc <span class="nv">$ </span>mv paquete.tar ..
+<pre class="code bash"><a name="rest_code_749c2de8241948759b5606d8500902af-1"></a>~/empaquetados/etc <span class="nv">$ </span>mv paquete.tar ..
 </pre>
 <p>Y saltamos al directorio padre:</p>
-<pre class="code bash"><a name="rest_code_ba59767c3c5643378a66595277a3edc4-1"></a>~/empaquetados/etc <span class="nv">$ </span><span class="nb">cd</span> ..
+<pre class="code bash"><a name="rest_code_45f9520a9c3741c9b70793386b88baa8-1"></a>~/empaquetados/etc <span class="nv">$ </span><span class="nb">cd</span> ..
 </pre>
 <p>Para desempaquetar (extraer):</p>
-<pre class="code bash"><a name="rest_code_063ea56bc12b45419b3795becaf1ea7c-1"></a>~/empaquetados <span class="nv">$ </span>tar xf paquete.tar
+<pre class="code bash"><a name="rest_code_736f49e71753461cac0841e301fa44c8-1"></a>~/empaquetados <span class="nv">$ </span>tar xf paquete.tar
 </pre>
 </div>
 </div>
@@ -223,22 +224,22 @@ Para comprimir y descomprimir podemos usar los comandos <tt class="docutils lite
 <div class="section" id="gzip">
 <h3><a class="toc-backref" href=".#id5">GZIP</a></h3>
 <p>Para comprimir:</p>
-<pre class="code bash"><a name="rest_code_b9aa1340d8924028abe590ea8099eb78-1"></a><span class="nv">$ </span>gzip &lt;archivo_a_comprimir&gt;
+<pre class="code bash"><a name="rest_code_6005e507fc2244b7b55d45ddfc120bcc-1"></a><span class="nv">$ </span>gzip &lt;archivo_a_comprimir&gt;
 </pre>
 <p>Después de comprimir el archivo se sobreescribe comprimido y con la extensión <tt class="docutils literal">.gz</tt> agregada.</p>
 <p>Para descomprimir:</p>
-<pre class="code bash"><a name="rest_code_ce3afc1485504e27b5db67548918fd70-1"></a><span class="nv">$ </span>gunzip &lt;archivo_a_comprimir&gt;
+<pre class="code bash"><a name="rest_code_6ec8b4a2b8ef41fa9299bf83054367db-1"></a><span class="nv">$ </span>gunzip &lt;archivo_a_comprimir&gt;
 </pre>
 <p>Después de descomprimir el archivo se sobreescribe descomprimido y con la extensión <tt class="docutils literal">.gz</tt> quitada.</p>
 </div>
 <div class="section" id="bzip2">
 <h3><a class="toc-backref" href=".#id6">BZIP2</a></h3>
 <p>Para comprimir:</p>
-<pre class="code bash"><a name="rest_code_b1ffff0a6c5945819256c545ce0634af-1"></a><span class="nv">$ </span>bzip2 &lt;archivo_a_comprimir&gt;
+<pre class="code bash"><a name="rest_code_bf83577dc2714e6c9a0632aee0703f18-1"></a><span class="nv">$ </span>bzip2 &lt;archivo_a_comprimir&gt;
 </pre>
 <p>Después de comprimir el archivo se sobreescribe comprimido y con la extensión <tt class="docutils literal">.bz2</tt> agregada.</p>
 <p>Para descomprimir:</p>
-<pre class="code bash"><a name="rest_code_f02da99df4354330a232294f1193e74e-1"></a><span class="nv">$ </span>bunzip2 &lt;archivo_a_comprimir&gt;
+<pre class="code bash"><a name="rest_code_c4dc2cacb1f74ba9b304ea2563775175-1"></a><span class="nv">$ </span>bunzip2 &lt;archivo_a_comprimir&gt;
 </pre>
 <p>Después de descomprimir el archivo se sobreescribe descomprimido y con la extensión <tt class="docutils literal">.bz2</tt> quitada.</p>
 <div class="section" id="comparacion-entre-gzip-y-bzip2">
@@ -261,16 +262,16 @@ paquete.tar.bz2 = 17K</blockquote>
 <div class="section" id="empaquetado-y-compresion">
 <h2><a class="toc-backref" href=".#id8">Empaquetado y compresión</a></h2>
 <p>Para empaquetar y comprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">gzip</tt>:</p>
-<pre class="code bash"><a name="rest_code_a020b85c34204fcbb3f4da3fb5c9ce7d-1"></a>~ <span class="nv">$ </span>tar cfz paquete.tgz &lt;fuentes&gt;
+<pre class="code bash"><a name="rest_code_2e8b8c6a6b944857be0b936b56f682ad-1"></a>~ <span class="nv">$ </span>tar cfz paquete.tgz &lt;fuentes&gt;
 </pre>
 <p>Para empaquetar y descomprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">gzip</tt>:</p>
-<pre class="code bash"><a name="rest_code_d149657406224ebebd172bfc4fa9d658-1"></a>~ <span class="nv">$ </span>tar xfz paquete.tgz
+<pre class="code bash"><a name="rest_code_c75f2877e76b4e22940dfbd0a74fa431-1"></a>~ <span class="nv">$ </span>tar xfz paquete.tgz
 </pre>
 <p>Para empaquetar y comprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">bzip2</tt>:</p>
-<pre class="code bash"><a name="rest_code_1093d3aab5664235afa214af6345bf97-1"></a>~ <span class="nv">$ </span>tar cfj paquete.tbz2 &lt;fuentes&gt;
+<pre class="code bash"><a name="rest_code_d98a88f731aa4998b372d5406a7632f9-1"></a>~ <span class="nv">$ </span>tar cfj paquete.tbz2 &lt;fuentes&gt;
 </pre>
 <p>Para empaquetar y descomprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">bzip2</tt>:</p>
-<pre class="code bash"><a name="rest_code_453bd55ae3d14bdd8a71a34c188b8d64-1"></a>~ <span class="nv">$ </span>tar xfj paquete.tbz2
+<pre class="code bash"><a name="rest_code_66c0afc8da7544e4a8d33ef9b2009608-1"></a>~ <span class="nv">$ </span>tar xfj paquete.tbz2
 </pre>
 </div>
 <hr class="docutils">
@@ -288,9 +289,9 @@ paquete.tar.bz2 = 17K</blockquote>
 <dt><tt class="docutils literal">cat</tt></dt>
 <dd>este comando concatena archivos y los imprime en la salida.</dd>
 </dl>
-<pre class="code bash"><a name="rest_code_efa28a2771db4a4e99561987768353ba-1"></a>~ <span class="nv">$ </span>cat &lt;archivo1&gt; &lt;archivo2&gt; ... &lt;archivoX&gt;
-<a name="rest_code_efa28a2771db4a4e99561987768353ba-2"></a>
-<a name="rest_code_efa28a2771db4a4e99561987768353ba-3"></a><span class="nv">ABORTAR</span> <span class="o">=</span> Ctrl+C <span class="o">(</span>^C<span class="o">)</span> ---&gt; Va a terminar el proceso que se esté ejecutando.
+<pre class="code bash"><a name="rest_code_d36f9ce6043e44d78a58be288443d183-1"></a>~ <span class="nv">$ </span>cat &lt;archivo1&gt; &lt;archivo2&gt; ... &lt;archivoX&gt;
+<a name="rest_code_d36f9ce6043e44d78a58be288443d183-2"></a>
+<a name="rest_code_d36f9ce6043e44d78a58be288443d183-3"></a><span class="nv">ABORTAR</span> <span class="o">=</span> Ctrl+C <span class="o">(</span>^C<span class="o">)</span> ---&gt; Va a terminar el proceso que se esté ejecutando.
 </pre>
 <dl class="docutils">
 <dt><tt class="docutils literal">more</tt></dt>
@@ -304,12 +305,12 @@ paquete.tar.bz2 = 17K</blockquote>
 <dt><tt class="docutils literal">wc</tt></dt>
 <dd>(Word Count, conteo de palabras).</dd>
 </dl>
-<pre class="code bash"><a name="rest_code_cbb5a40daf734a2e8a520c02deca010c-1"></a>~ <span class="nv">$ </span>wc archivo1.txt
-<a name="rest_code_cbb5a40daf734a2e8a520c02deca010c-2"></a>      <span class="m">105</span>  <span class="m">636</span> <span class="m">4264</span> archivo1.txt
-<a name="rest_code_cbb5a40daf734a2e8a520c02deca010c-3"></a>      <span class="p">|</span>    <span class="p">|</span>    <span class="p">|</span>
-<a name="rest_code_cbb5a40daf734a2e8a520c02deca010c-4"></a>      <span class="p">|</span>    <span class="p">|</span>    +--&gt; Cantidad de Caracteres
-<a name="rest_code_cbb5a40daf734a2e8a520c02deca010c-5"></a>      <span class="p">|</span>    +-------&gt; Cantidad de Palabras
-<a name="rest_code_cbb5a40daf734a2e8a520c02deca010c-6"></a>      +------------&gt; Cantidad de Líneas
+<pre class="code bash"><a name="rest_code_17a730519b65490abca6409453088610-1"></a>~ <span class="nv">$ </span>wc archivo1.txt
+<a name="rest_code_17a730519b65490abca6409453088610-2"></a>      <span class="m">105</span>  <span class="m">636</span> <span class="m">4264</span> archivo1.txt
+<a name="rest_code_17a730519b65490abca6409453088610-3"></a>      <span class="p">|</span>    <span class="p">|</span>    <span class="p">|</span>
+<a name="rest_code_17a730519b65490abca6409453088610-4"></a>      <span class="p">|</span>    <span class="p">|</span>    +--&gt; Cantidad de Caracteres
+<a name="rest_code_17a730519b65490abca6409453088610-5"></a>      <span class="p">|</span>    +-------&gt; Cantidad de Palabras
+<a name="rest_code_17a730519b65490abca6409453088610-6"></a>      +------------&gt; Cantidad de Líneas
 </pre>
 <dl class="docutils">
 <dt><tt class="docutils literal">diff</tt></dt>

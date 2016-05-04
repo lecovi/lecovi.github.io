@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ver mensajes en el booteo | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -152,21 +153,21 @@ esos mensajes. Comencemos...</p>
 <!-- TEASER_END -->
 <div class="section" id="edicion-de-los-parametros-de-inicio">
 <h2>Edición de los parámetros de inicio</h2>
-<pre class="code console"><a name="rest_code_42c1733c771a4b95a3691ce152a49674-1"></a><span class="gp">$</span> sudo vim /etc/default/grub
+<pre class="code console"><a name="rest_code_e8a1442a3b2449f48e319b0eccf7c5e9-1"></a><span class="gp">$</span> sudo vim /etc/default/grub
 </pre>
 <p>Hay que editar el archivo <tt class="docutils literal">/etc/default/grub</tt> en este archivo vamos a
 encontrar una línea que dice:</p>
-<pre class="code console"><a name="rest_code_32bbba1ea7dc4ebf960c97ac7b975d18-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</span>
+<pre class="code console"><a name="rest_code_4cd6a2498de249368989a8c72f189789-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</span>
 </pre>
 <p>Tenemos que remover la opción de <tt class="docutils literal">"quiet splas"</tt> para que la línea en
 cuestión quede como:</p>
-<pre class="code console"><a name="rest_code_9a15cf1e05984d9db28c6c895a2437aa-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT=""</span>
+<pre class="code console"><a name="rest_code_2a30a032a3b24179ae3542cbf54c6c94-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT=""</span>
 </pre>
 </div>
 <div class="section" id="actualizando-grub">
 <h2>Actualizando GRUB</h2>
 <p>Finalmente actualizamos las opciones de GRUB con el comando:</p>
-<pre class="code console"><a name="rest_code_d0fdeac165324ae7a02d5f6f48005448-1"></a><span class="gp">$</span> sudo update-grub
+<pre class="code console"><a name="rest_code_e299937e7c5d408fb4d1ab8ed3376e29-1"></a><span class="gp">$</span> sudo update-grub
 </pre>
 <p>Listo! En el próximo inicio veremos como se va cargando el sistema.</p>
 </div>
