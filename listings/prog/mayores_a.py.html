@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="http://lecovi.github.io/listings/prog/mayores_a.py.html">
+<meta name="description" content="mayores_a.py">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mayores_a.py | Make it So!</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta content="#5670d4" name="theme-color">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/listings/prog/mayores_a.py.html">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../blog/"><i class="fa fa-pencil"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../cfp/prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts"><i class=" fa-graduation-cap"></i> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../ifts/arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../../ifts/dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../../ifts/edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li>
+<a href="../../ifts/par/">  <i class="fa fa-code"></i> Paradigmas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts/ana/">  <i class="fa fa-trello"></i> Análisis de Sistemas</a>
+                    </li>
+<li>
+<a href="../../bitson"><i class="fa fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../bitson/prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+                    </li>
+<li>
+<a href="../../bitson/olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../bitson/reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../resources/"><i class="fa fa-wrench"></i> Recursos</a>
+                </li>
+<li>
+<a href="../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="mayores_a.py" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+
+<nav class="breadcrumbs"><ul class="breadcrumb">
+<li><a href="../">listings</a></li>
+                <li><a href=".">prog</a></li>
+                <li>mayores_a.py</li>
+</ul></nav><table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="#listingsprogmayores_apy-1"> 1</a>
+<a href="#listingsprogmayores_apy-2"> 2</a>
+<a href="#listingsprogmayores_apy-3"> 3</a>
+<a href="#listingsprogmayores_apy-4"> 4</a>
+<a href="#listingsprogmayores_apy-5"> 5</a>
+<a href="#listingsprogmayores_apy-6"> 6</a>
+<a href="#listingsprogmayores_apy-7"> 7</a>
+<a href="#listingsprogmayores_apy-8"> 8</a>
+<a href="#listingsprogmayores_apy-9"> 9</a>
+<a href="#listingsprogmayores_apy-10">10</a>
+<a href="#listingsprogmayores_apy-11">11</a>
+<a href="#listingsprogmayores_apy-12">12</a>
+<a href="#listingsprogmayores_apy-13">13</a>
+<a href="#listingsprogmayores_apy-14">14</a>
+<a href="#listingsprogmayores_apy-15">15</a>
+<a href="#listingsprogmayores_apy-16">16</a>
+<a href="#listingsprogmayores_apy-17">17</a>
+<a href="#listingsprogmayores_apy-18">18</a>
+<a href="#listingsprogmayores_apy-19">19</a>
+<a href="#listingsprogmayores_apy-20">20</a>
+<a href="#listingsprogmayores_apy-21">21</a>
+<a href="#listingsprogmayores_apy-22">22</a>
+<a href="#listingsprogmayores_apy-23">23</a>
+<a href="#listingsprogmayores_apy-24">24</a>
+<a href="#listingsprogmayores_apy-25">25</a>
+<a href="#listingsprogmayores_apy-26">26</a>
+<a href="#listingsprogmayores_apy-27">27</a>
+<a href="#listingsprogmayores_apy-28">28</a>
+<a href="#listingsprogmayores_apy-29">29</a>
+<a href="#listingsprogmayores_apy-30">30</a>
+<a href="#listingsprogmayores_apy-31">31</a>
+<a href="#listingsprogmayores_apy-32">32</a>
+<a href="#listingsprogmayores_apy-33">33</a>
+<a href="#listingsprogmayores_apy-34">34</a>
+<a href="#listingsprogmayores_apy-35">35</a>
+<a href="#listingsprogmayores_apy-36">36</a>
+<a href="#listingsprogmayores_apy-37">37</a>
+<a href="#listingsprogmayores_apy-38">38</a>
+<a href="#listingsprogmayores_apy-39">39</a>
+<a href="#listingsprogmayores_apy-40">40</a>
+<a href="#listingsprogmayores_apy-41">41</a>
+<a href="#listingsprogmayores_apy-42">42</a>
+<a href="#listingsprogmayores_apy-43">43</a>
+<a href="#listingsprogmayores_apy-44">44</a>
+<a href="#listingsprogmayores_apy-45">45</a>
+<a href="#listingsprogmayores_apy-46">46</a>
+<a href="#listingsprogmayores_apy-47">47</a>
+<a href="#listingsprogmayores_apy-48">48</a>
+<a href="#listingsprogmayores_apy-49">49</a>
+<a href="#listingsprogmayores_apy-50">50</a>
+<a href="#listingsprogmayores_apy-51">51</a>
+<a href="#listingsprogmayores_apy-52">52</a>
+<a href="#listingsprogmayores_apy-53">53</a>
+<a href="#listingsprogmayores_apy-54">54</a>
+<a href="#listingsprogmayores_apy-55">55</a>
+<a href="#listingsprogmayores_apy-56">56</a>
+<a href="#listingsprogmayores_apy-57">57</a>
+<a href="#listingsprogmayores_apy-58">58</a>
+<a href="#listingsprogmayores_apy-59">59</a>
+<a href="#listingsprogmayores_apy-60">60</a>
+<a href="#listingsprogmayores_apy-61">61</a>
+<a href="#listingsprogmayores_apy-62">62</a>
+<a href="#listingsprogmayores_apy-63">63</a>
+<a href="#listingsprogmayores_apy-64">64</a>
+<a href="#listingsprogmayores_apy-65">65</a>
+<a href="#listingsprogmayores_apy-66">66</a>
+<a href="#listingsprogmayores_apy-67">67</a>
+<a href="#listingsprogmayores_apy-68">68</a>
+<a href="#listingsprogmayores_apy-69">69</a>
+<a href="#listingsprogmayores_apy-70">70</a>
+<a href="#listingsprogmayores_apy-71">71</a>
+<a href="#listingsprogmayores_apy-72">72</a>
+<a href="#listingsprogmayores_apy-73">73</a>
+<a href="#listingsprogmayores_apy-74">74</a>
+<a href="#listingsprogmayores_apy-75">75</a>
+<a href="#listingsprogmayores_apy-76">76</a>
+<a href="#listingsprogmayores_apy-77">77</a>
+<a href="#listingsprogmayores_apy-78">78</a>
+<a href="#listingsprogmayores_apy-79">79</a>
+<a href="#listingsprogmayores_apy-80">80</a>
+<a href="#listingsprogmayores_apy-81">81</a>
+<a href="#listingsprogmayores_apy-82">82</a>
+<a href="#listingsprogmayores_apy-83">83</a>
+<a href="#listingsprogmayores_apy-84">84</a>
+<a href="#listingsprogmayores_apy-85">85</a>
+<a href="#listingsprogmayores_apy-86">86</a>
+<a href="#listingsprogmayores_apy-87">87</a>
+<a href="#listingsprogmayores_apy-88">88</a>
+<a href="#listingsprogmayores_apy-89">89</a>
+<a href="#listingsprogmayores_apy-90">90</a>
+<a href="#listingsprogmayores_apy-91">91</a></pre></div></td>
+<td class="code"><pre class="code literal-block"><a name="listingsprogmayores_apy-1"></a><span class="c">#!/usr/bin/env python3</span>
+<a name="listingsprogmayores_apy-2"></a>
+<a name="listingsprogmayores_apy-3"></a><span class="c"># Dada una lista de numeros enteros y un numero n generar otra lista</span>
+<a name="listingsprogmayores_apy-4"></a><span class="c"># (y mostrarla) con todos los numeros de la lista que sean mayores a n.</span>
+<a name="listingsprogmayores_apy-5"></a><span class="c">#</span>
+<a name="listingsprogmayores_apy-6"></a><span class="c"># Ej.</span>
+<a name="listingsprogmayores_apy-7"></a><span class="c"># numeros = [10, 20, 30, 40, 50, 60]</span>
+<a name="listingsprogmayores_apy-8"></a><span class="c"># n = 45</span>
+<a name="listingsprogmayores_apy-9"></a><span class="c">#</span>
+<a name="listingsprogmayores_apy-10"></a><span class="c"># ---&gt; nueva = [50, 60]</span>
+<a name="listingsprogmayores_apy-11"></a>
+<a name="listingsprogmayores_apy-12"></a><span class="k">def</span> <span class="nf">mayores_a</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<a name="listingsprogmayores_apy-13"></a>    <span class="n">nueva_lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>  <span class="c"># nueva_lista = []</span>
+<a name="listingsprogmayores_apy-14"></a>    <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+<a name="listingsprogmayores_apy-15"></a>        <span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
+<a name="listingsprogmayores_apy-16"></a>            <span class="c"># agrego numero a la lista.</span>
+<a name="listingsprogmayores_apy-17"></a>            <span class="n">nueva_lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<a name="listingsprogmayores_apy-18"></a>
+<a name="listingsprogmayores_apy-19"></a>    <span class="k">return</span> <span class="n">nueva_lista</span>
+<a name="listingsprogmayores_apy-20"></a>
+<a name="listingsprogmayores_apy-21"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="listingsprogmayores_apy-22"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="listingsprogmayores_apy-23"></a>
+<a name="listingsprogmayores_apy-24"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="listingsprogmayores_apy-25"></a>
+<a name="listingsprogmayores_apy-26"></a>
+<a name="listingsprogmayores_apy-27"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="listingsprogmayores_apy-28"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="listingsprogmayores_apy-29"></a>
+<a name="listingsprogmayores_apy-30"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="listingsprogmayores_apy-31"></a>
+<a name="listingsprogmayores_apy-32"></a>
+<a name="listingsprogmayores_apy-33"></a><span class="c"># Si la lista es ordenada...</span>
+<a name="listingsprogmayores_apy-34"></a>
+<a name="listingsprogmayores_apy-35"></a><span class="k">def</span> <span class="nf">mayores_a2</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<a name="listingsprogmayores_apy-36"></a>    <span class="n">nueva_lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>  <span class="c"># nueva_lista = []</span>
+<a name="listingsprogmayores_apy-37"></a>    <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+<a name="listingsprogmayores_apy-38"></a>        <span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
+<a name="listingsprogmayores_apy-39"></a>            <span class="n">indice</span> <span class="o">=</span> <span class="n">lista</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<a name="listingsprogmayores_apy-40"></a>            <span class="k">break</span>
+<a name="listingsprogmayores_apy-41"></a>    <span class="k">return</span> <span class="n">lista</span><span class="p">[</span><span class="n">indice</span><span class="p">:]</span>
+<a name="listingsprogmayores_apy-42"></a>
+<a name="listingsprogmayores_apy-43"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="listingsprogmayores_apy-44"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="listingsprogmayores_apy-45"></a>
+<a name="listingsprogmayores_apy-46"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a2</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="listingsprogmayores_apy-47"></a>
+<a name="listingsprogmayores_apy-48"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="listingsprogmayores_apy-49"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="listingsprogmayores_apy-50"></a>
+<a name="listingsprogmayores_apy-51"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a2</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="listingsprogmayores_apy-52"></a>
+<a name="listingsprogmayores_apy-53"></a>
+<a name="listingsprogmayores_apy-54"></a><span class="k">def</span> <span class="nf">mayores_a3</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">ordenada</span><span class="p">):</span>
+<a name="listingsprogmayores_apy-55"></a>    <span class="k">if</span> <span class="n">ordenada</span><span class="p">:</span>
+<a name="listingsprogmayores_apy-56"></a>        <span class="k">return</span> <span class="n">mayores_a2</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<a name="listingsprogmayores_apy-57"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="listingsprogmayores_apy-58"></a>        <span class="k">return</span> <span class="n">mayores_a</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<a name="listingsprogmayores_apy-59"></a>
+<a name="listingsprogmayores_apy-60"></a>
+<a name="listingsprogmayores_apy-61"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="listingsprogmayores_apy-62"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="listingsprogmayores_apy-63"></a>
+<a name="listingsprogmayores_apy-64"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a3</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="bp">True</span><span class="p">))</span>
+<a name="listingsprogmayores_apy-65"></a>
+<a name="listingsprogmayores_apy-66"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="listingsprogmayores_apy-67"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="listingsprogmayores_apy-68"></a>
+<a name="listingsprogmayores_apy-69"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a3</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="bp">False</span><span class="p">))</span>
+<a name="listingsprogmayores_apy-70"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a3</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="bp">True</span><span class="p">))</span>
+<a name="listingsprogmayores_apy-71"></a>
+<a name="listingsprogmayores_apy-72"></a><span class="k">def</span> <span class="nf">mayores_a4</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">ordenada</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+<a name="listingsprogmayores_apy-73"></a>    <span class="k">if</span> <span class="n">ordenada</span><span class="p">:</span>
+<a name="listingsprogmayores_apy-74"></a>        <span class="k">return</span> <span class="n">mayores_a2</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<a name="listingsprogmayores_apy-75"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="listingsprogmayores_apy-76"></a>        <span class="k">return</span> <span class="n">mayores_a</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<a name="listingsprogmayores_apy-77"></a>
+<a name="listingsprogmayores_apy-78"></a>
+<a name="listingsprogmayores_apy-79"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="listingsprogmayores_apy-80"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="listingsprogmayores_apy-81"></a>
+<a name="listingsprogmayores_apy-82"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="listingsprogmayores_apy-83"></a>
+<a name="listingsprogmayores_apy-84"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="listingsprogmayores_apy-85"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="listingsprogmayores_apy-86"></a>
+<a name="listingsprogmayores_apy-87"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="bp">False</span><span class="p">))</span>
+<a name="listingsprogmayores_apy-88"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="listingsprogmayores_apy-89"></a>
+<a name="listingsprogmayores_apy-90"></a>
+<a name="listingsprogmayores_apy-91"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">ordenada</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">lista</span><span class="o">=</span><span class="n">numeros</span><span class="p">))</span>
+</pre></td>
+</tr></table>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2016         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

@@ -18,12 +18,12 @@ Ejemplos
 
 Veamos algunos ejemplos:
 
-.. listing:: prog/str01.py python
+.. listing:: prog/str01.py python3
 
-.. listing:: prog/str02.py python
+.. listing:: prog/str02.py python3
 
-.. listing:: prog/str03.py python
+.. listing:: prog/str03.py python3
 
-.. listing:: prog/str04.py python
+.. listing:: prog/str04.py python3
 
-.. listing:: prog/prueba.py python
+.. listing:: prog/prueba.py python3
