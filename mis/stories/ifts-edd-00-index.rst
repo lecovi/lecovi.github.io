@@ -125,3 +125,48 @@ contenidos según la relación existente entre los mismos.
 Descargate la planificación_.
 
 .. _planificación: /edd/planificacion.pdf
+
+.. class:: col-md-12
+
+Metodología de Trabajo en Clase
+-------------------------------
+
+Actividades a desarrollar
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Cada uno de los temas se introducen mediante una clase expositiva que se
+complementa con la ejercitación correspondiente para la fijación de los
+conceptos explicados.
+
+Guías de trabajos prácticos confeccionadas por el docente sobre temas vistos en
+clase. Se reserva unos minutos de cada clase para consultas sobre los ejercicios
+pendientes.
+
+Comunicaciones Internas
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Para establecer una comunicación fluida entre alumnos y docentes, existe una
+lista de correo de uso exclusivo para la asignatura. Los alumnos deberán
+suscribirse en la misma y deberán permanecer suscriptos mientras dure la
+cursada. Los alumnos deberán obtener una cuenta de correo electrónico, e
+informarla al docente al comenzar el ciclo lectivo.
+
+Todas las consultas, o dudas, se llevan a cabo a través de la lista. Las fechas
+de parcial, entrega de notas, y cualquier otra inquietud, se hará a través de la
+lista. La lista generada en esta materia puede ser utilizada en otra asignatura
+siempre y cuando la utilización sea para fines académicos. Utilizando la lista
+los alumnos pueden hacer consultas entre sí, y a los docentes. Las cuales serán
+respondidas a la brevedad.
+
+Evaluación y Regularidad
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+La evaluación se realizará en forma continua con la observación del desempeño de
+cada alumno. Considerando:
+
+- Cumplimiento en tiempo y forma con la entrega de los trabajos prácticos y un mínimo del 80% de asistencia.
+- Primer Parcial: Examen escrito que evaluará conceptos con la realización de ejercicios prácticos y temas teóricos.
+- Segundo Parcial : Examen escrito que evaluará conceptos con la realización de ejercicios prácticos y temas teóricos.
+- Cada parcial tiene una única posibilidad de recuperación.
+- Regularidad en la Asignatura: Serán regulares, quienes hayan aprobado los parciales, entregado los trabajos prácticos y cumplido con el porcentaje de asistencia, podrán firmar la regularidad en la materia que los habilita a rendir el final.
+- Examen Final: Es oral y escrito. Se evaluará la integración de conocimientos mediante ejercicios y  preguntas conceptuales.
