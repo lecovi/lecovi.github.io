@@ -119,3 +119,11 @@ Explicación del juego:
 .. listing:: prog/palindroma_v1.py python3
 
 .. listing:: prog/palindroma_v2.py python3
+
+.. listing:: prog/filter.py python3
+
+.. listing:: prog/map.py python3
+
+.. listing:: prog/lambdas.py python3
+
+.. listing:: prog/reduce.py python3
