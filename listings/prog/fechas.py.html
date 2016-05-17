@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="http://lecovi.github.io/listings/prog/fechas.py.html">
+<meta name="description" content="fechas.py">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>fechas.py | Make it So!</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/listings/prog/fechas.py.html">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../blog/"><i class="fa fa-pencil"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../cfp/prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts"><i class=" fa-graduation-cap"></i> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../ifts/arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../../ifts/dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../../ifts/edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li>
+<a href="../../ifts/par/">  <i class="fa fa-code"></i> Paradigmas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts/ana/">  <i class="fa fa-trello"></i> Análisis de Sistemas</a>
+                    </li>
+<li>
+<a href="../../bitson"><i class="fa fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../bitson/prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+                    </li>
+<li>
+<a href="../../bitson/olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../bitson/reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../resources/"><i class="fa fa-wrench"></i> Recursos</a>
+                </li>
+<li>
+<a href="../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="fechas.py" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+
+<nav class="breadcrumbs"><ul class="breadcrumb">
+<li><a href="../">listings</a></li>
+                <li><a href=".">prog</a></li>
+                <li>fechas.py</li>
+</ul></nav><table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="#listingsprogfechaspy-1"> 1</a>
+<a href="#listingsprogfechaspy-2"> 2</a>
+<a href="#listingsprogfechaspy-3"> 3</a>
+<a href="#listingsprogfechaspy-4"> 4</a>
+<a href="#listingsprogfechaspy-5"> 5</a>
+<a href="#listingsprogfechaspy-6"> 6</a>
+<a href="#listingsprogfechaspy-7"> 7</a>
+<a href="#listingsprogfechaspy-8"> 8</a>
+<a href="#listingsprogfechaspy-9"> 9</a>
+<a href="#listingsprogfechaspy-10">10</a>
+<a href="#listingsprogfechaspy-11">11</a>
+<a href="#listingsprogfechaspy-12">12</a>
+<a href="#listingsprogfechaspy-13">13</a>
+<a href="#listingsprogfechaspy-14">14</a>
+<a href="#listingsprogfechaspy-15">15</a>
+<a href="#listingsprogfechaspy-16">16</a>
+<a href="#listingsprogfechaspy-17">17</a>
+<a href="#listingsprogfechaspy-18">18</a>
+<a href="#listingsprogfechaspy-19">19</a>
+<a href="#listingsprogfechaspy-20">20</a>
+<a href="#listingsprogfechaspy-21">21</a>
+<a href="#listingsprogfechaspy-22">22</a>
+<a href="#listingsprogfechaspy-23">23</a>
+<a href="#listingsprogfechaspy-24">24</a>
+<a href="#listingsprogfechaspy-25">25</a>
+<a href="#listingsprogfechaspy-26">26</a>
+<a href="#listingsprogfechaspy-27">27</a>
+<a href="#listingsprogfechaspy-28">28</a>
+<a href="#listingsprogfechaspy-29">29</a>
+<a href="#listingsprogfechaspy-30">30</a>
+<a href="#listingsprogfechaspy-31">31</a>
+<a href="#listingsprogfechaspy-32">32</a>
+<a href="#listingsprogfechaspy-33">33</a>
+<a href="#listingsprogfechaspy-34">34</a>
+<a href="#listingsprogfechaspy-35">35</a>
+<a href="#listingsprogfechaspy-36">36</a>
+<a href="#listingsprogfechaspy-37">37</a></pre></div></td>
+<td class="code"><pre class="code literal-block"><a name="listingsprogfechaspy-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datetime</span>
+<a name="listingsprogfechaspy-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha_hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<a name="listingsprogfechaspy-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="p">)</span>
+<a name="listingsprogfechaspy-4"></a><span class="mi">2016</span><span class="o">-</span><span class="mo">05</span><span class="o">-</span><span class="mi">16</span> <span class="mi">19</span><span class="p">:</span><span class="mi">47</span><span class="p">:</span><span class="mf">12.338413</span>
+<a name="listingsprogfechaspy-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
+<a name="listingsprogfechaspy-6"></a><span class="mi">5</span>
+<a name="listingsprogfechaspy-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
+<a name="listingsprogfechaspy-8"></a><span class="mi">2016</span>
+<a name="listingsprogfechaspy-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">day</span><span class="p">)</span>
+<a name="listingsprogfechaspy-10"></a><span class="mi">16</span>
+<a name="listingsprogfechaspy-11"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<a name="listingsprogfechaspy-12"></a><span class="mi">12</span>
+<a name="listingsprogfechaspy-13"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">minute</span><span class="p">)</span>
+<a name="listingsprogfechaspy-14"></a><span class="mi">47</span>
+<a name="listingsprogfechaspy-15"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">hour</span><span class="p">)</span>
+<a name="listingsprogfechaspy-16"></a><span class="mi">19</span>
+<a name="listingsprogfechaspy-17"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">day</span><span class="p">,</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">month</span> <span class="p">)</span>
+<a name="listingsprogfechaspy-18"></a><span class="mi">16</span> <span class="mi">5</span>
+<a name="listingsprogfechaspy-19"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>
+<a name="listingsprogfechaspy-20"></a><span class="mi">0</span>
+<a name="listingsprogfechaspy-21"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1810</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">25</span><span class="p">)</span>
+<a name="listingsprogfechaspy-22"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span>
+<a name="listingsprogfechaspy-23"></a><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1810</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a name="listingsprogfechaspy-24"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
+<a name="listingsprogfechaspy-25"></a><span class="mi">4</span>
+<a name="listingsprogfechaspy-26"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span> <span class="o">=</span> <span class="p">(</span><span class="n">fecha_hoy</span> <span class="o">-</span> <span class="n">fecha</span><span class="p">)</span>
+<a name="listingsprogfechaspy-27"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span><span class="o">.</span><span class="n">days</span>
+<a name="listingsprogfechaspy-28"></a><span class="mi">75232</span>
+<a name="listingsprogfechaspy-29"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span><span class="o">.</span><span class="n">seconds</span>
+<a name="listingsprogfechaspy-30"></a><span class="mi">71232</span>
+<a name="listingsprogfechaspy-31"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span><span class="o">.</span><span class="n">microseconds</span>
+<a name="listingsprogfechaspy-32"></a><span class="mi">338413</span>
+<a name="listingsprogfechaspy-33"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1810</span><span class="p">)</span>
+<a name="listingsprogfechaspy-34"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2016</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
+<a name="listingsprogfechaspy-35"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
+<a name="listingsprogfechaspy-36"></a><span class="mi">6</span>
+<a name="listingsprogfechaspy-37"></a><span class="o">&gt;&gt;&gt;</span> 
+</pre></td>
+</tr></table>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2016         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

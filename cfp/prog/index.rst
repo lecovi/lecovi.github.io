@@ -56,8 +56,8 @@ A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 #. :doc:`Semana 3 - Jugando con Python<cfp/prog/03>`
 #. :doc:`Semana 4 - Strings<cfp/prog/04>`
 #. :doc:`Semana 5 - Listas & Diccionarios<cfp/prog/05>`
-#. :doc:`Semana 6 <cfp/prog/06>`
-#. :doc:`Semana 7 <cfp/prog/07>`
+#. :doc:`Semana 6 - Ejercicios integradores<cfp/prog/06>`
+#. :doc:`Semana 7 - Manejo con archivos<cfp/prog/07>`
 #. :doc:`Semana 8 <cfp/prog/08>`
 #. :doc:`Semana 9 <cfp/prog/09>`
 #. :doc:`Semana 10 <cfp/prog/10>`

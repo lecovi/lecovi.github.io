@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <base href="http://lecovi.github.io/cfp/prog/06/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Introducción al Curso | Make it So!</title>
+<title>Ejercicios varios | Make it So!</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/cfp/prog/06/">
@@ -12,9 +12,13 @@
 <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <meta name="author" content="Leandro E. Colombo Viña">
 <meta property="og:site_name" content="Make it So!">
-<meta property="og:title" content="Introducción al Curso">
+<meta property="og:title" content="Ejercicios varios">
 <meta property="og:url" content="http://lecovi.github.io/cfp/prog/06/">
-<meta property="og:description" content="Write your page here.">
+<meta property="og:description" content='Hacer una función que reciba un string S y un número N; tiene que
+devolver un string repitiendo las N primeras letras de S, luego las N-1,
+luego N-2… etc.
+
+repeatFront("Chocolate", 4) --&gt; "ChocChoChC"'>
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2016-04-06T08:02:11-03:00">
 </head>
@@ -116,12 +120,251 @@
         <div class="row">
             
             
-<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Introducción al Curso</a></h1>
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Ejercicios varios</a></h1>
 
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Write your page here.</p>
+    <div>
+<ol class="arabic simple">
+<li>Hacer una función que reciba un <cite>string</cite> S y un <cite>número</cite> N; tiene que
+devolver un <cite>string</cite> repitiendo las N primeras letras de S, luego las N-1,
+luego N-2… etc.</li>
+</ol>
+<pre class="code python"><a name="rest_code_4112d88bfea14a25a27f9db8cee3b593-1"></a><span class="n">repeatFront</span><span class="p">(</span><span class="s">"Chocolate"</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="o">--&gt;</span> <span class="s">"ChocChoChC"</span>
+<a name="rest_code_4112d88bfea14a25a27f9db8cee3b593-2"></a><span class="n">repeatFront</span><span class="p">(</span><span class="s">"Chocolate"</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="o">--&gt;</span> <span class="s">"ChoChC"</span>
+<a name="rest_code_4112d88bfea14a25a27f9db8cee3b593-3"></a><span class="n">repeatFront</span><span class="p">(</span><span class="s">"Ice Cream"</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">--&gt;</span> <span class="s">"IcI"</span>
+<a name="rest_code_4112d88bfea14a25a27f9db8cee3b593-4"></a><span class="n">repeatFront</span><span class="p">(</span><span class="s">"abcde"</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span> <span class="o">--&gt;</span> <span class="n">abcaba</span>
+</pre>
+<ol class="arabic simple" start="2">
+<li>Hacer una función que recibe S1 y S2 y devuelve <cite>True</cite> si S1 termina con S2,
+o S2 termina en S1. Si no devuelve <cite>False</cite>.
+Mayúsculas y minúsculas se consideran iguales.</li>
+</ol>
+<pre class="code python"><a name="rest_code_ca5322a84b73468392cbf7c64eb45156-1"></a><span class="n">endOther</span><span class="p">(</span><span class="s">"Hiabc"</span><span class="p">,</span> <span class="s">"abc"</span><span class="p">)</span> <span class="o">--&gt;</span> <span class="bp">True</span>
+<a name="rest_code_ca5322a84b73468392cbf7c64eb45156-2"></a><span class="n">endOther</span><span class="p">(</span><span class="s">"AbC"</span><span class="p">,</span> <span class="s">"HiaBc"</span><span class="p">)</span> <span class="o">--&gt;</span> <span class="bp">True</span>
+<a name="rest_code_ca5322a84b73468392cbf7c64eb45156-3"></a><span class="n">endOther</span><span class="p">(</span><span class="s">"abc"</span><span class="p">,</span> <span class="s">"abXabc"</span><span class="p">)</span> <span class="o">--&gt;</span> <span class="bp">True</span>
+</pre>
+<ol class="arabic simple" start="3">
+<li>Hacer una funcion que devuelva <cite>True</cite> un <cite>string</cite> S, que recibe como
+parámetro, es palíndroma.</li>
+<li>Hacer una función que recibe S1 y S2 (dos <cite>strings</cite>) y devuelve un <cite>string</cite>
+S formada por la primer letra de S1, la primer letra de S2, la segunda de S1,
+la segunda de S2 etc.</li>
+</ol>
+<pre class="code python"><a name="rest_code_1e41680b247f4a0a986e3edca467beaa-1"></a><span class="n">mezclar</span><span class="p">(</span><span class="s">"uno"</span><span class="p">,</span> <span class="s">"dos"</span><span class="p">)</span> <span class="o">--&gt;</span> <span class="n">udnoos</span>
+<a name="rest_code_1e41680b247f4a0a986e3edca467beaa-2"></a><span class="n">mezclar</span><span class="p">(</span><span class="s">"abcd"</span><span class="p">,</span> <span class="s">"mnopqr"</span><span class="p">)</span> <span class="o">--&gt;</span> <span class="n">ambncodpqr</span>
+</pre>
+<ol class="arabic simple" start="5">
+<li>Hacer una función que devuelva una <cite>lista</cite> de C números aleatorios entre N1
+y N2</li>
+</ol>
+<pre class="code python"><a name="rest_code_fc4a69e8cb1a4b83b2ecd044bac67a03-1"></a><span class="k">def</span> <span class="nf">crearLista</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="o">--&gt;</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</pre>
+<ol class="arabic simple" start="6">
+<li>Hacer una función que redondee un número decimal F a una cantidad D de
+decimales.</li>
+</ol>
+<pre class="code python"><a name="rest_code_ffebceb1666d4470a34c54387de84ce6-1"></a><span class="n">redondear</span><span class="p">(</span><span class="mf">14.672</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mf">14.7</span>
+<a name="rest_code_ffebceb1666d4470a34c54387de84ce6-2"></a><span class="n">redondear</span><span class="p">(</span><span class="mf">14.672</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mf">14.67</span>
+<a name="rest_code_ffebceb1666d4470a34c54387de84ce6-3"></a><span class="n">redondear</span><span class="p">(</span><span class="mf">14.679</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">14</span>
+</pre>
+<ol class="arabic simple" start="7">
+<li>Usar la función del punto anterior en una función que recibe una lista de
+números decimales y devuelve una lista con todos sus números redondeados a 1
+decimal.</li>
+</ol>
+<pre class="code python"><a name="rest_code_0346dc1cb9904d318e16fa64b7078a82-1"></a><span class="n">redondeaTodo</span><span class="p">([</span><span class="mf">1.55</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">2.69</span><span class="p">,</span> <span class="mf">0.258</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mf">1.6</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">]</span>
+</pre>
+<ol class="arabic simple" start="8">
+<li>Hacer un programa que genere un número de N cifras y pregunte al usuario
+números hasta que lo adivine.
+Mostrar la cantidad de intentos usados para adivinar el número.</li>
+<li>Hacer una función que reciba como parámetros N1 y N2 y devuelva cuántos
+múltiplos de N1 hay que sean menores que N2.
+Hacerlo con <tt class="docutils literal">for</tt> y con <tt class="docutils literal">while</tt> ¿Cuál es la ventaja de cada una?</li>
+</ol>
+<pre class="code python"><a name="rest_code_b2b3528ddfcc4047a73b6a3d7f2f2c80-1"></a><span class="n">mulMenores</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">6</span>    <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+</pre>
+<ol class="arabic simple" start="10">
+<li>Hacer un programa que permita jugar al Mastermind:</li>
+</ol>
+<p>Explicación del juego:</p>
+<blockquote>
+<p>Cada vez que se empieza un partido, el programa debe "eligir" un número de
+cuatro cifras (sin cifras repetidas), que será el código que el jugador
+debe adivinar en la menor cantidad de intentos posibles.</p>
+<p>Cada intento consiste en una propuesta de un código posible que tipea el
+jugador, y una respuesta del programa. Las respuestas le darán pistas al
+jugador para que pueda deducir el código.</p>
+<p>Estas pistas indican cuán cerca estuvo el número propuesto de la solución a
+través de dos valores:
+La cantidad de aciertos es la cantidad de dígitos que propuso el jugador
+que también están en el código en la misma posición.
+La cantidad de coincidencias es la cantidad de digitos que propuso el
+jugador que también están en el código pero en una posición distinta.</p>
+<p>Por ejemplo, si el código que eligió el programa es el 2607, y el jugador
+propone el 1406, el programa le debe responder un acierto (el 0, que está
+en el código original en el mismo lugar, el tercero), y una coincidencia
+(el 6, que también está en el código original, pero en la segunda posición,
+no en el cuarto como fue propuesto).</p>
+<p>Si el jugador hubiera propuesto  3591, habría obtenido como respuesta
+ningún acierto y ninguna coincidencia,
+ya que no hay números en común con el código original, y si se obtienen
+cuatro aciertos es porque el jugador adivinó el código y ganó el juego.</p>
+</blockquote>
+<hr class="docutils">
+<p><a class="reference external" href="../../../listings/prog/palindroma_v1.py.html">prog/palindroma_v1.py</a></p>
+<pre class="code python3"><a name="rest_code_c20937d5c53740aa9728358acea79a6c-1"></a><span class="c">#!/usr/bin/env python3</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-2"></a>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-3"></a><span class="k">def</span> <span class="nf">palindroma</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-4"></a>    <span class="n">largo</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-5"></a>    <span class="n">m</span> <span class="o">=</span> <span class="n">largo</span> <span class="o">//</span> <span class="mi">2</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-6"></a>    <span class="k">if</span> <span class="n">largo</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-7"></a>        <span class="n">n</span> <span class="o">=</span> <span class="n">m</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-8"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-9"></a>        <span class="n">n</span> <span class="o">=</span> <span class="n">m</span> <span class="o">-</span> <span class="mi">1</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-10"></a>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-11"></a>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-12"></a>    <span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">m</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">):</span><span class="n">n</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-13"></a>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-14"></a><span class="k">def</span> <span class="nf">palindroma2</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-15"></a>    <span class="n">largo</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-16"></a>    <span class="n">m</span> <span class="o">=</span> <span class="n">n</span> <span class="o">=</span> <span class="n">largo</span> <span class="o">//</span> <span class="mi">2</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-17"></a>    <span class="k">if</span> <span class="n">largo</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-18"></a>        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-19"></a>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-20"></a>    <span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">m</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">):</span><span class="n">n</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-21"></a>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-22"></a>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-23"></a><span class="nb">print</span><span class="p">(</span><span class="n">palindroma</span><span class="p">(</span><span class="s">"abcba"</span><span class="p">))</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-24"></a><span class="nb">print</span><span class="p">(</span><span class="n">palindroma</span><span class="p">(</span><span class="s">"abba"</span><span class="p">))</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-25"></a><span class="nb">print</span><span class="p">(</span><span class="n">palindroma</span><span class="p">(</span><span class="s">"1234321"</span><span class="p">))</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-26"></a><span class="nb">print</span><span class="p">(</span><span class="n">palindroma</span><span class="p">(</span><span class="s">"abcdefg"</span><span class="p">))</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-27"></a><span class="nb">print</span><span class="p">(</span><span class="n">palindroma</span><span class="p">(</span><span class="s">"ata ata"</span><span class="p">))</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-28"></a>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-29"></a><span class="nb">print</span><span class="p">(</span><span class="n">palindroma2</span><span class="p">(</span><span class="s">"abcba"</span><span class="p">))</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-30"></a><span class="nb">print</span><span class="p">(</span><span class="n">palindroma2</span><span class="p">(</span><span class="s">"abba"</span><span class="p">))</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-31"></a><span class="nb">print</span><span class="p">(</span><span class="n">palindroma2</span><span class="p">(</span><span class="s">"1234321"</span><span class="p">))</span>
+<a name="rest_code_c20937d5c53740aa9728358acea79a6c-32"></a><span class="nb">print</span><span class="p">(</span><span class="n">palindroma2</span><span class="p">(</span><span class="s">"abcdefg"</span><span class="p">))</span>
+</pre>
+<p><a class="reference external" href="../../../listings/prog/palindroma_v2.py.html">prog/palindroma_v2.py</a></p>
+<pre class="code python3"><a name="rest_code_1d9e314056984010aa26bf38f19e1713-1"></a><span class="c">#!/usr/bin/env python3</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-2"></a>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-3"></a><span class="k">def</span> <span class="nf">palindroma</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-4"></a>    <span class="n">largo</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-5"></a>    <span class="n">m</span> <span class="o">=</span> <span class="n">largo</span> <span class="o">//</span> <span class="mi">2</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-6"></a>    <span class="k">if</span> <span class="n">largo</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-7"></a>        <span class="n">n</span> <span class="o">=</span> <span class="n">m</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-8"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-9"></a>        <span class="n">n</span> <span class="o">=</span> <span class="n">m</span> <span class="o">-</span> <span class="mi">1</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-10"></a>    <span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">m</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">):</span><span class="n">n</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-11"></a>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-12"></a><span class="k">def</span> <span class="nf">palindroma2</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-13"></a>    <span class="n">largo</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-14"></a>    <span class="n">m</span> <span class="o">=</span> <span class="n">n</span> <span class="o">=</span> <span class="n">largo</span> <span class="o">//</span> <span class="mi">2</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-15"></a>    <span class="k">if</span> <span class="n">largo</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-16"></a>        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-17"></a>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-18"></a>    <span class="k">return</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">m</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">):</span><span class="n">n</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-19"></a>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-20"></a><span class="c"># si se ejecuta el programa</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-21"></a><span class="c"># hacer lo de abajo</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-22"></a><span class="c"># si se importa, no</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-23"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-24"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">palindroma</span><span class="p">(</span><span class="s">"abcba"</span><span class="p">))</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-25"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">palindroma</span><span class="p">(</span><span class="s">"abba"</span><span class="p">))</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-26"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">palindroma</span><span class="p">(</span><span class="s">"1234321"</span><span class="p">))</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-27"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">palindroma</span><span class="p">(</span><span class="s">"abcdefg"</span><span class="p">))</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-28"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">palindroma</span><span class="p">(</span><span class="s">"ata ata"</span><span class="p">))</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-29"></a>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-30"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">palindroma2</span><span class="p">(</span><span class="s">"abcba"</span><span class="p">))</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-31"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">palindroma2</span><span class="p">(</span><span class="s">"abba"</span><span class="p">))</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-32"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">palindroma2</span><span class="p">(</span><span class="s">"1234321"</span><span class="p">))</span>
+<a name="rest_code_1d9e314056984010aa26bf38f19e1713-33"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">palindroma2</span><span class="p">(</span><span class="s">"abcdefg"</span><span class="p">))</span>
+</pre>
+<p><a class="reference external" href="../../../listings/prog/filter.py.html">prog/filter.py</a></p>
+<pre class="code python3"><a name="rest_code_36c646e2310d454bae726cc171c0b0c1-1"></a><span class="c"># -*- coding: utf-8 -*-</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-2"></a><span class="c"># generar una lista</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-3"></a><span class="c"># con los numeros de num</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-4"></a><span class="c"># mayores que 3</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-5"></a>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-6"></a><span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-7"></a>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-8"></a><span class="c"># version 1 - con for</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-9"></a><span class="n">j</span> <span class="o">=</span> <span class="p">[]</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-10"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">num</span><span class="p">:</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-11"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-12"></a>       <span class="n">j</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-13"></a>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-15"></a>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-16"></a><span class="c"># version 2 - con filter y una funcion</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-17"></a><span class="k">def</span> <span class="nf">mayor_a_3</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-18"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-19"></a>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-20"></a><span class="n">g</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="n">mayor_a_3</span><span class="p">,</span> <span class="n">num</span><span class="p">))</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-21"></a><span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-22"></a>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-23"></a><span class="c"># version 3 - con filter y lambda</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-24"></a><span class="n">h</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">,</span> <span class="n">num</span><span class="p">))</span>
+<a name="rest_code_36c646e2310d454bae726cc171c0b0c1-25"></a><span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre>
+<p><a class="reference external" href="../../../listings/prog/map.py.html">prog/map.py</a></p>
+<pre class="code python3"><a name="rest_code_23146840afc5466982a2aa2e585c8c08-1"></a><span class="c"># redondea los numeros de n</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-2"></a><span class="c"># con D decimales</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-3"></a><span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="mf">2.25</span><span class="p">,</span><span class="mf">4.110</span><span class="p">,</span><span class="mf">8.55</span><span class="p">,</span><span class="mf">16.8144</span><span class="p">]</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-4"></a>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-5"></a><span class="n">ndec</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"cantidad de decimales: "</span><span class="p">))</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-6"></a>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-7"></a><span class="c"># version 1 - con for</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-8"></a><span class="n">j</span> <span class="o">=</span> <span class="n">num</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-9"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-10"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">num</span><span class="p">:</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-11"></a>    <span class="n">j</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">ndec</span><span class="p">)</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-12"></a>    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-13"></a>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-15"></a>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-16"></a><span class="c"># version 2 - con enumerate y for</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-17"></a><span class="n">j</span> <span class="o">=</span> <span class="n">num</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-18"></a><span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">n</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-19"></a>    <span class="n">j</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">ndec</span><span class="p">)</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-20"></a>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-21"></a><span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-22"></a>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-23"></a><span class="c"># version 3 - con map y lambda</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-24"></a><span class="n">k</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">ndec</span><span class="p">),</span> <span class="n">num</span><span class="p">))</span>
+<a name="rest_code_23146840afc5466982a2aa2e585c8c08-25"></a><span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</pre>
+<p><a class="reference external" href="../../../listings/prog/lambdas.py.html">prog/lambdas.py</a></p>
+<pre class="code python3"><a name="rest_code_495ea6bded37490398b91a3cb5e41635-1"></a><span class="c"># -*- coding: utf-8 -*-</span>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-2"></a><span class="c"># lamdas</span>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-3"></a><span class="n">multi3</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">y</span><span class="p">:</span> <span class="n">y</span><span class="o">*</span><span class="mi">3</span>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-4"></a>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">multi3</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-6"></a>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-7"></a><span class="n">intercambia</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">m</span><span class="p">,</span><span class="n">k</span><span class="p">:</span> <span class="n">m</span> <span class="o">+</span> <span class="n">k</span>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-8"></a>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-9"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">7</span>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-10"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-12"></a><span class="n">intercambia</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<a name="rest_code_495ea6bded37490398b91a3cb5e41635-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre>
+<p><a class="reference external" href="../../../listings/prog/reduce.py.html">prog/reduce.py</a></p>
+<pre class="code python3"><a name="rest_code_3ec80b92a0c64a1b9896329f9a7e0dc8-1"></a><span class="c"># mostrar la sumatoria</span>
+<a name="rest_code_3ec80b92a0c64a1b9896329f9a7e0dc8-2"></a><span class="c"># de los numeros de num</span>
+<a name="rest_code_3ec80b92a0c64a1b9896329f9a7e0dc8-3"></a>
+<a name="rest_code_3ec80b92a0c64a1b9896329f9a7e0dc8-4"></a><span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<a name="rest_code_3ec80b92a0c64a1b9896329f9a7e0dc8-5"></a>
+<a name="rest_code_3ec80b92a0c64a1b9896329f9a7e0dc8-6"></a><span class="k">def</span> <span class="nf">sumar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<a name="rest_code_3ec80b92a0c64a1b9896329f9a7e0dc8-7"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
+<a name="rest_code_3ec80b92a0c64a1b9896329f9a7e0dc8-8"></a>
+<a name="rest_code_3ec80b92a0c64a1b9896329f9a7e0dc8-9"></a><span class="n">g</span> <span class="o">=</span> <span class="n">reduce</span><span class="p">(</span><span class="n">sumar</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
+<a name="rest_code_3ec80b92a0c64a1b9896329f9a7e0dc8-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+</pre>
+</div>
     </div>
     
 

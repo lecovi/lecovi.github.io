@@ -454,10 +454,6 @@
   <lastmod>2016-05-17T21:23:00Z</lastmod>
  </url>
  <url>
-  <loc>http://lecovi.github.io/categories/cat_tutorial-nikola-github/</loc>
-  <lastmod>2016-04-12T21:20:00Z</lastmod>
- </url>
- <url>
   <loc>http://lecovi.github.io/categories/cat_tutorial/</loc>
   <lastmod>2016-05-17T21:23:00Z</lastmod>
  </url>
@@ -967,23 +963,71 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/listings/prog/</loc>
-  <lastmod>2016-05-17T21:23:00Z</lastmod>
+  <lastmod>2016-05-17T22:32:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/prog/archi_01.py.html</loc>
+  <lastmod>2016-05-17T22:07:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/prog/archi_02.py.html</loc>
+  <lastmod>2016-05-17T22:06:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/prog/fechas.py.html</loc>
+  <lastmod>2016-05-17T22:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/prog/filter.py.html</loc>
+  <lastmod>2016-05-17T22:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/listings/prog/jugando_listas.py.html</loc>
   <lastmod>2016-05-17T21:23:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/listings/prog/lambdas.py.html</loc>
+  <lastmod>2016-05-17T22:00:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/listings/prog/letras.py.html</loc>
   <lastmod>2016-05-17T21:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/prog/map.py.html</loc>
+  <lastmod>2016-05-17T22:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/listings/prog/mayores_a.py.html</loc>
   <lastmod>2016-05-17T21:23:00Z</lastmod>
  </url>
  <url>
+  <loc>http://lecovi.github.io/listings/prog/palindroma_v1.py.html</loc>
+  <lastmod>2016-05-17T21:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/prog/palindroma_v2.py.html</loc>
+  <lastmod>2016-05-17T21:45:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://lecovi.github.io/listings/prog/prueba.py.html</loc>
   <lastmod>2016-05-17T21:23:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/prog/prueba.txt.html</loc>
+  <lastmod>2016-05-17T22:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/prog/prueba01.txt.html</loc>
+  <lastmod>2016-05-17T22:26:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/prog/reduce.py.html</loc>
+  <lastmod>2016-05-17T22:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/prog/segundo.txt.html</loc>
+  <lastmod>2016-05-17T22:26:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/listings/prog/str01.py.html</loc>

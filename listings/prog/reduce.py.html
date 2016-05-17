@@ -2,13 +2,13 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/prog/">
-<meta name="description" content="prog">
+<base href="http://lecovi.github.io/listings/prog/reduce.py.html">
+<meta name="description" content="reduce.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>prog | Make it So!</title>
+<title>reduce.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
-<link rel="canonical" href="http://lecovi.github.io/listings/prog/">
+<link rel="canonical" href="http://lecovi.github.io/listings/prog/reduce.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
@@ -93,7 +93,13 @@
                 
             </li>
 </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="reduce.py" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
 </div>
 <!-- /.navbar-collapse -->
     </div>
@@ -108,68 +114,30 @@
 <nav class="breadcrumbs"><ul class="breadcrumb">
 <li><a href="../">listings</a></li>
                 <li><a href=".">prog</a></li>
-</ul></nav><ul class="list-unstyled">
-<li>
-<a href="archi_01.py.html"><i class="glyphicon glyphicon-file"></i> archi_01.py</a>
-    </li>
-<li>
-<a href="archi_02.py.html"><i class="glyphicon glyphicon-file"></i> archi_02.py</a>
-    </li>
-<li>
-<a href="fechas.py.html"><i class="glyphicon glyphicon-file"></i> fechas.py</a>
-    </li>
-<li>
-<a href="filter.py.html"><i class="glyphicon glyphicon-file"></i> filter.py</a>
-    </li>
-<li>
-<a href="jugando_listas.py.html"><i class="glyphicon glyphicon-file"></i> jugando_listas.py</a>
-    </li>
-<li>
-<a href="lambdas.py.html"><i class="glyphicon glyphicon-file"></i> lambdas.py</a>
-    </li>
-<li>
-<a href="letras.py.html"><i class="glyphicon glyphicon-file"></i> letras.py</a>
-    </li>
-<li>
-<a href="map.py.html"><i class="glyphicon glyphicon-file"></i> map.py</a>
-    </li>
-<li>
-<a href="mayores_a.py.html"><i class="glyphicon glyphicon-file"></i> mayores_a.py</a>
-    </li>
-<li>
-<a href="palindroma_v1.py.html"><i class="glyphicon glyphicon-file"></i> palindroma_v1.py</a>
-    </li>
-<li>
-<a href="palindroma_v2.py.html"><i class="glyphicon glyphicon-file"></i> palindroma_v2.py</a>
-    </li>
-<li>
-<a href="prueba01.txt.html"><i class="glyphicon glyphicon-file"></i> prueba01.txt</a>
-    </li>
-<li>
-<a href="prueba.py.html"><i class="glyphicon glyphicon-file"></i> prueba.py</a>
-    </li>
-<li>
-<a href="prueba.txt.html"><i class="glyphicon glyphicon-file"></i> prueba.txt</a>
-    </li>
-<li>
-<a href="reduce.py.html"><i class="glyphicon glyphicon-file"></i> reduce.py</a>
-    </li>
-<li>
-<a href="segundo.txt.html"><i class="glyphicon glyphicon-file"></i> segundo.txt</a>
-    </li>
-<li>
-<a href="str01.py.html"><i class="glyphicon glyphicon-file"></i> str01.py</a>
-    </li>
-<li>
-<a href="str02.py.html"><i class="glyphicon glyphicon-file"></i> str02.py</a>
-    </li>
-<li>
-<a href="str03.py.html"><i class="glyphicon glyphicon-file"></i> str03.py</a>
-    </li>
-<li>
-<a href="str04.py.html"><i class="glyphicon glyphicon-file"></i> str04.py</a>
-</li>
-</ul>
+                <li>reduce.py</li>
+</ul></nav><table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="#listingsprogreducepy-1"> 1</a>
+<a href="#listingsprogreducepy-2"> 2</a>
+<a href="#listingsprogreducepy-3"> 3</a>
+<a href="#listingsprogreducepy-4"> 4</a>
+<a href="#listingsprogreducepy-5"> 5</a>
+<a href="#listingsprogreducepy-6"> 6</a>
+<a href="#listingsprogreducepy-7"> 7</a>
+<a href="#listingsprogreducepy-8"> 8</a>
+<a href="#listingsprogreducepy-9"> 9</a>
+<a href="#listingsprogreducepy-10">10</a></pre></div></td>
+<td class="code"><pre class="code literal-block"><a name="listingsprogreducepy-1"></a><span class="c"># mostrar la sumatoria</span>
+<a name="listingsprogreducepy-2"></a><span class="c"># de los numeros de num</span>
+<a name="listingsprogreducepy-3"></a>
+<a name="listingsprogreducepy-4"></a><span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<a name="listingsprogreducepy-5"></a>
+<a name="listingsprogreducepy-6"></a><span class="k">def</span> <span class="nf">sumar</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<a name="listingsprogreducepy-7"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span>
+<a name="listingsprogreducepy-8"></a>
+<a name="listingsprogreducepy-9"></a><span class="n">g</span> <span class="o">=</span> <span class="nb">reduce</span><span class="p">(</span><span class="n">sumar</span><span class="p">,</span> <span class="n">num</span><span class="p">)</span>
+<a name="listingsprogreducepy-10"></a><span class="k">print</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+</pre></td>
+</tr></table>
 </div>
         <!--End of body content-->
 
