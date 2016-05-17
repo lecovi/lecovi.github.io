@@ -42,5 +42,10 @@ Ejercicios
 2. Leer el archivo creado y mostrarlo en pantalla.
 3. Hacer un programa que genere otro programa en python que muestre la tabla de
    multiplicar de un numero ingresado por teclado.
+4. Hacer un programa que muestre las líneas del archivo ejemplo_01.py_.
+   que tengan más de 10 caracteres de longitud y no empiecen con ``p``.
+5. Hacer un programa que copie las primeras dos líneas de ejemplo_01.py_ a un
+   archivo "dos.txt".
 
+.. _ejemplo_01.py: /prog/ejemplo_01.py
 
