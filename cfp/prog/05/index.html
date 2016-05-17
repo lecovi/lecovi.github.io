@@ -6,7 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Listas &amp; Diccionarios | Make it So!</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<meta content="#5670d4" name="theme-color">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/cfp/prog/05/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -134,167 +133,167 @@ prog/jugando_listas.py
 <div class="align-center embed-responsive embed-responsive-16by9"><iframe src="https://docs.google.com/presentation/d/1-D0vF0xy591KgZKk4_kRnetye9zuF8Fu_piGL9CRkKU/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="960" height="629" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
 <p>Veamos algunos ejemplos:</p>
 <p><a class="reference external" href="../../../listings/prog/jugando_listas.py.html">prog/jugando_listas.py</a></p>
-<pre class="code python3"><a name="rest_code_51e0e6760063415f93dc461d986256b3-1"></a><span class="c">#!/usr/bin/env python3</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-2"></a>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-3"></a><span class="c"># Crear una lista de veinte elementos aleatorios entre 1 y 10</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-4"></a><span class="c"># Mostrar:</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-5"></a><span class="c">#   La lista ordenada</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-6"></a><span class="c">#   El numero mayor</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-7"></a><span class="c">#   El numero menor</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-8"></a><span class="c">#   Cuantas veces aparece en la lista el numero mayor</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-9"></a>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-10"></a><span class="kn">import</span> <span class="nn">random</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-11"></a>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-12"></a><span class="k">def</span> <span class="nf">lista_aleatoria</span><span class="p">(</span><span class="n">cantidad</span><span class="p">,</span> <span class="n">minimo</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">maximo</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-13"></a>    <span class="n">lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-14"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cantidad</span><span class="p">):</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-15"></a>        <span class="n">numero</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">minimo</span><span class="p">,</span> <span class="n">maximo</span><span class="p">)</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-16"></a>        <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-17"></a>    <span class="k">return</span> <span class="n">lista</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-18"></a>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-19"></a><span class="k">def</span> <span class="nf">busco_max</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-20"></a>    <span class="n">maximo</span> <span class="o">=</span> <span class="n">lista</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-21"></a>    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-22"></a>        <span class="k">if</span> <span class="n">item</span> <span class="o">&gt;</span> <span class="n">maximo</span><span class="p">:</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-23"></a>            <span class="n">maximo</span> <span class="o">=</span> <span class="n">item</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-24"></a>    <span class="k">return</span> <span class="n">maximo</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-25"></a>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-26"></a><span class="k">def</span> <span class="nf">busco_min</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-27"></a>    <span class="n">minimo</span> <span class="o">=</span> <span class="n">lista</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-28"></a>    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-29"></a>        <span class="k">if</span> <span class="n">item</span> <span class="o">&lt;</span> <span class="n">minimo</span><span class="p">:</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-30"></a>            <span class="n">minimo</span> <span class="o">=</span> <span class="n">item</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-31"></a>    <span class="k">return</span> <span class="n">minimo</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-32"></a>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-33"></a><span class="k">def</span> <span class="nf">ordenamos</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-34"></a>    <span class="k">for</span> <span class="n">passnum</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-35"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">passnum</span><span class="p">):</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-36"></a>            <span class="k">if</span> <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-37"></a>                <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-38"></a>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-39"></a><span class="n">CANT</span> <span class="o">=</span> <span class="mi">20</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-40"></a>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-41"></a><span class="nb">print</span><span class="p">(</span><span class="s">"Genero una lista de {} numeros"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">CANT</span><span class="p">))</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-42"></a><span class="n">lista</span> <span class="o">=</span> <span class="n">lista_aleatoria</span><span class="p">(</span><span class="n">CANT</span><span class="p">)</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-43"></a><span class="nb">print</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-44"></a><span class="nb">print</span><span class="p">(</span><span class="s">"La muestro ordenada..."</span><span class="p">)</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-45"></a><span class="c"># La ordenamos</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-46"></a><span class="n">lista</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-47"></a><span class="c"># La mostramos</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-48"></a><span class="nb">print</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-49"></a><span class="n">maximo</span> <span class="o">=</span> <span class="n">busco_max</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-50"></a><span class="nb">print</span><span class="p">(</span><span class="s">"El maximo de la lista es: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">maximo</span><span class="p">))</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-51"></a><span class="n">repeticiones_maximo</span> <span class="o">=</span> <span class="n">lista</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">maximo</span><span class="p">)</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-52"></a><span class="nb">print</span><span class="p">(</span><span class="s">"El maximo aparece en la lista {} veces"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">repeticiones_maximo</span><span class="p">))</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-53"></a><span class="n">minimo</span> <span class="o">=</span> <span class="n">busco_min</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
-<a name="rest_code_51e0e6760063415f93dc461d986256b3-54"></a><span class="nb">print</span><span class="p">(</span><span class="s">"El minimo de la lista es: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">minimo</span><span class="p">))</span>
+<pre class="code python3"><a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-1"></a><span class="c">#!/usr/bin/env python3</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-2"></a>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-3"></a><span class="c"># Crear una lista de veinte elementos aleatorios entre 1 y 10</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-4"></a><span class="c"># Mostrar:</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-5"></a><span class="c">#   La lista ordenada</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-6"></a><span class="c">#   El numero mayor</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-7"></a><span class="c">#   El numero menor</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-8"></a><span class="c">#   Cuantas veces aparece en la lista el numero mayor</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-9"></a>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-10"></a><span class="kn">import</span> <span class="nn">random</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-11"></a>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-12"></a><span class="k">def</span> <span class="nf">lista_aleatoria</span><span class="p">(</span><span class="n">cantidad</span><span class="p">,</span> <span class="n">minimo</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">maximo</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-13"></a>    <span class="n">lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-14"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cantidad</span><span class="p">):</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-15"></a>        <span class="n">numero</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">minimo</span><span class="p">,</span> <span class="n">maximo</span><span class="p">)</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-16"></a>        <span class="n">lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-17"></a>    <span class="k">return</span> <span class="n">lista</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-18"></a>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-19"></a><span class="k">def</span> <span class="nf">busco_max</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-20"></a>    <span class="n">maximo</span> <span class="o">=</span> <span class="n">lista</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-21"></a>    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-22"></a>        <span class="k">if</span> <span class="n">item</span> <span class="o">&gt;</span> <span class="n">maximo</span><span class="p">:</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-23"></a>            <span class="n">maximo</span> <span class="o">=</span> <span class="n">item</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-24"></a>    <span class="k">return</span> <span class="n">maximo</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-25"></a>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-26"></a><span class="k">def</span> <span class="nf">busco_min</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-27"></a>    <span class="n">minimo</span> <span class="o">=</span> <span class="n">lista</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-28"></a>    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-29"></a>        <span class="k">if</span> <span class="n">item</span> <span class="o">&lt;</span> <span class="n">minimo</span><span class="p">:</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-30"></a>            <span class="n">minimo</span> <span class="o">=</span> <span class="n">item</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-31"></a>    <span class="k">return</span> <span class="n">minimo</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-32"></a>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-33"></a><span class="k">def</span> <span class="nf">ordenamos</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-34"></a>    <span class="k">for</span> <span class="n">passnum</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-35"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">passnum</span><span class="p">):</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-36"></a>            <span class="k">if</span> <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-37"></a>                <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="n">lista</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-38"></a>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-39"></a><span class="n">CANT</span> <span class="o">=</span> <span class="mi">20</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-40"></a>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-41"></a><span class="nb">print</span><span class="p">(</span><span class="s">"Genero una lista de {} numeros"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">CANT</span><span class="p">))</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-42"></a><span class="n">lista</span> <span class="o">=</span> <span class="n">lista_aleatoria</span><span class="p">(</span><span class="n">CANT</span><span class="p">)</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-43"></a><span class="nb">print</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-44"></a><span class="nb">print</span><span class="p">(</span><span class="s">"La muestro ordenada..."</span><span class="p">)</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-45"></a><span class="c"># La ordenamos</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-46"></a><span class="n">lista</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-47"></a><span class="c"># La mostramos</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-48"></a><span class="nb">print</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-49"></a><span class="n">maximo</span> <span class="o">=</span> <span class="n">busco_max</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-50"></a><span class="nb">print</span><span class="p">(</span><span class="s">"El maximo de la lista es: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">maximo</span><span class="p">))</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-51"></a><span class="n">repeticiones_maximo</span> <span class="o">=</span> <span class="n">lista</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">maximo</span><span class="p">)</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-52"></a><span class="nb">print</span><span class="p">(</span><span class="s">"El maximo aparece en la lista {} veces"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">repeticiones_maximo</span><span class="p">))</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-53"></a><span class="n">minimo</span> <span class="o">=</span> <span class="n">busco_min</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+<a name="rest_code_8fa5ecfddc4c459cb96cf5f380a37aa5-54"></a><span class="nb">print</span><span class="p">(</span><span class="s">"El minimo de la lista es: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">minimo</span><span class="p">))</span>
 </pre>
 <p><a class="reference external" href="../../../listings/prog/mayores_a.py.html">prog/mayores_a.py</a></p>
-<pre class="code python3"><a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-1"></a><span class="c">#!/usr/bin/env python3</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-2"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-3"></a><span class="c"># Dada una lista de numeros enteros y un numero n generar otra lista</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-4"></a><span class="c"># (y mostrarla) con todos los numeros de la lista que sean mayores a n.</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-5"></a><span class="c">#</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-6"></a><span class="c"># Ej.</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-7"></a><span class="c"># numeros = [10, 20, 30, 40, 50, 60]</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-8"></a><span class="c"># n = 45</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-9"></a><span class="c">#</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-10"></a><span class="c"># ---&gt; nueva = [50, 60]</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-11"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-12"></a><span class="k">def</span> <span class="nf">mayores_a</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-13"></a>    <span class="n">nueva_lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>  <span class="c"># nueva_lista = []</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-14"></a>    <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-15"></a>        <span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-16"></a>            <span class="c"># agrego numero a la lista.</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-17"></a>            <span class="n">nueva_lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-18"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-19"></a>    <span class="k">return</span> <span class="n">nueva_lista</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-20"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-21"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-22"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-23"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-24"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-25"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-26"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-27"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-28"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-29"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-30"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-31"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-32"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-33"></a><span class="c"># Si la lista es ordenada...</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-34"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-35"></a><span class="k">def</span> <span class="nf">mayores_a2</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-36"></a>    <span class="n">nueva_lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>  <span class="c"># nueva_lista = []</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-37"></a>    <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-38"></a>        <span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-39"></a>            <span class="n">indice</span> <span class="o">=</span> <span class="n">lista</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-40"></a>            <span class="k">break</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-41"></a>    <span class="k">return</span> <span class="n">lista</span><span class="p">[</span><span class="n">indice</span><span class="p">:]</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-42"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-43"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-44"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-45"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-46"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a2</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-47"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-48"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-49"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-50"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-51"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a2</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-52"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-53"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-54"></a><span class="k">def</span> <span class="nf">mayores_a3</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">ordenada</span><span class="p">):</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-55"></a>    <span class="k">if</span> <span class="n">ordenada</span><span class="p">:</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-56"></a>        <span class="k">return</span> <span class="n">mayores_a2</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-57"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-58"></a>        <span class="k">return</span> <span class="n">mayores_a</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-59"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-60"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-61"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-62"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-63"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-64"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a3</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="k">True</span><span class="p">))</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-65"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-66"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-67"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-68"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-69"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a3</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="k">False</span><span class="p">))</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-70"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a3</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="k">True</span><span class="p">))</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-71"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-72"></a><span class="k">def</span> <span class="nf">mayores_a4</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">ordenada</span><span class="o">=</span><span class="k">True</span><span class="p">):</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-73"></a>    <span class="k">if</span> <span class="n">ordenada</span><span class="p">:</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-74"></a>        <span class="k">return</span> <span class="n">mayores_a2</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-75"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-76"></a>        <span class="k">return</span> <span class="n">mayores_a</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-77"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-78"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-79"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-80"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-81"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-82"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-83"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-84"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-85"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-86"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-87"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="k">False</span><span class="p">))</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-88"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-89"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-90"></a>
-<a name="rest_code_39743b49a8d44c5d9ff0ded45aec8d4d-91"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">ordenada</span><span class="o">=</span><span class="k">False</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">lista</span><span class="o">=</span><span class="n">numeros</span><span class="p">))</span>
+<pre class="code python3"><a name="rest_code_243e821a503941e08f842ba4db99dd57-1"></a><span class="c">#!/usr/bin/env python3</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-2"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-3"></a><span class="c"># Dada una lista de numeros enteros y un numero n generar otra lista</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-4"></a><span class="c"># (y mostrarla) con todos los numeros de la lista que sean mayores a n.</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-5"></a><span class="c">#</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-6"></a><span class="c"># Ej.</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-7"></a><span class="c"># numeros = [10, 20, 30, 40, 50, 60]</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-8"></a><span class="c"># n = 45</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-9"></a><span class="c">#</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-10"></a><span class="c"># ---&gt; nueva = [50, 60]</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-11"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-12"></a><span class="k">def</span> <span class="nf">mayores_a</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-13"></a>    <span class="n">nueva_lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>  <span class="c"># nueva_lista = []</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-14"></a>    <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-15"></a>        <span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-16"></a>            <span class="c"># agrego numero a la lista.</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-17"></a>            <span class="n">nueva_lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-18"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-19"></a>    <span class="k">return</span> <span class="n">nueva_lista</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-20"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-21"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-22"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-23"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-24"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-25"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-26"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-27"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-28"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-29"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-30"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-31"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-32"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-33"></a><span class="c"># Si la lista es ordenada...</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-34"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-35"></a><span class="k">def</span> <span class="nf">mayores_a2</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-36"></a>    <span class="n">nueva_lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>  <span class="c"># nueva_lista = []</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-37"></a>    <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-38"></a>        <span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-39"></a>            <span class="n">indice</span> <span class="o">=</span> <span class="n">lista</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-40"></a>            <span class="k">break</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-41"></a>    <span class="k">return</span> <span class="n">lista</span><span class="p">[</span><span class="n">indice</span><span class="p">:]</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-42"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-43"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-44"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-45"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-46"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a2</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-47"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-48"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-49"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-50"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-51"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a2</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-52"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-53"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-54"></a><span class="k">def</span> <span class="nf">mayores_a3</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">ordenada</span><span class="p">):</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-55"></a>    <span class="k">if</span> <span class="n">ordenada</span><span class="p">:</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-56"></a>        <span class="k">return</span> <span class="n">mayores_a2</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-57"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-58"></a>        <span class="k">return</span> <span class="n">mayores_a</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-59"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-60"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-61"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-62"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-63"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-64"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a3</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="k">True</span><span class="p">))</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-65"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-66"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-67"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-68"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-69"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a3</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="k">False</span><span class="p">))</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-70"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a3</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="k">True</span><span class="p">))</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-71"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-72"></a><span class="k">def</span> <span class="nf">mayores_a4</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">ordenada</span><span class="o">=</span><span class="k">True</span><span class="p">):</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-73"></a>    <span class="k">if</span> <span class="n">ordenada</span><span class="p">:</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-74"></a>        <span class="k">return</span> <span class="n">mayores_a2</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-75"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-76"></a>        <span class="k">return</span> <span class="n">mayores_a</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-77"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-78"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-79"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-80"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-81"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-82"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-83"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-84"></a><span class="n">numeros</span> <span class="o">=</span> <span class="p">[</span><span class="mi">210</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">440</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-85"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">45</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-86"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-87"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="k">False</span><span class="p">))</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-88"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-89"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-90"></a>
+<a name="rest_code_243e821a503941e08f842ba4db99dd57-91"></a><span class="nb">print</span><span class="p">(</span><span class="n">mayores_a4</span><span class="p">(</span><span class="n">ordenada</span><span class="o">=</span><span class="k">False</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">lista</span><span class="o">=</span><span class="n">numeros</span><span class="p">))</span>
 </pre>
 <p><a class="reference external" href="../../../listings/prog/letras.py.html">prog/letras.py</a></p>
-<pre class="code python3"><a name="rest_code_7c15632f48af49bf85de35cdae3133e8-1"></a><span class="c">#</span>
-<a name="rest_code_7c15632f48af49bf85de35cdae3133e8-2"></a>
-<a name="rest_code_7c15632f48af49bf85de35cdae3133e8-3"></a><span class="n">frase</span> <span class="o">=</span> <span class="s">"una frase cualquiera"</span>
-<a name="rest_code_7c15632f48af49bf85de35cdae3133e8-4"></a><span class="n">letras</span> <span class="o">=</span> <span class="p">{}</span>
-<a name="rest_code_7c15632f48af49bf85de35cdae3133e8-5"></a>
-<a name="rest_code_7c15632f48af49bf85de35cdae3133e8-6"></a><span class="k">for</span> <span class="n">le</span> <span class="ow">in</span> <span class="n">frase</span><span class="p">:</span>
-<a name="rest_code_7c15632f48af49bf85de35cdae3133e8-7"></a>    <span class="k">if</span> <span class="n">le</span> <span class="ow">in</span> <span class="n">letras</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-<a name="rest_code_7c15632f48af49bf85de35cdae3133e8-8"></a>        <span class="n">letras</span><span class="p">[</span><span class="n">le</span><span class="p">]</span> <span class="o">=</span> <span class="n">letras</span><span class="p">[</span><span class="n">le</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
-<a name="rest_code_7c15632f48af49bf85de35cdae3133e8-9"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_7c15632f48af49bf85de35cdae3133e8-10"></a>        <span class="n">letras</span><span class="p">[</span><span class="n">le</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-<a name="rest_code_7c15632f48af49bf85de35cdae3133e8-11"></a>
-<a name="rest_code_7c15632f48af49bf85de35cdae3133e8-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">letras</span><span class="p">)</span>
+<pre class="code python3"><a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-1"></a><span class="c">#</span>
+<a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-2"></a>
+<a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-3"></a><span class="n">frase</span> <span class="o">=</span> <span class="s">"una frase cualquiera"</span>
+<a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-4"></a><span class="n">letras</span> <span class="o">=</span> <span class="p">{}</span>
+<a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-5"></a>
+<a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-6"></a><span class="k">for</span> <span class="n">le</span> <span class="ow">in</span> <span class="n">frase</span><span class="p">:</span>
+<a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-7"></a>    <span class="k">if</span> <span class="n">le</span> <span class="ow">in</span> <span class="n">letras</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+<a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-8"></a>        <span class="n">letras</span><span class="p">[</span><span class="n">le</span><span class="p">]</span> <span class="o">=</span> <span class="n">letras</span><span class="p">[</span><span class="n">le</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+<a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-9"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-10"></a>        <span class="n">letras</span><span class="p">[</span><span class="n">le</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-11"></a>
+<a name="rest_code_ceb22b0a31074e219763d3efb2642f9b-12"></a><span class="nb">print</span><span class="p">(</span><span class="n">letras</span><span class="p">)</span>
 </pre>
 </div>
     </div>
