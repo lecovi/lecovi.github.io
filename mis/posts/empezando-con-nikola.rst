@@ -2,15 +2,11 @@
 .. slug: empezando-con-nikola
 .. date: 2015-10-14 13:37:37 UTC-03:00
 .. tags: blog,python,nikola,github,git
-.. category: tutorial nikola github
+.. category: tutorial
 .. link:
 .. description: Tutorial Nikola GitHub Pages
 .. type: text
 .. version: 0.2
-
-.. class:: alert alert-info pull-right
-
-.. contents::
 
 Hace tiempo que vengo con intenciones de sentarme y recopilar los diferentes
 tutoriales y artículos que vengo pensando y escribiendo. Después de buscar
@@ -30,6 +26,10 @@ Para eso vamos a:
 #. Configurar nuestra cuenta en `GitHub` para el uso de `GitHub Pages`.
 
 .. TEASER_END
+
+.. class:: alert alert-info pull-right
+
+.. contents::
 
 Primeros Pasos
 ==============
@@ -57,7 +57,7 @@ Instalación paquetes de sistema
 
 Vamos a usar `Nikola` con `Python 3`. Necesitamos tener instalado los
 siguientes paquetes, son herramientas súper comunes, si desarrollás en Python,
-seguramente ya las tenés instaladas. Para instalar los paquetes necesario tenés 
+seguramente ya las tenés instaladas. Para instalar los paquetes necesario tenés
 que ejecutar el comando:
 
 .. sidebar:: Paquetes de sistema
@@ -266,7 +266,7 @@ Construyendo el sitio
 
 Una vez terminado o si queremos ver cómo está quedando. Tenemos que construir
 el sitio. Es decir, `Nikola` va a leer los archivos que nosotros escribimos en
-`reStructuredText`, interpretarlos y generar los correspondientes archivos HTML 
+`reStructuredText`, interpretarlos y generar los correspondientes archivos HTML
 para publicar en nuestro sitio.
 Luego de contruirlo vamos a ejecutar el servidor web de prueba para que nos lo
 muestre en nuestro navegador.
@@ -516,7 +516,7 @@ esté pendiente de los nuevos archivos que Nikola necesita para crear los `html`
 Para eso, tenemos que agregar las siguientes líneas. Podés hacerlo en cualquier
 lugar del archivo, pero te recomiendo que lo hagas al final del mismo.
 
-    .. code-block:: console
+    .. code-block:: python
 
         # Nikola stuff
         mis/cache/
@@ -527,15 +527,14 @@ Ahora tenemos que hacer un pequeño cambio en el ``conf.py``, tenemos que
 decirle a Nikola que vamos a estar publicando el sitio con GitHub Pages. Para
 eso alrededor de la línea 430 debés tener lo que sigue:
 
-    .. code-block:: console
+    .. code-block:: python
 
         # For user.github.io OR organization.github.io pages, the DEPLOY branch
         # MUST be 'master', and 'gh-pages' for other repositories.
         #GITHUB_SOURCE_BRANCH = 'gh-pages'
         GITHUB_DEPLOY_BRANCH = 'master'
 
-        # The name of the remote where you wish to push to, using
-        github_deploy.
+        # The name of the remote where you wish to push to, using github_deploy.
         GITHUB_REMOTE_NAME = 'origin'
 
 Ya estamos listos, ahora podemos publicar nuestro sitio en GitHub Pages con el

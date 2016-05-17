@@ -18,10 +18,10 @@ Valores Lógicos
 
 Son valores *verdaderos* o *falsos*. En python son:
 
-* ``True`` 
+* ``True``
 * ``False``
 
-*NOTA*: Por convención se toma que cualquier valor que no sea ``False`` o 
+*NOTA*: Por convención se toma que cualquier valor que no sea ``False`` o
 ``None`` es considerado como *verdadero*.
 
 Operadores Relacionales
@@ -144,7 +144,7 @@ Ejercicios
 Turtle
 ======
 
-.. class:: align-center
+.. class:: align-center embed-responsive embed-responsive-16by9
 
     .. raw:: html
 
@@ -179,10 +179,9 @@ Ejercicios con Turtle
 #. Dibujar un cilindro.
 #. **Pedir al usuario que ingrese cantidad de lados y radio y dibujar el polígono correspondiente.**
 #. Al anterior agregar: que permita ingresar
-    #) coordenadas de inicio
-    #) color
-#. **Pensar el 1, 2, 3 como funciones que reciben todos los datos necesarios para el dibujo (coordenadas de inicio, tamaño, color, etc.)**
+    * coordenadas de inicio
+    * color
+#. Pensar el 1, 2, 3 como funciones que reciben todos los datos necesarios para el dibujo (coordenadas de inicio, tamaño, color, etc.)
 #. Ingresar 3 valores entre 0 y 100 y generar un gráfico de barras (usar 8.1)
 #. Ingresar 3 valores entre 0 y 100 y generar un gráfico de torta (usar 8.3)
-#. Generar un gráfico de barras o torta con hasta 10 valores diferentes entre 0% y 100% c/u. Validar entrada de datos. 
-
+#. Generar un gráfico de barras o torta con hasta 10 valores diferentes entre 0% y 100% c/u. Validar entrada de datos.

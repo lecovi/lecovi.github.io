@@ -1,16 +1,18 @@
 .. title: Ver mensajes en el booteo
 .. slug: ver-mensajes-en-el-booteo
 .. date: 2016-01-07 12:53:16 UTC-03:00
-.. tags: boot,splash,quiet,mensajes 
-.. category: 
-.. link: 
-.. description: 
+.. tags: boot,splash,quiet,mensajes
+.. category: tutorial
+.. link:
+.. description:
 .. type: text
 
 En este breve post, la idea es mostrar los pasos a seguir para sacar la imagen
 de inicio del sistema. En lo personal me gusta ver qué es lo que está cargando
 el sistema al momento del inicio. Por eso le suelo sacar la imagen que oculta
 esos mensajes. Comencemos...
+
+.. TEASER_END
 
 Edición de los parámetros de inicio
 ===================================
