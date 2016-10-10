@@ -14,7 +14,12 @@
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Introducción a Flask">
 <meta property="og:url" content="http://lecovi.github.io/ifts/edd/intro-flask/">
-<meta property="og:description" content="Write your page here.">
+<meta property="og:description" content="Objetivos:
+
+Comprender la arquitectura de la Web.
+Familiarizarse con los conceptos básicos y terminologías utilizadas.
+Instalar un entorno virtual de Python para nuestros proyectos.
+Realizar una aplic">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-08-26T15:18:41-03:00">
 </head>
@@ -121,7 +126,123 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Write your page here.</p>
+    <div>
+<dl class="jumbotron docutils">
+<dt>
+<strong>Objetivos</strong>:</dt>
+<dd><ul class="first last simple">
+<li>Comprender la arquitectura de la Web.</li>
+<li>Familiarizarse con los conceptos básicos y terminologías utilizadas.</li>
+<li>Instalar un entorno virtual de Python para nuestros proyectos.</li>
+<li>Realizar una aplicación <tt class="docutils literal">"Hello World!"</tt> con Flask.</li>
+</ul></dd>
+</dl>
+<!-- TODO: poner explicación de Internet y redes básico. Cubrir los siguientes conceptos: socket, IP, puertos, DNS, Request-Reply, URL, Protocolos. --><div class="section" id="instalacion-de-paquetes-necesarios">
+<h2>Instalación de Paquetes necesarios</h2>
+<ol class="arabic simple">
+<li>Instalar <tt class="docutils literal">pip</tt>.</li>
+<li>Instalar <tt class="docutils literal">virtualenv</tt>.</li>
+</ol>
+<p>Así como nuestro GNU/Linux tiene una herramienta para la instalación de paquetes como <tt class="docutils literal">apt</tt> o <tt class="docutils literal">yum/dnf</tt>, con Python también tenemos algo similar. Por suerte existe <tt class="docutils literal">pip</tt> y la instalación de paquetes es muy sencilla.</p>
+<p>Necesitamos tener instalado en nuestro sistema opertativo esta herramienta. Para eso debemos instalar los paquetes <tt class="docutils literal"><span class="pre">python3-pip</span></tt> para usar <tt class="docutils literal">pip3</tt> con Python 3.x y <cite>python-pip</cite> para usar <tt class="docutils literal">pip</tt> con Python 2.x:</p>
+<pre class="code bash"><a name="rest_code_0afe4d713a9f48768aac89c09efecd48-1"></a><span class="nv">$ </span>sudo apt install python3-pip python3-pip
+</pre>
+<p>Ahora que tenemos instalado <tt class="docutils literal">pip</tt> podemos usarlo para instalar <tt class="docutils literal">virtualenv</tt>.</p>
+<pre class="code bash"><a name="rest_code_a1f77513f43849a9a178ef95bff1e886-1"></a><span class="nv">$ </span>sudo pip install virtualenv
+</pre>
+</div>
+<div class="section" id="creando-el-proyecto">
+<h2>Creando el proyecto</h2>
+<ol class="arabic simple">
+<li>Crear el entorno virtual.</li>
+<li>Instalar Flask.</li>
+<li>Armando la aplicación.</li>
+</ol>
+<div class="section" id="creando-el-entorno-virtual">
+<h3>Creando el entorno virtual</h3>
+<p>Con las herramientas necesarias ya instaladas, tenemos que crear un directorio donde vamos a contener los archivos necesarios. Creamos una carpeta que se llame <tt class="docutils literal">hello_world_app</tt> y nos movemos dentro de ella para instalar el entorno virtual de Python.</p>
+<pre class="code bash"><a name="rest_code_2761a6ae770b4ff387e696aca9034584-1"></a>~ ➜ mkdir hello_world_app
+<a name="rest_code_2761a6ae770b4ff387e696aca9034584-2"></a>~ ➜ <span class="nb">cd </span>hello_world_app
+<a name="rest_code_2761a6ae770b4ff387e696aca9034584-3"></a>~/hello_world_app ➜
+</pre>
+<p>Todo el trabajo de nuestros proyecto web lo realizaremos dentro de esta carpeta <tt class="docutils literal">hello_world_app</tt>. Si queremos pasar nuestro trabajo a otra máquina basta con copiar esta carpeta a destino y tenemos nuestros proyecto donde querramos.</p>
+<p>Para instalar el entorno virtual, debemos darle un nombre, <tt class="docutils literal">flasky</tt> es el que elegimos para este proyecto. Simplemente para no confundir el nombre del entorno virtual con el paquete <cite>Flask</cite>. Vamos a usar Python 3 en nuestra aplicación. Para averiguar dónde está el binario de Python 3 usamos el comando <tt class="docutils literal">which</tt>:</p>
+<pre class="code bash"><a name="rest_code_2b57066d8baf4cfaab505a5ee7db1116-1"></a>~/hello_world_app ➜ which python3
+<a name="rest_code_2b57066d8baf4cfaab505a5ee7db1116-2"></a>/usr/bin/python3
+<a name="rest_code_2b57066d8baf4cfaab505a5ee7db1116-3"></a>~/hello_world_app ➜
+</pre>
+<p>Ahora le pasamos esa ruta al comando <tt class="docutils literal">virtualenv</tt> para que nos cree el entorno virtual con Python 3 utilizando el parámetro <tt class="docutils literal"><span class="pre">-p</span></tt>:</p>
+<pre class="code bash"><a name="rest_code_1cd1d03ba2204cf3b35009e4d82bbfaa-1"></a>~/hello_world_app ➜ virtualenv -p /usr/bin/python3 flasky
+</pre>
+<p>Esto creará una carpeta llamada <cite>flasky</cite> que contiene una instalación de Python.</p>
+<div class="hint">
+<p class="first admonition-title">Hint</p>
+<p>O podemos hacer todo junto en un mismo comando:</p>
+<div class="last"><pre class="code bash"><a name="rest_code_6a6d444e12124f8e8550f7d693a17c56-1"></a>~/hello_world_app ➜ virtualenv -p <span class="k">$(</span>which python3<span class="k">)</span> flasky
+</pre></div>
+</div>
+<img alt="Árbol del entorno virtual." class="align-center" src="../../../images/edd/virtualenv_tree.png"><p>Dentro de esta carpeta nos interesa el archivo <tt class="docutils literal">activate</tt> que va a servir para activar nuestro entorno virtual en nuestra sesión activa de la terminal. Lo activamos usando el comando <tt class="docutils literal">source</tt> de la siguiente manera:</p>
+<pre class="code bash"><a name="rest_code_d920981a3dbe498f94e6d1a9001d9772-1"></a>~/hello_world_app ➜ <span class="nb">source </span>flasky/bin/activate
+<a name="rest_code_d920981a3dbe498f94e6d1a9001d9772-2"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜
+</pre>
+<p>Luego podemos usar el comando <tt class="docutils literal">deactivate</tt> para volver a tener nuestra terminal normalmente.</p>
+<pre class="code bash"><a name="rest_code_986f0c0931104ba9a06f52934ced5115-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ deactivate
+<a name="rest_code_986f0c0931104ba9a06f52934ced5115-2"></a>~/hello_world_app ➜
+</pre>
+<div class="tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">Activar el entorno virtual implica que cuando ejecutemos el comando <tt class="docutils literal">python</tt> se llamará al binario del entorno virtual y no al de la instalación normal de nuestro sistema operativo. En el entorno virtual podemos instalar diferentes paquetes y versiones y quedarán para uso exclusivo de este entorno.</p>
+</div>
+</div>
+<div class="section" id="instalando-flask">
+<h3>Instalando Flask</h3>
+<p>Con el entorno virtual activo instalamos <tt class="docutils literal">Flask</tt> usando <tt class="docutils literal">pip</tt>.</p>
+<pre class="code bash"><a name="rest_code_7ac3a2bf79c346c7a0fd333c8b51e896-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ pip install Flask
+</pre>
+<div class="important">
+<p class="first admonition-title">Important</p>
+<p class="last">Otra ventaja del entorno virtual es que nos deja instalar paquetes de <cite>Python</cite> a través de <tt class="docutils literal">pip</tt> sin tener que tener privilegios administrativos. Es decir, sin usar <tt class="docutils literal">sudo</tt>.</p>
+</div>
+<p>Y creamos las carpetas necesarias para nuestra aplicación:</p>
+<pre class="code bash"><a name="rest_code_6327ee9bcf664230a2db76a53d948f9c-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ mkdir app
+<a name="rest_code_6327ee9bcf664230a2db76a53d948f9c-2"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ mkdir app/static
+<a name="rest_code_6327ee9bcf664230a2db76a53d948f9c-3"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ mkdir app/templates
+</pre>
+<p>Dentro de <tt class="docutils literal">app</tt> tendremos crearemos todos los archivos de la aplicación de <cite>Flask</cite>. Dentro de ella creamos un archivo llamado <tt class="docutils literal">routes.py</tt> con el siguiente contenido:</p>
+<p><a class="reference external" href="../../../listings/edd/routes.py.html">edd/routes.py</a></p>
+<pre class="code python3"><a name="rest_code_6afba90a0da842e18a743a6227217f9a-1"></a><span class="c">#!/usr/bin/env python</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-2"></a>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-3"></a><span class="c"># Importamos del módulo flask la clase Flask que creará nuestra aplicación.</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-4"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="k">import</span> <span class="n">Flask</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-5"></a>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-6"></a><span class="c"># Creamos una nueva instancia de Flask y la asignamos a `app`.</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-7"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-8"></a>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-9"></a><span class="c"># Estos decoradores nos sirven para mapear qué funciones se van a llamar en el</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-10"></a><span class="c"># momento que al servidor le llegue una petición con esa URL.</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-11"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-12"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/index'</span><span class="p">)</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-13"></a><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-14"></a>    <span class="sd">""" Nuestra función que responde en '/' o en '/index' y devuelve un</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-15"></a><span class="sd">        simple 'Hello World!'</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-16"></a><span class="sd">    """</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-17"></a>    <span class="k">return</span> <span class="s">"&lt;h1&gt;Hello World!&lt;/h1&gt;"</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-18"></a>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-19"></a><span class="c"># Si ejecutamos el módulo, la aplicación de Flask corre con el modo de prueba</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-20"></a><span class="c"># activo.</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-21"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<a name="rest_code_6afba90a0da842e18a743a6227217f9a-22"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+</pre>
+<p>Luego podemos ejecutar nuestra aplicación de prueba que escuchará peticiones en la ip 127.0.0.1 en el puerto 5000. Para cortar el servidor podemos presionar <tt class="docutils literal">Ctrl+C</tt>:</p>
+<pre class="code bash"><a name="rest_code_cee7ca037a7e48ca831be4e5cc8808fe-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ python routes.py
+<a name="rest_code_cee7ca037a7e48ca831be4e5cc8808fe-2"></a>* Running on http://127.0.0.1:5000/ <span class="o">(</span>Press CTRL+C to quit<span class="o">)</span>
+<a name="rest_code_cee7ca037a7e48ca831be4e5cc8808fe-3"></a>* Restarting with stat
+<a name="rest_code_cee7ca037a7e48ca831be4e5cc8808fe-4"></a>* Debugger is active!
+<a name="rest_code_cee7ca037a7e48ca831be4e5cc8808fe-5"></a>* Debugger pin code: 459-745-705
+</pre>
+</div>
+</div>
+</div>
     </div>
     
 
