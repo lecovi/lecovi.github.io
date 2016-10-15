@@ -7,6 +7,10 @@
 .. description:
 .. type: text
 
+.. class:: alert alert-info pull-right
+
+.. contents::
+
 .. class:: jumbotron
 
     **Objetivos**:
@@ -25,11 +29,11 @@ Instalación de Paquetes necesarios
 
 Así como nuestro GNU/Linux tiene una herramienta para la instalación de paquetes como ``apt`` o ``yum/dnf``, con Python también tenemos algo similar. Por suerte existe ``pip`` y la instalación de paquetes es muy sencilla.
 
-Necesitamos tener instalado en nuestro sistema opertativo esta herramienta. Para eso debemos instalar los paquetes ``python3-pip`` para usar ``pip3`` con Python 3.x y `python-pip` para usar ``pip`` con Python 2.x:
+Necesitamos tener instalado en nuestro sistema opertativo esta herramienta. Para eso debemos instalar los paquetes ``python3-pip`` para usar ``pip3`` con Python 3.x y ``python-pip`` para usar ``pip`` con Python 2.x:
 
 .. code-block:: bash
 
-    $ sudo apt install python3-pip python3-pip
+    $ sudo apt install python-pip python3-pip
 
 Ahora que tenemos instalado ``pip`` podemos usarlo para instalar ``virtualenv``.
 
@@ -75,7 +79,7 @@ Ahora le pasamos esa ruta al comando ``virtualenv`` para que nos cree el entorno
 
 Esto creará una carpeta llamada `flasky` que contiene una instalación de Python.
 
-.. HINT::
+.. TIP::
 
     O podemos hacer todo junto en un mismo comando:
 
@@ -88,6 +92,7 @@ Esto creará una carpeta llamada `flasky` que contiene una instalación de Pytho
     :scale: 50 %
     :alt: Árbol del entorno virtual.
     :class: align-center
+
 
 Dentro de esta carpeta nos interesa el archivo ``activate`` que va a servir para activar nuestro entorno virtual en nuestra sesión activa de la terminal. Lo activamos usando el comando ``source`` de la siguiente manera:
 
@@ -119,10 +124,13 @@ Con el entorno virtual activo instalamos ``Flask`` usando ``pip``.
     (flasky) ~/hello_world_app ➜ pip install Flask
 
 
-.. IMPORTANT::
+.. TIP::
 
     Otra ventaja del entorno virtual es que nos deja instalar paquetes de `Python` a través de ``pip`` sin tener que tener privilegios administrativos. Es decir, sin usar ``sudo``.
 
+
+Armando la aplicación
+---------------------
 
 Y creamos las carpetas necesarias para nuestra aplicación:
 
