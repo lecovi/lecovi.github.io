@@ -18,4 +18,33 @@ body {
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0; // remove the gap so it doesn't close
- }
+}
+
+div.tip {
+    background: #e7f2fa none repeat scroll 0 0;
+}
+
+div.tip p.admonition-title {
+    background: #6ab0de none repeat scroll 0 0;
+    color: #fff;
+}
+
+.admonition-title {
+    background: #6ab0de none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    margin: -12px -12px 12px;
+    padding: 6px 12px;
+}
+
+.literal {
+    color: #e74c3c;
+    border: 1px solid #e1e4e5;
+    font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+    font-size: 75%;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 2px 5px;
+}
