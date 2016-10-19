@@ -14,7 +14,24 @@
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Flask Templates">
 <meta property="og:url" content="http://lecovi.github.io/ifts/par/flask-templates/">
-<meta property="og:description" content="Write your page here.">
+<meta property="og:description" content="Contents
+
+Etiquetas HTML5
+Estructura de un documento HTML
+Atributos HTML
+
+
+Enlaces
+Imágenes
+Reglas horizontales
+Texto preformateado
+Formateando elementos
+Tooltip
+Comentario
+
+
+Plantillas de Flask
+Flask">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-08-26T15:18:41-03:00">
 </head>
@@ -121,7 +138,382 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Write your page here.</p>
+    <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li>
+<a class="reference internal" href=".#etiquetas-html5" id="id1">Etiquetas HTML5</a><ul>
+<li>
+<a class="reference internal" href=".#estructura-de-un-documento-html" id="id2">Estructura de un documento HTML</a><ul>
+<li><a class="reference internal" href=".#atributos-html" id="id3">Atributos HTML</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href=".#enlaces" id="id4">Enlaces</a></li>
+<li><a class="reference internal" href=".#imagenes" id="id5">Imágenes</a></li>
+<li><a class="reference internal" href=".#reglas-horizontales" id="id6">Reglas horizontales</a></li>
+<li><a class="reference internal" href=".#texto-preformateado" id="id7">Texto preformateado</a></li>
+<li><a class="reference internal" href=".#formateando-elementos" id="id8">Formateando elementos</a></li>
+<li><a class="reference internal" href=".#tooltip" id="id9">Tooltip</a></li>
+<li><a class="reference internal" href=".#comentario" id="id10">Comentario</a></li>
+</ul>
+</li>
+<li>
+<a class="reference internal" href=".#plantillas-de-flask" id="id11">Plantillas de Flask</a><ul>
+<li><a class="reference internal" href=".#flask-devuelve-un-html" id="id12">Flask devuelve un HTML</a></li>
+<li><a class="reference internal" href=".#flask-renderiza-una-plantilla" id="id13">Flask renderiza una plantilla</a></li>
+<li><a class="reference internal" href=".#estructuras-de-control-en-las-plantillas" id="id14">Estructuras de control en las plantillas</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<dl class="jumbotron docutils">
+<dt>
+<strong>Objetivos</strong>:</dt>
+<dd><ul class="first last simple">
+<li>Conocer las etiquetas HTML5 más utilizadas.</li>
+<li>Usar el sistema de plantillas HTML que utiliza Flask para armar las páginas web de una aplicación.</li>
+<li>Conocer la sintáxis de Jinja2.</li>
+</ul></dd>
+</dl>
+<div class="section" id="etiquetas-html5">
+<h2><a class="toc-backref" href=".#id1">Etiquetas HTML5</a></h2>
+<p>Las etiquetas HTML son elementos con nombre encerrados por los símbolos de mayor (<tt class="docutils literal">&lt;</tt>) y menor (<tt class="docutils literal">&gt;</tt>):</p>
+<div class="tip">
+<p class="first admonition-title">Tip</p>
+<p class="last"><tt class="docutils literal"><span class="pre">&lt;nombre&gt;contenido...&lt;/nombre&gt;</span></tt></p>
+</div>
+<p>Consideraciones:</p>
+<ul class="simple">
+<li>La mayoria de las etiquetas se usan de a pares, por ejemplo: <tt class="docutils literal">&lt;p&gt;</tt> y <tt class="docutils literal">&lt;/p&gt;</tt>.</li>
+<li>Se las llaman <cite>etiqueta de apertura</cite> y <cite>etiqueta de cierre</cite> respectivamente.</li>
+<li>La etiqueta de cierre se escribe igual que la de apertura, pero el nombre comienza con barra (<tt class="docutils literal">/</tt>).</li>
+<li>Si bien HTML no es sensible a las mayúsculas y minúsculas, las buenas prácticas dicen que las etiquetas deben escribirse con minúscula.</li>
+<li>Todas los documentos HTML consisten en elementos HTML anidados.</li>
+</ul>
+<div class="warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">No hay que olvidarse las etiquetas de cierre.</p>
+</div>
+<div class="section" id="estructura-de-un-documento-html">
+<h3><a class="toc-backref" href=".#id2">Estructura de un documento HTML</a></h3>
+<p>Un excelente lugar para aprender HTML5 es <a href="http://www.w3schools.com/html/default.asp" target="_blank">w3schools.com</a>. El documento más simple
+que podemos armar en HTML5 es:</p>
+<p><a class="reference external" href="../../../listings/par/encabezados.html.html">par/encabezados.html</a></p>
+<pre class="code html"><a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-1"></a> <span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-2"></a><span class="nt">&lt;html&gt;</span>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-3"></a><span class="nt">&lt;head&gt;</span>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-4"></a><span class="nt">&lt;title&gt;</span>Título de la Página<span class="nt">&lt;/title&gt;</span>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-5"></a><span class="nt">&lt;/head&gt;</span>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-6"></a><span class="nt">&lt;body&gt;</span>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-7"></a>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-8"></a><span class="nt">&lt;h1&gt;</span>Mi primer encabezado<span class="nt">&lt;/h1&gt;</span>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-9"></a><span class="nt">&lt;p&gt;</span>Mi primer párrafo.<span class="nt">&lt;/p&gt;</span>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-10"></a><span class="nt">&lt;h2&gt;</span>Segundo encabezado<span class="nt">&lt;/h2&gt;</span>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-11"></a><span class="nt">&lt;h3&gt;</span>Tercer encabezado<span class="nt">&lt;/h3&gt;</span>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-12"></a>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-13"></a><span class="nt">&lt;/body&gt;</span>
+<a name="rest_code_a33d6c3fe91547a094fa20b2d417004b-14"></a><span class="nt">&lt;/html&gt;</span>
+</pre>
+<img alt="/images/par/estructura_html.png" class="align-center" src="../../../images/par/estructura_html.png"><div class="tip">
+<p class="first admonition-title">Tip</p>
+<ul class="last simple">
+<li>Todos los elementos que están dentro de la etiqueta <tt class="docutils literal">&lt;body&gt;</tt> son los que vemos en el navegador web.</li>
+<li>El elemento <tt class="docutils literal">&lt;head&gt;</tt> es un contenedor de metadata. La metadata HTML es información sobre el documento HTML en sí. La metadata no se muestra en el navegador web.</li>
+</ul>
+</div>
+<div class="section" id="atributos-html">
+<h4><a class="toc-backref" href=".#id3">Atributos HTML</a></h4>
+<ul class="simple">
+<li>Todos los elementos HTML pueden tener atributos.</li>
+<li>Los atributos proveen información adicional sobre los elementos.</li>
+<li>Los atributos siempre van dentro de la etiqueta de apertura.</li>
+<li>Los atributos usualmente vienen en pares <cite>nombre-valor</cite>, como: <tt class="docutils literal"><span class="pre">name="value"</span></tt>.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="enlaces">
+<h3><a class="toc-backref" href=".#id4">Enlaces</a></h3>
+<p><a class="reference external" href="../../../listings/par/enlaces.html.html">par/enlaces.html</a></p>
+<pre class="code html"><a name="rest_code_d2ab776a044e4937bae9364600d69f42-1"></a> <span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a name="rest_code_d2ab776a044e4937bae9364600d69f42-2"></a><span class="nt">&lt;html&gt;</span>
+<a name="rest_code_d2ab776a044e4937bae9364600d69f42-3"></a><span class="nt">&lt;head&gt;</span>
+<a name="rest_code_d2ab776a044e4937bae9364600d69f42-4"></a><span class="nt">&lt;title&gt;</span>Enlaces<span class="nt">&lt;/title&gt;</span>
+<a name="rest_code_d2ab776a044e4937bae9364600d69f42-5"></a><span class="nt">&lt;/head&gt;</span>
+<a name="rest_code_d2ab776a044e4937bae9364600d69f42-6"></a><span class="nt">&lt;body&gt;</span>
+<a name="rest_code_d2ab776a044e4937bae9364600d69f42-7"></a>
+<a name="rest_code_d2ab776a044e4937bae9364600d69f42-8"></a><span class="nt">&lt;h1&gt;</span>Mi primer enlace<span class="nt">&lt;/h1&gt;</span>
+<a name="rest_code_d2ab776a044e4937bae9364600d69f42-9"></a><span class="nt">&lt;p&gt;</span>Hace click en este <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://bitson.com.ar"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<a name="rest_code_d2ab776a044e4937bae9364600d69f42-10"></a>
+<a name="rest_code_d2ab776a044e4937bae9364600d69f42-11"></a><span class="nt">&lt;/body&gt;</span>
+<a name="rest_code_d2ab776a044e4937bae9364600d69f42-12"></a><span class="nt">&lt;/html&gt;</span>
+</pre>
+</div>
+<div class="section" id="imagenes">
+<h3><a class="toc-backref" href=".#id5">Imágenes</a></h3>
+<p><a class="reference external" href="../../../listings/par/imagenes.html.html">par/imagenes.html</a></p>
+<pre class="code html"><a name="rest_code_277991e7ca334c5580f141151e2bb88f-1"></a> <span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a name="rest_code_277991e7ca334c5580f141151e2bb88f-2"></a><span class="nt">&lt;html&gt;</span>
+<a name="rest_code_277991e7ca334c5580f141151e2bb88f-3"></a><span class="nt">&lt;head&gt;</span>
+<a name="rest_code_277991e7ca334c5580f141151e2bb88f-4"></a><span class="nt">&lt;title&gt;</span>Imágenes<span class="nt">&lt;/title&gt;</span>
+<a name="rest_code_277991e7ca334c5580f141151e2bb88f-5"></a><span class="nt">&lt;/head&gt;</span>
+<a name="rest_code_277991e7ca334c5580f141151e2bb88f-6"></a><span class="nt">&lt;body&gt;</span>
+<a name="rest_code_277991e7ca334c5580f141151e2bb88f-7"></a>
+<a name="rest_code_277991e7ca334c5580f141151e2bb88f-8"></a><span class="nt">&lt;h1&gt;</span>Insertando imágenes en HTML<span class="nt">&lt;/h1&gt;</span>
+<a name="rest_code_277991e7ca334c5580f141151e2bb88f-9"></a><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://www.bitson.com.ar/firma_mail_bitson.png"</span> <span class="na">alt=</span><span class="s">"Frima Mail BITSON"</span> <span class="na">with=</span><span class="s">"100%"</span><span class="nt">&gt;</span>
+<a name="rest_code_277991e7ca334c5580f141151e2bb88f-10"></a>
+<a name="rest_code_277991e7ca334c5580f141151e2bb88f-11"></a><span class="nt">&lt;/body&gt;</span>
+<a name="rest_code_277991e7ca334c5580f141151e2bb88f-12"></a><span class="nt">&lt;/html&gt;</span>
+</pre>
+</div>
+<div class="section" id="reglas-horizontales">
+<h3><a class="toc-backref" href=".#id6">Reglas horizontales</a></h3>
+<p><a class="reference external" href="../../../listings/par/hr.html.html">par/hr.html</a></p>
+<pre class="code html"><a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-1"></a> <span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-2"></a><span class="nt">&lt;html&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-3"></a><span class="nt">&lt;head&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-4"></a><span class="nt">&lt;title&gt;</span>Horizontal Rule<span class="nt">&lt;/title&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-5"></a><span class="nt">&lt;/head&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-6"></a><span class="nt">&lt;body&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-7"></a>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-8"></a><span class="nt">&lt;h1&gt;</span>Encabezado 1<span class="nt">&lt;/h1&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-9"></a><span class="nt">&lt;p&gt;</span>Saraza.<span class="nt">&lt;/p&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-10"></a><span class="nt">&lt;hr&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-11"></a><span class="nt">&lt;h2&gt;</span>Encabezado 2<span class="nt">&lt;/h2&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-12"></a><span class="nt">&lt;p&gt;</span>Más saraza.<span class="nt">&lt;/p&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-13"></a><span class="nt">&lt;hr&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-14"></a>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-15"></a><span class="nt">&lt;/body&gt;</span>
+<a name="rest_code_723c14244b4f4f85a5bcc2fce8b897e5-16"></a><span class="nt">&lt;/html&gt;</span>
+</pre>
+</div>
+<div class="section" id="texto-preformateado">
+<h3><a class="toc-backref" href=".#id7">Texto preformateado</a></h3>
+<p><a class="reference external" href="../../../listings/par/pre.html.html">par/pre.html</a></p>
+<pre class="code html"><a name="rest_code_f794c9f6ff3248eea583c00d97a644db-1"></a> <span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-2"></a><span class="nt">&lt;html&gt;</span>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-3"></a><span class="nt">&lt;head&gt;</span>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-4"></a><span class="nt">&lt;title&gt;</span>pre<span class="nt">&lt;/title&gt;</span>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-5"></a><span class="nt">&lt;/head&gt;</span>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-6"></a><span class="nt">&lt;body&gt;</span>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-7"></a>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-8"></a><span class="nt">&lt;p&gt;</span>Lo que sigue es texto preformateado:<span class="nt">&lt;/p&gt;</span>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-9"></a> <span class="nt">&lt;pre&gt;</span>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-10"></a>  My Bonnie lies over the ocean.
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-11"></a>My Bonnie lies over the sea.
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-12"></a>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-13"></a>  My Bonnie lies over the ocean.
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-14"></a>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-15"></a>  Oh, bring back my Bonnie to me.
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-16"></a><span class="nt">&lt;/pre&gt;</span>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-17"></a>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-18"></a><span class="nt">&lt;/body&gt;</span>
+<a name="rest_code_f794c9f6ff3248eea583c00d97a644db-19"></a><span class="nt">&lt;/html&gt;</span>
+</pre>
+</div>
+<div class="section" id="formateando-elementos">
+<h3><a class="toc-backref" href=".#id8">Formateando elementos</a></h3>
+<p><a class="reference external" href="../../../listings/par/format.html.html">par/format.html</a></p>
+<pre class="code html"><a name="rest_code_ce1074116b404c969b56e4f4ff178868-1"></a> <span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-2"></a><span class="nt">&lt;html&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-3"></a><span class="nt">&lt;head&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-4"></a><span class="nt">&lt;title&gt;</span>Formato<span class="nt">&lt;/title&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-5"></a><span class="nt">&lt;/head&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-6"></a><span class="nt">&lt;body&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-7"></a>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-8"></a><span class="nt">&lt;h1&gt;</span>Formato de texto<span class="nt">&lt;/h1&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-9"></a><span class="nt">&lt;p&gt;</span>Lo que sigue es texto formateado en <span class="nt">&lt;b&gt;</span>negrita<span class="nt">&lt;/b&gt;&lt;/p&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-10"></a><span class="nt">&lt;p&gt;</span>Lo que sigue es texto formateado con <span class="nt">&lt;strong&gt;</span>strong<span class="nt">&lt;/strong&gt;&lt;/p&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-11"></a><span class="nt">&lt;p&gt;</span>Lo que sigue es texto formateado en <span class="nt">&lt;i&gt;</span>itálica<span class="nt">&lt;/i&gt;&lt;/p&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-12"></a><span class="nt">&lt;p&gt;</span>Lo que sigue es texto formateado con <span class="nt">&lt;em&gt;</span>énfasis<span class="nt">&lt;/em&gt;&lt;/p&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-13"></a><span class="nt">&lt;p&gt;</span>Lo que sigue es texto formateado con <span class="nt">&lt;mark&gt;</span>resaltado<span class="nt">&lt;/mark&gt;&lt;/p&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-14"></a><span class="nt">&lt;p&gt;</span>Lo que sigue es texto formateado como <span class="nt">&lt;small&gt;</span>pequeño<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-15"></a><span class="nt">&lt;p&gt;</span>Lo que sigue es texto formateado con <span class="nt">&lt;del&gt;</span>tachado<span class="nt">&lt;/del&gt;&lt;/p&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-16"></a><span class="nt">&lt;p&gt;</span>Lo que sigue es texto formateado con <span class="nt">&lt;ins&gt;</span>subrayado<span class="nt">&lt;/ins&gt;&lt;/p&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-17"></a><span class="nt">&lt;p&gt;</span>Lo que sigue es texto formateado en <span class="nt">&lt;sup&gt;</span>superíndice<span class="nt">&lt;/sup&gt;&lt;/p&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-18"></a><span class="nt">&lt;p&gt;</span>Lo que sigue es texto formateado en <span class="nt">&lt;sub&gt;</span>subíndice<span class="nt">&lt;/sub&gt;&lt;/p&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-19"></a>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-20"></a><span class="nt">&lt;/body&gt;</span>
+<a name="rest_code_ce1074116b404c969b56e4f4ff178868-21"></a><span class="nt">&lt;/html&gt;</span>
+</pre>
+</div>
+<div class="section" id="tooltip">
+<h3><a class="toc-backref" href=".#id9">Tooltip</a></h3>
+<p><a class="reference external" href="../../../listings/par/tooltip.html.html">par/tooltip.html</a></p>
+<pre class="code html"><a name="rest_code_c517b54a804544488db2e84392706b35-1"></a> <span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a name="rest_code_c517b54a804544488db2e84392706b35-2"></a><span class="nt">&lt;html&gt;</span>
+<a name="rest_code_c517b54a804544488db2e84392706b35-3"></a><span class="nt">&lt;head&gt;</span>
+<a name="rest_code_c517b54a804544488db2e84392706b35-4"></a><span class="nt">&lt;title&gt;</span>Tooltip<span class="nt">&lt;/title&gt;</span>
+<a name="rest_code_c517b54a804544488db2e84392706b35-5"></a><span class="nt">&lt;/head&gt;</span>
+<a name="rest_code_c517b54a804544488db2e84392706b35-6"></a><span class="nt">&lt;body&gt;</span>
+<a name="rest_code_c517b54a804544488db2e84392706b35-7"></a>
+<a name="rest_code_c517b54a804544488db2e84392706b35-8"></a><span class="nt">&lt;p</span> <span class="na">title=</span><span class="s">"What's up!?"</span><span class="nt">&gt;</span>Mi primer tooltip.<span class="nt">&lt;/p&gt;</span>
+<a name="rest_code_c517b54a804544488db2e84392706b35-9"></a>
+<a name="rest_code_c517b54a804544488db2e84392706b35-10"></a><span class="nt">&lt;/body&gt;</span>
+<a name="rest_code_c517b54a804544488db2e84392706b35-11"></a><span class="nt">&lt;/html&gt;</span>
+</pre>
+</div>
+<div class="section" id="comentario">
+<h3><a class="toc-backref" href=".#id10">Comentario</a></h3>
+<p><a class="reference external" href="../../../listings/par/comentario.html.html">par/comentario.html</a></p>
+<pre class="code html"><a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-2"></a><span class="nt">&lt;html&gt;</span>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-3"></a><span class="nt">&lt;head&gt;</span>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-4"></a><span class="nt">&lt;title&gt;</span>Comentario HTML<span class="nt">&lt;/title&gt;</span>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-5"></a><span class="nt">&lt;/head&gt;</span>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-6"></a><span class="nt">&lt;body&gt;</span>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-7"></a>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-8"></a><span class="nt">&lt;h1&gt;</span>Documento con comentario<span class="nt">&lt;/h1&gt;</span>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-9"></a><span class="c">&lt;!-- Este es un comentario y no se ve en el navegador --&gt;</span>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-10"></a><span class="nt">&lt;p&gt;</span>Mi primer parrafo.<span class="nt">&lt;/p&gt;</span>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-11"></a>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-12"></a><span class="nt">&lt;/body&gt;</span>
+<a name="rest_code_22d0700cb9e4419ebb7081311c5d0298-13"></a><span class="nt">&lt;/html&gt;</span>
+</pre>
+</div>
+</div>
+<div class="section" id="plantillas-de-flask">
+<h2><a class="toc-backref" href=".#id11">Plantillas de Flask</a></h2>
+<div class="section" id="flask-devuelve-un-html">
+<h3><a class="toc-backref" href=".#id12">Flask devuelve un HTML</a></h3>
+<p><a class="reference external" href="../../../listings/par/routes2.py.html">par/routes2.py</a></p>
+<pre class="code python3"><a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-1"></a><span class="c">#!/usr/bin/env python</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-2"></a>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-3"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="k">import</span> <span class="n">Flask</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-4"></a>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-5"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-6"></a>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-7"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-8"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/index'</span><span class="p">)</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-9"></a><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-10"></a>    <span class="k">return</span> <span class="s">"Hello World!"</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-11"></a>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-12"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/user'</span><span class="p">)</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-13"></a><span class="k">def</span> <span class="nf">user</span><span class="p">():</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-14"></a>    <span class="n">user</span> <span class="o">=</span> <span class="p">{</span><span class="s">'nick'</span><span class="p">:</span> <span class="s">'Leo'</span><span class="p">,</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-15"></a>            <span class="s">'name'</span><span class="p">:</span> <span class="s">'Leandro'</span><span class="p">}</span>  <span class="c"># fake user</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-16"></a>    <span class="k">return</span> <span class="s">'''&lt;!DOCTYPE html&gt;</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-17"></a><span class="s">&lt;html&gt;</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-18"></a><span class="s">&lt;head&gt;</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-19"></a><span class="s">&lt;title&gt;Usuario {nick}&lt;/title&gt;</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-20"></a><span class="s">&lt;/head&gt;</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-21"></a><span class="s">&lt;body&gt;</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-22"></a>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-23"></a><span class="s">&lt;h1&gt;Hola {usuario}&lt;/h1&gt;</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-24"></a><span class="s">&lt;p&gt;Está bastante bueno esto de Flask.&lt;/p&gt;</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-25"></a>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-26"></a><span class="s">&lt;/body&gt;</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-27"></a><span class="s">&lt;/html&gt;</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-28"></a><span class="s">'''</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">usuario</span><span class="o">=</span><span class="n">user</span><span class="p">[</span><span class="s">'name'</span><span class="p">],</span> <span class="n">nick</span><span class="o">=</span><span class="n">user</span><span class="p">[</span><span class="s">'nick'</span><span class="p">])</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-29"></a>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-30"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<a name="rest_code_36a27f8a086e4db2bfc5b09ea74ab1f3-31"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+</pre>
+</div>
+<div class="section" id="flask-renderiza-una-plantilla">
+<h3><a class="toc-backref" href=".#id13">Flask renderiza una plantilla</a></h3>
+<p><a class="reference external" href="../../../listings/par/routes3.py.html">par/routes3.py</a></p>
+<pre class="code python3"><a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-1"></a><span class="c">#!/usr/bin/env python</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-2"></a>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-3"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="k">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-4"></a>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-5"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-6"></a>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-7"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-8"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/index'</span><span class="p">)</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-9"></a><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-10"></a>    <span class="k">return</span> <span class="s">"Hello World!"</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-11"></a>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-12"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/user_template'</span><span class="p">)</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-13"></a><span class="k">def</span> <span class="nf">user</span><span class="p">():</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-14"></a>    <span class="n">username</span> <span class="o">=</span> <span class="p">{</span><span class="s">'nick'</span><span class="p">:</span> <span class="s">'Leo'</span><span class="p">,</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-15"></a>                <span class="s">'name'</span><span class="p">:</span> <span class="s">'Leandro'</span><span class="p">}</span>  <span class="c"># fake user</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-16"></a>    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">'user.html'</span><span class="p">,</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-17"></a>                           <span class="n">user</span><span class="o">=</span><span class="n">username</span><span class="p">,</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-18"></a>                           <span class="n">app</span><span class="o">=</span><span class="n">app</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-19"></a>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-20"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<a name="rest_code_19c4f3a3771b4abca3ceec48227bdc8e-21"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+</pre>
+<p><a class="reference external" href="../../../listings/par/user.html.html">par/user.html</a></p>
+<pre class="code html"><a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-2"></a><span class="nt">&lt;html&gt;</span>
+<a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-3"></a><span class="nt">&lt;head&gt;</span>
+<a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-4"></a><span class="nt">&lt;title&gt;</span>Usuario {{ user.nick }}<span class="nt">&lt;/title&gt;</span>
+<a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-5"></a><span class="nt">&lt;/head&gt;</span>
+<a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-6"></a><span class="nt">&lt;body&gt;</span>
+<a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-7"></a>
+<a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-8"></a><span class="nt">&lt;h1&gt;</span>Hola {{ user.name }}<span class="nt">&lt;/h1&gt;</span>
+<a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-9"></a><span class="nt">&lt;p&gt;</span>Está bastante bueno esto de Flask, ejecutando {{ app }}.<span class="nt">&lt;/p&gt;</span>
+<a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-10"></a>
+<a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-11"></a><span class="nt">&lt;/body&gt;</span>
+<a name="rest_code_748de4aa431c4ea1ab14825e9096c5d0-12"></a><span class="nt">&lt;/html&gt;</span>
+</pre>
+</div>
+<div class="section" id="estructuras-de-control-en-las-plantillas">
+<h3><a class="toc-backref" href=".#id14">Estructuras de control en las plantillas</a></h3>
+<p><a class="reference external" href="../../../listings/par/routes4.py.html">par/routes4.py</a></p>
+<pre class="code python3"><a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-1"></a><span class="c">#!/usr/bin/env python</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-2"></a>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-3"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="k">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-4"></a>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-5"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-6"></a>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-7"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-8"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/index'</span><span class="p">)</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-9"></a><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-10"></a>    <span class="k">return</span> <span class="s">"Hello World!"</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-11"></a>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-12"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/users'</span><span class="p">)</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-13"></a><span class="k">def</span> <span class="nf">user</span><span class="p">():</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-14"></a>    <span class="c"># fake users</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-15"></a>    <span class="n">users</span> <span class="o">=</span> <span class="p">[{</span><span class="s">'nick'</span><span class="p">:</span> <span class="s">'Titi'</span><span class="p">,</span> <span class="s">'name'</span><span class="p">:</span> <span class="s">'Thiago'</span><span class="p">},</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-16"></a>             <span class="p">{</span><span class="s">'nick'</span><span class="p">:</span> <span class="s">'Fer'</span><span class="p">,</span> <span class="s">'name'</span><span class="p">:</span> <span class="s">'Fernanda'</span><span class="p">},</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-17"></a>             <span class="p">{</span><span class="s">'nick'</span><span class="p">:</span> <span class="s">'Leo'</span><span class="p">,</span> <span class="s">'name'</span><span class="p">:</span> <span class="s">'Leandro'</span><span class="p">},</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-18"></a>    <span class="p">]</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-19"></a>    <span class="n">value</span> <span class="o">=</span> <span class="mi">12</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-20"></a>    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">'users.html'</span><span class="p">,</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-21"></a>                           <span class="n">users</span><span class="o">=</span><span class="n">users</span><span class="p">,</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-22"></a>                           <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">)</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-23"></a>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-24"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<a name="rest_code_a24391e2fdab40ffa6e80b0da6caa171-25"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+</pre>
+<p><a class="reference external" href="../../../listings/par/users.html.html">par/users.html</a></p>
+<pre class="code html"><a name="rest_code_15d407a51e9d480e9997598df344577e-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-2"></a><span class="nt">&lt;html&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-3"></a><span class="nt">&lt;head&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-4"></a><span class="nt">&lt;title&gt;</span>Lista de Usuarios<span class="nt">&lt;/title&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-5"></a><span class="nt">&lt;/head&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-6"></a><span class="nt">&lt;body&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-7"></a>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-8"></a><span class="nt">&lt;h1&gt;</span>Usuarios<span class="nt">&lt;/h1&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-9"></a><span class="nt">&lt;p&gt;</span>Esta es la lista de usuarios<span class="nt">&lt;/p&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-10"></a><span class="nt">&lt;table&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-11"></a>    <span class="nt">&lt;tr&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-12"></a>        <span class="nt">&lt;th&gt;</span>Nombre<span class="nt">&lt;/th&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-13"></a>        <span class="nt">&lt;th&gt;</span>Nick<span class="nt">&lt;/th&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-14"></a>    <span class="nt">&lt;/tr&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-15"></a>    {% for user in users %}
+<a name="rest_code_15d407a51e9d480e9997598df344577e-16"></a>    <span class="nt">&lt;tr&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-17"></a>        <span class="nt">&lt;td&gt;</span>{{ user.name }}<span class="nt">&lt;/td&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-18"></a>        <span class="nt">&lt;td&gt;</span>{{ user.nick }}<span class="nt">&lt;/td&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-19"></a>    <span class="nt">&lt;/tr&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-20"></a>    {% endfor %}
+<a name="rest_code_15d407a51e9d480e9997598df344577e-21"></a><span class="nt">&lt;/table&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-22"></a>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-23"></a>{% if value &gt; 0 %}
+<a name="rest_code_15d407a51e9d480e9997598df344577e-24"></a><span class="nt">&lt;p&gt;</span>El valor es mayor a cero<span class="nt">&lt;/p&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-25"></a>{% else %}
+<a name="rest_code_15d407a51e9d480e9997598df344577e-26"></a><span class="nt">&lt;p&gt;</span>El valor es menor a cero<span class="nt">&lt;/p&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-27"></a>{% endif %}
+<a name="rest_code_15d407a51e9d480e9997598df344577e-28"></a>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-29"></a><span class="nt">&lt;/body&gt;</span>
+<a name="rest_code_15d407a51e9d480e9997598df344577e-30"></a><span class="nt">&lt;/html&gt;</span>
+</pre>
+</div>
+</div>
+</div>
     </div>
     
 
