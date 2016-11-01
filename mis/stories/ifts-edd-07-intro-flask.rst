@@ -22,6 +22,7 @@
 .. TODO: poner explicación de Internet y redes básico. Cubrir los siguientes conceptos: socket, IP, puertos, DNS, Request-Reply, URL, Protocolos.
 
 .. class:: row
+
 Arquitectura de la web
 ==================================
 
@@ -31,9 +32,10 @@ Por un lado la WWW es es una colección global de documentos de textos y otros r
 
 Cómo funciona la web
 ----------------------
+
 Sabemos que para acceder a la web necesitamos un navegador(browser), como por ejemplo Internet Explorer (por favor no uses ese), MozillaFirefox, Chrome, Opera, Safari, etc, y una dirección de internet, digamos «www.google.com.ar». Al apretar *ir* o apretar la tecla enter, suceden varian cosas.
 
-Por un lado el navegador envía por internet la petición de la página que queremos alcanzar, para ello existe el DNS(Domain Name Service), que se encarga de traducir el *nombre de dominio* «google.com.ar» a una dirección IP(Internet Protocol), que es un número que identifica a un recurso en un servidor(computadora), como por ejemplo 192.169.255.1. Así petición que estamos haciendo llega al destino indicado, es asi como el navegador "sabe" dónde ir a buscar los contenidos de cada sitio que visitamos.
+Por un lado el navegador envía por internet la petición de la página que queremos alcanzar, para ello existe el DNS(Domain Name Service), que se encarga de traducir el *nombre de dominio* «google.com.ar» a una dirección IP(Internet Protocol), que es un número que identifica a un recurso en un servidor(computadora), como por ejemplo 192.169.255.1. Así la petición que estamos haciendo llega al destino indicado, es asi como el navegador "sabe" dónde ir a buscar los contenidos de cada sitio que visitamos.
 
 Socket designa un concepto abstracto por el cual dos programas (posiblemente situados en computadoras distintas) pueden intercambiar cualquier flujo de datos, generalmente de manera fiable y ordenada.
 
@@ -42,6 +44,7 @@ El término socket es también usado como el nombre de una interfaz de programac
 Un puerto de red es una interfaz para comunicarse con un programa a través de una red
 
 .. TODO: reemplazar por el link correcto
+
 .. class:: col-xs-12 col-md-8 col-md-offset-1 embed-responsive embed-responsive-16by9
 
     .. raw:: html
