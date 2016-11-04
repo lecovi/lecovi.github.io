@@ -24,14 +24,14 @@
 .. class:: row
 
 Arquitectura de la web
-==================================
+======================
 
 Cuando hablamos de web tenemos que hacer la distinción entre WWW(Word wide web) e Internet. **No son lo mismo**
 
 Por un lado la WWW es es una colección global de documentos de textos y otros recursos, unidos por hyperlinks(enlaces) y URIs(uniform resource identifies). En cambio internet es un sistema global de redes de computadoras conectadas.
 
 Cómo funciona la web
-----------------------
+--------------------
 
 Sabemos que para acceder a la web necesitamos un navegador(browser), como por ejemplo Internet Explorer (por favor no uses ese), MozillaFirefox, Chrome, Opera, Safari, etc, y una dirección de internet, digamos «www.google.com.ar». Al apretar *ir* o apretar la tecla enter, suceden varian cosas.
 
@@ -43,14 +43,12 @@ El término socket es también usado como el nombre de una interfaz de programac
 
 Un puerto de red es una interfaz para comunicarse con un programa a través de una red
 
-.. TODO: reemplazar por el link correcto
-
 .. class:: col-xs-12 col-md-8 col-md-offset-1 embed-responsive embed-responsive-16by9
 
     .. raw:: html
 
         <iframe class="embed-responsive-item"
-        src="http://bitson.github.io/cursos/python1"
+        src="http://bitson.com.ar/ifts/webExplanationSlides/public/html/"
         scrolling="no"></iframe>
 
 
