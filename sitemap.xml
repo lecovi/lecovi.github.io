@@ -847,7 +847,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/edd/</loc>
-  <lastmod>2016-08-23T23:57:00Z</lastmod>
+  <lastmod>2016-11-04T12:55:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/edd/clases-complejas/</loc>
@@ -856,6 +856,10 @@
  <url>
   <loc>http://lecovi.github.io/ifts/edd/encuesta/</loc>
   <lastmod>2016-08-23T23:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/edd/examen/</loc>
+  <lastmod>2016-11-04T12:55:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/edd/flask-db/</loc>
@@ -899,7 +903,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/par/</loc>
-  <lastmod>2016-08-23T23:57:00Z</lastmod>
+  <lastmod>2016-11-04T12:55:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/par/archivos/</loc>
@@ -916,6 +920,10 @@
  <url>
   <loc>http://lecovi.github.io/ifts/par/errores/</loc>
   <lastmod>2016-08-23T23:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/par/examen/</loc>
+  <lastmod>2016-11-04T12:55:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/par/flask-db/</loc>
