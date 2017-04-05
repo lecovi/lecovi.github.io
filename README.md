@@ -1,45 +1,48 @@
 # lecovi.github.io
-Leo's personal site
 
-Mi sitio personal
+Leo's personal site. My very own crap! Enjoy it!
 
 # Installation notes
 
-## Requirements
+1. Clone the repo.
+2. Checkout to source branch and install requirements.
+4. Run `nikola`.
+5. Edit your crap.
 
-You need to have `pip` to install `requirements.txt`.
-It would nice to have `virtualenvwrapper`
-
-```console
-$ git checkout src
-$ cd mis
-$ nikola auto
-```
-
-### Debian
-
-```console
-$ sudo apt install python-pip
-$ sudo apt install libxml2-dev libxslt1-dev zlib1-dev
-```
-
-### Virtualenvwrapper
-
-```console
-$ sudo pip install virtualenvwrapper
-```
-
-Add to your `.bashrc`:
+### Prerequisites
 
 ```bash
-export WORKON_HOME=~/.envs
-source /usr/local/bin/virtualenvwrapper.sh
+sudo apt install python-pip
+sudo apt install libxml2-dev libxslt1-dev zlib1-dev
 ```
 
-Create virtualenv:
+## Clone
 
-```console
-$ mkvirtualenv -p $(which python3) mis
-$ pip install -r mis/requirements.txt
+```bash
+git clone git@github.com:lecovi/lecovi.github.io.git
 ```
 
+## Requirements
+
+You need to have `pip` to install *requirements*.
+
+> It would be nice to have `virtualenvwrapper`
+
+```bash
+mkvirtualenv -p $(which python3) mis
+git checkout src
+cd mis
+pip install -r requirements
+nikola auto
+```
+
+## Run nikola
+
+```bash
+nikola auto
+```
+
+## Edit your crap
+
+- Edit reStructuredText inside `stories`
+- Edit reStructuredText inside `posts`
