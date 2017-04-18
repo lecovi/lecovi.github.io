@@ -47,7 +47,7 @@
 .. raw:: html
 
 
-    <a href="https://docs.google.com/spreadsheets/d/1UPN29JBf2eXz-SsG4iCtbwys6G0NHnO-qFZIoAhP8-4/pubhtml?gid=19&single=true" target="_blank" class="feature-link text-center">
+    <a href="https://docs.google.com/spreadsheets/d/1xkZ-n-PJLfnJQAfcstX1_Eiz56xGxUmG9o1EcK7Fd3s/pubhtml" target="_blank" class="feature-link text-center">
         <div class="feature-icon feature-icon-static">
             <span class="fa-stack fa-3x">
                 <i class="fa fa-circle fa-stack-2x"></i>
