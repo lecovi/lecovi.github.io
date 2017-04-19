@@ -33,7 +33,7 @@ Recursos
 ========
 
 Máquinas Virtuales & Bibliografía
-----------------------------------
+---------------------------------
 
 En la sección de recursos_ podés descargar las máquinas virtuales y la
 bibliografía del curso.
