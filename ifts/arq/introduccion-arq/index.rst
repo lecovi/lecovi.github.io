@@ -12,7 +12,7 @@ Para comenzar, vamos a conocer los comienzos de la computación.
 Historia de la computación
 ==========================
 
-.. class:: align-center
+.. class:: align-center embed-responsive embed-responsive-16by9
 
     .. raw:: html
 
