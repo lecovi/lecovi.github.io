@@ -138,10 +138,10 @@ NAVIGATION_LINKS = {
             ("/bitson/prog-sl/", "&emsp; <i class=\"fa fa-keyboard-o\"></i> Programación con Software Libre"),
             ("/bitson/olin/", "&emsp; <i class=\"fa fa-terminal\"></i> Operador Básico GNU/Linux</span>"),
             ("/bitson/reli/", "&emsp; <i class=\"fa fa-qq\"></i> Administración de Redes con GNU/Linux"),
-            ), "Cursos"),
+            ), "<i class=\"fa fa-university\"></i> Cursos"),
+        ("/resources/", "<i class=\"fa fa-wrench\"></i> Recursos"),
         ("/archive.html", "<i class=\"fa fa-archive\"></i> Archivo"),
         ("/categories/", "<i class=\"fa fa-tags\"></i> Etiquetas"),
-        ("/resources/", "<i class=\"fa fa-wrench\"></i> Recursos"),
         ("/rss.xml", "<i class=\"fa fa-rss\"></i> RSS"),
     ),
 }
@@ -940,6 +940,7 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 EXTRA_HEAD_DATA = """
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <link href='/assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+<link href="https://file.myfontastic.com/7mCLCcEo7ZcLzzzc986guN/icons.css" rel="stylesheet">
 """
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
