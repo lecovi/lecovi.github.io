@@ -16,28 +16,64 @@
 
     Mansilla 3643, Ciudad Autónoma de Buenos Aires |mapa|
 
-    **Lunes de 18:30 a 22:00hs**
-
-    Suscribite a la lista de correo en este |lista|
+    **Lunes de 18:30 a 22:00hs - 2° Cuatrimestre**
 
 .. |mapa| raw:: html
 
     <a href="http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
 
-.. |lista| raw:: html
-
-    <a href="http://listas.bitson.com.ar/listinfo/estructura" target="_blank">link</a>
-
-.. sidebar:: Calendario
-
-    .. raw:: html
-
-        <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ifts18.edu.ar_8sptp19vu699ikiknrahg6kg8c%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FArgentina%2FBuenos_Aires"
-        style=" border-width:0 " width="400" height="300" frameborder="0"
-        scrolling="no"></iframe>
-
 
 ----
+
+
+.. class:: row
+
+.. class:: col-md-4
+
+.. raw:: html
+
+    <a href="http://listas.bitson.com.ar/listinfo/estructura" target="_blank" class="feature-link text-center">
+        <div class="feature-icon feature-icon-static">
+            <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </span>
+            Lista de Correo
+        </div>
+    </a>
+
+.. class:: col-md-4
+
+.. raw:: html
+
+
+    <a href="https://docs.google.com/spreadsheets/d/1lE6hrGxWND9tjt27s6Iviq-fxVwHJa0uf_o8GCgj8CY/pubhtml?gid=19&single=true" target="_blank" class="feature-link text-center">
+        <div class="feature-icon feature-icon-static">
+            <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-th-list fa-stack-1x fa-inverse"></i>
+            </span>
+            Lista de Alumnos
+        </div>
+    </a>
+
+.. class:: col-md-4
+
+.. raw:: html
+
+    <a href="/ifts/edd/cal" target="_blank" class="feature-link text-center">
+        <div class="feature-icon feature-icon-static">
+            <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+            </span>
+            Calendario
+        </div>
+    </a>
+
+.. class:: row
+
+.. class:: col-md-12
 
 
 Clases

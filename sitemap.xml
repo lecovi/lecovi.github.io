@@ -847,7 +847,11 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/edd/</loc>
-  <lastmod>2016-11-04T12:55:00Z</lastmod>
+  <lastmod>2017-08-19T22:58:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/edd/cal/</loc>
+  <lastmod>2017-08-19T22:58:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/edd/clases-complejas/</loc>
@@ -899,11 +903,15 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/par/</loc>
-  <lastmod>2016-11-04T12:55:00Z</lastmod>
+  <lastmod>2017-08-19T23:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/par/archivos/</loc>
   <lastmod>2016-08-23T23:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/par/cal/</loc>
+  <lastmod>2017-08-19T23:00:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/par/ejecucion-funciones/</loc>
