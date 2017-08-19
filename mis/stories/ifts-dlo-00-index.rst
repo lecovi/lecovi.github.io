@@ -22,6 +22,9 @@
 
     <a href="http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
 
+
+----
+
 .. class:: row
 
 .. class:: col-md-4
