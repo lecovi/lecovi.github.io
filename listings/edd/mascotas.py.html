@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<base href="http://lecovi.github.io/listings/edd/mascotas.py.html">
+<meta name="description" content="mascotas.py">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mascotas.py | Make it So!</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/listings/edd/mascotas.py.html">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://file.myfontastic.com/7mCLCcEo7ZcLzzzc986guN/icons.css" rel="stylesheet">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../blog/"><i class="fa fa-pencil"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-university"></i> Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../cfp"><i class="fa fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../cfp/prog/">  <i class="fa fa-code-fork"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts"><i class=" fa-graduation-cap"></i> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../ifts/arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../../ifts/dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../../ifts/edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li>
+<a href="../../ifts/par/">  <i class="fa fa-code"></i> Paradigmas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts/ana/">  <i class="fa fa-trello"></i> Análisis de Sistemas</a>
+                    </li>
+<li>
+<a href="../../bitson"><i class="fa fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../bitson/prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+                    </li>
+<li>
+<a href="../../bitson/olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../../bitson/reli/">  <i class="fa fa-qq"></i> Administración de Redes con GNU/Linux</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../resources/"><i class="fa fa-wrench"></i> Recursos</a>
+                </li>
+<li>
+<a href="../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="mascotas.py" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+
+<nav class="breadcrumbs"><ul class="breadcrumb">
+<li><a href="../">listings</a></li>
+                <li><a href=".">edd</a></li>
+                <li>mascotas.py</li>
+</ul></nav><table class="codetable"><tr>
+<td class="linenos"><div class="linenodiv"><pre><a href="#listingseddmascotaspy-1"> 1</a>
+<a href="#listingseddmascotaspy-2"> 2</a>
+<a href="#listingseddmascotaspy-3"> 3</a>
+<a href="#listingseddmascotaspy-4"> 4</a>
+<a href="#listingseddmascotaspy-5"> 5</a>
+<a href="#listingseddmascotaspy-6"> 6</a>
+<a href="#listingseddmascotaspy-7"> 7</a>
+<a href="#listingseddmascotaspy-8"> 8</a>
+<a href="#listingseddmascotaspy-9"> 9</a>
+<a href="#listingseddmascotaspy-10">10</a>
+<a href="#listingseddmascotaspy-11">11</a>
+<a href="#listingseddmascotaspy-12">12</a>
+<a href="#listingseddmascotaspy-13">13</a>
+<a href="#listingseddmascotaspy-14">14</a>
+<a href="#listingseddmascotaspy-15">15</a>
+<a href="#listingseddmascotaspy-16">16</a>
+<a href="#listingseddmascotaspy-17">17</a>
+<a href="#listingseddmascotaspy-18">18</a>
+<a href="#listingseddmascotaspy-19">19</a>
+<a href="#listingseddmascotaspy-20">20</a>
+<a href="#listingseddmascotaspy-21">21</a>
+<a href="#listingseddmascotaspy-22">22</a>
+<a href="#listingseddmascotaspy-23">23</a>
+<a href="#listingseddmascotaspy-24">24</a>
+<a href="#listingseddmascotaspy-25">25</a>
+<a href="#listingseddmascotaspy-26">26</a>
+<a href="#listingseddmascotaspy-27">27</a>
+<a href="#listingseddmascotaspy-28">28</a>
+<a href="#listingseddmascotaspy-29">29</a>
+<a href="#listingseddmascotaspy-30">30</a>
+<a href="#listingseddmascotaspy-31">31</a>
+<a href="#listingseddmascotaspy-32">32</a>
+<a href="#listingseddmascotaspy-33">33</a>
+<a href="#listingseddmascotaspy-34">34</a>
+<a href="#listingseddmascotaspy-35">35</a>
+<a href="#listingseddmascotaspy-36">36</a>
+<a href="#listingseddmascotaspy-37">37</a>
+<a href="#listingseddmascotaspy-38">38</a>
+<a href="#listingseddmascotaspy-39">39</a>
+<a href="#listingseddmascotaspy-40">40</a></pre></div></td>
+<td class="code"><pre class="code literal-block"><a name="listingseddmascotaspy-1"></a><span class="c">#!/usr/bin/env python</span>
+<a name="listingseddmascotaspy-2"></a><span class="sd">"""</span>
+<a name="listingseddmascotaspy-3"></a><span class="sd">EDD: Creando objetos - Mascota.</span>
+<a name="listingseddmascotaspy-4"></a>
+<a name="listingseddmascotaspy-5"></a><span class="sd">Importamos el módulo random para que la creación de objetos sea pseudo-aleatoria.</span>
+<a name="listingseddmascotaspy-6"></a><span class="sd">"""</span>
+<a name="listingseddmascotaspy-7"></a>
+<a name="listingseddmascotaspy-8"></a><span class="kn">import</span> <span class="nn">random</span>
+<a name="listingseddmascotaspy-9"></a>
+<a name="listingseddmascotaspy-10"></a>
+<a name="listingseddmascotaspy-11"></a><span class="k">class</span> <span class="nc">Mascota</span><span class="p">:</span>
+<a name="listingseddmascotaspy-12"></a>    <span class="sd">""" Nuestra propia clase Mascota. """</span>
+<a name="listingseddmascotaspy-13"></a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">,</span> <span class="n">tipo</span><span class="p">):</span>
+<a name="listingseddmascotaspy-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+<a name="listingseddmascotaspy-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">edad</span> <span class="o">=</span> <span class="n">edad</span>
+<a name="listingseddmascotaspy-16"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span> <span class="o">=</span> <span class="n">tipo</span>
+<a name="listingseddmascotaspy-17"></a>
+<a name="listingseddmascotaspy-18"></a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="listingseddmascotaspy-19"></a>        <span class="k">return</span> <span class="s">'&lt;Mascota {}: {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span><span class="p">)</span>
+<a name="listingseddmascotaspy-20"></a>
+<a name="listingseddmascotaspy-21"></a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="listingseddmascotaspy-22"></a>        <span class="k">return</span> <span class="s">'Soy {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
+<a name="listingseddmascotaspy-23"></a>
+<a name="listingseddmascotaspy-24"></a>    <span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="listingseddmascotaspy-25"></a>        <span class="sd">""" Saludo de la mascota. """</span>
+<a name="listingseddmascotaspy-26"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'Hola! Me llamo {}, tengo {} y soy un {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">edad</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span><span class="p">))</span>
+<a name="listingseddmascotaspy-27"></a>
+<a name="listingseddmascotaspy-28"></a>
+<a name="listingseddmascotaspy-29"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+<a name="listingseddmascotaspy-30"></a>    <span class="n">TIPOS</span> <span class="o">=</span> <span class="p">[</span><span class="s">'perro'</span><span class="p">,</span> <span class="s">'gato'</span><span class="p">,</span> <span class="s">'pez'</span><span class="p">,</span> <span class="s">'canario'</span><span class="p">]</span>
+<a name="listingseddmascotaspy-31"></a>    <span class="n">NOMBRES</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Pluto'</span><span class="p">,</span> <span class="s">'Silvestre'</span><span class="p">,</span> <span class="s">'Nemo'</span><span class="p">,</span> <span class="s">'Piolín'</span><span class="p">]</span>
+<a name="listingseddmascotaspy-32"></a>
+<a name="listingseddmascotaspy-33"></a>    <span class="n">mascota</span> <span class="o">=</span> <span class="n">Mascota</span><span class="p">(</span>
+<a name="listingseddmascotaspy-34"></a>        <span class="n">nombre</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">NOMBRES</span><span class="p">),</span>
+<a name="listingseddmascotaspy-35"></a>        <span class="n">edad</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span>
+<a name="listingseddmascotaspy-36"></a>        <span class="n">tipo</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">TIPOS</span><span class="p">)</span>
+<a name="listingseddmascotaspy-37"></a>        <span class="p">)</span>
+<a name="listingseddmascotaspy-38"></a>
+<a name="listingseddmascotaspy-39"></a>    <span class="k">print</span><span class="p">(</span><span class="n">mascota</span><span class="p">)</span>
+<a name="listingseddmascotaspy-40"></a>    <span class="n">mascota</span><span class="o">.</span><span class="n">saludar</span><span class="p">()</span>
+</pre></td>
+</tr></table>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2017         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

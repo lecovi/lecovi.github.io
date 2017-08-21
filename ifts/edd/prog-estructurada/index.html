@@ -15,7 +15,21 @@
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Programación Estructurada">
 <meta property="og:url" content="http://lecovi.github.io/ifts/edd/prog-estructurada/">
-<meta property="og:description" content="Write your page here.">
+<meta property="og:description" content="Contents
+
+Concepto de Tipo de Dato Abstracto
+Objetos en Python
+Nuestros propios objetos
+
+
+Métodos
+Métodos especiales
+Ejercicios
+
+
+
+
+Hasta el momento hemos trabajado con Python bajo el paradigma de pro">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-08-26T15:18:41-03:00">
 </head>
@@ -122,7 +136,298 @@
         
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
-    <p>Write your page here.</p>
+    <div>
+<div class="contents alert alert-info pull-right topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href=".#concepto-de-tipo-de-dato-abstracto" id="id1">Concepto de Tipo de Dato Abstracto</a></li>
+<li>
+<a class="reference internal" href=".#objetos-en-python" id="id2">Objetos en Python</a><ul>
+<li><a class="reference internal" href=".#nuestros-propios-objetos" id="id3">Nuestros propios objetos</a></li>
+</ul>
+</li>
+<li>
+<a class="reference internal" href=".#metodos" id="id4">Métodos</a><ul>
+<li><a class="reference internal" href=".#metodos-especiales" id="id5">Métodos especiales</a></li>
+<li><a class="reference internal" href=".#ejercicios" id="id6">Ejercicios</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Hasta el momento hemos trabajado con <strong>Python</strong> bajo el paradigma de programación que se conoce como
+<strong>Programación Estructurada</strong>. Es decir, hemos estado utilizando en nuestros programas sólo tres estructuras:</p>
+<ul class="simple">
+<li>Secuencia</li>
+<li>Condicionales</li>
+<li>Iteraciones</li>
+</ul>
+<p>Los conceptos que vamos a trabajar a lo largo de la cursada nos ayudarán a comprender el paradigma de <em>Programación
+orientada a objetos</em>.</p>
+<div class="section" id="concepto-de-tipo-de-dato-abstracto">
+<h2><a class="toc-backref" href=".#id1">Concepto de Tipo de Dato Abstracto</a></h2>
+<p>La <em>abstracción</em> es el mecanismo que permite seleccionar partes de un todo complejo para su consideración,
+ignorando el resto. Esto nos permite filtrar aquellos aspectos relevantes, y nos permite obtener soluciones
+más generales.</p>
+<p>El concepto de <em>abstracción</em> nos remite a la posibilidad de considerar la resolución de un problema sin tener
+en cuenta los detalles por debajo de cierto nivel.</p>
+<p>El concepto de <strong>Tipo de Dato Abstracto</strong> (TDA en castellano, ‘Abstract Data Type’ o ADT en inglés) surgió para
+facilitar el trabajo con tipos de datos haciendo abstracción de la implementación de los mismos.
+Un TDA está dado por un grupo de datos que cumplen cierta condición especificada, más un conjunto de operaciones
+que representan el comportamiento del TDA.</p>
+<div class="sidebar">
+<p class="first sidebar-title">En <strong>Python</strong>: <em>todos somos adultos responsables</em></p>
+<p class="alert alert-info small last">En muchos lenguajes orientado a objetos (C++, Java, C#, etc) se implementa el concepto de privacidad de los
+atributos y métodos. En <strong>Python</strong> todos los atributos y métodos <em>son públicos</em>.</p>
+</div>
+<p>La entidad TDA expone sus características por medio de las operaciones. La implementación de la estructura del
+TDA, y de las operaciones propias son privadas.
+No se permite acceso ni visibilidad a la implementacion de un TDA. Esta parte oculta está constituída por la
+maquinaria algorítmica que implementa la semántica de los operadores. De este modo un TDA encapsula ciertos tipos
+de datos en cuanto a la definición  del tipo y todas las operaciones del mismo en una sección del código.</p>
+<p>Los TDA constituyen una forma de generalización y encapsulamiento de los aspectos más importantes de la
+información que se debe manejar en la resolución de un problema, sin considerar las cuestiones relativas a la
+implementación.
+Un TDA define una nueva clase de concepto que puede manejarse con independencia de la estructura de datos para
+representarlo. Es una generalizaciones de los tipos de datos básicos y de las operaciones primitivas.
+Es decir:</p>
+<p class="alert alert-success">TDA = Representación (estructuras de datos) + Operaciones (métodos)</p>
+</div>
+<div class="section" id="objetos-en-python">
+<h2><a class="toc-backref" href=".#id2">Objetos en Python</a></h2>
+<p>Los <em>objetos</em> son una forma de organizar datos y de relacionar esos datos con el código apropiado para manejarlo.
+Son los protagonistas de un paradigma de programación llamado <em>Programación Orientada a Objetos</em> y son la forma
+práctica de trabajar con TAD en Python.</p>
+<p>Nosotros ya usamos objetos en Python sin mencionarlo explícitamente. Es más, todos los
+tipos de datos que Python nos provee son, en realidad, objetos.</p>
+<p>De forma que, cuando utilizamos <tt class="docutils literal">cadena.upper()</tt> , le estamos diciendo a Python que llame
+a la función upper del tipo <tt class="docutils literal">str</tt> para cadena que es lo mismo que decir que llame al <em>método</em> upper
+del objeto <tt class="docutils literal">cadena</tt>.
+A su vez, a las variables que un objeto contiene se las llama <em>atributos</em>.</p>
+<div class="section" id="nuestros-propios-objetos">
+<h3><a class="toc-backref" href=".#id3">Nuestros propios objetos</a></h3>
+<p>Para crear nuestros propios objetos en Python se usa la palabra reservada  <tt class="docutils literal">class</tt> que nos ayuda a definir una
+nueva <em>clase</em>. Un clase es un nuevo tipo de dato que existe para invocar en nuestro programa.</p>
+<pre class="code python"><a name="rest_code_00e46e50a2de430da46d7e1d10e7e2b6-1"></a><span class="k">class</span> <span class="nc">Billetera</span><span class="p">:</span>
+<a name="rest_code_00e46e50a2de430da46d7e1d10e7e2b6-2"></a>    <span class="k">pass</span>
+</pre>
+<p>Utilizando estas sentencias, tenemos la posibilidad de llamar en nuestro programa a los objetos del tipo <tt class="docutils literal">Billetera</tt>.</p>
+<pre class="code ipython"><a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Billetera</span><span class="p">:</span>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-2"></a><span class="o">...</span><span class="p">:</span>     <span class="k">pass</span>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-3"></a><span class="o">...</span><span class="p">:</span>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-4"></a>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-5"></a><span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">mi_billetera</span> <span class="o">=</span> <span class="n">Billetera</span><span class="p">()</span>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-6"></a>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-7"></a><span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">mi_billetera</span>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-8"></a><span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Billetera</span> <span class="n">at</span> <span class="mh">0x7f368cd8f630</span><span class="o">&gt;</span>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-9"></a>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-10"></a><span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">tu_billetera</span> <span class="o">=</span> <span class="n">Billetera</span><span class="p">()</span>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-11"></a>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-12"></a><span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">tu_billetera</span>
+<a name="rest_code_1f72ca4ffa1b401a85ad481123c5e65a-13"></a><span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Billetera</span> <span class="n">at</span> <span class="mh">0x7f368ce49c88</span><span class="o">&gt;</span>
+</pre>
+<p>Como podemos ver en el código anterior, creamos la clase <tt class="docutils literal">Billetera</tt> y luego creamos dos <em>instancias</em>, <tt class="docutils literal">mi_billetera</tt>
+y <tt class="docutils literal">tu_billetera</tt>.</p>
+<pre class="code ipython"><a name="rest_code_c1ca5e822d174b758542709833658cc6-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span> <span class="o">=</span> <span class="mi">100</span>
+<a name="rest_code_c1ca5e822d174b758542709833658cc6-2"></a>
+<a name="rest_code_c1ca5e822d174b758542709833658cc6-3"></a><span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_c1ca5e822d174b758542709833658cc6-4"></a><span class="n">Out</span><span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="mi">100</span>
+<a name="rest_code_c1ca5e822d174b758542709833658cc6-5"></a>
+<a name="rest_code_c1ca5e822d174b758542709833658cc6-6"></a><span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="n">tu_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_c1ca5e822d174b758542709833658cc6-7"></a><span class="o">---------------------------------------------------------------------------</span>
+<a name="rest_code_c1ca5e822d174b758542709833658cc6-8"></a><span class="ne">AttributeError</span>                            <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+<a name="rest_code_c1ca5e822d174b758542709833658cc6-9"></a><span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="mi">1</span><span class="n">f6438ef5671</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
+<a name="rest_code_c1ca5e822d174b758542709833658cc6-10"></a><span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">tu_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_c1ca5e822d174b758542709833658cc6-11"></a>
+<a name="rest_code_c1ca5e822d174b758542709833658cc6-12"></a><span class="ne">AttributeError</span><span class="p">:</span> <span class="s">'Billetera'</span> <span class="nb">object</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="s">'compartimiento_1'</span>
+</pre>
+<p>Dentro de cada instancia podemos crear nuevas variables y asignarles valores. Pero es importante destacar que cuando
+hacemos esto, lo estamos hacienod sólo a nivel de cada <em>instancia</em>. Para <tt class="docutils literal">mi_billetera</tt> creamos el <tt class="docutils literal">compartimiento_1</tt>
+donde ponemos el valor 100. Si tratamos de acceder a <tt class="docutils literal">compartimiento_1</tt> pero de <tt class="docutils literal">tu_billetera</tt> nos saldrá un
+<tt class="docutils literal">AttributeError</tt> ya que el atributo <tt class="docutils literal">compartimiento_1</tt> sólo existe para <tt class="docutils literal">mi_billetera</tt>.</p>
+<p>Si queremos que todos las intancias de la clase <tt class="docutils literal">Billetera</tt> tengan el <tt class="docutils literal">compartimiento_1</tt>, tenemos que redefinir
+la clase.</p>
+<pre class="code ipython"><a name="rest_code_ab67ff0fc8404d87a6d252db80602947-1"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Billera</span><span class="p">:</span>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-2"></a><span class="o">...</span><span class="p">:</span>     <span class="n">compartimiento_1</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-3"></a><span class="o">...</span><span class="p">:</span>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-4"></a>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-5"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-6"></a> <span class="n">Out</span><span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="mi">100</span>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-7"></a>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-8"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="n">mi_billetera</span> <span class="o">=</span> <span class="n">Billera</span><span class="p">()</span>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-9"></a>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-10"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-11"></a> <span class="n">Out</span><span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="mi">0</span>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-12"></a>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-13"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="n">tu_billetera</span> <span class="o">=</span> <span class="n">Billera</span><span class="p">()</span>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-14"></a>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-15"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="n">tu_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_ab67ff0fc8404d87a6d252db80602947-16"></a> <span class="n">Out</span><span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="mi">0</span>
+</pre>
+</div>
+</div>
+<div class="section" id="metodos">
+<h2><a class="toc-backref" href=".#id4">Métodos</a></h2>
+<!-- code-block: ipython
+
+In [1]: class Alumno:
+...:     name =  ''
+...:     age = 0
+...:     courses = list()
+...:
+
+In [2]: chino = Alumno()
+
+In [3]: chino.name
+Out[3]: ''
+
+In [4]: chino.age
+Out[4]: 0
+
+In [5]: chino.courses
+Out[5]: []
+
+In [6]: chino.name = 'Victor'
+
+In [7]: chino.age = 21
+
+In [8]: chino.courses.append('EDD')
+
+In [9]: chino.name
+Out[9]: 'Victor'
+
+In [10]: chino.age
+Out[10]: 21
+
+In [11]: chino.courses
+Out[11]: ['EDD'] -->
+<div class="sidebar">
+<p class="first sidebar-title"><tt class="docutils literal">self</tt></p>
+<p class="alert alert-success small last">Todos los métodos de cualquier clase reciben como primer parámetro a la instancia sobre la que está trabajando.
+Por <strong>convención</strong> a ese primer parámetro se lo suele llamar <tt class="docutils literal">self</tt> (que podríamos traducir como <em>yo mismo</em>),
+pero puede llamarse de cualquier forma.</p>
+</div>
+<p>Si observamos con detenimiento, con esta forma de crear los objetos cada vez que creamos uno, luego tenemos
+que ir llamando a cada uno de los atributos para asignarle un valor. Por suerte hay una mejor forma de hacerlo!</p>
+<p>Tenemos que usar un método que se llama al crear la instancia. Este método en particular se lo conoce como el
+método constructor y en <strong>Python</strong> se llama <tt class="docutils literal">__init__</tt>. Definir un método constructor nos permite crear una
+instancia de un objecto con los parámetros necesarios. Modificando la clase <tt class="docutils literal">Alumno</tt> con un método constructor
+ahora nos obliga a instanciar objetos sólo con los parámetros indicados como obligatorios. En este caso indicamos
+los tres parámetros: <tt class="docutils literal">name</tt>, <tt class="docutils literal">age</tt> y <tt class="docutils literal">courses</tt> como obligatorios.</p>
+<p>Un <strong>método</strong> es una función de Python que queda <strong>encapsulada</strong> dentro de la clase para la cual está
+definiéndose. Es decir, un <strong>método</strong> tiene las mismas reglas de definición que las funciones en python:
+nombres, argumentos, valores por defecto y demás...</p>
+<pre class="code ipython"><a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-2"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">courses</span><span class="p">):</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-3"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span>  <span class="n">name</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-4"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-5"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">courses</span> <span class="o">=</span> <span class="n">courses</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-6"></a>    <span class="o">...</span><span class="p">:</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-7"></a>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-8"></a><span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">()</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-9"></a><span class="o">---------------------------------------------------------------------------</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-10"></a><span class="ne">TypeError</span>                                 <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-11"></a><span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">13</span><span class="o">-</span><span class="n">c040beabd969</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-12"></a><span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">()</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-13"></a>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-14"></a><span class="ne">TypeError</span><span class="p">:</span> <span class="n">__init__</span><span class="p">()</span> <span class="n">missing</span> <span class="mi">3</span> <span class="n">required</span> <span class="n">positional</span> <span class="n">arguments</span><span class="p">:</span> <span class="s">'name'</span><span class="p">,</span> <span class="s">'age'</span><span class="p">,</span> <span class="ow">and</span> <span class="s">'courses'</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-15"></a>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-16"></a><span class="n">In</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Victor'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">21</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s">'EDD'</span><span class="p">,</span> <span class="s">'PAR'</span><span class="p">])</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-17"></a>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-18"></a><span class="n">In</span> <span class="p">[</span><span class="mi">15</span><span class="p">]:</span> <span class="n">chino</span><span class="o">.</span><span class="n">name</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-19"></a><span class="n">Out</span><span class="p">[</span><span class="mi">15</span><span class="p">]:</span> <span class="s">'Victor'</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-20"></a>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-21"></a><span class="n">In</span> <span class="p">[</span><span class="mi">16</span><span class="p">]:</span> <span class="n">chino</span><span class="o">.</span><span class="n">age</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-22"></a><span class="n">Out</span><span class="p">[</span><span class="mi">16</span><span class="p">]:</span> <span class="mi">21</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-23"></a>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-24"></a><span class="n">In</span> <span class="p">[</span><span class="mi">17</span><span class="p">]:</span> <span class="n">chino</span><span class="o">.</span><span class="n">courses</span>
+<a name="rest_code_fa06a5c762c44fc48d7da2dd0e9cd06a-25"></a><span class="n">Out</span><span class="p">[</span><span class="mi">17</span><span class="p">]:</span> <span class="p">[</span><span class="s">'EDD'</span><span class="p">,</span> <span class="s">'PAR'</span><span class="p">]</span>
+</pre>
+<div class="section" id="metodos-especiales">
+<h3><a class="toc-backref" href=".#id5">Métodos especiales</a></h3>
+<p>En Python existen una serie de métodos que son un tanto especiales, también llamados métodos mágicos o métodos <em>dunder</em>.
+El método constructor <tt class="docutils literal">__init__</tt> es uno de estos métodos mágicos.</p>
+<p class="alert alert-info">Se utiliza <strong>dunder</strong> porque son métodos que empiezan con doble guión bajo (double underscore en inglés).
+Como decir <em>doble guión bajo init doble guión bajo</em> puede resultar un trabalenguas, se propuso esta nueva
+terminología para identificar a este tipo de métodos.</p>
+<pre class="code ipython"><a name="rest_code_efa9c0c40dd74d05b2f14fd2671bfd30-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">18</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">chino</span><span class="p">)</span>
+<a name="rest_code_efa9c0c40dd74d05b2f14fd2671bfd30-2"></a><span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Alumno</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x7f7c54949048</span><span class="o">&gt;</span>
+<a name="rest_code_efa9c0c40dd74d05b2f14fd2671bfd30-3"></a>
+<a name="rest_code_efa9c0c40dd74d05b2f14fd2671bfd30-4"></a><span class="n">In</span> <span class="p">[</span><span class="mi">19</span><span class="p">]:</span> <span class="n">chino</span>
+<a name="rest_code_efa9c0c40dd74d05b2f14fd2671bfd30-5"></a><span class="n">Out</span><span class="p">[</span><span class="mi">19</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Alumno</span> <span class="n">at</span> <span class="mh">0x7f7c54949048</span><span class="o">&gt;</span>
+</pre>
+<p>Siguiendo con nuestro ejemplo, cuando imprimimos a nuestro querido alumno <tt class="docutils literal">chino</tt> no nos dice demasiada información
+relevante. Lo mismo sucede si consultamos el valor de dicha instancia en el intérprete interactivo. Para modificar el
+comportamiento de nuestros objetos cuando se los invoca en la consola de Python tenemos que redefinir el método <tt class="docutils literal">__repr</tt>.
+Y para cambiar cómo es que se comporta cuando lo llamemos como argumento de la función <tt class="docutils literal">print</tt> tenemos que redefinir
+el método <tt class="docutils literal">__str__</tt>.</p>
+<pre class="code ipython"><a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">20</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-2"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">courses</span><span class="p">):</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-3"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span>  <span class="n">name</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-4"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-5"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">courses</span> <span class="o">=</span> <span class="n">courses</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-6"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-7"></a>    <span class="o">...</span><span class="p">:</span>         <span class="k">return</span> <span class="s">'&lt;Alumno {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-8"></a>    <span class="o">...</span><span class="p">:</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-9"></a>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-10"></a><span class="n">In</span> <span class="p">[</span><span class="mi">21</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Victor'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">21</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s">'EDD'</span><span class="p">,</span> <span class="s">'PAR'</span><span class="p">])</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-11"></a>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-12"></a><span class="n">In</span> <span class="p">[</span><span class="mi">22</span><span class="p">]:</span> <span class="n">chino</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-13"></a><span class="n">Out</span><span class="p">[</span><span class="mi">22</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Victor</span><span class="o">&gt;</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-14"></a>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-15"></a><span class="n">In</span> <span class="p">[</span><span class="mi">23</span><span class="p">]:</span> <span class="n">marce</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Marcela'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s">'ARQ'</span><span class="p">])</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-16"></a>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-17"></a><span class="n">In</span> <span class="p">[</span><span class="mi">24</span><span class="p">]:</span> <span class="n">marce</span>
+<a name="rest_code_292598d4878346cf976f6ca5aa5c5b5e-18"></a><span class="n">Out</span><span class="p">[</span><span class="mi">24</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Marcela</span><span class="o">&gt;</span>
+</pre>
+<p>Ahora modificamos el método <tt class="docutils literal">__repr__</tt> y podemos observar que cuando consultamos el valor de la instancia
+nos devuelve la cadena que nosotros definimos. Hemos modificado la definición de nuestra clase <tt class="docutils literal">Alumno</tt> y
+ahora cuando queremos consultar el valor de nuestras instancias nos devuelve el nombre de la clase seguido
+del valor que almacenamos en la variable <tt class="docutils literal">name</tt>.</p>
+<pre class="code ipython"><a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">26</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-2"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">courses</span><span class="p">):</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-3"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span>  <span class="n">name</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-4"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-5"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">courses</span> <span class="o">=</span> <span class="n">courses</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-6"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-7"></a>    <span class="o">...</span><span class="p">:</span>         <span class="k">return</span> <span class="s">'&lt;Alumno {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-8"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-9"></a>    <span class="o">...</span><span class="p">:</span>         <span class="k">return</span> <span class="s">'Soy el alumno {}, tengo {} años y estoy cursando {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="p">)</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-10"></a>    <span class="o">...</span><span class="p">:</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-11"></a>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-12"></a><span class="n">In</span> <span class="p">[</span><span class="mi">27</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Victor'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">21</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s">'EDD'</span><span class="p">,</span> <span class="s">'PAR'</span><span class="p">])</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-13"></a>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-14"></a><span class="n">In</span> <span class="p">[</span><span class="mi">28</span><span class="p">]:</span> <span class="n">marce</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Marcela'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s">'ARQ'</span><span class="p">])</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-15"></a>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-16"></a><span class="n">In</span> <span class="p">[</span><span class="mi">29</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">chino</span><span class="p">)</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-17"></a><span class="n">Soy</span> <span class="n">el</span> <span class="n">alumno</span> <span class="n">Victor</span><span class="p">,</span> <span class="n">tengo</span> <span class="mi">21</span> <span class="n">años</span> <span class="n">y</span> <span class="n">estoy</span> <span class="n">cursando</span> <span class="p">[</span><span class="s">'EDD'</span><span class="p">,</span> <span class="s">'PAR'</span><span class="p">]</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-18"></a>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-19"></a><span class="n">In</span> <span class="p">[</span><span class="mi">30</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">marce</span><span class="p">)</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-20"></a><span class="n">Soy</span> <span class="n">el</span> <span class="n">alumno</span> <span class="n">Marcela</span><span class="p">,</span> <span class="n">tengo</span> <span class="mi">18</span> <span class="n">años</span> <span class="n">y</span> <span class="n">estoy</span> <span class="n">cursando</span> <span class="p">[</span><span class="s">'ARQ'</span><span class="p">]</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-21"></a>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-22"></a><span class="n">In</span> <span class="p">[</span><span class="mi">31</span><span class="p">]:</span> <span class="n">chino</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-23"></a><span class="n">Out</span><span class="p">[</span><span class="mi">31</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Victor</span><span class="o">&gt;</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-24"></a>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-25"></a><span class="n">In</span> <span class="p">[</span><span class="mi">32</span><span class="p">]:</span> <span class="n">marce</span>
+<a name="rest_code_07a588bc6d374bd2a0b1459939a911a4-26"></a><span class="n">Out</span><span class="p">[</span><span class="mi">32</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Marcela</span><span class="o">&gt;</span>
+</pre>
+<p>En el ejemplo anterior podemos ver cómo hemos incluido la redefinición del método <tt class="docutils literal">__str__</tt> para
+modifcar el comportamiento de nuestros objectos cuando son invocados a través de la función <tt class="docutils literal">print</tt>.</p>
+</div>
+<div class="section" id="ejercicios">
+<h3><a class="toc-backref" href=".#id6">Ejercicios</a></h3>
+<p>1. Definir una nueva clase <tt class="docutils literal">Carta</tt> que tenga como atributos el valor y el palo. Utilizar los métodos
+<em>dunder</em> para reconocer los diferentes objetos.</p>
+<p>2. Definir una nueva clase que sea <tt class="docutils literal">Mascota</tt> que tenga como atributos el nombre, la edad y qué animal es.
+Utilizar los métodos <em>dunder</em> para reconocer los diferentes objetos. Crear al menos un nuevo método para
+la mascota, como por ejemplo: <tt class="docutils literal">saludar</tt>.</p>
+<p>3. Definir la clase <tt class="docutils literal">Alumno</tt> que tenga como atributos el nombre y apellido del alumno, la edad y la lista
+de materias en las que el alumno está incripto. Definir dos nuevos métodos <tt class="docutils literal">inscribir</tt> para agregar materias
+a la lista de materias del alumno, y <tt class="docutils literal">listar_materias</tt> para que imprima cada una de las materias en que el
+alumno está inscripto en una materia por línea.</p>
+<p><a class="reference external" href="../prog-estructurada-solucion/">Solución</a></p>
+</div>
+</div>
+</div>
     </div>
     
 

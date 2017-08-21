@@ -847,7 +847,7 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/edd/</loc>
-  <lastmod>2017-08-19T22:58:00Z</lastmod>
+  <lastmod>2017-08-21T16:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/edd/cal/</loc>
@@ -896,6 +896,10 @@
  <url>
   <loc>http://lecovi.github.io/ifts/edd/polimorfismo/</loc>
   <lastmod>2016-08-23T23:57:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/ifts/edd/prog-estructurada-solucion/</loc>
+  <lastmod>2017-08-21T16:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/ifts/edd/prog-estructurada/</loc>
@@ -971,7 +975,19 @@
  </url>
  <url>
   <loc>http://lecovi.github.io/listings/edd/</loc>
-  <lastmod>2016-10-10T15:52:00Z</lastmod>
+  <lastmod>2017-08-21T16:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/edd/alumnos.py.html</loc>
+  <lastmod>2017-08-21T16:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/edd/cartas.py.html</loc>
+  <lastmod>2017-08-21T16:56:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://lecovi.github.io/listings/edd/mascotas.py.html</loc>
+  <lastmod>2017-08-21T16:56:00Z</lastmod>
  </url>
  <url>
   <loc>http://lecovi.github.io/listings/edd/routes.py.html</loc>
