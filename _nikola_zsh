@@ -38,26 +38,24 @@ _nikola() {
 
     # split output by lines to create an array
     tasks=(
-'generate_rss: Generate RSS feeds.'
-'copy_assets: Copy theme assets into output.'
-'render_indexes: Render the blog indexes.'
-'redirect: Generate redirections.'
-'render_archive: Render the post archives.'
-'render_posts: Build HTML fragments from metadata and text.'
-'render_tags: Render the tag/category pages and feeds.'
-'render_pages: Render pages into output.'
-'render_authors: Render the author pages and feeds.'
-'render_listings: Render code listings.'
 'render_sources: Copy page sources into the output.'
-'render_galleries: Render image galleries.'
-'scale_images: Resize images and create thumbnails for them.'
+'redirect: Generate redirections.'
 'copy_files: Copy static files into the output folder.'
+'render_pages: Render pages into output.'
+'render_galleries: Render image galleries.'
+'render_tags: Render the tag/category pages and feeds.'
+'generate_rss: Generate RSS feeds.'
+'render_archive: Render the post archives.'
+'copy_assets: Copy theme assets into output.'
+'render_posts: Build HTML fragments from metadata and text.'
+'scale_images: Resize images and create thumbnails for them.'
+'render_listings: Render code listings.'
+'render_indexes: Render the blog indexes.'
 'render_site: Group of tasks to render the site.'
-'create_bundles: Bundle assets using WebAssets.'
-'_switch to py3: '
 '_scan_locs: '
 'sitemap: Generate a sitemap.'
 'robots_file: Generate a robots.txt file.'
+'create_bundles: Bundle assets using WebAssets.'
 'post_render: Group of tasks to be executed after site is rendered.'
 )
 
@@ -248,7 +246,6 @@ _nikola() {
             "--transform-to-html[Uses WordPress page compiler to transform WordPress posts directly to HTML during import]" \
             "--use-wordpress-compiler[Instead of converting posts to markdown, leave them as is and use the WordPress page compiler]" \
             "--install-wordpress-compiler[Automatically installs the WordPress page compiler (either locally or in the new site) if required by other options. Warning: the compiler is GPL software!]" \
-            "--tag-saniziting-strategy[lower: Convert all tag and category names to lower case first: Keep first spelling of tag or category name]" \
             ''
         )
       ;;
