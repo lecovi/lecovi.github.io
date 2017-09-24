@@ -89,4 +89,15 @@
 
 .. raw:: html
 
-   <p><a href="https://bitson.com.ar/" class="btn btn-primary btn-lg pull-right"><i class="icon-bitson-isonuevo-black" data-toggle="tooltip" title="Visitá bitson.com.ar!"></i></a></p>
+   <p>
+   <a href="http://bitson.com.ar/" class="btn btn-primary btn-lg pull-right"><i class="icon-bitson-isonuevo-black" data-toggle="tooltip" title="Visitá bitson.com.ar!"></i> bitson.com.ar</a>
+   </p>
+
+.. class:: col-md-12
+
+.. raw:: html
+
+    <hr>
+    <p>
+    <a href="https://ar.jooble.org/" class="btn btn-primary btn-lg pull-right" title="Si estás buscando trabajo...">ar.jooble.org</a>
+    </p>
