@@ -92,7 +92,7 @@ A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 #. :doc:`Flask Web Forms <ifts/par/flask-forms>`
 #. :doc:`Flask Database <ifts/par/flask-db>`
 #. :doc:`Flask User Login <ifts/par/flask-user-login>`
-#. :doc:`Parcial <ifts/par/examen>`
+#. :doc:`Parcial <ifts/par/parcial>`
 #. :doc:`Encuesta <ifts/par/encuesta>`
 
 

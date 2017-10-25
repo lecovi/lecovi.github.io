@@ -940,7 +940,7 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 EXTRA_HEAD_DATA = """
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <link href='/assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-<link href="https://file.myfontastic.com/7mCLCcEo7ZcLzzzc986guN/icons.css" rel="stylesheet">
+<!--<link href="https://file.myfontastic.com/7mCLCcEo7ZcLzzzc986guN/icons.css" rel="stylesheet">-->
 """
 # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
