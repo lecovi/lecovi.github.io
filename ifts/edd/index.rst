@@ -91,7 +91,7 @@ A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 #. :doc:`Flask Forms <ifts/edd/flask-forms>`
 #. :doc:`Flask Database <ifts/edd/flask-db>`
 #. :doc:`Flask User Login <ifts/edd/flask-user-login>`
-#. :doc:`Parcial <ifts/edd/examen>`
+#. :doc:`Parcial <ifts/edd/parcial>`
 #. :doc:`Encuesta <ifts/edd/encuesta>`
 
 
