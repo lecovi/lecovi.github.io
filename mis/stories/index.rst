@@ -90,7 +90,7 @@
 .. raw:: html
 
    <p>
-   <a href="http://bitson.com.ar/" class="btn btn-primary btn-lg pull-right"><i class="icon-bitson-isonuevo-black" data-toggle="tooltip" title="Visitá bitson.com.ar!"></i> bitson.com.ar</a>
+   <a href="http://bitson.com.ar/" class="btn btn-primary btn-lg pull-right"><i class="icon-mascota-icon" data-toggle="tooltip" title="Visitá bitson.com.ar!"></i> bitson.com.ar</a>
    </p>
 
 .. class:: col-md-12
