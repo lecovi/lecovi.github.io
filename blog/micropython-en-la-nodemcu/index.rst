@@ -14,7 +14,7 @@
 .. _micropython: http://micropython.org/
 
 En bitson_ se nos ocurrió que podíamos empezar a jugar un
-poco con micropython, así qeu decidimos empezar usando la nodemcu_.
+poco con micropython, así que decidimos empezar usando la nodemcu_.
 
 Les voy a contar cómo instalar micropython_ en la
 placa, cómo conectarse y jugar con el led integrado. Manos a la obra!
@@ -22,7 +22,7 @@ placa, cómo conectarse y jugar con el led integrado. Manos a la obra!
 Qué necesitamos
 ---------------
 
-Para seguir este artículo vamos a necesitar:
+Para seguir el artículo vamos a necesitar:
 
 - nodemcu
 - ``picocom``
@@ -167,7 +167,7 @@ Hagamos esto un poco más interesante. Conectémonos a la red WiFi de casa.
     #5 ets_task(4020ed88, 28, 3fff9f90, 10)
     >>> iface.active()
     True
-    >>> iface.connect('ThiagoBenjamin', '<escribí-tu-clave')
+    >>> iface.connect('ThiagoBenjamin', '<escribí-tu-clave>')
     >>> iface.isconnected()
     True
     >>> iface.ifconfig()
@@ -179,11 +179,11 @@ done!
 Referencias:
 ------------
 
-- https://www.prometec.net/micropython-nodemcu/#
-- http://micropython.org/download
-- http://docs.micropython.org/en/latest/esp8266/index.html
-- http://www.makeredition.com/micropython-y-nodemcu/
-- http://baitisj.blogspot.com.ar/2015/10/one-minute-tutorial-getting-started.html
-- https://www.kenwalger.com/blog/iot/micropython-and-nodemcu-esp8266/
-- https://learn.adafruit.com/micropython-basics-blink-a-led/blink-led
+- `Instalando Micropython en la nodemcu - Prometec <https://www.prometec.net/micropython-nodemcu/#>`_
+- `Micropython - Official Site | Downloads <http://micropython.org/download>`_
+- `Documentación oficial Micropython <http://docs.micropython.org/en/latest/esp8266/index.html>`_
+- `NodeMCU con Micropython - Maker Edition <http://www.makeredition.com/micropython-y-nodemcu/>`_
+- `Getting started with a fresh NodeMCU ESP8266 <http://baitisj.blogspot.com.ar/2015/10/one-minute-tutorial-getting-started.html>`_
+- `MicroPython and the NodeMCU ESP8266 <https://www.kenwalger.com/blog/iot/micropython-and-nodemcu-esp8266/>`_
+- `Blink LED - Adafruit <https://learn.adafruit.com/micropython-basics-blink-a-led/blink-led>`_
 
