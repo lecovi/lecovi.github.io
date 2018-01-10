@@ -108,7 +108,163 @@
             
 
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="apt-advanced-package-tool/" class="u-url">APT - Advanced Package Tool</a></h1>
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="micropython-en-la-nodemcu/" class="u-url">Micropython en la nodemcu</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn">Leandro E. Colombo Viña</span></p>
+            <p class="dateline"><a href="micropython-en-la-nodemcu/" rel="bookmark"><time class="published dt-published" datetime="2018-01-09T11:45:06-03:00" title="2018-01-09 11:45">2018-01-09 11:45</time></a></p>
+                <p class="commentline">
+        
+    <a href="micropython-en-la-nodemcu/#disqus_thread" data-disqus-identifier="cache/posts/micropython-en-la-nodemcu.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="p-summary entry-summary">
+    <div>
+<p>En <a class="reference external" href="http://bitson.group">bitson</a> se nos ocurrió que podíamos empezar a jugar un
+poco con micropython, así qeu decidimos empezar usando la <a class="reference external" href="http://www.nodemcu.com/index_en.html">nodemcu</a>.</p>
+<p>Les voy a contar cómo instalar <a class="reference external" href="http://micropython.org/">micropython</a> en la
+placa, cómo conectarse y jugar con el led integrado. Manos a la obra!</p>
+<div class="section" id="que-necesitamos">
+<h2>Qué necesitamos</h2>
+<p>Para seguir este artículo vamos a necesitar:</p>
+<ul class="simple">
+<li>nodemcu</li>
+<li><tt class="docutils literal">picocom</tt></li>
+<li><tt class="docutils literal">esptool</tt></li>
+<li><cite>firmware</cite></li>
+</ul>
+<div class="section" id="instalando-picocom">
+<h3>Instalando <tt class="docutils literal">picocom</tt>
+</h3>
+<p>Para Fedora:</p>
+<pre class="code bash"><a name="rest_code_3262ac3011ba4ec884663b418f33729f-1"></a>sudo dnf install picocom
+</pre>
+<p>Para Debian y derivados:</p>
+<pre class="code bash"><a name="rest_code_a72d41d3dbd2439b81c7eee2ee16f14f-1"></a>sudo apt install picocom
+</pre>
+</div>
+<div class="section" id="instalando-esptool">
+<h3>Instalando <tt class="docutils literal">esptool</tt>
+</h3>
+<blockquote>
+Es conveniente instalarlo con el flag <tt class="docutils literal"><span class="pre">--user</span></tt> para que no quede
+instalado entre los paquetes del sistema. Pero tenés que asegurarte que tu
+usuario tenga permisos para acceder a los dispositivos serie
+(<cite>/dev/ttyUSB</cite>).</blockquote>
+<pre class="code bash"><a name="rest_code_2b37300e950e472c9f844e8fbb49e998-1"></a>pip install esptool
+</pre>
+</div>
+<div class="section" id="descargar-el-firmware">
+<h3>Descargar el <cite>firmware</cite>
+</h3>
+<p>La última versión estable del <cite>firmware</cite> la podés encontrar en
+<a class="reference external" href="http://micropython.org/download">http://micropython.org/download</a> en la sección <strong>Firmware for ESP8266 boards</strong>
+te descargás el binario para flashear la placa.</p>
+<blockquote>
+Al momento de escribir este artículo:
+<a class="reference external" href="http://micropython.org/resources/firmware/esp8266-20171101-v1.9.3.bin">http://micropython.org/resources/firmware/esp8266-20171101-v1.9.3.bin</a>
+</blockquote>
+</div>
+<div class="section" id="flasehando-la-nodemcu">
+<h3>Flasehando la <cite>nodemcu</cite>
+</h3>
+<p>Ahora que tenemos todo listo vamos a borrar la flash de la placa y depsués a
+cargar el nuevo firmware con <tt class="docutils literal">esptool</tt>.</p>
+<ol class="arabic simple">
+<li>Conectar la placa con un cable microUSB.</li>
+<li><tt class="docutils literal">esptool.py <span class="pre">--port</span> /dev/ttyUSB0 erase_flash</tt></li>
+<li><tt class="docutils literal">esptool.py <span class="pre">--port</span> /dev/ttyUSB0 <span class="pre">--baud</span> 460800 write_flash <span class="pre">--flash_size=detect</span> 0 <span class="pre">esp8266-20171101-v1.9.3.bin</span></tt></li>
+</ol>
+<img alt="Flasheando la nodemcu" class="align-center" src="../images/blog/upython/flashing.png">
+</div>
+<div class="section" id="conectandose-a-la-nodemcu-con-picocom">
+<h3>Conectándose a la <cite>nodemcu</cite> con <tt class="docutils literal">picocom</tt>
+</h3>
+<p>Ahora con <tt class="docutils literal">picocom</tt> (o <tt class="docutils literal">minicom</tt> o el que más te guste) con la placa
+conectada al USB ejecutás:</p>
+<pre class="code bash"><a name="rest_code_bbd4e0045e5d4245893541479c3a56d9-1"></a>sudo picocom /dev/ttyUSB0 -b115200
+</pre>
+<p>Si tenés permisos sobre el dispositivo USB el <cite>picocom</cite> se va a conectar a la
+placa sin ningún tipo de problemas. Luego del mensaje <tt class="docutils literal">Terminal ready</tt>
+presionamos la tecla <cite>enter</cite> y tendremos que ver el prompt del REPL de Python
+<tt class="docutils literal">&gt;&gt;&gt;</tt> y <em>voilà!</em>, micropython está instalado y funcionando en la <cite>nodemcu</cite>.</p>
+<p>Fácil! Verdad?</p>
+<img alt="conexión usando picocom" class="align-center" src="../images/blog/upython/picocom.png">
+</div>
+</div>
+<div class="section" id="un-paso-mas">
+<h2>Un paso más</h2>
+<p>Probemos que nuestra instalación de micropython funciona correctamente.
+Escribamos el famoso <cite>Hola Mundo!</cite>.</p>
+<pre class="code python3"><a name="rest_code_571bf301276a45f48f6d9b7dd248e21c-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s">"Hola nodemcu"</span><span class="p">)</span>
+<a name="rest_code_571bf301276a45f48f6d9b7dd248e21c-2"></a><span class="n">Hola</span> <span class="n">nodemcu</span>
+<a name="rest_code_571bf301276a45f48f6d9b7dd248e21c-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">34</span> <span class="o">+</span> <span class="mi">5</span>
+<a name="rest_code_571bf301276a45f48f6d9b7dd248e21c-4"></a><span class="mi">39</span>
+<a name="rest_code_571bf301276a45f48f6d9b7dd248e21c-5"></a><span class="o">&gt;&gt;&gt;</span>
+</pre>
+<div class="section" id="que-se-haga-la-luz">
+<h3>Que se haga la luz!</h3>
+<p>Genial! Todo funciona de maravillas. Hagamos algo un poco más interesante.
+Prendamos el led que tiene la placa.</p>
+<pre class="code python3"><a name="rest_code_4ba5f4701783471184d2cdd43c3cd435-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">machine</span>
+<a name="rest_code_4ba5f4701783471184d2cdd43c3cd435-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span> <span class="o">=</span> <span class="n">machine</span><span class="o">.</span><span class="n">Pin</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">machine</span><span class="o">.</span><span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<a name="rest_code_4ba5f4701783471184d2cdd43c3cd435-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+<a name="rest_code_4ba5f4701783471184d2cdd43c3cd435-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+<a name="rest_code_4ba5f4701783471184d2cdd43c3cd435-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+<a name="rest_code_4ba5f4701783471184d2cdd43c3cd435-6"></a><span class="o">&gt;&gt;&gt;</span>
+</pre>
+<p>Impecable! Todo funciona de maravillas. Ahora hagamos parpadear al led...</p>
+<pre class="code python3"><a name="rest_code_34d00683c64243418c3517d01a0d6973-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">time</span>
+<a name="rest_code_34d00683c64243418c3517d01a0d6973-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<a name="rest_code_34d00683c64243418c3517d01a0d6973-3"></a><span class="o">...</span>     <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+<a name="rest_code_34d00683c64243418c3517d01a0d6973-4"></a><span class="o">...</span>     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a name="rest_code_34d00683c64243418c3517d01a0d6973-5"></a><span class="o">...</span>     <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+<a name="rest_code_34d00683c64243418c3517d01a0d6973-6"></a><span class="o">...</span>     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a name="rest_code_34d00683c64243418c3517d01a0d6973-7"></a><span class="o">...</span>
+<a name="rest_code_34d00683c64243418c3517d01a0d6973-8"></a><span class="o">...</span>
+<a name="rest_code_34d00683c64243418c3517d01a0d6973-9"></a><span class="o">...</span>
+<a name="rest_code_34d00683c64243418c3517d01a0d6973-10"></a><span class="o">&gt;&gt;&gt;</span>
+</pre>
+<img alt="usando el intérprete de micropython" class="align-center" src="../images/blog/upython/repl.png">
+</div>
+<div class="section" id="conectate">
+<h3>Conectate!</h3>
+<p>Hagamos esto un poco más interesante. Conectémonos a la red WiFi de casa.</p>
+<pre class="code python3"><a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">network</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">WLAN</span><span class="p">(</span><span class="n">network</span><span class="o">.</span><span class="n">STA_IF</span><span class="p">)</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">()</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-4"></a><span class="k">False</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">(</span><span class="k">True</span><span class="p">)</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-6"></a><span class="c">#5 ets_task(4020ed88, 28, 3fff9f90, 10)</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">()</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-8"></a><span class="k">True</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s">'ThiagoBenjamin'</span><span class="p">,</span> <span class="s">'&lt;escribí-tu-clave'</span><span class="p">)</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">isconnected</span><span class="p">()</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-11"></a><span class="k">True</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">ifconfig</span><span class="p">()</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-13"></a><span class="p">(</span><span class="s">'192.168.1.13'</span><span class="p">,</span> <span class="s">'255.255.255.0'</span><span class="p">,</span> <span class="s">'192.168.1.1'</span><span class="p">,</span> <span class="s">'192.168.1.1'</span><span class="p">)</span>
+<a name="rest_code_32a63d8a4ea34e66bfcdec936dd95dd8-14"></a><span class="o">&gt;&gt;&gt;</span>
+</pre>
+<p>done!</p>
+</div>
+</div>
+<div class="section" id="referencias">
+<h2>Referencias:</h2>
+<ul class="simple">
+<li>
+<a class="reference external" href="https://www.prometec.net/micropython-nodemcu">https://www.prometec.net/micropython-nodemcu</a>/#</li>
+<li><a class="reference external" href="http://micropython.org/download">http://micropython.org/download</a></li>
+<li><a class="reference external" href="http://docs.micropython.org/en/latest/esp8266/index.html">http://docs.micropython.org/en/latest/esp8266/index.html</a></li>
+<li><a class="reference external" href="http://www.makeredition.com/micropython-y-nodemcu/">http://www.makeredition.com/micropython-y-nodemcu/</a></li>
+<li><a class="reference external" href="http://baitisj.blogspot.com.ar/2015/10/one-minute-tutorial-getting-started.html">http://baitisj.blogspot.com.ar/2015/10/one-minute-tutorial-getting-started.html</a></li>
+<li><a class="reference external" href="https://www.kenwalger.com/blog/iot/micropython-and-nodemcu-esp8266/">https://www.kenwalger.com/blog/iot/micropython-and-nodemcu-esp8266/</a></li>
+<li><a class="reference external" href="https://learn.adafruit.com/micropython-basics-blink-a-led/blink-led">https://learn.adafruit.com/micropython-basics-blink-a-led/blink-led</a></li>
+</ul>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="apt-advanced-package-tool/" class="u-url">APT - Advanced Package Tool</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn">Leandro E. Colombo Viña</span></p>
             <p class="dateline"><a href="apt-advanced-package-tool/" rel="bookmark"><time class="published dt-published" datetime="2016-04-17T20:28:15-03:00" title="2016-04-17 20:28">2016-04-17 20:28</time></a></p>
@@ -281,23 +437,6 @@ Para eso vamos a:</p>
 <p class="more"><a href="empezando-con-nikola/">Leer más…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="crea-tu-propia-distribucion/" class="u-url">Creá tu propia distribución</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn">Leandro E. Colombo Viña</span></p>
-            <p class="dateline"><a href="crea-tu-propia-distribucion/" rel="bookmark"><time class="published dt-published" datetime="2015-08-25T13:06:32-03:00" title="2015-08-25 13:06">2015-08-25 13:06</time></a></p>
-                <p class="commentline">
-        
-    <a href="crea-tu-propia-distribucion/#disqus_thread" data-disqus-identifier="cache/posts/crea-tu-propia-distribucion.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="p-summary entry-summary">
-    <div>
-<p>Linux es tan versátil y puede moldearse tanto que está disponible en toda clase de dispositivos electrónicos y arquitecturas técnicas. Además, crear tu propia distribución de Linux es más fácil que hace unos años con asistentes donde puedes pedir qué necesitas.</p>
-<p class="more"><a href="crea-tu-propia-distribucion/">Leer más…</a></p>
-</div>
-    </div>
     </article>
 </div>
 
@@ -310,7 +449,7 @@ Para eso vamos a:</p>
         <!--End of body content-->
 
         <footer id="footer"><div class="text-center">
-Contents © 2017         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+Contents © 2018         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
 <a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
 <a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
 <a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
