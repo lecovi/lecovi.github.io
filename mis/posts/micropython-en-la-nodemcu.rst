@@ -76,6 +76,11 @@ cargar el nuevo firmware con ``esptool``.
 #. ``esptool.py --port /dev/ttyUSB0 erase_flash``
 #. ``esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 esp8266-20171101-v1.9.3.bin``
 
+.. image:: /images/blog/upython/flashing.png
+    :scale: 50 %
+    :alt: Flasheando la nodemcu
+    :class: align-center
+
 Conectándose a la `nodemcu` con ``picocom``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -86,4 +91,99 @@ conectada al USB ejecutás:
 
     sudo picocom /dev/ttyUSB0 -b115200
 
+Si tenés permisos sobre el dispositivo USB el `picocom` se va a conectar a la
+placa sin ningún tipo de problemas. Luego del mensaje ``Terminal ready``
+presionamos la tecla `enter` y tendremos que ver el prompt del REPL de Python
+``>>>`` y *voilà!*, micropython está instalado y funcionando en la `nodemcu`.
+
+Fácil! Verdad?
+
+.. image:: /images/blog/upython/picocom.png
+    :scale: 50 %
+    :alt: conexión usando picocom
+    :class: align-center
+
+Un paso más
+-----------
+
+Probemos que nuestra instalación de micropython funciona correctamente.
+Escribamos el famoso `Hola Mundo!`.
+
+.. code-block:: python3
+
+    >>> print("Hola nodemcu")
+    Hola nodemcu
+    >>> 34 + 5
+    39
+    >>>
+
+Que se haga la luz!
+~~~~~~~~~~~~~~~~~~~
+
+Genial! Todo funciona de maravillas. Hagamos algo un poco más interesante.
+Prendamos el led que tiene la placa.
+
+.. code-block:: python3
+
+    >>> import machine
+    >>> led = machine.Pin(2, machine.Pin.OUT)
+    >>> led.off()
+    >>> led.on()
+    >>> led.off()
+    >>>
+
+Impecable! Todo funciona de maravillas. Ahora hagamos parpadear al led...
+
+.. code-block:: python3
+
+    >>> import time
+    >>> for i in range(5):
+    ...     led.off()
+    ...     time.sleep(0.5)
+    ...     led.on()
+    ...     time.sleep(0.5)
+    ...
+    ...
+    ...
+    >>>
+
+.. image:: /images/blog/upython/repl.png
+    :scale: 50 %
+    :alt: usando el intérprete de micropython
+    :class: align-center
+
+Conectate!
+~~~~~~~~~~
+
+Hagamos esto un poco más interesante. Conectémonos a la red WiFi de casa.
+
+.. code-block:: python3
+
+    >>> import network
+    >>> iface = network.WLAN(network.STA_IF)
+    >>> iface.active()
+    False
+    >>> iface.active(True)
+    #5 ets_task(4020ed88, 28, 3fff9f90, 10)
+    >>> iface.active()
+    True
+    >>> iface.connect('ThiagoBenjamin', '<escribí-tu-clave')
+    >>> iface.isconnected()
+    True
+    >>> iface.ifconfig()
+    ('192.168.1.13', '255.255.255.0', '192.168.1.1', '192.168.1.1')
+    >>>
+
+done!
+
+Referencias:
+------------
+
+- https://www.prometec.net/micropython-nodemcu/#
+- http://micropython.org/download
+- http://docs.micropython.org/en/latest/esp8266/index.html
+- http://www.makeredition.com/micropython-y-nodemcu/
+- http://baitisj.blogspot.com.ar/2015/10/one-minute-tutorial-getting-started.html
+- https://www.kenwalger.com/blog/iot/micropython-and-nodemcu-esp8266/
+- https://learn.adafruit.com/micropython-basics-blink-a-led/blink-led
 
