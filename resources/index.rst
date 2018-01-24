@@ -54,7 +54,7 @@ Python
 
 .. |apunte_7540| raw:: html
 
-    <a href="https://drive.google.com/file/d/0B5YeA72NbAFYTHhhWVc0TlVWUDg/view?usp=sharing" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://github.com/ifts18/fiuba.algoritmos.apunte/releases/download/v2018.01.24.01/aprendiendo_a_programar_usando_python.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
 
 .. |bahit| raw:: html
 
