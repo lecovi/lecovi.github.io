@@ -67,3 +67,4 @@ cache/
 
 # PyCharm stuff
 .idea/
+.vscode/
