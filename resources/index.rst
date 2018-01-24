@@ -13,15 +13,6 @@
 
 En esta paǵina vas a encontrar todo tipo de recursos.
 
-Máquinas Virtuales
-==================
-
-Acá podés descargar las |maquinas_virtuales|.
-
-.. |maquinas_virtuales| raw:: html
-
-    <a href="https://mega.nz/#F!yYxDgDbJ!CmVGhOgD-F4XnxPrM7BXTg" target="_blank"><i class="fa fa-cloud-download"></i> máquinas virtuales</a>
-
 
 Bibliografía |library|
 ======================
@@ -38,7 +29,7 @@ Análisis
 Arquitectura de Computadoras
 ----------------------------
 
-#. **La PC por dentro**, *Mario C. Ginzburg*, `ISBN 978-987-05-0916-5` |ginzburg|.
+#. **La PC por dentro**, *Mario C. Ginzburg*, `ISBN 978-987-05-0916-5` |ginzburg| |ginzburg-repo|.
 #. **Organización de Computadoras | Un enfoque estructurado**, *Andrew S. Tanenbaum*, `ISBN 970-17-0399-5` |tanenbaum|.
 #. **Arquitectura de Computadoras**, *Patricia Quiroga*, `ISBN 978-987-1609-06-2` |quiroga|.
 #. **Arquitectura de Computadores (Un enfoque cuantitativo)**, *J. L. Hennessy & D. A. Patterson*, `ISBN 84-7615-912-9` |hennessy|.
@@ -81,6 +72,10 @@ Python
 
     <a  href="https://mega.nz/#!0RgVXLJb!sOZTlYBZjqgYirH6FYp1WbYEYsWHhUlfMadpa71EdTE" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
 
+.. |ginzburg-repo| raw:: html
+
+    <a  href="https://github.com/lecovi/pcxdentro/" target="_blank"><i class="fa fa-github"></i></a>
+
 .. |head_first| raw:: html
 
     <a href="https://mega.co.nz/#%21AN52nQgR%21KDp4lqL2lsmOd-2UoOPp7u4hZQr-xcFk9TKI9dP98Y8" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
@@ -95,7 +90,7 @@ Python
 
 .. |libro| raw:: html
 
-    <a href="https://github.com/lecovi/thinkcs-py_es/releases/download/v3.0.0-b1/top.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://github.com/lecovi/thinkcs-py_es/releases/download/v2018.01.24.01/como_pensar_como_un_programador_con_python.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
 
 .. |mega_tutorial| raw:: html
 
