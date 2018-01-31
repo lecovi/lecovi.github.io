@@ -2,10 +2,11 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/ifts/edd/prog-estructurada/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Programación Estructurada | Make it So!</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/ifts/edd/prog-estructurada/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -15,7 +16,7 @@
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Programación Estructurada">
 <meta property="og:url" content="http://lecovi.github.io/ifts/edd/prog-estructurada/">
-<meta property="og:description" content="Contents
+<meta property="og:description" content="Contenido
 
 Concepto de Tipo de Dato Abstracto
 Objetos en Python
@@ -29,7 +30,7 @@ Ejercicios
 
 
 
-Hasta el momento hemos trabajado con Python bajo el paradigma de pro">
+Hasta el momento hemos trabajado con Python bajo el paradigma de pr">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-08-26T15:18:41-03:00">
 </head>
@@ -137,19 +138,19 @@ Hasta el momento hemos trabajado con Python bajo el paradigma de pro">
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="contenido">
+<p class="topic-title first">Contenido</p>
 <ul class="simple">
-<li><a class="reference internal" href=".#concepto-de-tipo-de-dato-abstracto" id="id1">Concepto de Tipo de Dato Abstracto</a></li>
+<li><a class="reference internal" href="#concepto-de-tipo-de-dato-abstracto" id="id1">Concepto de Tipo de Dato Abstracto</a></li>
 <li>
-<a class="reference internal" href=".#objetos-en-python" id="id2">Objetos en Python</a><ul>
-<li><a class="reference internal" href=".#nuestros-propios-objetos" id="id3">Nuestros propios objetos</a></li>
+<a class="reference internal" href="#objetos-en-python" id="id2">Objetos en Python</a><ul>
+<li><a class="reference internal" href="#nuestros-propios-objetos" id="id3">Nuestros propios objetos</a></li>
 </ul>
 </li>
 <li>
-<a class="reference internal" href=".#metodos" id="id4">Métodos</a><ul>
-<li><a class="reference internal" href=".#metodos-especiales" id="id5">Métodos especiales</a></li>
-<li><a class="reference internal" href=".#ejercicios" id="id6">Ejercicios</a></li>
+<a class="reference internal" href="#metodos" id="id4">Métodos</a><ul>
+<li><a class="reference internal" href="#metodos-especiales" id="id5">Métodos especiales</a></li>
+<li><a class="reference internal" href="#ejercicios" id="id6">Ejercicios</a></li>
 </ul>
 </li>
 </ul>
@@ -164,7 +165,7 @@ Hasta el momento hemos trabajado con Python bajo el paradigma de pro">
 <p>Los conceptos que vamos a trabajar a lo largo de la cursada nos ayudarán a comprender el paradigma de <em>Programación
 orientada a objetos</em>.</p>
 <div class="section" id="concepto-de-tipo-de-dato-abstracto">
-<h2><a class="toc-backref" href=".#id1">Concepto de Tipo de Dato Abstracto</a></h2>
+<h2><a class="toc-backref" href="#id1">Concepto de Tipo de Dato Abstracto</a></h2>
 <p>La <em>abstracción</em> es el mecanismo que permite seleccionar partes de un todo complejo para su consideración,
 ignorando el resto. Esto nos permite filtrar aquellos aspectos relevantes, y nos permite obtener soluciones
 más generales.</p>
@@ -193,7 +194,7 @@ Es decir:</p>
 <p class="alert alert-success">TDA = Representación (estructuras de datos) + Operaciones (métodos)</p>
 </div>
 <div class="section" id="objetos-en-python">
-<h2><a class="toc-backref" href=".#id2">Objetos en Python</a></h2>
+<h2><a class="toc-backref" href="#id2">Objetos en Python</a></h2>
 <p>Los <em>objetos</em> son una forma de organizar datos y de relacionar esos datos con el código apropiado para manejarlo.
 Son los protagonistas de un paradigma de programación llamado <em>Programación Orientada a Objetos</em> y son la forma
 práctica de trabajar con TAD en Python.</p>
@@ -204,41 +205,41 @@ a la función upper del tipo <tt class="docutils literal">str</tt> para cadena q
 del objeto <tt class="docutils literal">cadena</tt>.
 A su vez, a las variables que un objeto contiene se las llama <em>atributos</em>.</p>
 <div class="section" id="nuestros-propios-objetos">
-<h3><a class="toc-backref" href=".#id3">Nuestros propios objetos</a></h3>
+<h3><a class="toc-backref" href="#id3">Nuestros propios objetos</a></h3>
 <p>Para crear nuestros propios objetos en Python se usa la palabra reservada  <tt class="docutils literal">class</tt> que nos ayuda a definir una
 nueva <em>clase</em>. Un clase es un nuevo tipo de dato que existe para invocar en nuestro programa.</p>
-<pre class="code python"><a name="rest_code_dec587be70ec4602bc69b5d804bd4897-1"></a><span class="k">class</span> <span class="nc">Billetera</span><span class="p">:</span>
-<a name="rest_code_dec587be70ec4602bc69b5d804bd4897-2"></a>    <span class="k">pass</span>
+<pre class="code python"><a name="rest_code_f5ae41f5c3be48f3836de2e242413f8b-1"></a><span class="k">class</span> <span class="nc">Billetera</span><span class="p">:</span>
+<a name="rest_code_f5ae41f5c3be48f3836de2e242413f8b-2"></a>    <span class="k">pass</span>
 </pre>
 <p>Utilizando estas sentencias, tenemos la posibilidad de llamar en nuestro programa a los objetos del tipo <tt class="docutils literal">Billetera</tt>.</p>
-<pre class="code ipython"><a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Billetera</span><span class="p">:</span>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-2"></a><span class="o">...</span><span class="p">:</span>     <span class="k">pass</span>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-3"></a><span class="o">...</span><span class="p">:</span>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-4"></a>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-5"></a><span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">mi_billetera</span> <span class="o">=</span> <span class="n">Billetera</span><span class="p">()</span>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-6"></a>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-7"></a><span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">mi_billetera</span>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-8"></a><span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Billetera</span> <span class="n">at</span> <span class="mh">0x7f368cd8f630</span><span class="o">&gt;</span>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-9"></a>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-10"></a><span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">tu_billetera</span> <span class="o">=</span> <span class="n">Billetera</span><span class="p">()</span>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-11"></a>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-12"></a><span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">tu_billetera</span>
-<a name="rest_code_b0b43ad64c4748d4ab14766616df12e2-13"></a><span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Billetera</span> <span class="n">at</span> <span class="mh">0x7f368ce49c88</span><span class="o">&gt;</span>
+<pre class="code ipython"><a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Billetera</span><span class="p">:</span>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-2"></a><span class="o">...</span><span class="p">:</span>     <span class="k">pass</span>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-3"></a><span class="o">...</span><span class="p">:</span>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-4"></a>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-5"></a><span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">mi_billetera</span> <span class="o">=</span> <span class="n">Billetera</span><span class="p">()</span>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-6"></a>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-7"></a><span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">mi_billetera</span>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-8"></a><span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Billetera</span> <span class="n">at</span> <span class="mh">0x7f368cd8f630</span><span class="o">&gt;</span>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-9"></a>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-10"></a><span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">tu_billetera</span> <span class="o">=</span> <span class="n">Billetera</span><span class="p">()</span>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-11"></a>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-12"></a><span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">tu_billetera</span>
+<a name="rest_code_cbc6696c8a9043d2b5a0182c8249b6c0-13"></a><span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Billetera</span> <span class="n">at</span> <span class="mh">0x7f368ce49c88</span><span class="o">&gt;</span>
 </pre>
 <p>Como podemos ver en el código anterior, creamos la clase <tt class="docutils literal">Billetera</tt> y luego creamos dos <em>instancias</em>, <tt class="docutils literal">mi_billetera</tt>
 y <tt class="docutils literal">tu_billetera</tt>.</p>
-<pre class="code ipython"><a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span> <span class="o">=</span> <span class="mi">100</span>
-<a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-2"></a>
-<a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-3"></a><span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
-<a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-4"></a><span class="n">Out</span><span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="mi">100</span>
-<a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-5"></a>
-<a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-6"></a><span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="n">tu_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
-<a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-7"></a><span class="o">---------------------------------------------------------------------------</span>
-<a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-8"></a><span class="ne">AttributeError</span>                            <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
-<a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-9"></a><span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="mi">1</span><span class="n">f6438ef5671</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
-<a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-10"></a><span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">tu_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
-<a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-11"></a>
-<a name="rest_code_1b615dc6f0a14e70864d62466f6ca170-12"></a><span class="ne">AttributeError</span><span class="p">:</span> <span class="s">'Billetera'</span> <span class="nb">object</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="s">'compartimiento_1'</span>
+<pre class="code ipython"><a name="rest_code_77214f49288343ddbcb77d300b8d2a99-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span> <span class="o">=</span> <span class="mi">100</span>
+<a name="rest_code_77214f49288343ddbcb77d300b8d2a99-2"></a>
+<a name="rest_code_77214f49288343ddbcb77d300b8d2a99-3"></a><span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_77214f49288343ddbcb77d300b8d2a99-4"></a><span class="n">Out</span><span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="mi">100</span>
+<a name="rest_code_77214f49288343ddbcb77d300b8d2a99-5"></a>
+<a name="rest_code_77214f49288343ddbcb77d300b8d2a99-6"></a><span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="n">tu_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_77214f49288343ddbcb77d300b8d2a99-7"></a><span class="o">---------------------------------------------------------------------------</span>
+<a name="rest_code_77214f49288343ddbcb77d300b8d2a99-8"></a><span class="ne">AttributeError</span>                            <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+<a name="rest_code_77214f49288343ddbcb77d300b8d2a99-9"></a><span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="mi">1</span><span class="n">f6438ef5671</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
+<a name="rest_code_77214f49288343ddbcb77d300b8d2a99-10"></a><span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">tu_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_77214f49288343ddbcb77d300b8d2a99-11"></a>
+<a name="rest_code_77214f49288343ddbcb77d300b8d2a99-12"></a><span class="ne">AttributeError</span><span class="p">:</span> <span class="s1">'Billetera'</span> <span class="nb">object</span> <span class="n">has</span> <span class="n">no</span> <span class="n">attribute</span> <span class="s1">'compartimiento_1'</span>
 </pre>
 <p>Dentro de cada instancia podemos crear nuevas variables y asignarles valores. Pero es importante destacar que cuando
 hacemos esto, lo estamos hacienod sólo a nivel de cada <em>instancia</em>. Para <tt class="docutils literal">mi_billetera</tt> creamos el <tt class="docutils literal">compartimiento_1</tt>
@@ -246,27 +247,27 @@ donde ponemos el valor 100. Si tratamos de acceder a <tt class="docutils literal
 <tt class="docutils literal">AttributeError</tt> ya que el atributo <tt class="docutils literal">compartimiento_1</tt> sólo existe para <tt class="docutils literal">mi_billetera</tt>.</p>
 <p>Si queremos que todos las intancias de la clase <tt class="docutils literal">Billetera</tt> tengan el <tt class="docutils literal">compartimiento_1</tt>, tenemos que redefinir
 la clase.</p>
-<pre class="code ipython"><a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-1"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Billera</span><span class="p">:</span>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-2"></a><span class="o">...</span><span class="p">:</span>     <span class="n">compartimiento_1</span> <span class="o">=</span> <span class="mi">0</span>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-3"></a><span class="o">...</span><span class="p">:</span>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-4"></a>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-5"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-6"></a> <span class="n">Out</span><span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="mi">100</span>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-7"></a>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-8"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="n">mi_billetera</span> <span class="o">=</span> <span class="n">Billera</span><span class="p">()</span>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-9"></a>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-10"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-11"></a> <span class="n">Out</span><span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="mi">0</span>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-12"></a>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-13"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="n">tu_billetera</span> <span class="o">=</span> <span class="n">Billera</span><span class="p">()</span>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-14"></a>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-15"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="n">tu_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
-<a name="rest_code_ccf3a70dafbb4b6b977266d62d16ae23-16"></a> <span class="n">Out</span><span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="mi">0</span>
+<pre class="code ipython"><a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-1"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Billera</span><span class="p">:</span>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-2"></a><span class="o">...</span><span class="p">:</span>     <span class="n">compartimiento_1</span> <span class="o">=</span> <span class="mi">0</span>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-3"></a><span class="o">...</span><span class="p">:</span>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-4"></a>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-5"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-6"></a> <span class="n">Out</span><span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="mi">100</span>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-7"></a>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-8"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="n">mi_billetera</span> <span class="o">=</span> <span class="n">Billera</span><span class="p">()</span>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-9"></a>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-10"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="n">mi_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-11"></a> <span class="n">Out</span><span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="mi">0</span>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-12"></a>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-13"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="n">tu_billetera</span> <span class="o">=</span> <span class="n">Billera</span><span class="p">()</span>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-14"></a>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-15"></a> <span class="n">In</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="n">tu_billetera</span><span class="o">.</span><span class="n">compartimiento_1</span>
+<a name="rest_code_b5c1a244f52a468f8fc1fca67fdf11f4-16"></a> <span class="n">Out</span><span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="mi">0</span>
 </pre>
 </div>
 </div>
 <div class="section" id="metodos">
-<h2><a class="toc-backref" href=".#id4">Métodos</a></h2>
+<h2><a class="toc-backref" href="#id4">Métodos</a></h2>
 <!-- code-block: ipython
 
 In [1]: class Alumno:
@@ -316,105 +317,105 @@ los tres parámetros: <tt class="docutils literal">name</tt>, <tt class="docutil
 <p>Un <strong>método</strong> es una función de Python que queda <strong>encapsulada</strong> dentro de la clase para la cual está
 definiéndose. Es decir, un <strong>método</strong> tiene las mismas reglas de definición que las funciones en python:
 nombres, argumentos, valores por defecto y demás...</p>
-<pre class="code ipython"><a name="rest_code_53517a1d6dd24872844ae45c46c91968-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-2"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">courses</span><span class="p">):</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-3"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span>  <span class="n">name</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-4"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-5"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">courses</span> <span class="o">=</span> <span class="n">courses</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-6"></a>    <span class="o">...</span><span class="p">:</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-7"></a>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-8"></a><span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">()</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-9"></a><span class="o">---------------------------------------------------------------------------</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-10"></a><span class="ne">TypeError</span>                                 <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-11"></a><span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">13</span><span class="o">-</span><span class="n">c040beabd969</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-12"></a><span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">()</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-13"></a>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-14"></a><span class="ne">TypeError</span><span class="p">:</span> <span class="n">__init__</span><span class="p">()</span> <span class="n">missing</span> <span class="mi">3</span> <span class="n">required</span> <span class="n">positional</span> <span class="n">arguments</span><span class="p">:</span> <span class="s">'name'</span><span class="p">,</span> <span class="s">'age'</span><span class="p">,</span> <span class="ow">and</span> <span class="s">'courses'</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-15"></a>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-16"></a><span class="n">In</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Victor'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">21</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s">'EDD'</span><span class="p">,</span> <span class="s">'PAR'</span><span class="p">])</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-17"></a>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-18"></a><span class="n">In</span> <span class="p">[</span><span class="mi">15</span><span class="p">]:</span> <span class="n">chino</span><span class="o">.</span><span class="n">name</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-19"></a><span class="n">Out</span><span class="p">[</span><span class="mi">15</span><span class="p">]:</span> <span class="s">'Victor'</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-20"></a>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-21"></a><span class="n">In</span> <span class="p">[</span><span class="mi">16</span><span class="p">]:</span> <span class="n">chino</span><span class="o">.</span><span class="n">age</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-22"></a><span class="n">Out</span><span class="p">[</span><span class="mi">16</span><span class="p">]:</span> <span class="mi">21</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-23"></a>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-24"></a><span class="n">In</span> <span class="p">[</span><span class="mi">17</span><span class="p">]:</span> <span class="n">chino</span><span class="o">.</span><span class="n">courses</span>
-<a name="rest_code_53517a1d6dd24872844ae45c46c91968-25"></a><span class="n">Out</span><span class="p">[</span><span class="mi">17</span><span class="p">]:</span> <span class="p">[</span><span class="s">'EDD'</span><span class="p">,</span> <span class="s">'PAR'</span><span class="p">]</span>
+<pre class="code ipython"><a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">12</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-2"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">courses</span><span class="p">):</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-3"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span>  <span class="n">name</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-4"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-5"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">courses</span> <span class="o">=</span> <span class="n">courses</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-6"></a>    <span class="o">...</span><span class="p">:</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-7"></a>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-8"></a><span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">()</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-9"></a><span class="o">---------------------------------------------------------------------------</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-10"></a><span class="ne">TypeError</span>                                 <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-11"></a><span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">13</span><span class="o">-</span><span class="n">c040beabd969</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span><span class="p">()</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-12"></a><span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">()</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-13"></a>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-14"></a><span class="ne">TypeError</span><span class="p">:</span> <span class="fm">__init__</span><span class="p">()</span> <span class="n">missing</span> <span class="mi">3</span> <span class="n">required</span> <span class="n">positional</span> <span class="n">arguments</span><span class="p">:</span> <span class="s1">'name'</span><span class="p">,</span> <span class="s1">'age'</span><span class="p">,</span> <span class="ow">and</span> <span class="s1">'courses'</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-15"></a>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-16"></a><span class="n">In</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Victor'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">21</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s1">'EDD'</span><span class="p">,</span> <span class="s1">'PAR'</span><span class="p">])</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-17"></a>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-18"></a><span class="n">In</span> <span class="p">[</span><span class="mi">15</span><span class="p">]:</span> <span class="n">chino</span><span class="o">.</span><span class="n">name</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-19"></a><span class="n">Out</span><span class="p">[</span><span class="mi">15</span><span class="p">]:</span> <span class="s1">'Victor'</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-20"></a>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-21"></a><span class="n">In</span> <span class="p">[</span><span class="mi">16</span><span class="p">]:</span> <span class="n">chino</span><span class="o">.</span><span class="n">age</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-22"></a><span class="n">Out</span><span class="p">[</span><span class="mi">16</span><span class="p">]:</span> <span class="mi">21</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-23"></a>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-24"></a><span class="n">In</span> <span class="p">[</span><span class="mi">17</span><span class="p">]:</span> <span class="n">chino</span><span class="o">.</span><span class="n">courses</span>
+<a name="rest_code_752c7c7c08214d3ebd466c5255ca8f67-25"></a><span class="n">Out</span><span class="p">[</span><span class="mi">17</span><span class="p">]:</span> <span class="p">[</span><span class="s1">'EDD'</span><span class="p">,</span> <span class="s1">'PAR'</span><span class="p">]</span>
 </pre>
 <div class="section" id="metodos-especiales">
-<h3><a class="toc-backref" href=".#id5">Métodos especiales</a></h3>
+<h3><a class="toc-backref" href="#id5">Métodos especiales</a></h3>
 <p>En Python existen una serie de métodos que son un tanto especiales, también llamados métodos mágicos o métodos <em>dunder</em>.
 El método constructor <tt class="docutils literal">__init__</tt> es uno de estos métodos mágicos.</p>
 <p class="alert alert-info">Se utiliza <strong>dunder</strong> porque son métodos que empiezan con doble guión bajo (double underscore en inglés).
 Como decir <em>doble guión bajo init doble guión bajo</em> puede resultar un trabalenguas, se propuso esta nueva
 terminología para identificar a este tipo de métodos.</p>
-<pre class="code ipython"><a name="rest_code_dc43386f2fef4442a50416e87ca22a80-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">18</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">chino</span><span class="p">)</span>
-<a name="rest_code_dc43386f2fef4442a50416e87ca22a80-2"></a><span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Alumno</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x7f7c54949048</span><span class="o">&gt;</span>
-<a name="rest_code_dc43386f2fef4442a50416e87ca22a80-3"></a>
-<a name="rest_code_dc43386f2fef4442a50416e87ca22a80-4"></a><span class="n">In</span> <span class="p">[</span><span class="mi">19</span><span class="p">]:</span> <span class="n">chino</span>
-<a name="rest_code_dc43386f2fef4442a50416e87ca22a80-5"></a><span class="n">Out</span><span class="p">[</span><span class="mi">19</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Alumno</span> <span class="n">at</span> <span class="mh">0x7f7c54949048</span><span class="o">&gt;</span>
+<pre class="code ipython"><a name="rest_code_a0de368736724db89b5b9c6f4f2659ee-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">18</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">chino</span><span class="p">)</span>
+<a name="rest_code_a0de368736724db89b5b9c6f4f2659ee-2"></a><span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Alumno</span> <span class="nb">object</span> <span class="n">at</span> <span class="mh">0x7f7c54949048</span><span class="o">&gt;</span>
+<a name="rest_code_a0de368736724db89b5b9c6f4f2659ee-3"></a>
+<a name="rest_code_a0de368736724db89b5b9c6f4f2659ee-4"></a><span class="n">In</span> <span class="p">[</span><span class="mi">19</span><span class="p">]:</span> <span class="n">chino</span>
+<a name="rest_code_a0de368736724db89b5b9c6f4f2659ee-5"></a><span class="n">Out</span><span class="p">[</span><span class="mi">19</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">__main__</span><span class="o">.</span><span class="n">Alumno</span> <span class="n">at</span> <span class="mh">0x7f7c54949048</span><span class="o">&gt;</span>
 </pre>
 <p>Siguiendo con nuestro ejemplo, cuando imprimimos a nuestro querido alumno <tt class="docutils literal">chino</tt> no nos dice demasiada información
 relevante. Lo mismo sucede si consultamos el valor de dicha instancia en el intérprete interactivo. Para modificar el
 comportamiento de nuestros objetos cuando se los invoca en la consola de Python tenemos que redefinir el método <tt class="docutils literal">__repr</tt>.
 Y para cambiar cómo es que se comporta cuando lo llamemos como argumento de la función <tt class="docutils literal">print</tt> tenemos que redefinir
 el método <tt class="docutils literal">__str__</tt>.</p>
-<pre class="code ipython"><a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">20</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-2"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">courses</span><span class="p">):</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-3"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span>  <span class="n">name</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-4"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-5"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">courses</span> <span class="o">=</span> <span class="n">courses</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-6"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-7"></a>    <span class="o">...</span><span class="p">:</span>         <span class="k">return</span> <span class="s">'&lt;Alumno {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-8"></a>    <span class="o">...</span><span class="p">:</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-9"></a>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-10"></a><span class="n">In</span> <span class="p">[</span><span class="mi">21</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Victor'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">21</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s">'EDD'</span><span class="p">,</span> <span class="s">'PAR'</span><span class="p">])</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-11"></a>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-12"></a><span class="n">In</span> <span class="p">[</span><span class="mi">22</span><span class="p">]:</span> <span class="n">chino</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-13"></a><span class="n">Out</span><span class="p">[</span><span class="mi">22</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Victor</span><span class="o">&gt;</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-14"></a>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-15"></a><span class="n">In</span> <span class="p">[</span><span class="mi">23</span><span class="p">]:</span> <span class="n">marce</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Marcela'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s">'ARQ'</span><span class="p">])</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-16"></a>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-17"></a><span class="n">In</span> <span class="p">[</span><span class="mi">24</span><span class="p">]:</span> <span class="n">marce</span>
-<a name="rest_code_01739828cfa14a2bab3ba3143bc0538e-18"></a><span class="n">Out</span><span class="p">[</span><span class="mi">24</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Marcela</span><span class="o">&gt;</span>
+<pre class="code ipython"><a name="rest_code_0e436de69f59488fb768769416798ee1-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">20</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-2"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">courses</span><span class="p">):</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-3"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span>  <span class="n">name</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-4"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-5"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">courses</span> <span class="o">=</span> <span class="n">courses</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-6"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-7"></a>    <span class="o">...</span><span class="p">:</span>         <span class="k">return</span> <span class="s1">'&lt;Alumno {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-8"></a>    <span class="o">...</span><span class="p">:</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-9"></a>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-10"></a><span class="n">In</span> <span class="p">[</span><span class="mi">21</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Victor'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">21</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s1">'EDD'</span><span class="p">,</span> <span class="s1">'PAR'</span><span class="p">])</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-11"></a>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-12"></a><span class="n">In</span> <span class="p">[</span><span class="mi">22</span><span class="p">]:</span> <span class="n">chino</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-13"></a><span class="n">Out</span><span class="p">[</span><span class="mi">22</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Victor</span><span class="o">&gt;</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-14"></a>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-15"></a><span class="n">In</span> <span class="p">[</span><span class="mi">23</span><span class="p">]:</span> <span class="n">marce</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Marcela'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s1">'ARQ'</span><span class="p">])</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-16"></a>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-17"></a><span class="n">In</span> <span class="p">[</span><span class="mi">24</span><span class="p">]:</span> <span class="n">marce</span>
+<a name="rest_code_0e436de69f59488fb768769416798ee1-18"></a><span class="n">Out</span><span class="p">[</span><span class="mi">24</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Marcela</span><span class="o">&gt;</span>
 </pre>
 <p>Ahora modificamos el método <tt class="docutils literal">__repr__</tt> y podemos observar que cuando consultamos el valor de la instancia
 nos devuelve la cadena que nosotros definimos. Hemos modificado la definición de nuestra clase <tt class="docutils literal">Alumno</tt> y
 ahora cuando queremos consultar el valor de nuestras instancias nos devuelve el nombre de la clase seguido
 del valor que almacenamos en la variable <tt class="docutils literal">name</tt>.</p>
-<pre class="code ipython"><a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">26</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-2"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">courses</span><span class="p">):</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-3"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span>  <span class="n">name</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-4"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-5"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">courses</span> <span class="o">=</span> <span class="n">courses</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-6"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-7"></a>    <span class="o">...</span><span class="p">:</span>         <span class="k">return</span> <span class="s">'&lt;Alumno {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-8"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-9"></a>    <span class="o">...</span><span class="p">:</span>         <span class="k">return</span> <span class="s">'Soy el alumno {}, tengo {} años y estoy cursando {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="p">)</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-10"></a>    <span class="o">...</span><span class="p">:</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-11"></a>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-12"></a><span class="n">In</span> <span class="p">[</span><span class="mi">27</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Victor'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">21</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s">'EDD'</span><span class="p">,</span> <span class="s">'PAR'</span><span class="p">])</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-13"></a>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-14"></a><span class="n">In</span> <span class="p">[</span><span class="mi">28</span><span class="p">]:</span> <span class="n">marce</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Marcela'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s">'ARQ'</span><span class="p">])</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-15"></a>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-16"></a><span class="n">In</span> <span class="p">[</span><span class="mi">29</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">chino</span><span class="p">)</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-17"></a><span class="n">Soy</span> <span class="n">el</span> <span class="n">alumno</span> <span class="n">Victor</span><span class="p">,</span> <span class="n">tengo</span> <span class="mi">21</span> <span class="n">años</span> <span class="n">y</span> <span class="n">estoy</span> <span class="n">cursando</span> <span class="p">[</span><span class="s">'EDD'</span><span class="p">,</span> <span class="s">'PAR'</span><span class="p">]</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-18"></a>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-19"></a><span class="n">In</span> <span class="p">[</span><span class="mi">30</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">marce</span><span class="p">)</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-20"></a><span class="n">Soy</span> <span class="n">el</span> <span class="n">alumno</span> <span class="n">Marcela</span><span class="p">,</span> <span class="n">tengo</span> <span class="mi">18</span> <span class="n">años</span> <span class="n">y</span> <span class="n">estoy</span> <span class="n">cursando</span> <span class="p">[</span><span class="s">'ARQ'</span><span class="p">]</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-21"></a>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-22"></a><span class="n">In</span> <span class="p">[</span><span class="mi">31</span><span class="p">]:</span> <span class="n">chino</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-23"></a><span class="n">Out</span><span class="p">[</span><span class="mi">31</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Victor</span><span class="o">&gt;</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-24"></a>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-25"></a><span class="n">In</span> <span class="p">[</span><span class="mi">32</span><span class="p">]:</span> <span class="n">marce</span>
-<a name="rest_code_a813fc3648a8449f8d0e4394d1f283f5-26"></a><span class="n">Out</span><span class="p">[</span><span class="mi">32</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Marcela</span><span class="o">&gt;</span>
+<pre class="code ipython"><a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">26</span><span class="p">]:</span> <span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-2"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">courses</span><span class="p">):</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-3"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span>  <span class="n">name</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-4"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-5"></a>    <span class="o">...</span><span class="p">:</span>         <span class="bp">self</span><span class="o">.</span><span class="n">courses</span> <span class="o">=</span> <span class="n">courses</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-6"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-7"></a>    <span class="o">...</span><span class="p">:</span>         <span class="k">return</span> <span class="s1">'&lt;Alumno {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-8"></a>    <span class="o">...</span><span class="p">:</span>     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-9"></a>    <span class="o">...</span><span class="p">:</span>         <span class="k">return</span> <span class="s1">'Soy el alumno {}, tengo {} años y estoy cursando {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">courses</span><span class="p">)</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-10"></a>    <span class="o">...</span><span class="p">:</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-11"></a>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-12"></a><span class="n">In</span> <span class="p">[</span><span class="mi">27</span><span class="p">]:</span> <span class="n">chino</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Victor'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">21</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s1">'EDD'</span><span class="p">,</span> <span class="s1">'PAR'</span><span class="p">])</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-13"></a>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-14"></a><span class="n">In</span> <span class="p">[</span><span class="mi">28</span><span class="p">]:</span> <span class="n">marce</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Marcela'</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">courses</span><span class="o">=</span><span class="p">[</span><span class="s1">'ARQ'</span><span class="p">])</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-15"></a>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-16"></a><span class="n">In</span> <span class="p">[</span><span class="mi">29</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">chino</span><span class="p">)</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-17"></a><span class="n">Soy</span> <span class="n">el</span> <span class="n">alumno</span> <span class="n">Victor</span><span class="p">,</span> <span class="n">tengo</span> <span class="mi">21</span> <span class="n">años</span> <span class="n">y</span> <span class="n">estoy</span> <span class="n">cursando</span> <span class="p">[</span><span class="s1">'EDD'</span><span class="p">,</span> <span class="s1">'PAR'</span><span class="p">]</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-18"></a>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-19"></a><span class="n">In</span> <span class="p">[</span><span class="mi">30</span><span class="p">]:</span> <span class="k">print</span><span class="p">(</span><span class="n">marce</span><span class="p">)</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-20"></a><span class="n">Soy</span> <span class="n">el</span> <span class="n">alumno</span> <span class="n">Marcela</span><span class="p">,</span> <span class="n">tengo</span> <span class="mi">18</span> <span class="n">años</span> <span class="n">y</span> <span class="n">estoy</span> <span class="n">cursando</span> <span class="p">[</span><span class="s1">'ARQ'</span><span class="p">]</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-21"></a>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-22"></a><span class="n">In</span> <span class="p">[</span><span class="mi">31</span><span class="p">]:</span> <span class="n">chino</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-23"></a><span class="n">Out</span><span class="p">[</span><span class="mi">31</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Victor</span><span class="o">&gt;</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-24"></a>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-25"></a><span class="n">In</span> <span class="p">[</span><span class="mi">32</span><span class="p">]:</span> <span class="n">marce</span>
+<a name="rest_code_80dd569174ba40abba60ab3bbe295dbb-26"></a><span class="n">Out</span><span class="p">[</span><span class="mi">32</span><span class="p">]:</span> <span class="o">&lt;</span><span class="n">Alumno</span> <span class="n">Marcela</span><span class="o">&gt;</span>
 </pre>
 <p>En el ejemplo anterior podemos ver cómo hemos incluido la redefinición del método <tt class="docutils literal">__str__</tt> para
 modifcar el comportamiento de nuestros objectos cuando son invocados a través de la función <tt class="docutils literal">print</tt>.</p>
 </div>
 <div class="section" id="ejercicios">
-<h3><a class="toc-backref" href=".#id6">Ejercicios</a></h3>
+<h3><a class="toc-backref" href="#id6">Ejercicios</a></h3>
 <p>1. Definir una nueva clase <tt class="docutils literal">Carta</tt> que tenga como atributos el valor y el palo. Utilizar los métodos
 <em>dunder</em> para reconocer los diferentes objetos.</p>
 <p>2. Definir una nueva clase que sea <tt class="docutils literal">Mascota</tt> que tenga como atributos el nombre, la edad y qué animal es.
@@ -430,6 +431,8 @@ alumno está inscripto en una materia por línea.</p>
 </div>
     </div>
     
+    
+
 
 </article>
 </div>

@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/prog/mayores_a.py.html">
 <meta name="description" content="mayores_a.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>mayores_a.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/prog/mayores_a.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">prog</a></li>
                 <li>mayores_a.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>mayores_a.py
+        <small><a href="mayores_a.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsprogmayores_apy-1"> 1</a>
 <a href="#listingsprogmayores_apy-2"> 2</a>
 <a href="#listingsprogmayores_apy-3"> 3</a>
@@ -208,22 +212,22 @@
 <a href="#listingsprogmayores_apy-89">89</a>
 <a href="#listingsprogmayores_apy-90">90</a>
 <a href="#listingsprogmayores_apy-91">91</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsprogmayores_apy-1"></a><span class="c">#!/usr/bin/env python3</span>
+<td class="code"><pre class="code literal-block"><a name="listingsprogmayores_apy-1"></a><span class="ch">#!/usr/bin/env python3</span>
 <a name="listingsprogmayores_apy-2"></a>
-<a name="listingsprogmayores_apy-3"></a><span class="c"># Dada una lista de numeros enteros y un numero n generar otra lista</span>
-<a name="listingsprogmayores_apy-4"></a><span class="c"># (y mostrarla) con todos los numeros de la lista que sean mayores a n.</span>
-<a name="listingsprogmayores_apy-5"></a><span class="c">#</span>
-<a name="listingsprogmayores_apy-6"></a><span class="c"># Ej.</span>
-<a name="listingsprogmayores_apy-7"></a><span class="c"># numeros = [10, 20, 30, 40, 50, 60]</span>
-<a name="listingsprogmayores_apy-8"></a><span class="c"># n = 45</span>
-<a name="listingsprogmayores_apy-9"></a><span class="c">#</span>
-<a name="listingsprogmayores_apy-10"></a><span class="c"># ---&gt; nueva = [50, 60]</span>
+<a name="listingsprogmayores_apy-3"></a><span class="c1"># Dada una lista de numeros enteros y un numero n generar otra lista</span>
+<a name="listingsprogmayores_apy-4"></a><span class="c1"># (y mostrarla) con todos los numeros de la lista que sean mayores a n.</span>
+<a name="listingsprogmayores_apy-5"></a><span class="c1">#</span>
+<a name="listingsprogmayores_apy-6"></a><span class="c1"># Ej.</span>
+<a name="listingsprogmayores_apy-7"></a><span class="c1"># numeros = [10, 20, 30, 40, 50, 60]</span>
+<a name="listingsprogmayores_apy-8"></a><span class="c1"># n = 45</span>
+<a name="listingsprogmayores_apy-9"></a><span class="c1">#</span>
+<a name="listingsprogmayores_apy-10"></a><span class="c1"># ---&gt; nueva = [50, 60]</span>
 <a name="listingsprogmayores_apy-11"></a>
 <a name="listingsprogmayores_apy-12"></a><span class="k">def</span> <span class="nf">mayores_a</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-<a name="listingsprogmayores_apy-13"></a>    <span class="n">nueva_lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>  <span class="c"># nueva_lista = []</span>
+<a name="listingsprogmayores_apy-13"></a>    <span class="n">nueva_lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>  <span class="c1"># nueva_lista = []</span>
 <a name="listingsprogmayores_apy-14"></a>    <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
 <a name="listingsprogmayores_apy-15"></a>        <span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
-<a name="listingsprogmayores_apy-16"></a>            <span class="c"># agrego numero a la lista.</span>
+<a name="listingsprogmayores_apy-16"></a>            <span class="c1"># agrego numero a la lista.</span>
 <a name="listingsprogmayores_apy-17"></a>            <span class="n">nueva_lista</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
 <a name="listingsprogmayores_apy-18"></a>
 <a name="listingsprogmayores_apy-19"></a>    <span class="k">return</span> <span class="n">nueva_lista</span>
@@ -240,10 +244,10 @@
 <a name="listingsprogmayores_apy-30"></a><span class="k">print</span><span class="p">(</span><span class="n">mayores_a</span><span class="p">(</span><span class="n">numeros</span><span class="p">,</span> <span class="n">n</span><span class="p">))</span>
 <a name="listingsprogmayores_apy-31"></a>
 <a name="listingsprogmayores_apy-32"></a>
-<a name="listingsprogmayores_apy-33"></a><span class="c"># Si la lista es ordenada...</span>
+<a name="listingsprogmayores_apy-33"></a><span class="c1"># Si la lista es ordenada...</span>
 <a name="listingsprogmayores_apy-34"></a>
 <a name="listingsprogmayores_apy-35"></a><span class="k">def</span> <span class="nf">mayores_a2</span><span class="p">(</span><span class="n">lista</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-<a name="listingsprogmayores_apy-36"></a>    <span class="n">nueva_lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>  <span class="c"># nueva_lista = []</span>
+<a name="listingsprogmayores_apy-36"></a>    <span class="n">nueva_lista</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>  <span class="c1"># nueva_lista = []</span>
 <a name="listingsprogmayores_apy-37"></a>    <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
 <a name="listingsprogmayores_apy-38"></a>        <span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
 <a name="listingsprogmayores_apy-39"></a>            <span class="n">indice</span> <span class="o">=</span> <span class="n">lista</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>

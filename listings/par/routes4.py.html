@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/par/routes4.py.html">
 <meta name="description" content="routes4.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>routes4.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/par/routes4.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">par</a></li>
                 <li>routes4.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>routes4.py
+        <small><a href="routes4.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsparroutes4py-1"> 1</a>
 <a href="#listingsparroutes4py-2"> 2</a>
 <a href="#listingsparroutes4py-3"> 3</a>
@@ -147,30 +151,30 @@
 <a href="#listingsparroutes4py-28">28</a>
 <a href="#listingsparroutes4py-29">29</a>
 <a href="#listingsparroutes4py-30">30</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsparroutes4py-1"></a><span class="c">#!/usr/bin/env python</span>
+<td class="code"><pre class="code literal-block"><a name="listingsparroutes4py-1"></a><span class="ch">#!/usr/bin/env python</span>
 <a name="listingsparroutes4py-2"></a>
 <a name="listingsparroutes4py-3"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span>
 <a name="listingsparroutes4py-4"></a>
-<a name="listingsparroutes4py-5"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+<a name="listingsparroutes4py-5"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 <a name="listingsparroutes4py-6"></a>
-<a name="listingsparroutes4py-7"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
-<a name="listingsparroutes4py-8"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/index'</span><span class="p">)</span>
+<a name="listingsparroutes4py-7"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
+<a name="listingsparroutes4py-8"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/index'</span><span class="p">)</span>
 <a name="listingsparroutes4py-9"></a><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
-<a name="listingsparroutes4py-10"></a>    <span class="k">return</span> <span class="s">"Hello World!"</span> 
+<a name="listingsparroutes4py-10"></a>    <span class="k">return</span> <span class="s2">"Hello World!"</span> 
 <a name="listingsparroutes4py-11"></a>
-<a name="listingsparroutes4py-12"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/users'</span><span class="p">)</span>
+<a name="listingsparroutes4py-12"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/users'</span><span class="p">)</span>
 <a name="listingsparroutes4py-13"></a><span class="k">def</span> <span class="nf">user</span><span class="p">():</span>
-<a name="listingsparroutes4py-14"></a>    <span class="c"># fake users</span>
-<a name="listingsparroutes4py-15"></a>    <span class="n">users</span> <span class="o">=</span> <span class="p">[{</span><span class="s">'nick'</span><span class="p">:</span> <span class="s">'Titi'</span><span class="p">,</span> <span class="s">'name'</span><span class="p">:</span> <span class="s">'Thiago'</span><span class="p">},</span>
-<a name="listingsparroutes4py-16"></a>             <span class="p">{</span><span class="s">'nick'</span><span class="p">:</span> <span class="s">'Fer'</span><span class="p">,</span> <span class="s">'name'</span><span class="p">:</span> <span class="s">'Fernanda'</span><span class="p">},</span>
-<a name="listingsparroutes4py-17"></a>             <span class="p">{</span><span class="s">'nick'</span><span class="p">:</span> <span class="s">'Leo'</span><span class="p">,</span> <span class="s">'name'</span><span class="p">:</span> <span class="s">'Leandro'</span><span class="p">},</span>
+<a name="listingsparroutes4py-14"></a>    <span class="c1"># fake users</span>
+<a name="listingsparroutes4py-15"></a>    <span class="n">users</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">'nick'</span><span class="p">:</span> <span class="s1">'Titi'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Thiago'</span><span class="p">},</span>
+<a name="listingsparroutes4py-16"></a>             <span class="p">{</span><span class="s1">'nick'</span><span class="p">:</span> <span class="s1">'Fer'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Fernanda'</span><span class="p">},</span>
+<a name="listingsparroutes4py-17"></a>             <span class="p">{</span><span class="s1">'nick'</span><span class="p">:</span> <span class="s1">'Leo'</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Leandro'</span><span class="p">},</span>
 <a name="listingsparroutes4py-18"></a>    <span class="p">]</span>  
 <a name="listingsparroutes4py-19"></a>    <span class="n">value</span> <span class="o">=</span> <span class="mi">12</span>
-<a name="listingsparroutes4py-20"></a>    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">'users.html'</span><span class="p">,</span>
+<a name="listingsparroutes4py-20"></a>    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'users.html'</span><span class="p">,</span>
 <a name="listingsparroutes4py-21"></a>                           <span class="n">users</span><span class="o">=</span><span class="n">users</span><span class="p">,</span>
 <a name="listingsparroutes4py-22"></a>                           <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">)</span>
 <a name="listingsparroutes4py-23"></a>
-<a name="listingsparroutes4py-24"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<a name="listingsparroutes4py-24"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
 <a name="listingsparroutes4py-25"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <a name="listingsparroutes4py-26"></a>    
 <a name="listingsparroutes4py-27"></a>    

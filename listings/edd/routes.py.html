@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/edd/routes.py.html">
 <meta name="description" content="routes.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>routes.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/edd/routes.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">edd</a></li>
                 <li>routes.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>routes.py
+        <small><a href="routes.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingseddroutespy-1"> 1</a>
 <a href="#listingseddroutespy-2"> 2</a>
 <a href="#listingseddroutespy-3"> 3</a>
@@ -139,27 +143,27 @@
 <a href="#listingseddroutespy-20">20</a>
 <a href="#listingseddroutespy-21">21</a>
 <a href="#listingseddroutespy-22">22</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingseddroutespy-1"></a><span class="c">#!/usr/bin/env python</span>
+<td class="code"><pre class="code literal-block"><a name="listingseddroutespy-1"></a><span class="ch">#!/usr/bin/env python</span>
 <a name="listingseddroutespy-2"></a>
-<a name="listingseddroutespy-3"></a><span class="c"># Importamos del módulo flask la clase Flask que creará nuestra aplicación.</span>
+<a name="listingseddroutespy-3"></a><span class="c1"># Importamos del módulo flask la clase Flask que creará nuestra aplicación.</span>
 <a name="listingseddroutespy-4"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
 <a name="listingseddroutespy-5"></a>
-<a name="listingseddroutespy-6"></a><span class="c"># Creamos una nueva instancia de Flask y la asignamos a `app`.</span>
-<a name="listingseddroutespy-7"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+<a name="listingseddroutespy-6"></a><span class="c1"># Creamos una nueva instancia de Flask y la asignamos a `app`.</span>
+<a name="listingseddroutespy-7"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 <a name="listingseddroutespy-8"></a>
-<a name="listingseddroutespy-9"></a><span class="c"># Estos decoradores nos sirven para mapear qué funciones se van a llamar en el</span>
-<a name="listingseddroutespy-10"></a><span class="c"># momento que al servidor le llegue una petición con esa URL.</span>
-<a name="listingseddroutespy-11"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
-<a name="listingseddroutespy-12"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/index'</span><span class="p">)</span>
+<a name="listingseddroutespy-9"></a><span class="c1"># Estos decoradores nos sirven para mapear qué funciones se van a llamar en el</span>
+<a name="listingseddroutespy-10"></a><span class="c1"># momento que al servidor le llegue una petición con esa URL.</span>
+<a name="listingseddroutespy-11"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
+<a name="listingseddroutespy-12"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/index'</span><span class="p">)</span>
 <a name="listingseddroutespy-13"></a><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
 <a name="listingseddroutespy-14"></a>    <span class="sd">""" Nuestra función que responde en '/' o en '/index' y devuelve un</span>
 <a name="listingseddroutespy-15"></a><span class="sd">        simple 'Hello World!'</span>
 <a name="listingseddroutespy-16"></a><span class="sd">    """</span>
-<a name="listingseddroutespy-17"></a>    <span class="k">return</span> <span class="s">"&lt;h1&gt;Hello World!&lt;/h1&gt;"</span>
+<a name="listingseddroutespy-17"></a>    <span class="k">return</span> <span class="s2">"&lt;h1&gt;Hello World!&lt;/h1&gt;"</span>
 <a name="listingseddroutespy-18"></a>
-<a name="listingseddroutespy-19"></a><span class="c"># Si ejecutamos el módulo, la aplicación de Flask corre con el modo de prueba</span>
-<a name="listingseddroutespy-20"></a><span class="c"># activo.</span>
-<a name="listingseddroutespy-21"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<a name="listingseddroutespy-19"></a><span class="c1"># Si ejecutamos el módulo, la aplicación de Flask corre con el modo de prueba</span>
+<a name="listingseddroutespy-20"></a><span class="c1"># activo.</span>
+<a name="listingseddroutespy-21"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
 <a name="listingseddroutespy-22"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></td>
 </tr></table>

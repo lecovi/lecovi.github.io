@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/edd/cartas.py.html">
 <meta name="description" content="cartas.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>cartas.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/edd/cartas.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">edd</a></li>
                 <li>cartas.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>cartas.py
+        <small><a href="cartas.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingseddcartaspy-1"> 1</a>
 <a href="#listingseddcartaspy-2"> 2</a>
 <a href="#listingseddcartaspy-3"> 3</a>
@@ -149,7 +153,7 @@
 <a href="#listingseddcartaspy-30">30</a>
 <a href="#listingseddcartaspy-31">31</a>
 <a href="#listingseddcartaspy-32">32</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingseddcartaspy-1"></a><span class="c">#!/usr/bin/env python</span>
+<td class="code"><pre class="code literal-block"><a name="listingseddcartaspy-1"></a><span class="ch">#!/usr/bin/env python</span>
 <a name="listingseddcartaspy-2"></a><span class="sd">"""</span>
 <a name="listingseddcartaspy-3"></a><span class="sd">EDD: Creando objetos - Carta.</span>
 <a name="listingseddcartaspy-4"></a>
@@ -161,19 +165,19 @@
 <a name="listingseddcartaspy-10"></a>
 <a name="listingseddcartaspy-11"></a><span class="k">class</span> <span class="nc">Carta</span><span class="p">:</span>
 <a name="listingseddcartaspy-12"></a>    <span class="sd">""" Nuestra propia clase Carta. """</span>
-<a name="listingseddcartaspy-13"></a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">valor</span><span class="p">,</span> <span class="n">palo</span><span class="p">):</span>
+<a name="listingseddcartaspy-13"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">valor</span><span class="p">,</span> <span class="n">palo</span><span class="p">):</span>
 <a name="listingseddcartaspy-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span>
 <a name="listingseddcartaspy-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">palo</span> <span class="o">=</span> <span class="n">palo</span>
 <a name="listingseddcartaspy-16"></a>
-<a name="listingseddcartaspy-17"></a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="listingseddcartaspy-18"></a>        <span class="k">return</span> <span class="s">'&lt;Carta {} de {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">valor</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">palo</span><span class="p">)</span>
+<a name="listingseddcartaspy-17"></a>    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="listingseddcartaspy-18"></a>        <span class="k">return</span> <span class="s1">'&lt;Carta {} de {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">valor</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">palo</span><span class="p">)</span>
 <a name="listingseddcartaspy-19"></a>
-<a name="listingseddcartaspy-20"></a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="listingseddcartaspy-21"></a>        <span class="k">return</span> <span class="s">'El {} de {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">valor</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">palo</span><span class="p">)</span>
+<a name="listingseddcartaspy-20"></a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="listingseddcartaspy-21"></a>        <span class="k">return</span> <span class="s1">'El {} de {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">valor</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">palo</span><span class="p">)</span>
 <a name="listingseddcartaspy-22"></a>
 <a name="listingseddcartaspy-23"></a>
-<a name="listingseddcartaspy-24"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
-<a name="listingseddcartaspy-25"></a>    <span class="n">PALOS</span> <span class="o">=</span> <span class="p">[</span><span class="s">'oros'</span><span class="p">,</span> <span class="s">'bastos'</span><span class="p">,</span> <span class="s">'copas'</span><span class="p">,</span> <span class="s">'espadas'</span><span class="p">]</span>
+<a name="listingseddcartaspy-24"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<a name="listingseddcartaspy-25"></a>    <span class="n">PALOS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'oros'</span><span class="p">,</span> <span class="s1">'bastos'</span><span class="p">,</span> <span class="s1">'copas'</span><span class="p">,</span> <span class="s1">'espadas'</span><span class="p">]</span>
 <a name="listingseddcartaspy-26"></a>
 <a name="listingseddcartaspy-27"></a>    <span class="n">carta</span> <span class="o">=</span> <span class="n">Carta</span><span class="p">(</span>
 <a name="listingseddcartaspy-28"></a>        <span class="n">valor</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span>

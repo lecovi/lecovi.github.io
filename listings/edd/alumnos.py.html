@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/edd/alumnos.py.html">
 <meta name="description" content="alumnos.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>alumnos.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/edd/alumnos.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">edd</a></li>
                 <li>alumnos.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>alumnos.py
+        <small><a href="alumnos.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingseddalumnospy-1"> 1</a>
 <a href="#listingseddalumnospy-2"> 2</a>
 <a href="#listingseddalumnospy-3"> 3</a>
@@ -165,7 +169,7 @@
 <a href="#listingseddalumnospy-46">46</a>
 <a href="#listingseddalumnospy-47">47</a>
 <a href="#listingseddalumnospy-48">48</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingseddalumnospy-1"></a><span class="c">#!/usr/bin/env python</span>
+<td class="code"><pre class="code literal-block"><a name="listingseddalumnospy-1"></a><span class="ch">#!/usr/bin/env python</span>
 <a name="listingseddalumnospy-2"></a><span class="sd">"""</span>
 <a name="listingseddalumnospy-3"></a><span class="sd">EDD: Creando objetos - Alumno.</span>
 <a name="listingseddalumnospy-4"></a>
@@ -177,16 +181,16 @@
 <a name="listingseddalumnospy-10"></a>
 <a name="listingseddalumnospy-11"></a><span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
 <a name="listingseddalumnospy-12"></a>    <span class="sd">""" Nuestra propia clase Alumno. """</span>
-<a name="listingseddalumnospy-13"></a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">materias</span><span class="o">=</span><span class="p">[]):</span>
+<a name="listingseddalumnospy-13"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">materias</span><span class="o">=</span><span class="p">[]):</span>
 <a name="listingseddalumnospy-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
 <a name="listingseddalumnospy-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">edad</span> <span class="o">=</span> <span class="n">edad</span>
 <a name="listingseddalumnospy-16"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">materias</span> <span class="o">=</span> <span class="n">materias</span>
 <a name="listingseddalumnospy-17"></a>
-<a name="listingseddalumnospy-18"></a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="listingseddalumnospy-19"></a>        <span class="k">return</span> <span class="s">'&lt;Alumno {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
+<a name="listingseddalumnospy-18"></a>    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="listingseddalumnospy-19"></a>        <span class="k">return</span> <span class="s1">'&lt;Alumno {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
 <a name="listingseddalumnospy-20"></a>
-<a name="listingseddalumnospy-21"></a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="listingseddalumnospy-22"></a>        <span class="k">return</span> <span class="s">'Soy {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
+<a name="listingseddalumnospy-21"></a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="listingseddalumnospy-22"></a>        <span class="k">return</span> <span class="s1">'Soy {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
 <a name="listingseddalumnospy-23"></a>
 <a name="listingseddalumnospy-24"></a>    <span class="k">def</span> <span class="nf">inscribir</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">materia</span><span class="p">):</span>
 <a name="listingseddalumnospy-25"></a>        <span class="sd">""" Inscripción a materias. """</span>
@@ -194,17 +198,17 @@
 <a name="listingseddalumnospy-27"></a>    
 <a name="listingseddalumnospy-28"></a>    <span class="k">def</span> <span class="nf">listar_materias</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a name="listingseddalumnospy-29"></a>        <span class="sd">""" Lista cada una de las materias del alumno, una por línea. """</span>
-<a name="listingseddalumnospy-30"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'Listado de materias:'</span><span class="p">)</span>
+<a name="listingseddalumnospy-30"></a>        <span class="k">print</span><span class="p">(</span><span class="s1">'Listado de materias:'</span><span class="p">)</span>
 <a name="listingseddalumnospy-31"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">materias</span><span class="p">:</span>
-<a name="listingseddalumnospy-32"></a>            <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\t</span><span class="s">El alumno no está inscripto en materias.'</span><span class="p">)</span>
+<a name="listingseddalumnospy-32"></a>            <span class="k">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">El alumno no está inscripto en materias.'</span><span class="p">)</span>
 <a name="listingseddalumnospy-33"></a>            <span class="k">return</span>
 <a name="listingseddalumnospy-34"></a>        <span class="k">for</span> <span class="n">materia</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">materias</span><span class="p">:</span>
-<a name="listingseddalumnospy-35"></a>            <span class="k">print</span><span class="p">(</span><span class="s">'</span><span class="se">\t</span><span class="s">- {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">materia</span><span class="p">))</span>
+<a name="listingseddalumnospy-35"></a>            <span class="k">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">materia</span><span class="p">))</span>
 <a name="listingseddalumnospy-36"></a>
 <a name="listingseddalumnospy-37"></a>
-<a name="listingseddalumnospy-38"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
-<a name="listingseddalumnospy-39"></a>    <span class="n">MATERIAS</span> <span class="o">=</span> <span class="p">[</span><span class="s">'ARQ'</span><span class="p">,</span> <span class="s">'EDD'</span><span class="p">,</span> <span class="s">'DLO'</span><span class="p">,</span> <span class="s">'PAR'</span><span class="p">,</span> <span class="s">'TIC'</span><span class="p">,</span> <span class="s">'ANA'</span><span class="p">,</span> <span class="s">'LOG'</span><span class="p">]</span>
-<a name="listingseddalumnospy-40"></a>    <span class="n">NOMBRES</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Pluto'</span><span class="p">,</span> <span class="s">'Silvestre'</span><span class="p">,</span> <span class="s">'Nemo'</span><span class="p">,</span> <span class="s">'Piolín'</span><span class="p">]</span>
+<a name="listingseddalumnospy-38"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<a name="listingseddalumnospy-39"></a>    <span class="n">MATERIAS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'ARQ'</span><span class="p">,</span> <span class="s1">'EDD'</span><span class="p">,</span> <span class="s1">'DLO'</span><span class="p">,</span> <span class="s1">'PAR'</span><span class="p">,</span> <span class="s1">'TIC'</span><span class="p">,</span> <span class="s1">'ANA'</span><span class="p">,</span> <span class="s1">'LOG'</span><span class="p">]</span>
+<a name="listingseddalumnospy-40"></a>    <span class="n">NOMBRES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Pluto'</span><span class="p">,</span> <span class="s1">'Silvestre'</span><span class="p">,</span> <span class="s1">'Nemo'</span><span class="p">,</span> <span class="s1">'Piolín'</span><span class="p">]</span>
 <a name="listingseddalumnospy-41"></a>
 <a name="listingseddalumnospy-42"></a>    <span class="n">alumno</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">nombre</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">NOMBRES</span><span class="p">))</span>
 <a name="listingseddalumnospy-43"></a>

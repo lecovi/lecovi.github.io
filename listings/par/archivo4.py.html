@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/par/archivo4.py.html">
 <meta name="description" content="archivo4.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>archivo4.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/par/archivo4.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">par</a></li>
                 <li>archivo4.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>archivo4.py
+        <small><a href="archivo4.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingspararchivo4py-1"> 1</a>
 <a href="#listingspararchivo4py-2"> 2</a>
 <a href="#listingspararchivo4py-3"> 3</a>
@@ -135,22 +139,22 @@
 <a href="#listingspararchivo4py-16">16</a>
 <a href="#listingspararchivo4py-17">17</a>
 <a href="#listingspararchivo4py-18">18</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingspararchivo4py-1"></a><span class="c">#!/usr/bin/env python</span>
+<td class="code"><pre class="code literal-block"><a name="listingspararchivo4py-1"></a><span class="ch">#!/usr/bin/env python</span>
 <a name="listingspararchivo4py-2"></a>
-<a name="listingspararchivo4py-3"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'nuevos_usuarios.txt'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span>
+<a name="listingspararchivo4py-3"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'nuevos_usuarios.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
 <a name="listingspararchivo4py-4"></a>
-<a name="listingspararchivo4py-5"></a><span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
-<a name="listingspararchivo4py-6"></a><span class="k">while</span> <span class="n">usuario</span> <span class="o">!=</span> <span class="s">''</span><span class="p">:</span>
+<a name="listingspararchivo4py-5"></a><span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
+<a name="listingspararchivo4py-6"></a><span class="k">while</span> <span class="n">usuario</span> <span class="o">!=</span> <span class="s1">''</span><span class="p">:</span>
 <a name="listingspararchivo4py-7"></a>    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">usuario</span><span class="p">)</span>
-<a name="listingspararchivo4py-8"></a>    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
-<a name="listingspararchivo4py-9"></a>    <span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
+<a name="listingspararchivo4py-8"></a>    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<a name="listingspararchivo4py-9"></a>    <span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
 <a name="listingspararchivo4py-10"></a>
 <a name="listingspararchivo4py-11"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <a name="listingspararchivo4py-12"></a>
-<a name="listingspararchivo4py-13"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'nuevos_usuarios.txt'</span><span class="p">)</span>
+<a name="listingspararchivo4py-13"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'nuevos_usuarios.txt'</span><span class="p">)</span>
 <a name="listingspararchivo4py-14"></a>
 <a name="listingspararchivo4py-15"></a><span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="p">:</span>
-<a name="listingspararchivo4py-16"></a>    <span class="k">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+<a name="listingspararchivo4py-16"></a>    <span class="k">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
 <a name="listingspararchivo4py-17"></a>
 <a name="listingspararchivo4py-18"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></td>

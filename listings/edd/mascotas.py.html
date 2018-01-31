@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/edd/mascotas.py.html">
 <meta name="description" content="mascotas.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>mascotas.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/edd/mascotas.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">edd</a></li>
                 <li>mascotas.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>mascotas.py
+        <small><a href="mascotas.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingseddmascotaspy-1"> 1</a>
 <a href="#listingseddmascotaspy-2"> 2</a>
 <a href="#listingseddmascotaspy-3"> 3</a>
@@ -157,7 +161,7 @@
 <a href="#listingseddmascotaspy-38">38</a>
 <a href="#listingseddmascotaspy-39">39</a>
 <a href="#listingseddmascotaspy-40">40</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingseddmascotaspy-1"></a><span class="c">#!/usr/bin/env python</span>
+<td class="code"><pre class="code literal-block"><a name="listingseddmascotaspy-1"></a><span class="ch">#!/usr/bin/env python</span>
 <a name="listingseddmascotaspy-2"></a><span class="sd">"""</span>
 <a name="listingseddmascotaspy-3"></a><span class="sd">EDD: Creando objetos - Mascota.</span>
 <a name="listingseddmascotaspy-4"></a>
@@ -169,25 +173,25 @@
 <a name="listingseddmascotaspy-10"></a>
 <a name="listingseddmascotaspy-11"></a><span class="k">class</span> <span class="nc">Mascota</span><span class="p">:</span>
 <a name="listingseddmascotaspy-12"></a>    <span class="sd">""" Nuestra propia clase Mascota. """</span>
-<a name="listingseddmascotaspy-13"></a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">,</span> <span class="n">tipo</span><span class="p">):</span>
+<a name="listingseddmascotaspy-13"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">,</span> <span class="n">tipo</span><span class="p">):</span>
 <a name="listingseddmascotaspy-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
 <a name="listingseddmascotaspy-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">edad</span> <span class="o">=</span> <span class="n">edad</span>
 <a name="listingseddmascotaspy-16"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span> <span class="o">=</span> <span class="n">tipo</span>
 <a name="listingseddmascotaspy-17"></a>
-<a name="listingseddmascotaspy-18"></a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="listingseddmascotaspy-19"></a>        <span class="k">return</span> <span class="s">'&lt;Mascota {}: {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span><span class="p">)</span>
+<a name="listingseddmascotaspy-18"></a>    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="listingseddmascotaspy-19"></a>        <span class="k">return</span> <span class="s1">'&lt;Mascota {}: {}&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span><span class="p">)</span>
 <a name="listingseddmascotaspy-20"></a>
-<a name="listingseddmascotaspy-21"></a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="listingseddmascotaspy-22"></a>        <span class="k">return</span> <span class="s">'Soy {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
+<a name="listingseddmascotaspy-21"></a>    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="listingseddmascotaspy-22"></a>        <span class="k">return</span> <span class="s1">'Soy {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
 <a name="listingseddmascotaspy-23"></a>
 <a name="listingseddmascotaspy-24"></a>    <span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <a name="listingseddmascotaspy-25"></a>        <span class="sd">""" Saludo de la mascota. """</span>
-<a name="listingseddmascotaspy-26"></a>        <span class="k">print</span><span class="p">(</span><span class="s">'Hola! Me llamo {}, tengo {} y soy un {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">edad</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span><span class="p">))</span>
+<a name="listingseddmascotaspy-26"></a>        <span class="k">print</span><span class="p">(</span><span class="s1">'Hola! Me llamo {}, tengo {} y soy un {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">edad</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span><span class="p">))</span>
 <a name="listingseddmascotaspy-27"></a>
 <a name="listingseddmascotaspy-28"></a>
-<a name="listingseddmascotaspy-29"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
-<a name="listingseddmascotaspy-30"></a>    <span class="n">TIPOS</span> <span class="o">=</span> <span class="p">[</span><span class="s">'perro'</span><span class="p">,</span> <span class="s">'gato'</span><span class="p">,</span> <span class="s">'pez'</span><span class="p">,</span> <span class="s">'canario'</span><span class="p">]</span>
-<a name="listingseddmascotaspy-31"></a>    <span class="n">NOMBRES</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Pluto'</span><span class="p">,</span> <span class="s">'Silvestre'</span><span class="p">,</span> <span class="s">'Nemo'</span><span class="p">,</span> <span class="s">'Piolín'</span><span class="p">]</span>
+<a name="listingseddmascotaspy-29"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<a name="listingseddmascotaspy-30"></a>    <span class="n">TIPOS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'perro'</span><span class="p">,</span> <span class="s1">'gato'</span><span class="p">,</span> <span class="s1">'pez'</span><span class="p">,</span> <span class="s1">'canario'</span><span class="p">]</span>
+<a name="listingseddmascotaspy-31"></a>    <span class="n">NOMBRES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Pluto'</span><span class="p">,</span> <span class="s1">'Silvestre'</span><span class="p">,</span> <span class="s1">'Nemo'</span><span class="p">,</span> <span class="s1">'Piolín'</span><span class="p">]</span>
 <a name="listingseddmascotaspy-32"></a>
 <a name="listingseddmascotaspy-33"></a>    <span class="n">mascota</span> <span class="o">=</span> <span class="n">Mascota</span><span class="p">(</span>
 <a name="listingseddmascotaspy-34"></a>        <span class="n">nombre</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">NOMBRES</span><span class="p">),</span>

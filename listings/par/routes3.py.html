@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/par/routes3.py.html">
 <meta name="description" content="routes3.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>routes3.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/par/routes3.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">par</a></li>
                 <li>routes3.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>routes3.py
+        <small><a href="routes3.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsparroutes3py-1"> 1</a>
 <a href="#listingsparroutes3py-2"> 2</a>
 <a href="#listingsparroutes3py-3"> 3</a>
@@ -138,26 +142,26 @@
 <a href="#listingsparroutes3py-19">19</a>
 <a href="#listingsparroutes3py-20">20</a>
 <a href="#listingsparroutes3py-21">21</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsparroutes3py-1"></a><span class="c">#!/usr/bin/env python</span>
+<td class="code"><pre class="code literal-block"><a name="listingsparroutes3py-1"></a><span class="ch">#!/usr/bin/env python</span>
 <a name="listingsparroutes3py-2"></a>
 <a name="listingsparroutes3py-3"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">render_template</span>
 <a name="listingsparroutes3py-4"></a>
-<a name="listingsparroutes3py-5"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+<a name="listingsparroutes3py-5"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 <a name="listingsparroutes3py-6"></a>
-<a name="listingsparroutes3py-7"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
-<a name="listingsparroutes3py-8"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/index'</span><span class="p">)</span>
+<a name="listingsparroutes3py-7"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
+<a name="listingsparroutes3py-8"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/index'</span><span class="p">)</span>
 <a name="listingsparroutes3py-9"></a><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
-<a name="listingsparroutes3py-10"></a>    <span class="k">return</span> <span class="s">"Hello World!"</span> 
+<a name="listingsparroutes3py-10"></a>    <span class="k">return</span> <span class="s2">"Hello World!"</span> 
 <a name="listingsparroutes3py-11"></a>
-<a name="listingsparroutes3py-12"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/user_template'</span><span class="p">)</span>
+<a name="listingsparroutes3py-12"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/user_template'</span><span class="p">)</span>
 <a name="listingsparroutes3py-13"></a><span class="k">def</span> <span class="nf">user</span><span class="p">():</span>
-<a name="listingsparroutes3py-14"></a>    <span class="n">username</span> <span class="o">=</span> <span class="p">{</span><span class="s">'nick'</span><span class="p">:</span> <span class="s">'Leo'</span><span class="p">,</span>
-<a name="listingsparroutes3py-15"></a>                <span class="s">'name'</span><span class="p">:</span> <span class="s">'Leandro'</span><span class="p">}</span>  <span class="c"># fake user</span>
-<a name="listingsparroutes3py-16"></a>    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s">'user.html'</span><span class="p">,</span>
+<a name="listingsparroutes3py-14"></a>    <span class="n">username</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'nick'</span><span class="p">:</span> <span class="s1">'Leo'</span><span class="p">,</span>
+<a name="listingsparroutes3py-15"></a>                <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Leandro'</span><span class="p">}</span>  <span class="c1"># fake user</span>
+<a name="listingsparroutes3py-16"></a>    <span class="k">return</span> <span class="n">render_template</span><span class="p">(</span><span class="s1">'user.html'</span><span class="p">,</span>
 <a name="listingsparroutes3py-17"></a>                           <span class="n">user</span><span class="o">=</span><span class="n">username</span><span class="p">,</span>
 <a name="listingsparroutes3py-18"></a>                           <span class="n">app</span><span class="o">=</span><span class="n">app</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
 <a name="listingsparroutes3py-19"></a>
-<a name="listingsparroutes3py-20"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<a name="listingsparroutes3py-20"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
 <a name="listingsparroutes3py-21"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></td>
 </tr></table>

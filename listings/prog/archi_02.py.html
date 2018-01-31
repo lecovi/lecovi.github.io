@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/prog/archi_02.py.html">
 <meta name="description" content="archi_02.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>archi_02.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/prog/archi_02.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">prog</a></li>
                 <li>archi_02.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>archi_02.py
+        <small><a href="archi_02.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsprogarchi_02py-1"> 1</a>
 <a href="#listingsprogarchi_02py-2"> 2</a>
 <a href="#listingsprogarchi_02py-3"> 3</a>
@@ -152,40 +156,40 @@
 <a href="#listingsprogarchi_02py-33">33</a>
 <a href="#listingsprogarchi_02py-34">34</a>
 <a href="#listingsprogarchi_02py-35">35</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsprogarchi_02py-1"></a><span class="c">#!/usr/bin/env python</span>
-<a name="listingsprogarchi_02py-2"></a><span class="c"># encoding: utf-8</span>
+<td class="code"><pre class="code literal-block"><a name="listingsprogarchi_02py-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="listingsprogarchi_02py-2"></a><span class="c1"># encoding: utf-8</span>
 <a name="listingsprogarchi_02py-3"></a>
-<a name="listingsprogarchi_02py-4"></a><span class="c"># abro el archivo prueba01.txt</span>
-<a name="listingsprogarchi_02py-5"></a><span class="c"># para escritura</span>
-<a name="listingsprogarchi_02py-6"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba01.txt"</span><span class="p">,</span><span class="s">"w"</span><span class="p">)</span>
+<a name="listingsprogarchi_02py-4"></a><span class="c1"># abro el archivo prueba01.txt</span>
+<a name="listingsprogarchi_02py-5"></a><span class="c1"># para escritura</span>
+<a name="listingsprogarchi_02py-6"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba01.txt"</span><span class="p">,</span><span class="s2">"w"</span><span class="p">)</span>
 <a name="listingsprogarchi_02py-7"></a>
-<a name="listingsprogarchi_02py-8"></a><span class="c"># escribo una linea</span>
-<a name="listingsprogarchi_02py-9"></a><span class="n">ae</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"primera</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
-<a name="listingsprogarchi_02py-10"></a><span class="c"># escribo otra linea</span>
-<a name="listingsprogarchi_02py-11"></a><span class="n">ae</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"segunda</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<a name="listingsprogarchi_02py-8"></a><span class="c1"># escribo una linea</span>
+<a name="listingsprogarchi_02py-9"></a><span class="n">ae</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"primera</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<a name="listingsprogarchi_02py-10"></a><span class="c1"># escribo otra linea</span>
+<a name="listingsprogarchi_02py-11"></a><span class="n">ae</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"segunda</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
 <a name="listingsprogarchi_02py-12"></a>
-<a name="listingsprogarchi_02py-13"></a><span class="c"># cierro el archivo</span>
+<a name="listingsprogarchi_02py-13"></a><span class="c1"># cierro el archivo</span>
 <a name="listingsprogarchi_02py-14"></a><span class="n">ae</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <a name="listingsprogarchi_02py-15"></a>
-<a name="listingsprogarchi_02py-16"></a><span class="c"># abro el archivo prueba01.txt</span>
-<a name="listingsprogarchi_02py-17"></a><span class="c"># para lectura</span>
-<a name="listingsprogarchi_02py-18"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba01.txt"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<a name="listingsprogarchi_02py-16"></a><span class="c1"># abro el archivo prueba01.txt</span>
+<a name="listingsprogarchi_02py-17"></a><span class="c1"># para lectura</span>
+<a name="listingsprogarchi_02py-18"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba01.txt"</span><span class="p">,</span><span class="s2">"r"</span><span class="p">)</span>
 <a name="listingsprogarchi_02py-19"></a>
-<a name="listingsprogarchi_02py-20"></a><span class="c"># leo una linea</span>
+<a name="listingsprogarchi_02py-20"></a><span class="c1"># leo una linea</span>
 <a name="listingsprogarchi_02py-21"></a><span class="n">s1</span> <span class="o">=</span> <span class="n">ae</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="listingsprogarchi_02py-22"></a><span class="c"># leo otra linea</span>
+<a name="listingsprogarchi_02py-22"></a><span class="c1"># leo otra linea</span>
 <a name="listingsprogarchi_02py-23"></a><span class="n">s2</span> <span class="o">=</span> <span class="n">ae</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="listingsprogarchi_02py-24"></a><span class="c"># muestro las lineas leidas</span>
+<a name="listingsprogarchi_02py-24"></a><span class="c1"># muestro las lineas leidas</span>
 <a name="listingsprogarchi_02py-25"></a><span class="k">print</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">)</span>
-<a name="listingsprogarchi_02py-26"></a><span class="c"># cierro el archivo</span>
+<a name="listingsprogarchi_02py-26"></a><span class="c1"># cierro el archivo</span>
 <a name="listingsprogarchi_02py-27"></a><span class="n">ae</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <a name="listingsprogarchi_02py-28"></a>
-<a name="listingsprogarchi_02py-29"></a><span class="c"># abro el archivo prueba01.txt</span>
-<a name="listingsprogarchi_02py-30"></a><span class="c"># para lectura</span>
-<a name="listingsprogarchi_02py-31"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba01.txt"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<a name="listingsprogarchi_02py-29"></a><span class="c1"># abro el archivo prueba01.txt</span>
+<a name="listingsprogarchi_02py-30"></a><span class="c1"># para lectura</span>
+<a name="listingsprogarchi_02py-31"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba01.txt"</span><span class="p">,</span><span class="s2">"r"</span><span class="p">)</span>
 <a name="listingsprogarchi_02py-32"></a><span class="k">for</span> <span class="n">lin</span> <span class="ow">in</span> <span class="n">ae</span><span class="p">:</span>
 <a name="listingsprogarchi_02py-33"></a>    <span class="k">print</span><span class="p">(</span><span class="n">lin</span><span class="p">)</span>
-<a name="listingsprogarchi_02py-34"></a><span class="c"># cierro el archivo</span>
+<a name="listingsprogarchi_02py-34"></a><span class="c1"># cierro el archivo</span>
 <a name="listingsprogarchi_02py-35"></a><span class="n">ae</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></td>
 </tr></table>

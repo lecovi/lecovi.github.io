@@ -2,10 +2,11 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/bitson/olin/tgz/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Empaquetado y compresión de paquetes | Make it So!</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/bitson/olin/tgz/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -15,7 +16,7 @@
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Empaquetado y compresión de paquetes">
 <meta property="og:url" content="http://lecovi.github.io/bitson/olin/tgz/">
-<meta property="og:description" content="Contents
+<meta property="og:description" content="Contenido
 
 Empaquetado
 TAR
@@ -38,7 +39,7 @@ Algunos comandos mas
 
 
 Empaquetado
-Juntar archivos y directorios en un único ar">
+Juntar archivos y directorios en un único a">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-08-26T15:41:37-03:00">
 </head>
@@ -146,75 +147,75 @@ Juntar archivos y directorios en un único ar">
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="contenido">
+<p class="topic-title first">Contenido</p>
 <ul class="simple">
 <li>
-<a class="reference internal" href=".#empaquetado" id="id1">Empaquetado</a><ul>
+<a class="reference internal" href="#empaquetado" id="id1">Empaquetado</a><ul>
 <li>
-<a class="reference internal" href=".#tar" id="id2">TAR</a><ul>
-<li><a class="reference internal" href=".#ejemplo" id="id3">Ejemplo</a></li>
+<a class="reference internal" href="#tar" id="id2">TAR</a><ul>
+<li><a class="reference internal" href="#ejemplo" id="id3">Ejemplo</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<a class="reference internal" href=".#compresion" id="id4">Compresión</a><ul>
-<li><a class="reference internal" href=".#gzip" id="id5">GZIP</a></li>
+<a class="reference internal" href="#compresion" id="id4">Compresión</a><ul>
+<li><a class="reference internal" href="#gzip" id="id5">GZIP</a></li>
 <li>
-<a class="reference internal" href=".#bzip2" id="id6">BZIP2</a><ul>
-<li><a class="reference internal" href=".#comparacion-entre-gzip-y-bzip2" id="id7">Comparación entre GZIP y BZIP2</a></li>
+<a class="reference internal" href="#bzip2" id="id6">BZIP2</a><ul>
+<li><a class="reference internal" href="#comparacion-entre-gzip-y-bzip2" id="id7">Comparación entre GZIP y BZIP2</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href=".#empaquetado-y-compresion" id="id8">Empaquetado y compresión</a></li>
-<li><a class="reference internal" href=".#algunos-comandos-mas" id="id9">Algunos comandos mas</a></li>
+<li><a class="reference internal" href="#empaquetado-y-compresion" id="id8">Empaquetado y compresión</a></li>
+<li><a class="reference internal" href="#algunos-comandos-mas" id="id9">Algunos comandos mas</a></li>
 </ul>
 </div>
 <div class="section" id="empaquetado">
-<h2><a class="toc-backref" href=".#id1">Empaquetado</a></h2>
+<h2><a class="toc-backref" href="#id1">Empaquetado</a></h2>
 <p>Juntar archivos y directorios en un único archivo.
 Para el empaquetado se utiliza el comando <tt class="docutils literal">tar</tt>.
 Por lo general, los archivos resultantes del empaquetado
 los llamaremos con una extensión <tt class="docutils literal">.tar</tt>.</p>
 <div class="section" id="tar">
-<h3><a class="toc-backref" href=".#id2">TAR</a></h3>
-<pre class="code bash"><a name="rest_code_ec84de4bddbb4f9fb4aae785dc79543f-1"></a><span class="nv">$ </span>tar <span class="o">[</span>opciones<span class="o">]</span> &lt;nombre_del_paquete&gt;.tar &lt;fuentes&gt;
+<h3><a class="toc-backref" href="#id2">TAR</a></h3>
+<pre class="code bash"><a name="rest_code_04e66edaf2954e35b16777a57010ff30-1"></a>$ tar <span class="o">[</span>opciones<span class="o">]</span> &lt;nombre_del_paquete&gt;.tar &lt;fuentes&gt;
 </pre>
 <div class="section" id="ejemplo">
-<h4><a class="toc-backref" href=".#id3">Ejemplo</a></h4>
+<h4><a class="toc-backref" href="#id3">Ejemplo</a></h4>
 <p>Creemos la carpeta empaquetados dentro del HOME de nuestro usuario</p>
-<pre class="code bash"><a name="rest_code_eae795601a4142c198b57426403a6cf5-1"></a>~ <span class="nv">$ </span>mkdir empaquetados
+<pre class="code bash"><a name="rest_code_e9dcefd9b18b4cd7992485a4a76bfa06-1"></a>~ $ mkdir empaquetados
 </pre>
 <p>Entremos en este nuevo directorio:</p>
-<pre class="code bash"><a name="rest_code_a2c7f258a55344ee86213dd15246828b-1"></a>~ <span class="nv">$ </span><span class="nb">cd </span>empaquetados
+<pre class="code bash"><a name="rest_code_cb05e30dc162499fae1cf9a006fa49d1-1"></a>~ $ <span class="nb">cd</span> empaquetados
 </pre>
 <p>Copiemos el contenido de la carpeta /etc dentro de este nuevo directorio:</p>
-<pre class="code bash"><a name="rest_code_6a406646ae97495fb887352b850d89d7-1"></a>~/empaquetados <span class="nv">$ </span>cp -r /etc .
+<pre class="code bash"><a name="rest_code_9cedf552bb084e98958c6e8d231b148c-1"></a>~/empaquetados $ cp -r /etc .
 </pre>
 <p>Entremos en el nuevo directorio etc:</p>
-<pre class="code bash"><a name="rest_code_92e6875127a64769b9fcc5a1f3383a16-1"></a>~/empaquetados <span class="nv">$ </span><span class="nb">cd </span>etc
+<pre class="code bash"><a name="rest_code_56f060f836744d0daf1aeb59070df8b8-1"></a>~/empaquetados $ <span class="nb">cd</span> etc
 </pre>
 <p>Empaquetemos algunos de los archivos y direcotorios que tenemos dentro:</p>
-<pre class="code bash"><a name="rest_code_0151748970d24c488a0a80efa1c2e018-1"></a>~/empaquetados/etc <span class="nv">$ </span>tar cf paquete.tar acpi/ alternatives/ hostname hosts PackageKit/ perl/ bluetooth/ python*
+<pre class="code bash"><a name="rest_code_270c19608d3745dc87949cd156647590-1"></a>~/empaquetados/etc $ tar cf paquete.tar acpi/ alternatives/ hostname hosts PackageKit/ perl/ bluetooth/ python*
 </pre>
 <p>Ahora si listamos el contenido de este direcotorio, vamos a encontrar nuestro nuevo archivo <tt class="docutils literal">paquete.tar</tt>
 Movemos el paquete al directorio padre:</p>
-<pre class="code bash"><a name="rest_code_22c56a0c73ae4b0b97651486d4bc54fb-1"></a>~/empaquetados/etc <span class="nv">$ </span>mv paquete.tar ..
+<pre class="code bash"><a name="rest_code_3417d234c39b49f38f441815aed1a7d8-1"></a>~/empaquetados/etc $ mv paquete.tar ..
 </pre>
 <p>Y saltamos al directorio padre:</p>
-<pre class="code bash"><a name="rest_code_569b0cfcbb5c4efaae5e160abcce9ec1-1"></a>~/empaquetados/etc <span class="nv">$ </span><span class="nb">cd</span> ..
+<pre class="code bash"><a name="rest_code_10650ce7623d46e7bbe70e9269e7aea0-1"></a>~/empaquetados/etc $ <span class="nb">cd</span> ..
 </pre>
 <p>Para desempaquetar (extraer):</p>
-<pre class="code bash"><a name="rest_code_b51854d5a7aa48b4bfeb894be7b6728c-1"></a>~/empaquetados <span class="nv">$ </span>tar xf paquete.tar
+<pre class="code bash"><a name="rest_code_8f8078effddc4a5a8dde5303ffb6e593-1"></a>~/empaquetados $ tar xf paquete.tar
 </pre>
 </div>
 </div>
 </div>
 <hr class="docutils">
 <div class="section" id="compresion">
-<h2><a class="toc-backref" href=".#id4">Compresión</a></h2>
+<h2><a class="toc-backref" href="#id4">Compresión</a></h2>
 <p>La compresión de un archivo es la reducción del espacio que ocupa.
 La idea es hacerlo ocupar menos espacio para almacenamiento o copia
 de seguridad. Se hace pasar la información a través de un algoritmo
@@ -222,28 +223,28 @@ que reduce el espacio utilizado pero que después puede volver a tener
 su tamaño original. Es lo que se conoce como <em>Compresión sin pérdida de datos</em>.
 Para comprimir y descomprimir podemos usar los comandos <tt class="docutils literal">gzip</tt> y <tt class="docutils literal">bzip2</tt>.</p>
 <div class="section" id="gzip">
-<h3><a class="toc-backref" href=".#id5">GZIP</a></h3>
+<h3><a class="toc-backref" href="#id5">GZIP</a></h3>
 <p>Para comprimir:</p>
-<pre class="code bash"><a name="rest_code_105461482a71427196dcf0a64eb18084-1"></a><span class="nv">$ </span>gzip &lt;archivo_a_comprimir&gt;
+<pre class="code bash"><a name="rest_code_d6e9b563a1d9429683748eead2410dca-1"></a>$ gzip &lt;archivo_a_comprimir&gt;
 </pre>
 <p>Después de comprimir el archivo se sobreescribe comprimido y con la extensión <tt class="docutils literal">.gz</tt> agregada.</p>
 <p>Para descomprimir:</p>
-<pre class="code bash"><a name="rest_code_4238f89cd76048adab69b5d87740c58d-1"></a><span class="nv">$ </span>gunzip &lt;archivo_a_comprimir&gt;
+<pre class="code bash"><a name="rest_code_11796c2b98c747a2a564b089098ddbcc-1"></a>$ gunzip &lt;archivo_a_comprimir&gt;
 </pre>
 <p>Después de descomprimir el archivo se sobreescribe descomprimido y con la extensión <tt class="docutils literal">.gz</tt> quitada.</p>
 </div>
 <div class="section" id="bzip2">
-<h3><a class="toc-backref" href=".#id6">BZIP2</a></h3>
+<h3><a class="toc-backref" href="#id6">BZIP2</a></h3>
 <p>Para comprimir:</p>
-<pre class="code bash"><a name="rest_code_21d936d086324357ac94a21c6a9f30af-1"></a><span class="nv">$ </span>bzip2 &lt;archivo_a_comprimir&gt;
+<pre class="code bash"><a name="rest_code_747d2ed412fc48e3a1cb552284e2c504-1"></a>$ bzip2 &lt;archivo_a_comprimir&gt;
 </pre>
 <p>Después de comprimir el archivo se sobreescribe comprimido y con la extensión <tt class="docutils literal">.bz2</tt> agregada.</p>
 <p>Para descomprimir:</p>
-<pre class="code bash"><a name="rest_code_14912b73f8b64942bfce7fecbf8507f5-1"></a><span class="nv">$ </span>bunzip2 &lt;archivo_a_comprimir&gt;
+<pre class="code bash"><a name="rest_code_30598d566e9f475394d3af32ae83da97-1"></a>$ bunzip2 &lt;archivo_a_comprimir&gt;
 </pre>
 <p>Después de descomprimir el archivo se sobreescribe descomprimido y con la extensión <tt class="docutils literal">.bz2</tt> quitada.</p>
 <div class="section" id="comparacion-entre-gzip-y-bzip2">
-<h4><a class="toc-backref" href=".#id7">Comparación entre GZIP y BZIP2</a></h4>
+<h4><a class="toc-backref" href="#id7">Comparación entre GZIP y BZIP2</a></h4>
 <blockquote>
 <ul class="simple">
 <li>GZIP es más rápido pero comprime menos.</li>
@@ -260,23 +261,23 @@ paquete.tar.bz2 = 17K</blockquote>
 </div>
 <hr class="docutils">
 <div class="section" id="empaquetado-y-compresion">
-<h2><a class="toc-backref" href=".#id8">Empaquetado y compresión</a></h2>
+<h2><a class="toc-backref" href="#id8">Empaquetado y compresión</a></h2>
 <p>Para empaquetar y comprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">gzip</tt>:</p>
-<pre class="code bash"><a name="rest_code_fb11701b88cd43e8a9bacb1fdefada0c-1"></a>~ <span class="nv">$ </span>tar cfz paquete.tgz &lt;fuentes&gt;
+<pre class="code bash"><a name="rest_code_ed4e9cfefc3946adbed7c87b79cff146-1"></a>~ $ tar cfz paquete.tgz &lt;fuentes&gt;
 </pre>
 <p>Para empaquetar y descomprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">gzip</tt>:</p>
-<pre class="code bash"><a name="rest_code_ec0a65f2028f462bb450651ba4c3842b-1"></a>~ <span class="nv">$ </span>tar xfz paquete.tgz
+<pre class="code bash"><a name="rest_code_0e0b96c0e1e044a5a1436cf4a663388e-1"></a>~ $ tar xfz paquete.tgz
 </pre>
 <p>Para empaquetar y comprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">bzip2</tt>:</p>
-<pre class="code bash"><a name="rest_code_97b588a47f1c48baabeb1f56e4738f81-1"></a>~ <span class="nv">$ </span>tar cfj paquete.tbz2 &lt;fuentes&gt;
+<pre class="code bash"><a name="rest_code_83ee7fe7a8df49d79ff26db1adf3149b-1"></a>~ $ tar cfj paquete.tbz2 &lt;fuentes&gt;
 </pre>
 <p>Para empaquetar y descomprimir con <tt class="docutils literal">tar</tt> y <tt class="docutils literal">bzip2</tt>:</p>
-<pre class="code bash"><a name="rest_code_68121032a06841dfa7e3ebe6a59fb0d6-1"></a>~ <span class="nv">$ </span>tar xfj paquete.tbz2
+<pre class="code bash"><a name="rest_code_34e6f46adcd54f658bdcbb62d7ce1313-1"></a>~ $ tar xfj paquete.tbz2
 </pre>
 </div>
 <hr class="docutils">
 <div class="section" id="algunos-comandos-mas">
-<h2><a class="toc-backref" href=".#id9">Algunos comandos mas</a></h2>
+<h2><a class="toc-backref" href="#id9">Algunos comandos mas</a></h2>
 <dl class="docutils">
 <dt><tt class="docutils literal">shutdown</tt></dt>
 <dd>para apagar la máquina (tiene que hacerlo root ó a través de sudo).</dd>
@@ -289,9 +290,9 @@ paquete.tar.bz2 = 17K</blockquote>
 <dt><tt class="docutils literal">cat</tt></dt>
 <dd>este comando concatena archivos y los imprime en la salida.</dd>
 </dl>
-<pre class="code bash"><a name="rest_code_0b4077b3c0584d1db20281c5181f4954-1"></a>~ <span class="nv">$ </span>cat &lt;archivo1&gt; &lt;archivo2&gt; ... &lt;archivoX&gt;
-<a name="rest_code_0b4077b3c0584d1db20281c5181f4954-2"></a>
-<a name="rest_code_0b4077b3c0584d1db20281c5181f4954-3"></a><span class="nv">ABORTAR</span> <span class="o">=</span> Ctrl+C <span class="o">(</span>^C<span class="o">)</span> ---&gt; Va a terminar el proceso que se esté ejecutando.
+<pre class="code bash"><a name="rest_code_977a362c20f1434580df33da5be43b5b-1"></a>~ $ cat &lt;archivo1&gt; &lt;archivo2&gt; ... &lt;archivoX&gt;
+<a name="rest_code_977a362c20f1434580df33da5be43b5b-2"></a>
+<a name="rest_code_977a362c20f1434580df33da5be43b5b-3"></a><span class="nv">ABORTAR</span> <span class="o">=</span> Ctrl+C <span class="o">(</span>^C<span class="o">)</span> ---&gt; Va a terminar el proceso que se esté ejecutando.
 </pre>
 <dl class="docutils">
 <dt><tt class="docutils literal">more</tt></dt>
@@ -305,12 +306,12 @@ paquete.tar.bz2 = 17K</blockquote>
 <dt><tt class="docutils literal">wc</tt></dt>
 <dd>(Word Count, conteo de palabras).</dd>
 </dl>
-<pre class="code bash"><a name="rest_code_8555ca6bd8d14251b14232d92bd21b96-1"></a>~ <span class="nv">$ </span>wc archivo1.txt
-<a name="rest_code_8555ca6bd8d14251b14232d92bd21b96-2"></a>      <span class="m">105</span>  <span class="m">636</span> <span class="m">4264</span> archivo1.txt
-<a name="rest_code_8555ca6bd8d14251b14232d92bd21b96-3"></a>      <span class="p">|</span>    <span class="p">|</span>    <span class="p">|</span>
-<a name="rest_code_8555ca6bd8d14251b14232d92bd21b96-4"></a>      <span class="p">|</span>    <span class="p">|</span>    +--&gt; Cantidad de Caracteres
-<a name="rest_code_8555ca6bd8d14251b14232d92bd21b96-5"></a>      <span class="p">|</span>    +-------&gt; Cantidad de Palabras
-<a name="rest_code_8555ca6bd8d14251b14232d92bd21b96-6"></a>      +------------&gt; Cantidad de Líneas
+<pre class="code bash"><a name="rest_code_214140bc80e64fa2b59b49dc20298a8a-1"></a>~ $ wc archivo1.txt
+<a name="rest_code_214140bc80e64fa2b59b49dc20298a8a-2"></a>      <span class="m">105</span>  <span class="m">636</span> <span class="m">4264</span> archivo1.txt
+<a name="rest_code_214140bc80e64fa2b59b49dc20298a8a-3"></a>      <span class="p">|</span>    <span class="p">|</span>    <span class="p">|</span>
+<a name="rest_code_214140bc80e64fa2b59b49dc20298a8a-4"></a>      <span class="p">|</span>    <span class="p">|</span>    +--&gt; Cantidad de Caracteres
+<a name="rest_code_214140bc80e64fa2b59b49dc20298a8a-5"></a>      <span class="p">|</span>    +-------&gt; Cantidad de Palabras
+<a name="rest_code_214140bc80e64fa2b59b49dc20298a8a-6"></a>      +------------&gt; Cantidad de Líneas
 </pre>
 <dl class="docutils">
 <dt><tt class="docutils literal">diff</tt></dt>
@@ -337,6 +338,8 @@ nos indica en qué directorio del PATH está el comando que le pasamos como argu
 </div>
     </div>
     
+    
+
 
 </article>
 </div>

@@ -2,10 +2,11 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/blog/grabando-la-consola/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Grabando la consola | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/blog/grabando-la-consola/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -135,7 +136,7 @@ crear las imágenes que luego j">
             <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2015-11-08T17:35:59-03:00" itemprop="datePublished" title="2015-11-08 17:35">2015-11-08 17:35</time></a></p>
                 <p class="commentline">
         
-    <a href=".#disqus_thread" data-disqus-identifier="cache/posts/grabando-la-consola.html">Comments</a>
+    <a href="#disqus_thread" data-disqus-identifier="cache/posts/grabando-la-consola.html">Comments</a>
 
 
             
@@ -159,10 +160,10 @@ crear las imágenes que luego juntaremos con un script del autor.</p>
 <h3>Instalación</h3>
 <p>Hay que bajar los paquetes anteriormente mencionados, entrar en el directorio
 del repositorio y ejecutar <tt class="docutils literal">make</tt>.</p>
-<pre class="code console"><a name="rest_code_1213d2b7995f450ba5f79fd286693b0e-1"></a><span class="gp">$</span> sudo apt install imagemagick ttyrec gcc
-<a name="rest_code_1213d2b7995f450ba5f79fd286693b0e-2"></a><span class="gp">$</span> git clone https://github.com/icholy/ttygif.git
-<a name="rest_code_1213d2b7995f450ba5f79fd286693b0e-3"></a><span class="gp">$</span> <span class="nb">cd </span>ttygif
-<a name="rest_code_1213d2b7995f450ba5f79fd286693b0e-4"></a><span class="gp">$</span> make
+<pre class="code console"><a name="rest_code_3ff04411d1e64bde99a4d8f7386e94dc-1"></a><span class="gp">$</span> sudo apt install imagemagick ttyrec gcc
+<a name="rest_code_3ff04411d1e64bde99a4d8f7386e94dc-2"></a><span class="gp">$</span> git clone https://github.com/icholy/ttygif.git
+<a name="rest_code_3ff04411d1e64bde99a4d8f7386e94dc-3"></a><span class="gp">$</span> <span class="nb">cd</span> ttygif
+<a name="rest_code_3ff04411d1e64bde99a4d8f7386e94dc-4"></a><span class="gp">$</span> make
 </pre>
 <p>Luego de ejecutar <tt class="docutils literal">make</tt> nos aparecen 2 nuevos archivos ejecutables en nuestro
 directorio:</p>
@@ -181,26 +182,26 @@ dos opciones:</p>
 <h4>Link Simbólico</h4>
 <p>Verificamos cuáles son los directorios que tenemos incluidos en la variable de
 entorno <tt class="docutils literal">PATH</tt>.</p>
-<pre class="code bash"><a name="rest_code_7df381e66e494f848db538d440eab0e9-1"></a><span class="nv">$ </span><span class="nb">echo</span> <span class="nv">$PATH</span>
-<a name="rest_code_7df381e66e494f848db538d440eab0e9-2"></a>/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
-<a name="rest_code_7df381e66e494f848db538d440eab0e9-3"></a><span class="err">$</span>
+<pre class="code bash"><a name="rest_code_0543b3e14cc247799913175e42ef5069-1"></a>$ <span class="nb">echo</span> <span class="nv">$PATH</span>
+<a name="rest_code_0543b3e14cc247799913175e42ef5069-2"></a>/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+<a name="rest_code_0543b3e14cc247799913175e42ef5069-3"></a>$
 </pre>
 <p>Por ejemplo, elegimos el primer directorio como destino para nuestro enlace
 simbólico: <cite>/usr/local/bin</cite>.
 Con el siguiente comando podés agregar el link simbólico de ambos archivos a
 ese directorio:</p>
-<pre class="code bash"><a name="rest_code_cb98e20d4a6943ab8846a2a4a99b9b89-1"></a><span class="nv">$ </span>sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/ttygif
-<a name="rest_code_cb98e20d4a6943ab8846a2a4a99b9b89-2"></a><span class="nv">$ </span>sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/concat.sh
+<pre class="code bash"><a name="rest_code_11cf810cf2354f488128ee8f83c6a926-1"></a>$ sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/ttygif
+<a name="rest_code_11cf810cf2354f488128ee8f83c6a926-2"></a>$ sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/concat.sh
 </pre>
 </div>
 <div class="section" id="agregar-al-path">
 <h4>Agregar al PATH</h4>
 <p>Para agregar el directorio del repositorio a la variable de entorno PATH:</p>
-<pre class="code bash"><a name="rest_code_d1780cfc0c2f422dbbcd2abefc3502f5-1"></a><span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:<span class="nv">$PATH</span>
+<pre class="code bash"><a name="rest_code_58d987fb275f48ac8bffa2b4e203c18b-1"></a>$ <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:<span class="nv">$PATH</span>
 </pre>
 <p>Para que esto sea de manera permanente tenés que agregarlo a tu archivo
 <cite>~/.profile</cite>, simplemente ejecutando desde el directorio del repo:</p>
-<pre class="code bash"><a name="rest_code_a4dfef774f1247ee93faada12388b7af-1"></a><span class="nv">$ </span><span class="nb">echo export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:<span class="nv">$PATH</span> &gt;&gt; ~/.profile
+<pre class="code bash"><a name="rest_code_1219e3da023443f0bf0e5663ea44d890-1"></a>$ <span class="nb">echo</span> <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:<span class="nv">$PATH</span> &gt;&gt; ~/.profile
 </pre>
 </div>
 </div>
@@ -238,21 +239,21 @@ todo de un paso.</p>
 <p>Con sólo tener instalado <tt class="docutils literal">ImageMagick</tt> (que lo tenemos instalado del
 programa anterior) alcanza. Clonamos el repositorio y luego ejecutamos <tt class="docutils literal">make</tt>.</p>
 <!-- Instalando imagemagick tendría que funcionar. -->
-<pre class="code console"><a name="rest_code_81deaeeaac7148faa342107b0b67187e-1"></a><span class="gp">$</span> sudo apt install imagemagick gcc
-<a name="rest_code_81deaeeaac7148faa342107b0b67187e-2"></a><span class="gp">$</span> git clone https://github.com/z24/tty2gif.git
-<a name="rest_code_81deaeeaac7148faa342107b0b67187e-3"></a><span class="gp">$</span> <span class="nb">cd </span>tty2gif
-<a name="rest_code_81deaeeaac7148faa342107b0b67187e-4"></a><span class="gp">$</span> make
+<pre class="code console"><a name="rest_code_a5d5153087524eb4a14bfd6c22ab6de2-1"></a><span class="gp">$</span> sudo apt install imagemagick gcc
+<a name="rest_code_a5d5153087524eb4a14bfd6c22ab6de2-2"></a><span class="gp">$</span> git clone https://github.com/z24/tty2gif.git
+<a name="rest_code_a5d5153087524eb4a14bfd6c22ab6de2-3"></a><span class="gp">$</span> <span class="nb">cd</span> tty2gif
+<a name="rest_code_a5d5153087524eb4a14bfd6c22ab6de2-4"></a><span class="gp">$</span> make
 </pre>
 <div class="section" id="id2">
 <h4>Link Simbólico</h4>
 <p>Podemos aplicar lo mismo que hablamos en la sección anterior y agregar un
 enlace simbólico al binario del <tt class="docutils literal">tty2gif</tt>.</p>
-<pre class="code bash"><a name="rest_code_307ac4ad823f4e268e67eb9b9e4f70a0-1"></a>➜  ~ sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/ttygif
+<pre class="code bash"><a name="rest_code_8f5827c1fd9d4bf7a834325df61faf26-1"></a>➜  ~ sudo ln -s <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>/ttygif /usr/local/bin/ttygif
 </pre>
 </div>
 <div class="section" id="agregando-al-path">
 <h4>Agregando al PATH</h4>
-<p>La otra opción es como mencionamos en <a class="reference internal" href=".#agregar-al-path">Agregar al PATH</a>.</p>
+<p>La otra opción es como mencionamos en <a class="reference internal" href="#agregar-al-path">Agregar al PATH</a>.</p>
 </div>
 </div>
 <div class="section" id="id3">
@@ -260,7 +261,7 @@ enlace simbólico al binario del <tt class="docutils literal">tty2gif</tt>.</p>
 <p>La forma de uso es muy simple, después de instalar ejecutamos <tt class="docutils literal">tty2gif</tt> con 2
 argumentos, el primero: el archivo que va a grabar, el segundo: el gif animado
 que obtenemos como resultado.</p>
-<pre class="code console"><a name="rest_code_6dfd724b7b144225a17b13b2a6df6ca1-1"></a><span class="gp">$</span> tty2gif grabacion.raw salida.gif
+<pre class="code console"><a name="rest_code_d2cb02ecaced46f1ba956a1c6f939eda-1"></a><span class="gp">$</span> tty2gif grabacion.raw salida.gif
 </pre>
 <img alt="Grabación completa" class="align-center" src="../../images/blog/tty2gif/salida.gif"><!-- No lo puedo ejecutar desde terminator, tuve que usar xterm. --><p class="alert alert-info"><strong>Observación:</strong> La única particularidad que tenemos que tener en cuenta,
 es que al momento de la ejecución, debemos hacerlo desde <tt class="docutils literal">xterm</tt>. Lo
@@ -298,15 +299,15 @@ animado.</p>
         };
         (function() {
             var dsq = document.createElement('script'); dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script><noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
 </noscript>
-    <a href="//disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
 
 
-        </section></article><script>var disqus_shortname="lecovi";(function(){var a=document.createElement("script");a.async=true;a.src="//"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
+        </section></article><script>var disqus_shortname="lecovi";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script>
 </div>
         <!--End of body content-->
 

@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/prog/filter.py.html">
 <meta name="description" content="filter.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>filter.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/prog/filter.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">prog</a></li>
                 <li>filter.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>filter.py
+        <small><a href="filter.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsprogfilterpy-1"> 1</a>
 <a href="#listingsprogfilterpy-2"> 2</a>
 <a href="#listingsprogfilterpy-3"> 3</a>
@@ -142,14 +146,14 @@
 <a href="#listingsprogfilterpy-23">23</a>
 <a href="#listingsprogfilterpy-24">24</a>
 <a href="#listingsprogfilterpy-25">25</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsprogfilterpy-1"></a><span class="c"># -*- coding: utf-8 -*-</span>
-<a name="listingsprogfilterpy-2"></a><span class="c"># generar una lista</span>
-<a name="listingsprogfilterpy-3"></a><span class="c"># con los numeros de num</span>
-<a name="listingsprogfilterpy-4"></a><span class="c"># mayores que 3</span>
+<td class="code"><pre class="code literal-block"><a name="listingsprogfilterpy-1"></a><span class="c1"># -*- coding: utf-8 -*-</span>
+<a name="listingsprogfilterpy-2"></a><span class="c1"># generar una lista</span>
+<a name="listingsprogfilterpy-3"></a><span class="c1"># con los numeros de num</span>
+<a name="listingsprogfilterpy-4"></a><span class="c1"># mayores que 3</span>
 <a name="listingsprogfilterpy-5"></a>
 <a name="listingsprogfilterpy-6"></a><span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <a name="listingsprogfilterpy-7"></a>
-<a name="listingsprogfilterpy-8"></a><span class="c"># version 1 - con for</span>
+<a name="listingsprogfilterpy-8"></a><span class="c1"># version 1 - con for</span>
 <a name="listingsprogfilterpy-9"></a><span class="n">j</span> <span class="o">=</span> <span class="p">[]</span>
 <a name="listingsprogfilterpy-10"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">num</span><span class="p">:</span>
 <a name="listingsprogfilterpy-11"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
@@ -157,14 +161,14 @@
 <a name="listingsprogfilterpy-13"></a>
 <a name="listingsprogfilterpy-14"></a><span class="k">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
 <a name="listingsprogfilterpy-15"></a>
-<a name="listingsprogfilterpy-16"></a><span class="c"># version 2 - con filter y una funcion</span>
+<a name="listingsprogfilterpy-16"></a><span class="c1"># version 2 - con filter y una funcion</span>
 <a name="listingsprogfilterpy-17"></a><span class="k">def</span> <span class="nf">mayor_a_3</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <a name="listingsprogfilterpy-18"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">)</span>
 <a name="listingsprogfilterpy-19"></a>
 <a name="listingsprogfilterpy-20"></a><span class="n">g</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="n">mayor_a_3</span><span class="p">,</span> <span class="n">num</span><span class="p">))</span>
 <a name="listingsprogfilterpy-21"></a><span class="k">print</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
 <a name="listingsprogfilterpy-22"></a>
-<a name="listingsprogfilterpy-23"></a><span class="c"># version 3 - con filter y lambda</span>
+<a name="listingsprogfilterpy-23"></a><span class="c1"># version 3 - con filter y lambda</span>
 <a name="listingsprogfilterpy-24"></a><span class="n">h</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">n</span><span class="p">:</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">,</span> <span class="n">num</span><span class="p">))</span>
 <a name="listingsprogfilterpy-25"></a><span class="k">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
 </pre></td>

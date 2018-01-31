@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/prog/jugando_listas.py.html">
 <meta name="description" content="jugando_listas.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>jugando_listas.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/prog/jugando_listas.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">prog</a></li>
                 <li>jugando_listas.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>jugando_listas.py
+        <small><a href="jugando_listas.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsprogjugando_listaspy-1"> 1</a>
 <a href="#listingsprogjugando_listaspy-2"> 2</a>
 <a href="#listingsprogjugando_listaspy-3"> 3</a>
@@ -171,14 +175,14 @@
 <a href="#listingsprogjugando_listaspy-52">52</a>
 <a href="#listingsprogjugando_listaspy-53">53</a>
 <a href="#listingsprogjugando_listaspy-54">54</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsprogjugando_listaspy-1"></a><span class="c">#!/usr/bin/env python3</span>
+<td class="code"><pre class="code literal-block"><a name="listingsprogjugando_listaspy-1"></a><span class="ch">#!/usr/bin/env python3</span>
 <a name="listingsprogjugando_listaspy-2"></a>
-<a name="listingsprogjugando_listaspy-3"></a><span class="c"># Crear una lista de veinte elementos aleatorios entre 1 y 10</span>
-<a name="listingsprogjugando_listaspy-4"></a><span class="c"># Mostrar:</span>
-<a name="listingsprogjugando_listaspy-5"></a><span class="c">#   La lista ordenada</span>
-<a name="listingsprogjugando_listaspy-6"></a><span class="c">#   El numero mayor</span>
-<a name="listingsprogjugando_listaspy-7"></a><span class="c">#   El numero menor</span>
-<a name="listingsprogjugando_listaspy-8"></a><span class="c">#   Cuantas veces aparece en la lista el numero mayor</span>
+<a name="listingsprogjugando_listaspy-3"></a><span class="c1"># Crear una lista de veinte elementos aleatorios entre 1 y 10</span>
+<a name="listingsprogjugando_listaspy-4"></a><span class="c1"># Mostrar:</span>
+<a name="listingsprogjugando_listaspy-5"></a><span class="c1">#   La lista ordenada</span>
+<a name="listingsprogjugando_listaspy-6"></a><span class="c1">#   El numero mayor</span>
+<a name="listingsprogjugando_listaspy-7"></a><span class="c1">#   El numero menor</span>
+<a name="listingsprogjugando_listaspy-8"></a><span class="c1">#   Cuantas veces aparece en la lista el numero mayor</span>
 <a name="listingsprogjugando_listaspy-9"></a>
 <a name="listingsprogjugando_listaspy-10"></a><span class="kn">import</span> <span class="nn">random</span>
 <a name="listingsprogjugando_listaspy-11"></a>
@@ -211,20 +215,20 @@
 <a name="listingsprogjugando_listaspy-38"></a>
 <a name="listingsprogjugando_listaspy-39"></a><span class="n">CANT</span> <span class="o">=</span> <span class="mi">20</span>
 <a name="listingsprogjugando_listaspy-40"></a>
-<a name="listingsprogjugando_listaspy-41"></a><span class="k">print</span><span class="p">(</span><span class="s">"Genero una lista de {} numeros"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">CANT</span><span class="p">))</span>
+<a name="listingsprogjugando_listaspy-41"></a><span class="k">print</span><span class="p">(</span><span class="s2">"Genero una lista de {} numeros"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">CANT</span><span class="p">))</span>
 <a name="listingsprogjugando_listaspy-42"></a><span class="n">lista</span> <span class="o">=</span> <span class="n">lista_aleatoria</span><span class="p">(</span><span class="n">CANT</span><span class="p">)</span>
 <a name="listingsprogjugando_listaspy-43"></a><span class="k">print</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
-<a name="listingsprogjugando_listaspy-44"></a><span class="k">print</span><span class="p">(</span><span class="s">"La muestro ordenada..."</span><span class="p">)</span>
-<a name="listingsprogjugando_listaspy-45"></a><span class="c"># La ordenamos</span>
+<a name="listingsprogjugando_listaspy-44"></a><span class="k">print</span><span class="p">(</span><span class="s2">"La muestro ordenada..."</span><span class="p">)</span>
+<a name="listingsprogjugando_listaspy-45"></a><span class="c1"># La ordenamos</span>
 <a name="listingsprogjugando_listaspy-46"></a><span class="n">lista</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<a name="listingsprogjugando_listaspy-47"></a><span class="c"># La mostramos</span>
+<a name="listingsprogjugando_listaspy-47"></a><span class="c1"># La mostramos</span>
 <a name="listingsprogjugando_listaspy-48"></a><span class="k">print</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
 <a name="listingsprogjugando_listaspy-49"></a><span class="n">maximo</span> <span class="o">=</span> <span class="n">busco_max</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
-<a name="listingsprogjugando_listaspy-50"></a><span class="k">print</span><span class="p">(</span><span class="s">"El maximo de la lista es: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">maximo</span><span class="p">))</span>
+<a name="listingsprogjugando_listaspy-50"></a><span class="k">print</span><span class="p">(</span><span class="s2">"El maximo de la lista es: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">maximo</span><span class="p">))</span>
 <a name="listingsprogjugando_listaspy-51"></a><span class="n">repeticiones_maximo</span> <span class="o">=</span> <span class="n">lista</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">maximo</span><span class="p">)</span>
-<a name="listingsprogjugando_listaspy-52"></a><span class="k">print</span><span class="p">(</span><span class="s">"El maximo aparece en la lista {} veces"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">repeticiones_maximo</span><span class="p">))</span>
+<a name="listingsprogjugando_listaspy-52"></a><span class="k">print</span><span class="p">(</span><span class="s2">"El maximo aparece en la lista {} veces"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">repeticiones_maximo</span><span class="p">))</span>
 <a name="listingsprogjugando_listaspy-53"></a><span class="n">minimo</span> <span class="o">=</span> <span class="n">busco_min</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
-<a name="listingsprogjugando_listaspy-54"></a><span class="k">print</span><span class="p">(</span><span class="s">"El minimo de la lista es: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">minimo</span><span class="p">))</span>
+<a name="listingsprogjugando_listaspy-54"></a><span class="k">print</span><span class="p">(</span><span class="s2">"El minimo de la lista es: {}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">minimo</span><span class="p">))</span>
 </pre></td>
 </tr></table>
 </div>

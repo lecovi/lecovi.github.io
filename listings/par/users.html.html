@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/par/users.html.html">
 <meta name="description" content="users.html">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>users.html | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/par/users.html.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">par</a></li>
                 <li>users.html</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>users.html
+        <small><a href="users.html">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsparusershtml-1"> 1</a>
 <a href="#listingsparusershtml-2"> 2</a>
 <a href="#listingsparusershtml-3"> 3</a>
@@ -148,35 +152,35 @@
 <a href="#listingsparusershtml-29">29</a>
 <a href="#listingsparusershtml-30">30</a></pre></div></td>
 <td class="code"><pre class="code literal-block"><a name="listingsparusershtml-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<a name="listingsparusershtml-2"></a><span class="nt">&lt;html&gt;</span>
-<a name="listingsparusershtml-3"></a><span class="nt">&lt;head&gt;</span>
-<a name="listingsparusershtml-4"></a><span class="nt">&lt;title&gt;</span>Lista de Usuarios<span class="nt">&lt;/title&gt;</span>
-<a name="listingsparusershtml-5"></a><span class="nt">&lt;/head&gt;</span>
-<a name="listingsparusershtml-6"></a><span class="nt">&lt;body&gt;</span>
+<a name="listingsparusershtml-2"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-4"></a><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Lista de Usuarios<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-5"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-6"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 <a name="listingsparusershtml-7"></a>
-<a name="listingsparusershtml-8"></a><span class="nt">&lt;h1&gt;</span>Usuarios<span class="nt">&lt;/h1&gt;</span>
-<a name="listingsparusershtml-9"></a><span class="nt">&lt;p&gt;</span>Esta es la lista de usuarios<span class="nt">&lt;/p&gt;</span>
-<a name="listingsparusershtml-10"></a><span class="nt">&lt;table&gt;</span>
-<a name="listingsparusershtml-11"></a>    <span class="nt">&lt;tr&gt;</span>
-<a name="listingsparusershtml-12"></a>        <span class="nt">&lt;th&gt;</span>Nombre<span class="nt">&lt;/th&gt;</span>
-<a name="listingsparusershtml-13"></a>        <span class="nt">&lt;th&gt;</span>Nick<span class="nt">&lt;/th&gt;</span>
-<a name="listingsparusershtml-14"></a>    <span class="nt">&lt;/tr&gt;</span>
+<a name="listingsparusershtml-8"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Usuarios<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-9"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Esta es la lista de usuarios<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-10"></a><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-11"></a>    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-12"></a>        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Nombre<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-13"></a>        <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Nick<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-14"></a>    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
 <a name="listingsparusershtml-15"></a>    {% for user in users %}
-<a name="listingsparusershtml-16"></a>    <span class="nt">&lt;tr&gt;</span>
-<a name="listingsparusershtml-17"></a>        <span class="nt">&lt;td&gt;</span>{{ user.name }}<span class="nt">&lt;/td&gt;</span>
-<a name="listingsparusershtml-18"></a>        <span class="nt">&lt;td&gt;</span>{{ user.nick }}<span class="nt">&lt;/td&gt;</span>
-<a name="listingsparusershtml-19"></a>    <span class="nt">&lt;/tr&gt;</span>
+<a name="listingsparusershtml-16"></a>    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-17"></a>        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{ user.name }}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-18"></a>        <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>{{ user.nick }}<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-19"></a>    <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
 <a name="listingsparusershtml-20"></a>    {% endfor %}
-<a name="listingsparusershtml-21"></a><span class="nt">&lt;/table&gt;</span>
+<a name="listingsparusershtml-21"></a><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 <a name="listingsparusershtml-22"></a>
 <a name="listingsparusershtml-23"></a>{% if value &gt; 0 %}
-<a name="listingsparusershtml-24"></a><span class="nt">&lt;p&gt;</span>El valor es mayor a cero<span class="nt">&lt;/p&gt;</span>
+<a name="listingsparusershtml-24"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>El valor es mayor a cero<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <a name="listingsparusershtml-25"></a>{% else %}
-<a name="listingsparusershtml-26"></a><span class="nt">&lt;p&gt;</span>El valor es menor a cero<span class="nt">&lt;/p&gt;</span>
+<a name="listingsparusershtml-26"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>El valor es menor a cero<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <a name="listingsparusershtml-27"></a>{% endif %}
 <a name="listingsparusershtml-28"></a>
-<a name="listingsparusershtml-29"></a><span class="nt">&lt;/body&gt;</span>
-<a name="listingsparusershtml-30"></a><span class="nt">&lt;/html&gt;</span> 
+<a name="listingsparusershtml-29"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a name="listingsparusershtml-30"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span> 
 </pre></td>
 </tr></table>
 </div>

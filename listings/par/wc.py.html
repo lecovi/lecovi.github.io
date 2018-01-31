@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/par/wc.py.html">
 <meta name="description" content="wc.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>wc.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/par/wc.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">par</a></li>
                 <li>wc.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>wc.py
+        <small><a href="wc.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsparwcpy-1"> 1</a>
 <a href="#listingsparwcpy-2"> 2</a>
 <a href="#listingsparwcpy-3"> 3</a>
@@ -135,24 +139,24 @@
 <a href="#listingsparwcpy-16">16</a>
 <a href="#listingsparwcpy-17">17</a>
 <a href="#listingsparwcpy-18">18</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsparwcpy-1"></a><span class="c">#!/usr/bin/env python</span>
+<td class="code"><pre class="code literal-block"><a name="listingsparwcpy-1"></a><span class="ch">#!/usr/bin/env python</span>
 <a name="listingsparwcpy-2"></a>
-<a name="listingsparwcpy-3"></a><span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Ingrese el nombre de archivo: '</span><span class="p">)</span>
+<a name="listingsparwcpy-3"></a><span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese el nombre de archivo: '</span><span class="p">)</span>
 <a name="listingsparwcpy-4"></a><span class="n">cant_lineas</span> <span class="o">=</span> <span class="mi">0</span>
 <a name="listingsparwcpy-5"></a><span class="n">cant_palabras</span> <span class="o">=</span> <span class="mi">0</span>
 <a name="listingsparwcpy-6"></a><span class="n">cant_caracteres</span> <span class="o">=</span> <span class="mi">0</span>
 <a name="listingsparwcpy-7"></a>
-<a name="listingsparwcpy-8"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+<a name="listingsparwcpy-8"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
 <a name="listingsparwcpy-9"></a>    <span class="n">linea</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="listingsparwcpy-10"></a>    <span class="k">while</span> <span class="n">linea</span> <span class="o">!=</span> <span class="s">''</span><span class="p">:</span>
+<a name="listingsparwcpy-10"></a>    <span class="k">while</span> <span class="n">linea</span> <span class="o">!=</span> <span class="s1">''</span><span class="p">:</span>
 <a name="listingsparwcpy-11"></a>        <span class="n">cant_lineas</span> <span class="o">+=</span> <span class="mi">1</span>
 <a name="listingsparwcpy-12"></a>        <span class="n">cant_caracteres</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
 <a name="listingsparwcpy-13"></a>        <span class="n">cant_palabras</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">linea</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
 <a name="listingsparwcpy-14"></a>        <span class="n">linea</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
 <a name="listingsparwcpy-15"></a>
-<a name="listingsparwcpy-16"></a><span class="k">print</span><span class="p">(</span><span class="s">'Cantidad de Líneas: {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cant_lineas</span><span class="p">))</span>
-<a name="listingsparwcpy-17"></a><span class="k">print</span><span class="p">(</span><span class="s">'Cantidad de Palabras: {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cant_palabras</span><span class="p">))</span>
-<a name="listingsparwcpy-18"></a><span class="k">print</span><span class="p">(</span><span class="s">'Cantidad de Caracteres: {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cant_caracteres</span><span class="p">))</span>
+<a name="listingsparwcpy-16"></a><span class="k">print</span><span class="p">(</span><span class="s1">'Cantidad de Líneas: {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cant_lineas</span><span class="p">))</span>
+<a name="listingsparwcpy-17"></a><span class="k">print</span><span class="p">(</span><span class="s1">'Cantidad de Palabras: {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cant_palabras</span><span class="p">))</span>
+<a name="listingsparwcpy-18"></a><span class="k">print</span><span class="p">(</span><span class="s1">'Cantidad de Caracteres: {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cant_caracteres</span><span class="p">))</span>
 </pre></td>
 </tr></table>
 </div>

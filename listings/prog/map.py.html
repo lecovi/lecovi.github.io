@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/prog/map.py.html">
 <meta name="description" content="map.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>map.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/prog/map.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">prog</a></li>
                 <li>map.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>map.py
+        <small><a href="map.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsprogmappy-1"> 1</a>
 <a href="#listingsprogmappy-2"> 2</a>
 <a href="#listingsprogmappy-3"> 3</a>
@@ -142,13 +146,13 @@
 <a href="#listingsprogmappy-23">23</a>
 <a href="#listingsprogmappy-24">24</a>
 <a href="#listingsprogmappy-25">25</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsprogmappy-1"></a><span class="c"># redondea los numeros de n</span>
-<a name="listingsprogmappy-2"></a><span class="c"># con D decimales</span>
+<td class="code"><pre class="code literal-block"><a name="listingsprogmappy-1"></a><span class="c1"># redondea los numeros de n</span>
+<a name="listingsprogmappy-2"></a><span class="c1"># con D decimales</span>
 <a name="listingsprogmappy-3"></a><span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="mf">2.25</span><span class="p">,</span><span class="mf">4.110</span><span class="p">,</span><span class="mf">8.55</span><span class="p">,</span><span class="mf">16.8144</span><span class="p">]</span>
 <a name="listingsprogmappy-4"></a>
-<a name="listingsprogmappy-5"></a><span class="n">ndec</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"cantidad de decimales: "</span><span class="p">))</span>
+<a name="listingsprogmappy-5"></a><span class="n">ndec</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"cantidad de decimales: "</span><span class="p">))</span>
 <a name="listingsprogmappy-6"></a>
-<a name="listingsprogmappy-7"></a><span class="c"># version 1 - con for</span>
+<a name="listingsprogmappy-7"></a><span class="c1"># version 1 - con for</span>
 <a name="listingsprogmappy-8"></a><span class="n">j</span> <span class="o">=</span> <span class="n">num</span>
 <a name="listingsprogmappy-9"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 <a name="listingsprogmappy-10"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">num</span><span class="p">:</span>
@@ -157,14 +161,14 @@
 <a name="listingsprogmappy-13"></a>
 <a name="listingsprogmappy-14"></a><span class="k">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
 <a name="listingsprogmappy-15"></a>
-<a name="listingsprogmappy-16"></a><span class="c"># version 2 - con enumerate y for</span>
+<a name="listingsprogmappy-16"></a><span class="c1"># version 2 - con enumerate y for</span>
 <a name="listingsprogmappy-17"></a><span class="n">j</span> <span class="o">=</span> <span class="n">num</span>
 <a name="listingsprogmappy-18"></a><span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">n</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
 <a name="listingsprogmappy-19"></a>    <span class="n">j</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">ndec</span><span class="p">)</span>    
 <a name="listingsprogmappy-20"></a>
 <a name="listingsprogmappy-21"></a><span class="k">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
 <a name="listingsprogmappy-22"></a>
-<a name="listingsprogmappy-23"></a><span class="c"># version 3 - con map y lambda</span>
+<a name="listingsprogmappy-23"></a><span class="c1"># version 3 - con map y lambda</span>
 <a name="listingsprogmappy-24"></a><span class="n">k</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="nb">round</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">ndec</span><span class="p">),</span> <span class="n">num</span><span class="p">))</span>
 <a name="listingsprogmappy-25"></a><span class="k">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
 </pre></td>

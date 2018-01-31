@@ -2,11 +2,12 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/listings/par/routes2.py.html">
 <meta name="description" content="routes2.py">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>routes2.py | Make it So!</title>
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/listings/par/routes2.py.html">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -116,7 +117,10 @@
 <li><a href="../">listings</a></li>
                 <li><a href=".">par</a></li>
                 <li>routes2.py</li>
-</ul></nav><table class="codetable"><tr>
+</ul></nav><h1>routes2.py
+        <small><a href="routes2.py">(Código fuente)</a></small>
+    </h1>
+    <table class="codetable"><tr>
 <td class="linenos"><div class="linenodiv"><pre><a href="#listingsparroutes2py-1"> 1</a>
 <a href="#listingsparroutes2py-2"> 2</a>
 <a href="#listingsparroutes2py-3"> 3</a>
@@ -153,36 +157,36 @@
 <a href="#listingsparroutes2py-34">34</a>
 <a href="#listingsparroutes2py-35">35</a>
 <a href="#listingsparroutes2py-36">36</a></pre></div></td>
-<td class="code"><pre class="code literal-block"><a name="listingsparroutes2py-1"></a><span class="c">#!/usr/bin/env python</span>
+<td class="code"><pre class="code literal-block"><a name="listingsparroutes2py-1"></a><span class="ch">#!/usr/bin/env python</span>
 <a name="listingsparroutes2py-2"></a>
 <a name="listingsparroutes2py-3"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
 <a name="listingsparroutes2py-4"></a>
-<a name="listingsparroutes2py-5"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+<a name="listingsparroutes2py-5"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 <a name="listingsparroutes2py-6"></a>
-<a name="listingsparroutes2py-7"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
-<a name="listingsparroutes2py-8"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/index'</span><span class="p">)</span>
+<a name="listingsparroutes2py-7"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
+<a name="listingsparroutes2py-8"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/index'</span><span class="p">)</span>
 <a name="listingsparroutes2py-9"></a><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
-<a name="listingsparroutes2py-10"></a>    <span class="k">return</span> <span class="s">"Hello World!"</span> 
+<a name="listingsparroutes2py-10"></a>    <span class="k">return</span> <span class="s2">"Hello World!"</span> 
 <a name="listingsparroutes2py-11"></a>
-<a name="listingsparroutes2py-12"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s">'/user'</span><span class="p">)</span>
+<a name="listingsparroutes2py-12"></a><span class="nd">@app.route</span><span class="p">(</span><span class="s1">'/user'</span><span class="p">)</span>
 <a name="listingsparroutes2py-13"></a><span class="k">def</span> <span class="nf">user</span><span class="p">():</span>
-<a name="listingsparroutes2py-14"></a>    <span class="n">user</span> <span class="o">=</span> <span class="p">{</span><span class="s">'nick'</span><span class="p">:</span> <span class="s">'Leo'</span><span class="p">,</span>
-<a name="listingsparroutes2py-15"></a>            <span class="s">'name'</span><span class="p">:</span> <span class="s">'Leandro'</span><span class="p">}</span>  <span class="c"># fake user</span>
-<a name="listingsparroutes2py-16"></a>    <span class="k">return</span> <span class="s">'''&lt;!DOCTYPE html&gt;</span>
-<a name="listingsparroutes2py-17"></a><span class="s">&lt;html&gt;</span>
-<a name="listingsparroutes2py-18"></a><span class="s">&lt;head&gt;</span>
-<a name="listingsparroutes2py-19"></a><span class="s">&lt;title&gt;Usuario {nick}&lt;/title&gt;</span>
-<a name="listingsparroutes2py-20"></a><span class="s">&lt;/head&gt;</span>
-<a name="listingsparroutes2py-21"></a><span class="s">&lt;body&gt;</span>
+<a name="listingsparroutes2py-14"></a>    <span class="n">user</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'nick'</span><span class="p">:</span> <span class="s1">'Leo'</span><span class="p">,</span>
+<a name="listingsparroutes2py-15"></a>            <span class="s1">'name'</span><span class="p">:</span> <span class="s1">'Leandro'</span><span class="p">}</span>  <span class="c1"># fake user</span>
+<a name="listingsparroutes2py-16"></a>    <span class="k">return</span> <span class="s1">'''&lt;!DOCTYPE html&gt;</span>
+<a name="listingsparroutes2py-17"></a><span class="s1">&lt;html&gt;</span>
+<a name="listingsparroutes2py-18"></a><span class="s1">&lt;head&gt;</span>
+<a name="listingsparroutes2py-19"></a><span class="s1">&lt;title&gt;Usuario {nick}&lt;/title&gt;</span>
+<a name="listingsparroutes2py-20"></a><span class="s1">&lt;/head&gt;</span>
+<a name="listingsparroutes2py-21"></a><span class="s1">&lt;body&gt;</span>
 <a name="listingsparroutes2py-22"></a>
-<a name="listingsparroutes2py-23"></a><span class="s">&lt;h1&gt;Hola {usuario}&lt;/h1&gt;</span>
-<a name="listingsparroutes2py-24"></a><span class="s">&lt;p&gt;Está bastante bueno esto de Flask.&lt;/p&gt;</span>
+<a name="listingsparroutes2py-23"></a><span class="s1">&lt;h1&gt;Hola {usuario}&lt;/h1&gt;</span>
+<a name="listingsparroutes2py-24"></a><span class="s1">&lt;p&gt;Está bastante bueno esto de Flask.&lt;/p&gt;</span>
 <a name="listingsparroutes2py-25"></a>
-<a name="listingsparroutes2py-26"></a><span class="s">&lt;/body&gt;</span>
-<a name="listingsparroutes2py-27"></a><span class="s">&lt;/html&gt; </span>
-<a name="listingsparroutes2py-28"></a><span class="s">'''</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">usuario</span><span class="o">=</span><span class="n">user</span><span class="p">[</span><span class="s">'name'</span><span class="p">],</span> <span class="n">nick</span><span class="o">=</span><span class="n">user</span><span class="p">[</span><span class="s">'nick'</span><span class="p">])</span>
+<a name="listingsparroutes2py-26"></a><span class="s1">&lt;/body&gt;</span>
+<a name="listingsparroutes2py-27"></a><span class="s1">&lt;/html&gt; </span>
+<a name="listingsparroutes2py-28"></a><span class="s1">'''</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">usuario</span><span class="o">=</span><span class="n">user</span><span class="p">[</span><span class="s1">'name'</span><span class="p">],</span> <span class="n">nick</span><span class="o">=</span><span class="n">user</span><span class="p">[</span><span class="s1">'nick'</span><span class="p">])</span>
 <a name="listingsparroutes2py-29"></a>
-<a name="listingsparroutes2py-30"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+<a name="listingsparroutes2py-30"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
 <a name="listingsparroutes2py-31"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <a name="listingsparroutes2py-32"></a>    
 <a name="listingsparroutes2py-33"></a>    

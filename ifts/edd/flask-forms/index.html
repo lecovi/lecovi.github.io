@@ -2,10 +2,11 @@
 <html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
 <head>
 <meta charset="utf-8">
-<base href="http://lecovi.github.io/ifts/edd/flask-forms/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Flask Web Forms | Make it So!</title>
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/ifts/edd/flask-forms/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -126,15 +127,15 @@ El form lleva el atributo action que le indica a qué archi">
     <div>
 <p>Los web forms son elementos html de formulario para enviar datos al backend (servidor). Por ejemplo, inicios de sesion, consultas, contactos.</p>
 <p>El form lleva el atributo action que le indica a qué archivo(script) hace referencia.</p>
-<pre class="code html"><a name="rest_code_96a23f35bba6409f93147754833aaec0-1"></a><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"action_page.php"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+<pre class="code html"><a name="rest_code_d7d7d3f50d784e5e90c66403decf8f93-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">"action_page.php"</span> <span class="na">method</span><span class="o">=</span><span class="s">"post"</span><span class="p">&gt;</span>
 </pre>
 <p>Las peticiones y la información van desde el cliente al backend, hay dos maneras de enviarlo:</p>
 <div class="section" id="get-y-post">
 <h2>GET y POST</h2>
 <p>El metodo por defecto es el GET, pasa informacion al servidor a través de la url (action + la concatenacion de las variables que le paso a la funcion)</p>
 <p>POST, viaja en el cuerpo del paquete, no en la url, no es visible al cliente</p>
-<div class="tip">
-<p class="first admonition-title">Tip</p>
+<div class="admonition tip">
+<p class="first admonition-title">Consejo</p>
 <p>Para elejir que tipo de metodo debes tener en cuenta:</p>
 <ul class="last simple">
 <li>qué tipo de info voy a mandar/necesitar?</li>
@@ -153,14 +154,16 @@ El form lleva el atributo action que le indica a qué archi">
 <li>Botón de &lt;submit&gt; para enviar el formulario</li>
 </ul>
 </blockquote>
-<div class="tip">
-<p class="first admonition-title">Tip</p>
+<div class="admonition tip">
+<p class="first admonition-title">Consejo</p>
 <p class="last">podes consultar más sobre esto y otras etiquetas en <a href="http://www.w3schools.com/html/html_forms.asp" target="_blank">w3schools.com formularios</a></p>
 </div>
 </div>
 </div>
     </div>
     
+    
+
 
 </article>
 </div>
