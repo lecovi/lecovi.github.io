@@ -25,50 +25,45 @@
 
 ----
 
-.. class:: row
-
-.. class:: col-md-4
-
 .. raw:: html
 
-    <a href="http://listas.bitson.com.ar/listinfo/diagramacion" target="_blank" class="feature-link text-center">
-        <div class="feature-icon feature-icon-static">
-            <span class="fa-stack fa-3x">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-            </span>
-            Lista de Correo
+    <div class="row">
+        <div class="col-md-4">
+            <a href="http://listas.bitson.com.ar/listinfo/diagramacion" target="_blank" class="feature-link text-center">
+                <div class="feature-icon feature-icon-static">
+                    <span class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                    </span>
+                    Lista de Correo
+                </div>
+            </a>
         </div>
-    </a>
 
-.. class:: col-md-4
-
-.. raw:: html
-
-
-    <a href="https://docs.google.com/spreadsheets/d/116vRMt2n6_U4V4LO5weJgAe9GX-0IrCCs-69-4S0AdI/pubhtml" target="_blank" class="feature-link text-center">
-        <div class="feature-icon feature-icon-static">
-            <span class="fa-stack fa-3x">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-th-list fa-stack-1x fa-inverse"></i>
-            </span>
-            Lista de Alumnos
+        <div class="col-md-4">
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQZvJOlzAHNgklTbivplFcrnu66qeHkJ9E1MrjgiaT1ZA7hsq0Bg3zIgXBJXwyHf3qdY4NGE6VOBff8/pubhtml?gid=19&single=true" target="_blank" class="feature-link text-center">
+                <div class="feature-icon feature-icon-static">
+                    <span class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-th-list fa-stack-1x fa-inverse"></i>
+                    </span>
+                    Lista de Alumnos
+                </div>
+            </a>
         </div>
-    </a>
-
-.. class:: col-md-4
-
-.. raw:: html
-
-    <a href="/ifts/dlo/cal" target="_blank" class="feature-link text-center">
-        <div class="feature-icon feature-icon-static">
-            <span class="fa-stack fa-3x">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
-            </span>
-            Calendario
+        
+        <div class="col-md-4">
+            <a href="/ifts/dlo/cal" target="_blank" class="feature-link text-center">
+                <div class="feature-icon feature-icon-static">
+                    <span class="fa-stack fa-3x">
+                        <i class="fa fa-circle fa-stack-2x"></i>
+                        <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                    </span>
+                    Calendario
+                </div>
+            </a>
         </div>
-    </a>
+    </div>
 
 .. class:: row
 
