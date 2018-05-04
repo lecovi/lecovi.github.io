@@ -90,7 +90,7 @@ Python
 
 .. |libro| raw:: html
 
-    <a href="https://github.com/lecovi/thinkcs-py_es/releases/download/v2018.01.24.01/como_pensar_como_un_programador_con_python.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://github.com/lecovi/thinkcs-py_es/releases/download/v2018013001/thinkpython-spa.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
 
 .. |mega_tutorial| raw:: html
 
