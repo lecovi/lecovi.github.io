@@ -86,8 +86,10 @@ A continuación tenemos la lista de las clases que vamos a ver durante el curso.
 #. :doc:`Diccionarios <ifts/dlo/diccionarios>`
 #. :doc:`Módulos y Paquetes <ifts/dlo/modulos>`
 #. :doc:`Integración <ifts/dlo/integracion>`
-#. :doc:`2° Parcial <ifts/dlo/parcial2>`
-#. :doc:`Encuesta <ifts/dlo/encuesta>`
+#. :doc:`Final <ifts/dlo/parcial2>`
+
+
+.. #. :doc:`Encuesta <ifts/dlo/encuesta>`
 
 
 Fundamentación
