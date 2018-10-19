@@ -9,12 +9,12 @@
 
 Descargate el enunciado_.
 
-.. _enunciado: /par/2017-parcial-edd.pdf
+.. _enunciado: /par/2018-parcial-edd.pdf
 
 .. class:: align-center embed-responsive embed-responsive-16by9
 
     .. raw:: html
 
-        <object data="/par/2017-parcial-par.pdf" type="application/pdf">
-            <embed src="/par/2017-parcial-par.pdf" type="application/pdf" />
+        <object data="/par/2018-parcial-par.pdf" type="application/pdf">
+            <embed src="/par/2018-parcial-par.pdf" type="application/pdf" />
         </object>
