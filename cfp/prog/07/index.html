@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/cfp/prog/07/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -18,14 +18,13 @@
 <meta property="og:url" content="http://lecovi.github.io/cfp/prog/07/">
 <meta property="og:description" content='Veamos algunos ejemplos...
 Usando el archivo prueba.txt escribimos en segundo.txt
-prog/archi_01.py
+prog/archi_01.py  (Código fuente)
 &gt;&gt;&gt; a = open("prueba.txt","w")
 &gt;&gt;&gt; a.write("uno dos tres")
 12
 &gt;&gt;&gt; a.write("hola")
 4
-&gt;&gt;&gt; a.close()
-&gt;&gt;&gt;'>
+'>
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2016-04-06T08:02:11-03:00">
 </head>
@@ -136,135 +135,135 @@ prog/archi_01.py
 <div class="align-center embed-responsive embed-responsive-16by9"><iframe src="https://docs.google.com/presentation/d/1VDF-niLvozMy7rqshfKiCbPrVKlJA7r7UvBnDTTuPqo/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="960" height="629" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
 <p>Veamos algunos ejemplos...</p>
 <p>Usando el archivo <a class="reference external" href="../../../prog/prueba.txt">prueba.txt</a> escribimos en <a class="reference external" href="../../../prog/segundo.txt">segundo.txt</a></p>
-<p><a class="reference external" href="../../../listings/prog/archi_01.py.html">prog/archi_01.py</a></p>
-<pre class="code python3"><a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba.txt"</span><span class="p">,</span><span class="s">"w"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"uno dos tres"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-3"></a><span class="mi">12</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"hola"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-5"></a><span class="mi">4</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba.txt"</span><span class="p">,</span><span class="s">"w"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-8"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"uno dos tres</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-9"></a><span class="mi">13</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"hola"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-11"></a><span class="mi">4</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-13"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba.txt"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-14"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"otra cosa"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-15"></a><span class="mi">9</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-16"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-17"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba.txt"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-18"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">otra</span><span class="se">\n</span><span class="s">cosa mas</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-19"></a><span class="mi">15</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-20"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-21"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">u</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"toto"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-22"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-23"></a>  <span class="n">File</span> <span class="s">"&lt;pyshell#14&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-24"></a>    <span class="n">u</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"toto"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-25"></a><span class="ne">FileNotFoundError</span><span class="p">:</span> <span class="p">[</span><span class="n">Errno</span> <span class="mi">2</span><span class="p">]</span> <span class="n">No</span> <span class="n">such</span> <span class="n">file</span> <span class="ow">or</span> <span class="n">directory</span><span class="p">:</span> <span class="s">'toto'</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-26"></a><span class="o">&gt;&gt;&gt;</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-27"></a><span class="o">&gt;&gt;&gt;</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-28"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">u</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-29"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">linea</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-30"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-31"></a><span class="n">uno</span> <span class="n">dos</span> <span class="n">tres</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-32"></a>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-33"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">linea</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-34"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-35"></a><span class="n">holaotra</span> <span class="n">cosa</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-36"></a>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-37"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">linea</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-38"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-39"></a><span class="n">otra</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-40"></a>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-41"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">u</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-42"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">u</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba.txt"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-43"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">lin</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-44"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">lin</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-45"></a><span class="p">[</span><span class="s">'uno dos tres</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span> <span class="s">'holaotra cosa</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span> <span class="s">'otra</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span> <span class="s">'cosa mas</span><span class="se">\n</span><span class="s">'</span><span class="p">]</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-46"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">lin</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s">'hola!</span><span class="se">\n</span><span class="s">'</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-47"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">lin</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-48"></a><span class="p">[</span><span class="s">'hola!</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span> <span class="s">'holaotra cosa</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span> <span class="s">'otra</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span> <span class="s">'cosa mas</span><span class="se">\n</span><span class="s">'</span><span class="p">]</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-49"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">otro</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"segundo.txt"</span><span class="p">,</span><span class="s">"w"</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-50"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">otro</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">lin</span><span class="p">)</span>
-<a name="rest_code_04f4a57908e44bd1926ad594fa9cbe52-51"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">otro</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<p><a class="reference external" href="../../../listings/prog/archi_01.py.html">prog/archi_01.py</a>  <a class="reference external" href="../../../listings/prog/archi_01.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_4c985f8b229743358e10b70a2e31a6de-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba.txt"</span><span class="p">,</span><span class="s2">"w"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"uno dos tres"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-3"></a><span class="mi">12</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"hola"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-5"></a><span class="mi">4</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba.txt"</span><span class="p">,</span><span class="s2">"w"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-8"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"uno dos tres</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-9"></a><span class="mi">13</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"hola"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-11"></a><span class="mi">4</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-13"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba.txt"</span><span class="p">,</span><span class="s2">"a"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-14"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"otra cosa"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-15"></a><span class="mi">9</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-16"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-17"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba.txt"</span><span class="p">,</span><span class="s2">"a"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-18"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">otra</span><span class="se">\n</span><span class="s2">cosa mas</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-19"></a><span class="mi">15</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-20"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-21"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">u</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"toto"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-22"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-23"></a>  <span class="n">File</span> <span class="s2">"&lt;pyshell#14&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-24"></a>    <span class="n">u</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"toto"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-25"></a><span class="ne">FileNotFoundError</span><span class="p">:</span> <span class="p">[</span><span class="n">Errno</span> <span class="mi">2</span><span class="p">]</span> <span class="n">No</span> <span class="n">such</span> <span class="n">file</span> <span class="ow">or</span> <span class="n">directory</span><span class="p">:</span> <span class="s1">'toto'</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-26"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-27"></a><span class="o">&gt;&gt;&gt;</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-28"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">u</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-29"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">linea</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-30"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-31"></a><span class="n">uno</span> <span class="n">dos</span> <span class="n">tres</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-32"></a>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-33"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">linea</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-34"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-35"></a><span class="n">holaotra</span> <span class="n">cosa</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-36"></a>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-37"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">linea</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-38"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-39"></a><span class="n">otra</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-40"></a>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-41"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">u</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-42"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">u</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba.txt"</span><span class="p">,</span> <span class="s2">"r"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-43"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">lin</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-44"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">lin</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-45"></a><span class="p">[</span><span class="s1">'uno dos tres</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="s1">'holaotra cosa</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="s1">'otra</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="s1">'cosa mas</span><span class="se">\n</span><span class="s1">'</span><span class="p">]</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-46"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">lin</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'hola!</span><span class="se">\n</span><span class="s1">'</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-47"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">lin</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-48"></a><span class="p">[</span><span class="s1">'hola!</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="s1">'holaotra cosa</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="s1">'otra</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="s1">'cosa mas</span><span class="se">\n</span><span class="s1">'</span><span class="p">]</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-49"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">otro</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"segundo.txt"</span><span class="p">,</span><span class="s2">"w"</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-50"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">otro</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">lin</span><span class="p">)</span>
+<a name="rest_code_4c985f8b229743358e10b70a2e31a6de-51"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">otro</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre>
 <p>Probamos otra forma de escribir con el archivo <a class="reference external" href="../../../prog/prueba01.txt">prueba01.txt</a></p>
-<p><a class="reference external" href="../../../listings/prog/archi_02.py.html">prog/archi_02.py</a></p>
-<pre class="code python3"><a name="rest_code_fbffb9e977d54475b00006418deb5846-1"></a><span class="c">#!/usr/bin/env python</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-2"></a><span class="c"># encoding: utf-8</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-3"></a>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-4"></a><span class="c"># abro el archivo prueba01.txt</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-5"></a><span class="c"># para escritura</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-6"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba01.txt"</span><span class="p">,</span><span class="s">"w"</span><span class="p">)</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-7"></a>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-8"></a><span class="c"># escribo una linea</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-9"></a><span class="n">ae</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"primera</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-10"></a><span class="c"># escribo otra linea</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-11"></a><span class="n">ae</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">"segunda</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-12"></a>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-13"></a><span class="c"># cierro el archivo</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-14"></a><span class="n">ae</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-15"></a>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-16"></a><span class="c"># abro el archivo prueba01.txt</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-17"></a><span class="c"># para lectura</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-18"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba01.txt"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-19"></a>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-20"></a><span class="c"># leo una linea</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-21"></a><span class="n">s1</span> <span class="o">=</span> <span class="n">ae</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-22"></a><span class="c"># leo otra linea</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-23"></a><span class="n">s2</span> <span class="o">=</span> <span class="n">ae</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-24"></a><span class="c"># muestro las lineas leidas</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-25"></a><span class="nb">print</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">)</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-26"></a><span class="c"># cierro el archivo</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-27"></a><span class="n">ae</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-28"></a>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-29"></a><span class="c"># abro el archivo prueba01.txt</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-30"></a><span class="c"># para lectura</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-31"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"prueba01.txt"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-32"></a><span class="k">for</span> <span class="n">lin</span> <span class="ow">in</span> <span class="n">ae</span><span class="p">:</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-33"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">lin</span><span class="p">)</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-34"></a><span class="c"># cierro el archivo</span>
-<a name="rest_code_fbffb9e977d54475b00006418deb5846-35"></a><span class="n">ae</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<p><a class="reference external" href="../../../listings/prog/archi_02.py.html">prog/archi_02.py</a>  <a class="reference external" href="../../../listings/prog/archi_02.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_06710bf900264db39ccb3c6701b84723-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-2"></a><span class="c1"># encoding: utf-8</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-3"></a>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-4"></a><span class="c1"># abro el archivo prueba01.txt</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-5"></a><span class="c1"># para escritura</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-6"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba01.txt"</span><span class="p">,</span><span class="s2">"w"</span><span class="p">)</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-7"></a>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-8"></a><span class="c1"># escribo una linea</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-9"></a><span class="n">ae</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"primera</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-10"></a><span class="c1"># escribo otra linea</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-11"></a><span class="n">ae</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"segunda</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-12"></a>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-13"></a><span class="c1"># cierro el archivo</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-14"></a><span class="n">ae</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-15"></a>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-16"></a><span class="c1"># abro el archivo prueba01.txt</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-17"></a><span class="c1"># para lectura</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-18"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba01.txt"</span><span class="p">,</span><span class="s2">"r"</span><span class="p">)</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-19"></a>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-20"></a><span class="c1"># leo una linea</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-21"></a><span class="n">s1</span> <span class="o">=</span> <span class="n">ae</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-22"></a><span class="c1"># leo otra linea</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-23"></a><span class="n">s2</span> <span class="o">=</span> <span class="n">ae</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-24"></a><span class="c1"># muestro las lineas leidas</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-25"></a><span class="nb">print</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">)</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-26"></a><span class="c1"># cierro el archivo</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-27"></a><span class="n">ae</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-28"></a>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-29"></a><span class="c1"># abro el archivo prueba01.txt</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-30"></a><span class="c1"># para lectura</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-31"></a><span class="n">ae</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"prueba01.txt"</span><span class="p">,</span><span class="s2">"r"</span><span class="p">)</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-32"></a><span class="k">for</span> <span class="n">lin</span> <span class="ow">in</span> <span class="n">ae</span><span class="p">:</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-33"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">lin</span><span class="p">)</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-34"></a><span class="c1"># cierro el archivo</span>
+<a name="rest_code_06710bf900264db39ccb3c6701b84723-35"></a><span class="n">ae</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre>
-<p><a class="reference external" href="../../../listings/prog/fechas.py.html">prog/fechas.py</a></p>
-<pre class="code python3"><a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datetime</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha_hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-4"></a><span class="mi">2016</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">16</span> <span class="mi">19</span><span class="p">:</span><span class="mi">47</span><span class="p">:</span><span class="mf">12.338413</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-6"></a><span class="mi">5</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-8"></a><span class="mi">2016</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">day</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-10"></a><span class="mi">16</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-11"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">second</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-12"></a><span class="mi">12</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-13"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">minute</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-14"></a><span class="mi">47</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-15"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">hour</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-16"></a><span class="mi">19</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-17"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">day</span><span class="p">,</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">month</span> <span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-18"></a><span class="mi">16</span> <span class="mi">5</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-19"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-20"></a><span class="mi">0</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-21"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1810</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">25</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-22"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-23"></a><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1810</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-24"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-25"></a><span class="mi">4</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-26"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span> <span class="o">=</span> <span class="p">(</span><span class="n">fecha_hoy</span> <span class="o">-</span> <span class="n">fecha</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-27"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span><span class="o">.</span><span class="n">days</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-28"></a><span class="mi">75232</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-29"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span><span class="o">.</span><span class="n">seconds</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-30"></a><span class="mi">71232</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-31"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span><span class="o">.</span><span class="n">microseconds</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-32"></a><span class="mi">338413</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-33"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1810</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-34"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2016</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-35"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-36"></a><span class="mi">6</span>
-<a name="rest_code_1ad9ea018ac443ebbaada12c67dbcaca-37"></a><span class="o">&gt;&gt;&gt;</span>
+<p><a class="reference external" href="../../../listings/prog/fechas.py.html">prog/fechas.py</a>  <a class="reference external" href="../../../listings/prog/fechas.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">datetime</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha_hoy</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-4"></a><span class="mi">2016</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">16</span> <span class="mi">19</span><span class="p">:</span><span class="mi">47</span><span class="p">:</span><span class="mf">12.338413</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-6"></a><span class="mi">5</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">year</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-8"></a><span class="mi">2016</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">day</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-10"></a><span class="mi">16</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-11"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">second</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-12"></a><span class="mi">12</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-13"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">minute</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-14"></a><span class="mi">47</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-15"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">hour</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-16"></a><span class="mi">19</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-17"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">day</span><span class="p">,</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">month</span> <span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-18"></a><span class="mi">16</span> <span class="mi">5</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-19"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">fecha_hoy</span><span class="o">.</span><span class="n">weekday</span><span class="p">())</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-20"></a><span class="mi">0</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-21"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1810</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">25</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-22"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-23"></a><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1810</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-24"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-25"></a><span class="mi">4</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-26"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span> <span class="o">=</span> <span class="p">(</span><span class="n">fecha_hoy</span> <span class="o">-</span> <span class="n">fecha</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-27"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span><span class="o">.</span><span class="n">days</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-28"></a><span class="mi">75232</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-29"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span><span class="o">.</span><span class="n">seconds</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-30"></a><span class="mi">71232</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-31"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">dif</span><span class="o">.</span><span class="n">microseconds</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-32"></a><span class="mi">338413</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-33"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">1810</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-34"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2016</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">15</span><span class="p">)</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-35"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">fecha</span><span class="o">.</span><span class="n">weekday</span><span class="p">()</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-36"></a><span class="mi">6</span>
+<a name="rest_code_83182f8c6ab04d739b51cdb9fb347fae-37"></a><span class="o">&gt;&gt;&gt;</span>
 </pre>
 <hr class="docutils">
 <div class="section" id="ejercicios">
@@ -313,7 +312,7 @@ Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -
 </div>
 
 
-            <script src="../../../assets/js/all-nocdn.js"></script><script src="../../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+            <script src="../../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("es");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates -->

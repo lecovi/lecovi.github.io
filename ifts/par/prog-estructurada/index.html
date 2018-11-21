@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/ifts/par/prog-estructurada/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Programación Estructurada">
 <meta property="og:url" content="http://lecovi.github.io/ifts/par/prog-estructurada/">
-<meta property="og:description" content="Contents
+<meta property="og:description" content="Contenido
 
 Paradigmas de Programación
 Los lenguajes y los paradigmas de programación
@@ -29,7 +29,7 @@ Modo de apertura
 
 
 Escribiendo archivos
-Archivos binarios">
+Archivos binario">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-08-26T15:18:41-03:00">
 </head>
@@ -137,8 +137,8 @@ Archivos binarios">
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="contenido">
+<p class="topic-title first">Contenido</p>
 <ul class="simple">
 <li>
 <a class="reference internal" href="#paradigmas-de-programacion" id="id1">Paradigmas de Programación</a><ul>
@@ -220,17 +220,17 @@ archivos los llamaremos simplemente <strong>archivos binarios</strong>.</p>
 <h3><a class="toc-backref" href="#id5">Manejo de archivos con Python</a></h3>
 <p>Supongamos que tenemos un archivo con los nombres de diferentes usuarios y queremos abrirlo y procesarlo con Python.
 Para ello tendremos que abrir el archivo e ir leyendo la información del mismo, línea por línea.</p>
-<p><a class="reference external" href="../../../listings/par/usuarios.txt.html">par/usuarios.txt</a></p>
-<pre class="code text"><a name="rest_code_7a741e22a6a644faaba6bb7b2403546c-1"></a>juan
-<a name="rest_code_7a741e22a6a644faaba6bb7b2403546c-2"></a>pedro
-<a name="rest_code_7a741e22a6a644faaba6bb7b2403546c-3"></a>ana
-<a name="rest_code_7a741e22a6a644faaba6bb7b2403546c-4"></a>telma
-<a name="rest_code_7a741e22a6a644faaba6bb7b2403546c-5"></a>lucía
-<a name="rest_code_7a741e22a6a644faaba6bb7b2403546c-6"></a>nicolás
-<a name="rest_code_7a741e22a6a644faaba6bb7b2403546c-7"></a>walter
-<a name="rest_code_7a741e22a6a644faaba6bb7b2403546c-8"></a>florencia
-<a name="rest_code_7a741e22a6a644faaba6bb7b2403546c-9"></a>santiago
-<a name="rest_code_7a741e22a6a644faaba6bb7b2403546c-10"></a>mariana
+<p><a class="reference external" href="../../../listings/par/usuarios.txt.html">par/usuarios.txt</a>  <a class="reference external" href="../../../listings/par/usuarios.txt">(Código fuente)</a></p>
+<pre class="code text"><a name="rest_code_5e506427ffe7413380a11e0391a24dbf-1"></a>juan
+<a name="rest_code_5e506427ffe7413380a11e0391a24dbf-2"></a>pedro
+<a name="rest_code_5e506427ffe7413380a11e0391a24dbf-3"></a>ana
+<a name="rest_code_5e506427ffe7413380a11e0391a24dbf-4"></a>telma
+<a name="rest_code_5e506427ffe7413380a11e0391a24dbf-5"></a>lucía
+<a name="rest_code_5e506427ffe7413380a11e0391a24dbf-6"></a>nicolás
+<a name="rest_code_5e506427ffe7413380a11e0391a24dbf-7"></a>walter
+<a name="rest_code_5e506427ffe7413380a11e0391a24dbf-8"></a>florencia
+<a name="rest_code_5e506427ffe7413380a11e0391a24dbf-9"></a>santiago
+<a name="rest_code_5e506427ffe7413380a11e0391a24dbf-10"></a>mariana
 </pre>
 <p>Python nos provee de la función <tt class="docutils literal">open</tt> que espera como argumento el <em>path</em> del archivo que se quiere abrir. Cuando
 abrimos un archivo nos devuelve un objeto <tt class="docutils literal">_io.TextIOWrapper</tt> este tiene varios métodos para procesar
@@ -239,58 +239,58 @@ un salto de línea, es decir el caracter <tt class="docutils literal">\n</tt>. C
 string vacío <tt class="docutils literal">''</tt>.
 No hay que olvidar de cerrar el archivo luego de procesarlo para evitar corromper la información que hay dentro. Para
 eso hay que usar el método <tt class="docutils literal">close</tt>.</p>
-<pre class="code ipython"><a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'usuarios.txt'</span><span class="p">)</span>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-2"></a>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-3"></a><span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="nb">type</span><span class="p">(</span><span class="n">archivo</span><span class="p">)</span>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-4"></a><span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">_io</span><span class="o">.</span><span class="n">TextIOWrapper</span>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-5"></a>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-6"></a><span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-7"></a><span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="s">'juan</span><span class="se">\n</span><span class="s">'</span>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-8"></a>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-9"></a><span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-10"></a><span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="s">'pedro</span><span class="se">\n</span><span class="s">'</span>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-11"></a>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-12"></a><span class="o">...</span>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-13"></a>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-14"></a><span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-15"></a><span class="n">Out</span><span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="s">''</span>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-16"></a>
-<a name="rest_code_3ac7381d99ad4ba79f80b07ebe21d3e9-17"></a><span class="n">In</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<pre class="code ipython"><a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'usuarios.txt'</span><span class="p">)</span>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-2"></a>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-3"></a><span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="nb">type</span><span class="p">(</span><span class="n">archivo</span><span class="p">)</span>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-4"></a><span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">_io</span><span class="o">.</span><span class="n">TextIOWrapper</span>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-5"></a>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-6"></a><span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-7"></a><span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="s1">'juan</span><span class="se">\n</span><span class="s1">'</span>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-8"></a>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-9"></a><span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-10"></a><span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="s1">'pedro</span><span class="se">\n</span><span class="s1">'</span>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-11"></a>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-12"></a><span class="o">...</span>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-13"></a>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-14"></a><span class="n">In</span> <span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-15"></a><span class="n">Out</span><span class="p">[</span><span class="mi">13</span><span class="p">]:</span> <span class="s1">''</span>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-16"></a>
+<a name="rest_code_28328f94ddbd434faf0c1132ba2d4c1a-17"></a><span class="n">In</span> <span class="p">[</span><span class="mi">14</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre>
 <p>Sabiendo que <tt class="docutils literal">readline</tt> lee las líneas del archivo y devuelve una línea vacía cuando ya no hay más, podríamos
 generar un ciclo para leer todo el archivo e ir imprimiendo la información en la pantalla.</p>
-<p><a class="reference external" href="../../../listings/par/archivo1.py.html">par/archivo1.py</a></p>
-<pre class="code python3"><a name="rest_code_b971103ffed84b45b29fc5d699f22bdc-1"></a><span class="c">#!/usr/bin/env python</span>
-<a name="rest_code_b971103ffed84b45b29fc5d699f22bdc-2"></a>
-<a name="rest_code_b971103ffed84b45b29fc5d699f22bdc-3"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'usuarios.txt'</span><span class="p">)</span>
-<a name="rest_code_b971103ffed84b45b29fc5d699f22bdc-4"></a>
-<a name="rest_code_b971103ffed84b45b29fc5d699f22bdc-5"></a><span class="n">linea</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="rest_code_b971103ffed84b45b29fc5d699f22bdc-6"></a><span class="k">while</span> <span class="n">linea</span> <span class="o">!=</span> <span class="s">''</span><span class="p">:</span>
-<a name="rest_code_b971103ffed84b45b29fc5d699f22bdc-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
-<a name="rest_code_b971103ffed84b45b29fc5d699f22bdc-8"></a>    <span class="n">linea</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="rest_code_b971103ffed84b45b29fc5d699f22bdc-9"></a>
-<a name="rest_code_b971103ffed84b45b29fc5d699f22bdc-10"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<p><a class="reference external" href="../../../listings/par/archivo1.py.html">par/archivo1.py</a>  <a class="reference external" href="../../../listings/par/archivo1.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_5583fbb45ed84a19882cf4f754efb072-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_5583fbb45ed84a19882cf4f754efb072-2"></a>
+<a name="rest_code_5583fbb45ed84a19882cf4f754efb072-3"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'usuarios.txt'</span><span class="p">)</span>
+<a name="rest_code_5583fbb45ed84a19882cf4f754efb072-4"></a>
+<a name="rest_code_5583fbb45ed84a19882cf4f754efb072-5"></a><span class="n">linea</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a name="rest_code_5583fbb45ed84a19882cf4f754efb072-6"></a><span class="k">while</span> <span class="n">linea</span> <span class="o">!=</span> <span class="s1">''</span><span class="p">:</span>
+<a name="rest_code_5583fbb45ed84a19882cf4f754efb072-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+<a name="rest_code_5583fbb45ed84a19882cf4f754efb072-8"></a>    <span class="n">linea</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a name="rest_code_5583fbb45ed84a19882cf4f754efb072-9"></a>
+<a name="rest_code_5583fbb45ed84a19882cf4f754efb072-10"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre>
 <p>Podemos obtener el mismo resultado con un ciclo <tt class="docutils literal">for</tt> con la ventaja que <strong>Python</strong> ya sabe cómo tiene que iterar
 sobre un objeto archivo y para cada ciclo nos devolverá una línea del archivo.</p>
-<p><a class="reference external" href="../../../listings/par/archivo2.py.html">par/archivo2.py</a></p>
-<pre class="code python3"><a name="rest_code_f7c37ebe20f44adb947b368cbe4047d6-1"></a><span class="c">#!/usr/bin/env python</span>
-<a name="rest_code_f7c37ebe20f44adb947b368cbe4047d6-2"></a>
-<a name="rest_code_f7c37ebe20f44adb947b368cbe4047d6-3"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'usuarios.txt'</span><span class="p">)</span>
-<a name="rest_code_f7c37ebe20f44adb947b368cbe4047d6-4"></a>
-<a name="rest_code_f7c37ebe20f44adb947b368cbe4047d6-5"></a><span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="p">:</span>
-<a name="rest_code_f7c37ebe20f44adb947b368cbe4047d6-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
-<a name="rest_code_f7c37ebe20f44adb947b368cbe4047d6-7"></a>
-<a name="rest_code_f7c37ebe20f44adb947b368cbe4047d6-8"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<p><a class="reference external" href="../../../listings/par/archivo2.py.html">par/archivo2.py</a>  <a class="reference external" href="../../../listings/par/archivo2.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_d0c3a3530db0484f9e12deb281d48b21-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_d0c3a3530db0484f9e12deb281d48b21-2"></a>
+<a name="rest_code_d0c3a3530db0484f9e12deb281d48b21-3"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'usuarios.txt'</span><span class="p">)</span>
+<a name="rest_code_d0c3a3530db0484f9e12deb281d48b21-4"></a>
+<a name="rest_code_d0c3a3530db0484f9e12deb281d48b21-5"></a><span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="p">:</span>
+<a name="rest_code_d0c3a3530db0484f9e12deb281d48b21-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+<a name="rest_code_d0c3a3530db0484f9e12deb281d48b21-7"></a>
+<a name="rest_code_d0c3a3530db0484f9e12deb281d48b21-8"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre>
 <p>También nos provee de una sintaxis mucho más limpia utilizando el bloque <tt class="docutils literal">with</tt> que además se ocupa de cerrar el
 archivo cuando se sale del bloque.</p>
-<p><a class="reference external" href="../../../listings/par/archivo3.py.html">par/archivo3.py</a></p>
-<pre class="code python3"><a name="rest_code_d5203436e48346d281970c8ba30bfe03-1"></a><span class="c">#!/usr/bin/env python</span>
-<a name="rest_code_d5203436e48346d281970c8ba30bfe03-2"></a>
-<a name="rest_code_d5203436e48346d281970c8ba30bfe03-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'usuarios.txt'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
-<a name="rest_code_d5203436e48346d281970c8ba30bfe03-4"></a>    <span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="p">:</span>
-<a name="rest_code_d5203436e48346d281970c8ba30bfe03-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+<p><a class="reference external" href="../../../listings/par/archivo3.py.html">par/archivo3.py</a>  <a class="reference external" href="../../../listings/par/archivo3.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_071d61fe91b443d79711453fe6f5adbf-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_071d61fe91b443d79711453fe6f5adbf-2"></a>
+<a name="rest_code_071d61fe91b443d79711453fe6f5adbf-3"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'usuarios.txt'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+<a name="rest_code_071d61fe91b443d79711453fe6f5adbf-4"></a>    <span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="p">:</span>
+<a name="rest_code_071d61fe91b443d79711453fe6f5adbf-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
 </pre>
 <div class="section" id="modo-de-apertura">
 <h4><a class="toc-backref" href="#id6">Modo de apertura</a></h4>
@@ -316,46 +316,46 @@ abre para escritura, Python se encargará de crear el archivo al momento de abri
 <div class="section" id="escribiendo-archivos">
 <h3><a class="toc-backref" href="#id7">Escribiendo archivos</a></h3>
 <p>Si abrimos el archivo con <tt class="docutils literal">w</tt> creamos un nuevo archivo con cada ejecución del siguiente programa.</p>
-<p><a class="reference external" href="../../../listings/par/archivo4.py.html">par/archivo4.py</a></p>
-<pre class="code python3"><a name="rest_code_bf296a12ed83464d90e6486988335268-1"></a><span class="c">#!/usr/bin/env python</span>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-2"></a>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-3"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'nuevos_usuarios.txt'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-4"></a>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-5"></a><span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-6"></a><span class="k">while</span> <span class="n">usuario</span> <span class="o">!=</span> <span class="s">''</span><span class="p">:</span>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-7"></a>    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">usuario</span><span class="p">)</span>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-8"></a>    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-9"></a>    <span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-10"></a>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-11"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-12"></a>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-13"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'nuevos_usuarios.txt'</span><span class="p">)</span>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-14"></a>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-15"></a><span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="p">:</span>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-17"></a>
-<a name="rest_code_bf296a12ed83464d90e6486988335268-18"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<p><a class="reference external" href="../../../listings/par/archivo4.py.html">par/archivo4.py</a>  <a class="reference external" href="../../../listings/par/archivo4.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-2"></a>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-3"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'nuevos_usuarios.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-4"></a>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-5"></a><span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-6"></a><span class="k">while</span> <span class="n">usuario</span> <span class="o">!=</span> <span class="s1">''</span><span class="p">:</span>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-7"></a>    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">usuario</span><span class="p">)</span>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-8"></a>    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-9"></a>    <span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-10"></a>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-11"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-12"></a>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-13"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'nuevos_usuarios.txt'</span><span class="p">)</span>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-14"></a>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-15"></a><span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="p">:</span>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-17"></a>
+<a name="rest_code_8859e7694dd54e1ea289f63d704b71e4-18"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre>
 <p>Si en cambio lo abrimos con <tt class="docutils literal">a</tt>, vamos a agregar al contenido que ya teníamos.</p>
-<p><a class="reference external" href="../../../listings/par/archivo5.py.html">par/archivo5.py</a></p>
-<pre class="code python3"><a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-1"></a><span class="c">#!/usr/bin/env python</span>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-2"></a>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-3"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'nuevos_usuarios.txt'</span><span class="p">,</span> <span class="s">'a'</span><span class="p">)</span>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-4"></a>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-5"></a><span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-6"></a><span class="k">while</span> <span class="n">usuario</span> <span class="o">!=</span> <span class="s">''</span><span class="p">:</span>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-7"></a>    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">usuario</span><span class="p">)</span>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-8"></a>    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">'</span><span class="se">\n</span><span class="s">'</span><span class="p">)</span>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-9"></a>    <span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-10"></a>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-11"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-12"></a>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-13"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'nuevos_usuarios.txt'</span><span class="p">)</span>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-14"></a>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-15"></a><span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="p">:</span>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-17"></a>
-<a name="rest_code_f935104af1ce4f6cacbe1bc05815fc18-18"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<p><a class="reference external" href="../../../listings/par/archivo5.py.html">par/archivo5.py</a>  <a class="reference external" href="../../../listings/par/archivo5.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-2"></a>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-3"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'nuevos_usuarios.txt'</span><span class="p">,</span> <span class="s1">'a'</span><span class="p">)</span>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-4"></a>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-5"></a><span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-6"></a><span class="k">while</span> <span class="n">usuario</span> <span class="o">!=</span> <span class="s1">''</span><span class="p">:</span>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-7"></a>    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">usuario</span><span class="p">)</span>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-8"></a>    <span class="n">archivo</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">)</span>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-9"></a>    <span class="n">usuario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese nombre de nuevo usuario [ENTER para salir]: '</span><span class="p">)</span>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-10"></a>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-11"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-12"></a>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-13"></a><span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'nuevos_usuarios.txt'</span><span class="p">)</span>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-14"></a>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-15"></a><span class="k">for</span> <span class="n">linea</span> <span class="ow">in</span> <span class="n">archivo</span><span class="p">:</span>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-16"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-17"></a>
+<a name="rest_code_ba9391cffe2340e7af31a1ae279fc230-18"></a><span class="n">archivo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre>
 </div>
 <div class="section" id="archivos-binarios">
@@ -365,37 +365,37 @@ abre para escritura, Python se encargará de crear el archivo al momento de abri
 Usaremos dos métodos que nos servirán para controlar el cursor: <tt class="docutils literal">tell</tt> y <tt class="docutils literal">seek</tt>. El primero nos
 dice en qué posición está ubicado el cursor, mientras que el otro nos permite mover el cursor <em>n bytes</em>
 como se le pase como argumento.</p>
-<pre class="code ipython"><a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'usuarios.txt'</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-2"></a>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-3"></a><span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-4"></a><span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="mi">0</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-5"></a>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-6"></a><span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-7"></a><span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">b</span><span class="s">'juan</span><span class="se">\n</span><span class="s">'</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-8"></a>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-9"></a><span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-10"></a><span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="mi">5</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-11"></a>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-12"></a><span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-13"></a><span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">b</span><span class="s">'pedro'</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-14"></a>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-15"></a><span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-16"></a><span class="n">Out</span><span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="mi">10</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-17"></a>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-18"></a><span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-19"></a><span class="n">Out</span><span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">b</span><span class="s">'</span><span class="se">\n</span><span class="s">ana</span><span class="se">\n</span><span class="s">'</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-20"></a>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-21"></a><span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-22"></a><span class="n">Out</span><span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="mi">15</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-23"></a>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-24"></a><span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-25"></a><span class="n">Out</span><span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="mi">21</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-26"></a>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-27"></a><span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-28"></a><span class="n">Out</span><span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="mi">21</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-29"></a>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-30"></a><span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
-<a name="rest_code_242d49e754ab43d6a7e4aa279ac3cff2-31"></a><span class="n">Out</span><span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="n">b</span><span class="s">'luc</span><span class="se">\xc3\xad</span><span class="s">a'</span>
+<pre class="code ipython"><a name="rest_code_fbc69b5d59e74359be8f2247162ba358-1"></a><span class="n">In</span> <span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">archivo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'usuarios.txt'</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">)</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-2"></a>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-3"></a><span class="n">In</span> <span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-4"></a><span class="n">Out</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span> <span class="mi">0</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-5"></a>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-6"></a><span class="n">In</span> <span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-7"></a><span class="n">Out</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span> <span class="sa">b</span><span class="s1">'juan</span><span class="se">\n</span><span class="s1">'</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-8"></a>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-9"></a><span class="n">In</span> <span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-10"></a><span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="mi">5</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-11"></a>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-12"></a><span class="n">In</span> <span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-13"></a><span class="n">Out</span><span class="p">[</span><span class="mi">5</span><span class="p">]:</span> <span class="sa">b</span><span class="s1">'pedro'</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-14"></a>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-15"></a><span class="n">In</span> <span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-16"></a><span class="n">Out</span><span class="p">[</span><span class="mi">6</span><span class="p">]:</span> <span class="mi">10</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-17"></a>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-18"></a><span class="n">In</span> <span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-19"></a><span class="n">Out</span><span class="p">[</span><span class="mi">7</span><span class="p">]:</span> <span class="sa">b</span><span class="s1">'</span><span class="se">\n</span><span class="s1">ana</span><span class="se">\n</span><span class="s1">'</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-20"></a>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-21"></a><span class="n">In</span> <span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-22"></a><span class="n">Out</span><span class="p">[</span><span class="mi">8</span><span class="p">]:</span> <span class="mi">15</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-23"></a>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-24"></a><span class="n">In</span> <span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-25"></a><span class="n">Out</span><span class="p">[</span><span class="mi">9</span><span class="p">]:</span> <span class="mi">21</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-26"></a>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-27"></a><span class="n">In</span> <span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-28"></a><span class="n">Out</span><span class="p">[</span><span class="mi">10</span><span class="p">]:</span> <span class="mi">21</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-29"></a>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-30"></a><span class="n">In</span> <span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<a name="rest_code_fbc69b5d59e74359be8f2247162ba358-31"></a><span class="n">Out</span><span class="p">[</span><span class="mi">11</span><span class="p">]:</span> <span class="sa">b</span><span class="s1">'luc</span><span class="se">\xc3\xad</span><span class="s1">a'</span>
 </pre>
 <p>Cabe destacar que la salida de la lectura nos muestra <tt class="docutils literal"><span class="pre">b'\nana\n'</span></tt>, con una <tt class="docutils literal">b</tt> antes de mostrar
 la cadena. Eso quiere decir que nos está mostrando los <em>bytes</em>, y la forma de representación de esos
@@ -446,7 +446,7 @@ Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -
 </div>
 
 
-            <script src="../../../assets/js/all-nocdn.js"></script><script src="../../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+            <script src="../../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("es");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates -->

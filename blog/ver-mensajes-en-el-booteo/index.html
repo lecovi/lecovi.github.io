@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 <link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/blog/ver-mensajes-en-el-booteo/">
 <!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -154,21 +154,21 @@ esos mensajes. Comencemos...</p>
 <!-- TEASER_END -->
 <div class="section" id="edicion-de-los-parametros-de-inicio">
 <h2>Edición de los parámetros de inicio</h2>
-<pre class="code console"><a name="rest_code_2bb052c31754463d97a54d369fca21ca-1"></a><span class="gp">$</span> sudo vim /etc/default/grub
+<pre class="code console"><a name="rest_code_1fc7c36068d849f3b0c1371bb32e2d6d-1"></a><span class="gp">$</span> sudo vim /etc/default/grub
 </pre>
 <p>Hay que editar el archivo <tt class="docutils literal">/etc/default/grub</tt> en este archivo vamos a
 encontrar una línea que dice:</p>
-<pre class="code console"><a name="rest_code_e1593ac59e944e17ae971e25c9afc250-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</span>
+<pre class="code console"><a name="rest_code_98c6919a34294d179d18061cfc6e2d82-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</span>
 </pre>
 <p>Tenemos que remover la opción de <tt class="docutils literal">"quiet splas"</tt> para que la línea en
 cuestión quede como:</p>
-<pre class="code console"><a name="rest_code_914e7e5e00fe48299354fb0d3b309e47-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT=""</span>
+<pre class="code console"><a name="rest_code_2aa466e8211f47f9b8f235675724b0b2-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT=""</span>
 </pre>
 </div>
 <div class="section" id="actualizando-grub">
 <h2>Actualizando GRUB</h2>
 <p>Finalmente actualizamos las opciones de GRUB con el comando:</p>
-<pre class="code console"><a name="rest_code_0564b8b261414e46bd0791dd5224fbb5-1"></a><span class="gp">$</span> sudo update-grub
+<pre class="code console"><a name="rest_code_91cdb1a92ae24ff4a71dac0308f6af78-1"></a><span class="gp">$</span> sudo update-grub
 </pre>
 <p>Listo! En el próximo inicio veremos como se va cargando el sistema.</p>
 </div>
@@ -236,7 +236,7 @@ Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -
 </div>
 
 
-            <script src="../../assets/js/all-nocdn.js"></script><script src="../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+            <script src="../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("es");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates -->

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="description" content="Leo's personal site">
@@ -8,7 +8,7 @@
 <link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/blog/">
 <link rel="next" href="index-5.html" type="text/html">
 <!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
@@ -113,12 +113,15 @@
 
     
 <div class="postindex">
-    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="instalar-vagrant/" class="u-url">Instalar Vagrant</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="instalar-vagrant/" class="u-url">Instalar Vagrant</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Leandro E. Colombo Viña
             </span></p>
-            <p class="dateline"><a href="instalar-vagrant/" rel="bookmark"><time class="published dt-published" datetime="2018-02-08T13:56:35-03:00" title="2018-02-08 13:56">2018-02-08 13:56</time></a></p>
+            <p class="dateline">
+            <a href="instalar-vagrant/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-02-08T13:56:35-03:00" itemprop="datePublished" title="2018-02-08 13:56">2018-02-08 13:56</time></a>
+            </p>
                 <p class="commentline">
         
     <a href="instalar-vagrant/#disqus_thread" data-disqus-identifier="cache/posts/instalar-vagrant.html">Comments</a>
@@ -141,12 +144,15 @@ $
 </pre>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="micropython-en-la-nodemcu/" class="u-url">Micropython en la nodemcu</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="micropython-en-la-nodemcu/" class="u-url">Micropython en la nodemcu</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Leandro E. Colombo Viña
             </span></p>
-            <p class="dateline"><a href="micropython-en-la-nodemcu/" rel="bookmark"><time class="published dt-published" datetime="2018-01-09T11:45:06-03:00" title="2018-01-09 11:45">2018-01-09 11:45</time></a></p>
+            <p class="dateline">
+            <a href="micropython-en-la-nodemcu/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-01-09T11:45:06-03:00" itemprop="datePublished" title="2018-01-09 11:45">2018-01-09 11:45</time></a>
+            </p>
                 <p class="commentline">
         
     <a href="micropython-en-la-nodemcu/#disqus_thread" data-disqus-identifier="cache/posts/micropython-en-la-nodemcu.html">Comments</a>
@@ -173,10 +179,10 @@ placa, cómo conectarse y jugar con el led integrado. Manos a la obra!</p>
 <h3>Instalando <tt class="docutils literal">picocom</tt>
 </h3>
 <p>Para Fedora:</p>
-<pre class="code bash"><a name="rest_code_1cf69520db3346f7afb9d92fb77fa908-1"></a>sudo dnf install picocom
+<pre class="code bash"><a name="rest_code_f503be576b614630b56a2416b3ed9002-1"></a>sudo dnf install picocom
 </pre>
 <p>Para Debian y derivados:</p>
-<pre class="code bash"><a name="rest_code_46004cfbb1324485be1a8a8eb6501ddb-1"></a>sudo apt install picocom
+<pre class="code bash"><a name="rest_code_c2e871ba11464dafba236d955a5aaa2c-1"></a>sudo apt install picocom
 </pre>
 </div>
 <div class="section" id="instalando-esptool">
@@ -187,7 +193,7 @@ Es conveniente instalarlo con el flag <tt class="docutils literal"><span class="
 instalado entre los paquetes del sistema. Pero tenés que asegurarte que tu
 usuario tenga permisos para acceder a los dispositivos serie
 (<cite>/dev/ttyUSB</cite>).</blockquote>
-<pre class="code bash"><a name="rest_code_0f21d2a539fe49448de42885a1edd6ac-1"></a>pip install esptool
+<pre class="code bash"><a name="rest_code_fb12e4548dd249caa03663a22b220275-1"></a>pip install esptool
 </pre>
 </div>
 <div class="section" id="descargar-el-firmware">
@@ -218,7 +224,7 @@ cargar el nuevo firmware con <tt class="docutils literal">esptool</tt>.</p>
 </h3>
 <p>Ahora con <tt class="docutils literal">picocom</tt> (o <tt class="docutils literal">minicom</tt> o el que más te guste) con la placa
 conectada al USB ejecutás:</p>
-<pre class="code bash"><a name="rest_code_3bfbd0ba12c4433ca31f3b6280888726-1"></a>sudo picocom /dev/ttyUSB0 -b115200
+<pre class="code bash"><a name="rest_code_f506e9bc5ed340d1b60602eddeef5a69-1"></a>sudo picocom /dev/ttyUSB0 -b115200
 </pre>
 <p>Si tenés permisos sobre el dispositivo USB el <cite>picocom</cite> se va a conectar a la
 placa sin ningún tipo de problemas. Luego del mensaje <tt class="docutils literal">Terminal ready</tt>
@@ -232,54 +238,54 @@ presionamos la tecla <cite>enter</cite> y tendremos que ver el prompt del REPL d
 <h2>Un paso más</h2>
 <p>Probemos que nuestra instalación de micropython funciona correctamente.
 Escribamos el famoso <cite>Hola Mundo!</cite>.</p>
-<pre class="code python3"><a name="rest_code_43cc45fb6053485191dc4c46b12e02a3-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"Hola nodemcu"</span><span class="p">)</span>
-<a name="rest_code_43cc45fb6053485191dc4c46b12e02a3-2"></a><span class="n">Hola</span> <span class="n">nodemcu</span>
-<a name="rest_code_43cc45fb6053485191dc4c46b12e02a3-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">34</span> <span class="o">+</span> <span class="mi">5</span>
-<a name="rest_code_43cc45fb6053485191dc4c46b12e02a3-4"></a><span class="mi">39</span>
-<a name="rest_code_43cc45fb6053485191dc4c46b12e02a3-5"></a><span class="o">&gt;&gt;&gt;</span>
+<pre class="code python3"><a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"Hola nodemcu"</span><span class="p">)</span>
+<a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-2"></a><span class="n">Hola</span> <span class="n">nodemcu</span>
+<a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">34</span> <span class="o">+</span> <span class="mi">5</span>
+<a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-4"></a><span class="mi">39</span>
+<a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-5"></a><span class="o">&gt;&gt;&gt;</span>
 </pre>
 <div class="section" id="que-se-haga-la-luz">
 <h3>Que se haga la luz!</h3>
 <p>Genial! Todo funciona de maravillas. Hagamos algo un poco más interesante.
 Prendamos el led que tiene la placa.</p>
-<pre class="code python3"><a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">machine</span>
-<a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span> <span class="o">=</span> <span class="n">machine</span><span class="o">.</span><span class="n">Pin</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">machine</span><span class="o">.</span><span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-<a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-<a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-<a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-<a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-6"></a><span class="o">&gt;&gt;&gt;</span>
+<pre class="code python3"><a name="rest_code_58097444cb954025b7865d3ad42fd64a-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">machine</span>
+<a name="rest_code_58097444cb954025b7865d3ad42fd64a-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span> <span class="o">=</span> <span class="n">machine</span><span class="o">.</span><span class="n">Pin</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">machine</span><span class="o">.</span><span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<a name="rest_code_58097444cb954025b7865d3ad42fd64a-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+<a name="rest_code_58097444cb954025b7865d3ad42fd64a-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+<a name="rest_code_58097444cb954025b7865d3ad42fd64a-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+<a name="rest_code_58097444cb954025b7865d3ad42fd64a-6"></a><span class="o">&gt;&gt;&gt;</span>
 </pre>
 <p>Impecable! Todo funciona de maravillas. Ahora hagamos parpadear al led...</p>
-<pre class="code python3"><a name="rest_code_714847d26487417f8f2272f119a39f54-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">time</span>
-<a name="rest_code_714847d26487417f8f2272f119a39f54-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-<a name="rest_code_714847d26487417f8f2272f119a39f54-3"></a><span class="o">...</span>     <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-<a name="rest_code_714847d26487417f8f2272f119a39f54-4"></a><span class="o">...</span>     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a name="rest_code_714847d26487417f8f2272f119a39f54-5"></a><span class="o">...</span>     <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-<a name="rest_code_714847d26487417f8f2272f119a39f54-6"></a><span class="o">...</span>     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a name="rest_code_714847d26487417f8f2272f119a39f54-7"></a><span class="o">...</span>
-<a name="rest_code_714847d26487417f8f2272f119a39f54-8"></a><span class="o">...</span>
-<a name="rest_code_714847d26487417f8f2272f119a39f54-9"></a><span class="o">...</span>
-<a name="rest_code_714847d26487417f8f2272f119a39f54-10"></a><span class="o">&gt;&gt;&gt;</span>
+<pre class="code python3"><a name="rest_code_f7e7123065394934a2303fe24b6ee766-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">time</span>
+<a name="rest_code_f7e7123065394934a2303fe24b6ee766-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<a name="rest_code_f7e7123065394934a2303fe24b6ee766-3"></a><span class="o">...</span>     <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+<a name="rest_code_f7e7123065394934a2303fe24b6ee766-4"></a><span class="o">...</span>     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a name="rest_code_f7e7123065394934a2303fe24b6ee766-5"></a><span class="o">...</span>     <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+<a name="rest_code_f7e7123065394934a2303fe24b6ee766-6"></a><span class="o">...</span>     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a name="rest_code_f7e7123065394934a2303fe24b6ee766-7"></a><span class="o">...</span>
+<a name="rest_code_f7e7123065394934a2303fe24b6ee766-8"></a><span class="o">...</span>
+<a name="rest_code_f7e7123065394934a2303fe24b6ee766-9"></a><span class="o">...</span>
+<a name="rest_code_f7e7123065394934a2303fe24b6ee766-10"></a><span class="o">&gt;&gt;&gt;</span>
 </pre>
 <img alt="usando el intérprete de micropython" class="align-center" src="../images/blog/upython/repl.png">
 </div>
 <div class="section" id="conectate">
 <h3>Conectate!</h3>
 <p>Hagamos esto un poco más interesante. Conectémonos a la red WiFi de casa.</p>
-<pre class="code python3"><a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">network</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">WLAN</span><span class="p">(</span><span class="n">network</span><span class="o">.</span><span class="n">STA_IF</span><span class="p">)</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">()</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-4"></a><span class="kc">False</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-6"></a><span class="c1">#5 ets_task(4020ed88, 28, 3fff9f90, 10)</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">()</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-8"></a><span class="kc">True</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'ThiagoBenjamin'</span><span class="p">,</span> <span class="s1">'&lt;escribí-tu-clave&gt;'</span><span class="p">)</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">isconnected</span><span class="p">()</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-11"></a><span class="kc">True</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">ifconfig</span><span class="p">()</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-13"></a><span class="p">(</span><span class="s1">'192.168.1.13'</span><span class="p">,</span> <span class="s1">'255.255.255.0'</span><span class="p">,</span> <span class="s1">'192.168.1.1'</span><span class="p">,</span> <span class="s1">'192.168.1.1'</span><span class="p">)</span>
-<a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-14"></a><span class="o">&gt;&gt;&gt;</span>
+<pre class="code python3"><a name="rest_code_59b7162a6e794edf8471a606ef6c0671-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">network</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">WLAN</span><span class="p">(</span><span class="n">network</span><span class="o">.</span><span class="n">STA_IF</span><span class="p">)</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">()</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-4"></a><span class="kc">False</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-6"></a><span class="c1">#5 ets_task(4020ed88, 28, 3fff9f90, 10)</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">()</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-8"></a><span class="kc">True</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'ThiagoBenjamin'</span><span class="p">,</span> <span class="s1">'&lt;escribí-tu-clave&gt;'</span><span class="p">)</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">isconnected</span><span class="p">()</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-11"></a><span class="kc">True</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">ifconfig</span><span class="p">()</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-13"></a><span class="p">(</span><span class="s1">'192.168.1.13'</span><span class="p">,</span> <span class="s1">'255.255.255.0'</span><span class="p">,</span> <span class="s1">'192.168.1.1'</span><span class="p">,</span> <span class="s1">'192.168.1.1'</span><span class="p">)</span>
+<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-14"></a><span class="o">&gt;&gt;&gt;</span>
 </pre>
 <p>done!</p>
 </div>
@@ -298,12 +304,15 @@ Prendamos el led que tiene la placa.</p>
 </div>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="apt-advanced-package-tool/" class="u-url">APT - Advanced Package Tool</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="apt-advanced-package-tool/" class="u-url">APT - Advanced Package Tool</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Leandro E. Colombo Viña
             </span></p>
-            <p class="dateline"><a href="apt-advanced-package-tool/" rel="bookmark"><time class="published dt-published" datetime="2016-04-17T20:28:15-03:00" title="2016-04-17 20:28">2016-04-17 20:28</time></a></p>
+            <p class="dateline">
+            <a href="apt-advanced-package-tool/" rel="bookmark">
+            <time class="published dt-published" datetime="2016-04-17T20:28:15-03:00" itemprop="datePublished" title="2016-04-17 20:28">2016-04-17 20:28</time></a>
+            </p>
                 <p class="commentline">
         
     <a href="apt-advanced-package-tool/#disqus_thread" data-disqus-identifier="cache/posts/apt-advanced-package-tool.html">Comments</a>
@@ -317,12 +326,15 @@ Prendamos el led que tiene la placa.</p>
 <p class="more"><a href="apt-advanced-package-tool/">Leer más…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="entrando-al-mundo-de-gnulinux/" class="u-url">Entrando al mundo de GNU/Linux</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="entrando-al-mundo-de-gnulinux/" class="u-url">Entrando al mundo de GNU/Linux</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Leandro E. Colombo Viña
             </span></p>
-            <p class="dateline"><a href="entrando-al-mundo-de-gnulinux/" rel="bookmark"><time class="published dt-published" datetime="2016-04-17T20:22:47-03:00" title="2016-04-17 20:22">2016-04-17 20:22</time></a></p>
+            <p class="dateline">
+            <a href="entrando-al-mundo-de-gnulinux/" rel="bookmark">
+            <time class="published dt-published" datetime="2016-04-17T20:22:47-03:00" itemprop="datePublished" title="2016-04-17 20:22">2016-04-17 20:22</time></a>
+            </p>
                 <p class="commentline">
         
     <a href="entrando-al-mundo-de-gnulinux/#disqus_thread" data-disqus-identifier="cache/posts/entrando-al-mundo-de-gnulinux.html">Comments</a>
@@ -336,12 +348,15 @@ Prendamos el led que tiene la placa.</p>
 <p class="more"><a href="entrando-al-mundo-de-gnulinux/">Leer más…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="la-biblia-de-debian/" class="u-url">La Biblia de Debian</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="la-biblia-de-debian/" class="u-url">La Biblia de Debian</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Leandro E. Colombo Viña
             </span></p>
-            <p class="dateline"><a href="la-biblia-de-debian/" rel="bookmark"><time class="published dt-published" datetime="2016-04-17T20:19:08-03:00" title="2016-04-17 20:19">2016-04-17 20:19</time></a></p>
+            <p class="dateline">
+            <a href="la-biblia-de-debian/" rel="bookmark">
+            <time class="published dt-published" datetime="2016-04-17T20:19:08-03:00" itemprop="datePublished" title="2016-04-17 20:19">2016-04-17 20:19</time></a>
+            </p>
                 <p class="commentline">
         
     <a href="la-biblia-de-debian/#disqus_thread" data-disqus-identifier="cache/posts/la-biblia-de-debian.html">Comments</a>
@@ -359,12 +374,15 @@ fuente oficial de documentación.</p>
 <p class="more"><a href="la-biblia-de-debian/">Leer más…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="muchas-mentes-ii-cap-03-codigo-abierto/" class="u-url">Muchas Mentes II Cap 03- Código abierto</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="muchas-mentes-ii-cap-03-codigo-abierto/" class="u-url">Muchas Mentes II Cap 03- Código abierto</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Leandro E. Colombo Viña
             </span></p>
-            <p class="dateline"><a href="muchas-mentes-ii-cap-03-codigo-abierto/" rel="bookmark"><time class="published dt-published" datetime="2016-04-17T19:21:28-03:00" title="2016-04-17 19:21">2016-04-17 19:21</time></a></p>
+            <p class="dateline">
+            <a href="muchas-mentes-ii-cap-03-codigo-abierto/" rel="bookmark">
+            <time class="published dt-published" datetime="2016-04-17T19:21:28-03:00" itemprop="datePublished" title="2016-04-17 19:21">2016-04-17 19:21</time></a>
+            </p>
                 <p class="commentline">
         
     <a href="muchas-mentes-ii-cap-03-codigo-abierto/#disqus_thread" data-disqus-identifier="cache/posts/muchas-mentes-ii-cap-03-codigo-abierto.html">Comments</a>
@@ -374,15 +392,18 @@ fuente oficial de documentación.</p>
 </div>
     </header><div class="p-summary entry-summary">
     <div class="text-center embed-responsive embed-responsive-16by9"><div class="youtube-video">
-<iframe width="425" height="344" src="https://www.youtube.com/embed/4ocyARDnoK0?rel=0&amp;hd=1&amp;wmode=transparent"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4ocyARDnoK0?rel=0&amp;wmode=transparent" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 </div></div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="un-mundo-sin-linux/" class="u-url">Un mundo sin Linux</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="un-mundo-sin-linux/" class="u-url">Un mundo sin Linux</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Leandro E. Colombo Viña
             </span></p>
-            <p class="dateline"><a href="un-mundo-sin-linux/" rel="bookmark"><time class="published dt-published" datetime="2016-04-17T13:01:34-03:00" title="2016-04-17 13:01">2016-04-17 13:01</time></a></p>
+            <p class="dateline">
+            <a href="un-mundo-sin-linux/" rel="bookmark">
+            <time class="published dt-published" datetime="2016-04-17T13:01:34-03:00" itemprop="datePublished" title="2016-04-17 13:01">2016-04-17 13:01</time></a>
+            </p>
                 <p class="commentline">
         
     <a href="un-mundo-sin-linux/#disqus_thread" data-disqus-identifier="cache/posts/un-mundo-sin-linux.html">Comments</a>
@@ -397,12 +418,15 @@ del kernel de Linux proponen una serie de 6 videos.</p>
 <p class="more"><a href="un-mundo-sin-linux/">Leer más…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="desarrollo-de-gnulinux/" class="u-url">Desarrollo de GNU/Linux</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="desarrollo-de-gnulinux/" class="u-url">Desarrollo de GNU/Linux</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Leandro E. Colombo Viña
             </span></p>
-            <p class="dateline"><a href="desarrollo-de-gnulinux/" rel="bookmark"><time class="published dt-published" datetime="2016-04-17T12:47:55-03:00" title="2016-04-17 12:47">2016-04-17 12:47</time></a></p>
+            <p class="dateline">
+            <a href="desarrollo-de-gnulinux/" rel="bookmark">
+            <time class="published dt-published" datetime="2016-04-17T12:47:55-03:00" itemprop="datePublished" title="2016-04-17 12:47">2016-04-17 12:47</time></a>
+            </p>
                 <p class="commentline">
         
     <a href="desarrollo-de-gnulinux/#disqus_thread" data-disqus-identifier="cache/posts/desarrollo-de-gnulinux.html">Comments</a>
@@ -416,12 +440,15 @@ del kernel de Linux proponen una serie de 6 videos.</p>
 <p class="more"><a href="desarrollo-de-gnulinux/">Leer más…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="ver-mensajes-en-el-booteo/" class="u-url">Ver mensajes en el booteo</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="ver-mensajes-en-el-booteo/" class="u-url">Ver mensajes en el booteo</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Leandro E. Colombo Viña
             </span></p>
-            <p class="dateline"><a href="ver-mensajes-en-el-booteo/" rel="bookmark"><time class="published dt-published" datetime="2016-01-07T12:53:16-03:00" title="2016-01-07 12:53">2016-01-07 12:53</time></a></p>
+            <p class="dateline">
+            <a href="ver-mensajes-en-el-booteo/" rel="bookmark">
+            <time class="published dt-published" datetime="2016-01-07T12:53:16-03:00" itemprop="datePublished" title="2016-01-07 12:53">2016-01-07 12:53</time></a>
+            </p>
                 <p class="commentline">
         
     <a href="ver-mensajes-en-el-booteo/#disqus_thread" data-disqus-identifier="cache/posts/ver-mensajes-en-el-booteo.html">Comments</a>
@@ -438,12 +465,15 @@ esos mensajes. Comencemos...</p>
 <p class="more"><a href="ver-mensajes-en-el-booteo/">Leer más…</a></p>
 </div>
     </div>
-    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="grabando-la-consola/" class="u-url">Grabando la consola</a></h1>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="grabando-la-consola/" class="u-url">Grabando la consola</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Leandro E. Colombo Viña
             </span></p>
-            <p class="dateline"><a href="grabando-la-consola/" rel="bookmark"><time class="published dt-published" datetime="2015-11-08T17:35:59-03:00" title="2015-11-08 17:35">2015-11-08 17:35</time></a></p>
+            <p class="dateline">
+            <a href="grabando-la-consola/" rel="bookmark">
+            <time class="published dt-published" datetime="2015-11-08T17:35:59-03:00" itemprop="datePublished" title="2015-11-08 17:35">2015-11-08 17:35</time></a>
+            </p>
                 <p class="commentline">
         
     <a href="grabando-la-consola/#disqus_thread" data-disqus-identifier="cache/posts/grabando-la-consola.html">Comments</a>
@@ -492,7 +522,7 @@ Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -
 </div>
 
 
-            <script src="../assets/js/all-nocdn.js"></script><script src="../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+            <script src="../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("es");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates -->

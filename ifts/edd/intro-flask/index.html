@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/ifts/edd/intro-flask/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Make it So!">
 <meta property="og:title" content="Introducción a Flask">
 <meta property="og:url" content="http://lecovi.github.io/ifts/edd/intro-flask/">
-<meta property="og:description" content="Contents
+<meta property="og:description" content="Contenido
 
 Arquitectura de la web
 Cómo funciona la web
@@ -34,7 +34,7 @@ Armando la aplicación
 
 Objetivos:
 
-Compre">
+Compr">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2015-08-26T15:18:41-03:00">
 </head>
@@ -142,8 +142,8 @@ Compre">
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
-<div class="contents alert alert-info pull-right topic" id="contents">
-<p class="topic-title first">Contents</p>
+<div class="contents alert alert-info pull-right topic" id="contenido">
+<p class="topic-title first">Contenido</p>
 <ul class="simple">
 <li>
 <a class="reference internal" href="#arquitectura-de-la-web" id="id1">Arquitectura de la web</a><ul>
@@ -192,10 +192,10 @@ Compre">
 </ol>
 <p>Así como nuestro GNU/Linux tiene una herramienta para la instalación de paquetes como <tt class="docutils literal">apt</tt> o <tt class="docutils literal">yum/dnf</tt>, con Python también tenemos algo similar. Por suerte existe <tt class="docutils literal">pip</tt> y la instalación de paquetes es muy sencilla.</p>
 <p>Necesitamos tener instalado en nuestro sistema opertativo esta herramienta. Para eso debemos instalar los paquetes <tt class="docutils literal"><span class="pre">python3-pip</span></tt> para usar <tt class="docutils literal">pip3</tt> con Python 3.x y <tt class="docutils literal"><span class="pre">python-pip</span></tt> para usar <tt class="docutils literal">pip</tt> con Python 2.x:</p>
-<pre class="code bash"><a name="rest_code_30653da66e77415897d47499a122e919-1"></a><span class="nv">$ </span>sudo apt install python-pip python3-pip
+<pre class="code bash"><a name="rest_code_195f161219654f399378b5e19a795357-1"></a>$ sudo apt install python-pip python3-pip
 </pre>
 <p>Ahora que tenemos instalado <tt class="docutils literal">pip</tt> podemos usarlo para instalar <tt class="docutils literal">virtualenv</tt>.</p>
-<pre class="code bash"><a name="rest_code_28b365f9be994fc5ba8a6a9542d4a7b4-1"></a><span class="nv">$ </span>sudo pip install virtualenv
+<pre class="code bash"><a name="rest_code_ceee84fa20324cdc8b7ff82819515488-1"></a>$ sudo pip install virtualenv
 </pre>
 </div>
 <div class="section" id="creando-el-proyecto">
@@ -208,87 +208,87 @@ Compre">
 <div class="section" id="creando-el-entorno-virtual">
 <h3><a class="toc-backref" href="#id5">Creando el entorno virtual</a></h3>
 <p>Con las herramientas necesarias ya instaladas, tenemos que crear un directorio donde vamos a contener los archivos necesarios. Creamos una carpeta que se llame <tt class="docutils literal">hello_world_app</tt> y nos movemos dentro de ella para instalar el entorno virtual de Python.</p>
-<pre class="code bash"><a name="rest_code_6b518e62adac4002bbf83c9c20afefc5-1"></a>~ ➜ mkdir hello_world_app
-<a name="rest_code_6b518e62adac4002bbf83c9c20afefc5-2"></a>~ ➜ <span class="nb">cd </span>hello_world_app
-<a name="rest_code_6b518e62adac4002bbf83c9c20afefc5-3"></a>~/hello_world_app ➜
+<pre class="code bash"><a name="rest_code_ec08f1319c944ff5bb30e4a5bdcc81cf-1"></a>~ ➜ mkdir hello_world_app
+<a name="rest_code_ec08f1319c944ff5bb30e4a5bdcc81cf-2"></a>~ ➜ <span class="nb">cd</span> hello_world_app
+<a name="rest_code_ec08f1319c944ff5bb30e4a5bdcc81cf-3"></a>~/hello_world_app ➜
 </pre>
 <p>Todo el trabajo de nuestros proyecto web lo realizaremos dentro de esta carpeta <tt class="docutils literal">hello_world_app</tt>. Si queremos pasar nuestro trabajo a otra máquina basta con copiar esta carpeta a destino y tenemos nuestros proyecto donde querramos.</p>
 <p>Para instalar el entorno virtual, debemos darle un nombre, <tt class="docutils literal">flasky</tt> es el que elegimos para este proyecto. Simplemente para no confundir el nombre del entorno virtual con el paquete <cite>Flask</cite>. Vamos a usar Python 3 en nuestra aplicación. Para averiguar dónde está el binario de Python 3 usamos el comando <tt class="docutils literal">which</tt>:</p>
-<pre class="code bash"><a name="rest_code_5d358b433d4047ba8afbd6a1158d67d4-1"></a>~/hello_world_app ➜ which python3
-<a name="rest_code_5d358b433d4047ba8afbd6a1158d67d4-2"></a>/usr/bin/python3
-<a name="rest_code_5d358b433d4047ba8afbd6a1158d67d4-3"></a>~/hello_world_app ➜
+<pre class="code bash"><a name="rest_code_1979f22ef1fa488cb38629c102b79f9c-1"></a>~/hello_world_app ➜ which python3
+<a name="rest_code_1979f22ef1fa488cb38629c102b79f9c-2"></a>/usr/bin/python3
+<a name="rest_code_1979f22ef1fa488cb38629c102b79f9c-3"></a>~/hello_world_app ➜
 </pre>
 <p>Ahora le pasamos esa ruta al comando <tt class="docutils literal">virtualenv</tt> para que nos cree el entorno virtual con Python 3 utilizando el parámetro <tt class="docutils literal"><span class="pre">-p</span></tt>:</p>
-<pre class="code bash"><a name="rest_code_69e7df383e9741688a3cd454660adc43-1"></a>~/hello_world_app ➜ virtualenv -p /usr/bin/python3 flasky
+<pre class="code bash"><a name="rest_code_8b0876af113f4029924000133821e086-1"></a>~/hello_world_app ➜ virtualenv -p /usr/bin/python3 flasky
 </pre>
 <p>Esto creará una carpeta llamada <cite>flasky</cite> que contiene una instalación de Python.</p>
-<div class="tip">
-<p class="first admonition-title">Tip</p>
+<div class="admonition tip">
+<p class="first admonition-title">Consejo</p>
 <p>O podemos hacer todo junto en un mismo comando:</p>
-<div class="last"><pre class="code bash"><a name="rest_code_944723b82afc40208eda59bc87f362c6-1"></a>~/hello_world_app ➜ virtualenv -p <span class="k">$(</span>which python3<span class="k">)</span> flasky
+<div class="last"><pre class="code bash"><a name="rest_code_5c09603c90ba438eb72f642128bac5b5-1"></a>~/hello_world_app ➜ virtualenv -p <span class="k">$(</span>which python3<span class="k">)</span> flasky
 </pre></div>
 </div>
 <img alt="Árbol del entorno virtual." class="align-center" src="../../../images/edd/virtualenv_tree.png"><p>Dentro de esta carpeta nos interesa el archivo <tt class="docutils literal">activate</tt> que va a servir para activar nuestro entorno virtual en nuestra sesión activa de la terminal. Lo activamos usando el comando <tt class="docutils literal">source</tt> de la siguiente manera:</p>
-<pre class="code bash"><a name="rest_code_fa97028ef20345ae9e906f5544bb8308-1"></a>~/hello_world_app ➜ <span class="nb">source </span>flasky/bin/activate
-<a name="rest_code_fa97028ef20345ae9e906f5544bb8308-2"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜
+<pre class="code bash"><a name="rest_code_1151ae34d26d4372b4e13ab15827e740-1"></a>~/hello_world_app ➜ <span class="nb">source</span> flasky/bin/activate
+<a name="rest_code_1151ae34d26d4372b4e13ab15827e740-2"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜
 </pre>
 <p>Luego podemos usar el comando <tt class="docutils literal">deactivate</tt> para volver a tener nuestra terminal normalmente.</p>
-<pre class="code bash"><a name="rest_code_4cfb0ce49e6f437f9b3253b5ff235bcf-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ deactivate
-<a name="rest_code_4cfb0ce49e6f437f9b3253b5ff235bcf-2"></a>~/hello_world_app ➜
+<pre class="code bash"><a name="rest_code_9e85d229590d43d8a047ecab1fe820e9-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ deactivate
+<a name="rest_code_9e85d229590d43d8a047ecab1fe820e9-2"></a>~/hello_world_app ➜
 </pre>
-<div class="tip">
-<p class="first admonition-title">Tip</p>
+<div class="admonition tip">
+<p class="first admonition-title">Consejo</p>
 <p class="last">Activar el entorno virtual implica que cuando ejecutemos el comando <tt class="docutils literal">python</tt> se llamará al binario del entorno virtual y no al de la instalación normal de nuestro sistema operativo. En el entorno virtual podemos instalar diferentes paquetes y versiones y quedarán para uso exclusivo de este entorno.</p>
 </div>
 </div>
 <div class="section" id="instalando-flask">
 <h3><a class="toc-backref" href="#id6">Instalando Flask</a></h3>
 <p>Con el entorno virtual activo instalamos <tt class="docutils literal">Flask</tt> usando <tt class="docutils literal">pip</tt>.</p>
-<pre class="code bash"><a name="rest_code_450878a7af114f2aa38342b3c1e8e663-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ pip install Flask
+<pre class="code bash"><a name="rest_code_f507039c89d6412d99a1f3cfc08c8deb-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ pip install Flask
 </pre>
-<div class="tip">
-<p class="first admonition-title">Tip</p>
+<div class="admonition tip">
+<p class="first admonition-title">Consejo</p>
 <p class="last">Otra ventaja del entorno virtual es que nos deja instalar paquetes de <cite>Python</cite> a través de <tt class="docutils literal">pip</tt> sin tener que tener privilegios administrativos. Es decir, sin usar <tt class="docutils literal">sudo</tt>.</p>
 </div>
 </div>
 <div class="section" id="armando-la-aplicacion">
 <h3><a class="toc-backref" href="#id7">Armando la aplicación</a></h3>
 <p>Y creamos las carpetas necesarias para nuestra aplicación:</p>
-<pre class="code bash"><a name="rest_code_715c4834671947a4a51a864a031afa23-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ mkdir app
-<a name="rest_code_715c4834671947a4a51a864a031afa23-2"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ mkdir app/static
-<a name="rest_code_715c4834671947a4a51a864a031afa23-3"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ mkdir app/templates
+<pre class="code bash"><a name="rest_code_d552e7f476324519a6cfa009d8d8c63f-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ mkdir app
+<a name="rest_code_d552e7f476324519a6cfa009d8d8c63f-2"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ mkdir app/static
+<a name="rest_code_d552e7f476324519a6cfa009d8d8c63f-3"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ mkdir app/templates
 </pre>
 <p>Dentro de <tt class="docutils literal">app</tt> tendremos crearemos todos los archivos de la aplicación de <cite>Flask</cite>. Dentro de ella creamos un archivo llamado <tt class="docutils literal">routes.py</tt> con el siguiente contenido:</p>
-<p><a class="reference external" href="../../../listings/edd/routes.py.html">edd/routes.py</a></p>
-<pre class="code python3"><a name="rest_code_a0cae12736d74792ade6d4105f63163c-1"></a><span class="c">#!/usr/bin/env python</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-2"></a>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-3"></a><span class="c"># Importamos del módulo flask la clase Flask que creará nuestra aplicación.</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-4"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="k">import</span> <span class="n">Flask</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-5"></a>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-6"></a><span class="c"># Creamos una nueva instancia de Flask y la asignamos a `app`.</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-7"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-8"></a>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-9"></a><span class="c"># Estos decoradores nos sirven para mapear qué funciones se van a llamar en el</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-10"></a><span class="c"># momento que al servidor le llegue una petición con esa URL.</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-11"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/'</span><span class="p">)</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-12"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s">'/index'</span><span class="p">)</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-13"></a><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-14"></a>    <span class="sd">""" Nuestra función que responde en '/' o en '/index' y devuelve un</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-15"></a><span class="sd">        simple 'Hello World!'</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-16"></a><span class="sd">    """</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-17"></a>    <span class="k">return</span> <span class="s">"&lt;h1&gt;Hello World!&lt;/h1&gt;"</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-18"></a>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-19"></a><span class="c"># Si ejecutamos el módulo, la aplicación de Flask corre con el modo de prueba</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-20"></a><span class="c"># activo.</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-21"></a><span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
-<a name="rest_code_a0cae12736d74792ade6d4105f63163c-22"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+<p><a class="reference external" href="../../../listings/edd/routes.py.html">edd/routes.py</a>  <a class="reference external" href="../../../listings/edd/routes.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_fa9554bc62384ad0b2025acede77e71b-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-2"></a>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-3"></a><span class="c1"># Importamos del módulo flask la clase Flask que creará nuestra aplicación.</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-4"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="k">import</span> <span class="n">Flask</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-5"></a>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-6"></a><span class="c1"># Creamos una nueva instancia de Flask y la asignamos a `app`.</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-7"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-8"></a>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-9"></a><span class="c1"># Estos decoradores nos sirven para mapear qué funciones se van a llamar en el</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-10"></a><span class="c1"># momento que al servidor le llegue una petición con esa URL.</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-11"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/'</span><span class="p">)</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-12"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">'/index'</span><span class="p">)</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-13"></a><span class="k">def</span> <span class="nf">index</span><span class="p">():</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-14"></a>    <span class="sd">""" Nuestra función que responde en '/' o en '/index' y devuelve un</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-15"></a><span class="sd">        simple 'Hello World!'</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-16"></a><span class="sd">    """</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-17"></a>    <span class="k">return</span> <span class="s2">"&lt;h1&gt;Hello World!&lt;/h1&gt;"</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-18"></a>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-19"></a><span class="c1"># Si ejecutamos el módulo, la aplicación de Flask corre con el modo de prueba</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-20"></a><span class="c1"># activo.</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-21"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+<a name="rest_code_fa9554bc62384ad0b2025acede77e71b-22"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre>
 <p>Luego podemos ejecutar nuestra aplicación de prueba que escuchará peticiones en la ip 127.0.0.1 en el puerto 5000. Para cortar el servidor podemos presionar <tt class="docutils literal">Ctrl+C</tt>:</p>
-<pre class="code bash"><a name="rest_code_fa2ac81b289442388bc84b35a18ca658-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ python routes.py
-<a name="rest_code_fa2ac81b289442388bc84b35a18ca658-2"></a>* Running on http://127.0.0.1:5000/ <span class="o">(</span>Press CTRL+C to quit<span class="o">)</span>
-<a name="rest_code_fa2ac81b289442388bc84b35a18ca658-3"></a>* Restarting with stat
-<a name="rest_code_fa2ac81b289442388bc84b35a18ca658-4"></a>* Debugger is active!
-<a name="rest_code_fa2ac81b289442388bc84b35a18ca658-5"></a>* Debugger pin code: 459-745-705
+<pre class="code bash"><a name="rest_code_32c9b4b41df44d248fa2c174faa8ae52-1"></a><span class="o">(</span>flasky<span class="o">)</span> ~/hello_world_app ➜ python routes.py
+<a name="rest_code_32c9b4b41df44d248fa2c174faa8ae52-2"></a>* Running on http://127.0.0.1:5000/ <span class="o">(</span>Press CTRL+C to quit<span class="o">)</span>
+<a name="rest_code_32c9b4b41df44d248fa2c174faa8ae52-3"></a>* Restarting with stat
+<a name="rest_code_32c9b4b41df44d248fa2c174faa8ae52-4"></a>* Debugger is active!
+<a name="rest_code_32c9b4b41df44d248fa2c174faa8ae52-5"></a>* Debugger pin code: <span class="m">459</span>-745-705
 </pre>
 </div>
 </div>
@@ -325,7 +325,7 @@ Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -
 </div>
 
 
-            <script src="../../../assets/js/all-nocdn.js"></script><script src="../../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+            <script src="../../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("es");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates -->

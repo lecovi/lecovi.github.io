@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Make it So!</title><link>http://lecovi.github.io/</link><description>Leo's personal site</description><atom:link href="http://lecovi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Thu, 08 Feb 2018 17:07:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Instalar Vagrant</title><link>http://lecovi.github.io/blog/instalar-vagrant/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Les quiero contar cómo usar &lt;a href="https://www.vagrantup.com/"&gt;Vagrant&lt;/a&gt;&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Make it So!</title><link>http://lecovi.github.io/</link><description>Leo's personal site</description><atom:link href="http://lecovi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Wed, 21 Nov 2018 02:48:02 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Instalar Vagrant</title><link>http://lecovi.github.io/blog/instalar-vagrant/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Les quiero contar cómo usar &lt;a href="https://www.vagrantup.com/"&gt;Vagrant&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Instalación&lt;/h2&gt;
 &lt;p&gt;Tenés que ir a la &lt;a href="https://www.vagrantup.com/downloads.html"&gt;Página de
 descargas&lt;/a&gt; y ahí seleccionás tu
@@ -25,9 +25,9 @@ placa, cómo conectarse y jugar con el led integrado. Manos a la obra!&lt;/p&gt;
 &lt;div class="section" id="instalando-picocom"&gt;
 &lt;h3&gt;Instalando &lt;tt class="docutils literal"&gt;picocom&lt;/tt&gt;&lt;/h3&gt;
 &lt;p&gt;Para Fedora:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_1cf69520db3346f7afb9d92fb77fa908-1"&gt;&lt;/a&gt;sudo dnf install picocom
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_f503be576b614630b56a2416b3ed9002-1"&gt;&lt;/a&gt;sudo dnf install picocom
 &lt;/pre&gt;&lt;p&gt;Para Debian y derivados:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_46004cfbb1324485be1a8a8eb6501ddb-1"&gt;&lt;/a&gt;sudo apt install picocom
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_c2e871ba11464dafba236d955a5aaa2c-1"&gt;&lt;/a&gt;sudo apt install picocom
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="section" id="instalando-esptool"&gt;
 &lt;h3&gt;Instalando &lt;tt class="docutils literal"&gt;esptool&lt;/tt&gt;&lt;/h3&gt;
@@ -36,7 +36,7 @@ Es conveniente instalarlo con el flag &lt;tt class="docutils literal"&gt;&lt;spa
 instalado entre los paquetes del sistema. Pero tenés que asegurarte que tu
 usuario tenga permisos para acceder a los dispositivos serie
 (&lt;cite&gt;/dev/ttyUSB&lt;/cite&gt;).&lt;/blockquote&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_0f21d2a539fe49448de42885a1edd6ac-1"&gt;&lt;/a&gt;pip install esptool
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_fb12e4548dd249caa03663a22b220275-1"&gt;&lt;/a&gt;pip install esptool
 &lt;/pre&gt;&lt;/div&gt;
 &lt;div class="section" id="descargar-el-firmware"&gt;
 &lt;h3&gt;Descargar el &lt;cite&gt;firmware&lt;/cite&gt;&lt;/h3&gt;
@@ -62,7 +62,7 @@ cargar el nuevo firmware con &lt;tt class="docutils literal"&gt;esptool&lt;/tt&g
 &lt;h3&gt;Conectándose a la &lt;cite&gt;nodemcu&lt;/cite&gt; con &lt;tt class="docutils literal"&gt;picocom&lt;/tt&gt;&lt;/h3&gt;
 &lt;p&gt;Ahora con &lt;tt class="docutils literal"&gt;picocom&lt;/tt&gt; (o &lt;tt class="docutils literal"&gt;minicom&lt;/tt&gt; o el que más te guste) con la placa
 conectada al USB ejecutás:&lt;/p&gt;
-&lt;pre class="code bash"&gt;&lt;a name="rest_code_3bfbd0ba12c4433ca31f3b6280888726-1"&gt;&lt;/a&gt;sudo picocom /dev/ttyUSB0 -b115200
+&lt;pre class="code bash"&gt;&lt;a name="rest_code_f506e9bc5ed340d1b60602eddeef5a69-1"&gt;&lt;/a&gt;sudo picocom /dev/ttyUSB0 -b115200
 &lt;/pre&gt;&lt;p&gt;Si tenés permisos sobre el dispositivo USB el &lt;cite&gt;picocom&lt;/cite&gt; se va a conectar a la
 placa sin ningún tipo de problemas. Luego del mensaje &lt;tt class="docutils literal"&gt;Terminal ready&lt;/tt&gt;
 presionamos la tecla &lt;cite&gt;enter&lt;/cite&gt; y tendremos que ver el prompt del REPL de Python
@@ -75,51 +75,51 @@ presionamos la tecla &lt;cite&gt;enter&lt;/cite&gt; y tendremos que ver el promp
 &lt;h2&gt;Un paso más&lt;/h2&gt;
 &lt;p&gt;Probemos que nuestra instalación de micropython funciona correctamente.
 Escribamos el famoso &lt;cite&gt;Hola Mundo!&lt;/cite&gt;.&lt;/p&gt;
-&lt;pre class="code python3"&gt;&lt;a name="rest_code_43cc45fb6053485191dc4c46b12e02a3-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Hola nodemcu"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;a name="rest_code_43cc45fb6053485191dc4c46b12e02a3-2"&gt;&lt;/a&gt;&lt;span class="n"&gt;Hola&lt;/span&gt; &lt;span class="n"&gt;nodemcu&lt;/span&gt;
-&lt;a name="rest_code_43cc45fb6053485191dc4c46b12e02a3-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;34&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
-&lt;a name="rest_code_43cc45fb6053485191dc4c46b12e02a3-4"&gt;&lt;/a&gt;&lt;span class="mi"&gt;39&lt;/span&gt;
-&lt;a name="rest_code_43cc45fb6053485191dc4c46b12e02a3-5"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;pre class="code python3"&gt;&lt;a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;"Hola nodemcu"&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-2"&gt;&lt;/a&gt;&lt;span class="n"&gt;Hola&lt;/span&gt; &lt;span class="n"&gt;nodemcu&lt;/span&gt;
+&lt;a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;34&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
+&lt;a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-4"&gt;&lt;/a&gt;&lt;span class="mi"&gt;39&lt;/span&gt;
+&lt;a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-5"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;div class="section" id="que-se-haga-la-luz"&gt;
 &lt;h3&gt;Que se haga la luz!&lt;/h3&gt;
 &lt;p&gt;Genial! Todo funciona de maravillas. Hagamos algo un poco más interesante.
 Prendamos el led que tiene la placa.&lt;/p&gt;
-&lt;pre class="code python3"&gt;&lt;a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;machine&lt;/span&gt;
-&lt;a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-2"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;led&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;machine&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Pin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;machine&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Pin&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;OUT&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;led&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;off&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-4"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;led&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-5"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;led&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;off&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;a name="rest_code_ac0e2e9b9fb343949ff177afe6b18c9d-6"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;pre class="code python3"&gt;&lt;a name="rest_code_58097444cb954025b7865d3ad42fd64a-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;machine&lt;/span&gt;
+&lt;a name="rest_code_58097444cb954025b7865d3ad42fd64a-2"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;led&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;machine&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Pin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;machine&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Pin&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;OUT&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;a name="rest_code_58097444cb954025b7865d3ad42fd64a-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;led&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;off&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;a name="rest_code_58097444cb954025b7865d3ad42fd64a-4"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;led&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;a name="rest_code_58097444cb954025b7865d3ad42fd64a-5"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;led&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;off&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;a name="rest_code_58097444cb954025b7865d3ad42fd64a-6"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;Impecable! Todo funciona de maravillas. Ahora hagamos parpadear al led...&lt;/p&gt;
-&lt;pre class="code python3"&gt;&lt;a name="rest_code_714847d26487417f8f2272f119a39f54-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
-&lt;a name="rest_code_714847d26487417f8f2272f119a39f54-2"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-&lt;a name="rest_code_714847d26487417f8f2272f119a39f54-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;     &lt;span class="n"&gt;led&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;off&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;a name="rest_code_714847d26487417f8f2272f119a39f54-4"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;     &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;a name="rest_code_714847d26487417f8f2272f119a39f54-5"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;     &lt;span class="n"&gt;led&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;a name="rest_code_714847d26487417f8f2272f119a39f54-6"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;     &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;a name="rest_code_714847d26487417f8f2272f119a39f54-7"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;
-&lt;a name="rest_code_714847d26487417f8f2272f119a39f54-8"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;
-&lt;a name="rest_code_714847d26487417f8f2272f119a39f54-9"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;
-&lt;a name="rest_code_714847d26487417f8f2272f119a39f54-10"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;pre class="code python3"&gt;&lt;a name="rest_code_f7e7123065394934a2303fe24b6ee766-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;a name="rest_code_f7e7123065394934a2303fe24b6ee766-2"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;a name="rest_code_f7e7123065394934a2303fe24b6ee766-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;     &lt;span class="n"&gt;led&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;off&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;a name="rest_code_f7e7123065394934a2303fe24b6ee766-4"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;     &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;a name="rest_code_f7e7123065394934a2303fe24b6ee766-5"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;     &lt;span class="n"&gt;led&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;a name="rest_code_f7e7123065394934a2303fe24b6ee766-6"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;     &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;a name="rest_code_f7e7123065394934a2303fe24b6ee766-7"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;a name="rest_code_f7e7123065394934a2303fe24b6ee766-8"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;a name="rest_code_f7e7123065394934a2303fe24b6ee766-9"&gt;&lt;/a&gt;&lt;span class="o"&gt;...&lt;/span&gt;
+&lt;a name="rest_code_f7e7123065394934a2303fe24b6ee766-10"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;img alt="usando el intérprete de micropython" class="align-center" src="http://lecovi.github.io/images/blog/upython/repl.png"&gt;
 &lt;/div&gt;
 &lt;div class="section" id="conectate"&gt;
 &lt;h3&gt;Conectate!&lt;/h3&gt;
 &lt;p&gt;Hagamos esto un poco más interesante. Conectémonos a la red WiFi de casa.&lt;/p&gt;
-&lt;pre class="code python3"&gt;&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;network&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-2"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;network&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WLAN&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;network&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;STA_IF&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;active&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-4"&gt;&lt;/a&gt;&lt;span class="kc"&gt;False&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-5"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;active&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-6"&gt;&lt;/a&gt;&lt;span class="c1"&gt;#5 ets_task(4020ed88, 28, 3fff9f90, 10)&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-7"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;active&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-8"&gt;&lt;/a&gt;&lt;span class="kc"&gt;True&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-9"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;connect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'ThiagoBenjamin'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;escribí-tu-clave&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-10"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isconnected&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-11"&gt;&lt;/a&gt;&lt;span class="kc"&gt;True&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-12"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ifconfig&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-13"&gt;&lt;/a&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'192.168.1.13'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'255.255.255.0'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'192.168.1.1'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'192.168.1.1'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;a name="rest_code_ad83b29839fe47328bbbe75b5d8ce5ca-14"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;pre class="code python3"&gt;&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-1"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;network&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-2"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;network&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;WLAN&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;network&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;STA_IF&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-3"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;active&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-4"&gt;&lt;/a&gt;&lt;span class="kc"&gt;False&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-5"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;active&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-6"&gt;&lt;/a&gt;&lt;span class="c1"&gt;#5 ets_task(4020ed88, 28, 3fff9f90, 10)&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-7"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;active&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-8"&gt;&lt;/a&gt;&lt;span class="kc"&gt;True&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-9"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;connect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'ThiagoBenjamin'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'&amp;lt;escribí-tu-clave&amp;gt;'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-10"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isconnected&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-11"&gt;&lt;/a&gt;&lt;span class="kc"&gt;True&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-12"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;iface&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ifconfig&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-13"&gt;&lt;/a&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'192.168.1.13'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'255.255.255.0'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'192.168.1.1'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'192.168.1.1'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;a name="rest_code_59b7162a6e794edf8471a606ef6c0671-14"&gt;&lt;/a&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;p&gt;done!&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -142,7 +142,7 @@ simplemente la gente hace click en ellos y tal vez la información que contiene
 no es 100% precisa. Por eso es FUNDAMENTAL que SIEMPRE se pueda consultar la
 fuente oficial de documentación.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://lecovi.github.io/blog/la-biblia-de-debian/"&gt;Leer más…&lt;/a&gt; (quedan 1 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><category>debian</category><category>linux</category><category>wiki</category><guid>http://lecovi.github.io/blog/la-biblia-de-debian/</guid><pubDate>Sun, 17 Apr 2016 23:19:08 GMT</pubDate></item><item><title>Muchas Mentes II Cap 03- Código abierto</title><link>http://lecovi.github.io/blog/muchas-mentes-ii-cap-03-codigo-abierto/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div class="text-center embed-responsive embed-responsive-16by9"&gt;&lt;div class="youtube-video"&gt;
-&lt;iframe width="425" height="344" src="https://www.youtube.com/embed/4ocyARDnoK0?rel=0&amp;amp;hd=1&amp;amp;wmode=transparent"&gt;&lt;/iframe&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4ocyARDnoK0?rel=0&amp;amp;wmode=transparent" frameborder="0" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;&lt;/div&gt;</description><category>programacion</category><category>software libre</category><category>video</category><guid>http://lecovi.github.io/blog/muchas-mentes-ii-cap-03-codigo-abierto/</guid><pubDate>Sun, 17 Apr 2016 22:21:28 GMT</pubDate></item><item><title>Un mundo sin Linux</title><link>http://lecovi.github.io/blog/un-mundo-sin-linux/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Desde la &lt;em&gt;Linux Foundation&lt;/em&gt; como excusa del 24° aniversario de la liberación
 del kernel de Linux proponen una serie de 6 videos.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://lecovi.github.io/blog/un-mundo-sin-linux/"&gt;Leer más…&lt;/a&gt; (quedan 2 minutos de lectura)&lt;/p&gt;&lt;/div&gt;</description><guid>http://lecovi.github.io/blog/un-mundo-sin-linux/</guid><pubDate>Sun, 17 Apr 2016 16:01:34 GMT</pubDate></item><item><title>Desarrollo de GNU/Linux</title><link>http://lecovi.github.io/blog/desarrollo-de-gnulinux/</link><dc:creator>Leandro E. Colombo Viña</dc:creator><description>&lt;div&gt;&lt;p&gt;Desde la &lt;em&gt;Linux Foundation&lt;/em&gt; nos cuentan cómo desarrollan el kernel de Linux...&lt;/p&gt;

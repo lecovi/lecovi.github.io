@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/cfp/prog/03/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -208,62 +208,62 @@ operandos:</p>
 <h2><a class="toc-backref" href="#id4">Condicionales</a></h2>
 <div class="section" id="simples">
 <h3><a class="toc-backref" href="#id5">Simples</a></h3>
-<pre class="code python"><a name="rest_code_b618149c52f14ba085d39a3f5d919c82-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condicion</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_b618149c52f14ba085d39a3f5d919c82-2"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion'</span> <span class="n">es</span> <span class="n">verdadero</span><span class="o">&gt;</span>
+<pre class="code python"><a name="rest_code_ab25b69df14b4c8790a69993cd62da21-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condicion</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_ab25b69df14b4c8790a69993cd62da21-2"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion'</span> <span class="n">es</span> <span class="n">verdadero</span><span class="o">&gt;</span>
 </pre>
 </div>
 <div class="section" id="con-sino">
 <h3><a class="toc-backref" href="#id6">Con "sino"</a></h3>
-<pre class="code python"><a name="rest_code_5afd266e6591448891fa52ff6810df6b-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condicion</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_5afd266e6591448891fa52ff6810df6b-2"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion'</span> <span class="n">es</span> <span class="n">verdadero</span><span class="o">&gt;</span>
-<a name="rest_code_5afd266e6591448891fa52ff6810df6b-3"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_5afd266e6591448891fa52ff6810df6b-4"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion'</span> <span class="n">es</span> <span class="n">falso</span><span class="o">&gt;</span>
+<pre class="code python"><a name="rest_code_0055f84d8e574ac6a8563de5cd674c93-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condicion</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_0055f84d8e574ac6a8563de5cd674c93-2"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion'</span> <span class="n">es</span> <span class="n">verdadero</span><span class="o">&gt;</span>
+<a name="rest_code_0055f84d8e574ac6a8563de5cd674c93-3"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_0055f84d8e574ac6a8563de5cd674c93-4"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion'</span> <span class="n">es</span> <span class="n">falso</span><span class="o">&gt;</span>
 </pre>
 </div>
 <div class="section" id="anidados">
 <h3><a class="toc-backref" href="#id7">Anidados</a></h3>
-<pre class="code python"><a name="rest_code_2a840f833eb8424f923ef75ffcb1afdd-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condicion1</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_2a840f833eb8424f923ef75ffcb1afdd-2"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion1'</span> <span class="n">es</span> <span class="n">verdadero</span><span class="o">&gt;</span>
-<a name="rest_code_2a840f833eb8424f923ef75ffcb1afdd-3"></a><span class="k">elif</span> <span class="o">&lt;</span><span class="n">condicion2</span><span class="o">&gt;</span><span class="p">:</span>
-<a name="rest_code_2a840f833eb8424f923ef75ffcb1afdd-4"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion2'</span> <span class="n">es</span> <span class="n">verdadero</span><span class="o">&gt;</span>
-<a name="rest_code_2a840f833eb8424f923ef75ffcb1afdd-5"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_2a840f833eb8424f923ef75ffcb1afdd-6"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion1'</span> <span class="n">y</span> <span class="s1">'condicion2'</span> <span class="n">es</span> <span class="n">falso</span><span class="o">&gt;</span>
+<pre class="code python"><a name="rest_code_fc535ccda9454df9b840f0e66cb1d46f-1"></a><span class="k">if</span> <span class="o">&lt;</span><span class="n">condicion1</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_fc535ccda9454df9b840f0e66cb1d46f-2"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion1'</span> <span class="n">es</span> <span class="n">verdadero</span><span class="o">&gt;</span>
+<a name="rest_code_fc535ccda9454df9b840f0e66cb1d46f-3"></a><span class="k">elif</span> <span class="o">&lt;</span><span class="n">condicion2</span><span class="o">&gt;</span><span class="p">:</span>
+<a name="rest_code_fc535ccda9454df9b840f0e66cb1d46f-4"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion2'</span> <span class="n">es</span> <span class="n">verdadero</span><span class="o">&gt;</span>
+<a name="rest_code_fc535ccda9454df9b840f0e66cb1d46f-5"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_fc535ccda9454df9b840f0e66cb1d46f-6"></a>    <span class="o">&lt;</span><span class="n">sentencias</span> <span class="n">que</span> <span class="n">se</span> <span class="n">ejecutan</span> <span class="n">si</span> <span class="s1">'condicion1'</span> <span class="n">y</span> <span class="s1">'condicion2'</span> <span class="n">es</span> <span class="n">falso</span><span class="o">&gt;</span>
 </pre>
 </div>
 </div>
 <div class="section" id="ejemplos">
 <h2><a class="toc-backref" href="#id8">Ejemplos</a></h2>
 <p>Informa si el interés es mayor al 30%, sino informa el importe total:</p>
-<pre class="code python"><a name="rest_code_bd03d573814e4503820c03f256ed147b-1"></a><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese monto: "</span><span class="p">))</span>
-<a name="rest_code_bd03d573814e4503820c03f256ed147b-2"></a>
-<a name="rest_code_bd03d573814e4503820c03f256ed147b-3"></a><span class="n">interes</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese interés mensual: "</span><span class="p">))</span>
-<a name="rest_code_bd03d573814e4503820c03f256ed147b-4"></a>
-<a name="rest_code_bd03d573814e4503820c03f256ed147b-5"></a><span class="k">if</span> <span class="n">interes</span> <span class="o">&gt;</span> <span class="mi">30</span><span class="p">:</span>
-<a name="rest_code_bd03d573814e4503820c03f256ed147b-6"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"El interés ingresado es incorrecto"</span><span class="p">)</span>
-<a name="rest_code_bd03d573814e4503820c03f256ed147b-7"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_bd03d573814e4503820c03f256ed147b-8"></a>    <span class="n">monto_final</span> <span class="o">=</span> <span class="n">monto</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">interes</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>
-<a name="rest_code_bd03d573814e4503820c03f256ed147b-9"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"Monto final: </span><span class="si">%08.2f</span><span class="s2">"</span> <span class="o">%</span> <span class="n">monto_final</span><span class="p">)</span>
-<a name="rest_code_bd03d573814e4503820c03f256ed147b-10"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"FIN"</span><span class="p">)</span><span class="o">..</span> <span class="n">code</span><span class="o">-</span><span class="n">block</span><span class="p">::</span> <span class="n">python</span>
+<pre class="code python"><a name="rest_code_98de2e5a86af42c8b4d894a7443c9c16-1"></a><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese monto: "</span><span class="p">))</span>
+<a name="rest_code_98de2e5a86af42c8b4d894a7443c9c16-2"></a>
+<a name="rest_code_98de2e5a86af42c8b4d894a7443c9c16-3"></a><span class="n">interes</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese interés mensual: "</span><span class="p">))</span>
+<a name="rest_code_98de2e5a86af42c8b4d894a7443c9c16-4"></a>
+<a name="rest_code_98de2e5a86af42c8b4d894a7443c9c16-5"></a><span class="k">if</span> <span class="n">interes</span> <span class="o">&gt;</span> <span class="mi">30</span><span class="p">:</span>
+<a name="rest_code_98de2e5a86af42c8b4d894a7443c9c16-6"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"El interés ingresado es incorrecto"</span><span class="p">)</span>
+<a name="rest_code_98de2e5a86af42c8b4d894a7443c9c16-7"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_98de2e5a86af42c8b4d894a7443c9c16-8"></a>    <span class="n">monto_final</span> <span class="o">=</span> <span class="n">monto</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">interes</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>
+<a name="rest_code_98de2e5a86af42c8b4d894a7443c9c16-9"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"Monto final: </span><span class="si">%08.2f</span><span class="s2">"</span> <span class="o">%</span> <span class="n">monto_final</span><span class="p">)</span>
+<a name="rest_code_98de2e5a86af42c8b4d894a7443c9c16-10"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"FIN"</span><span class="p">)</span><span class="o">..</span> <span class="n">code</span><span class="o">-</span><span class="n">block</span><span class="p">::</span> <span class="n">python</span>
 </pre>
 <p><a class="reference external" href="../../../prog/interes.py">interes.py</a></p>
 <p>Informa si el número ingresado está entre 1 y 7:</p>
-<pre class="code python"><a name="rest_code_a2c5afb7b11542f581eb0d47a014babb-1"></a><span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese un número: "</span><span class="p">))</span>
-<a name="rest_code_a2c5afb7b11542f581eb0d47a014babb-2"></a>
-<a name="rest_code_a2c5afb7b11542f581eb0d47a014babb-3"></a><span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">numero</span> <span class="o">&lt;=</span> <span class="mi">7</span><span class="p">:</span>
-<a name="rest_code_a2c5afb7b11542f581eb0d47a014babb-4"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"El número ingresado está entre 1 y 7"</span><span class="p">)</span>
-<a name="rest_code_a2c5afb7b11542f581eb0d47a014babb-5"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_a2c5afb7b11542f581eb0d47a014babb-6"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"El número ingresado NO está entre 1 y 7"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_3835857cb69c4ae5905deaef3ce54fde-1"></a><span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese un número: "</span><span class="p">))</span>
+<a name="rest_code_3835857cb69c4ae5905deaef3ce54fde-2"></a>
+<a name="rest_code_3835857cb69c4ae5905deaef3ce54fde-3"></a><span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">numero</span> <span class="o">&lt;=</span> <span class="mi">7</span><span class="p">:</span>
+<a name="rest_code_3835857cb69c4ae5905deaef3ce54fde-4"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"El número ingresado está entre 1 y 7"</span><span class="p">)</span>
+<a name="rest_code_3835857cb69c4ae5905deaef3ce54fde-5"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_3835857cb69c4ae5905deaef3ce54fde-6"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"El número ingresado NO está entre 1 y 7"</span><span class="p">)</span>
 </pre>
 <p><a class="reference external" href="../../../prog/entre1y7.py">entre1y7.py</a></p>
 <p>Informa si el numero es positivo, negativo o 0:</p>
-<pre class="code python"><a name="rest_code_43452395e47042489fe8ec888c492236-1"></a><span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese número: "</span><span class="p">))</span>
-<a name="rest_code_43452395e47042489fe8ec888c492236-2"></a>
-<a name="rest_code_43452395e47042489fe8ec888c492236-3"></a><span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_43452395e47042489fe8ec888c492236-4"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"positivo"</span><span class="p">)</span>
-<a name="rest_code_43452395e47042489fe8ec888c492236-5"></a><span class="k">elif</span> <span class="n">numero</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-<a name="rest_code_43452395e47042489fe8ec888c492236-6"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"negativo"</span><span class="p">)</span>
-<a name="rest_code_43452395e47042489fe8ec888c492236-7"></a><span class="k">else</span><span class="p">:</span>
-<a name="rest_code_43452395e47042489fe8ec888c492236-8"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"cero"</span><span class="p">)</span>
+<pre class="code python"><a name="rest_code_ca53aba92b1f43718add0866d33fea15-1"></a><span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese número: "</span><span class="p">))</span>
+<a name="rest_code_ca53aba92b1f43718add0866d33fea15-2"></a>
+<a name="rest_code_ca53aba92b1f43718add0866d33fea15-3"></a><span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_ca53aba92b1f43718add0866d33fea15-4"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"positivo"</span><span class="p">)</span>
+<a name="rest_code_ca53aba92b1f43718add0866d33fea15-5"></a><span class="k">elif</span> <span class="n">numero</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<a name="rest_code_ca53aba92b1f43718add0866d33fea15-6"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"negativo"</span><span class="p">)</span>
+<a name="rest_code_ca53aba92b1f43718add0866d33fea15-7"></a><span class="k">else</span><span class="p">:</span>
+<a name="rest_code_ca53aba92b1f43718add0866d33fea15-8"></a>    <span class="k">print</span><span class="p">(</span><span class="s2">"cero"</span><span class="p">)</span>
 </pre>
 <p><a class="reference external" href="../../../prog/signo.py">signo.py</a></p>
 </div>
@@ -347,7 +347,7 @@ Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -
 </div>
 
 
-            <script src="../../../assets/js/all-nocdn.js"></script><script src="../../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+            <script src="../../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("es");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates -->

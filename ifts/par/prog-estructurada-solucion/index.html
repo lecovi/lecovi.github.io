@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 <link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../../rss.xml">
 <link rel="canonical" href="http://lecovi.github.io/ifts/par/prog-estructurada-solucion/">
 <!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
 <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -19,11 +19,11 @@
 <meta property="og:description" content="Estas son posibles soluciones a los ejercicios propuestos.
 
 Head
-par/head.py
+par/head.py  (Código fuente)
 #!/usr/bin/env python
 
 filename = input('Ingrese el nombre de archivo: ')
-cant_lineas = int(input('Ingrese la cantidad de l">
+cant_lineas = int(input('Ingrese">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-08-21T22:16:38-03:00">
 </head>
@@ -134,58 +134,58 @@ cant_lineas = int(input('Ingrese la cantidad de l">
 <p>Estas son posibles soluciones a los ejercicios propuestos.</p>
 <div class="section" id="head">
 <h2>Head</h2>
-<p><a class="reference external" href="../../../listings/par/head.py.html">par/head.py</a></p>
-<pre class="code python3"><a name="rest_code_8316db2d0a874a6d9f49f130e367ca7e-1"></a><span class="c">#!/usr/bin/env python</span>
-<a name="rest_code_8316db2d0a874a6d9f49f130e367ca7e-2"></a>
-<a name="rest_code_8316db2d0a874a6d9f49f130e367ca7e-3"></a><span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Ingrese el nombre de archivo: '</span><span class="p">)</span>
-<a name="rest_code_8316db2d0a874a6d9f49f130e367ca7e-4"></a><span class="n">cant_lineas</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">'Ingrese la cantidad de líneas a leer: '</span><span class="p">))</span>
-<a name="rest_code_8316db2d0a874a6d9f49f130e367ca7e-5"></a>
-<a name="rest_code_8316db2d0a874a6d9f49f130e367ca7e-6"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
-<a name="rest_code_8316db2d0a874a6d9f49f130e367ca7e-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cant_lineas</span><span class="p">):</span>
-<a name="rest_code_8316db2d0a874a6d9f49f130e367ca7e-8"></a>        <span class="n">linea</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-<a name="rest_code_8316db2d0a874a6d9f49f130e367ca7e-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">''</span><span class="p">)</span>
+<p><a class="reference external" href="../../../listings/par/head.py.html">par/head.py</a>  <a class="reference external" href="../../../listings/par/head.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_bef6b4d0cd9e4c2387fdf50437849377-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_bef6b4d0cd9e4c2387fdf50437849377-2"></a>
+<a name="rest_code_bef6b4d0cd9e4c2387fdf50437849377-3"></a><span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese el nombre de archivo: '</span><span class="p">)</span>
+<a name="rest_code_bef6b4d0cd9e4c2387fdf50437849377-4"></a><span class="n">cant_lineas</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese la cantidad de líneas a leer: '</span><span class="p">))</span>
+<a name="rest_code_bef6b4d0cd9e4c2387fdf50437849377-5"></a>
+<a name="rest_code_bef6b4d0cd9e4c2387fdf50437849377-6"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+<a name="rest_code_bef6b4d0cd9e4c2387fdf50437849377-7"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">cant_lineas</span><span class="p">):</span>
+<a name="rest_code_bef6b4d0cd9e4c2387fdf50437849377-8"></a>        <span class="n">linea</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+<a name="rest_code_bef6b4d0cd9e4c2387fdf50437849377-9"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
 </pre>
 </div>
 <div class="section" id="copy">
 <h2>Copy</h2>
-<p><a class="reference external" href="../../../listings/par/cp.py.html">par/cp.py</a></p>
-<pre class="code python3"><a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-1"></a><span class="c">#!/usr/bin/env python</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-2"></a>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-3"></a><span class="n">BUFFER</span> <span class="o">=</span> <span class="mi">10</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-4"></a><span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Ingrese el nombre de archivo: '</span><span class="p">)</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-5"></a>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-6"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-7"></a>    <span class="k">if</span> <span class="s">'.'</span> <span class="ow">in</span> <span class="n">filename</span><span class="p">:</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-8"></a>        <span class="n">nombre</span><span class="p">,</span> <span class="n">extension</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">'.'</span><span class="p">)</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-9"></a>        <span class="n">copia_filename</span> <span class="o">=</span> <span class="s">'{}_copia.{}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">extension</span><span class="p">)</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-10"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-11"></a>        <span class="n">copia_filename</span> <span class="o">=</span> <span class="s">'{}_copia'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-12"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">copia_filename</span><span class="p">,</span> <span class="s">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">copia</span><span class="p">:</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-13"></a>        <span class="n">buffer</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">BUFFER</span><span class="p">)</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-14"></a>        <span class="k">while</span> <span class="n">buffer</span> <span class="o">!=</span> <span class="n">b</span><span class="s">''</span><span class="p">:</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-15"></a>            <span class="n">copia</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
-<a name="rest_code_5b86315d254f4beea8e674bb4611d9bb-16"></a>            <span class="n">buffer</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">BUFFER</span><span class="p">)</span>
+<p><a class="reference external" href="../../../listings/par/cp.py.html">par/cp.py</a>  <a class="reference external" href="../../../listings/par/cp.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-2"></a>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-3"></a><span class="n">BUFFER</span> <span class="o">=</span> <span class="mi">10</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-4"></a><span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese el nombre de archivo: '</span><span class="p">)</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-5"></a>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-6"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-7"></a>    <span class="k">if</span> <span class="s1">'.'</span> <span class="ow">in</span> <span class="n">filename</span><span class="p">:</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-8"></a>        <span class="n">nombre</span><span class="p">,</span> <span class="n">extension</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'.'</span><span class="p">)</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-9"></a>        <span class="n">copia_filename</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{}</span><span class="s1">_copia.</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">extension</span><span class="p">)</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-10"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-11"></a>        <span class="n">copia_filename</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{}</span><span class="s1">_copia'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-12"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">copia_filename</span><span class="p">,</span> <span class="s1">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">copia</span><span class="p">:</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-13"></a>        <span class="n">buffer</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">BUFFER</span><span class="p">)</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-14"></a>        <span class="k">while</span> <span class="n">buffer</span> <span class="o">!=</span> <span class="sa">b</span><span class="s1">''</span><span class="p">:</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-15"></a>            <span class="n">copia</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
+<a name="rest_code_8394d5f874aa4a31bd3f3327f93efb45-16"></a>            <span class="n">buffer</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">BUFFER</span><span class="p">)</span>
 </pre>
 </div>
 <div class="section" id="word-count">
 <h2>Word Count</h2>
-<p><a class="reference external" href="../../../listings/par/cp.py.html">par/cp.py</a></p>
-<pre class="code python3"><a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-1"></a><span class="c">#!/usr/bin/env python</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-2"></a>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-3"></a><span class="n">BUFFER</span> <span class="o">=</span> <span class="mi">10</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-4"></a><span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Ingrese el nombre de archivo: '</span><span class="p">)</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-5"></a>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-6"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-7"></a>    <span class="k">if</span> <span class="s">'.'</span> <span class="ow">in</span> <span class="n">filename</span><span class="p">:</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-8"></a>        <span class="n">nombre</span><span class="p">,</span> <span class="n">extension</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">'.'</span><span class="p">)</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-9"></a>        <span class="n">copia_filename</span> <span class="o">=</span> <span class="s">'{}_copia.{}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">extension</span><span class="p">)</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-10"></a>    <span class="k">else</span><span class="p">:</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-11"></a>        <span class="n">copia_filename</span> <span class="o">=</span> <span class="s">'{}_copia'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-12"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">copia_filename</span><span class="p">,</span> <span class="s">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">copia</span><span class="p">:</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-13"></a>        <span class="n">buffer</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">BUFFER</span><span class="p">)</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-14"></a>        <span class="k">while</span> <span class="n">buffer</span> <span class="o">!=</span> <span class="n">b</span><span class="s">''</span><span class="p">:</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-15"></a>            <span class="n">copia</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
-<a name="rest_code_4e2a15b50bec45bba248bc27cecb2cba-16"></a>            <span class="n">buffer</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">BUFFER</span><span class="p">)</span>
+<p><a class="reference external" href="../../../listings/par/cp.py.html">par/cp.py</a>  <a class="reference external" href="../../../listings/par/cp.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_dd83792389584077a1806372ef883af2-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-2"></a>
+<a name="rest_code_dd83792389584077a1806372ef883af2-3"></a><span class="n">BUFFER</span> <span class="o">=</span> <span class="mi">10</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-4"></a><span class="n">filename</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese el nombre de archivo: '</span><span class="p">)</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-5"></a>
+<a name="rest_code_dd83792389584077a1806372ef883af2-6"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo</span><span class="p">:</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-7"></a>    <span class="k">if</span> <span class="s1">'.'</span> <span class="ow">in</span> <span class="n">filename</span><span class="p">:</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-8"></a>        <span class="n">nombre</span><span class="p">,</span> <span class="n">extension</span> <span class="o">=</span> <span class="n">filename</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'.'</span><span class="p">)</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-9"></a>        <span class="n">copia_filename</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{}</span><span class="s1">_copia.</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">extension</span><span class="p">)</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-10"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-11"></a>        <span class="n">copia_filename</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{}</span><span class="s1">_copia'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-12"></a>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">copia_filename</span><span class="p">,</span> <span class="s1">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">copia</span><span class="p">:</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-13"></a>        <span class="n">buffer</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">BUFFER</span><span class="p">)</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-14"></a>        <span class="k">while</span> <span class="n">buffer</span> <span class="o">!=</span> <span class="sa">b</span><span class="s1">''</span><span class="p">:</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-15"></a>            <span class="n">copia</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
+<a name="rest_code_dd83792389584077a1806372ef883af2-16"></a>            <span class="n">buffer</span> <span class="o">=</span> <span class="n">archivo</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">BUFFER</span><span class="p">)</span>
 </pre>
 </div>
 </div>
@@ -221,7 +221,7 @@ Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -
 </div>
 
 
-            <script src="../../../assets/js/all-nocdn.js"></script><script src="../../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+            <script src="../../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
     moment.locale("es");
     fancydates(0, "YYYY-MM-DD HH:mm");
     </script><!-- end fancy dates -->
