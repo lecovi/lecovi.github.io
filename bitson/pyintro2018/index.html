@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introducción a Python - PyConAR2018 | Make it So!</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../rss.xml">
+<link rel="canonical" href="http://lecovi.github.io/bitson/pyintro2018/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link href="../../assets/styles.css" rel="stylesheet" type="text/css">
+<meta name="author" content="Leandro E. Colombo Viña">
+<meta property="og:site_name" content="Make it So!">
+<meta property="og:title" content="Introducción a Python - PyConAR2018">
+<meta property="og:url" content="http://lecovi.github.io/bitson/pyintro2018/">
+<meta property="og:description" content="Instalación Python
+Entrar a python.org y descargá la versión que corresponda a tu sistema operativo.
+
+
+
+Instalación de un Editor de Texto
+Para programar en Python (así como en cualquier lenguaje), vam">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2018-11-21T09:37:50-03:00">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://lecovi.github.io/">
+
+                <span id="blog-title">Make it So!</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../blog/"><i class="fas fa-pencil-alt"></i> Blog</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-university"></i> Cursos <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../../cfp"><i class="fab fa-linux"></i> <strong>Centro de Formación Profesional<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../cfp/prog/">  <i class="fas fa-code-branch"></i>  Técnicas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts"><i class="fas fa-graduation-cap"></i> <strong>Terciario<strong></strong></strong></a>
+                    </li>
+<li>
+<a href="../../ifts/arq/">  <i class="fa fa-laptop"></i> Arquitectura de Computadoras</a>
+                    </li>
+<li>
+<a href="../../ifts/dlo/">  <i class="fa fa-sitemap"></i> Diagramación Lógica</a>
+                    </li>
+<li>
+<a href="../../ifts/edd/">  <i class="fa fa-database"></i> Estructura de Datos</a>
+                    </li>
+<li>
+<a href="../../ifts/par/">  <i class="fa fa-code"></i> Paradigmas de Programación</a>
+                    </li>
+<li>
+<a href="../../ifts/ana/">  <i class="fab fa-trello"></i> Análisis de Sistemas</a>
+                    </li>
+<li>
+<a href="../../bitson"><i class="fas fa-users"></i> <strong>BITSON<strong></strong></strong></a>
+                    </li>
+<li class="active">
+<a href=".">  <i class="fab fa-python"></i> Taller de Introducción a Python #PyConAR2018 <span class="sr-only">(activo)</span></a>
+                    </li>
+<li>
+<a href="../prog-sl/">  <i class="fa fa-keyboard-o"></i> Programación con Software Libre</a>
+                    </li>
+<li>
+<a href="../olin/">  <i class="fa fa-terminal"></i> Operador Básico GNU/Linux</a>
+                    </li>
+<li>
+<a href="../reli/">  <i class="fab fa-qq"></i> Administración de Redes con GNU/Linux</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../../resources/"><i class="fa fa-wrench"></i> Recursos</a>
+                </li>
+<li>
+<a href="../../archive.html"><i class="fa fa-archive"></i> Archivo</a>
+                </li>
+<li>
+<a href="../../categories/"><i class="fa fa-tags"></i> Etiquetas</a>
+                </li>
+<li>
+<a href="../../rss.xml"><i class="fa fa-rss"></i> RSS</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="index.rst" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Introducción a Python - PyConAR2018</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<div class="section" id="instalacion-python">
+<h2>Instalación Python</h2>
+<p>Entrar a <a href="https://www.python.org" target="_blank">python.org</a> y descargá la versión que corresponda a tu sistema operativo.</p>
+<img alt="Python ORG Homepage" class="align-center" src="../../images/pyintro/python.org.png">
+</div>
+<div class="section" id="instalacion-de-un-editor-de-texto">
+<h2>Instalación de un Editor de Texto</h2>
+<p>Para programar en Python (así como en cualquier lenguaje), vamos a necesitar un editor de texto.
+Podés usar el que más te guste: Vim, Vi, Nano, Atom, VSCode, SublimeText, etc...</p>
+<p>Te recomiendo que uses <a href="https://code.visualstudio.com/Download" target="_blank">VSCode</a>.</p>
+<img alt="VS Code Download Page" class="align-center" src="../../images/pyintro/vscode.png">
+</div>
+<hr class="docutils">
+<div class="section" id="repl-shell-interprete">
+<h2>REPL - Shell - Intérprete</h2>
+<p>REPL, Shell, Intérprete interactivo o consola de Python son sinónimos.</p>
+<p class="alert alert-info small">REPL significa Run, Eval, Print, Loop. Es decir, ejecutar, evaluar, imprimir e iterar.</p>
+<p>En la consola del sistema operativo, donde tirás los comandos, ejecutá <tt class="docutils literal">python3</tt>. Vas a ver
+que cambia el prompt a <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;`</span></tt>, eso quiere decir que estás ejecutando Python y que está esperando
+que vos le escribas instrucciones para que él las pueda ejecutar.</p>
+<img alt="Ejecutando el REPL" class="align-center" src="../../images/pyintro/repl.png">
+</div>
+<div class="section" id="jugando-con-numeros">
+<h2>Jugando con números</h2>
+<p>En Python podemos realizar un poco de matemática simple:</p>
+<pre class="code python"><a name="rest_code_df1dad909733462cb857aa115a050b09-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span>
+<a name="rest_code_df1dad909733462cb857aa115a050b09-2"></a><span class="mi">4</span>
+</pre>
+<p>Como en cualquier lenguaje de programación podemos usar números y hacer cuentas.</p>
+<pre class="code python"><a name="rest_code_29a5194640ff47bda23fe99915781c05-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="mf">1.6</span> <span class="o">+</span> <span class="mf">3.28</span>
+<a name="rest_code_29a5194640ff47bda23fe99915781c05-2"></a><span class="mf">4.88</span>
+</pre>
+<p>Se puede sumar, restar, multiplicar y dividir.</p>
+<pre class="code python"><a name="rest_code_c75b660e24ac46da9f50fb65cc08612a-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">1</span>
+<a name="rest_code_c75b660e24ac46da9f50fb65cc08612a-2"></a><span class="mi">4</span>
+<a name="rest_code_c75b660e24ac46da9f50fb65cc08612a-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">2</span>
+<a name="rest_code_c75b660e24ac46da9f50fb65cc08612a-4"></a><span class="mi">6</span>
+<a name="rest_code_c75b660e24ac46da9f50fb65cc08612a-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">8</span> <span class="o">/</span> <span class="mi">4</span>
+<a name="rest_code_c75b660e24ac46da9f50fb65cc08612a-6"></a><span class="mf">2.0</span>
+</pre>
+<p class="alert alert-info small">En Python cuando hacés el cociente entre 2 números, siempre te da un número decimal (<tt class="docutils literal">float</tt>).</p>
+<p>Si querés sólo la parte entera, usá el operador <tt class="docutils literal">//</tt>.</p>
+<pre class="code python"><a name="rest_code_4d3a1c22309c4c92966d2865c336887a-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">8</span> <span class="o">//</span> <span class="mi">4</span>
+<a name="rest_code_4d3a1c22309c4c92966d2865c336887a-2"></a><span class="mi">2</span>
+</pre>
+<p>Y si querés el módulo (resto), el operador <tt class="docutils literal">%</tt>:</p>
+<pre class="code python"><a name="rest_code_44b6be59e55444e7bfef84a3edcfe0c8-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">%</span> <span class="mi">2</span>
+<a name="rest_code_44b6be59e55444e7bfef84a3edcfe0c8-2"></a><span class="mi">1</span>
+<a name="rest_code_44b6be59e55444e7bfef84a3edcfe0c8-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span> <span class="o">%</span> <span class="mi">2</span>
+<a name="rest_code_44b6be59e55444e7bfef84a3edcfe0c8-4"></a><span class="mi">0</span>
+</pre>
+<p>Incluso podés calcular la potencia de un número.</p>
+<pre class="code python"><a name="rest_code_242ce1f7e518422582540b41c8cf76bb-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">8</span>
+<a name="rest_code_242ce1f7e518422582540b41c8cf76bb-2"></a><span class="mi">256</span>
+<a name="rest_code_242ce1f7e518422582540b41c8cf76bb-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">1000</span>
+<a name="rest_code_242ce1f7e518422582540b41c8cf76bb-4"></a><span class="mi">1071508607186267320948425049060001810561404811705533607443750388370351051124936122493198378815695858127594672917</span>
+<a name="rest_code_242ce1f7e518422582540b41c8cf76bb-5"></a><span class="mi">5531468251871452856923140435984577574698574803934567774824230985421074605062371141877954182153046474983581941267</span>
+<a name="rest_code_242ce1f7e518422582540b41c8cf76bb-6"></a><span class="mi">398767559165543946077062914571196477686542167660429831652624386837205668069376</span>
+</pre>
+<p>Aunque sean muy grandes!</p>
+<div class="section" id="ahora-te-toca-a-vos">
+<h3>Ahora te toca a vos</h3>
+<p>Jugá un poco con el REPL, ejecutá <tt class="docutils literal">python3</tt> y usá las preguntas como guía.</p>
+<p>Ejercicios:</p>
+<ol class="arabic simple">
+<li>Sumá algunos números, restá otros, y sentite comod@ con el REPL</li>
+<li>¿Qué pasa si escribís con espacios entre los números y los operadores?¿Y si no?</li>
+<li>¿Probaste usando paréntesis?</li>
+<li>Jugá un poco con multiplicar, dividir (no te olvides de la división entera).</li>
+<li>¿Qué pasa si mezclás números enteros con números decimales?</li>
+</ol>
+<div class="section" id="extra">
+<h4>Extra</h4>
+<ol class="arabic simple">
+<li>¿Qué pasa si intentás poner un texto?</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="jugando-con-texto">
+<h2>Jugando con Texto</h2>
+<p>¿Qué pasa si queremos escribir cadenas de texto?</p>
+<pre class="code python"><a name="rest_code_9465883ccc5848519efa28d6ed37e581-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">guido</span>
+</pre>
+<p>¡Tenemos un error!</p>
+<pre class="code python"><a name="rest_code_0c2ea6c48e9a4e13b57ba37fe5bcca3f-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">guido</span>
+<a name="rest_code_0c2ea6c48e9a4e13b57ba37fe5bcca3f-2"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a name="rest_code_0c2ea6c48e9a4e13b57ba37fe5bcca3f-3"></a><span class="n">File</span> <span class="s2">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a name="rest_code_0c2ea6c48e9a4e13b57ba37fe5bcca3f-4"></a><span class="ne">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s1">'guido'</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
+</pre>
+<p>Nos dice que <tt class="docutils literal">guido</tt> no está definido. Para poder usar texto tenemos que usar comillas.</p>
+<pre class="code python"><a name="rest_code_6502cebc71a24507a939e1c166e72681-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="s1">'guido'</span>
+<a name="rest_code_6502cebc71a24507a939e1c166e72681-2"></a><span class="s1">'guido'</span>
+<a name="rest_code_6502cebc71a24507a939e1c166e72681-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="s2">"guido"</span>
+<a name="rest_code_6502cebc71a24507a939e1c166e72681-4"></a><span class="s1">'guido'</span>
+</pre>
+<p class="alert alert-info small">Podés usar comillas dobles <tt class="docutils literal">"</tt> o <tt class="docutils literal">'</tt> simples, pero tenés que ser consistente.</p>
+<p>¿Podés sumar números con texto?</p>
+<pre class="code python"><a name="rest_code_05c3c65aa4fa4e84ab861a73861b0298-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="s1">'Guido'</span> <span class="o">+</span> <span class="mi">2018</span>
+</pre>
+<p>¡No! Python no nos deja sumar números con texto. En todo caso deberíamos convertir ese número a texto,
+encerrándolo entre comillas.</p>
+<pre class="code python"><a name="rest_code_d9413cde8b4c4062aaf591a24e9fc9ab-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="s1">'Guido'</span> <span class="o">+</span> <span class="s2">"2018"</span>
+<a name="rest_code_d9413cde8b4c4062aaf591a24e9fc9ab-2"></a><span class="s1">'Guido2018'</span>
+<a name="rest_code_d9413cde8b4c4062aaf591a24e9fc9ab-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="s1">'Guido '</span> <span class="o">+</span> <span class="s2">"2018"</span>
+<a name="rest_code_d9413cde8b4c4062aaf591a24e9fc9ab-4"></a><span class="s1">'Guido 2018</span>
+</pre>
+<div class="section" id="id1">
+<h3>Ahora te toca a vos</h3>
+<p>Ejercicios:</p>
+<ol class="arabic simple">
+<li>¿Cuántas cadenas de texto podés concatenar?¿Hay algún límite?</li>
+<li>Usamos <tt class="docutils literal">+</tt> para intentar sumar texto con números, intentá con algún otro operador a ver qué pasa.</li>
+<li>¿Qué pasa si hacés <tt class="docutils literal">"2" + "3"</tt>?</li>
+<li>¿Qué pasa si mezclás <tt class="docutils literal">"</tt> con <tt class="docutils literal">'</tt>?</li>
+<li>Y si quiero usar la <tt class="docutils literal">"</tt> en mi texto, ¿cómo podrías hacer?</li>
+<li>¿Se te ocurre cómo hacer un texto multilínea?</li>
+</ol>
+<div class="section" id="id2">
+<h4>Extra</h4>
+<p>Echale un ojo a la documentación de Python sobre <a href="https://docs.python.org/3.6/library/stdtypes.html#string-methods" target="_blank">métodos de cadenas</a> y fijate si encontrás cómo hacer para pasar una cadena
+de texto a todas mayúsculas, a todas minúsculas o en formato de título.</p>
+<p class="alert alert-success small">Es lo que se conoce como métodos de cadenas. Por el momento no hace falta saber exactamente cómo es que funciona,
+pero sí es útil saber usarlo. Para eso, agregá al final de la cadena <tt class="docutils literal">.nombre_del_método()</tt> para cambiar lo que
+querés cambiar.</p>
+</div>
+</div>
+</div>
+<div class="section" id="variables">
+<h2>Variables</h2>
+<p>Como en cualquier lenguaje de programación, Python también tiene variables. Para definir una variable
+tenemos que ponerle un nombre y asignarle un valor.</p>
+<pre class="code python"><a name="rest_code_a651010ef2954cb39df5250e6cb133f9-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<a name="rest_code_a651010ef2954cb39df5250e6cb133f9-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<a name="rest_code_a651010ef2954cb39df5250e6cb133f9-3"></a><span class="mi">4</span>
+<a name="rest_code_a651010ef2954cb39df5250e6cb133f9-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">3</span>
+<a name="rest_code_a651010ef2954cb39df5250e6cb133f9-5"></a><span class="mi">12</span>
+</pre>
+<p>Las variables en Python pueden contener cualquier tipo de dato, de hecho, pueden contener cualquier cosa.</p>
+<p class="alert alert-warning small">Es importante entender que en Python el símbolo <tt class="docutils literal">=</tt> es el operador de asignación. No es el igual matemático.
+Cuando en matemática decís <strong>x = 2</strong>, estás diciendo que la <strong>x</strong> vale <strong>2</strong> y que el <strong>2</strong> es <strong>x</strong>. Mientras que si escribís en
+Python <tt class="docutils literal">x = 2</tt> estás diciendo: guardá el valor <tt class="docutils literal">2</tt> en la variable <tt class="docutils literal">x</tt>. En Python si escribís <tt class="docutils literal">2 = x</tt> no tiene
+sentido, mientras que en matemática escribir <strong>x = 2</strong> o <strong>2 = x</strong> es lo mismo.</p>
+<p>Bien, las variables se pueden usar como cualquier otro valor que vimos hasta ahora.</p>
+<pre class="code python"><a name="rest_code_2c2709cab1bf46eb927755d7f7a0ac26-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">alumnos</span> <span class="o">=</span> <span class="mi">36</span>
+<a name="rest_code_2c2709cab1bf46eb927755d7f7a0ac26-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">profes</span> <span class="o">=</span> <span class="mi">3</span>
+<a name="rest_code_2c2709cab1bf46eb927755d7f7a0ac26-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">personas</span> <span class="o">=</span> <span class="n">alumnos</span> <span class="o">+</span> <span class="n">profes</span>
+<a name="rest_code_2c2709cab1bf46eb927755d7f7a0ac26-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">personas</span>
+<a name="rest_code_2c2709cab1bf46eb927755d7f7a0ac26-5"></a><span class="mi">39</span>
+</pre>
+<div class="section" id="id3">
+<h3>Ahora te toca a vos</h3>
+<p>Ejercicios:</p>
+<ol class="arabic simple">
+<li>Creá una variable <tt class="docutils literal">x</tt> que contenga un número. Hacé otra variable <tt class="docutils literal">y</tt> que contenga el cuadrado de el anterior.</li>
+<li>Mostrá los valores de <tt class="docutils literal">x</tt> y de <tt class="docutils literal">y</tt>.</li>
+<li>Creá una variable <tt class="docutils literal">nombre</tt> que contenga tu nombre.</li>
+<li>¿Es posible usar los métodos de las cadenas con las variables? ¿En qué casos?</li>
+</ol>
+<div class="section" id="id4">
+<h4>Extra</h4>
+<p>¿Qué valor contiene <tt class="docutils literal">z</tt>?</p>
+<pre class="code python"><a name="rest_code_b744f962e40347bc81a9f55e40a42f2b-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<a name="rest_code_b744f962e40347bc81a9f55e40a42f2b-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">15</span>
+<a name="rest_code_b744f962e40347bc81a9f55e40a42f2b-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
+<a name="rest_code_b744f962e40347bc81a9f55e40a42f2b-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">100</span>
+<a name="rest_code_b744f962e40347bc81a9f55e40a42f2b-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">z</span>
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="formateo-de-cadenas">
+<h2>Formateo de cadenas</h2>
+<p>¿Qué pasa si querés por ejemplo hacer un mensaje de bienvenida? Por ejemplo, algo que nos sirva para usar en todas
+las PyConAR. Podríamos usar una variable que guarde el año y con concatenar lo con <tt class="docutils literal">PyConAR</tt>.</p>
+<pre class="code python"><a name="rest_code_6854e5c6dfea4869a1c7c05ca4a430cd-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">año</span> <span class="o">=</span> <span class="s2">"2018"</span>
+<a name="rest_code_6854e5c6dfea4869a1c7c05ca4a430cd-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">conferencia</span> <span class="o">=</span> <span class="s2">"PyConAR"</span>
+<a name="rest_code_6854e5c6dfea4869a1c7c05ca4a430cd-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="s1">'Qué buena que está la '</span> <span class="o">+</span> <span class="n">conferencia</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">año</span> <span class="o">+</span> <span class="s2">"!"</span>
+</pre>
+<p>Si bien lo podemos hacer de esta manera, resulta un poco compleja de escribir, y hasta de leer. Por suerte Python
+tiene una manera mejor, <em>f-strings</em>!.</p>
+<pre class="code python"><a name="rest_code_d4d43ed8a88f47678a20c75f5a906be2-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">año</span> <span class="o">=</span> <span class="s2">"2018"</span>
+<a name="rest_code_d4d43ed8a88f47678a20c75f5a906be2-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">conferencia</span> <span class="o">=</span> <span class="s2">"PyConAR"</span>
+<a name="rest_code_d4d43ed8a88f47678a20c75f5a906be2-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">f</span><span class="s1">'Qué buena que está la {conferencia} {año}!'</span>
+</pre>
+<p class="alert alert-warning small">Las <em>f-strings</em> están sólo disponibles para versiones a Python 3.6 o superior. Si tenés Python 3.5 o inferor
+no va a funcionar.</p>
+<p>Al incluir una <tt class="docutils literal">f</tt> al comienzo de la cadena, convertimos una simple cadena de texto en una poderosa <em>f-string</em>.
+Esta nos permite insertar variables (y expresiones) dentro de <tt class="docutils literal">{}</tt> y la <em>f-string</em> va a evaluar y mostrar el texto
+con el contenido.
+<strong>Además es mucho más fácil de leer!</strong></p>
+</div>
+<hr class="docutils">
+<div class="section" id="scripts">
+<h2>Scripts</h2>
+<p>Jugar con el REPL es muy divertido y útil, pero no nos sirve para hacer programas completos. ¡Ojo! No te confundas,
+vas a usar un montón el REPL en tu día a día, pero más que nada para hacer pruebas cortas y para exploración.
+Vamos a armar programas en Python!</p>
+<div class="section" id="programas-sencillos">
+<h3>Programas sencillos</h3>
+<p>Un <em>programa</em> es un archivo que contiene código fuente, es decir, instrucciones. En nuestro caso, serán instrucciones
+de Python. A los programas sencillos se los suele llamar "Scripts". Nuestros primeros programas van a ser programas
+de línea de comandos. Es decir, programas que son para ejecutarse en la consola del sistema operativo.</p>
+<p class="alert alert-success small">Haciendo click en "Código fuente" podés descarte el archivo por si no lo tenés en tu máquina.</p>
+<p><a class="reference external" href="../../listings/pyintro/saludo.py.html">pyintro/saludo.py</a>  <a class="reference external" href="../../listings/pyintro/saludo.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_29a60dd9ade545b78abd86207a30158e-1"></a><span class="s2">"Hola amigues!"</span>
+</pre>
+<p>Y si lo queremos ejecutar, entonces hacemos:</p>
+<pre class="code console"><a name="rest_code_69818060503c442f8ca36e14d98da92b-1"></a><span class="gp">$</span> python3 saludo.py
+<a name="rest_code_69818060503c442f8ca36e14d98da92b-2"></a><span class="gp">$</span>
+</pre>
+<p>¿Qué pasó? ¡Nada! Porque lo que tenemos en el archivo <tt class="docutils literal">saludo.py</tt> es una cadena de texto que no se está imprimiendo.
+Es diferente a lo que pasa en el REPL (recuerden la P). Cuando usamos el shell de Python (REPL), éste se ocupa de
+mostrarnos esos valores. Pero cuando estamos escribiendo un programa nosotros tenemos que decirle qué queremos imprimir.
+Para ello vamos a usar la función <tt class="docutils literal">print()</tt>.</p>
+<p>Modifiquemos el archivo para que quede de la siguiente manera:</p>
+<pre class="code python3"><a name="rest_code_dcc2dd5c7dc64ce9801beddea8e60bb2-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola amigues!"</span><span class="p">)</span>
+</pre>
+<p>Y volvamos a ejecutar!</p>
+<pre class="code console"><a name="rest_code_4927485489f74102a22b59d9701230db-1"></a><span class="gp">$</span> python3 saludo.py
+<a name="rest_code_4927485489f74102a22b59d9701230db-2"></a><span class="go">Hola amigues!</span>
+<a name="rest_code_4927485489f74102a22b59d9701230db-3"></a><span class="gp">$</span>
+</pre>
+<p>¡Ahora si! Lo hicimos.</p>
+</div>
+<div class="section" id="id5">
+<h3>Ahora te toca a vos</h3>
+<p>Ejercicios:</p>
+<p><a class="reference external" href="../../listings/pyintro/rand.py.html">pyintro/rand.py</a>  <a class="reference external" href="../../listings/pyintro/rand.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_eb15978c89cc4f4e8b5e38b9806f8a8d-1"></a><span class="kn">import</span> <span class="nn">random</span>
+<a name="rest_code_eb15978c89cc4f4e8b5e38b9806f8a8d-2"></a>
+<a name="rest_code_eb15978c89cc4f4e8b5e38b9806f8a8d-3"></a><span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+</pre>
+<p><a class="reference external" href="../../listings/pyintro/pausa.py.html">pyintro/pausa.py</a>  <a class="reference external" href="../../listings/pyintro/pausa.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_ed674381463c4f87b26e50d68c49e3aa-1"></a><span class="kn">import</span> <span class="nn">time</span>
+<a name="rest_code_ed674381463c4f87b26e50d68c49e3aa-2"></a>
+<a name="rest_code_ed674381463c4f87b26e50d68c49e3aa-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Hola manola!"</span><span class="p">)</span>
+<a name="rest_code_ed674381463c4f87b26e50d68c49e3aa-4"></a><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<a name="rest_code_ed674381463c4f87b26e50d68c49e3aa-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"Nos vemos!"</span><span class="p">)</span>
+</pre>
+<ol class="arabic simple">
+<li>Copiá el archivo <tt class="docutils literal">rand.py</tt> a un nuevo archivo que se llame <tt class="docutils literal">números.py</tt> y hacé que se cree una variable <tt class="docutils literal">x</tt> y que se muestre su valor. Ejecutá el programa varias veces para ver cómo <tt class="docutils literal">x</tt> cambia de valor.</li>
+<li>Copiá el archivo <tt class="docutils literal">pausa.py</tt> a un nuevo archivo que se llame <tt class="docutils literal">meditar.py</tt> que sirva para ayudar a los usuarios a realizar 6.5 respiraciones por minuto imprimiendo "Inspira", esperando un tiempo y luego imprimiendo "Expira". El programa debe durar 2 minutos ejecutándose.</li>
+<li>Copiá el archivo <tt class="docutils literal">rand.py</tt> a un nuevo archivo que se llame <tt class="docutils literal">dados.py</tt> y hacé que imprima un valor aleatorio del 1 al 6.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="entrada-del-usuario">
+<h2>Entrada del usuario</h2>
+<p>Ahora vamos a jugar un poco con que el usuario de nuestro programa nos ingrese valores. Para esto en Python existe la
+función <tt class="docutils literal">input()</tt>. Esta función nos permite pedirle al usuario algún tipo de dato. Ahora podemos hacer nuestro programa
+un poco más interactivo. <em>Más divertido!</em></p>
+<p>Un ejemplo rápido:</p>
+<pre class="code python3"><a name="rest_code_54179401a0384abe82b0ab05df8439a6-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Hola manola! Decime cuál es tu nombre:'</span><span class="p">)</span>
+<a name="rest_code_54179401a0384abe82b0ab05df8439a6-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">'¿Cómo dice que le va </span><span class="si">{nombre}</span><span class="s1">?'</span><span class="p">)</span>
+</pre>
+<p>Si esto lo guardamos en un archivo y lo ejecutamos.</p>
+<pre class="code console"><a name="rest_code_bdfa468ade6e44958d15b454b07a7b27-1"></a><span class="gp">$</span> python3 saludar.py
+<a name="rest_code_bdfa468ade6e44958d15b454b07a7b27-2"></a><span class="go">Hola manola! Decime cuál es tu nombre:Leandro</span>
+<a name="rest_code_bdfa468ade6e44958d15b454b07a7b27-3"></a><span class="go">¿Cómo dice que le va Leandro?</span>
+</pre>
+<p>Se ve un poco feo porque <tt class="docutils literal">input()</tt> nos muestra el mensaje tal cual lo escribimos. Mejoremos un poco la UX de nuestro
+programa agregando el espacio luego de los 2 puntos y volvamos a probar.</p>
+<pre class="code python3"><a name="rest_code_6f907d6190774259b3cde20cc73bd9ef-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Hola manola! Decime cuál es tu nombre: '</span><span class="p">)</span>
+<a name="rest_code_6f907d6190774259b3cde20cc73bd9ef-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">'¿Cómo dice que le va </span><span class="si">{nombre}</span><span class="s1">?'</span><span class="p">)</span>
+</pre>
+<p>Si esto lo guardamos en un archivo y lo ejecutamos.</p>
+<pre class="code console"><a name="rest_code_a688579a263d40468b5a20c87b15fbea-1"></a><span class="gp">$</span> python3 saludar.py
+<a name="rest_code_a688579a263d40468b5a20c87b15fbea-2"></a><span class="go">Hola manola! Decime cuál es tu nombre: Leandro</span>
+<a name="rest_code_a688579a263d40468b5a20c87b15fbea-3"></a><span class="go">¿Cómo dice que le va Leandro?</span>
+</pre>
+<p><strong>¡Un lujo!</strong> Silicon Valley, allá vamos!</p>
+<p>Probemos algo un poco más interesante. Intentemos hacer una programa que sume 2 números. Creemos un archivo
+que se llame <tt class="docutils literal">sumar.py</tt> con el siguiente contenido:</p>
+<pre class="code python"><a name="rest_code_57a208aa89f6476db95525f433ac2153-1"></a><span class="n">numero1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'¿Cuál es el primer número? '</span><span class="p">)</span>
+<a name="rest_code_57a208aa89f6476db95525f433ac2153-2"></a><span class="n">numero2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'¿y el segundo? '</span><span class="p">)</span>
+<a name="rest_code_57a208aa89f6476db95525f433ac2153-3"></a>
+<a name="rest_code_57a208aa89f6476db95525f433ac2153-4"></a><span class="n">resultado</span> <span class="o">=</span> <span class="n">numero1</span> <span class="o">+</span> <span class="n">numero2</span>
+<a name="rest_code_57a208aa89f6476db95525f433ac2153-5"></a>
+<a name="rest_code_57a208aa89f6476db95525f433ac2153-6"></a><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">'La suma de ambos número es {resultado}'</span><span class="p">)</span>
+</pre>
+<pre class="code console"><a name="rest_code_0aad200e6a054aafae0bec9fbc6f02b8-1"></a><span class="gp">$</span> python3 sumar.py
+<a name="rest_code_0aad200e6a054aafae0bec9fbc6f02b8-2"></a><span class="go">¿Cuál es el primer número? 3</span>
+<a name="rest_code_0aad200e6a054aafae0bec9fbc6f02b8-3"></a><span class="go">¿y el segundo? 7</span>
+<a name="rest_code_0aad200e6a054aafae0bec9fbc6f02b8-4"></a><span class="go">La suma de ambos número es 37</span>
+</pre>
+<p>Ups! Algo no salió como esperábamos... ¿Qué pasó?</p>
+<p>Bueno, si recordamos cuando eramos unos neófitos en Python y jugábamos con el REPL, cuando sumábamos 2 números
+nos daba el resultado correcto. Ahora cuando aplicábamos el operador <tt class="docutils literal">+</tt> entre cadenas (strings) éstas se
+concatenaban. Parece ser lo que está sucediendo acá.</p>
+<p>Podemos usar la función <tt class="docutils literal">type()</tt> que nos devuelve qué tipo de objeto es lo que le pasamos como argumento.
+Modifiquemos <tt class="docutils literal">sumar.py</tt> para que nos muestre qué es lo que tenemos en <tt class="docutils literal">numero1</tt> y en <tt class="docutils literal">numero2</tt>.</p>
+<pre class="code python"><a name="rest_code_4b015a99a5324c948892b198bb1a2ba7-1"></a><span class="n">numero1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'¿Cuál es el primer número? '</span><span class="p">)</span>
+<a name="rest_code_4b015a99a5324c948892b198bb1a2ba7-2"></a><span class="n">numero2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'¿y el segundo? '</span><span class="p">)</span>
+<a name="rest_code_4b015a99a5324c948892b198bb1a2ba7-3"></a>
+<a name="rest_code_4b015a99a5324c948892b198bb1a2ba7-4"></a><span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">numero1</span><span class="p">))</span>
+<a name="rest_code_4b015a99a5324c948892b198bb1a2ba7-5"></a><span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">numero2</span><span class="p">))</span>
+</pre>
+<pre class="code console"><a name="rest_code_241f78669ae84df0ab07aeddcf958e19-1"></a><span class="gp">$</span> python3 sumar.py
+<a name="rest_code_241f78669ae84df0ab07aeddcf958e19-2"></a><span class="go">¿Cuál es el primer número? 3</span>
+<a name="rest_code_241f78669ae84df0ab07aeddcf958e19-3"></a><span class="go">¿y el segundo? 7</span>
+<a name="rest_code_241f78669ae84df0ab07aeddcf958e19-4"></a><span class="go">&lt;class 'str'&gt;</span>
+<a name="rest_code_241f78669ae84df0ab07aeddcf958e19-5"></a><span class="go">&lt;class 'str'&gt;</span>
+</pre>
+<p>¡Ajá! Son <em>strings</em>. Los datos que ingresás usando la función <tt class="docutils literal">input()</tt> son siempre Strings. Los podemos convertir
+a números enteros con <tt class="docutils literal">int()</tt> o a números con coma con <tt class="docutils literal">float()</tt>.
+Modifiquemos <tt class="docutils literal">sumar.py</tt> a ver qué pasa.</p>
+<pre class="code python"><a name="rest_code_8e5dd6e8501b438a8a171cf845b1b80f-1"></a><span class="n">numero1</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'¿Cuál es el primer número? '</span><span class="p">)</span>
+<a name="rest_code_8e5dd6e8501b438a8a171cf845b1b80f-2"></a><span class="n">numero2</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'¿y el segundo? '</span><span class="p">)</span>
+<a name="rest_code_8e5dd6e8501b438a8a171cf845b1b80f-3"></a>
+<a name="rest_code_8e5dd6e8501b438a8a171cf845b1b80f-4"></a><span class="n">resultado</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">numero1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">float</span><span class="p">(</span><span class="n">numero2</span><span class="p">)</span>
+<a name="rest_code_8e5dd6e8501b438a8a171cf845b1b80f-5"></a>
+<a name="rest_code_8e5dd6e8501b438a8a171cf845b1b80f-6"></a><span class="k">print</span><span class="p">(</span><span class="n">f</span><span class="s1">'La suma de ambos número es {resultado}'</span><span class="p">)</span>
+</pre>
+<pre class="code console"><a name="rest_code_c2f5b57484004a549558b03b83c5b785-1"></a><span class="gp">$</span> python3 sumar.py
+<a name="rest_code_c2f5b57484004a549558b03b83c5b785-2"></a><span class="go">¿Cuál es el primer número? 3</span>
+<a name="rest_code_c2f5b57484004a549558b03b83c5b785-3"></a><span class="go">¿y el segundo? 7</span>
+<a name="rest_code_c2f5b57484004a549558b03b83c5b785-4"></a><span class="go">La suma de ambos número es 10.0</span>
+</pre>
+<p>¡Genial! Ahora sí. Nuestro sueño de Silicon Valley sigue intacto... xD</p>
+<p class="alert alert-info small">La función <tt class="docutils literal">float()</tt> la podríamos haber puesto también mientras asignámos el <tt class="docutils literal">input()</tt> a la variable.
+Por ejemplo: numero1 = float(input('¿Cuál es el primer número? '))</p>
+<div class="section" id="id6">
+<h3>Ahora te toca a vos</h3>
+<p>Ejercicios:</p>
+<ol class="arabic simple">
+<li>Hacé un programa que le pida al usuario 2 números e imprima su diferencia.</li>
+<li>Hacé un programa que le pida al usuario un precio final y le muestre al usuario el valor neto y el IVA.</li>
+<li>Hacé un programa que le pida al usuario un precio y calcule el precio final con IVA.</li>
+<li>Hacé un programa que le pida al usuario al menos 1 sustantivo, 1 verbo y 1 adjetivo y construya una oración con eso.</li>
+<li>Hacé un programa que le pida al usuario la cotización del dólar y un precio en dólares y devuelva el precio en ARS.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="condicionales">
+<h2>Condicionales</h2>
+<p>Cuando programamos generalmente necesitamos hacer preguntas cerradas para determinar qué hacer después en nuestro programa.
+Cómo cuando pensás qué hacer en la vida misma. ¿Ya cobramos el sueldo? Sí. ¿Llegamos a la esquina y tengo que esperar a
+que corte el semáforo para cruzar? Si. ¿Tengo que aprender Python? ¡Sí!</p>
+<p>Veamos entonces cómo podemos hacer esto en nuestro programas.</p>
+<div class="section" id="booleanos">
+<h3>Booleanos</h3>
+<p>Cuando tenés valores como 1 o 0, Verdadero o Falso, Si o No, se llaman <em>Booleanos</em>.</p>
+<p class="alert alert-success small">Los valores booleanos llevan su nombre en honor a <a href="https://es.wikipedia.org/wiki/George_Boole" target="_blank">George Boole</a> quién desarrolló un sistema de reglas para trabajar
+con este tipo de valores.</p>
+<p>Python tiene esos valores representados en <tt class="docutils literal">True</tt> y en <tt class="docutils literal">False</tt>. Y tiene diferentes operadores que devuelven
+valores booleanos. Como por ejemplo <tt class="docutils literal">==</tt> o <tt class="docutils literal">!=</tt> que son operadores relacionales y sirven para comparar si ambos
+valores a los lados del operador son iguales o no respectivamente.</p>
+<pre class="code python3"><a name="rest_code_36904a2fa297417b922ed7268d282a10-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">0</span>
+<a name="rest_code_36904a2fa297417b922ed7268d282a10-2"></a><span class="kc">False</span>
+<a name="rest_code_36904a2fa297417b922ed7268d282a10-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">==</span> <span class="mi">1</span>
+<a name="rest_code_36904a2fa297417b922ed7268d282a10-4"></a><span class="kc">True</span>
+<a name="rest_code_36904a2fa297417b922ed7268d282a10-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">!=</span> <span class="mi">0</span>
+<a name="rest_code_36904a2fa297417b922ed7268d282a10-6"></a><span class="kc">True</span>
+</pre>
+<p class="alert alert-info small">Notar que en <tt class="docutils literal">True</tt> la <tt class="docutils literal">T</tt> es mayúscula y en <tt class="docutils literal">False</tt> la <tt class="docutils literal">F</tt> es mayúscula.</p>
+<p>También tenemos otros operadores relacionales como mayor (<tt class="docutils literal">&gt;</tt>), mayor o igual (<tt class="docutils literal">&gt;=</tt>), menor (<tt class="docutils literal">&lt;</tt>) y menor o igual (<tt class="docutils literal">&lt;=</tt>).</p>
+<pre class="code python3"><a name="rest_code_fc03254f09074d4f884ab18999a1b8e2-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<a name="rest_code_fc03254f09074d4f884ab18999a1b8e2-2"></a><span class="kc">True</span>
+<a name="rest_code_fc03254f09074d4f884ab18999a1b8e2-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">&gt;=</span> <span class="mi">1</span>
+<a name="rest_code_fc03254f09074d4f884ab18999a1b8e2-4"></a><span class="kc">True</span>
+<a name="rest_code_fc03254f09074d4f884ab18999a1b8e2-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">5</span>
+<a name="rest_code_fc03254f09074d4f884ab18999a1b8e2-6"></a><span class="kc">False</span>
+<a name="rest_code_fc03254f09074d4f884ab18999a1b8e2-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">&lt;=</span> <span class="mi">10</span>
+<a name="rest_code_fc03254f09074d4f884ab18999a1b8e2-8"></a><span class="kc">True</span>
+</pre>
+<p>Con los números es muy fácil entender cómo funciona. Pero, ¿qué pasa si intentamos con <em>strings</em>?</p>
+<pre class="code python3"><a name="rest_code_1d99e38a151b4d529faf7fcf648df43d-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="s1">'a'</span> <span class="o">&lt;</span> <span class="s1">'b'</span>
+</pre>
+<p>Es <tt class="docutils literal">True</tt>! Porque <tt class="docutils literal">a</tt> viene antes que <tt class="docutils literal">b</tt> alfabéticamente entonces se considera "menor". Las comparaciones
+sirver tanto para números como para cadenas y para otros tipos de objetos que aún no conocemos.</p>
+<pre class="code python3"><a name="rest_code_0b7f5ceb3fff407ab7bf00ddacbac545-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="s2">"a"</span> <span class="o">==</span> <span class="s2">"A"</span>
+<a name="rest_code_0b7f5ceb3fff407ab7bf00ddacbac545-2"></a><span class="kc">False</span>
+<a name="rest_code_0b7f5ceb3fff407ab7bf00ddacbac545-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="s2">"a"</span> <span class="o">==</span> <span class="s2">"a"</span>
+<a name="rest_code_0b7f5ceb3fff407ab7bf00ddacbac545-4"></a><span class="kc">True</span><span class="o">&gt;&gt;&gt;</span> <span class="s2">"a"</span> <span class="o">&lt;</span> <span class="s2">"b"</span>
+<a name="rest_code_0b7f5ceb3fff407ab7bf00ddacbac545-5"></a><span class="kc">True</span>
+<a name="rest_code_0b7f5ceb3fff407ab7bf00ddacbac545-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="s2">"apple"</span> <span class="o">&lt;</span> <span class="s2">"animal"</span>
+<a name="rest_code_0b7f5ceb3fff407ab7bf00ddacbac545-7"></a><span class="kc">False</span>
+</pre>
+<p>Y, ¿qué pasa en este caso?</p>
+<pre class="code python3"><a name="rest_code_6a76a8b734944338a1f78ad7629c319b-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="s2">"Z"</span> <span class="o">&lt;</span> <span class="s2">"a"</span>
+</pre>
+<p>También es <tt class="docutils literal">True</tt>! Porque aunque todos sabemos que <tt class="docutils literal">Z</tt> viene después que la <tt class="docutils literal">a</tt> en el alfabeto, Python
+utiliza una codificación y "convierte" esas letras en números. En esa "conversión" las mayúsuculas están antes
+que las minúsculas. Incluso tampoco están las letrs acentuadas. Las codificación es ASCII.</p>
+<p>Python cuenta además con otros operadores que nos devuelven valores booleanos: <tt class="docutils literal">in</tt> es uno de ellos y sirve para
+determinar si un objeto "está" dentro de otro. Por ejemplo:</p>
+<pre class="code python3"><a name="rest_code_c284b28cf5c44e318fe1fe746b6a3cfd-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="s2">"H"</span> <span class="ow">in</span> <span class="s2">"¡Hola!"</span>
+<a name="rest_code_c284b28cf5c44e318fe1fe746b6a3cfd-2"></a><span class="kc">True</span>
+<a name="rest_code_c284b28cf5c44e318fe1fe746b6a3cfd-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="s2">"x"</span> <span class="ow">in</span> <span class="s2">"¡Hola!"</span>
+<a name="rest_code_c284b28cf5c44e318fe1fe746b6a3cfd-4"></a><span class="kc">False</span>
+</pre>
+<p>Se puede usar <tt class="docutils literal">not in</tt> para determinar si no está:</p>
+<pre class="code python3"><a name="rest_code_32aacadc9679407cab05ddaa106adab0-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="s2">"H"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="s2">"¡Hola!"</span>
+<a name="rest_code_32aacadc9679407cab05ddaa106adab0-2"></a><span class="kc">False</span>
+<a name="rest_code_32aacadc9679407cab05ddaa106adab0-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="s2">"x"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="s2">"¡Hola!"</span>
+<a name="rest_code_32aacadc9679407cab05ddaa106adab0-4"></a><span class="kc">True</span>
+</pre>
+</div>
+<div class="section" id="operadores-logicos">
+<h3>Operadores lógicos</h3>
+<p>Así como con los números se pueden realizar operaciones aritméticas, con operadores booleanos se pueden
+realizar operaciones lógicas. Las básicas son 3: <em>suma lógica</em>, <em>producto lógico</em> y <em>negación</em>. En Python
+estos operadores son <tt class="docutils literal">or</tt>, <tt class="docutils literal">and</tt> y <tt class="docutils literal">not</tt> respectivamente.</p>
+<p>Si bien estos operadores tienen su lógica, la explicación de ésta escapa el objetivo del taller. Por que
+sólo nos vamos a limitar a recordar cómo es que funcionan.</p>
+<div class="section" id="negacion">
+<h4>Negación</h4>
+<p>Es el más simple de los operadores lógicos. Es un operador unario, ya que sólo necesitamos de un valor
+booleano para obtener el resultado. Y básicamente lo que hace es devolver el resultado opuesto. Es decir,
+si le damos <tt class="docutils literal">True</tt> devuelve <tt class="docutils literal">False</tt> y viceversa.</p>
+<pre class="code python3"><a name="rest_code_b881ca2464104d1cbee92d327a54ac99-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="ow">not</span> <span class="kc">True</span>
+<a name="rest_code_b881ca2464104d1cbee92d327a54ac99-2"></a><span class="kc">False</span>
+<a name="rest_code_b881ca2464104d1cbee92d327a54ac99-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="ow">not</span> <span class="kc">False</span>
+<a name="rest_code_b881ca2464104d1cbee92d327a54ac99-4"></a><span class="kc">True</span>
+</pre>
+</div>
+<div class="section" id="suma-logica">
+<h4>Suma lógica</h4>
+<p>Éste es un operador binario, es decir, necesita dos valores, uno a cada lado, como los operadores aritméticos.
+Y devuelve <tt class="docutils literal">False</tt> sí y sólo si ambos operadores son <tt class="docutils literal">False</tt>. Como tenemos 2 valores posibles a cada lado
+del operador, entonces tenemos 4 resultados posibles:</p>
+<pre class="code python3"><a name="rest_code_6dc2db90d4c944419f62784eeb892dce-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kc">True</span> <span class="ow">or</span> <span class="kc">True</span>
+<a name="rest_code_6dc2db90d4c944419f62784eeb892dce-2"></a><span class="kc">True</span>
+<a name="rest_code_6dc2db90d4c944419f62784eeb892dce-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="kc">True</span> <span class="ow">or</span> <span class="kc">False</span>
+<a name="rest_code_6dc2db90d4c944419f62784eeb892dce-4"></a><span class="kc">True</span>
+<a name="rest_code_6dc2db90d4c944419f62784eeb892dce-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="kc">False</span> <span class="ow">or</span> <span class="kc">True</span>
+<a name="rest_code_6dc2db90d4c944419f62784eeb892dce-6"></a><span class="kc">True</span>
+<a name="rest_code_6dc2db90d4c944419f62784eeb892dce-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="kc">False</span> <span class="ow">or</span> <span class="kc">False</span>
+<a name="rest_code_6dc2db90d4c944419f62784eeb892dce-8"></a><span class="kc">False</span>
+</pre>
+</div>
+<div class="section" id="producto-logico">
+<h4>Producto lógico</h4>
+<p>Análogo al anterior con la diferencia que nos devuelve <tt class="docutils literal">True</tt> si y sólo si ambos operandos son <tt class="docutils literal">True</tt>.</p>
+<pre class="code python3"><a name="rest_code_446f92aaa1c04621a406490da7a9955f-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kc">True</span> <span class="ow">and</span> <span class="kc">True</span>
+<a name="rest_code_446f92aaa1c04621a406490da7a9955f-2"></a><span class="kc">True</span>
+<a name="rest_code_446f92aaa1c04621a406490da7a9955f-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="kc">True</span> <span class="ow">and</span> <span class="kc">False</span>
+<a name="rest_code_446f92aaa1c04621a406490da7a9955f-4"></a><span class="kc">False</span>
+<a name="rest_code_446f92aaa1c04621a406490da7a9955f-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="kc">False</span> <span class="ow">and</span> <span class="kc">True</span>
+<a name="rest_code_446f92aaa1c04621a406490da7a9955f-6"></a><span class="kc">False</span>
+<a name="rest_code_446f92aaa1c04621a406490da7a9955f-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="kc">False</span> <span class="ow">and</span> <span class="kc">False</span>
+<a name="rest_code_446f92aaa1c04621a406490da7a9955f-8"></a><span class="kc">False</span>
+</pre>
+</div>
+</div>
+<div class="section" id="expresiones-condicionales">
+<h3>Expresiones condicionales</h3>
+<p>Podemos usar <tt class="docutils literal">if</tt> para evaluar una expresión booleana y actuar según el valor de la respuesta de ese
+valor booleano. Por ejemplo:</p>
+<pre class="code python3"><a name="rest_code_fdc8f5256c75438ab15a9db7d96923c6-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">año</span> <span class="o">=</span> <span class="mi">2018</span>
+<a name="rest_code_fdc8f5256c75438ab15a9db7d96923c6-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">año</span> <span class="o">==</span> <span class="mi">2018</span><span class="p">:</span>
+<a name="rest_code_fdc8f5256c75438ab15a9db7d96923c6-3"></a><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s1">'Genial. Un gran año para aprender Python.'</span><span class="p">)</span>
+<a name="rest_code_fdc8f5256c75438ab15a9db7d96923c6-4"></a><span class="o">...</span>
+<a name="rest_code_fdc8f5256c75438ab15a9db7d96923c6-5"></a><span class="n">Genial</span><span class="o">.</span> <span class="n">Un</span> <span class="n">gran</span> <span class="n">año</span> <span class="n">para</span> <span class="n">aprender</span> <span class="n">Python</span><span class="o">.</span>
+</pre>
+<p class="alert alert-info small">Habrás notado que escribimos el <tt class="docutils literal">print</tt> con una sangría. Eso lo solemos llamar <em>indentación</em>.
+En Python la indentación es <strong>súper</strong> importante. Es lo que usa internamente Python para identificar
+los bloques de sentencias. Fijate que después de la instrucción <tt class="docutils literal">print</tt> dejamos una línea en blanco
+para indicarle al REPL que nuestro bloque de sentencias terminó. Así sabe que lo puede ejecutar.
+Si queremos escribir sentencias que estén fuera del bloque lo que hacemos es "romper" esa <em>indentación</em>
+escribiendo sin la sangría que insertamos anteriormente.</p>
+<p>También podemos agregar una sección <tt class="docutils literal">else</tt> para ejecutar código cuando la expresión booleana se evalúa
+como <tt class="docutils literal">False</tt>.</p>
+<pre class="code python3"><a name="rest_code_4997e0ccd6bc4b66bf0d3f4d0cfba2c2-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">año</span> <span class="o">=</span> <span class="mi">2017</span>
+<a name="rest_code_4997e0ccd6bc4b66bf0d3f4d0cfba2c2-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">año</span> <span class="o">==</span> <span class="mi">2018</span><span class="p">:</span>
+<a name="rest_code_4997e0ccd6bc4b66bf0d3f4d0cfba2c2-3"></a><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s1">'¡Genial! Un gran año para aprender Python.'</span><span class="p">)</span>
+<a name="rest_code_4997e0ccd6bc4b66bf0d3f4d0cfba2c2-4"></a><span class="o">...</span> <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_4997e0ccd6bc4b66bf0d3f4d0cfba2c2-5"></a><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s1">'Uf... me perdí la PyConAR, a esperar...'</span><span class="p">)</span>
+<a name="rest_code_4997e0ccd6bc4b66bf0d3f4d0cfba2c2-6"></a><span class="n">Uf</span><span class="o">...</span> <span class="n">me</span> <span class="n">perdí</span> <span class="n">la</span> <span class="n">PyConAR</span><span class="p">,</span> <span class="n">a</span> <span class="n">esperar</span><span class="o">...</span>
+</pre>
+</div>
+<div class="section" id="id7">
+<h3>Ahora te toca a vos</h3>
+<ol class="arabic simple">
+<li>Escribí un programa que pida al usuario la temperatura que hay en el ambiente y según tu criterio le imprima si hace calor o hace frío.</li>
+<li>
+<strong>Bonus</strong>: modificá el programa anterior para que si la temperatura es menor a 0 diga: "Me congelo!"</li>
+<li>Escribí un programa que sirva para jugar "Piedra, Papel o Tijera". Pida al usuario lo que hizo cada jugador y determine quién ganó.</li>
+<li>Hacé un programa <tt class="docutils literal">adivina_numero.py</tt> que genere un número al azar de 1 a 10 y le pida al usuario que adivine el número. Si el usuario adivinó, que le muestre un mensaje de felicitaciones.</li>
+<li>Escribí un programa que le pida al usuario una frase y luego una palabra. Que el programa informe si la palabra ingresada está en la frase.</li>
+<li>Hacé un programa que reciba una fecha de nacimiento e imprima algunas fechas importantes que tengan en el futuro: mayor de edad, 30 años, 50 años, 65 años y 90 años.</li>
+</ol>
+<p class="alert alert-info small">Podés ayudarte leyendo la documentación sobre <a href="https://docs.python.org/3/library/datetime.html#datetime.datetime" target="_blank">datetime</a>.</p>
+</div>
+</div>
+<div class="section" id="listas">
+<h2>Listas</h2>
+<p>¿Quién no hace listas para su día a día? Por ejemplo, yo a la mañana suelo hacer una lista de las cosas
+que tengo que hacer en el día. Todo el tiempo necesitamos de listas. En Python las listas son colecciones
+de datos ordenados. Para definir una lista en Python necesitamos una variable y ponemos los valores que
+debe contener la lista entre corchetes.</p>
+<pre class="code python3"><a name="rest_code_65ef7f4a1215435d979820491bf33d33-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'genial'</span><span class="p">,</span> <span class="s1">'fantástica'</span><span class="p">,</span> <span class="s1">'impresionante'</span><span class="p">,</span> <span class="s1">'fabulantástica'</span><span class="p">]</span>
+<a name="rest_code_65ef7f4a1215435d979820491bf33d33-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span>
+<a name="rest_code_65ef7f4a1215435d979820491bf33d33-3"></a><span class="p">[</span><span class="s1">'genial'</span><span class="p">,</span> <span class="s1">'fantástica'</span><span class="p">,</span> <span class="s1">'impresionante'</span><span class="p">,</span> <span class="s1">'fabulantástica'</span><span class="p">]</span>
+</pre>
+<p>Las listas pueden contener cualquier tipo de objeto que hay en Python, incluso otras listas.</p>
+<pre class="code python3"><a name="rest_code_60a3d5bfdb874e3f9670659d56d84761-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">cosas</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">'Hola'</span><span class="p">,</span> <span class="n">adjetivos_pyconar</span><span class="p">]</span>
+<a name="rest_code_60a3d5bfdb874e3f9670659d56d84761-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span>
+<a name="rest_code_60a3d5bfdb874e3f9670659d56d84761-3"></a><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">'Hola'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'genial'</span><span class="p">,</span> <span class="s1">'fantástica'</span><span class="p">,</span> <span class="s1">'impresionante'</span><span class="p">,</span> <span class="s1">'fabulantástica'</span><span class="p">]]</span>
+</pre>
+<p>Como con cualquier otro tipo de objeto en Python podemos usar <tt class="docutils literal">type</tt>:</p>
+<pre class="code python3"><a name="rest_code_6c5930cba7634cebbd82278f23cb0e72-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">adjetivos_pyconar</span><span class="p">)</span>
+<a name="rest_code_6c5930cba7634cebbd82278f23cb0e72-2"></a><span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">list</span><span class="s1">'&gt;</span>
+</pre>
+<p>Y podemos usar también el operador <tt class="docutils literal">in</tt> para saber si un objeto está en la lista:</p>
+<pre class="code python3"><a name="rest_code_83287ea2cf294e2e95b8bef5888cf659-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kc">False</span> <span class="ow">in</span> <span class="n">cosas</span>
+<a name="rest_code_83287ea2cf294e2e95b8bef5888cf659-2"></a><span class="kc">False</span>
+<a name="rest_code_83287ea2cf294e2e95b8bef5888cf659-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="ow">in</span> <span class="n">cosas</span>
+<a name="rest_code_83287ea2cf294e2e95b8bef5888cf659-4"></a><span class="kc">True</span>
+</pre>
+<div class="section" id="id8">
+<h3>Ahora te toca a vos</h3>
+<p>Ejercicios:</p>
+<ol class="arabic simple">
+<li>Creá un programa <tt class="docutils literal">evento.py</tt> que tenga una lista de nombres y le pida al usuario su nombre. Si el nombre ingresado está en la lista que le imprima un mensaje de bienvenida, sino que le informque que no está en la lista de invitados.</li>
+<li>Escribí un programa <tt class="docutils literal">amigo.py</tt> que contenga 2 listas de emociones y le pregunte al usuario cómo está. Según lo que responda el usuario, si está en alguna de esas listas responda apropiadamente. Si no está en ninguna lista que imprima, "No sé como entenderte". Si el usuario ingresa "Cómo estás vos?" (en mayúsculas y/o minúsculas) que responda aleatoriamente con algun valor de las listas de emociones.</li>
+<li>Acabás de adquirir una compañía de tecnología "Bitson SA". Hacé un programa que contenga una lista con <tt class="docutils literal">tus_propiedades</tt> que contenga tus objetos y una lista con las propiedades de <tt class="docutils literal">bitson_propiedades</tt> que tiene los bienes de la compañía. Hacé que el programa presente una nueva lista con todos esos elementos combinados. <em>Ojo</em>: que no sea una lista de 2 listas, sino una única lista con los objetos de esas listas.</li>
+<li>Mejorá el programa anterior de "Piedra, papel o tijera" haciéndolo interactivo. Que el programa le pida al usuario su movimiento y luego la computadora debe elegir un movimiento aleatorio e informar si ganó el usuario o la computadora.</li>
+<li>Creá un programa que se llame <tt class="docutils literal">bola_8_magica.py</tt> que acepte preguntas del usuario y aleatoriamente conteste "sí", "no" o "puede ser".</li>
+<li>Hacé un programa <tt class="docutils literal">ayudante_cocina.py</tt>. Tiene que tener una lista de contenidos que puede tener un sandwich (proteinas, vegetales, fiambres, tipo de pan, etc...). Cuando se ejecuta el programa éste imprime por pantalla un elemento de cada lista para que el ayudante de cocina pueda armar el sandwich.</li>
+</ol>
+<pre class="code console"><a name="rest_code_8e4e82e9cde6478fab8824de740be5c6-1"></a><span class="gp">$</span> python3 ayudante_cocina.py
+<a name="rest_code_8e4e82e9cde6478fab8824de740be5c6-2"></a><span class="go">lomito</span>
+<a name="rest_code_8e4e82e9cde6478fab8824de740be5c6-3"></a><span class="go">queso brie</span>
+<a name="rest_code_8e4e82e9cde6478fab8824de740be5c6-4"></a><span class="go">mayonesa</span>
+<a name="rest_code_8e4e82e9cde6478fab8824de740be5c6-5"></a><span class="go">tomate</span>
+<a name="rest_code_8e4e82e9cde6478fab8824de740be5c6-6"></a><span class="go">pan integral</span>
+</pre>
+<p class="alert alert-info small">Podés usar <tt class="docutils literal">random.choice()</tt> para la selección. Leelo en la documentación de <a href="https://docs.python.org/3/library/random.html?highlight=random#random.choice" target="_blank">random</a>.</p>
+</div>
+</div>
+<div class="section" id="mas-listas">
+<h2>Más listas</h2>
+<div class="section" id="obteniendo-objetos-de-la-lista">
+<h3>Obteniendo objetos de la lista</h3>
+<p>Como mencionamos anteriormente las listas son colecciones ordenadas de objetos. Es decir, su contenido tiene
+un orden. Es decir, podemos ubicar a las cosas en la lista por el lugar que ocupan en ella. Esa posición
+en general se la conoce como índice. Para poder acceder a los elementos de una lista, necesitás tener
+presente 2 cosas:</p>
+<ol class="arabic simple">
+<li>Las listas empiezan en <tt class="docutils literal">0</tt>, no en <tt class="docutils literal">1</tt>.</li>
+<li>Obtenemos el objeto con el nombre de la lista y usando los <tt class="docutils literal">[]</tt>.</li>
+</ol>
+<p>Por ejemplo, si queremos obtener <tt class="docutils literal">"genial"</tt> de la lista <tt class="docutils literal">adjetivos_pyconar</tt>:</p>
+<pre class="code python3"><a name="rest_code_9560c1f54cab438d8e58c49161ad1b6c-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'genial'</span><span class="p">,</span> <span class="s1">'fantástica'</span><span class="p">,</span> <span class="s1">'impresionante'</span><span class="p">,</span> <span class="s1">'fabulantástica'</span><span class="p">]</span>
+<a name="rest_code_9560c1f54cab438d8e58c49161ad1b6c-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<a name="rest_code_9560c1f54cab438d8e58c49161ad1b6c-3"></a><span class="s1">'genial'</span>
+</pre>
+<p>¡Genial! También podés obtener un rango de la lista. Por ejemplo:</p>
+<pre class="code python3"><a name="rest_code_4102b3cc34c347c38af831013de40bc2-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
+<a name="rest_code_4102b3cc34c347c38af831013de40bc2-2"></a><span class="p">[</span><span class="s1">'fantástica'</span><span class="p">]</span>
+</pre>
+<p>Pará, pará, pará! Le pedimos a la lista que nos dé las cosas desde el 1 al 2 y sólo nos mostró <tt class="docutils literal">'fantástica'</tt>.</p>
+<p>Esto es porque cuando usamos esta sintáxis de "rebanado" o <em>slicing</em> nos trae desde el valor que indicamos inicialmente
+hasta el que indicamos como final no incluyendo éste último.</p>
+<p>¿Y si tenemos una lista dentro de otra lista? ¿Cómo accedemos a elementos de esa otra lista? Recuerden nuestra
+lista de <tt class="docutils literal">cosas</tt>, si queremos obtener <tt class="docutils literal">'impresionante'</tt>:</p>
+<pre class="code python3"><a name="rest_code_c538ba437a0549e9bb88cf26278ee3e3-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">cosas</span>
+<a name="rest_code_c538ba437a0549e9bb88cf26278ee3e3-2"></a><span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">'Hola'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'genial'</span><span class="p">,</span> <span class="s1">'fantástica'</span><span class="p">,</span> <span class="s1">'impresionante'</span><span class="p">,</span> <span class="s1">'fabulantástica'</span><span class="p">]]</span>
+<a name="rest_code_c538ba437a0549e9bb88cf26278ee3e3-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">cosas</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+<a name="rest_code_c538ba437a0549e9bb88cf26278ee3e3-4"></a><span class="s1">'impresionante'</span>
+</pre>
+<p>¡Fabulantástico!</p>
+</div>
+<div class="section" id="modificando-la-lista">
+<h3>Modificando la lista</h3>
+<p>Puedo agregar elementos a una lista con <tt class="docutils literal">.append()</tt> pasándole como argumento el elemento a agregar. Por ejemplo:</p>
+<pre class="code python3"><a name="rest_code_38a74751e1f9450dbff2fd6a358798df-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'espectacular'</span><span class="p">)</span>
+<a name="rest_code_38a74751e1f9450dbff2fd6a358798df-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span>
+<a name="rest_code_38a74751e1f9450dbff2fd6a358798df-3"></a><span class="p">[</span><span class="s1">'genial'</span><span class="p">,</span> <span class="s1">'fantástica'</span><span class="p">,</span> <span class="s1">'impresionante'</span><span class="p">,</span> <span class="s1">'fabulantástica'</span><span class="p">,</span> <span class="s1">'espectacular'</span><span class="p">]</span>
+</pre>
+<p>Se puede modificar un elemento de una lista asignando un nuevo valor a ese elemento.</p>
+<pre class="code python3"><a name="rest_code_3ef23ffaeaee47d79788c11f504cd215-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'fabulosa'</span>
+<a name="rest_code_3ef23ffaeaee47d79788c11f504cd215-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span>
+<a name="rest_code_3ef23ffaeaee47d79788c11f504cd215-3"></a><span class="p">[</span><span class="s1">'genial'</span><span class="p">,</span> <span class="s1">'fantástica'</span><span class="p">,</span> <span class="s1">'impresionante'</span><span class="p">,</span> <span class="s1">'fabulosa'</span><span class="p">,</span> <span class="s1">'espectacular'</span><span class="p">]</span>
+</pre>
+<p>También se pueden sacar elementos de una lista. Podemos usar <tt class="docutils literal">.remove()</tt> que hay que pasarle el elemento
+que queremos borrar:</p>
+<pre class="code python3"><a name="rest_code_3b8e6e53aadd4988b26437f1b73e7f50-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">'impresionante'</span><span class="p">)</span>
+<a name="rest_code_3b8e6e53aadd4988b26437f1b73e7f50-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span>
+<a name="rest_code_3b8e6e53aadd4988b26437f1b73e7f50-3"></a><span class="p">[</span><span class="s1">'genial'</span><span class="p">,</span> <span class="s1">'fantástica'</span><span class="p">,</span> <span class="s1">'fabulantástica'</span><span class="p">,</span> <span class="s1">'espectacular'</span><span class="p">]</span>
+</pre>
+<p>O podemos usar <tt class="docutils literal">.pop()</tt> que saca el último elemento de la lista:</p>
+<pre class="code python3"><a name="rest_code_54a795fbda2a4182b2b18f95691388ac-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<a name="rest_code_54a795fbda2a4182b2b18f95691388ac-2"></a><span class="s1">'espectacular'</span>
+<a name="rest_code_54a795fbda2a4182b2b18f95691388ac-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span>
+<a name="rest_code_54a795fbda2a4182b2b18f95691388ac-4"></a><span class="p">[</span><span class="s1">'genial'</span><span class="p">,</span> <span class="s1">'fantástica'</span><span class="p">,</span> <span class="s1">'fabulantástica'</span><span class="p">]</span>
+</pre>
+<p>Que también admite que le pasemo un índice:</p>
+<pre class="code python3"><a name="rest_code_7a6e7d632c5c40e8ac88c5401973117f-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<a name="rest_code_7a6e7d632c5c40e8ac88c5401973117f-2"></a><span class="s1">'fantástica'</span>
+<a name="rest_code_7a6e7d632c5c40e8ac88c5401973117f-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">adjetivos_pyconar</span>
+<a name="rest_code_7a6e7d632c5c40e8ac88c5401973117f-4"></a><span class="p">[</span><span class="s1">'genial'</span><span class="p">,</span> <span class="s1">'fabulantástica'</span><span class="p">]</span>
+</pre>
+</div>
+<div class="section" id="id9">
+<h3>Ahora te toca a vos</h3>
+<p>Ejercicios:</p>
+<p><a class="reference external" href="../../listings/pyintro/capitales.py.html">pyintro/capitales.py</a>  <a class="reference external" href="../../listings/pyintro/capitales.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-1"></a><span class="kn">import</span> <span class="nn">random</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-2"></a>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-3"></a><span class="n">provincias_y_capitales</span> <span class="o">=</span> <span class="p">[</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-4"></a>    <span class="p">[</span><span class="s1">'Buenos Aires'</span><span class="p">,</span> <span class="s1">'La Plata'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-5"></a>    <span class="p">[</span><span class="s1">'Catamarca'</span><span class="p">,</span> <span class="s1">'San Fernando del Valle de Catamarca'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-6"></a>    <span class="p">[</span><span class="s1">'Chaco'</span><span class="p">,</span> <span class="s1">'Resistencia'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-7"></a>    <span class="p">[</span><span class="s1">'Chubut'</span><span class="p">,</span> <span class="s1">'Rawson'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-8"></a>    <span class="p">[</span><span class="s1">'Córdoba'</span><span class="p">,</span> <span class="s1">'Córdoba'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-9"></a>    <span class="p">[</span><span class="s1">'Corrientes'</span><span class="p">,</span> <span class="s1">'Corrientes'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-10"></a>    <span class="p">[</span><span class="s1">'Entre Ríos'</span><span class="p">,</span> <span class="s1">'Paraná'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-11"></a>    <span class="p">[</span><span class="s1">'Formosa'</span><span class="p">,</span> <span class="s1">'Formosa'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-12"></a>    <span class="p">[</span><span class="s1">'Jujuy'</span><span class="p">,</span> <span class="s1">'San Salvador de Jujuy'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-13"></a>    <span class="p">[</span><span class="s1">'La Pampa'</span><span class="p">,</span> <span class="s1">'Santa Rosa'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-14"></a>    <span class="p">[</span><span class="s1">'La Rioja'</span><span class="p">,</span> <span class="s1">'La Rioja'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-15"></a>    <span class="p">[</span><span class="s1">'Mendoza'</span><span class="p">,</span> <span class="s1">'Mendoza'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-16"></a>    <span class="p">[</span><span class="s1">'Misiones'</span><span class="p">,</span> <span class="s1">'Posadas'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-17"></a>    <span class="p">[</span><span class="s1">'Neuquén'</span><span class="p">,</span> <span class="s1">'Neuquén'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-18"></a>    <span class="p">[</span><span class="s1">'Río Negro'</span><span class="p">,</span> <span class="s1">'Viedma'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-19"></a>    <span class="p">[</span><span class="s1">'Salta'</span><span class="p">,</span> <span class="s1">'Salta'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-20"></a>    <span class="p">[</span><span class="s1">'San Juan'</span><span class="p">,</span> <span class="s1">'San Juan'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-21"></a>    <span class="p">[</span><span class="s1">'San Luis'</span><span class="p">,</span> <span class="s1">'San Luis'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-22"></a>    <span class="p">[</span><span class="s1">'Santa Cruz'</span><span class="p">,</span> <span class="s1">'Río Gallegos'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-23"></a>    <span class="p">[</span><span class="s1">'Santa Fe'</span><span class="p">,</span> <span class="s1">'Santa Fe'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-24"></a>    <span class="p">[</span><span class="s1">'Santiago del Estero'</span><span class="p">,</span> <span class="s1">'Santiago del Estero'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-25"></a>    <span class="p">[</span><span class="s1">'Tierra del Fuego'</span><span class="p">,</span> <span class="s1">'Ushuaia'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-26"></a>    <span class="p">[</span><span class="s1">'Tucumán'</span><span class="p">,</span> <span class="s1">'San Miguel de Tucumán'</span><span class="p">],</span>
+<a name="rest_code_1a8bc586b0034b1391f05f3456df8b3e-27"></a><span class="p">]</span>
+</pre>
+<ol class="arabic simple">
+<li>Creá un programa que te ayude a planear tus próximas 5 vacaciones. El programa debe pedir 5 destinos. Luego debe elegir uno de esos aleatoriamente elige aleatoriamente también una cantidad de días e imprime el resultado de las 5 vacaciones. No se deben repetir los destinos.</li>
+<li>Copiá el contenido de <tt class="docutils literal">capitales.py</tt> y creá el archivo <tt class="docutils literal">adivina_capital.py</tt>. En este nuevo archivo creá un programa que elija aleatoriamente una provincia y le pida al usuario que escriba la capital. Si el usuario acertó, que el programa lo felicite. Sino le agradezca por intentarlo.</li>
+<li>Mejorá el programa <tt class="docutils literal">ayudante_cocina.py</tt>. Creá una lista de nombres <em>copados</em> para tus sandwiches y hacé que el programa te imprima el menú de los sándwiches con esos ingredientes.</li>
+</ol>
+<p class="alert alert-success small">Si no hiciste el programa anterior, podés usar estas listas:</p>
+<div class="alert alert-success small"><pre class="code python3"><a name="rest_code_76a4c06a98d346429e05d6ed5b648b80-1"></a><span class="n">proteinas</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"jamón"</span><span class="p">,</span> <span class="s2">"pollo"</span><span class="p">,</span> <span class="s2">"lomito"</span><span class="p">,</span> <span class="s2">"lentejas"</span><span class="p">]</span>
+<a name="rest_code_76a4c06a98d346429e05d6ed5b648b80-2"></a><span class="n">condimentos</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"mostaza"</span><span class="p">,</span> <span class="s2">"ketchup"</span><span class="p">,</span> <span class="s2">"hummus"</span><span class="p">,</span> <span class="s2">"barbacoa"</span><span class="p">,</span> <span class="s2">"mayonesa"</span><span class="p">]</span>
+<a name="rest_code_76a4c06a98d346429e05d6ed5b648b80-3"></a><span class="n">vegetales</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"tomate"</span><span class="p">,</span> <span class="s2">"lechuga"</span><span class="p">,</span> <span class="s2">"cebolla"</span><span class="p">,</span> <span class="s2">"pepino"</span><span class="p">]</span>
+<a name="rest_code_76a4c06a98d346429e05d6ed5b648b80-4"></a><span class="n">panes</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"blanco"</span><span class="p">,</span> <span class="s2">"lactal"</span><span class="p">,</span> <span class="s2">"negro"</span><span class="p">,</span> <span class="s2">"integral"</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ciclos">
+<h2>Ciclos</h2>
+<p>Los ciclos son ideales para esas tareas repetitivas, especialmente cuando tenemos que hacer cosas con todos los
+elementos de una lista.</p>
+<div class="section" id="ciclo-for">
+<h3>Ciclo For</h3>
+<p>Si podemos usar un ciclo <tt class="docutils literal">for</tt> entonces tenemos lo que llamamos en Python como <em>iterable</em>. Las listas y las cadenas
+de texto son ambos <em>iterables</em>.</p>
+<p>Hagamos un ciclo para que nos imprima los elementos de una lista:</p>
+<pre class="code python3"><a name="rest_code_283d09b5384c45a9ba3cf65515e5289e-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">frutas</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'bananas'</span><span class="p">,</span> <span class="s1">'frutillas'</span><span class="p">,</span> <span class="s1">'kiwis'</span><span class="p">,</span> <span class="s1">'peras'</span><span class="p">,</span> <span class="s1">'manzanas'</span><span class="p">]</span>
+<a name="rest_code_283d09b5384c45a9ba3cf65515e5289e-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">fruta</span> <span class="ow">in</span> <span class="n">frutas</span><span class="p">:</span>
+<a name="rest_code_283d09b5384c45a9ba3cf65515e5289e-3"></a><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">fruta</span><span class="p">)</span>
+<a name="rest_code_283d09b5384c45a9ba3cf65515e5289e-4"></a><span class="n">bananas</span>
+<a name="rest_code_283d09b5384c45a9ba3cf65515e5289e-5"></a><span class="n">frutillas</span>
+<a name="rest_code_283d09b5384c45a9ba3cf65515e5289e-6"></a><span class="n">kiwis</span>
+<a name="rest_code_283d09b5384c45a9ba3cf65515e5289e-7"></a><span class="n">peras</span>
+<a name="rest_code_283d09b5384c45a9ba3cf65515e5289e-8"></a><span class="n">manzanas</span>
+</pre>
+<p>En este ciclo <tt class="docutils literal">for</tt> estamos creando la variable <tt class="docutils literal">fruta</tt> que sirve para iterar sobre la lista <tt class="docutils literal">frutas</tt>.
+Cada elemento de la lista en cada ciclo estará almacenado en la variable <tt class="docutils literal">fruta</tt>.</p>
+<p class="alert alert-success small">Podemos usar cualquier nombre para esa variable. En general es una buena práctica ponerle nombre
+descriptivo a las variables. Por eso usamos la palabra <tt class="docutils literal">fruta</tt>. Pero podríamos haber usado cualquier
+otra cosa.</p>
+</div>
+<div class="section" id="id10">
+<h3>Ahora te toca a vos</h3>
+<p>Ejercicios:</p>
+<ol class="arabic simple">
+<li>Creá una lista de nombres y hacé que salude a cada uno de esas personas.</li>
+<li>Mejorá <tt class="docutils literal">adivina_numero.py</tt> haciendo que el usuario sólo pueda intentarlo 3 veces.</li>
+<li>Creá una copia de <tt class="docutils literal">capitales.py</tt> y hacé que el programa muestre la lista de capitales con sus respectivas provincias de manera amigable.</li>
+<li>Hacé un programa <tt class="docutils literal">todo.py</tt>. Creá una lista cosas para hacer y dos listas: <tt class="docutils literal">hacer_ahora</tt> y <tt class="docutils literal">hacer_despues</tt>. Hacé que aleatoriamente cada uno de los elementos en la lista de pendientes vaya a la lista de <tt class="docutils literal">hacer_ahora</tt> o de <tt class="docutils literal">hacer_despues</tt>. Mostrá el resultado de manera amigable.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="archivos">
+<h2>Archivos</h2>
+<p>Vamos a ver cómo hacer para leer archivos. Hasta ahora sólo hemos cargado información a nuestros programas
+definiéndola en nuestro código o pidiéndole al usuario con <tt class="docutils literal">input</tt>. Es habitual adquirir información para nuestros
+programas desde archivos.</p>
+<p>Agarremos cualquier archivo de texto que tengamos en nuestra computadora y copiémoslo en nuestro directorio de trabajo
+con el nombre <tt class="docutils literal">lorem.txt</tt>.</p>
+<p class="alert alert-info small">Si no encontraste ningún archivo TXT en tu máquina podés ir a <a href="https://es.lipsum.com/" target="_blank">Lorem Ipsum</a> generar un texto aleatorio y
+usarlo. Esto es muy útil para cuando tenés que hacer pruebas y no tenés datos reales.
+Generalo y guardalo en un archivo de texto <tt class="docutils literal">lorem.txt</tt> en el directorio que venís trabajando.</p>
+<pre class="code python3"><a name="rest_code_0d3b088e5e75486d8a8206c73d1d03df-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">lorem_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'lorem.txt'</span><span class="p">)</span>
+<a name="rest_code_0d3b088e5e75486d8a8206c73d1d03df-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">contenido</span> <span class="o">=</span> <span class="n">lorem_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a name="rest_code_0d3b088e5e75486d8a8206c73d1d03df-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">contenido</span><span class="p">)</span>
+<a name="rest_code_0d3b088e5e75486d8a8206c73d1d03df-4"></a><span class="o">...</span>
+<a name="rest_code_0d3b088e5e75486d8a8206c73d1d03df-5"></a><span class="o">*</span><span class="n">el</span> <span class="n">contenido</span> <span class="k">del</span> <span class="n">archivo</span><span class="o">*</span>
+<a name="rest_code_0d3b088e5e75486d8a8206c73d1d03df-6"></a><span class="o">...</span>
+<a name="rest_code_0d3b088e5e75486d8a8206c73d1d03df-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">lorem_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre>
+<p>Como verán lo primero que hacemos es abrir el archivo. Luego leemos el contenido, ese contenido es un <em>string</em>.
+Después imprimimos ese contenido para verlo en pantalla y finalmente cerramos el archivo.</p>
+<p>Creemos un programa <tt class="docutils literal">lorem_stats.py</tt> que nos sirva para contar las palabras de nuestro texto.</p>
+<p><a class="reference external" href="../../listings/pyintro/lorem_stats.py.html">pyintro/lorem_stats.py</a>  <a class="reference external" href="../../listings/pyintro/lorem_stats.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_e59d25cc3e2e41c78ddca1eedb4f4cdd-1"></a><span class="n">ARCHIVO</span> <span class="o">=</span> <span class="s1">'lorem.txt'</span>
+<a name="rest_code_e59d25cc3e2e41c78ddca1eedb4f4cdd-2"></a>
+<a name="rest_code_e59d25cc3e2e41c78ddca1eedb4f4cdd-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">'Vamos a abrir el archivo "</span><span class="si">{ARCHIVO}</span><span class="s1">"'</span><span class="p">)</span>
+<a name="rest_code_e59d25cc3e2e41c78ddca1eedb4f4cdd-4"></a>
+<a name="rest_code_e59d25cc3e2e41c78ddca1eedb4f4cdd-5"></a><span class="n">lorem_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">ARCHIVO</span><span class="p">)</span>
+<a name="rest_code_e59d25cc3e2e41c78ddca1eedb4f4cdd-6"></a><span class="n">contenido</span> <span class="o">=</span> <span class="n">lorem_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a name="rest_code_e59d25cc3e2e41c78ddca1eedb4f4cdd-7"></a><span class="n">lorem_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<a name="rest_code_e59d25cc3e2e41c78ddca1eedb4f4cdd-8"></a><span class="n">palabras</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">contenido</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<a name="rest_code_e59d25cc3e2e41c78ddca1eedb4f4cdd-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">"Tiene </span><span class="si">{palabras}</span><span class="s2"> palabras"</span><span class="p">)</span>
+</pre>
+<p class="alert alert-info small">Si observamos detenidamente estamos usando un método <tt class="docutils literal">.split()</tt> que lo que hace es separar una cadena de texto
+por los espacios devolviendo una lista con todas las palabras.</p>
+<p class="alert alert-info small">Además estamos usando sobre esa lista la función <tt class="docutils literal">len()</tt> que devuelve la longitud de la lista.</p>
+<p class="alert alert-warning small">Si te quedaron dudas, jugá un poco en el REPL con un <em>string</em> que contenga 1 o 2 oraciones usando <tt class="docutils literal">.split()</tt> y
+<tt class="docutils literal">len()</tt>.</p>
+<div class="section" id="cerrar-archivos">
+<h3>Cerrar archivos</h3>
+<p>Siempre necesitamos recordar que es necesario cerrar los archivos. No afecta mucho cuando leemos los archivos,
+pero si queremos escribir en ellos, es <strong>súper</strong> importante que no lo olvidemos.
+Es útil usar el <tt class="docutils literal">with</tt> que ayuda a que no nos olvidemos ya que lo hace <em>automágicamente</em> para nosotros.</p>
+<p><a class="reference external" href="../../listings/pyintro/lorem_stats_with.py.html">pyintro/lorem_stats_with.py</a>  <a class="reference external" href="../../listings/pyintro/lorem_stats_with.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_62e6d5fd2b6947599a40fe438b500018-1"></a><span class="n">ARCHIVO</span> <span class="o">=</span> <span class="s1">'lorem.txt'</span>
+<a name="rest_code_62e6d5fd2b6947599a40fe438b500018-2"></a>
+<a name="rest_code_62e6d5fd2b6947599a40fe438b500018-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">'Vamos a abrir el archivo "</span><span class="si">{ARCHIVO}</span><span class="s1">"'</span><span class="p">)</span>
+<a name="rest_code_62e6d5fd2b6947599a40fe438b500018-4"></a>
+<a name="rest_code_62e6d5fd2b6947599a40fe438b500018-5"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ARCHIVO</span><span class="p">)</span> <span class="k">as</span> <span class="n">lorem_file</span><span class="p">:</span>
+<a name="rest_code_62e6d5fd2b6947599a40fe438b500018-6"></a>    <span class="n">contenido</span> <span class="o">=</span> <span class="n">lorem_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a name="rest_code_62e6d5fd2b6947599a40fe438b500018-7"></a>
+<a name="rest_code_62e6d5fd2b6947599a40fe438b500018-8"></a><span class="n">palabras</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">contenido</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<a name="rest_code_62e6d5fd2b6947599a40fe438b500018-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">"Tiene </span><span class="si">{palabras}</span><span class="s2"> palabras"</span><span class="p">)</span>
+</pre>
+<p>Este bloque <tt class="docutils literal">with</tt> es lo que se conoce en Python como un <cite>context manager</cite>. Éstos nos permiten establecer
+algunas tareas particulares de limpieza. Como en este caso, cerrar el archivo.</p>
+<p class="alert alert-warning small">No te preocupes por enteder los <cite>context manager</cite> completamente. Por ahora recordemos que siempre que
+usemos un <tt class="docutils literal">open()</tt> lo vamos a hacer con un <tt class="docutils literal">with</tt>.</p>
+</div>
+<div class="section" id="modo-de-lectura-y-codificacion">
+<h3>Modo de lectura y codificación</h3>
+<p>Por defecto cuando usamos <tt class="docutils literal">open()</tt> si no lo especificamos nos abrirá el archivo en modo <em>texto</em> e intentará
+decodificar su contenido en <em>utf-8</em>. La función <tt class="docutils literal">open()</tt> acepta estos parámetros como argumento. Si queremos
+ser más explícitos:</p>
+<p><a class="reference external" href="../../listings/pyintro/lorem_stats_with_mode.py.html">pyintro/lorem_stats_with_mode.py</a>  <a class="reference external" href="../../listings/pyintro/lorem_stats_with_mode.py">(Código fuente)</a></p>
+<pre class="code python3"><a name="rest_code_f18420e2bc8746f69d9bb3c713193505-1"></a><span class="n">ARCHIVO</span> <span class="o">=</span> <span class="s1">'lorem.txt'</span>
+<a name="rest_code_f18420e2bc8746f69d9bb3c713193505-2"></a>
+<a name="rest_code_f18420e2bc8746f69d9bb3c713193505-3"></a><span class="nb">print</span><span class="p">(</span><span class="s1">'Vamos a abrir el archivo "</span><span class="si">{ARCHIVO}</span><span class="s1">"'</span><span class="p">)</span>
+<a name="rest_code_f18420e2bc8746f69d9bb3c713193505-4"></a>
+<a name="rest_code_f18420e2bc8746f69d9bb3c713193505-5"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ARCHIVO</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">"rt"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">lorem_file</span><span class="p">:</span>
+<a name="rest_code_f18420e2bc8746f69d9bb3c713193505-6"></a>    <span class="n">contenido</span> <span class="o">=</span> <span class="n">lorem_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a name="rest_code_f18420e2bc8746f69d9bb3c713193505-7"></a>
+<a name="rest_code_f18420e2bc8746f69d9bb3c713193505-8"></a><span class="n">palabras</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">contenido</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<a name="rest_code_f18420e2bc8746f69d9bb3c713193505-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">"Tiene </span><span class="si">{palabras}</span><span class="s2"> palabras"</span><span class="p">)</span>
+</pre>
+</div>
+<div class="section" id="escribiendo-archivos">
+<h3>Escribiendo archivos</h3>
+<p>Si queremos escribir en el archivo, tenemos que cambiar el modo a <tt class="docutils literal">w</tt> y usar el método <tt class="docutils literal">write()</tt>.</p>
+<pre class="code python3"><a name="rest_code_ccc2b10e4f654cd3a04533225658a12d-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'prueba.txt'</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'wt'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">prueba_file</span><span class="p">:</span>
+<a name="rest_code_ccc2b10e4f654cd3a04533225658a12d-2"></a><span class="o">...</span>     <span class="n">prueba_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">"Hola mundo!</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<a name="rest_code_ccc2b10e4f654cd3a04533225658a12d-3"></a><span class="o">...</span>
+<a name="rest_code_ccc2b10e4f654cd3a04533225658a12d-4"></a><span class="mi">12</span>
+</pre>
+<p>El método <tt class="docutils literal">write()</tt> de nuestro archivo escribe cada caracter que le pasemos. Luego devuelve la cantidad
+de bytes que escribió.</p>
+<p>Tomemos un descanso para que puedan ustedes practicar un poco.</p>
+</div>
+<div class="section" id="id11">
+<h3>Ahora te toca a vos</h3>
+<p>Ejercicios:</p>
+<ol class="arabic simple">
+<li>Crear un programa que sirva para agendar nuestros contactos en un CSV (nombre, mail, celular y twitter). <em>Ojo</em>: asegurate de que el programa agregue la información al CSV así vas agregando los datos.</li>
+<li>Usar el archivo <tt class="docutils literal">capitales.py</tt> para crear un archivo CSV que contenga las provincias y sus respectivas capitales.</li>
+<li>Hacer un programa que lea <tt class="docutils literal">contactos.csv</tt> y lo muestre ordenado alfabéticamente de manera amigable para el usuario.</li>
+<li>Hacé un programa que le pida al usuario una oración y la guarde en un archivo. <em>Ojo</em>: asegurate de que el programa agregue la información al archivo así vas agregando las oraciones.</li>
+</ol>
+<p class="alert alert-info small">Para agregar en los archivos tenemos que usar el modo <tt class="docutils literal">a</tt>.</p>
+<p class="alert alert-info small">Para ordenar en Python se puede usar la función <tt class="docutils literal">sorted()</tt>.</p>
+<pre class="code console"><a name="rest_code_197cf794c9f64d08836acef527a14cdd-1"></a><span class="gp">$</span> python3 contactos.py
+<a name="rest_code_197cf794c9f64d08836acef527a14cdd-2"></a><span class="go">Nombre: Leo</span>
+<a name="rest_code_197cf794c9f64d08836acef527a14cdd-3"></a><span class="go">mail: leo@bitson.group</span>
+<a name="rest_code_197cf794c9f64d08836acef527a14cdd-4"></a><span class="go">celular: (11) 3001-5328</span>
+<a name="rest_code_197cf794c9f64d08836acef527a14cdd-5"></a><span class="go">twitter: lecovi</span>
+</pre>
+<p>Y la salida debería ser:</p>
+<pre class="code console"><a name="rest_code_7c8146e642844b47aecee6e50dce0456-1"></a><span class="gp">$</span> cat contactos.csv
+<a name="rest_code_7c8146e642844b47aecee6e50dce0456-2"></a><span class="go">Leo,leo@bitson.group,(11) 3001-5328,lecovi</span>
+</pre>
+</div>
+</div>
+<div class="section" id="rangos">
+<h2>Rangos</h2>
+<p>Python viene con una función <tt class="docutils literal">range()</tt> que nos sirve para generar rangos de números:</p>
+<pre class="code python3"><a name="rest_code_96f8e3df7fce43f4a49e566c3db01787-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+<a name="rest_code_96f8e3df7fce43f4a49e566c3db01787-2"></a><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<a name="rest_code_96f8e3df7fce43f4a49e566c3db01787-3"></a><span class="o">...</span>
+<a name="rest_code_96f8e3df7fce43f4a49e566c3db01787-4"></a><span class="mi">0</span>
+<a name="rest_code_96f8e3df7fce43f4a49e566c3db01787-5"></a><span class="mi">1</span>
+<a name="rest_code_96f8e3df7fce43f4a49e566c3db01787-6"></a><span class="mi">2</span>
+<a name="rest_code_96f8e3df7fce43f4a49e566c3db01787-7"></a><span class="mi">3</span>
+<a name="rest_code_96f8e3df7fce43f4a49e566c3db01787-8"></a><span class="mi">4</span>
+</pre>
+<p class="alert alert-warning small">Notemos que sucede lo mismo que cuando hacemos <em>slicing</em> en una lista. El valor inicial está incluido, pero
+el final no.</p>
+<p>Si vamos a arrancar desde 0, podemos omitirlo:</p>
+<pre class="code python3"><a name="rest_code_939977e0df924a11b452b3dd8b7cb57c-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<a name="rest_code_939977e0df924a11b452b3dd8b7cb57c-2"></a><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<a name="rest_code_939977e0df924a11b452b3dd8b7cb57c-3"></a><span class="o">...</span>
+<a name="rest_code_939977e0df924a11b452b3dd8b7cb57c-4"></a><span class="mi">0</span>
+<a name="rest_code_939977e0df924a11b452b3dd8b7cb57c-5"></a><span class="mi">1</span>
+<a name="rest_code_939977e0df924a11b452b3dd8b7cb57c-6"></a><span class="mi">2</span>
+<a name="rest_code_939977e0df924a11b452b3dd8b7cb57c-7"></a><span class="mi">3</span>
+<a name="rest_code_939977e0df924a11b452b3dd8b7cb57c-8"></a><span class="mi">4</span>
+</pre>
+<p>Y podemos incluir un tercer argumento que es el paso o salto que va a dar. Por ejemplo, de a decenas:</p>
+<pre class="code python3"><a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-2"></a><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-3"></a><span class="o">...</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-4"></a><span class="mi">0</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-5"></a><span class="mi">10</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-6"></a><span class="mi">20</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-7"></a><span class="mi">30</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-8"></a><span class="mi">40</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-9"></a><span class="mi">50</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-10"></a><span class="mi">60</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-11"></a><span class="mi">70</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-12"></a><span class="mi">80</span>
+<a name="rest_code_b7cb6d5ddac4456f87146d7b0e49cfbe-13"></a><span class="mi">90</span>
+</pre>
+<div class="section" id="id12">
+<h3>Ahora te toca a vos</h3>
+<p>Ejercicios:</p>
+<ol class="arabic simple">
+<li>Mejoremos el <tt class="docutils literal">meditar.py</tt>. Haciendo que después de cada exhalación nos pida escribir lo que estamos pensando. Al finalizar el programa que nos muestre qué pensamos en la meditación.</li>
+<li>Rehacé tu programa <tt class="docutils literal">adivina_numero</tt> para que use un rango.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="funciones">
+<h2>Funciones</h2>
+<p>En Python como en todos los lenguajes de programación podemos crear nuestras propias funciones.
+¿Qué son las funciones? Son grupos de sentencias de código que se asocian a un nombre. Hemos estado usando varias
+de las que vienen con Python: <tt class="docutils literal">print()</tt>, <tt class="docutils literal">type()</tt>, <tt class="docutils literal">len()</tt>...</p>
+<p class="alert alert-info small">Como regla general podemos pensar que todo lo que sea un <tt class="docutils literal">nombre</tt> con <cite>()</cite> es una función.</p>
+<p>Si queremos definir nuestras propias funciones usamos la palabra reservada <tt class="docutils literal">def</tt>:</p>
+<pre class="code python3"><a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">mi_funcion_de_prueba</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-2"></a><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s1">'Hola </span><span class="si">{nombre}</span><span class="s1">'</span><span class="p">)</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-3"></a><span class="o">...</span>     <span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Ingrese su edad: '</span><span class="p">))</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-4"></a><span class="o">...</span>     <span class="k">if</span> <span class="n">edad</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-5"></a><span class="o">...</span>         <span class="nb">print</span><span class="p">(</span><span class="s1">'Ya podemos ir a tomar unas cervezas...'</span><span class="p">)</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-6"></a><span class="o">...</span>     <span class="k">else</span><span class="p">:</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-7"></a><span class="o">...</span>         <span class="nb">print</span><span class="p">(</span><span class="s1">'Tomamos un juguito?'</span><span class="p">)</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-8"></a><span class="o">...</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">mi_funcion_de_prueba</span><span class="p">(</span><span class="s1">'Leo'</span><span class="p">)</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-10"></a><span class="n">Hola</span> <span class="n">Leo</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-11"></a><span class="n">Ingrese</span> <span class="n">su</span> <span class="n">edad</span><span class="p">:</span> <span class="mi">37</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-12"></a><span class="n">Ya</span> <span class="n">podemos</span> <span class="n">ir</span> <span class="n">a</span> <span class="n">tomar</span> <span class="n">unas</span> <span class="n">cervezas</span><span class="o">...</span>
+<a name="rest_code_28778e1f59784d32a6ebf17b6f2dea97-13"></a><span class="o">&gt;&gt;&gt;</span>
+</pre>
+<div class="section" id="id13">
+<h3>Ahora te toca a vos</h3>
+<p>Ejercicios:</p>
+<ol class="arabic simple">
+<li>Escribir una función que permita calcular la duración en segundos de un intervalo dado en horas, minutos y segundos.</li>
+<li>Escribir una función que permita calcular la duración en horas, minutos y segundos de un intervalo dado en segundos.</li>
+<li>Escribir una función que reciba un precio final y devuelva el valor neto y el IVA</li>
+<li>Escribir una función que reciba un precio y devuelva el valor final con el IVA. <strong>Bonus</strong>: mejorar la función que acepte un argumento que sea la alícuota de IVA, si no es ingresada que tome 21% por defecto.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="diccionarios">
+<h2>Diccionarios</h2>
+<p>Los diccionarios son colecciones no ordenadas de conjuntos claves-valor. Como cuando buscamos una palabra en el
+diccionario español. La palabra buscada sería la <em>clave</em> y el significado el <em>valor</em>.</p>
+<pre class="code python3"><a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">meses</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'Enero'</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="s1">'Febrero'</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span> <span class="s1">'Marzo'</span><span class="p">:</span> <span class="mi">31</span><span class="p">}</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">meses</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-3"></a><span class="p">{</span><span class="s1">'Enero'</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="s1">'Febrero'</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span> <span class="s1">'Marzo'</span><span class="p">:</span> <span class="mi">31</span><span class="p">}</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">meses</span><span class="p">)</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-5"></a><span class="o">&lt;</span><span class="k">class</span> <span class="err">'</span><span class="nc">dict</span><span class="s1">'&gt;</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">meses</span><span class="p">[</span><span class="s1">'Enero'</span><span class="p">]</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-7"></a><span class="mi">31</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-8"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">meses</span><span class="p">[</span><span class="s1">'Febrero'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">29</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">meses</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-10"></a><span class="p">{</span><span class="s1">'Enero'</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="s1">'Febrero'</span><span class="p">:</span> <span class="mi">29</span><span class="p">,</span> <span class="s1">'Marzo'</span><span class="p">:</span> <span class="mi">31</span><span class="p">}</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-11"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">meses</span><span class="p">[</span><span class="s1">'Abril'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">30</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">meses</span>
+<a name="rest_code_c1b9bd0bdc284edabe9bbacc542bf768-13"></a><span class="p">{</span><span class="s1">'Enero'</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="s1">'Febrero'</span><span class="p">:</span> <span class="mi">29</span><span class="p">,</span> <span class="s1">'Marzo'</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="s1">'Abril'</span><span class="p">:</span> <span class="mi">30</span><span class="p">}</span>
+</pre>
+<p>Como verán es muy sencillo crear diccionarios. Sólo necesitamos escribir entre <tt class="docutils literal">{}</tt> los conjuntos de claves-valor
+separados por <tt class="docutils literal">,</tt> y las claves están separadas por <tt class="docutils literal">:</tt> de los valores. Por lo general para las claves
+se utilizan <em>strings</em>.</p>
+<p>Para agregar nuevas claves al diccionario, sólo tenemos que llamar al diccionario existente y entre <tt class="docutils literal">[]</tt> escribimos
+la nueva clave y le asignamos el valor correspondiente.
+En el caso de que la clave exista previamente, el valor se actualizará.</p>
+<p>Si queremos borrar elementos del diccionario, usamos <tt class="docutils literal">del</tt>:</p>
+<pre class="code python3"><a name="rest_code_5bac9d463fd84db48fc4b64485ad38e6-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">del</span> <span class="n">meses</span><span class="p">[</span><span class="s1">'Febrero'</span><span class="p">]</span>
+<a name="rest_code_5bac9d463fd84db48fc4b64485ad38e6-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">meses</span>
+<a name="rest_code_5bac9d463fd84db48fc4b64485ad38e6-3"></a><span class="p">{</span><span class="s1">'Enero'</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="s1">'Marzo'</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span> <span class="s1">'Abril'</span><span class="p">:</span> <span class="mi">30</span><span class="p">}</span>
+</pre>
+<p>Ahora si intentamos acceder a esa clave:</p>
+<pre class="code python3"><a name="rest_code_66a02e013cc94819bdd58a47b54d6d49-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">meses</span><span class="p">[</span><span class="s1">'Febrero'</span><span class="p">]</span>
+<a name="rest_code_66a02e013cc94819bdd58a47b54d6d49-2"></a><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a name="rest_code_66a02e013cc94819bdd58a47b54d6d49-3"></a><span class="n">File</span> <span class="s2">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<a name="rest_code_66a02e013cc94819bdd58a47b54d6d49-4"></a><span class="ne">KeyError</span><span class="p">:</span> <span class="s1">'Febrero'</span>
+</pre>
+<p>Podemos iterar sobre el diccionario y nos devolverá las claves:</p>
+<pre class="code python3"><a name="rest_code_33fd6015554c417981c538ef882bc904-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">mes</span> <span class="ow">in</span> <span class="n">meses</span><span class="p">:</span>
+<a name="rest_code_33fd6015554c417981c538ef882bc904-2"></a><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">mes</span><span class="p">)</span>
+<a name="rest_code_33fd6015554c417981c538ef882bc904-3"></a><span class="n">Enero</span>
+<a name="rest_code_33fd6015554c417981c538ef882bc904-4"></a><span class="n">Marzo</span>
+<a name="rest_code_33fd6015554c417981c538ef882bc904-5"></a><span class="n">Abril</span>
+</pre>
+<p>Si queremos obtener los valores claves valor, podemos iterar con el método <tt class="docutils literal">.items()</tt>:</p>
+<pre class="code python3"><a name="rest_code_746e6f2aed7e4009a61b412a4841becd-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">mes</span><span class="p">,</span> <span class="n">días</span> <span class="ow">in</span> <span class="n">meses</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<a name="rest_code_746e6f2aed7e4009a61b412a4841becd-2"></a><span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">'</span><span class="si">{mes}</span><span class="s1"> tiene </span><span class="si">{días}</span><span class="s1"> días'</span><span class="p">)</span>
+<a name="rest_code_746e6f2aed7e4009a61b412a4841becd-3"></a><span class="n">Enero</span> <span class="n">tiene</span> <span class="mi">31</span> <span class="n">días</span>
+<a name="rest_code_746e6f2aed7e4009a61b412a4841becd-4"></a><span class="n">Marzo</span> <span class="n">tiene</span> <span class="mi">31</span> <span class="n">días</span>
+<a name="rest_code_746e6f2aed7e4009a61b412a4841becd-5"></a><span class="n">Abril</span> <span class="n">tiene</span> <span class="mi">30</span> <span class="n">días</span>
+</pre>
+<p>Si usamos el operador <tt class="docutils literal">in</tt> en un diccionario buscará en las claves.</p>
+<pre class="code python3"><a name="rest_code_976ae6a1ba1c4210a06bdf4f879557ad-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="s1">'Enero'</span> <span class="ow">in</span> <span class="n">meses</span>
+<a name="rest_code_976ae6a1ba1c4210a06bdf4f879557ad-2"></a><span class="kc">True</span>
+<a name="rest_code_976ae6a1ba1c4210a06bdf4f879557ad-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="s1">'Febrero'</span> <span class="ow">in</span> <span class="n">meses</span>
+<a name="rest_code_976ae6a1ba1c4210a06bdf4f879557ad-4"></a><span class="kc">False</span>
+</pre>
+<div class="section" id="id14">
+<h3>Ahora te toca a vos</h3>
+<p>Ejercicios:</p>
+<ol class="arabic simple">
+<li><dl class="first docutils">
+<dt>Pensando en la experiencia que hicimos creando "Piedra, Papel o Tijera" creemos <tt class="docutils literal">rpssl.py</tt> para jugar <a href="http://www.samkass.com/theories/RPSSL.html" target="_blank">Rock, Paper, Scissors, Spock, Lizard</a> usando un diccionario para determinar el ganador.</dt>
+<dd><ol class="first last arabic">
+<li>Hacer que la computadora elija un movimiento.</li>
+<li>Pedirle al usuario que elija un movimiento.</li>
+<li>Informar el ganador.</li>
+</ol></dd>
+</dl></li>
+<li>Contemplar que el usuario pueda ingresar en mayúscula y/o minúsculas y que esto no afecte el funcionamiento.</li>
+<li>Mejorar el programa para que maneje los ingresos erróneos por parte del usuario.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="para-seguir-aprendiendo">
+<h2>Para seguir aprendiendo</h2>
+<p>Andá a la sección de <a class="reference external" href="../../resources/#id4">recursos</a>.</p>
+</div>
+</div>
+    </div>
+    
+    
+
+
+</article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="text-center">
+Contents © 2018         <a href="mailto:leo@bitson.com.ar">Leandro E. Colombo Viña</a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
+<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboVi%C3%B1a-bitson"><i class="fa fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    
+ <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <img alt="Creative Commons License BY-NC-SA" style="border-width:0; margin-bottom:12px;" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
