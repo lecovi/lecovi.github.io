@@ -124,20 +124,21 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG:  (
-        ("/blog/", "<i class=\"fa fa-pencil\"></i> Blog"),
+        ("/blog/", "<i class=\"fas fa-pencil-alt\"></i> Blog"),
         ((
-            ("/cfp", "<i class=\"fa fa-linux\"></i> <strong>Centro de Formación Profesional<strong>"),
-            ("/cfp/prog/", "&emsp; <i class=\"fa fa-code-fork\"></i>  Técnicas de Programación</span>"),
-            ("/ifts", "<i class=\" fa-graduation-cap\"></i> <strong>Terciario<strong>"),
+            ("/cfp", "<i class=\"fab fa-linux\"></i> <strong>Centro de Formación Profesional<strong>"),
+            ("/cfp/prog/", "&emsp; <i class=\"fas fa-code-branch\"></i>  Técnicas de Programación</span>"),
+            ("/ifts", "<i class=\"fas fa-graduation-cap\"></i> <strong>Terciario<strong>"),
             ("/ifts/arq/", "&emsp; <i class=\"fa fa-laptop\"></i> Arquitectura de Computadoras"),
             ("/ifts/dlo/", "&emsp; <i class=\"fa fa-sitemap\"></i> Diagramación Lógica"),
             ("/ifts/edd/", "&emsp; <i class=\"fa fa-database\"></i> Estructura de Datos"),
             ("/ifts/par/", "&emsp; <i class=\"fa fa-code\"></i> Paradigmas de Programación"),
-            ("/ifts/ana/", "&emsp; <i class=\"fa fa-trello\"></i> Análisis de Sistemas"),
-            ("/bitson", "<i class=\"fa fa-users\"></i> <strong>BITSON<strong>"),
+            ("/ifts/ana/", "&emsp; <i class=\"fab fa-trello\"></i> Análisis de Sistemas"),
+            ("/bitson", "<i class=\"fas fa-users\"></i> <strong>BITSON<strong>"),
+            ("/bitson/pyintro2018/", "&emsp; <i class=\"fab fa-python\"></i> Taller de Introducción a Python #PyConAR2018"),
             ("/bitson/prog-sl/", "&emsp; <i class=\"fa fa-keyboard-o\"></i> Programación con Software Libre"),
             ("/bitson/olin/", "&emsp; <i class=\"fa fa-terminal\"></i> Operador Básico GNU/Linux</span>"),
-            ("/bitson/reli/", "&emsp; <i class=\"fa fa-qq\"></i> Administración de Redes con GNU/Linux"),
+            ("/bitson/reli/", "&emsp; <i class=\"fab fa-qq\"></i> Administración de Redes con GNU/Linux"),
             ), "<i class=\"fa fa-university\"></i> Cursos"),
         ("/resources/", "<i class=\"fa fa-wrench\"></i> Recursos"),
         ("/archive.html", "<i class=\"fa fa-archive\"></i> Archivo"),
@@ -941,10 +942,13 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # (translatable)
 EXTRA_HEAD_DATA = """
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<link href='/assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link href='/assets/styles.css' rel='stylesheet' type='text/css'>
 """
-# Google Analytics or whatever else you use. Added to the bottom of <body>
+
+# <link href='/assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+# # Google Analytics or whatever else you use. Added to the bottom of <body>
 # in the default template (base.tmpl).
 # (translatable)
 #BODY_END = ""
