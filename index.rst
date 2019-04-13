@@ -23,7 +23,7 @@
                 <div class="feature-icon feature-icon-static">
                     <span class="fa-stack fa-3x">
                         <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                        <i class="fas fa-pencil-alt fa-stack-1x fa-inverse"></i>
                     </span>
                 </div>
                 <h2 class="index-feature">Blog</h2>
@@ -41,7 +41,7 @@
                 <div class="feature-icon feature-icon-static">
                     <span class="fa-stack fa-3x">
                         <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-mortar-board fa-stack-1x fa-inverse"></i>
+                        <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
                     </span>
                 </div>
                 <h2 class="index-feature">I.F.T.S. N°18</h2>
@@ -59,7 +59,7 @@
                 <div class="feature-icon feature-icon-static">
                     <span class="fa-stack fa-3x">
                         <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+                        <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
                     </span>
                 </div>
                 <h2 class="index-feature">Recursos</h2>
@@ -77,7 +77,7 @@
                 <div class="feature-icon feature-icon-static">
                     <span class="fa-stack fa-3x">
                         <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
+                        <i class="fas fa-pencil fa-stack-1x fa-inverse"></i>
                     </span>
                 </div>
                 <h2 class="index-feature">blog</h2>
@@ -90,14 +90,5 @@
 .. raw:: html
 
    <p>
-   <a href="http://bitson.com.ar/" class="btn btn-primary btn-lg pull-right"><i class="icon-mascota-icon" data-toggle="tooltip" title="Visitá bitson.com.ar!"></i> bitson.com.ar</a>
+   <a href="https://bitson.group/" class="btn btn-primary btn-lg pull-right"><i class="icon-mascota-icon" data-toggle="tooltip" title="Visitá bitson.group!"></i> bitson.group</a>
    </p>
-
-.. class:: col-md-12
-
-.. raw:: html
-
-    <hr>
-    <p>
-    <a href="https://ar.jooble.org/" class="btn btn-primary btn-lg pull-right" title="Si estás buscando trabajo...">ar.jooble.org</a>
-    </p>
