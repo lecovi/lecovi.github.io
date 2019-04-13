@@ -94,19 +94,19 @@ Python
 
 .. |mega_tutorial| raw:: html
 
-    <a  href="http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world" target="_blank"><i class="fas fa-link"></i></a>
+    <a  href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world" target="_blank"><i class="fas fa-link"></i></a>
 
 .. |think_python| raw:: html
 
-    <a href="http://greenteapress.com/wp/think-python-2e/" target="_blank"><i class="fas fa-link"></i></a>
+    <a href="https://greenteapress.com/wp/think-python-2e/" target="_blank"><i class="fas fa-link"></i></a>
 
 .. |tuto_pyar| raw:: html
 
-    <a href="http://docs.python.org.ar/tutorial/" target="_blank"><i class="fas fa-link"></i></a>
+    <a href="https://docs.python.org.ar/tutorial/" target="_blank"><i class="fas fa-link"></i></a>
 
 .. |ppt| raw:: html
 
-    <a href="http://mundogeek.net/tutorial-python/" target="_blank"><i class="fas fa-link"></i></a>
+    <a href="https://mundogeek.net/tutorial-python/" target="_blank"><i class="fas fa-link"></i></a>
 
 .. |python_informatics| raw:: html
 
@@ -142,38 +142,38 @@ Enlaces de Interés
 Lenguaje C/C++
 --------------
 
-* `C++ <http://www.cplusplus.com/>`_
-* `C con Clase <http://c.conclase.net/>`_
-* `Code::Blocks <http://www.codeblocks.org/downloads/binaries>`_
-* `Courseware ANSI C <http://courseware.ikor.org/ansi-c>`_
-* `Curso C++ Zator <http://www.zator.com/Cpp/index.htm>`_
-* `El Rincón del C <http://www.elrincondelc.com/nuevorincon/index.php>`_
-* `Programación en C - WikiLibros <http://es.wikibooks.org/wiki/Programaci%C3%B3n_en_C>`_
-* `ZenTut <http://www.zentut.com/c-tutorial/>`_
+* `C++ <https://www.cplusplus.com/>`_
+* `C con Clase <https://c.conclase.net/>`_
+* `Code::Blocks <https://www.codeblocks.org/downloads/binaries>`_
+* `Courseware ANSI C <https://courseware.ikor.org/ansi-c>`_
+* `Curso C++ Zator <https://www.zator.com/Cpp/index.htm>`_
+* `El Rincón del C <https://www.elrincondelc.com/nuevorincon/index.php>`_
+* `Programación en C - WikiLibros <https://es.wikibooks.org/wiki/Programaci%C3%B3n_en_C>`_
+* `ZenTut <https://www.zentut.com/c-tutorial/>`_
 
 Diagramación
 ------------
-* `PSeInt <http://pseint.sourceforge.net/index.php?page=descargas.php>`_
-* `yEd <http://www.yworks.com/en/products_yed_about.html>`_
-* `::Nessi:: <http://eii.ucv.cl/nessi/download_sp.html>`_
+* `PSeInt <https://pseint.sourceforge.net/index.php?page=descargas.php>`_
+* `yEd <https://www.yworks.com/en/products_yed_about.html>`_
+* `::Nessi:: <https://eii.ucv.cl/nessi/download_sp.html>`_
 
 Misceláneas
 -----------
-* `Programming Language Popularity <http://langpop.com/>`_
-* `TIOBE <http://www.tiobe.com/tiobe_index>`_
+* `Programming Language Popularity <https://langpop.com/>`_
+* `TIOBE <https://www.tiobe.com/tiobe_index>`_
 * `Virtual Box <https://www.virtualbox.org/wiki/Downloads>`_
 
 Programación
 ------------
-* `Code Spells <http://codespells.org/>`_
-* `Minidosis: Aprende a Programar <http://www.minidosis.org/#/>`_
+* `Code Spells <https://codespells.org/>`_
+* `Minidosis: Aprende a Programar <https://www.minidosis.org/#/>`_
 
 GNU/Linux y Cultura Libre
 --------------------------
 
-* `Creative Commons <http://creativecommons.org/>`_
-* `Free Software Fundation <http://www.fsf.org/>`_
-* `Libre Office <http://www.libreoffice.org/download>`_
-* `Linux Fundation <http://www.linuxfoundation.org/>`_
-* `Linux Mint Debian Edition <http://www.linuxmint.com/download_lmde.php>`_
-* `Desde Linux <http://blog.desdelinux.net/>`_
+* `Creative Commons <https://creativecommons.org/>`_
+* `Free Software Fundation <https://www.fsf.org/>`_
+* `Libre Office <https://www.libreoffice.org/download>`_
+* `Linux Fundation <https://www.linuxfoundation.org/>`_
+* `Linux Mint Debian Edition <https://www.linuxmint.com/download_lmde.php>`_
+* `Desde Linux <https://blog.desdelinux.net/>`_

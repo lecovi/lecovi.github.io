@@ -22,23 +22,43 @@ Técnico Superior en Análisis de Sistemas
 
 .. |mapa| raw:: html
 
-    <a href="http://www.openstreetmap.org/#map=19/-34.59072/-58.41490&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
+    <a href="https://www.openstreetmap.org/#map=19/-34.59072/-58.41490&layers=N" target="_blank"><i class="fas fa-map-marker"></i> mapa</a>
 
-En el |ifts| doy cuatro materias que corresponden al primer año de la carrera y
-una que corresponde al segundo año.
+Soy docente en el |ifts| desde al año 2010, actualmente doy cuatro materias que corresponden al primer año de la carrera y
+una que corresponde al segundo año. También soy miembro del Consejo Directivo desde el año 2015.
 
 .. |ifts| raw:: html
 
-    <a href="http://www.ifts18.edu.ar" target="_blank">I.F.T.S. N°18</a>
+    <a href="https://www.ifts18.edu.ar" target="_blank"><i class="fas fa-graduation-cap"></i> I.F.T.S. N°18</a>
 
 :En el primer cuatrimestre:
     * **Primer año**:
-        - :doc:`Arquitectura de Computadoras <ifts/arq>`
-        - :doc:`Diagramación Lógica <ifts/dlo>`
+        - |laptop| :doc:`Arquitectura de Computadoras <ifts/arq>`
+        - |sitemap| :doc:`Diagramación Lógica <ifts/dlo>`
     * **Segundo año**:
-        - :doc:`Análisis de Sistemas <ifts/ana>`
+        - |trello| :doc:`Análisis de Sistemas <ifts/ana>`
 
 :En el segundo cuatrimestre:
     * **Primer año**:
-        - :doc:`Estructura de Datos <ifts/edd>`
-        - :doc:`Paradigmas de Programación <ifts/par>`
+        - |database| :doc:`Estructura de Datos <ifts/edd>`
+        - |code| :doc:`Paradigmas de Programación <ifts/par>`
+
+.. |laptop| raw:: html
+
+    <i class="fas fa-laptop"></i>
+
+.. |sitemap| raw:: html
+
+    <i class="fas fa-sitemap"></i>
+
+.. |trello| raw:: html
+
+    <i class="fab fa-trello"></i>
+
+.. |database| raw:: html
+
+    <i class="fas fa-database"></i>
+
+.. |code| raw:: html
+
+    <i class="fas fa-code"></i>
