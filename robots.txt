@@ -1,4 +1,4 @@
-Sitemap: https://lecovi.github.io/sitemapindex.xml
+Sitemap: https://leo.bitson.group/sitemapindex.xml
 
 User-Agent: *
-Host: lecovi.github.io
+Host: leo.bitson.group
