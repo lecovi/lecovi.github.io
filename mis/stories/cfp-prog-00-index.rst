@@ -8,7 +8,7 @@
 .. type: text
 
 
-.. class:: align-center
+.. class:: text-center
 
 Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
 ===================================================================
@@ -23,7 +23,7 @@ Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
 
     **Martes y Miércoles de 17:00 a 20:30hs**
 
-    Suscribite a la lista de correo en este |lista|
+..    Suscribite a la lista de correo en este |lista|
 
 .. |mapa| raw:: html
 
@@ -34,7 +34,7 @@ Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
     <a href="http://listas.bitson.com.ar/listinfo/python" target="_blank">link</a>
 
 
-.. sidebar:: Calendario
+.. .. sidebar:: Calendario
 
     .. raw:: html
 
@@ -42,6 +42,9 @@ Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
         style=" border-width:0 " width="400" height="300" frameborder="0"
         scrolling="no"></iframe>
 
+.. class:: alert alert-danger large
+
+    Este curso ya no lo estoy dictando más
 
 ----
 

@@ -8,12 +8,12 @@
 .. type: text
 .. hidetitle: true
 
-.. class:: h2 align-center
+.. class:: h2 text-center
 
 Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
 
 
-.. class:: lead align-center
+.. class:: lead text-center
 
     Sede Pío IX: Yapeyú 197, Ciudad Autónoma de Buenos Aires |mapa|
 
@@ -22,12 +22,21 @@ Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
     <a href="http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
 
 
-En el C.F.P. N°34 doy un curso cuatrimestral, presencial, gratuito y con
-certificado oficial del Ministerio de Educación del GCABA:
+En el C.F.P. N°34 di cursos cuatrimestrales, presenciales, gratuitos y con
+certificado oficial del Ministerio de Educación del GCABA desde el año 2007 hasta el año 2015:
 
-- :doc:`Técnicas de programación (Python) <cfp/prog>`
+- |code-branch| :doc:`Técnicas de programación (Python) <cfp/prog>`
+- |terminal| :doc:`Operador Básico GNU/Linux <bitson/olin>`
+- |qq| :doc:`Administración de Redes en GNU/Linux <bitson/reli>`
 
-En cuatrimestres pasados:
+.. |code-branch| raw:: html
 
-- :doc:`Operador Básico GNU/Linux <bitson/olin>`
-- :doc:`Administración de Redes en GNU/Linux <bitson/reli>`
+    <i class="fas fa-code-branch"></i>
+
+.. |terminal| raw:: html
+
+    <i class="fas fa-terminal"></i>
+
+.. |qq| raw:: html
+
+    <i class="fab fa-qq"></i> 

@@ -7,4 +7,9 @@
 .. description:
 .. type: text
 
-Escriba su página aquí.
+.. class:: text-center
+
+.. class:: alert alert-danger large
+
+    Este curso ya no lo estoy dictando más
+

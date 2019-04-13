@@ -7,7 +7,7 @@
 .. description:
 .. type: text
 
-.. class:: align-center
+.. class:: text-center
 
 `Instituto de Formación Técnica Superior Nº 18 <http://www.ifts18.edu.ar>`_
 ===========================================================================
@@ -22,6 +22,10 @@
 
     <a href="http://www.openstreetmap.org/#map=19/-34.61421/-58.42197&layers=N" target="_blank"><i class="fa fa-map-marker"></i> mapa</a>
 
+
+.. class:: alert alert-warning large
+
+    En este curso estoy actualmente de licencia hasta el 2020
 
 ----
 

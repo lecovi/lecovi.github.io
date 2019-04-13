@@ -8,7 +8,7 @@
 .. type: text
 
 
-.. class:: align-center
+.. class:: text-center
 
 Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
 ===================================================================
@@ -31,6 +31,11 @@ Centro de Formación Profesional Nº 34 "Profesor Roberto Albergucci"
 ..         style=" border-width:0 " width="400" height="300" frameborder="0"
 ..         scrolling="no"></iframe>
 ..
+
+.. class:: alert alert-danger large
+
+    Este curso ya no lo estoy dictando más
+
 
 ----
 
