@@ -7,7 +7,7 @@
 .. description:
 .. type: text
 
-.. class:: align-center
+.. class:: text-center
 
 `Instituto de Formación Técnica Superior Nº 18 <http://www.ifts18.edu.ar>`_
 ===========================================================================

@@ -7,7 +7,7 @@
 .. description:
 .. type: text
 
-.. class:: align-center
+.. class:: text-center
 
 Casa de Cultura y Política Sofía Yussen
 =======================================
@@ -18,7 +18,7 @@ Casa de Cultura y Política Sofía Yussen
 
     **Viernes de 9:00 a 13:00hs**
 
-    Suscribite a la lista de correo en este |lista|
+..    Suscribite a la lista de correo en este |lista|
 
 .. |mapa| raw:: html
 
@@ -28,7 +28,7 @@ Casa de Cultura y Política Sofía Yussen
 
     <a href="http://listas.bitson.com.ar/listinfo/programacion" target="_blank">link</a>
 
-.. sidebar:: Calendario
+.. .. sidebar:: Calendario
 
     .. raw:: html
 
@@ -36,6 +36,9 @@ Casa de Cultura y Política Sofía Yussen
         style=" border-width:0 " width="400" height="300" frameborder="0"
         scrolling="no"></iframe>
 
+.. class:: alert alert-danger large
+
+    Este curso ya no lo estoy dictando más
 
 ----
 
