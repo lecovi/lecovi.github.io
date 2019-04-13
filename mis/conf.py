@@ -25,7 +25,7 @@ SITE_URL = "http://lecovi.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://lecovi.github.io/"
-BLOG_EMAIL = "leo@bitson.com.ar"
+BLOG_EMAIL = "leo+blog@bitson.group"
 BLOG_DESCRIPTION = "Leo's personal site"  # (translatable)
 
 # Nikola is multilingual!
@@ -129,21 +129,21 @@ NAVIGATION_LINKS = {
             ("/cfp", "<i class=\"fab fa-linux\"></i> <strong>Centro de Formación Profesional<strong>"),
             ("/cfp/prog/", "&emsp; <i class=\"fas fa-code-branch\"></i>  Técnicas de Programación</span>"),
             ("/ifts", "<i class=\"fas fa-graduation-cap\"></i> <strong>Terciario<strong>"),
-            ("/ifts/arq/", "&emsp; <i class=\"fa fa-laptop\"></i> Arquitectura de Computadoras"),
-            ("/ifts/dlo/", "&emsp; <i class=\"fa fa-sitemap\"></i> Diagramación Lógica"),
-            ("/ifts/edd/", "&emsp; <i class=\"fa fa-database\"></i> Estructura de Datos"),
-            ("/ifts/par/", "&emsp; <i class=\"fa fa-code\"></i> Paradigmas de Programación"),
+            ("/ifts/arq/", "&emsp; <i class=\"fas fa-laptop\"></i> Arquitectura de Computadoras"),
+            ("/ifts/dlo/", "&emsp; <i class=\"fas fa-sitemap\"></i> Diagramación Lógica"),
+            ("/ifts/edd/", "&emsp; <i class=\"fas fa-database\"></i> Estructura de Datos"),
+            ("/ifts/par/", "&emsp; <i class=\"fas fa-code\"></i> Paradigmas de Programación"),
             ("/ifts/ana/", "&emsp; <i class=\"fab fa-trello\"></i> Análisis de Sistemas"),
             ("/bitson", "<i class=\"fas fa-users\"></i> <strong>BITSON<strong>"),
             ("/bitson/pyintro2018/", "&emsp; <i class=\"fab fa-python\"></i> Taller de Introducción a Python #PyConAR2018"),
-            ("/bitson/prog-sl/", "&emsp; <i class=\"fa fa-keyboard-o\"></i> Programación con Software Libre"),
-            ("/bitson/olin/", "&emsp; <i class=\"fa fa-terminal\"></i> Operador Básico GNU/Linux</span>"),
+            ("/bitson/prog-sl/", "&emsp; <i class=\"fas fa-keyboard\"></i> Programación con Software Libre"),
+            ("/bitson/olin/", "&emsp; <i class=\"fas fa-terminal\"></i> Operador Básico GNU/Linux</span>"),
             ("/bitson/reli/", "&emsp; <i class=\"fab fa-qq\"></i> Administración de Redes con GNU/Linux"),
-            ), "<i class=\"fa fa-university\"></i> Cursos"),
-        ("/resources/", "<i class=\"fa fa-wrench\"></i> Recursos"),
-        ("/archive.html", "<i class=\"fa fa-archive\"></i> Archivo"),
-        ("/categories/", "<i class=\"fa fa-tags\"></i> Etiquetas"),
-        ("/rss.xml", "<i class=\"fa fa-rss\"></i> RSS"),
+            ), "<i class=\"fas fa-university\"></i> Cursos"),
+        ("/resources/", "<i class=\"fas fa-wrench\"></i> Recursos"),
+        ("/archive.html", "<i class=\"fas fa-archive\"></i> Archivo"),
+        ("/categories/", "<i class=\"fas fa-tags\"></i> Etiquetas"),
+        ("/rss.xml", "<i class=\"fas fa-rss\"></i> RSS"),
     ),
 }
 
@@ -676,16 +676,16 @@ LICENSE = """
 # (translatable)
 CONTENT_FOOTER = """<div class="text-center">
 Contents &copy; {date}         <a href="mailto:{email}">{author}</a> -
-<a href="https://www.facebook.com/bitsonargentina"><i class="fa fa-facebook-official"></i></a>
-<a href="https://www.twitter.com/lecovi"><i class="fa fa-twitter"></i></a>
-<a href="https://instagram.com/lecovi"><i class="fa fa-instagram"></i></a>
-<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fa fa-linkedin"></i></a>
-<a href="https://www.telegram.me/lecovi"><i class="fa fa-send"></i></a>
-<a href="#+5491130015328"><i class="fa fa-whatsapp"></i></a>
-<a href="https://www.youtube.com/bitsonargentina"><i class="fa fa-youtube"></i></a>
-<a href="https://plus.google.com/+LeandroEColomboViña-bitson"><i class="fa fa-google-plus"></i></a>
-<a href="https://www.github.com/lecovi"><i class="fa fa-github"></i></a>
-<a href="https://bitbucket.org/colomboleandro"><i class="fa fa-bitbucket"></i></a> -
+<a href="https://www.facebook.com/bitsonargentina"><i class="fab fa-facebook-official"></i></a>
+<a href="https://www.twitter.com/lecovi"><i class="fab fa-twitter"></i></a>
+<a href="https://instagram.com/lecovi"><i class="fab fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/leandrocolombo"><i class="fab fa-linkedin"></i></a>
+<a href="https://www.telegram.me/lecovi"><i class="fas fa-send"></i></a>
+<a href="#+5491130015328"><i class="fab fa-whatsapp"></i></a>
+<a href="https://www.youtube.com/bitsonargentina"><i class="fab fa-youtube"></i></a>
+<a href="https://plus.google.com/+LeandroEColomboViña-bitson"><i class="fab fa-google-plus"></i></a>
+<a href="https://www.github.com/lecovi"><i class="fab fa-github"></i></a>
+<a href="https://bitbucket.org/colomboleandro"><i class="fab fa-bitbucket"></i></a> -
 Powered by         <a href="https://getnikola.com" rel="nofollow">Nikola</a>   -    {license}
 </div>
 """
@@ -942,7 +942,7 @@ MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite', 'extra']
 # (translatable)
 EXTRA_HEAD_DATA = """
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 <link href='/assets/styles.css' rel='stylesheet' type='text/css'>
 """
 
@@ -970,7 +970,7 @@ EXTRA_HEAD_DATA = """
 
 # If you hate "Filenames with Capital Letters and Spaces.md", you should
 # set this to true.
-UNSLUGIFY_TITLES = True
+FILE_METADATA_UNSLUGIFY_TITLES = True
 
 # Additional metadata that is added to a post when creating a new_post
 # ADDITIONAL_METADATA = {}
