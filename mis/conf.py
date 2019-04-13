@@ -677,7 +677,7 @@ LICENSE = """
 # (translatable)
 CONTENT_FOOTER = """<div class="text-center">
 Contents &copy; {date}         <a href="mailto:{email}">{author}</a> -
-<a href="https://www.facebook.com/bitsonargentina"><i class="fab fa-facebook-official"></i></a>
+<a href="https://www.facebook.com/bitsonargentina"><i class="fab fa-facebook"></i></a>
 <a href="https://www.twitter.com/lecovi"><i class="fab fa-twitter"></i></a>
 <a href="https://instagram.com/lecovi"><i class="fab fa-instagram"></i></a>
 <a href="https://www.linkedin.com/in/leandrocolombo"><i class="fab fa-linkedin"></i></a>
