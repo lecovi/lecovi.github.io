@@ -21,7 +21,7 @@ BLOG_AUTHOR = "Leandro E. Colombo Viña"  # (translatable)
 BLOG_TITLE = "Make it So!"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "http://lecovi.github.io/"
+SITE_URL = "https://lecovi.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://lecovi.github.io/"
@@ -666,10 +666,10 @@ FEED_LINKS_APPEND_QUERY = False
 # I recommend using the Creative Commons' wizard:
 # http://creativecommons.org/choose/
 LICENSE = """
- <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+ <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
  <img alt="Creative Commons License BY-NC-SA"
  style="border-width:0; margin-bottom:12px;"
- src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>"""
+ src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>"""
 # src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a>"""
 
 # A small copyright notice for the page footer (in HTML).
