@@ -1,7 +1,7 @@
 .. title: Algunos conceptos básicos
 .. slug: bitson/prog-sl/01
 .. date: 2015-08-25 13:27:56 UTC-03:00
-.. tags: mathjax
+.. tags:
 .. category:
 .. link:
 .. description:
@@ -18,7 +18,7 @@
     .. raw:: html
 
         <iframe class="embed-responsive-item"
-        src="http://bitson.github.io/cursos/python1"
+        src="https://bitson.group/slides/python1"
         scrolling="no"></iframe>
 
 .. class:: col-md-2
@@ -35,7 +35,7 @@
 
     .. |presentation_link| raw:: html
 
-       <a href="http://bitson.github.io/cursos/python1" target="_blank">presentación aparte</a>
+       <a href="https://bitson.group/slides/python1" target="_blank">presentación aparte</a>
 
 
 .. class:: alert alert-info pull-right

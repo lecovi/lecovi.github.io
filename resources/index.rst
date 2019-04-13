@@ -54,87 +54,87 @@ Python
 
 .. |apunte_7540| raw:: html
 
-    <a href="https://github.com/ifts18/fiuba.algoritmos.apunte/releases/download/v2018.01.24.01/aprendiendo_a_programar_usando_python.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://github.com/ifts18/fiuba.algoritmos.apunte/releases/download/v2018.01.24.01/aprendiendo_a_programar_usando_python.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |bahit| raw:: html
 
-    <a href="https://mega.co.nz/#%21ZExUmToD%21ASIO4-hrYm4kfEWUXiq3TqGmxQvRTkO37FkjgXrkq18" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://mega.co.nz/#%21ZExUmToD%21ASIO4-hrYm4kfEWUXiq3TqGmxQvRTkO37FkjgXrkq18" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |brookshear| raw:: html
 
-    <a  href="https://mega.nz/#!4VRGmZzZ!-WsJnf1x98R1n3XOwPmD5qaxhK6r3fGzMtaNcecNJYY" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a  href="https://mega.nz/#!4VRGmZzZ!-WsJnf1x98R1n3XOwPmD5qaxhK6r3fGzMtaNcecNJYY" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |dive_into| raw:: html
 
-    <a  href="https://mega.co.nz/#%21pM4BkRjY%21vz6CCfcX8NafJoVIhmoyOwYoOqfuHOPex1xIg3RthUg" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a  href="https://mega.co.nz/#%21pM4BkRjY%21vz6CCfcX8NafJoVIhmoyOwYoOqfuHOPex1xIg3RthUg" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |ginzburg| raw:: html
 
-    <a  href="https://mega.nz/#!0RgVXLJb!sOZTlYBZjqgYirH6FYp1WbYEYsWHhUlfMadpa71EdTE" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a  href="https://mega.nz/#!0RgVXLJb!sOZTlYBZjqgYirH6FYp1WbYEYsWHhUlfMadpa71EdTE" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |ginzburg-repo| raw:: html
 
-    <a  href="https://github.com/lecovi/pcxdentro/" target="_blank"><i class="fa fa-github"></i></a>
+    <a  href="https://github.com/lecovi/pcxdentro/" target="_blank"><i class="fab fa-github"></i></a>
 
 .. |head_first| raw:: html
 
-    <a href="https://mega.co.nz/#%21AN52nQgR%21KDp4lqL2lsmOd-2UoOPp7u4hZQr-xcFk9TKI9dP98Y8" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://mega.co.nz/#%21AN52nQgR%21KDp4lqL2lsmOd-2UoOPp7u4hZQr-xcFk9TKI9dP98Y8" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |hennessy| raw:: html
 
-    <a href="https://mega.nz/#!NdI2yaJD!bpbh6GfZ-syWm4KuRQhEnT-goaFJ9fa7zD1bOtfEO78" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://mega.nz/#!NdI2yaJD!bpbh6GfZ-syWm4KuRQhEnT-goaFJ9fa7zD1bOtfEO78" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |inmersion_python| raw:: html
 
-    <a  href="https://mega.co.nz/#%21sQhi2TAb%21uS7aI9iVV09-_pFxKZrMrZXGjDr9j5Ec9H72cKlYURU" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a  href="https://mega.co.nz/#%21sQhi2TAb%21uS7aI9iVV09-_pFxKZrMrZXGjDr9j5Ec9H72cKlYURU" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |libro| raw:: html
 
-    <a href="https://github.com/lecovi/thinkcs-py_es/releases/download/v2018013001/thinkpython-spa.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://github.com/lecovi/thinkcs-py_es/releases/download/v2018013001/thinkpython-spa.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |mega_tutorial| raw:: html
 
-    <a  href="http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world" target="_blank"><i class="fa fa-link"></i></a>
+    <a  href="http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world" target="_blank"><i class="fas fa-link"></i></a>
 
 .. |think_python| raw:: html
 
-    <a href="http://greenteapress.com/wp/think-python-2e/" target="_blank"><i class="fa fa-link"></i></a>
+    <a href="http://greenteapress.com/wp/think-python-2e/" target="_blank"><i class="fas fa-link"></i></a>
 
 .. |tuto_pyar| raw:: html
 
-    <a href="http://docs.python.org.ar/tutorial/" target="_blank"><i class="fa fa-link"></i></a>
+    <a href="http://docs.python.org.ar/tutorial/" target="_blank"><i class="fas fa-link"></i></a>
 
 .. |ppt| raw:: html
 
-    <a href="http://mundogeek.net/tutorial-python/" target="_blank"><i class="fa fa-link"></i></a>
+    <a href="http://mundogeek.net/tutorial-python/" target="_blank"><i class="fas fa-link"></i></a>
 
 .. |python_informatics| raw:: html
 
-    <a href="https://mega.co.nz/#%21oAYgXZoA%21J42d3Q7pajM2T2I1tiBX9oZ5yOLuzPokC29FU8z-BSY" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://mega.co.nz/#%21oAYgXZoA%21J42d3Q7pajM2T2I1tiBX9oZ5yOLuzPokC29FU8z-BSY" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |quiroga| raw:: html
 
-    <a href="https://mega.nz/#!ZNxznR5a!iIDXCngutAtLMhj_Ph28mU9PNpFgLNpitXFh_E4kctY" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://mega.nz/#!ZNxznR5a!iIDXCngutAtLMhj_Ph28mU9PNpFgLNpitXFh_E4kctY" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |stallings| raw:: html
 
-    <a href="https://mega.nz/#!pdwjiKCb!4AzH69xeFrSYklxlP2p2p6EZNNXB39OrIE5PB_qzOz4" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://mega.nz/#!pdwjiKCb!4AzH69xeFrSYklxlP2p2p6EZNNXB39OrIE5PB_qzOz4" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |thinking_python| raw:: html
 
-    <a href="https://mega.co.nz/#%21VIxlXIIJ%211TdzlwFGB_BAbQQat6-jpHGp1E1GqBKQc3YCUJwDqlA" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://mega.co.nz/#%21VIxlXIIJ%211TdzlwFGB_BAbQQat6-jpHGp1E1GqBKQc3YCUJwDqlA" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |tanenbaum| raw:: html
 
-    <a href="https://mega.nz/#!9IAXmaBT!i2A44jGUZrFSGH3x_CaZneGe3ttNguHlCURA6ZhmNYs" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://mega.nz/#!9IAXmaBT!i2A44jGUZrFSGH3x_CaZneGe3ttNguHlCURA6ZhmNYs" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |tanenbaum_ingles| raw:: html
 
-    <a href="https://mega.nz/#!4c5CwTRS!tkCqO61bY3Nc-R79hj6sQQvlwluW5uZXl09Bkk74NZI" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://mega.nz/#!4c5CwTRS!tkCqO61bY3Nc-R79hj6sQQvlwluW5uZXl09Bkk74NZI" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 .. |yourdon| raw:: html
 
-    <a href="https://mega.nz/#!dMpExAaJ!nXZfGbyl95Q1_VK3zY9m7GmxkmfbMeFcgopL0ne74VU" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+    <a href="https://mega.nz/#!dMpExAaJ!nXZfGbyl95Q1_VK3zY9m7GmxkmfbMeFcgopL0ne74VU" target="_blank"><i class="fas fa-file-pdf"></i></a>
 
 Enlaces de Interés
 ==================
