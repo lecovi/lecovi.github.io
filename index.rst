@@ -5,7 +5,6 @@
 .. link:
 .. description: Leo's personal & blog site!
 
-
 .. class:: jumbotron
 
     .. admonition:: Personal & Blog Site

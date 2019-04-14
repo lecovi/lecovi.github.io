@@ -878,11 +878,12 @@ div.tip p.admonition-title {
 
 .admonition-title {
     background: #6ab0de none repeat scroll 0 0;
-    color: #fff;
+    color: #000;
     display: block;
     font-weight: bold;
-    margin: -12px -12px 12px;
-    padding: 6px 12px;
+    font-size: 115%;
+    /* margin: -12px -12px 12px;
+    padding: 6px 12px; */
 }
 
 .literal {
