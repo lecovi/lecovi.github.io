@@ -7,7 +7,7 @@
 .. description:
 .. type: text
 
-.. class:: align-center
+.. class:: text-center
 
 .. raw:: html
 

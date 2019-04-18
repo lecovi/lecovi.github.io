@@ -41,7 +41,7 @@
         </div>
 
         <div class="col-md-4">
-            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQZvJOlzAHNgklTbivplFcrnu66qeHkJ9E1MrjgiaT1ZA7hsq0Bg3zIgXBJXwyHf3qdY4NGE6VOBff8/pubhtml?gid=19&single=true" target="_blank" class="feature-link text-center">
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQJuovzDFSKkQ_lXTvdZbgCAjHhAJKyH3iLKJUuDDWSn2lNQriqGaI6kUKbqwkX5j-ngu4cnZ_kbz24/pubhtml?gid=19&single=true" target="_blank" class="feature-link text-center">
                 <div class="feature-icon feature-icon-static">
                     <span class="fa-stack fa-3x">
                         <i class="fa fa-circle fa-stack-2x"></i>
