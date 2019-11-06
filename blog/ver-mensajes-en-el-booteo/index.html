@@ -157,21 +157,21 @@ esos mensajes. Comencemos...</p>
 <!-- TEASER_END -->
 <div class="section" id="edicion-de-los-parametros-de-inicio">
 <h2>Edición de los parámetros de inicio</h2>
-<pre class="code console"><a name="rest_code_1fc7c36068d849f3b0c1371bb32e2d6d-1"></a><span class="gp">$</span> sudo vim /etc/default/grub
+<pre class="code console"><a name="rest_code_9b4f6aa515db4d6e96cbb5826cdfb6c0-1"></a><span class="gp">$</span> sudo vim /etc/default/grub
 </pre>
 <p>Hay que editar el archivo <tt class="docutils literal">/etc/default/grub</tt> en este archivo vamos a
 encontrar una línea que dice:</p>
-<pre class="code console"><a name="rest_code_98c6919a34294d179d18061cfc6e2d82-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</span>
+<pre class="code console"><a name="rest_code_9b87f62a05dc402e8523f80a4f77288e-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</span>
 </pre>
 <p>Tenemos que remover la opción de <tt class="docutils literal">"quiet splas"</tt> para que la línea en
 cuestión quede como:</p>
-<pre class="code console"><a name="rest_code_2aa466e8211f47f9b8f235675724b0b2-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT=""</span>
+<pre class="code console"><a name="rest_code_16fcc00e528e49258032066c7ce790cd-1"></a><span class="go">GRUB_CMDLINE_LINUX_DEFAULT=""</span>
 </pre>
 </div>
 <div class="section" id="actualizando-grub">
 <h2>Actualizando GRUB</h2>
 <p>Finalmente actualizamos las opciones de GRUB con el comando:</p>
-<pre class="code console"><a name="rest_code_91cdb1a92ae24ff4a71dac0308f6af78-1"></a><span class="gp">$</span> sudo update-grub
+<pre class="code console"><a name="rest_code_9cb53bebab0e4efd873a7d83c27cb596-1"></a><span class="gp">$</span> sudo update-grub
 </pre>
 <p>Listo! En el próximo inicio veremos como se va cargando el sistema.</p>
 </div>

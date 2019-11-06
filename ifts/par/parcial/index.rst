@@ -7,35 +7,39 @@
 .. description:
 .. type: text
 
-Descargate el enunciado_.
+Descargate el `enunciado del parcial`_.
+
+Descargate el archivo clientes_.
 
 Parcial
 =======
 
-.. _enunciado: /par/2018-parcial-edd.pdf
+.. _clientes: /par/clientes.csv
+
+.. _enunciado del parcial: /par/2019-parcial-par.pdf
 
 .. class:: align-center embed-responsive embed-responsive-16by9
 
     .. raw:: html
 
-        <object data="/par/2018-parcial-par.pdf" type="application/pdf">
-            <embed src="/par/2018-parcial-par.pdf" type="application/pdf" />
+        <object data="/par/2019-parcial-par.pdf" type="application/pdf">
+            <embed src="/par/2019-parcial-par.pdf" type="application/pdf" />
         </object>
 
 
-Final
-======
+.. Final
+.. ======
 
-Se desea agregar una nueva sección al programa que permita cargar nuevas ventas:
+.. Se desea agregar una nueva sección al programa que permita cargar nuevas ventas:
 
-#. Debe aparecer en el menú de la aplicación.
-#. Al hacer click en el menú correspondiente, la aplicación debe mostrar un formulario para la carga de ventas.
-#. Debe cargarse código de producto, nombre del producto, cliente, cantidad y precio.
-#. Debe validarse que:
-    #. el código ingresado respete el formato convenido,
-    #. la cantidad tiene que ser un entero,
-    #. el precio tiene que ser un número decimal.
-    #. Todos los campos son requeridos.
-#. Si las validaciones son correctas, la información debe escribirse en el CSV que tienen la base de datos.
-#. Luego de eso debe mostrarse la vista de "Últimas ventas" donde se vea la información recientemente cargada.
+.. #. Debe aparecer en el menú de la aplicación.
+.. #. Al hacer click en el menú correspondiente, la aplicación debe mostrar un formulario para la carga de ventas.
+.. #. Debe cargarse código de producto, nombre del producto, cliente, cantidad y precio.
+.. #. Debe validarse que:
+..     #. el código ingresado respete el formato convenido,
+..     #. la cantidad tiene que ser un entero,
+..     #. el precio tiene que ser un número decimal.
+..     #. Todos los campos son requeridos.
+.. #. Si las validaciones son correctas, la información debe escribirse en el CSV que tienen la base de datos.
+.. #. Luego de eso debe mostrarse la vista de "Últimas ventas" donde se vea la información recientemente cargada.
 

@@ -182,10 +182,10 @@ placa, cómo conectarse y jugar con el led integrado. Manos a la obra!</p>
 <h3>Instalando <tt class="docutils literal">picocom</tt>
 </h3>
 <p>Para Fedora:</p>
-<pre class="code bash"><a name="rest_code_f503be576b614630b56a2416b3ed9002-1"></a>sudo dnf install picocom
+<pre class="code bash"><a name="rest_code_850e5db4cd6d4b76af173e5d460a519f-1"></a>sudo dnf install picocom
 </pre>
 <p>Para Debian y derivados:</p>
-<pre class="code bash"><a name="rest_code_c2e871ba11464dafba236d955a5aaa2c-1"></a>sudo apt install picocom
+<pre class="code bash"><a name="rest_code_0bdfdf105ed447d9acb1376d489d02e0-1"></a>sudo apt install picocom
 </pre>
 </div>
 <div class="section" id="instalando-esptool">
@@ -196,7 +196,7 @@ Es conveniente instalarlo con el flag <tt class="docutils literal"><span class="
 instalado entre los paquetes del sistema. Pero tenés que asegurarte que tu
 usuario tenga permisos para acceder a los dispositivos serie
 (<cite>/dev/ttyUSB</cite>).</blockquote>
-<pre class="code bash"><a name="rest_code_fb12e4548dd249caa03663a22b220275-1"></a>pip install esptool
+<pre class="code bash"><a name="rest_code_2c726e72c27142248d9cc0547ae8ae1a-1"></a>pip install esptool
 </pre>
 </div>
 <div class="section" id="descargar-el-firmware">
@@ -227,7 +227,7 @@ cargar el nuevo firmware con <tt class="docutils literal">esptool</tt>.</p>
 </h3>
 <p>Ahora con <tt class="docutils literal">picocom</tt> (o <tt class="docutils literal">minicom</tt> o el que más te guste) con la placa
 conectada al USB ejecutás:</p>
-<pre class="code bash"><a name="rest_code_f506e9bc5ed340d1b60602eddeef5a69-1"></a>sudo picocom /dev/ttyUSB0 -b115200
+<pre class="code bash"><a name="rest_code_197d36d7031543eabe8854e28ccfe2bd-1"></a>sudo picocom /dev/ttyUSB0 -b115200
 </pre>
 <p>Si tenés permisos sobre el dispositivo USB el <cite>picocom</cite> se va a conectar a la
 placa sin ningún tipo de problemas. Luego del mensaje <tt class="docutils literal">Terminal ready</tt>
@@ -241,54 +241,54 @@ presionamos la tecla <cite>enter</cite> y tendremos que ver el prompt del REPL d
 <h2>Un paso más</h2>
 <p>Probemos que nuestra instalación de micropython funciona correctamente.
 Escribamos el famoso <cite>Hola Mundo!</cite>.</p>
-<pre class="code python3"><a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"Hola nodemcu"</span><span class="p">)</span>
-<a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-2"></a><span class="n">Hola</span> <span class="n">nodemcu</span>
-<a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">34</span> <span class="o">+</span> <span class="mi">5</span>
-<a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-4"></a><span class="mi">39</span>
-<a name="rest_code_fb8b5ff171f44f35a08bc6087dd05fdc-5"></a><span class="o">&gt;&gt;&gt;</span>
+<pre class="code python3"><a name="rest_code_978b18838cc2400295f3867c77988d9f-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"Hola nodemcu"</span><span class="p">)</span>
+<a name="rest_code_978b18838cc2400295f3867c77988d9f-2"></a><span class="n">Hola</span> <span class="n">nodemcu</span>
+<a name="rest_code_978b18838cc2400295f3867c77988d9f-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="mi">34</span> <span class="o">+</span> <span class="mi">5</span>
+<a name="rest_code_978b18838cc2400295f3867c77988d9f-4"></a><span class="mi">39</span>
+<a name="rest_code_978b18838cc2400295f3867c77988d9f-5"></a><span class="o">&gt;&gt;&gt;</span>
 </pre>
 <div class="section" id="que-se-haga-la-luz">
 <h3>Que se haga la luz!</h3>
 <p>Genial! Todo funciona de maravillas. Hagamos algo un poco más interesante.
 Prendamos el led que tiene la placa.</p>
-<pre class="code python3"><a name="rest_code_58097444cb954025b7865d3ad42fd64a-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">machine</span>
-<a name="rest_code_58097444cb954025b7865d3ad42fd64a-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span> <span class="o">=</span> <span class="n">machine</span><span class="o">.</span><span class="n">Pin</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">machine</span><span class="o">.</span><span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-<a name="rest_code_58097444cb954025b7865d3ad42fd64a-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-<a name="rest_code_58097444cb954025b7865d3ad42fd64a-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-<a name="rest_code_58097444cb954025b7865d3ad42fd64a-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-<a name="rest_code_58097444cb954025b7865d3ad42fd64a-6"></a><span class="o">&gt;&gt;&gt;</span>
+<pre class="code python3"><a name="rest_code_0e55b3b4cabe420b88f24ad4844bf770-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">machine</span>
+<a name="rest_code_0e55b3b4cabe420b88f24ad4844bf770-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span> <span class="o">=</span> <span class="n">machine</span><span class="o">.</span><span class="n">Pin</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">machine</span><span class="o">.</span><span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<a name="rest_code_0e55b3b4cabe420b88f24ad4844bf770-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+<a name="rest_code_0e55b3b4cabe420b88f24ad4844bf770-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+<a name="rest_code_0e55b3b4cabe420b88f24ad4844bf770-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+<a name="rest_code_0e55b3b4cabe420b88f24ad4844bf770-6"></a><span class="o">&gt;&gt;&gt;</span>
 </pre>
 <p>Impecable! Todo funciona de maravillas. Ahora hagamos parpadear al led...</p>
-<pre class="code python3"><a name="rest_code_f7e7123065394934a2303fe24b6ee766-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">time</span>
-<a name="rest_code_f7e7123065394934a2303fe24b6ee766-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-<a name="rest_code_f7e7123065394934a2303fe24b6ee766-3"></a><span class="o">...</span>     <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
-<a name="rest_code_f7e7123065394934a2303fe24b6ee766-4"></a><span class="o">...</span>     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a name="rest_code_f7e7123065394934a2303fe24b6ee766-5"></a><span class="o">...</span>     <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
-<a name="rest_code_f7e7123065394934a2303fe24b6ee766-6"></a><span class="o">...</span>     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-<a name="rest_code_f7e7123065394934a2303fe24b6ee766-7"></a><span class="o">...</span>
-<a name="rest_code_f7e7123065394934a2303fe24b6ee766-8"></a><span class="o">...</span>
-<a name="rest_code_f7e7123065394934a2303fe24b6ee766-9"></a><span class="o">...</span>
-<a name="rest_code_f7e7123065394934a2303fe24b6ee766-10"></a><span class="o">&gt;&gt;&gt;</span>
+<pre class="code python3"><a name="rest_code_e141a772315f4e6abebcb4fac6421d12-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">time</span>
+<a name="rest_code_e141a772315f4e6abebcb4fac6421d12-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<a name="rest_code_e141a772315f4e6abebcb4fac6421d12-3"></a><span class="o">...</span>     <span class="n">led</span><span class="o">.</span><span class="n">off</span><span class="p">()</span>
+<a name="rest_code_e141a772315f4e6abebcb4fac6421d12-4"></a><span class="o">...</span>     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a name="rest_code_e141a772315f4e6abebcb4fac6421d12-5"></a><span class="o">...</span>     <span class="n">led</span><span class="o">.</span><span class="n">on</span><span class="p">()</span>
+<a name="rest_code_e141a772315f4e6abebcb4fac6421d12-6"></a><span class="o">...</span>     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<a name="rest_code_e141a772315f4e6abebcb4fac6421d12-7"></a><span class="o">...</span>
+<a name="rest_code_e141a772315f4e6abebcb4fac6421d12-8"></a><span class="o">...</span>
+<a name="rest_code_e141a772315f4e6abebcb4fac6421d12-9"></a><span class="o">...</span>
+<a name="rest_code_e141a772315f4e6abebcb4fac6421d12-10"></a><span class="o">&gt;&gt;&gt;</span>
 </pre>
 <img alt="usando el intérprete de micropython" class="align-center" src="../images/blog/upython/repl.png">
 </div>
 <div class="section" id="conectate">
 <h3>Conectate!</h3>
 <p>Hagamos esto un poco más interesante. Conectémonos a la red WiFi de casa.</p>
-<pre class="code python3"><a name="rest_code_59b7162a6e794edf8471a606ef6c0671-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">network</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">WLAN</span><span class="p">(</span><span class="n">network</span><span class="o">.</span><span class="n">STA_IF</span><span class="p">)</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">()</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-4"></a><span class="kc">False</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-6"></a><span class="c1">#5 ets_task(4020ed88, 28, 3fff9f90, 10)</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">()</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-8"></a><span class="kc">True</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'ThiagoBenjamin'</span><span class="p">,</span> <span class="s1">'&lt;escribí-tu-clave&gt;'</span><span class="p">)</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">isconnected</span><span class="p">()</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-11"></a><span class="kc">True</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">ifconfig</span><span class="p">()</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-13"></a><span class="p">(</span><span class="s1">'192.168.1.13'</span><span class="p">,</span> <span class="s1">'255.255.255.0'</span><span class="p">,</span> <span class="s1">'192.168.1.1'</span><span class="p">,</span> <span class="s1">'192.168.1.1'</span><span class="p">)</span>
-<a name="rest_code_59b7162a6e794edf8471a606ef6c0671-14"></a><span class="o">&gt;&gt;&gt;</span>
+<pre class="code python3"><a name="rest_code_d9e76ec54a05412786b4628b737090ce-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">network</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span> <span class="o">=</span> <span class="n">network</span><span class="o">.</span><span class="n">WLAN</span><span class="p">(</span><span class="n">network</span><span class="o">.</span><span class="n">STA_IF</span><span class="p">)</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-3"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">()</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-4"></a><span class="kc">False</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-6"></a><span class="c1">#5 ets_task(4020ed88, 28, 3fff9f90, 10)</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">active</span><span class="p">()</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-8"></a><span class="kc">True</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">'ThiagoBenjamin'</span><span class="p">,</span> <span class="s1">'&lt;escribí-tu-clave&gt;'</span><span class="p">)</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">isconnected</span><span class="p">()</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-11"></a><span class="kc">True</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">iface</span><span class="o">.</span><span class="n">ifconfig</span><span class="p">()</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-13"></a><span class="p">(</span><span class="s1">'192.168.1.13'</span><span class="p">,</span> <span class="s1">'255.255.255.0'</span><span class="p">,</span> <span class="s1">'192.168.1.1'</span><span class="p">,</span> <span class="s1">'192.168.1.1'</span><span class="p">)</span>
+<a name="rest_code_d9e76ec54a05412786b4628b737090ce-14"></a><span class="o">&gt;&gt;&gt;</span>
 </pre>
 <p>done!</p>
 </div>

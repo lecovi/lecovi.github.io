@@ -139,136 +139,136 @@ Importamos el módulo random para que la creaci'>
 <div class="section" id="carta">
 <h2>Carta</h2>
 <p><a class="reference external" href="../../../listings/edd/cartas.py.html">edd/cartas.py</a>  <a class="reference external" href="../../../listings/edd/cartas.py">(Código fuente)</a></p>
-<pre class="code python3"><a name="rest_code_6df4188d75f645ed9615fb9980f7b072-1"></a><span class="ch">#!/usr/bin/env python</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-2"></a><span class="sd">"""</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-3"></a><span class="sd">EDD: Creando objetos - Carta.</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-4"></a>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-5"></a><span class="sd">Importamos el módulo random para que la creación de objetos sea pseudo-aleatoria.</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-6"></a><span class="sd">"""</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-7"></a>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-8"></a><span class="kn">import</span> <span class="nn">random</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-9"></a>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-10"></a>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-11"></a><span class="k">class</span> <span class="nc">Carta</span><span class="p">:</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-12"></a>    <span class="sd">""" Nuestra propia clase Carta. """</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-13"></a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">valor</span><span class="p">,</span> <span class="n">palo</span><span class="p">):</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">palo</span> <span class="o">=</span> <span class="n">palo</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-16"></a>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-17"></a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-18"></a>        <span class="k">return</span> <span class="s1">'&lt;Carta </span><span class="si">{}</span><span class="s1"> de </span><span class="si">{}</span><span class="s1">&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">valor</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">palo</span><span class="p">)</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-19"></a>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-20"></a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-21"></a>        <span class="k">return</span> <span class="s1">'El </span><span class="si">{}</span><span class="s1"> de </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">valor</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">palo</span><span class="p">)</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-22"></a>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-23"></a>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-24"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-25"></a>    <span class="n">PALOS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'oros'</span><span class="p">,</span> <span class="s1">'bastos'</span><span class="p">,</span> <span class="s1">'copas'</span><span class="p">,</span> <span class="s1">'espadas'</span><span class="p">]</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-26"></a>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-27"></a>    <span class="n">carta</span> <span class="o">=</span> <span class="n">Carta</span><span class="p">(</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-28"></a>        <span class="n">valor</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-29"></a>        <span class="n">palo</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">PALOS</span><span class="p">),</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-30"></a>    <span class="p">)</span>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-31"></a>
-<a name="rest_code_6df4188d75f645ed9615fb9980f7b072-32"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">carta</span><span class="p">)</span>
+<pre class="code python3"><a name="rest_code_d08eab338ac4499d917c9c563f372b71-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-2"></a><span class="sd">"""</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-3"></a><span class="sd">EDD: Creando objetos - Carta.</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-4"></a>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-5"></a><span class="sd">Importamos el módulo random para que la creación de objetos sea pseudo-aleatoria.</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-6"></a><span class="sd">"""</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-7"></a>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-8"></a><span class="kn">import</span> <span class="nn">random</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-9"></a>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-10"></a>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-11"></a><span class="k">class</span> <span class="nc">Carta</span><span class="p">:</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-12"></a>    <span class="sd">""" Nuestra propia clase Carta. """</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-13"></a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">valor</span><span class="p">,</span> <span class="n">palo</span><span class="p">):</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">valor</span> <span class="o">=</span> <span class="n">valor</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">palo</span> <span class="o">=</span> <span class="n">palo</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-16"></a>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-17"></a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-18"></a>        <span class="k">return</span> <span class="s1">'&lt;Carta </span><span class="si">{}</span><span class="s1"> de </span><span class="si">{}</span><span class="s1">&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">valor</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">palo</span><span class="p">)</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-19"></a>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-20"></a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-21"></a>        <span class="k">return</span> <span class="s1">'El </span><span class="si">{}</span><span class="s1"> de </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">valor</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">palo</span><span class="p">)</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-22"></a>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-23"></a>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-24"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-25"></a>    <span class="n">PALOS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'oros'</span><span class="p">,</span> <span class="s1">'bastos'</span><span class="p">,</span> <span class="s1">'copas'</span><span class="p">,</span> <span class="s1">'espadas'</span><span class="p">]</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-26"></a>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-27"></a>    <span class="n">carta</span> <span class="o">=</span> <span class="n">Carta</span><span class="p">(</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-28"></a>        <span class="n">valor</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-29"></a>        <span class="n">palo</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">PALOS</span><span class="p">),</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-30"></a>    <span class="p">)</span>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-31"></a>
+<a name="rest_code_d08eab338ac4499d917c9c563f372b71-32"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">carta</span><span class="p">)</span>
 </pre>
 </div>
 <div class="section" id="mascota">
 <h2>Mascota</h2>
 <p><a class="reference external" href="../../../listings/edd/mascotas.py.html">edd/mascotas.py</a>  <a class="reference external" href="../../../listings/edd/mascotas.py">(Código fuente)</a></p>
-<pre class="code python3"><a name="rest_code_465068c3524348da95ff3f98dedca159-1"></a><span class="ch">#!/usr/bin/env python</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-2"></a><span class="sd">"""</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-3"></a><span class="sd">EDD: Creando objetos - Mascota.</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-4"></a>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-5"></a><span class="sd">Importamos el módulo random para que la creación de objetos sea pseudo-aleatoria.</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-6"></a><span class="sd">"""</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-7"></a>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-8"></a><span class="kn">import</span> <span class="nn">random</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-9"></a>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-10"></a>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-11"></a><span class="k">class</span> <span class="nc">Mascota</span><span class="p">:</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-12"></a>    <span class="sd">""" Nuestra propia clase Mascota. """</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-13"></a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">,</span> <span class="n">tipo</span><span class="p">):</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">edad</span> <span class="o">=</span> <span class="n">edad</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-16"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span> <span class="o">=</span> <span class="n">tipo</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-17"></a>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-18"></a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-19"></a>        <span class="k">return</span> <span class="s1">'&lt;Mascota </span><span class="si">{}</span><span class="s1">: </span><span class="si">{}</span><span class="s1">&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span><span class="p">)</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-20"></a>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-21"></a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-22"></a>        <span class="k">return</span> <span class="s1">'Soy </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-23"></a>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-24"></a>    <span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-25"></a>        <span class="sd">""" Saludo de la mascota. """</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-26"></a>        <span class="nb">print</span><span class="p">(</span><span class="s1">'Hola! Me llamo </span><span class="si">{}</span><span class="s1">, tengo </span><span class="si">{}</span><span class="s1"> y soy un </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">edad</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span><span class="p">))</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-27"></a>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-28"></a>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-29"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-30"></a>    <span class="n">TIPOS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'perro'</span><span class="p">,</span> <span class="s1">'gato'</span><span class="p">,</span> <span class="s1">'pez'</span><span class="p">,</span> <span class="s1">'canario'</span><span class="p">]</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-31"></a>    <span class="n">NOMBRES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Pluto'</span><span class="p">,</span> <span class="s1">'Silvestre'</span><span class="p">,</span> <span class="s1">'Nemo'</span><span class="p">,</span> <span class="s1">'Piolín'</span><span class="p">]</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-32"></a>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-33"></a>    <span class="n">mascota</span> <span class="o">=</span> <span class="n">Mascota</span><span class="p">(</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-34"></a>        <span class="n">nombre</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">NOMBRES</span><span class="p">),</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-35"></a>        <span class="n">edad</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-36"></a>        <span class="n">tipo</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">TIPOS</span><span class="p">)</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-37"></a>        <span class="p">)</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-38"></a>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-39"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">mascota</span><span class="p">)</span>
-<a name="rest_code_465068c3524348da95ff3f98dedca159-40"></a>    <span class="n">mascota</span><span class="o">.</span><span class="n">saludar</span><span class="p">()</span>
+<pre class="code python3"><a name="rest_code_006635804fee427483a84ad51ee0033b-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-2"></a><span class="sd">"""</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-3"></a><span class="sd">EDD: Creando objetos - Mascota.</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-4"></a>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-5"></a><span class="sd">Importamos el módulo random para que la creación de objetos sea pseudo-aleatoria.</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-6"></a><span class="sd">"""</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-7"></a>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-8"></a><span class="kn">import</span> <span class="nn">random</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-9"></a>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-10"></a>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-11"></a><span class="k">class</span> <span class="nc">Mascota</span><span class="p">:</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-12"></a>    <span class="sd">""" Nuestra propia clase Mascota. """</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-13"></a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">,</span> <span class="n">tipo</span><span class="p">):</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">edad</span> <span class="o">=</span> <span class="n">edad</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-16"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span> <span class="o">=</span> <span class="n">tipo</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-17"></a>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-18"></a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-19"></a>        <span class="k">return</span> <span class="s1">'&lt;Mascota </span><span class="si">{}</span><span class="s1">: </span><span class="si">{}</span><span class="s1">&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span><span class="p">)</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-20"></a>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-21"></a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-22"></a>        <span class="k">return</span> <span class="s1">'Soy </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-23"></a>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-24"></a>    <span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-25"></a>        <span class="sd">""" Saludo de la mascota. """</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-26"></a>        <span class="nb">print</span><span class="p">(</span><span class="s1">'Hola! Me llamo </span><span class="si">{}</span><span class="s1">, tengo </span><span class="si">{}</span><span class="s1"> y soy un </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">edad</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tipo</span><span class="p">))</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-27"></a>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-28"></a>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-29"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-30"></a>    <span class="n">TIPOS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'perro'</span><span class="p">,</span> <span class="s1">'gato'</span><span class="p">,</span> <span class="s1">'pez'</span><span class="p">,</span> <span class="s1">'canario'</span><span class="p">]</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-31"></a>    <span class="n">NOMBRES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Pluto'</span><span class="p">,</span> <span class="s1">'Silvestre'</span><span class="p">,</span> <span class="s1">'Nemo'</span><span class="p">,</span> <span class="s1">'Piolín'</span><span class="p">]</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-32"></a>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-33"></a>    <span class="n">mascota</span> <span class="o">=</span> <span class="n">Mascota</span><span class="p">(</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-34"></a>        <span class="n">nombre</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">NOMBRES</span><span class="p">),</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-35"></a>        <span class="n">edad</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-36"></a>        <span class="n">tipo</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">TIPOS</span><span class="p">)</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-37"></a>        <span class="p">)</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-38"></a>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-39"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">mascota</span><span class="p">)</span>
+<a name="rest_code_006635804fee427483a84ad51ee0033b-40"></a>    <span class="n">mascota</span><span class="o">.</span><span class="n">saludar</span><span class="p">()</span>
 </pre>
 </div>
 <div class="section" id="alumno">
 <h2>Alumno</h2>
 <p><a class="reference external" href="../../../listings/edd/alumnos.py.html">edd/alumnos.py</a>  <a class="reference external" href="../../../listings/edd/alumnos.py">(Código fuente)</a></p>
-<pre class="code python3"><a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-1"></a><span class="ch">#!/usr/bin/env python</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-2"></a><span class="sd">"""</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-3"></a><span class="sd">EDD: Creando objetos - Alumno.</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-4"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-5"></a><span class="sd">Importamos el módulo random para que la creación de objetos sea pseudo-aleatoria.</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-6"></a><span class="sd">"""</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-7"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-8"></a><span class="kn">import</span> <span class="nn">random</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-9"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-10"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-11"></a><span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-12"></a>    <span class="sd">""" Nuestra propia clase Alumno. """</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-13"></a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">materias</span><span class="o">=</span><span class="p">[]):</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">edad</span> <span class="o">=</span> <span class="n">edad</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-16"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">materias</span> <span class="o">=</span> <span class="n">materias</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-17"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-18"></a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-19"></a>        <span class="k">return</span> <span class="s1">'&lt;Alumno </span><span class="si">{}</span><span class="s1">&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-20"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-21"></a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-22"></a>        <span class="k">return</span> <span class="s1">'Soy </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-23"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-24"></a>    <span class="k">def</span> <span class="nf">inscribir</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">materia</span><span class="p">):</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-25"></a>        <span class="sd">""" Inscripción a materias. """</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-26"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">materias</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">materia</span><span class="p">)</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-27"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-28"></a>    <span class="k">def</span> <span class="nf">listar_materias</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-29"></a>        <span class="sd">""" Lista cada una de las materias del alumno, una por línea. """</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-30"></a>        <span class="nb">print</span><span class="p">(</span><span class="s1">'Listado de materias:'</span><span class="p">)</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-31"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">materias</span><span class="p">:</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-32"></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">El alumno no está inscripto en materias.'</span><span class="p">)</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-33"></a>            <span class="k">return</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-34"></a>        <span class="k">for</span> <span class="n">materia</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">materias</span><span class="p">:</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-35"></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">materia</span><span class="p">))</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-36"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-37"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-38"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-39"></a>    <span class="n">MATERIAS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'ARQ'</span><span class="p">,</span> <span class="s1">'EDD'</span><span class="p">,</span> <span class="s1">'DLO'</span><span class="p">,</span> <span class="s1">'PAR'</span><span class="p">,</span> <span class="s1">'TIC'</span><span class="p">,</span> <span class="s1">'ANA'</span><span class="p">,</span> <span class="s1">'LOG'</span><span class="p">]</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-40"></a>    <span class="n">NOMBRES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Pluto'</span><span class="p">,</span> <span class="s1">'Silvestre'</span><span class="p">,</span> <span class="s1">'Nemo'</span><span class="p">,</span> <span class="s1">'Piolín'</span><span class="p">]</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-41"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-42"></a>    <span class="n">alumno</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">nombre</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">NOMBRES</span><span class="p">))</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-43"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-44"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">alumno</span><span class="p">)</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-45"></a>    <span class="n">alumno</span><span class="o">.</span><span class="n">inscribir</span><span class="p">(</span><span class="n">materia</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">MATERIAS</span><span class="p">))</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-46"></a>    <span class="n">alumno</span><span class="o">.</span><span class="n">inscribir</span><span class="p">(</span><span class="n">materia</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">MATERIAS</span><span class="p">))</span>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-47"></a>
-<a name="rest_code_830f80f2acaa4cc6ab19a145d08a311b-48"></a>    <span class="n">alumno</span><span class="o">.</span><span class="n">listar_materias</span><span class="p">()</span>
+<pre class="code python3"><a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-2"></a><span class="sd">"""</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-3"></a><span class="sd">EDD: Creando objetos - Alumno.</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-4"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-5"></a><span class="sd">Importamos el módulo random para que la creación de objetos sea pseudo-aleatoria.</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-6"></a><span class="sd">"""</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-7"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-8"></a><span class="kn">import</span> <span class="nn">random</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-9"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-10"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-11"></a><span class="k">class</span> <span class="nc">Alumno</span><span class="p">:</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-12"></a>    <span class="sd">""" Nuestra propia clase Alumno. """</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-13"></a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">materias</span><span class="o">=</span><span class="p">[]):</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-14"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-15"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">edad</span> <span class="o">=</span> <span class="n">edad</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-16"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">materias</span> <span class="o">=</span> <span class="n">materias</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-17"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-18"></a>    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-19"></a>        <span class="k">return</span> <span class="s1">'&lt;Alumno </span><span class="si">{}</span><span class="s1">&gt;'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-20"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-21"></a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-22"></a>        <span class="k">return</span> <span class="s1">'Soy </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nombre</span><span class="p">)</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-23"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-24"></a>    <span class="k">def</span> <span class="nf">inscribir</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">materia</span><span class="p">):</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-25"></a>        <span class="sd">""" Inscripción a materias. """</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-26"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">materias</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">materia</span><span class="p">)</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-27"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-28"></a>    <span class="k">def</span> <span class="nf">listar_materias</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-29"></a>        <span class="sd">""" Lista cada una de las materias del alumno, una por línea. """</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-30"></a>        <span class="nb">print</span><span class="p">(</span><span class="s1">'Listado de materias:'</span><span class="p">)</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-31"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">materias</span><span class="p">:</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-32"></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">El alumno no está inscripto en materias.'</span><span class="p">)</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-33"></a>            <span class="k">return</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-34"></a>        <span class="k">for</span> <span class="n">materia</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">materias</span><span class="p">:</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-35"></a>            <span class="nb">print</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">materia</span><span class="p">))</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-36"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-37"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-38"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-39"></a>    <span class="n">MATERIAS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'ARQ'</span><span class="p">,</span> <span class="s1">'EDD'</span><span class="p">,</span> <span class="s1">'DLO'</span><span class="p">,</span> <span class="s1">'PAR'</span><span class="p">,</span> <span class="s1">'TIC'</span><span class="p">,</span> <span class="s1">'ANA'</span><span class="p">,</span> <span class="s1">'LOG'</span><span class="p">]</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-40"></a>    <span class="n">NOMBRES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Pluto'</span><span class="p">,</span> <span class="s1">'Silvestre'</span><span class="p">,</span> <span class="s1">'Nemo'</span><span class="p">,</span> <span class="s1">'Piolín'</span><span class="p">]</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-41"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-42"></a>    <span class="n">alumno</span> <span class="o">=</span> <span class="n">Alumno</span><span class="p">(</span><span class="n">nombre</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">NOMBRES</span><span class="p">))</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-43"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-44"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">alumno</span><span class="p">)</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-45"></a>    <span class="n">alumno</span><span class="o">.</span><span class="n">inscribir</span><span class="p">(</span><span class="n">materia</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">MATERIAS</span><span class="p">))</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-46"></a>    <span class="n">alumno</span><span class="o">.</span><span class="n">inscribir</span><span class="p">(</span><span class="n">materia</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">MATERIAS</span><span class="p">))</span>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-47"></a>
+<a name="rest_code_ecb43f8b73dc4d93b2ca9bb4330c605c-48"></a>    <span class="n">alumno</span><span class="o">.</span><span class="n">listar_materias</span><span class="p">()</span>
 </pre>
 </div>
 </div>
