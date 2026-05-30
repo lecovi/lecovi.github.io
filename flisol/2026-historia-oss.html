@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Por esa maldita impresora: El origen del Software Libre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/solarized.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+            .reveal h1, .reveal h2 { color: white; text-shadow: 2px 2px 4px #000; }
+            .slide-background-content { background-size: cover !important; background-position: center !important; }
+            .caption { background: rgba(0,0,0,0.7); padding: 10px; border-radius: 5px; display: inline-block; }
+        </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-image="assets/FLISOL-CABA-2026_Por-esa-maldita-impresora(1).png" data-background-size="contain"  data-background-color="#000">
+            </section>
+            <section data-background-image="assets/FLISOL-CABA-2026_Por-esa-maldita-impresora(1).png" data-background-size="contain"  data-background-color="#000" data-background-opacity="0.3">
+                <div style="background: rgba(0,0,0,0.5); padding: 20px; backdrop-filter: blur(5px);">
+                    <h2>Por esa maldita impresora</h2>
+                    <h3>El origen del Software Libre</h3>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://leo.bitson.group/flisol/2026-historia-oss.html" style="background:white; padding:5px;">
+                    <p><small>https://leo.bitson.group/flisol/2026-historia-oss.html</small></p>
+                </div>
+            </section>
+            <section>
+                <h2>lecovi</h2>
+                <h4>Leandro E. Colombo Viña</h4>
+                <ul>
+                    <li>🏅 PSF <a href="https://www.python.org/psf/fellows/" target="_blank">Fellow</a></li>
+                    <li>🇦🇷 Presidente <a href="https://python.org.ar/" target="_blank">Python Argentina</a></li>
+                    <li>🎙️ Host @ <a href="https://nerdear.la/" target="_blank">Nerdear.la</a></li>
+                    <li>🛒 Sr. Software Development Manager @ MELI</li>
+                </ul>
+                <p>Me encontrás en las redes como <code>@lecovi</code></p>
+                <div class="social-icons" style="margin-top: 30px;">
+                    <a href="https://twitter.com/lecovi"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://github.com/lecovi"><i class="fab fa-github"></i></a>
+                    <a href="https://t.me/lecovi"><i class="fab fa-telegram"></i></a>
+                    <a href="https://instagram.com/lecovi"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/in/lecovi"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </section>
+            <section data-background-image="assets/DeLorean_Replica_Kovacs_Time_Machine.png">
+            </section>
+
+            <!-- Cronología con imágenes al frente -->
+            <section><h2>3000 aC: Ábacos</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="assets/Abaco.jpg" style="max-height: 500px;">
+                    <img class="fragment current-visible" data-fragment-index="0" src="assets/abaco_ruso.jpg" style="max-height: 500px;">
+                    <img class="fragment" src="assets/RomanAbacusRecon.jpg" style="max-height: 500px;">
+                </div>
+                    <aside class="notes">
+                        Su aparición se remonta alrededor del 3000 a.C. En las zonas de asia menor.
+                        Primera máquina construida por el hombre para la realización de operaciones matemáticas
+                        Muchas culturas desarrollaron diferentes tipos de ábacos.
+                        Más que un dispositivo de cálculo en realidad es un dispositivo de memoria.
+                    </aside>
+            </section>
+            <section>
+                <h2>Anticitera</h2>
+                <img src="assets/Antikythera_model_front_panel_Mogi_Vicentini_2007.JPG" style="max-height: 500px;">
+                <aside class="notes">
+                    El mecanismo más antiguo conocido para realizar cálculos astronómicos.
+                    Descubierto en 1901 en la isla de Antikythera data del 87 a.C.
+                    Representa un avance significativo en la ingeniería mecánica.
+                    Usaba más 30 engranajes y su construcción es semejante a la de los relojes del s.XIX
+                    Imagen = Réplica de la máquina creada por Massimo Mogi Vicentini en 2007 (http://www.mogi-vice.com/).
+                </aside>
+            </section>
+            <section>
+                <h2>Ramon Llull</h2>
+                <img src="assets/Ars_Magna_de_Ramon_Llull.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    Filósofo, teólogo y escritor mallorquín del siglo XIII.
+                    Desarrolló un sistema de pensamiento basado en la combinación de conceptos fundamentales.
+                    Su obra "Ars Magna" es considerada una precursora de la lógica combinatoria y la teoría de la computación.
+                    En 1274 comenzó a trabajar en la idea de construir una máquina que pudiera implementar el razonamiento.
+                        ● Conocimiento = unión de una serie de ideas simples (raíces).
+                        ● Combinando estas 54 ideas raíces => conocimiento científico.
+                        ● La máquina representaba los sujetos, predicados y teorías teológicas mediante figuras geométricas y, operando unas palancas y ruedas, las proposiciones y teorías se movían a lo largo de unas guías para detenerse en una postura positiva (verdad) o negativa (falsedad).
+                        ● El “Ars Magna” era un autómata muy rudimentario, pero fue el 1° intento y luego dió origen a las ideas de Leibniz.
+            </section>
+            <section>
+                <h2>Da Vinci</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="assets/LeonardoMachine.jpg" style="max-height: 500px;">
+                    <img class="fragment current-visible" data-fragment-index="1" src="assets/maqSumarDaVinciReproduccion.jpg" style="max-height: 500px;">
+                </div>
+                <aside class="notes">
+                    Alrededor del 1500 inventó una máquina de sumar.
+                    ● Mostraba engranajes con relación de 10 a 1 que permitía la representación de los dígitos.
+                    Imagen1: En 1967 se hallaron manuscritos inéditos que explicaban el funcionamieno de la máquina
+                    Imagen2: En 1968, Roberto Guatelli realiza la máquina siguiendo los planos de Leonardo.Réplica de la máquina realizada por el Museo de Ciencia de Londres.
+                </aside>
+            </section>
+            <section>
+                <h2>Napier</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="assets/loshuesosnapier1.jpg" style="max-height: 500px;">
+                    <img class="fragment current-visible" data-fragment-index="1" src="assets/SumadoraWilhelmSchickard.jpg" style="max-height: 500px;">
+                    <img class="fragment" data-fragment-index="2" src="assets/regla.jpg" style="max-height: 500px;">
+                </div>
+                <aside class="notes">
+                    En 1617, el matemático escocés John Napier inventó los "huesos de Napier", un dispositivo de cálculo que facilitaba la multiplicación y división.
+                    Consistía en una serie de varillas con números grabados que permitían realizar cálculos de manera más rápida y eficiente.
+                    Fue un avance importante en la historia de las calculadoras mecánicas y sentó las bases para futuros desarrollos en el campo de la computación.
+                    En 1621 el matemático inglés William Oughtred inventa la regla deslizante de cálculo. 
+                        ● Se usó hasta 1970 cuando aparecieron las calculadoras.
+                    En 1623 en Alemania se inventa la 1° calculadora mecánica. La sumadora de Wilhelm Schickard incorporaba los logaritmos de napier.
+                </aside>
+            </section>
+            </section>
+            <section>
+                <h2>Pascalina</h2>
+                <img src="assets/800px-Arts_et_Metiers_Pascaline_dsc03869.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    En 1642 Blaise Pascal, construye en Francia una máquina basada en ruedas y engranajes de 10 posiciones.
+                    ● Cada vez que una rueda pasaba de 9 a 0, la siguiente aumentaba una posición.
+                    ● Se considera la primera calculadora digital, acumulaba las operaciones en un contador de enteros.
+                    ● Actualmente las computadoras utilizan el mismo principio pero no es mecánico sino electrónico.
+                    Imagen: Pascalina en el Museo de Artes y Oficios de París, realizada y firmada por Blaise Pascal.
+                </aside>
+            </section>
+            <section>
+                <h2>Stepped Reckoner</h2>
+                <img src="assets/800px-Leibnitzrechenmaschine.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    En 1672, el matemático alemán Gottfried Wilhelm Leibniz inventó la "Stepped Reckoner", una calculadora mecánica que podía realizar las cuatro operaciones básicas: suma, resta, multiplicación y división.
+                    Con un sistema de tambores dentados sustentados sobre sus respectivos ejes para representar las cifras; los cuales a su vez estaban articulados a unos discos numerados laterales que representaban ante los ojos del usuario las cifras a operar                     
+                    Imagen: Máquina de Leibniz en el museo de Munich
+                </aside>
+            </section>
+            <section>
+                <h2>Jacquard & Babbage</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="assets/Jacquard.loom.cards.jpg" style="max-height: 500px;">
+                    <img class="fragment current-visible" data-fragment-index="1" src="assets/BabbageDifferenceEngine.jpg" style="max-height: 500px;">
+                </div>
+                <aside class="notes">
+                    El telar de Jacquard, inventado en 1801, utilizaba tarjetas perforadas para controlar el patrón de los diseños en la tela.
+                    En 1822 Charles Babbage intenta construir una máquina para tabular polinomios que utiliza un método numérico llamado método de las diferencias.
+                    En 1833 Charles idea la máquina analítica con tarjetas perforadas.
+                    No la pudo construir, recién en 1991, cuando el Museo de Ciencias de Londres logró construir la máquina diferencial de Babbage utilizando los planos originales.
+                    Imagen 1: Telar de Jacquard en el Museo de Artes y Oficios de París.
+                    Imagen 2: Máquina Diferencial de Babbage en el Museo de Ciencias de Londres.
+                </aside>
+            </section>
+            <section>
+                <h2>Ada</h2>
+                <img src="assets/377px-Ada_Lovelace.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    Ada Lovelace, hija del poeta Lord Byron, es considerada la primera programadora de la historia.
+                    En 1843 tradujo un artículo sobre la máquina analítica de Babbage y añadió sus propias notas.
+                    ● Escribió un "plan" donde describe los pasos que permitirían calcular los valores de los números de Bernoulli.
+                    ● Demostró la capacidad de bifurcación de la máquina de Babbage.
+                    ● Describió cómo se podían calcular operaciones trigonométricas que contaban con variables utilizando la máquina de Babbage.
+                    ● Ada Byron se llamó a sí misma una analista, un concepto realmente moderno para la época.
+                    Ada también vislumbró el potencial de las computadoras para ir más allá de los cálculos numéricos, imaginando que podrían manipular símbolos y crear música o arte.
+                    Imagen: Retrato de Ada Lovelace, realizado por Margaret Sarah Carpenter en 1835, actualmente en la National Portrait Gallery de Londres.
+                </aside>
+            </section>
+            <section>
+                <h2>Torres Quevedo</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="assets/Ajedrez_Torres_Quevedo.jpg" style="max-height: 500px;">
+                    <img class="fragment current-visible" data-fragment-index="1" src="assets/Husillo-sin-fin-21.jpg" style="max-height: 500px;">
+                    <img class="fragment" data-fragment-index="2" src="assets/quevedo-calculadora.jpg" style="max-height: 500px;">
+                </div>
+                <aside class="notes">
+                    En 1893 presenta un estudio sobre las máquinas algebraicas.
+                    ● En 1912 presenta “El Ajedrecista” un autómata que usaba electroimanes jugaba finales de rey y torre.
+                    Utilizaba un sistema electromecánico para mover las piezas en un tablero de ajedrez.
+                    Fue uno de los primeros intentos de crear una máquina capaz de realizar tareas intelectuales, y sentó las bases para el desarrollo de la inteligencia artificial.
+                    ● En 1920 presenta la primer calculadora electromecánica.
+                    Imagen: El Ajedrecista en el Museo de Ciencia y Tecnología de Madrid.
+                </aside>
+            </section>
+            <section>
+                <h2>Hollerith</h2>
+                <img src="assets/416px-Hollerith.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    En 1889, Herman Hollerith inventó una máquina de tabulación que utilizaba tarjetas perforadas para procesar datos.
+                    Su máquina fue utilizada para el censo de Estados Unidos de 1890, reduciendo el tiempo de procesamiento de datos de años a meses.
+                    En 1896 funda la Tabulating Machine Company, que luego se fusiona con otras en 1911 para llamarse Computing Tabulating Recording Corporation y en 1924 International Business Machines Corporation.
+                    Es considerado como el primer informático, como el primero que logra el tratamiento automático de la información.
+                </aside>
+            </section>
+            <section>
+                <h2>Bush / Z-1</h2>
+                <img src="assets/1931analizador diferencial de bush.gif" style="max-height: 500px;">
+                <aside class="notes">
+                    Entre 1925 y 1931 en el MIT, Vannevar Bush desarrolla una computadora analógica mecánica diseñada para solucionar ecuaciones diferenciales por integración.
+                    En 1936, Konrad Zuse construye la Z1, una computadora mecánica binaria programable.
+                    primeras máquinas programables del
+                    ● Era una calculadora mecánica basada en el sistema binario que operaba con relés
+                    La Z1 fue la primera computadora de este tipo, aunque no fue completamente funcional debido a problemas de precisión y fiabilidad.
+                    Sin embargo, sentó las bases para futuros desarrollos en la computación digital y es considerada un hito importante en la historia de las computadoras.
+                    Su trabajo no fue reconocido en su época, pero hoy en día se le considera uno de los pioneros de la computación moderna.
+                </aside>
+            </section>
+            <section>
+                <h2>Turing</h2>
+                <img src="assets/Alan_Turing.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    En 1937 Alan Turing desarrolló la idea de una máquina universal capaz de ejecutar cualquier algoritmo y formando la base de la computabilidad.
+                    ● Es un modelo computacional que realiza una lectura/escritura de manera automática sobre una entrada llamada cinta, generando una salida en esta misma.
+                    ● Las ideas de Turing ayudaron a los ingleses que en 1943 utilizaron las máquinas Colossus para descifrar mensajes encriptados de los alemanes durante la segunda guerra mundial.
+                </aside>
+            </section>
+            <section>
+                <h2>Mark I</h2>
+                <img src="assets/800px-Harvard_Mark_I_Computer_-_Right_Segment.JPG" style="max-height: 500px;">
+                <aside class="notes">
+                    En 1944, con los aportes de IBM, Howard Aiken construye en la universidad de Harvard la primer computadora electromecánica el IBM Automatic Sequence Controlled Calculator (ASCC).
+                    ● Contaba con más de 750.000 ruedas y 800 km de cables. Medía más de 15 mts de largo, casi 2,5 de alto y unos 60 cm de ancho.
+                    ● Los datos e instrucciones se ingresaban por medio de cintas de papel perforadas.
+                    ● Los resultados salían por medio de máquinas de escrbir eléctricas o perforadoras de tarjetas.
+                    ● Sumaba en 0,3s, Multiplicaba en 6s y Dividía en 11,4s.
+                    Imagen: Harvard-IBM Mark I Computer, lado derecho de la computadora que se encuentra en el Cabot Science Building de la Universidad de Harvard
+                </aside>
+            </section>
+            <section>
+                <h2>ENIAC</h2>
+                <img src="assets/785px-Eniac.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    En 1946 en la Universidad de Pennsylvania, John Presper Eckert y John William Mauchly construyen la Electronic Numerical Integrator And Computer. 
+                    ● Una de las primeras computadoras electrónicas: más de 170.000 válvulas, ocupaba unos 160m2, consumía unos 200KW, elevaba la temperatura de la sala a unos 50°C.
+                    ● 5000 sumas en 1s.
+                    ● Reloj de 200μs.
+                    ● Multiplicaciones de 20 dígitos en 2,8 ms. 
+                    Imagen: Dos técnicos programando el ENIAC en Philadelphia, Pennsylvania
+                </aside>
+            </section>
+            <section>
+                <h2>Von Neumann</h2>
+                <img src="assets/200px-JohnvonNeumann-LosAlamos.gif" style="max-height: 500px;">
+                <aside class="notes">
+                    Matemático estadounidense que en 1946 ideó una máquina de programa almacenado.
+                    ● Quería resolver el problema de recablear la ENIAC.
+                    ● En 1949 desarrolla la EDVAC (Electronic Discrete Variable Automatic Computer) la primera computadora de programa almacenado.
+                    ● Utilizaba el sistema binario a diferencia de la ENIAC que usaba el sistema decimal.
+                    ● En el mismo momento se desarrolló en la Universidad de Cambridge (Inglaterra) la EDSAC.
+                </aside>
+            </section>
+            <section>
+                <h2>Grace Hopper / Bug</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="assets/511px-Grace_Hopper.jpg" style="max-height: 500px;">
+                    <img class="fragment current-visible" data-fragment-index="1" src="assets/bug-MarkII.jpg" style="max-height: 500px;">
+                </div>
+                <aside class="notes">
+                    En 1944, Grace Hopper se unió a la Marina de los Estados Unidos y trabajó en el desarrollo de software para computadoras.
+                    En 1947, mientras trabajaba en la computadora Mark II, encontró un error causado por una polilla atrapada en uno de los relés.
+                    Este incidente llevó a la popularización del término "bug" para referirse a errores en el software.
+                    Grace Hopper es considerada una pionera en el campo de la programación y contribuyó significativamente al desarrollo de lenguajes de programación de alto nivel.
+                    Imagen 2: La polilla encontrada por Grace Hopper, actualmente exhibida en el Museo Nacional de Historia Americana del Smithsonian.
+                </aside>
+            </section>
+            <section>
+                <h2>Transistor (1947)</h2>
+                <img src="assets/primer_transistor.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    El transistor fue inventado en 1947 por John Bardeen, Walter Brattain y William Shockley en los Laboratorios Bell.
+                    ● El transistor reemplazaría a los tubos de vacío.
+                    ● 24 años después Intel desarrolla el microprocesador 4004 que contaba con 2.000 transistores.
+                    ● Desde los años '70 los transistores cada 18 meses reducen su tamaño a la mitad (Ley de Moore).
+                </aside>
+            </section>
+            <section>
+                <h2>UNIVAC</h2>
+                <img src="assets/UNIVAC-1_1955.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    En 1951, aparece el UNIVAC I (Universal Automatic Computer) desarrollado por Eckert y Mauchly, la primera computadora comercial fabricada en USA.
+                    ● Constituídas por válvulas de vacío. Disipaban mucho calor y ocupaban mucho espacio.
+                    ● El programa estaba almacenado en tarjetas o cintas perforadas.
+                    ● Se ejecutaba el programa instrucción por instrucción.
+                    ● En 1953 se introducen los núcleos de memorias magnéticos.
+                    ● 1.000 instrucciones / segundo.
+                    Fue utilizado por la Oficina de Censura de los Estados Unidos para procesar datos del censo de 1950.
+                </aside>
+            </section>
+            <section>
+                <h2>Primer FOSS</h2>
+                <img src="assets/UNIVAC-SistemaA2.png" style="max-height: 500px;">
+                <aside class="notes">
+                    1950s El Software era parte de la venta de Hardware y se distribuía de manera abierta con el código fuente para que los usuarios pudieran arreglar bugs
+                    ● Principalmente los usuarios eran investigadores del entorno académico o corporativo
+                    El sistema A-2 fue una versión mejorada del UNIVAC I, diseñada para ser más confiable y eficiente.
+                    Invitaba a sus usuarios a enviar sus contribuciones de nuevo para la UNIVAC
+                    Imagen: https://museo.inf.upv.es/univac2/
+                </aside>
+            </section>
+            <section>
+                <h2>Industria del Software</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="assets/PhilcoTRANSAC_S-2000.jpg" style="max-height: 500px;">
+                    <img class="fragment current-visible" data-fragment-index="1" src="assets/800px-PDP-1.jpg" style="max-height: 500px;">
+                </div>
+                <aside class="notes">
+                    La década de los años 60 fue una época de gran innovación en el campo de las computadoras.
+                    Se desarrollaron nuevos lenguajes de programación, sistemas operativos y arquitecturas hardware.
+                    Los sistemas operativos y los compiladores evolucionan y se incrementan los costos de desarrollo de Software
+                    Empieza una incipiente industria del Software que compite lentamente con la manufacturera del Hardware
+                    Los costos del HW incluían los del desarrollo del SW para su uso
+                    Los usuarios comienzan a no querer el SW manufacturado por los fabricantes de HW
+                    Imagen 1: Philco TRANSAC S-2000, una de las primeras computadoras comerciales de transistores, lanzada en 1959 por la empresa Philco.
+                    Imagen 2: PDP-1, la primera computadora de la serie PDP (Programmed Data Processor) desarrollada por Digital Equipment Corporation (DEC) en 1960. Fue una de las primeras computadoras de propósito general y se utilizó ampliamente en entornos académicos y de investigación.
+                </aside>
+            </section>
+            <section>
+                <h2>1960's</h2>
+                <img src="assets/450px-Pdp-11-40.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    El PDP-11 fue una serie de computadoras minicomputadoras desarrolladas por Digital Equipment Corporation (DEC).
+                    Fue ampliamente utilizado en universidades y centros de investigación durante la década de los años 70.
+                    Se incorpora la tecnología de IC.
+                    ● Se reduce considerablemente el espacio y el consumo de energía.
+                    ● Surge la multiprogramación, varios programas residentes en la memoria en estado de ejecución.
+                    ● Aparece el teleproceso. Sistemas interactivos. Renovación de periféricos.
+                    ● Se desarrolla el concepto de máquina virtual, simplificando la tarea del programador.
+                    ● IBM 360, PDP-8, PDP-11, CDC 6600.
+                </aside>
+            </section>
+            <section>
+                <h2>Unix</h2>
+                <img src="assets/Ken_Thompson_sitting_and_Dennis_Ritchie_at_PDP-11_2876612463.webp" style="max-height: 500px;">
+                <aside class="notes">
+                    Unix fue un sistema operativo desarrollado por Ken Thompson y Dennis Ritchie en los Laboratorios Bell.
+                    Se convirtió en uno de los sistemas operativos más influyentes en la historia de las computadoras.
+                    AT&T distribuye sin costo las primeras versiones de UNIX (sin permiso de redistribución)
+                    Hasta 1974 el SW no estaba sujeto a las leyes de Copyright => sin licencia
+                    Imagen: Ken Thompson y Dennis Ritchie trabajando en un PDP-11, la computadora utilizada para desarrollar Unix. La imagen fue tomada por Brian Kernighan en los Laboratorios Bell en 1972.
+                </aside>
+            </section>
+            <section>
+                <h2>Open Letter</h2><img src="assets/OpenLetter.webp" style="max-height: 500px;">
+                <aside class="notes">
+                    1976 Bill Gates escribe "Open Letter to Hobbyists" donde se mostraba consternado por el uso e intercambio de BASIC de MS x parte de los Hobbistas sin pagar su tarifa de licencia de uso
+                    A partir de ese momento Bill Gates se convierte en un gran promotor de las licencias de software
+                    1979 AT&T comienza a obligar a sus usuarios a hacer cumplir sus licencias y empezó a cobrar por el uso de UNIX
+                </aside>
+            </section>
+            <section>
+                <h2>Revolution OS</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="assets/Revolution_OS.jpg" style="max-height: 500px;">
+                    <img class="fragment current-visible" data-fragment-index="1" src="assets/rms-road.png" style="max-height: 500px;">
+                </div>
+                <aside class="notes">
+                    1983 IBM anuncia que ya no iba a distribuir más el código fuente con su software 
+                    Esta política se empezó a popularizar para aumentar las ganancias de las empresas.
+                    En 1983 RMS, un desarrollador de Sistemas Operativos en el departamento de Inteligencia Artificial del MIT, quiere trabajar en una porción de código y se da cuenta que no puede porque no tiene las fuentes
+                    Aceptar la licencia de no compartir era esencialmente ser mala persona
+                </aside>
+            </section>
+            <section>
+                <h2>RMS</h2>
+                <img src="assets/Heckert_GNU_white.svg.png" style="max-height: 500px;">
+                <aside class="notes">
+                    Proyecto GNU 1983
+                    FSF 1985
+                    Inventó el concepto de "Copyleft"
+                </aside>
+            </section>
+            <section>
+                <h2>Tanenbaum</h2>
+                <img src="assets/AndrewTanenbaum.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    Andrew Tanenbaum es un profesor y investigador conocido por su trabajo en sistemas operativos.
+                    Grandes libros de texto sobre sistemas operativos y redes.
+                    Minix (1987) un sistema operativo educativo de código abierto diseñado para enseñar los principios de los sistemas operativos.
+                    Minix un microkernel, con una arquitectura modular que separa el núcleo del sistema operativo de los servicios y aplicaciones.
+                </aside>
+            </section>
+            <section>
+                <h2>Just a hobby</h2>
+                <img src="assets/linux-has-a-interested-history-this-is-one-of-early-emails-v0-e79xc1ewkwr61.webp" style="max-height: 500px;">
+                <aside class="notes">
+                    Linus Torvalds creó Linux en 1991 como un proyecto personal para su sistema operativo.
+                    El kernel de Linux se lanzó bajo la licencia GPL, lo que permitió su desarrollo colaborativo.
+                </aside>
+            </section>
+            
+            <section>
+                <h2>GNU/Linux</h2>
+                <img src="assets/linus-torvalds-young-cropped.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    Linux migra su licencia a la GPL.
+                    El software libre empieza a ganar tracción más allá del nicho académico.
+                </aside>
+            </section>
+            <section>
+                <h2>Debian</h2>
+                <img src="assets/IanMurdock.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    Ian Murdock funda Debian.
+                    Un proyecto comunitario basado en principios democráticos y Software Libre.
+                    1993 liberan la versión 0.01. 
+                    1996 liberan la primer versión estable: 1.1
+                    1997 Debian Free Software Guidelines (parte del Debian Social Contract)
+                </aside>
+            </section>
+            <section>
+                <h2>Apache (1995)</h2>
+                <img src="assets/Apache-Foundation.png" style="max-height: 500px;">
+                <aside class="notes">
+                    Nace el servidor HTTP Apache.
+                    Se convierte en la columna vertebral de la Web, demostrando la potencia del desarrollo colaborativo.
+                    1995 Apache crea HTTP Server que tracciona la mayoría de los sitios web 
+                    Auge de las "punto com"
+                    Ecosystema LAMP (Linux Apache MySQL Perl/PHP)
+                </aside>
+            </section>
+            <section>
+                <h2>Eric Raymond</h2>
+                <img src="assets/Cathedral-and-the-Bazaar-book-cover.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    Publica "La Catedral y el Bazar" (1997).
+                    Cambia la forma en que entendemos la gestión de proyectos de software.
+                </aside>
+            </section>
+            <section>
+                <h2>Netscape / Mozilla</h2>
+                <img src="assets/netscape.jpg" style="max-height: 500px;">
+                <aside class="notes">
+                    La Catedral y el Bazar inspiró en 1998 a Netscape a convertirse en Mozilla
+                    Para salvar a la compañía
+                    1998: Netscape libera su código fuente.
+                    Nace Mozilla. Un punto de inflexión corporativo para el código abierto.
+                </aside>
+            </section>
+            <section>
+                <h2>"Open Source"</h2>
+                <img src="assets/ChristinePeterson.webp" style="max-height: 500px;">
+                <aside class="notes">
+                    Christine Peterson acuña el término "Open Source" en una reunión en Palo Alto.
+                    El objetivo: hacer el software libre "vendible" para las empresas.
+                    Tim O'Reilly populariza el término con su conferencia "Open Source Summit".
+                </aside>
+            </section>
+            <section>
+                <h2>OS Definition</h2>
+                <img src="assets/OSI Definition.png" style="max-height: 500px;">
+                <aside class="notes">
+                    Se formaliza la Open Source Definition (OSD).
+                    Basada en las DFSG (Debian Free Software Guidelines).
+                </aside>
+            </section>
+            <section>
+                <h2>IPO RedHat</h2>
+                <img src="assets/red-hat-ipo-social.webp" style="max-height: 500px;">
+                <aside class="notes">
+                    1999: RedHat sale a bolsa.
+                    El software abierto demuestra que es un modelo de negocio sostenible y rentable.
+                    https://www.cnet.com/tech/tech-industry/red-hat-shares-triple-in-ipo/
+                    The success of the first day gives the company a capital value of around $3 billion
+                    It issued 6 million shares priced at $14 per share and reached a valuation as high as $50 per share that day.
+                    Market value of $3.5 billion (~USD 7.000.000.000 in 2026)
+                </aside>
+            </section>
+            <section>
+                <h2>Foundations</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="assets/Linux_Foundation_logo_2013.svg.png" style="max-height: 500px;">
+                    <img class="fragment current-visible" data-fragment-index="1" src="assets/psf-logo.png" style="max-height: 500px;">
+                </div>
+                <aside class="notes">
+                    Linux Foundation: 2000 Fundada para consolidar el desarrollo del kernel.
+                    El punto de encuentro entre industria y comunidad.
+                    2001 Fundación de la Python Software Foundation.
+                    Protegiendo y fomentando el crecimiento del ecosistema Python.
+                </aside>
+            </section>
+            <section>
+                <h2>Github</h2>
+                <img src="assets/github-microsoft-02-jacobo-najera.png_1182284128-1024x558.png" style="max-height: 500px;">
+                <aside class="notes">
+                    2008: GitHub cambia cómo colaboramos.
+                    Android pone Linux en el bolsillo de miles de millones de personas.
+                </aside>
+            </section>
+            <section>
+                <h2>Top Contributors</h2>
+                <img src="assets/TopContributors.png" style="max-height: 500px;">
+                <aside class="notes">
+                    MS, Google, RedHat, IBM, Intel en el Top 5.
+                    El código abierto es la infraestructura del mundo actual.
+                    Las grandes compañías juegan un papel súper importante en el Open Source
+                    2016 Microsoft, Google, RedHat, IBM e Intel en el Top 5 de contribuciones
+                </aside>
+            </section>
+            <section>
+                <h2>flip-flop</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" src="assets/MS_Github.jpg" style="max-height: 500px;">
+                    <img class="fragment current-visible" data-fragment-index="1" src="assets/ibm-redhat-tech-acquisitions.jpg" style="max-height: 500px;">
+                    <img class="fragment" data-fragment-index="2" src="assets/ms_loves_linux.png" style="max-height: 500px;">
+                </div>
+                <aside class="notes">
+                    2017: Microsoft compra GitHub. USD 7.500 millones (~USD 10.000 millones en 2026)
+                    2018: IBM compra RedHat. USD 34.000 millones (~USD 40.000 millones en 2026)
+                    Los antiguos enemigos ahora dominan el ecosistema.
+                </aside>
+            </section>
+            <section>
+                <h2>Open Source AI Definition </h2>
+                <img src="assets/OSAID.png" style="max-height: 500px;">
+                <aside class="notes">
+                    Más allá de lo técnico: la batalla legal por la libertad.
+                    GPL, MIT, Apache: el contrato social que define nuestra libertad.
+                </aside>
+            </section>
+            <section>
+                <h2>Resources</h2>
+                <ul><small>
+                    <li><a href="https://en.wikipedia.org/wiki/History_of_free_and_open-source_software">History of free and open-source software - Wikipedia</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=Eluzi70O-P4">Revolution OS - 2001 - Multilingual (16 languages)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=G0OyStxOyAQ">The Cathedral and the Bazaar</a><a href="https://github.com/GiovanniMoretti/159251-directoryTreeOfFunFiles/tree/master/ebooks-EPubs/Eric%20S.%20Raymond/The%20Cathedral%20and%20the%20Bazaar%20(119)">Book</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=4Q7FTjhvZ7Y">Project Code Rush - The Beginnings of Netscape / Mozilla Documentary</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=SpeDK1TPbew">The Rise Of Open-Source Software</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=ahH-1b3Hc2U">Documental Código Linux / The Code - Story of Linux (Español)</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=GfH4QL4VqJ0">The Story of Python and how it took over the world | Python: The Documentary</a></li>
+                    <li><a href="https://octoverse.github.com/">Github Octoverse</a></li>
+                </small></ul>
+            </section>
+            <section data-background-image="assets/FLISOL-CABA-2026_Por-esa-maldita-impresora(1).png" data-background-size="contain"  data-background-color="#000" data-background-opacity="0.3">
+                <div style="background: rgba(0,0,0,0.5); padding: 20px; backdrop-filter: blur(5px);">
+                    <h2>Por esa maldita impresora</h2>
+                    <h3>El origen del Software Libre</h3>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://leo.bitson.group/flisol/2026-historia-oss.html" style="background:white; padding:5px;">
+                    <p><small>https://leo.bitson.group/flisol/2026-historia-oss.html</small></p>
+                    <div class="social-icons" style="margin-top: 30px;">
+                        <a href="https://twitter.com/lecovi"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://github.com/lecovi"><i class="fab fa-github"></i></a>
+                        <a href="https://t.me/lecovi"><i class="fab fa-telegram"></i></a>
+                        <a href="https://instagram.com/lecovi"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/lecovi"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script>Reveal.initialize({hash: true});</script>
+</body>
+</html>
